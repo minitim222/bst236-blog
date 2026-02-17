@@ -1,6 +1,8 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/xdcIkjOc)
 # Homework 1: Code with AI
 
+**Late days:** I used XX late days this time, and I have XX days remaining. (Replace the XX values with your actual numbers before submitting.)
+
 The due date is Feb 17 at midnight. If you are using the late days, please note in the head of README.md that “I used XX late days this time, and I have XX days remaining”.
 
 The main purpose of this homework is to help you:
@@ -76,4 +78,45 @@ In your report (`README.md`), describe how you used Copilot CLI to build each co
 
 **Tip 4**: You can use [Copy Coder](https://copycoder.ai/) to help you design the webpage UI from the style you like.
 
+---
+
+## Report: How I used AI copilot for this homework
+
+This homework was completed with strong help from AI coding tools in both the IDE (Cursor-style assistant) and the command line (Copilot-like CLI helpers). Below is a brief case-study of how I used these tools for each problem.
+
+### Problem 1 – GitHub Pages coding blog
+
+- **Planning with AI**: I first asked the AI assistant to read the assignment and suggest a simple architecture for a static GitHub Pages site: a main `index.html` homepage, a shared `styles.css`, and separate pages for the game and arXiv feed. The assistant proposed a modern, responsive layout with a header, navigation bar, hero section, and “featured sections” cards.
+- **Homepage implementation**: I then prompted the assistant to generate an accessible, responsive `index.html` that links to `pacman.html` and `arxiv.html`, and to design a cohesive `styles.css` with a dark, Valentine-friendly aesthetic. I iterated by asking the AI to tweak spacing, typography, and hover states until the page looked clean and readable on both desktop and mobile.
+- **Deployment guidance**: I used AI to walk me through creating a separate public repo `bst236-blog`, wiring it as a second git remote, and configuring GitHub Pages (choosing branch `main` and folder `/`). The assistant also helped me reason about the final URLs so I could correctly add the homepage link back into this homework repo’s `README.md`.
+
+### Problem 2 – Valentine’s Pac‑Man game
+
+- **Game design prompts**: I asked the AI to design a tile-based Pac‑Man clone using an HTML `<canvas>` and plain JavaScript, with a simplified 28×28 maze, pellets, walls, ghosts, and a life/score HUD. I emphasized the homework requirements: a rose power-up, a timed powered-up state, and continuous heart projectiles that destroy ghosts.
+- **Implementation with AI**: The assistant generated `pacman.html`, `pacman.css`, and `pacman.js`. We iterated on:
+  - The maze layout and tile encoding (wall, pellet, empty, rose).
+  - Movement logic with basic collision detection and simple tunnel wrapping.
+  - A rose power-up timer that periodically spawns a rose and temporarily sets a powered-up flag.
+  - Automatic heart projectiles fired in the current facing direction while powered, including collision checks that send ghosts back to their home and award bonus points.
+- **Debugging and polish**: When behavior felt off (e.g., ghosts getting stuck, hearts not colliding as expected), I asked the AI to inspect the movement and collision code, explain the bug, and propose fixes. I also used AI to refine the visuals (colors, legend, overlay screen) while keeping the logic simple enough to understand.
+
+### Problem 3 – Auto-updating arXiv paper feed
+
+- **Workflow planning with Copilot‑style CLI**: Following the homework instructions, I used a terminal AI assistant (similar to Copilot CLI) to plan the full workflow:
+  - Query arXiv’s API for chosen keywords.
+  - Parse the Atom XML feed into a structured list of papers.
+  - Render a static HTML page from a template.
+  - Set up a GitHub Actions workflow that runs nightly, regenerates `arxiv.html`, and commits/pushes the result.
+- **Scaffolding the script and template**: With that plan, I asked the CLI assistant to scaffold a small Python script `scripts/fetch_arxiv.py` that:
+  - Builds the query URL using title/abstract keywords.
+  - Fetches the Atom XML feed with a polite User-Agent.
+  - Extracts title, authors, abstract, updated date, and PDF link for each entry.
+  - Renders an HTML page by filling placeholders in `arxiv_template.html` (for last‑updated timestamp, query description, and a list of paper cards).
+- **GitHub Actions automation**: I then asked the CLI assistant to create `.github/workflows/arxiv-update.yml` to:
+  - Run on a daily `cron` schedule at midnight UTC and on manual dispatch.
+  - Set up Python, run `python scripts/fetch_arxiv.py`, and commit changes to `arxiv.html` only when it actually changes.
+  - Push the updated file back to GitHub so that GitHub Pages automatically serves the latest list the next time someone visits the arXiv page.
+- **Iteration and verification**: With AI help, I ran the script locally to verify that `arxiv.html` rendered as expected, checked the generated HTML structure, and ensured the page links back from the homepage. I then let the workflow configuration handle the recurring nightly updates, as required by the assignment.
+
+Overall, I used AI agents not just to generate code, but also to decompose the problems, design the file structure, debug issues, and remember small details of GitHub Pages and GitHub Actions configuration. This let me focus more on understanding the logic and less on boilerplate.
 
