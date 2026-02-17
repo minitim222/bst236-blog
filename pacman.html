@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Pac-Man · Tim's Coding Blog</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pacman.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="brand">
+          <span class="brand-mark">&lt;/&gt;</span>
+          <span class="brand-text">Tim's Coding Blog</span>
+        </div>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="pacman.html" class="nav-link active">Pac-Man Game</a>
+          <a href="arxiv.html" class="nav-link">arXiv Feed</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="container page-header">
+        <div style="display: flex; justify-content: space-between; gap: 1rem">
+          <div>
+            <div class="pill">
+              <span class="pill-dot"></span>
+              <span>Valentine's Special</span>
+            </div>
+            <h1>Valentine's Pac-Man</h1>
+            <p>
+              Eat all the pellets, dodge the ghosts, and grab roses to shoot
+              hearts that knock out ghosts.
+            </p>
+            <p style="margin-top: 0.4rem; font-size: 0.85rem; color: #9ca3af">
+              Controls: Arrow keys / WASD to move. When powered up by a rose,
+              Pac-Man automatically shoots hearts in the direction you're
+              facing.
+            </p>
+          </div>
+          <div
+            style="
+              text-align: right;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+              gap: 0.15rem;
+              font-size: 0.8rem;
+              color: #9ca3af;
+            "
+          >
+            <span>Lives: <span id="lives">3</span></span>
+            <span>Score: <span id="score">0</span></span>
+            <span>Level: <span id="level">1</span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="game-shell">
+          <canvas id="game" width="560" height="560"></canvas>
+          <div class="game-overlay hidden" id="overlay">
+            <div class="overlay-card">
+              <h2 id="overlay-title">Valentine's Pac-Man</h2>
+              <p id="overlay-message">
+                Eat all the pellets, avoid the ghosts, and collect roses to
+                shoot hearts!
+              </p>
+              <button id="start-btn" class="btn primary">
+                Start / Restart Game
+              </button>
+            </div>
+          </div>
+          <div class="game-legend">
+            <div class="legend-item">
+              <span class="legend-swatch pac"></span>
+              <span>Pac-Man</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-swatch pellet"></span>
+              <span>Pellets</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-swatch rose"></span>
+              <span>Rose power-up</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-swatch heart"></span>
+              <span>Hearts (destroy ghosts)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Tim's Coding Blog · Pac-Man mini project</p>
+      </div>
+    </footer>
+
+    <script src="pacman.js"></script>
+    <script>
+      document.getElementById("year").textContent =
+        new Date().getFullYear().toString();
+    </script>
+  </body>
+  </html>
+

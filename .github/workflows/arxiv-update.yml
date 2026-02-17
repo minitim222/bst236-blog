@@ -1,0 +1,42 @@
+name: Update arXiv feed
+
+on:
+  schedule:
+    # Run every day at midnight UTC
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-arxiv:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Update arXiv page
+        working-directory: ${{ github.workspace }}
+        run: |
+          python scripts/fetch_arxiv.py
+
+      - name: Commit updated arXiv page
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add arxiv.html
+          git commit -m "chore: auto-update arXiv feed"
+          git push
+

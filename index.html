@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tim's Coding Blog</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="brand">
+          <span class="brand-mark">&lt;/&gt;</span>
+          <span class="brand-text">Tim's Coding Blog</span>
+        </div>
+        <nav class="nav">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="pacman.html" class="nav-link">Pac-Man Game</a>
+          <a href="arxiv.html" class="nav-link">arXiv Feed</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Welcome</p>
+            <h1>Coding experiments, games, and research notes.</h1>
+            <p class="hero-text">
+              This is my BST236 homework hub and coding blog. Explore a
+              Valentine's-themed Pac-Man game, an auto-updating arXiv paper
+              feed, and future projects as the course progresses.
+            </p>
+            <div class="hero-actions">
+              <a href="pacman.html" class="btn primary">Play Pac-Man</a>
+              <a href="arxiv.html" class="btn ghost">View arXiv Feed</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <p class="hero-card-label">What's here?</p>
+            <ul class="hero-list">
+              <li>
+                <span class="dot"></span>
+                <div>
+                  <h3>Pac-Man (Valentine's Edition)</h3>
+                  <p>
+                    A browser game with roses, hearts, and ghosts—built from
+                    scratch with HTML, CSS, and JavaScript.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="dot"></span>
+                <div>
+                  <h3>arXiv Paper Feed</h3>
+                  <p>
+                    An automatically updated list of recent arXiv papers based
+                    on topics I follow.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="dot"></span>
+                <div>
+                  <h3>AI-Assisted Coding</h3>
+                  <p>
+                    This site and workflows are built with the help of AI
+                    coding tools and agentic prompts.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section">
+        <header class="section-header">
+          <h2>Featured Sections</h2>
+          <p>Jump directly into the interactive parts of this project.</p>
+        </header>
+        <div class="card-grid">
+          <a href="pacman.html" class="card">
+            <h3>Pac-Man Game</h3>
+            <p>
+              Play the Valentine's-themed Pac-Man game right in your browser.
+            </p>
+            <span class="card-cta">Play now →</span>
+          </a>
+          <a href="arxiv.html" class="card">
+            <h3>arXiv Feed</h3>
+            <p>
+              Browse the latest research papers pulled nightly from arXiv.
+            </p>
+            <span class="card-cta">View feed →</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Tim's Coding Blog · Built for BST236</p>
+        <p class="footer-note">
+          This site is hosted on GitHub Pages and updated automatically with
+          GitHub Actions.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent =
+        new Date().getFullYear().toString();
+    </script>
+  </body>
+  </html>
+
