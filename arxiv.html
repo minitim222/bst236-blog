@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-02-19 02:08 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-02-22 02:08 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16709v1" target="_blank" rel="noopener noreferrer">
-      Knowledge-Embedded Latent Projection for Robust Representation Learning
+    <a href="https://arxiv.org/pdf/2602.17657v1" target="_blank" rel="noopener noreferrer">
+      Realization of fractional Fermi seas
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Weijing Tang, Ming Yuan, Zongqi Xia, Tianxi Cai</span>
+    <span class="paper-authors">Yi Zeng, Alvise Bastianello, Sudipta Dhar, Zekui Wang, Xudong Yu, Milena Horvath, Grigori E. Astrakharchik, Yanliang Guo, Hanns-Christoph Nägerl, Manuele Landini</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">Latent space models are widely used for analyzing high-dimensional discrete data matrices, such as patient-feature matrices in electronic health records (EHRs), by capturing complex dependence structures through low-dimensional embeddings. However, estimation becomes challenging in the imbalanced regime, where one matrix dimension is much larger than the other. In EHR applications, cohort sizes are often limited by disease prevalence or data availability, whereas the feature space remains extremely large due to the breadth of medical coding system. Motivated by the increasing availability of external semantic embeddings, such as pre-trained embeddings of clinical concepts in EHRs, we propose a knowledge-embedded latent projection model that leverages semantic side information to regularize representation learning. Specifically, we model column embeddings as smooth functions of semantic embeddings via a mapping in a reproducing kernel Hilbert space. We develop a computationally efficient two-step estimation procedure that combines semantically guided subspace construction via kernel principal component analysis with scalable projected gradient descent. We establish estimation error bounds that characterize the trade-off between statistical error and approximation error induced by the kernel projection. Furthermore, we provide local convergence guarantees for our non-convex optimization procedure. Extensive simulation studies and a real-world EHR application demonstrate the effectiveness of the proposed method.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16709v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The Pauli exclusion principle is a cornerstone of quantum physics: it governs the structure of matter. Extensions of this principle, such as Haldane&#x27;s generalized exclusion statistics, predict the existence of exotic quantum states characterized by fractional Fermi seas (FFS), i.e. momentum distributions with uniform but fractional occupancies. Here, we report the experimental realization of fractional Fermi seas in an excited one-dimensional Bose gas prepared through ramping cycles in the interaction strength. The resulting excited yet stable Bose-gas states exhibit Friedel oscillations, smoking-gun signatures of the underlying FFS. The stabilization of these states offers an opportunity to deepen our understanding of quantum thermodynamics in the presence of exotic statistics and paves the way for applications in quantum information and sensing.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17657v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16705v1" target="_blank" rel="noopener noreferrer">
-      Learning Humanoid End-Effector Control for Open-Vocabulary Visual Loco-Manipulation
+    <a href="https://arxiv.org/pdf/2602.17654v1" target="_blank" rel="noopener noreferrer">
+      Mine and Refine: Optimizing Graded Relevance in E-commerce Search Retrieval
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Runpei Dong, Ziyan Li, Xialin He, Saurabh Gupta</span>
+    <span class="paper-authors">Jiaqi Xi, Raghav Saboo, Luming Chen, Martin Wang, Sudeep Das</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">Visual loco-manipulation of arbitrary objects in the wild with humanoid robots requires accurate end-effector (EE) control and a generalizable understanding of the scene via visual inputs (e.g., RGB-D images). Existing approaches are based on real-world imitation learning and exhibit limited generalization due to the difficulty in collecting large-scale training datasets. This paper presents a new paradigm, HERO, for object loco-manipulation with humanoid robots that combines the strong generalization and open-vocabulary understanding of large vision models with strong control performance from simulated training. We achieve this by designing an accurate residual-aware EE tracking policy. This EE tracking policy combines classical robotics with machine learning. It uses a) inverse kinematics to convert residual end-effector targets into reference trajectories, b) a learned neural forward model for accurate forward kinematics, c) goal adjustment, and d) replanning. Together, these innovations help us cut down the end-effector tracking error by 3.2x. We use this accurate end-effector tracker to build a modular system for loco-manipulation, where we use open-vocabulary large vision models for strong visual generalization. Our system is able to operate in diverse real-world environments, from offices to coffee shops, where the robot is able to reliably manipulate various everyday objects (e.g., mugs, apples, toys) on surfaces ranging from 43cm to 92cm in height. Systematic modular and end-to-end tests in simulation and the real world demonstrate the effectiveness of our proposed design. We believe the advances in this paper can open up new ways of training humanoid robots to interact with daily objects.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16705v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We propose a two-stage &quot;Mine and Refine&quot; contrastive training framework for semantic text embeddings to enhance multi-category e-commerce search retrieval. Large scale e-commerce search demands embeddings that generalize to long tail, noisy queries while adhering to scalable supervision compatible with product and policy constraints. A practical challenge is that relevance is often graded: users accept substitutes or complements beyond exact matches, and production systems benefit from clear separation of similarity scores across these relevance strata for stable hybrid blending and thresholding. To obtain scalable policy consistent supervision, we fine-tune a lightweight LLM on human annotations under a three-level relevance guideline and further reduce residual noise via engagement driven auditing. In Stage 1, we train a multilingual Siamese two-tower retriever with a label aware supervised contrastive objective that shapes a robust global semantic space. In Stage 2, we mine hard samples via ANN and re-annotate them with the policy aligned LLM, and introduce a multi-class extension of circle loss that explicitly sharpens similarity boundaries between relevance levels, to further refine and enrich the embedding space. Robustness is additionally improved through additive spelling augmentation and synthetic query generation. Extensive offline evaluations and production A/B tests show that our framework improves retrieval relevance and delivers statistically significant gains in engagement and business impact.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17654v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16698v1" target="_blank" rel="noopener noreferrer">
-      Causality is Key for Interpretability Claims to Generalise
+    <a href="https://arxiv.org/pdf/2602.17649v1" target="_blank" rel="noopener noreferrer">
+      The Effectiveness of a Virtual Reality-Based Training Program for Improving Body Awareness in Children with Attention Deficit and Hyperactivity Disorder
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Shruti Joshi, Aaron Mueller, David Klindt, Wieland Brendel, Patrik Reizinger, Dhanya Sridhar</span>
+    <span class="paper-authors">Aya Abdelnaem El-Basha, Ebtsam ELSayed Mahmoud ELSayes, Ahmad Al-Kabbany</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">Interpretability research on large language models (LLMs) has yielded important insights into model behaviour, yet recurring pitfalls persist: findings that do not generalise, and causal interpretations that outrun the evidence. Our position is that causal inference specifies what constitutes a valid mapping from model activations to invariant high-level structures, the data or assumptions needed to achieve it, and the inferences it can support. Specifically, Pearl&#x27;s causal hierarchy clarifies what an interpretability study can justify. Observations establish associations between model behaviour and internal components. Interventions (e.g., ablations or activation patching) support claims how these edits affect a behavioural metric (\eg, average change in token probabilities) over a set of prompts. However, counterfactual claims -- i.e., asking what the model output would have been for the same prompt under an unobserved intervention -- remain largely unverifiable without controlled supervision. We show how causal representation learning (CRL) operationalises this hierarchy, specifying which variables are recoverable from activations and under what assumptions. Together, these motivate a diagnostic framework that helps practitioners select methods and evaluations matching claims to evidence such that findings generalise.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16698v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">This study investigates the effectiveness of a Virtual Reality (VR)-based training program in improving body awareness among children with Attention Deficit Hyperactivity Disorder (ADHD). Utilizing a quasi-experimental design, the research sample consisted of 10 children aged 4 to 7 years, with IQ scores ranging from 90 to 110. Participants were divided into an experimental group and a control group, with the experimental group receiving a structured VR intervention over three months, totaling 36 sessions. Assessment tools included the Stanford-Binet Intelligence Scale (5th Edition), the Conners Test for ADHD, and a researcher-prepared Body Awareness Scale. The results indicated statistically significant differences between pre-test and post-test scores for the experimental group, demonstrating the program&#x27;s efficacy in enhancing spatial awareness, body part identification, and motor expressions. Furthermore, follow-up assessments conducted one month after the intervention revealed no significant differences from the post-test results, confirming the sustainability and continuity of the program&#x27;s effects over time. The findings suggest that immersive VR environments provide a safe, engaging, and effective therapeutic medium for addressing psychomotor deficits in early childhood ADHD.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17649v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16697v1" target="_blank" rel="noopener noreferrer">
-      Protecting the Undeleted in Machine Unlearning
+    <a href="https://arxiv.org/pdf/2602.17641v1" target="_blank" rel="noopener noreferrer">
+      FAMOSE: A ReAct Approach to Automated Feature Discovery
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Aloni Cohen, Refael Kohen, Kobbi Nissim, Uri Stemmer</span>
+    <span class="paper-authors">Keith Burghardt, Jienan Liu, Sadman Sakib, Yuning Hao, Bo Li</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">Machine unlearning aims to remove specific data points from a trained model, often striving to emulate &quot;perfect retraining&quot;, i.e., producing the model that would have been obtained had the deleted data never been included. We demonstrate that this approach, and security definitions that enable it, carry significant privacy risks for the remaining (undeleted) data points. We present a reconstruction attack showing that for certain tasks, which can be computed securely without deletions, a mechanism adhering to perfect retraining allows an adversary controlling merely $ω(1)$ data points to reconstruct almost the entire dataset merely by issuing deletion requests. We survey existing definitions for machine unlearning, showing they are either susceptible to such attacks or too restrictive to support basic functionalities like exact summation. To address this problem, we propose a new security definition that specifically safeguards undeleted data against leakage caused by the deletion of other points. We show that our definition permits several essential functionalities, such as bulletin boards, summations, and statistical learning.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16697v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Feature engineering remains a critical yet challenging bottleneck in machine learning, particularly for tabular data, as identifying optimal features from an exponentially large feature space traditionally demands substantial domain expertise. To address this challenge, we introduce FAMOSE (Feature AugMentation and Optimal Selection agEnt), a novel framework that leverages the ReAct paradigm to autonomously explore, generate, and refine features while integrating feature selection and evaluation tools within an agent architecture. To our knowledge, FAMOSE represents the first application of an agentic ReAct framework to automated feature engineering, especially for both regression and classification tasks. Extensive experiments demonstrate that FAMOSE is at or near the state-of-the-art on classification tasks (especially tasks with more than 10K instances, where ROC-AUC increases 0.23% on average), and achieves the state-of-the-art for regression tasks by reducing RMSE by 2.0% on average, while remaining more robust to errors than other algorithms. We hypothesize that FAMOSE&#x27;s strong performance is because ReAct allows the LLM context window to record (via iterative feature discovery and evaluation steps) what features did or did not work. This is similar to a few-shot prompt and guides the LLM to invent better, more innovative features. Our work offers evidence that AI agents are remarkably effective in solving problems that require highly inventive solutions, such as feature engineering.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17641v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16696v1" target="_blank" rel="noopener noreferrer">
-      Parameter-free representations outperform single-cell foundation models on downstream benchmarks
+    <a href="https://arxiv.org/pdf/2602.17621v1" target="_blank" rel="noopener noreferrer">
+      Method to Compute Pointing Displacement, Smear, and Jitter Covariances for Optical Payloads
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Huan Souza, Pankaj Mehta</span>
+    <span class="paper-authors">Peter Seiler, Mark E. Pittelkau, Felix Biertümpfel</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">Single-cell RNA sequencing (scRNA-seq) data exhibit strong and reproducible statistical structure. This has motivated the development of large-scale foundation models, such as TranscriptFormer, that use transformer-based architectures to learn a generative model for gene expression by embedding genes into a latent vector space. These embeddings have been used to obtain state-of-the-art (SOTA) performance on downstream tasks such as cell-type classification, disease-state prediction, and cross-species learning. Here, we ask whether similar performance can be achieved without utilizing computationally intensive deep learning-based representations. Using simple, interpretable pipelines that rely on careful normalization and linear methods, we obtain SOTA or near SOTA performance across multiple benchmarks commonly used to evaluate single-cell foundation models, including outperforming foundation models on out-of-distribution tasks involving novel cell types and organisms absent from the training data. Our findings highlight the need for rigorous benchmarking and suggest that the biology of cell identity can be captured by simple linear representations of single cell gene expression data.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16696v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">This paper presents a method to assess the pointing and image motion performance of optical payloads in the presence of image displacement (shift), smear, and jitter. The method assumes the motion is a stationary random process over an image exposure interval. Displacement, smear, and jitter covariances are computed from the solution to a Lyapunov differential equation. These covariances parameterize statistical image motion modulation transfer functions (MTFs), and they can be used to verify pointing and image motion MTF requirements. The method in the present paper extends a previous method to include smear, as well as displacement, and hence jitter. The approach in the present paper also leads, as a special case, to a more efficient method to compute the displacement covariance than the previous method. Numerical examples illustrate the proposed method.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17621v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16690v1" target="_blank" rel="noopener noreferrer">
-      Synthetic-Powered Multiple Testing with FDR Control
+    <a href="https://arxiv.org/pdf/2602.17619v1" target="_blank" rel="noopener noreferrer">
+      EDRP: Enhanced Dynamic Relay Point Protocol for Data Dissemination in Multi-hop Wireless IoT Networks
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yonghoon Lee, Meshi Bashari, Edgar Dobriban, Yaniv Romano</span>
+    <span class="paper-authors">Jothi Prasanna Shanmuga Sundaram, Magzhan Gabidolla, Luis Fujarte, Shawn Duong, Jianlin Guo, Toshiaki Koike-Akino, Pu, Wang, Kieran Parsons, Philip V. Orlik, Takenori Sumi, Yukimasa Nagai, Miguel A. Carreira-Perpinan, Alberto E. Cerpa</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">Multiple hypothesis testing with false discovery rate (FDR) control is a fundamental problem in statistical inference, with broad applications in genomics, drug screening, and outlier detection. In many such settings, researchers may have access not only to real experimental observations but also to auxiliary or synthetic data -- from past, related experiments or generated by generative models -- that can provide additional evidence about the hypotheses of interest. We introduce SynthBH, a synthetic-powered multiple testing procedure that safely leverages such synthetic data. We prove that SynthBH guarantees finite-sample, distribution-free FDR control under a mild PRDS-type positive dependence condition, without requiring the pooled-data p-values to be valid under the null. The proposed method adapts to the (unknown) quality of the synthetic data: it enhances the sample efficiency and may boost the power when synthetic data are of high quality, while controlling the FDR at a user-specified level regardless of their quality. We demonstrate the empirical performance of SynthBH on tabular outlier detection benchmarks and on genomic analyses of drug-cancer sensitivity associations, and further study its properties through controlled experiments on simulated data.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16690v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Emerging IoT applications are transitioning from battery-powered to grid-powered nodes. DRP, a contention-based data dissemination protocol, was developed for these applications. Traditional contention-based protocols resolve collisions through control packet exchanges, significantly reducing goodput. DRP mitigates this issue by employing a distributed delay timer mechanism that assigns transmission-start delays based on the average link quality between a sender and its children, prioritizing highly connected nodes for early transmission. However, our in-field experiments reveal that DRP is unable to accommodate real-world link quality fluctuations, leading to overlapping transmissions from multiple senders. This overlap triggers CSMA&#x27;s random back-off delays, ultimately degrading the goodput performance. To address these shortcomings, we first conduct a theoretical analysis that characterizes the design requirements induced by real-world link quality fluctuations and DRP&#x27;s passive acknowledgments. Guided by this analysis, we design EDRP, which integrates two novel components: (i) Link-Quality Aware CSMA (LQ-CSMA) and (ii) a Machine Learning-based Block Size Selection (ML-BSS) algorithm for rateless codes. LQ-CSMA dynamically restricts the back-off delay range based on real-time link quality estimates, ensuring that nodes with stronger connectivity experience shorter delays. ML-BSS algorithm predicts future link quality conditions and optimally adjusts the block size for rateless coding, reducing overhead and enhancing goodput. In-field evaluations of EDRP demonstrate an average goodput improvement of 39.43\% than the competing protocols.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17619v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16689v1" target="_blank" rel="noopener noreferrer">
-      Are Object-Centric Representations Better At Compositional Generalization?
+    <a href="https://arxiv.org/pdf/2602.17618v1" target="_blank" rel="noopener noreferrer">
+      3D Gravity and Chaos in CFTs with Fermions
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ferdinand Kapl, Amir Mohammad Karimi Mamaghan, Maximilian Seitzer, Karl Henrik Johansson, Carsten Marr, Stefan Bauer, Andrea Dittadi</span>
+    <span class="paper-authors">Jan Boruch, Elisa Tabor, Gustavo J. Turiaci</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">Compositional generalization, the ability to reason about novel combinations of familiar concepts, is fundamental to human cognition and a critical challenge for machine learning. Object-centric (OC) representations, which encode a scene as a set of objects, are often argued to support such generalization, but systematic evidence in visually rich settings is limited. We introduce a Visual Question Answering benchmark across three controlled visual worlds (CLEVRTex, Super-CLEVR, and MOVi-C) to measure how well vision encoders, with and without object-centric biases, generalize to unseen combinations of object properties. To ensure a fair and comprehensive comparison, we carefully account for training data diversity, sample size, representation size, downstream model capacity, and compute. We use DINOv2 and SigLIP2, two widely used vision encoders, as the foundation models and their OC counterparts. Our key findings reveal that (1) OC approaches are superior in harder compositional generalization settings; (2) original dense representations surpass OC only on easier settings and typically require substantially more downstream compute; and (3) OC models are more sample efficient, achieving stronger generalization with fewer images, whereas dense encoders catch up or surpass them only with sufficient data and diversity. Overall, object-centric representations offer stronger compositional generalization when any one of dataset size, training data diversity, or downstream compute is constrained.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16689v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Pure 3d gravity in AdS is believed to admit a holographic description in terms of 2d CFT. We introduce a theory of fermionic 3d gravity where we sum over geometries equipped with spin structure, and propose it is holographically described by fermionic 2d CFT data. We evaluate the leading contributions to the gravity path integral with one and two torus boundaries, extracting both the spectrum and its spectral statistics from the torus wormhole. Strikingly, the theory has fermionic black hole microstates, even in the absence of bulk fermionic matter. We then incorporate subtle bulk topological field theories, classified by appropriate cobordism groups, and evaluate the one and two-boundary torus partition functions. The spectral statistics we derive from gravity are shown, in all cases, to be consistent with the pattern of anomalies expected from classifications of fermionic 2d CFT. We also define a version of RMT$_2$, a random-matrix framework compatible with the symmetries of 2d CFTs, which naturally accommodates fermionic spectra and reproduces our gravitational results across all cases we analyze.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17618v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16665v1" target="_blank" rel="noopener noreferrer">
-      Optimizing p-spin models through hypergraph neural networks and deep reinforcement learning
+    <a href="https://arxiv.org/pdf/2602.17614v1" target="_blank" rel="noopener noreferrer">
+      Guarding the Middle: Protecting Intermediate Representations in Federated Split Learning
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Li Zeng, Mutian Shen, Tianle Pu, Zohar Nussinov, Qing Feng, Chao Chen, Zhong Liu, Changjun Fan</span>
+    <span class="paper-authors">Obaidullah Zaland, Sajib Mistry, Monowar Bhuyan</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">p-spin glasses, characterized by frustrated many-body interactions beyond the conventional pairwise case (p&gt;2), are prototypical disordered systems whose ground-state search is NP-hard and computationally prohibitive for large instances. Solving this problem is not only fundamental for understanding high-order disorder, structural glasses, and topological phases, but also central to a wide spectrum of hard combinatorial optimization tasks. Despite decades of progress, there still lacks an efficient and scalable solver for generic large-scale p-spin models. Here we introduce PLANCK, a physics-inspired deep reinforcement learning framework built on hypergraph neural networks. PLANCK directly optimizes arbitrary high-order interactions, and systematically exploits gauge symmetry throughout both training and inference. Trained exclusively on small synthetic instances, PLANCK exhibits strong zero-shot generalization to systems orders of magnitude larger, and consistently outperforms state-of-the-art thermal annealing methods across all tested structural topologies and coupling distributions. Moreover, without any modification, PLANCK achieves near-optimal solutions for a broad class of NP-hard combinatorial problems, including random k-XORSAT, hypergraph max-cut, and conventional max-cut. The presented framework provides a physics-inspired algorithmic paradigm that bridges statistical mechanics and reinforcement learning. The symmetry-aware design not only advances the tractable frontiers of high-order disordered systems, but also opens a promising avenue for machine-learning-based solvers to tackle previously intractable combinatorial optimization challenges.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16665v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Big data scenarios, where massive, heterogeneous datasets are distributed across clients, demand scalable, privacy-preserving learning methods. Federated learning (FL) enables decentralized training of machine learning (ML) models across clients without data centralization. Decentralized training, however, introduces a computational burden on client devices. U-shaped federated split learning (UFSL) offloads a fraction of the client computation to the server while keeping both data and labels on the clients&#x27; side. However, the intermediate representations (i.e., smashed data) shared by clients with the server are prone to exposing clients&#x27; private data. To reduce exposure of client data through intermediate data representations, this work proposes k-anonymous differentially private UFSL (KD-UFSL), which leverages privacy-enhancing techniques such as microaggregation and differential privacy to minimize data leakage from the smashed data transferred to the server. We first demonstrate that an adversary can access private client data from intermediate representations via a data-reconstruction attack, and then present a privacy-enhancing solution, KD-UFSL, to mitigate this risk. Our experiments indicate that, alongside increasing the mean squared error between the actual and reconstructed images by up to 50% in some cases, KD-UFSL also decreases the structural similarity between them by up to 40% on four benchmarking datasets. More importantly, KD-UFSL improves privacy while preserving the utility of the global model. This highlights its suitability for large-scale big data applications where privacy and utility must be balanced.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17614v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16659v1" target="_blank" rel="noopener noreferrer">
-      Updated Constraints on Infrared Cutoff Models and Implications for Large-Scale CMB Anomalies
+    <a href="https://arxiv.org/pdf/2602.17608v1" target="_blank" rel="noopener noreferrer">
+      Towards Anytime-Valid Statistical Watermarking
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ujjwal Upadhyay, Yashi Tiwari, Tarun Souradeep</span>
+    <span class="paper-authors">Baihe Huang, Eric Xu, Kannan Ramchandran, Jiantao Jiao, Michael I. Jordan</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">The nearly scale-invariant primordial power spectrum provides the standard initial conditions for cosmological perturbations. However, the largest scales remain only weakly constrained by CMB observations, leaving room for deviations such as an infrared (IR) cut-off. This possibility is further motivated by the persistence of large-scale CMB anomalies, most notably the low quadrupole power. In this work, we revisit several broad classes of phenomenologically motivated IR cut-off scenarios using parametrised functional forms of the primordial power spectrum. We confront these models with the latest CMB, BAO, and supernova data and derive updated constraints on the cut-off scale and associated features. Our results remain consistent with earlier studies, showing that although such models suppress power at low multipoles, the improvement in fit is marginal and does not overcome the associated parameter penalties. We therefore find no statistically significant evidence favouring IR cut-off models over the standard power-law spectrum with current data. We further explore the interplay between IR cut-off features and a possible increase in the reionisation optical depth, motivated by the recent CMB-BAO tension highlighted by DESI DR2 within the $Λ$CDM framework. We show that the additional freedom introduced by large-scale suppression is generally insufficient to support a substantial increase in optical depth, owing to the weak statistical preference for suppressed large-scale temperature power. Finally, we examine the implications of IR cut-off models for large-scale CMB anomalies by analysing the corresponding anomaly statistics within a Bayesian framework.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16659v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The proliferation of Large Language Models (LLMs) necessitates efficient mechanisms to distinguish machine-generated content from human text. While statistical watermarking has emerged as a promising solution, existing methods suffer from two critical limitations: the lack of a principled approach for selecting sampling distributions and the reliance on fixed-horizon hypothesis testing, which precludes valid early stopping. In this paper, we bridge this gap by developing the first e-value-based watermarking framework, Anchored E-Watermarking, that unifies optimal sampling with anytime-valid inference. Unlike traditional approaches where optional stopping invalidates Type-I error guarantees, our framework enables valid, anytime-inference by constructing a test supermartingale for the detection process. By leveraging an anchor distribution to approximate the target model, we characterize the optimal e-value with respect to the worst-case log-growth rate and derive the optimal expected stopping time. Our theoretical claims are substantiated by simulations and evaluations on established benchmarks, showing that our framework can significantly enhance sample efficiency, reducing the average token budget required for detection by 13-15% relative to state-of-the-art baselines.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17608v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16651v1" target="_blank" rel="noopener noreferrer">
-      Interpreting the HI 21-cm cosmology maps through Largest Cluster Statistics III: Impact of the lightcone effect
+    <a href="https://arxiv.org/pdf/2602.17606v1" target="_blank" rel="noopener noreferrer">
+      Characterization of compressible fluctuations in solar wind streams dominated by balanced and imbalanced turbulence: Parker Solar Probe, Solar Orbiter and Wind observations
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Hemanth Potluri, Manas Mohit Dosibhatla, Leon Noble, Chandra Shekhar Murmu, Suman Majumdar, Samit Kumar Pal, Saswata Dasgupta, Satadru Bag, Abhirup Datta</span>
+    <span class="paper-authors">C. A. Gonzalez, C. Gonzalez, A. Tenerani</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">The redshifted 21-cm signal emitted by neutral Hydrogen (HI) is a promising probe to understand the evolution of the topology of ionized regions during the Epoch of Reionization (EoR). The topology of ionized regions allows us to infer the nature and properties of ionizing sources, i.e., early galaxies and AGNs. Traditional Fourier statistics, such as the power spectrum, help us quantify the strength of fluctuations in this field at different length scales but do not preserve its phase information. Analyzing the 21-cm brightness temperature field in the image domain retains its non-Gaussian characteristics and morphological information. One such approach is to track the coalescence of multiple ionized regions to form one contiguous ionized region spanning the universe. This is referred to as percolation, and its onset is quantified by a sharp rise in the value of the Largest Cluster Statistic (LCS) approaching unity. In this work, we carry out a percolation analysis of 21-cm brightness temperature fields by studying the redshift evolution of the LCS along a lightcone to distinguish between several simulated reionization scenarios. We have extended previous results on reionization model comparison from the analysis of coeval 21-cm maps to understand how the lightcone effect biases the observed percolation behavior and affects the distinguishability of the source models. We estimate the LCS of subvolumes of different sizes in the 21-cm lightcone maps and study their redshift evolution for different reionization scenarios using a moving volume approach. We find that the percolation transition inferred from a lightcone approaches that from the coeval box as we increase the bandwidth of the moving volume in all but one reionization scenario.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16651v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Characterizing compressible fluctuations in the solar wind is essential for understanding their role in solar wind acceleration and heating, yet their origin and evolution across different turbulence regimes remain poorly understood. In this study, we carry out a statistical analysis of the properties of compressible fluctuations in solar wind dominated by balanced and imbalanced turbulence. Using in-situ measurements from Wind, Solar Orbiter, and Parker Solar Probe, we investigate the scale dependence of density and magnetic field fluctuations and their correlations with plasma beta and radial distance. Our results indicate that solar wind compressibility is likely affected by both expansion effects and compressible dynamics governed by local plasma conditions. The non-Alfvenic wind is dominated by anti-correlated fluctuations, whereas the Alfvenic wind contains a mixture of correlated and anti-correlated fluctuations, though the latter remain prevalent. While the anti-correlated component is consistent with MHD slow magnetosonic modes, the correlated (fast mode-like) component is not reproduced by predictions from either linear MHD theory or nonlinear models of forced compressible fluctuations. Nevertheless, the dominant slow mode component explains the observed dependence on beta and the enhanced density fluctuations measured by Parker Solar Probe. This further suggests that slow mode waves contribute significantly to the compressible energy budget near the Sun and may play an important role in solar wind heating and acceleration close to the Sun.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17606v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16643v1" target="_blank" rel="noopener noreferrer">
-      Factorization Machine with Quadratic-Optimization Annealing for RNA Inverse Folding and Evaluation of Binary-Integer Encoding and Nucleotide Assignment
+    <a href="https://arxiv.org/pdf/2602.17598v1" target="_blank" rel="noopener noreferrer">
+      The Cascade Equivalence Hypothesis: When Do Speech LLMs Behave Like ASR$\rightarrow$LLM Pipelines?
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Shuta Kikuchi, Shu Tanaka</span>
+    <span class="paper-authors">Jayadev Billa</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">The RNA inverse folding problem aims to identify nucleotide sequences that preferentially adopt a given target secondary structure. While various heuristic and machine learning-based approaches have been proposed, many require a large number of sequence evaluations, which limits their applicability when experimental validation is costly. We propose a method to solve the problem using a factorization machine with quadratic-optimization annealing (FMQA). FMQA is a discrete black-box optimization method reported to obtain high-quality solutions with a limited number of evaluations. Applying FMQA to the problem requires converting nucleotides into binary variables. However, the influence of integer-to-nucleotide assignments and binary-integer encoding on the performance of FMQA has not been thoroughly investigated, even though such choices determine the structure of the surrogate model and the search landscape, and thus can directly affect solution quality. Therefore, this study aims both to establish a novel FMQA framework for RNA inverse folding and to analyze the effects of these assignments and encoding methods. We evaluated all 24 possible assignments of the four nucleotides to the ordered integers (0-3), in combination with four binary-integer encoding methods. Our results demonstrated that one-hot and domain-wall encodings outperform binary and unary encodings in terms of the normalized ensemble defect value. In domain-wall encoding, nucleotides assigned to the boundary integers (0 and 3) appeared with higher frequency. In the RNA inverse folding problem, assigning guanine and cytosine to these boundary integers promoted their enrichment in stem regions, which led to more thermodynamically stable secondary structures than those obtained with one-hot encoding.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16643v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Current speech LLMs largely perform implicit ASR: on tasks solvable from a transcript, they are behaviorally and mechanistically equivalent to simple Whisper$\to$LLM cascades. We show this through matched-backbone testing across four speech LLMs and six tasks, controlling for the LLM backbone for the first time. Ultravox is statistically indistinguishable from its matched cascade ($κ{=}0.93$); logit lens reveals literal text emerging in hidden states; LEACE concept erasure confirms text representations are causally necessary in both architectures tested, collapsing accuracy to near-zero. Qwen2-Audio genuinely diverges, revealing cascade equivalence is architecture-dependent, not universal. For most deployed use cases, current speech LLMs are expensive cascades, and under noise, they are worse ones, with clean-condition advantages reversing by up to 7.6% at 0 dB.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17598v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16634v1" target="_blank" rel="noopener noreferrer">
-      Enhanced Diffusion Sampling: Efficient Rare Event Sampling and Free Energy Calculation with Diffusion Models
+    <a href="https://arxiv.org/pdf/2602.17594v1" target="_blank" rel="noopener noreferrer">
+      AI Gamestore: Scalable, Open-Ended Evaluation of Machine General Intelligence with Human Games
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yu Xie, Ludwig Winkler, Lixin Sun, Sarah Lewis, Adam E. Foster, José Jiménez Luna, Tim Hempel, Michael Gastegger, Yaoyi Chen, Iryna Zaporozhets, Cecilia Clementi, Christopher M. Bishop, Frank Noé</span>
+    <span class="paper-authors">Lance Ying, Ryan Truong, Prafull Sharma, Kaiya Ivy Zhao, Nathan Cloos, Kelsey R. Allen, Thomas L. Griffiths, Katherine M. Collins, José Hernández-Orallo, Phillip Isola, Samuel J. Gershman, Joshua B. Tenenbaum</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">The rare-event sampling problem has long been the central limiting factor in molecular dynamics (MD), especially in biomolecular simulation. Recently, diffusion models such as BioEmu have emerged as powerful equilibrium samplers that generate independent samples from complex molecular distributions, eliminating the cost of sampling rare transition events. However, a sampling problem remains when computing observables that rely on states which are rare in equilibrium, for example folding free energies. Here, we introduce enhanced diffusion sampling, enabling efficient exploration of rare-event regions while preserving unbiased thermodynamic estimators. The key idea is to perform quantitatively accurate steering protocols to generate biased ensembles and subsequently recover equilibrium statistics via exact reweighting. We instantiate our framework in three algorithms: UmbrellaDiff (umbrella sampling with diffusion models), $Δ$G-Diff (free-energy differences via tilted ensembles), and MetaDiff (a batchwise analogue for metadynamics). Across toy systems, protein folding landscapes and folding free energies, our methods achieve fast, accurate, and scalable estimation of equilibrium properties within GPU-minutes to hours per system -- closing the rare-event sampling gap that remained after the advent of diffusion-model equilibrium samplers.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16634v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Rigorously evaluating machine intelligence against the broad spectrum of human general intelligence has become increasingly important and challenging in this era of rapid technological advance. Conventional AI benchmarks typically assess only narrow capabilities in a limited range of human activity. Most are also static, quickly saturating as developers explicitly or implicitly optimize for them. We propose that a more promising way to evaluate human-like general intelligence in AI systems is through a particularly strong form of general game playing: studying how and how well they play and learn to play \textbf{all conceivable human games}, in comparison to human players with the same level of experience, time, or other resources. We define a &quot;human game&quot; to be a game designed by humans for humans, and argue for the evaluative suitability of this space of all such games people can imagine and enjoy -- the &quot;Multiverse of Human Games&quot;. Taking a first step towards this vision, we introduce the AI GameStore, a scalable and open-ended platform that uses LLMs with humans-in-the-loop to synthesize new representative human games, by automatically sourcing and adapting standardized and containerized variants of game environments from popular human digital gaming platforms. As a proof of concept, we generated 100 such games based on the top charts of Apple App Store and Steam, and evaluated seven frontier vision-language models (VLMs) on short episodes of play. The best models achieved less than 10\% of the human average score on the majority of the games, and especially struggled with games that challenge world-model learning, memory and planning. We conclude with a set of next steps for building out the AI GameStore as a practical way to measure and drive progress toward human-like general intelligence in machines.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17594v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16632v1" target="_blank" rel="noopener noreferrer">
-      Understanding the influence of yttrium on the dominant twinning mode and local mechanical field evolution in extruded Mg-Y alloys
+    <a href="https://arxiv.org/pdf/2602.17592v1" target="_blank" rel="noopener noreferrer">
+      BMW: Bayesian Model-Assisted Adaptive Phase II Clinical Trial Design for Win Ratio Statistic
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Chaitali Patil, Qianying Shi, Abhishek Kumar, Veera Sundararaghavan, John Allison</span>
+    <span class="paper-authors">Di Zhu, Yong Zang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">Twinning is a primary deformation mechanism in Mg alloys. This study focuses on tension twins during uniaxial compression of Mg-Y alloys, with three key aspects: the orientation specificity of twin grains, the relative evolution of CRSS with increasing Y content, and the local stress and strain evolution at twin sites. Experimental characterization and crystal plasticity modeling were performed. In Mg-7wt.%Y, TT2-{112-1} tension twins were observed in addition to the common TT1-{101-2} twins. Increasing Y suppressed TT1 formation while promoting TT2 activity. A previously unreported group of crystallographic orientations with a higher global Schmid factor for &lt;c+a&gt; slip was identified, which exhibited TT1 twinning with increasing compression strain. To elucidate Y effects on twin activity and local mechanical fields, both TT1 and TT2 tension twin modes were incorporated into PRISMS-Plasticity, an open-source, finite element-based crystal plasticity solver. Four binary Mg-Y alloys were modeled under compression, and statistical analysis was conducted to correlate initial orientations, stress-strain distributions, and twin activities as functions of Y concentration. The plasticity analysis revealed that increasing Y decreases the CRSS ratio of prismatic and pyramidal slip relative to TT1 twinning, while the slip-to-twin CRSS ratio for TT2 increases, thereby serving as a potential indicator of differential twin activity with Y addition in Mg alloys. Additionally, despite their small volume fraction, TT2 twin sites were predicted higher local strain accumulation locally, relative to the representative volume element and TT1 twins, suggesting their potential influence on localized phenomena such as recrystallization or twin nucleation. These findings provide insight into local mechanical behavior in Mg alloys and support alloy design for advanced engineering applications.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16632v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The win ratio (WR) statistic is increasingly used to evaluate treatment effects based on prioritized composite endpoints, yet existing Bayesian adaptive designs are not directly applicable because the WR is a summary statistic derived from pairwise comparisons and does not correspond to a unique data-generating mechanism. We propose a Bayesian model-assisted adaptive design for randomized phase II clinical trials based on the WR statistic, referred to as the BMW design. The proposed design uses the joint asymptotic distribution of WR test statistics across interim and final analyses to compute posterior probabilities without specifying the underlying outcome distribution. The BMW design allows flexible interim monitoring with early stopping for futility or superiority and is extended to jointly evaluate efficacy and toxicity using a graphical testing procedure that controls the family-wise error rate (FWER). Simulation studies demonstrate that the BMW design maintains valid type I error and FWER control, achieves power comparable to conventional methods, and substantially reduces expected sample size. An R Shiny application is provided to facilitate practical implementation.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17592v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16628v1" target="_blank" rel="noopener noreferrer">
-      Stoichiometry Dependent Properties of Cerium Hydride: An Active Learning Developed Interatomic Potential Study
+    <a href="https://arxiv.org/pdf/2602.17586v1" target="_blank" rel="noopener noreferrer">
+      Conditional Flow Matching for Continuous Anomaly Detection in Autonomous Driving on a Manifold-Aware Spectral Space
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Brenden W. Hamilton, Travis E. Jones, Timothy C. Germann, Benjamin T. Nebgen</span>
+    <span class="paper-authors">Antonio Guillen-Perez</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">Cerium hydride has a variety of interesting properties, including a known lattice contraction and densification with increasing hydrogen content. However, precise stoichiometric control is not experimentally straightforward and {\it ab initio} approaches are not computationally feasible for many properties such as melting and low temperature diffusion. Therefore, we develop a machine-learned interatomic potential for cerium hydride that is valid for H to Ce ratios from 2.0 to 3.0. A query-by-committee active learning approach is used to develop the training set. Leveraging classical molecular dynamics simulations, we assess a range of properties and provide fundamental mechanisms for the trends with stoichiometry. A majority of the properties follow the trend of lattice contraction, being governed by the stronger lattice binding induced by adding octahedral atoms.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16628v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Safety validation for Level 4 autonomous vehicles (AVs) is currently bottlenecked by the inability to scale the detection of rare, high-risk long-tail scenarios using traditional rule-based heuristics. We present Deep-Flow, an unsupervised framework for safety-critical anomaly detection that utilizes Optimal Transport Conditional Flow Matching (OT-CFM) to characterize the continuous probability density of expert human driving behavior. Unlike standard generative approaches that operate in unstable, high-dimensional coordinate spaces, Deep-Flow constrains the generative process to a low-rank spectral manifold via a Principal Component Analysis (PCA) bottleneck. This ensures kinematic smoothness by design and enables the computation of the exact Jacobian trace for numerically stable, deterministic log-likelihood estimation. To resolve multi-modal ambiguity at complex junctions, we utilize an Early Fusion Transformer encoder with lane-aware goal conditioning, featuring a direct skip-connection to the flow head to maintain intent-integrity throughout the network. We introduce a kinematic complexity weighting scheme that prioritizes high-energy maneuvers (quantified via path tortuosity and jerk) during the simulation-free training process. Evaluated on the Waymo Open Motion Dataset (WOMD), our framework achieves an AUC-ROC of 0.766 against a heuristic golden set of safety-critical events. More significantly, our analysis reveals a fundamental distinction between kinematic danger and semantic non-compliance. Deep-Flow identifies a critical predictability gap by surfacing out-of-distribution behaviors, such as lane-boundary violations and non-normative junction maneuvers, that traditional safety filters overlook. This work provides a mathematically rigorous foundation for defining statistical safety gates, enabling objective, data-driven validation for the safe deployment of autonomous fleets.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17586v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16618v1" target="_blank" rel="noopener noreferrer">
-      Addressing Ill-conditioning in Density Functional Theory for Reliable Machine Learning
+    <a href="https://arxiv.org/pdf/2602.17577v1" target="_blank" rel="noopener noreferrer">
+      Simultaneous Blackwell Approachability and Applications to Multiclass Omniprediction
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">L. Arnstein, J. Wetherell, R. Lawrence, P. J. Hasnip, M. J. P. Hodgson</span>
+    <span class="paper-authors">Lunjia Hu, Kevin Tian, Chutong Yang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">In principle, machine learning (ML) can be used to obtain any electronic property of a many-body system from its electron density within density functional theory. However, some physical quantities are highly sensitive to small variations in the density. This &#x27;ill-conditioning&#x27; limits the accuracy with which these quantities can be learned as density functionals from a fixed amount of data. We identify sources of ill-conditioning present in density functionals that belong to two ubiquitous classes: 1) Physical quantities that are globally gauge-dependent, meaning they change value if a constant shift is applied to the external potential -- for example, the total energy; 2) Functionals of the N-electron density that have an implicit dependence on the (N+1)-electron density, such as the fundamental gap. We demonstrate that widely used ML models exhibit orders-of-magnitude greater error when applied to these ill-conditioned density functionals compared to other functionals that fall into neither class, even when the global gauge is fixed to prevent constant shifts. Owing to an absence of ill-conditioning in potential functionals, we find that providing the external potential as input to the ML model leads to significantly improved predictions of quantities in these two classes.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16618v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Omniprediction is a learning problem that requires suboptimality bounds for each of a family of losses $\mathcal{L}$ against a family of comparator predictors $\mathcal{C}$. We initiate the study of omniprediction in a multiclass setting, where the comparator family $\mathcal{C}$ may be infinite. Our main result is an extension of the recent binary omniprediction algorithm of [OKK25] to the multiclass setting, with sample complexity (in statistical settings) or regret horizon (in online settings) $\approx \varepsilon^{-(k+1)}$, for $\varepsilon$-omniprediction in a $k$-class prediction problem. En route to proving this result, we design a framework of potential broader interest for solving Blackwell approachability problems where multiple sets must simultaneously be approached via coupled actions.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17577v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16614v1" target="_blank" rel="noopener noreferrer">
-      Meteor statistics I: The distribution of instrumental magnitudes
+    <a href="https://arxiv.org/pdf/2602.17563v1" target="_blank" rel="noopener noreferrer">
+      Compact Representation of Particle-Collision Events for Physics-Informed Machine Learning
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Althea V. Moorhead, Peter G. Brown, Margaret D. Campbell-Brown, Michael J. Mazur, Denis Vida</span>
+    <span class="paper-authors">Wasikul Islam, Sergei Chekanov</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">The distribution of meteor magnitudes is known to follow an exponential distribution, where the base of this distribution is called the population index. The distribution of observed magnitudes preserves this behavior, but is truncated by the detection threshold. If both the population index and detection threshold can be determined, observed meteor rates can be converted to fluxes and extrapolated to any desired brightness or size. We argue that the distribution of observed or instrumental meteor magnitudes is best modeled as an exponentially modified Gaussian (exGaussian) distribution. This is for three reasons: first, an exGaussian distribution is the natural result of random variations in detection threshold and/or post-detection measurement errors in magnitude. Second, an exGaussian distribution provides a better fit to the magnitude distribution than all other competing distributions in the literature; we demonstrate this using both a set of faint optical meteor magnitudes and a set of radar meteor echo amplitudes. Finally, the population index, mean detection threshold, and random variation/error terms are easily extracted from the best-fit parameters of an exGaussian distribution.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16614v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We introduce a compact, physics-driven event representation, RMM-C46, designed to compress the high-dimensional rapidity mass matrix (RMM) into a low-dimensional, interpretable feature set suitable for physics-informed machine learning (ML) and quantum computing applications. The full RMM encodes detailed pairwise correlations among jets, b-jets, leptons, photons, and missing transverse energy but contains more than a thousand values per event, making it computationally heavy for large-scale training and incompatible with current low-qubit quantum devices. The proposed RMM-C46 input space for ML preserves the physical block structure of the RMM through aggregated invariant mass, rapidity difference, and transverse energy components, reducing the size of the original RMM by over an order of magnitude while maintaining interpretability. Applied to simulated proton-proton collisions at centre-of-mass energy of 13.6 TeV, these representations match or exceed the discriminative performance of the full RMM in both supervised and unsupervised ML tasks. Their compactness, stability, and physics transparency also make them naturally compatible with near-term quantum machine learning architectures. RMM-C46 provides a scalable, efficient, and quantum-ready alternative to the full RMM for next-generation collider physics analyses.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17563v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16612v1" target="_blank" rel="noopener noreferrer">
-      Causal and Compositional Abstraction
+    <a href="https://arxiv.org/pdf/2602.17555v1" target="_blank" rel="noopener noreferrer">
+      GraphThinker: Reinforcing Video Reasoning with Event Graph Thinking
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Robin Lorenz, Sean Tull</span>
+    <span class="paper-authors">Zixu Cheng, Da Li, Jian Hu, Ziquan Liu, Wei Li, Shaogang Gong</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">Abstracting from a low level to a more explanatory high level of description, and ideally while preserving causal structure, is fundamental to scientific practice, to causal inference problems, and to robust, efficient and interpretable AI. We present a general account of abstractions between low and high level models as natural transformations, focusing on the case of causal models. This provides a new formalisation of causal abstraction, unifying several notions in the literature, including constructive causal abstraction, Q-$τ$ consistency, abstractions based on interchange interventions, and `distributed&#x27; causal abstractions. Our approach is formalised in terms of category theory, and uses the general notion of a compositional model with a given set of queries and semantics in a monoidal, cd- or Markov category; causal models and their queries such as interventions being special cases. We identify two basic notions of abstraction: downward abstractions mapping queries from high to low level; and upward abstractions, mapping concrete queries such as Do-interventions from low to high. Although usually presented as the latter, we show how common causal abstractions may, more fundamentally, be understood in terms of the former. Our approach also leads us to consider a new stronger notion of `component-level&#x27; abstraction, applying to the individual components of a model. In particular, this yields a novel, strengthened form of constructive causal abstraction at the mechanism-level, for which we prove characterisation results. Finally, we show that abstraction can be generalised to further compositional models, including those with a quantum semantics implemented by quantum circuits, and we take first steps in exploring abstractions between quantum compositional circuit models and high-level classical causal models as a means to explainable quantum AI.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16612v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Video reasoning requires understanding the causal relationships between events in a video. However, such relationships are often implicit and costly to annotate manually. While existing multimodal large language models (MLLMs) often infer event relations through dense captions or video summaries for video reasoning, such modeling still lacks causal understanding. Without explicit causal structure modeling within and across video events, these models suffer from hallucinations during the video reasoning. In this work, we propose GraphThinker, a reinforcement finetuning-based method that constructs structural event-level scene graphs and enhances visual grounding to jointly reduce hallucinations in video reasoning. Specifically, we first employ an MLLM to construct an event-based video scene graph (EVSG) that explicitly models both intra- and inter-event relations, and incorporate these formed scene graphs into the MLLM as an intermediate thinking process. We also introduce a visual attention reward during reinforcement finetuning, which strengthens video grounding and further mitigates hallucinations. We evaluate GraphThinker on two datasets, RexTime and VidHalluc, where it shows superior ability to capture object and event relations with more precise event localization, reducing hallucinations in video reasoning compared to prior methods.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17555v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16601v1" target="_blank" rel="noopener noreferrer">
-      Error Propagation and Model Collapse in Diffusion Models: A Theoretical Study
+    <a href="https://arxiv.org/pdf/2602.17543v1" target="_blank" rel="noopener noreferrer">
+      genriesz: A Python Package for Automatic Debiased Machine Learning with Generalized Riesz Regression
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Nail B. Khelifa, Richard E. Turner, Ramji Venkataramanan</span>
+    <span class="paper-authors">Masahiro Kato</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">Machine learning models are increasingly trained or fine-tuned on synthetic data. Recursively training on such data has been observed to significantly degrade performance in a wide range of tasks, often characterized by a progressive drift away from the target distribution. In this work, we theoretically analyze this phenomenon in the setting of score-based diffusion models. For a realistic pipeline where each training round uses a combination of synthetic data and fresh samples from the target distribution, we obtain upper and lower bounds on the accumulated divergence between the generated and target distributions. This allows us to characterize different regimes of drift, depending on the score estimation error and the proportion of fresh data used in each generation. We also provide empirical results on synthetic data and images to illustrate the theory.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16601v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Efficient estimation of causal and structural parameters can be automated using the Riesz representation theorem and debiased machine learning (DML). We present genriesz, an open-source Python package that implements automatic DML and generalized Riesz regression, a unified framework for estimating Riesz representers by minimizing empirical Bregman divergences. This framework includes covariate balancing, nearest-neighbor matching, calibrated estimation, and density ratio estimation as special cases. A key design principle of the package is automatic regressor balancing (ARB): given a Bregman generator $g$ and a representer model class, genriesz} automatically constructs a compatible link function so that the generalized Riesz regression estimator satisfies balancing (moment-matching) optimality conditions in a user-chosen basis. The package provides a modulr interface for specifying (i) the target linear functional via a black-box evaluation oracle, (ii) the representer model via basis functions (polynomial, RKHS approximations, random forest leaf encodings, neural embeddings, and a nearest-neighbor catchment basis), and (iii) the Bregman generator, with optional user-supplied derivatives. It returns regression adjustment (RA), Riesz weighting (RW), augmented Riesz weighting (ARW), and TMLE-style estimators with cross-fitting, confidence intervals, and $p$-values. We highlight representative workflows for estimation problems such as the average treatment effect (ATE), ATE on treated (ATT), and average marginal effect estimation. The Python package is available at https://github.com/MasaKat0/genriesz and on PyPI.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17543v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16600v1" target="_blank" rel="noopener noreferrer">
-      Predicting The Cop Number Using Machine Learning
+    <a href="https://arxiv.org/pdf/2602.17532v1" target="_blank" rel="noopener noreferrer">
+      Systematic Evaluation of Single-Cell Foundation Model Interpretability Reveals Attention Captures Co-Expression Rather Than Unique Regulatory Signal
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Meagan Mann, Christian Muise, Erin Meger</span>
+    <span class="paper-authors">Ihor Kendiukhov</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">Cops and Robbers is a pursuit evasion game played on a graph, first introduced independently by Quilliot \cite{quilliot1978jeux} and Nowakowski and Winkler \cite{NOWAKOWSKI1983235} over four decades ago. A main interest in recent the literature is identifying the cop number of graph families. The cop number of a graph, $c(G)$, is defined as the minimum number of cops required to guarantee capture of the robber. Determining the cop number is computationally difficult and exact algorithms for this are typically restricted to small graph families. This paper investigates whether classical machine learning methods and graph neural networks can accurately predict a graph&#x27;s cop number from its structural properties and identify which properties most strongly influence this prediction. Of the classical machine learning models, tree-based models achieve high accuracy in prediction despite class imbalance, whereas graph neural networks achieve comparable results without explicit feature engineering. The interpretability analysis shows that the most predictive features are related to node connectivity, clustering, clique structure, and width parameters, which aligns with known theoretical results. Our findings suggest that machine learning approaches can be used in complement with existing cop number algorithms by offering scalable approximations where computation is infeasible.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16600v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We present a systematic evaluation framework - thirty-seven analyses, 153 statistical tests, four cell types, two perturbation modalities - for assessing mechanistic interpretability in single-cell foundation models. Applying this framework to scGPT and Geneformer, we find that attention patterns encode structured biological information with layer-specific organisation - protein-protein interactions in early layers, transcriptional regulation in late layers - but this structure provides no incremental value for perturbation prediction: trivial gene-level baselines outperform both attention and correlation edges (AUROC 0.81-0.88 versus 0.70), pairwise edge scores add zero predictive contribution, and causal ablation of regulatory heads produces no degradation. These findings generalise from K562 to RPE1 cells; the attention-correlation relationship is context-dependent, but gene-level dominance is universal. Cell-State Stratified Interpretability (CSSI) addresses an attention-specific scaling failure, improving GRN recovery up to 1.85x. The framework establishes reusable quality-control standards for the field.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17532v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.16568v1" target="_blank" rel="noopener noreferrer">
-      Separating Oblivious and Adaptive Models of Variable Selection
+    <a href="https://arxiv.org/pdf/2602.17528v1" target="_blank" rel="noopener noreferrer">
+      Interpretable Machine Learning of Nanoparticle Stability through Topological Layer Embeddings
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ziyun Chen, Jerry Li, Kevin Tian, Yusong Zhu</span>
+    <span class="paper-authors">Felipe Hawthorne, Leandro Seixas, James M. Almeida, Cristiano F. Woellner, Raphael M. Tromer</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-18</span>
+    <span class="paper-date">2026-02-19</span>
   </p>
-  <p class="paper-abstract">Sparse recovery is among the most well-studied problems in learning theory and high-dimensional statistics. In this work, we investigate the statistical and computational landscapes of sparse recovery with $\ell_\infty$ error guarantees. This variant of the problem is motivated by \emph{variable selection} tasks, where the goal is to estimate the support of a $k$-sparse signal in $\mathbb{R}^d$. Our main contribution is a provable separation between the \emph{oblivious} (``for each&#x27;&#x27;) and \emph{adaptive} (``for all&#x27;&#x27;) models of $\ell_\infty$ sparse recovery. We show that under an oblivious model, the optimal $\ell_\infty$ error is attainable in near-linear time with $\approx k\log d$ samples, whereas in an adaptive model, $\gtrsim k^2$ samples are necessary for any algorithm to achieve this bound. This establishes a surprising contrast with the standard $\ell_2$ setting, where $\approx k \log d$ samples suffice even for adaptive sparse recovery. We conclude with a preliminary examination of a \emph{partially-adaptive} model, where we show nontrivial variable selection guarantees are possible with $\approx k\log d$ measurements.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.16568v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The stability of chemically complex nanoparticles is governed by an immense configurational space arising from heterogeneous local atomic environments across surface and interior regions. Efficiently identifying low-energy configurations within this space remains a central challenge for first-principles-based materials discovery, particularly when the available reference data are limited. Here, we introduce a data-efficient and physically interpretable machine-learning framework based on a fragmented, layer-resolved descriptor that explicitly decomposes nanoparticles into surface, intermediate, and core environments using a topology-driven definition. This representation preserves a compact and fixed feature dimensionality while retaining spatial resolution, enabling controlled emphasis on different regions of the nanoparticle through physically motivated weighting schemes. Coupled with gradient-boosted decision tree models and a ranking-based learning strategy, the proposed framework enables accurate identification of the most stable nanoparticle configurations using only a few hundred density functional theory reference calculations. Ranking performance metrics demonstrate near-saturation of correlation, high top-k recall, and rapidly vanishing regret at moderate training-set sizes, highlighting the strong data efficiency of the approach. Beyond predictive performance, layer-weighting and SHAP-based interpretability analyses reveal how surface segregation, coordination topology, and local chemical disorder contribute differently to stability across spatial regions of the nanoparticle. These insights provide a transparent physical interpretation of the learned models and establish a natural pathway toward active learning-driven exploration of complex nanoparticle configurational spaces.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.17528v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
