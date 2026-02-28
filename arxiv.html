@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-02-27 02:02 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-02-28 01:53 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -100,6 +100,210 @@
 
           <div class="paper-list">
             <article class="paper-card">
+  <h3 class="paper-title">
+    <a href="https://arxiv.org/pdf/2602.23360v1" target="_blank" rel="noopener noreferrer">
+      Model Agreement via Anchoring
+    </a>
+  </h3>
+  <p class="paper-meta">
+    <span class="paper-authors">Eric Eaton, Surbhi Goel, Marcel Hussing, Michael Kearns, Aaron Roth, Sikata Bela Sengupta, Jessica Sorrell</span>
+    <span class="paper-dot">•</span>
+    <span class="paper-date">2026-02-26</span>
+  </p>
+  <p class="paper-abstract">Numerous lines of aim to control $\textit{model disagreement}$ -- the extent to which two machine learning models disagree in their predictions. We adopt a simple and standard notion of model disagreement in real-valued prediction problems, namely the expected squared difference in predictions between two models trained on independent samples, without any coordination of the training processes. We would like to be able to drive disagreement to zero with some natural parameter(s) of the training procedure using analyses that can be applied to existing training methodologies. We develop a simple general technique for proving bounds on independent model disagreement based on $\textit{anchoring}$ to the average of two models within the analysis. We then apply this technique to prove disagreement bounds for four commonly used machine learning algorithms: (1) stacked aggregation over an arbitrary model class (where disagreement is driven to 0 with the number of models $k$ being stacked) (2) gradient boosting (where disagreement is driven to 0 with the number of iterations $k$) (3) neural network training with architecture search (where disagreement is driven to 0 with the size $n$ of the architecture being optimized over) and (4) regression tree training over all regression trees of fixed depth (where disagreement is driven to 0 with the depth $d$ of the tree architecture). For clarity, we work out our initial bounds in the setting of one-dimensional regression with squared error loss -- but then show that all of our results generalize to multi-dimensional regression with any strongly convex loss.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.23360v1" target="_blank" rel="noopener noreferrer">
+    View PDF →
+  </a>
+</article>
+
+<article class="paper-card">
+  <h3 class="paper-title">
+    <a href="https://arxiv.org/pdf/2602.23355v1" target="_blank" rel="noopener noreferrer">
+      Robust model selection using likelihood as data
+    </a>
+  </h3>
+  <p class="paper-meta">
+    <span class="paper-authors">Jongwoo Choi, Neil A. Spencer, Jeffrey W. Miller</span>
+    <span class="paper-dot">•</span>
+    <span class="paper-date">2026-02-26</span>
+  </p>
+  <p class="paper-abstract">Model selection is a central task in statistics, but standard methods are not robust in misspecified settings where the true data-generating process (DGP) is not in the set of candidate models. The key limitation is that existing methods -- including information criteria and Bayesian posteriors -- do not quantify uncertainty about how well each candidate model approximates the true DGP. In this paper, we introduce a novel approach to model selection based on modeling the likelihood values themselves. Specifically, given $K$ candidate models and $n$ observations, we view the $n\times K$ matrix of negative log-likelihood values as a random data matrix and observe that the expectation of each row is equal to the vector of Kullback--Leibler divergences between the $K$ models and the true DGP, up to an additive constant. We use a multivariate normal model to estimate and quantify uncertainty in this expectation, providing calibrated inferences for robust model selection under misspecification. The procedure is easy to compute, interpretable, and comes with theoretical guarantees, including consistency.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.23355v1" target="_blank" rel="noopener noreferrer">
+    View PDF →
+  </a>
+</article>
+
+<article class="paper-card">
+  <h3 class="paper-title">
+    <a href="https://arxiv.org/pdf/2602.23353v1" target="_blank" rel="noopener noreferrer">
+      SOTAlign: Semi-Supervised Alignment of Unimodal Vision and Language Models via Optimal Transport
+    </a>
+  </h3>
+  <p class="paper-meta">
+    <span class="paper-authors">Simon Roschmann, Paul Krzakala, Sonia Mazelet, Quentin Bouniot, Zeynep Akata</span>
+    <span class="paper-dot">•</span>
+    <span class="paper-date">2026-02-26</span>
+  </p>
+  <p class="paper-abstract">The Platonic Representation Hypothesis posits that neural networks trained on different modalities converge toward a shared statistical model of the world. Recent work exploits this convergence by aligning frozen pretrained vision and language models with lightweight alignment layers, but typically relies on contrastive losses and millions of paired samples. In this work, we ask whether meaningful alignment can be achieved with substantially less supervision. We introduce a semi-supervised setting in which pretrained unimodal encoders are aligned using a small number of image-text pairs together with large amounts of unpaired data. To address this challenge, we propose SOTAlign, a two-stage framework that first recovers a coarse shared geometry from limited paired data using a linear teacher, then refines the alignment on unpaired samples via an optimal-transport-based divergence that transfers relational structure without overconstraining the target space. Unlike existing semi-supervised methods, SOTAlign effectively leverages unpaired images and text, learning robust joint embeddings across datasets and encoder pairs, and significantly outperforming supervised and semi-supervised baselines.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.23353v1" target="_blank" rel="noopener noreferrer">
+    View PDF →
+  </a>
+</article>
+
+<article class="paper-card">
+  <h3 class="paper-title">
+    <a href="https://arxiv.org/pdf/2602.23336v1" target="_blank" rel="noopener noreferrer">
+      Differentiable Zero-One Loss via Hypersimplex Projections
+    </a>
+  </h3>
+  <p class="paper-meta">
+    <span class="paper-authors">Camilo Gomez, Pengyang Wang, Liansheng Tang</span>
+    <span class="paper-dot">•</span>
+    <span class="paper-date">2026-02-26</span>
+  </p>
+  <p class="paper-abstract">Recent advances in machine learning have emphasized the integration of structured optimization components into end-to-end differentiable models, enabling richer inductive biases and tighter alignment with task-specific objectives. In this work, we introduce a novel differentiable approximation to the zero-one loss-long considered the gold standard for classification performance, yet incompatible with gradient-based optimization due to its non-differentiability. Our method constructs a smooth, order-preserving projection onto the n,k-dimensional hypersimplex through a constrained optimization framework, leading to a new operator we term Soft-Binary-Argmax. After deriving its mathematical properties, we show how its Jacobian can be efficiently computed and integrated into binary and multiclass learning systems. Empirically, our approach achieves significant improvements in generalization under large-batch training by imposing geometric consistency constraints on the output logits, thereby narrowing the performance gap traditionally observed in large-batch training.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.23336v1" target="_blank" rel="noopener noreferrer">
+    View PDF →
+  </a>
+</article>
+
+<article class="paper-card">
+  <h3 class="paper-title">
+    <a href="https://arxiv.org/pdf/2602.23326v1" target="_blank" rel="noopener noreferrer">
+      Spin Glass Concepts in Computer Science, Statistics, and Learning
+    </a>
+  </h3>
+  <p class="paper-meta">
+    <span class="paper-authors">Andrea Montanari</span>
+    <span class="paper-dot">•</span>
+    <span class="paper-date">2026-02-26</span>
+  </p>
+  <p class="paper-abstract">Spin glass theory studies the structure of sublevel sets and minima (or near-minima) of certain classes of random functions in high dimension. Near-minima of random functions also play an important role in high-dimensional statistics and statistical learning, where minimizing the empirical risk (which is a random function of the model parameters) is the method of choice for learning a statistical model from noisy data. Finally, near-minima of random functions are obviously central to average-case analysis of optimization algorithms. Computer science, statistics, and machine learning naturally lead to questions that are traditionally not addressed within physics and mathematical physics. I will try to explain how ideas from spin glass theory have seeded recent developments in these fields. (This article was written on the occasion of the 2024 Abel Prize to Michel Talagrand.)</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.23326v1" target="_blank" rel="noopener noreferrer">
+    View PDF →
+  </a>
+</article>
+
+<article class="paper-card">
+  <h3 class="paper-title">
+    <a href="https://arxiv.org/pdf/2602.23321v1" target="_blank" rel="noopener noreferrer">
+      Deep ensemble graph neural networks for probabilistic cosmic-ray direction and energy reconstruction in autonomous radio arrays
+    </a>
+  </h3>
+  <p class="paper-meta">
+    <span class="paper-authors">Arsène Ferrière, Aurélien Benoit-Lévy, Olivier Martineau-Huynh, Matías Tueros</span>
+    <span class="paper-dot">•</span>
+    <span class="paper-date">2026-02-26</span>
+  </p>
+  <p class="paper-abstract">Using advanced machine learning techniques, we developed a method for reconstructing precisely the arrival direction and energy of ultra-high-energy cosmic rays from the voltage traces they induced on ground-based radio detector arrays. In our approach, triggered antennas are represented as a graph structure, which serves as input for a graph neural network (GNN). By incorporating physical knowledge into both the GNN architecture and the input data, we improve the precision and reduce the required size of the training set with respect to a fully data-driven approach. This method achieves an angular resolution of 0.092° and an electromagnetic energy reconstruction resolution of 16.4% on simulated data with realistic noise conditions. We also employ uncertainty estimation methods to enhance the reliability of our predictions, quantifying the confidence of the GNN&#x27;s outputs and providing confidence intervals for both direction and energy reconstruction. Finally, we investigate strategies to verify the model&#x27;s consistency and robustness under real life variations, with the goal of identifying scenarios in which predictions remain reliable despite domain shifts between simulation and reality.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.23321v1" target="_blank" rel="noopener noreferrer">
+    View PDF →
+  </a>
+</article>
+
+<article class="paper-card">
+  <h3 class="paper-title">
+    <a href="https://arxiv.org/pdf/2602.23318v1" target="_blank" rel="noopener noreferrer">
+      Generalized Rapid Action Value Estimation in Memory-Constrained Environments
+    </a>
+  </h3>
+  <p class="paper-meta">
+    <span class="paper-authors">Aloïs Rautureau, Tristan Cazenave, Éric Piette</span>
+    <span class="paper-dot">•</span>
+    <span class="paper-date">2026-02-26</span>
+  </p>
+  <p class="paper-abstract">Generalized Rapid Action Value Estimation (GRAVE) has been shown to be a strong variant within the Monte-Carlo Tree Search (MCTS) family of algorithms for General Game Playing (GGP). However, its reliance on storing additional win/visit statistics at each node makes its use impractical in memory-constrained environments, thereby limiting its applicability in practice. In this paper, we introduce the GRAVE2, GRAVER and GRAVER2 algorithms, which extend GRAVE through two-level search, node recycling, and a combination of both techniques, respectively. We show that these enhancements enable a drastic reduction in the number of stored nodes while matching the playing strength of GRAVE.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.23318v1" target="_blank" rel="noopener noreferrer">
+    View PDF →
+  </a>
+</article>
+
+<article class="paper-card">
+  <h3 class="paper-title">
+    <a href="https://arxiv.org/pdf/2602.23304v1" target="_blank" rel="noopener noreferrer">
+      Efficient evaluation of fundamental sensitivity limits and full counting statistics for continuously monitored Gaussian quantum systems
+    </a>
+  </h3>
+  <p class="paper-meta">
+    <span class="paper-authors">Francesco Albarelli, Marco G. Genoni</span>
+    <span class="paper-dot">•</span>
+    <span class="paper-date">2026-02-26</span>
+  </p>
+  <p class="paper-abstract">Generalized master equations (GMEs) -- time-local but generally neither trace-preserving nor Hermiticity-preserving -- are convenient tools to compute properties of the environment of an open or continuously monitored quantum system. A two-sided master equation yields the fidelity and quantum Fisher information (QFI) of environment states, thereby setting fundamental limits for hypothesis testing and parameter estimation under continuous monitoring. For unmonitored noise or inefficient detection, the QFI of the detectable part of the environment may be obtained from a recently derived GME acting on multiple system replicas. Tilted master equations provide the full counting statistics of quantum jumps and diffusive measurements, enabling, e.g., studies of quantum thermodynamics beyond average values. Here we focus on bosonic linear systems, governed by a quadratic Hamiltonian and linear jump operators, whose dynamics preserves Gaussianity. For Gaussian initial states, we recast a generic GME as a compact set of ordinary differential equations for the covariance matrix (a Riccati-type equation), first moments, and normalization. These equations can be integrated efficiently without Hilbert-space truncation, and admit analytical results in simple settings. We also provide specialized forms for fidelity/QFI and full counting statistics. We illustrate the formalism with a continuously monitored optical parametric oscillator, using it to determine sensitivity limits for frequency estimation and to benchmark Hasegawa&#x27;s thermodynamic uncertainty relations.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.23304v1" target="_blank" rel="noopener noreferrer">
+    View PDF →
+  </a>
+</article>
+
+<article class="paper-card">
+  <h3 class="paper-title">
+    <a href="https://arxiv.org/pdf/2602.23303v1" target="_blank" rel="noopener noreferrer">
+      Inferential Mechanics Part 1: Causal Mechanistic Theories of Machine Learning in Chemical Biology with Implications
+    </a>
+  </h3>
+  <p class="paper-meta">
+    <span class="paper-authors">Ilya Balabin, Thomas M. Kaiser</span>
+    <span class="paper-dot">•</span>
+    <span class="paper-date">2026-02-26</span>
+  </p>
+  <p class="paper-abstract">Machine learning techniques are now routinely encountered in research laboratories across the globe. Impressive progress has been made through ML and AI techniques with regards to large data set processing. This progress has increased the ability of the experimenter to digest data and make novel predictions regarding phenomena of interest. However, machine learning predictors generated from data sets taken from the natural sciences are often treated as black boxes which are used broadly and generally without detailed consideration of the causal structure of the data set of interest. Work has been attempted to bring causality into discussions of machine learning models of natural phenomena; however, a firm and unified theoretical treatment is lacking. This series of three papers explores the union of chemical theory, biological theory, probability theory and causality that will correct current causal flaws of machine learning in the natural sciences. This paper, Part 1 of the series, provides the formal framework of the foundational causal structure of phenomena in chemical biology and is extended to machine learning through the novel concept of focus, defined here as the ability of a machine learning algorithm to narrow down to a hidden underpinning mechanism in large data sets. Initial proof of these principles on a family of Akt inhibitors is also provided. The second paper containing Part 2 will provide a formal exploration of chemical similarity, and Part 3 will present extensive experimental evidence of how hidden causal structures weaken all machine learning in chemical biology. This series serves to establish for chemical biology a new kind of mathematical framework for modeling mechanisms in Nature without the need for the tools of reductionism: inferential mechanics.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.23303v1" target="_blank" rel="noopener noreferrer">
+    View PDF →
+  </a>
+</article>
+
+<article class="paper-card">
+  <h3 class="paper-title">
+    <a href="https://arxiv.org/pdf/2602.23291v1" target="_blank" rel="noopener noreferrer">
+      Identifiability of Treatment Effects with Unobserved Spatially Varying Confounders
+    </a>
+  </h3>
+  <p class="paper-meta">
+    <span class="paper-authors">Tommy Tang, Xinran Li, Bo Li</span>
+    <span class="paper-dot">•</span>
+    <span class="paper-date">2026-02-26</span>
+  </p>
+  <p class="paper-abstract">The study of causal effects in the presence of unmeasured spatially varying confounders has garnered increasing attention. However, a general framework for identifiability, which is critical for reliable causal inference from observational data, has yet to be advanced. In this paper, we study a linear model with various parametric model assumptions on the covariance structure between the unmeasured confounder and the exposure of interest. We establish identifiability of the treatment effect for many commonly 20 used spatial models for both discrete and continuous data, under mild conditions on the structure of observation locations and the exposure-confounder association. We also emphasize models or scenarios where identifiability may not hold, under which statistical inference should be conducted with caution.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.23291v1" target="_blank" rel="noopener noreferrer">
+    View PDF →
+  </a>
+</article>
+
+<article class="paper-card">
+  <h3 class="paper-title">
+    <a href="https://arxiv.org/pdf/2602.23281v1" target="_blank" rel="noopener noreferrer">
+      Real-Time Stream Compaction for Sparse Machine Learning on FPGAs
+    </a>
+  </h3>
+  <p class="paper-meta">
+    <span class="paper-authors">Marc Neu, Isabel Haide, Torben Ferber, Jürgen Becker</span>
+    <span class="paper-dot">•</span>
+    <span class="paper-date">2026-02-26</span>
+  </p>
+  <p class="paper-abstract">Machine learning algorithms are being used more frequently in the first-level triggers in collider experiments, with Graph Neural Networks pushing the hardware requirements of FPGA-based triggers beyond the current state of the art. To meet the stringent demands of high-throughput and low-latency environments, we propose a concept for latency-optimized preprocessing of sparse sensor data, enabling efficient GNN hardware acceleration by removing dynamic input sparsity. Our approach rearranges data coming from a large number of First-In-First-Out interfaces, typically sensor frontends, to a smaller number of FIFO interfaces connected to a machine learning hardware accelerator. In order to achieve high throughput while minimizing the hardware utilization, we developed a hierarchical sparsity compression pipeline optimized for FPGAs. We implemented our concept in the Chisel design language as an open-source hardware generator. For demonstration, we implemented one configuration of our module as preprocessing stage in a GNN-based first-level trigger for the Electromagnetic Calorimeter inside the Belle II detector. Additionally we evaluate latency, throughput, resource utilization, and scalability for a wide range of parameters, to enable broader use for other large scale scientific experiments.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.23281v1" target="_blank" rel="noopener noreferrer">
+    View PDF →
+  </a>
+</article>
+
+<article class="paper-card">
+  <h3 class="paper-title">
+    <a href="https://arxiv.org/pdf/2602.23274v1" target="_blank" rel="noopener noreferrer">
+      Exploiting network topology in brain-scale simulations of spiking neural networks
+    </a>
+  </h3>
+  <p class="paper-meta">
+    <span class="paper-authors">Melissa Lober, Markus Diesmann, Susanne Kunkel</span>
+    <span class="paper-dot">•</span>
+    <span class="paper-date">2026-02-26</span>
+  </p>
+  <p class="paper-abstract">Simulation code for conventional supercomputers serves as a reference for neuromorphic computing systems. The present bottleneck of distributed large-scale spiking neuronal network simulations is the communication between compute nodes. Communication speed seems limited by the interconnect between the nodes and the software library orchestrating the data transfer. Profiling reveals, however, that the variability of the time required by the compute nodes between communication calls is large. The bottleneck is in fact the waiting time for the slowest node. A statistical model explains total simulation time on the basis of the distribution of computation times between communication calls. A fundamental cure is to avoid communication calls because this requires fewer synchronizations and reduces the variability of computation times across compute nodes. The organization of the mammalian brain into areas lends itself to such an optimization strategy. Connections between neurons within an area have short delays, but the delays of the long-range connections across areas are an order of magnitude longer. This suggests a structure-aware mapping of areas to compute nodes allowing for a partition into more frequent communication between nodes simulating a particular area and less frequent global communication. We demonstrate a substantial performance gain on a real-world example. This work proposes a local-global hybrid communication architecture for large-scale neuronal network simulations as a first step in mapping the structure of the brain to the structure of a supercomputer. It challenges the long-standing belief that the bottleneck of simulation is synchronization inherent in the collective calls of standard communication libraries. We provide guidelines for the energy efficient simulation of neuronal networks on conventional computing systems and raise the bar for neuromorphic systems.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2602.23274v1" target="_blank" rel="noopener noreferrer">
+    View PDF →
+  </a>
+</article>
+
+<article class="paper-card">
   <h3 class="paper-title">
     <a href="https://arxiv.org/pdf/2602.23265v1" target="_blank" rel="noopener noreferrer">
       VRSL:Exploring the Comprehensibility of 360-Degree Camera Feeds for Sign Language Communication in Virtual Reality
@@ -231,210 +435,6 @@
   </p>
   <p class="paper-abstract">Generalization measures have been studied extensively in the machine learning community to better characterize generalization gaps. However, establishing a reliable generalization measure for statistically singular models such as deep neural networks (DNNs) is difficult due to their complex nature. This study focuses on Takeuchi&#x27;s information criterion (TIC) to investigate the conditions under which this classical measure can effectively explain the generalization gaps of DNNs. Importantly, the developed theory indicates the applicability of TIC near the neural tangent kernel (NTK) regime. In a series of experiments, we trained more than 5,000 DNN models with 12 architectures, including large models (e.g., VGG-16), on four datasets, and estimated the corresponding TIC values to examine the relationship between the generalization gap and the TIC estimates. We applied several TIC approximation methods with feasible computational costs and assessed the accuracy trade-off. Our experimental results indicate that the estimated TIC values correlate well with the generalization gap under conditions close to the NTK regime. However, we show both theoretically and empirically that outside the NTK regime such correlation disappears. Finally, we demonstrate that TIC provides better trial pruning ability than existing methods for hyperparameter optimization.</p>
   <a class="paper-link" href="https://arxiv.org/pdf/2602.23219v1" target="_blank" rel="noopener noreferrer">
-    View PDF →
-  </a>
-</article>
-
-<article class="paper-card">
-  <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.23214v1" target="_blank" rel="noopener noreferrer">
-      Plug-and-Play Diffusion Meets ADMM: Dual-Variable Coupling for Robust Medical Image Reconstruction
-    </a>
-  </h3>
-  <p class="paper-meta">
-    <span class="paper-authors">Chenhe Du, Xuanyu Tian, Qing Wu, Muyu Liu, Jingyi Yu, Hongjiang Wei, Yuyao Zhang</span>
-    <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-26</span>
-  </p>
-  <p class="paper-abstract">Plug-and-Play diffusion prior (PnPDP) frameworks have emerged as a powerful paradigm for solving imaging inverse problems by treating pretrained generative models as modular priors. However, we identify a critical flaw in prevailing PnP solvers (e.g., based on HQS or Proximal Gradient): they function as memoryless operators, updating estimates solely based on instantaneous gradients. This lack of historical tracking inevitably leads to non-vanishing steady-state bias, where the reconstruction fails to strictly satisfy physical measurements under heavy corruption. To resolve this, we propose Dual-Coupled PnP Diffusion, which restores the classical dual variable to provide integral feedback, theoretically guaranteeing asymptotic convergence to the exact data manifold. However, this rigorous geometric coupling introduces a secondary challenge: the accumulated dual residuals exhibit spectrally colored, structured artifacts that violate the Additive White Gaussian Noise (AWGN) assumption of diffusion priors, causing severe hallucinations. To bridge this gap, we introduce Spectral Homogenization (SH), a frequency-domain adaptation mechanism that modulates these structured residuals into statistically compliant pseudo-AWGN inputs. This effectively aligns the solver&#x27;s rigorous optimization trajectory with the denoiser&#x27;s valid statistical manifold. Extensive experiments on CT and MRI reconstruction demonstrate that our approach resolves the bias-hallucination trade-off, achieving state-of-the-art fidelity with significantly accelerated convergence.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.23214v1" target="_blank" rel="noopener noreferrer">
-    View PDF →
-  </a>
-</article>
-
-<article class="paper-card">
-  <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.23201v1" target="_blank" rel="noopener noreferrer">
-      Tell Me What To Learn: Generalizing Neural Memory to be Controllable in Natural Language
-    </a>
-  </h3>
-  <p class="paper-meta">
-    <span class="paper-authors">Max S. Bennett, Thomas P. Zollo, Richard Zemel</span>
-    <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-26</span>
-  </p>
-  <p class="paper-abstract">Modern machine learning models are deployed in diverse, non-stationary environments where they must continually adapt to new tasks and evolving knowledge. Continual fine-tuning and in-context learning are costly and brittle, whereas neural memory methods promise lightweight updates with minimal forgetting. However, existing neural memory models typically assume a single fixed objective and homogeneous information streams, leaving users with no control over what the model remembers or ignores over time. To address this challenge, we propose a generalized neural memory system that performs flexible updates based on learning instructions specified in natural language. Our approach enables adaptive agents to learn selectively from heterogeneous information sources, supporting settings, such as healthcare and customer service, where fixed-objective memory updates are insufficient.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.23201v1" target="_blank" rel="noopener noreferrer">
-    View PDF →
-  </a>
-</article>
-
-<article class="paper-card">
-  <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.23200v1" target="_blank" rel="noopener noreferrer">
-      InnerQ: Hardware-aware Tuning-free Quantization of KV Cache for Large Language Models
-    </a>
-  </h3>
-  <p class="paper-meta">
-    <span class="paper-authors">Sayed Mohammadreza Tayaranian Hosseini, Amir Ardakani, Warren J. Gross</span>
-    <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-26</span>
-  </p>
-  <p class="paper-abstract">Reducing the hardware footprint of large language models (LLMs) during decoding is critical for efficient long-sequence generation. A key bottleneck is the key-value (KV) cache, whose size scales with sequence length and easily dominates the memory footprint of the model. Previous work proposed quantization methods that are focused on compressing the KV cache while maintaining its information. We introduce InnerQ, a hardware-aware KV-cache quantization scheme that lowers decode latency without sacrificing accuracy. InnerQ applies group-wise quantization while grouping the cache matrices over their inner dimension. Unlike previous work that group over the outer dimension, InnerQ aligns dequantization with the vector-matrix multiplication and enables scale factor reuse across GPU compute units. This reduces memory accesses and accelerates dequantization, yielding up to $22\%$ speedup over previous work and up to $88\%$ over half-precision vector-matrix multiplication. To preserve fidelity under aggressive compression, InnerQ incorporates (i) hybrid quantization, selecting symmetric or asymmetric quantization per group based on local statistics; (ii) high-precision windows for both the most recent tokens and the attention sink tokens to mitigate outlier leakage; and (iii) per-channel normalization of the key cache, computed once during prefill and folded into the query to avoid runtime overhead. Our evaluation experiments on Llama models shows that InnerQ maintains a few-shot GSM8K performance comparable to non-quantized KV caches and surpasses prior KV cache quantization methods.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.23200v1" target="_blank" rel="noopener noreferrer">
-    View PDF →
-  </a>
-</article>
-
-<article class="paper-card">
-  <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.23198v1" target="_blank" rel="noopener noreferrer">
-      Learning Thermal Response Forces: A Method for Extending the Thermodynamic Transferability of Coarse-Grained Models via Machine-Learning
-    </a>
-  </h3>
-  <p class="paper-meta">
-    <span class="paper-authors">Patrick G. Sahrmann, Benjamin T. Nebgen, Kipton Barros, Brenden W. Hamilton</span>
-    <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-26</span>
-  </p>
-  <p class="paper-abstract">Machine-learned (ML) coarse-grained (CG) models are a promising tool for significantly enhancing the efficiency of molecular simulations by systematically removing degrees of freedom while retaining fidelity to the underlying fine-grained model. The CG potential of mean force (PMF) is inherently dependent on thermodynamic conditions and, hence, a CG force-field (FF) which is trained at one thermodynamic state point is not necessarily accurate at another. We propose, in this work, a novel and data-efficient means of learning temperature dependence into ML CG force-fields via training on the thermal response forces of the PMF. We demonstrate how incorporating these terms into ML CG FFs confers significantly improved transferability for CG water models and demonstrate how this transferability enables accurate and predictive CG dynamics.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.23198v1" target="_blank" rel="noopener noreferrer">
-    View PDF →
-  </a>
-</article>
-
-<article class="paper-card">
-  <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.23182v1" target="_blank" rel="noopener noreferrer">
-      Closing the gap on tabular data with Fourier and Implicit Categorical Features
-    </a>
-  </h3>
-  <p class="paper-meta">
-    <span class="paper-authors">Marius Dragoi, Florin Gogianu, Elena Burceanu</span>
-    <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-26</span>
-  </p>
-  <p class="paper-abstract">While Deep Learning has demonstrated impressive results in applications on various data types, it continues to lag behind tree-based methods when applied to tabular data, often referred to as the last &quot;unconquered castle&quot; for neural networks. We hypothesize that a significant advantage of tree-based methods lies in their intrinsic capability to model and exploit non-linear interactions induced by features with categorical characteristics. In contrast, neural-based methods exhibit biases toward uniform numerical processing of features and smooth solutions, making it challenging for them to effectively leverage such patterns. We address this performance gap by using statistical-based feature processing techniques to identify features that are strongly correlated with the target once discretized. We further mitigate the bias of deep models for overly-smooth solutions, a bias that does not align with the inherent properties of the data, using Learned Fourier. We show that our proposed feature preprocessing significantly boosts the performance of deep learning models and enables them to achieve a performance that closely matches or surpasses XGBoost on a comprehensive tabular data benchmark.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.23182v1" target="_blank" rel="noopener noreferrer">
-    View PDF →
-  </a>
-</article>
-
-<article class="paper-card">
-  <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.23151v1" target="_blank" rel="noopener noreferrer">
-      High-dimensional Laplace asymptotics up to the concentration threshold
-    </a>
-  </h3>
-  <p class="paper-meta">
-    <span class="paper-authors">Alexander Katsevich, Anya Katsevich</span>
-    <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-26</span>
-  </p>
-  <p class="paper-abstract">We study high-dimensional Laplace-type integrals of the form $I(λ):=\int_{\mathbb R^d} g(x)e^{-λf(x)}dx$ in the regime where $d$ and $λ$ are both large. Until now, rigorous bounds for Laplace expansions in growing dimension have been restricted to the &quot;Gaussian-approximation&quot; regime, known to hold when $d^2/λ\to0$. This excludes many practically relevant regimes, including those arising in physics and modern high-dimensional statistics, which operate beyond this threshold while still satisfying the concentration condition $d/λ\to0$. Here, we close this gap. We develop an explicit asymptotic expansion for $\log I(λ)$ with quantitative remainder bounds that remain valid throughout this intermediate region, arbitrarily close to the concentration threshold $d/λ\to0$. Fix any $L\ge1$ and suppose $g(0)=1$. Assume that, in a neighborhood of the minimizer of $f$, the operator norms of the derivatives of $f$ and $g$ are bounded independently of $d$ and $λ$ through orders $2(L+1)$ and $2L$, respectively. Assuming also some mild global growth conditions on $f$ and $g$, we prove that $$ \log I(λ)=\sum_{k=1}^{L-1} b_k(f,g)λ^{-k}+O(d^{L+1}/λ^L),\quad d^{L+1}/λ^L\to0, $$ and that the coefficients satisfy $b_k(f,g)= O(d^{k+1})$. Moreover, the coefficients $b_k(f,g)$ coincide with those arising from the formal cumulant-based expansion of $\log I(λ)$. The proof is constructive and proceeds via explicit polynomial changes of variables that iteratively &quot;quadratize&quot; the exponent while controlling Jacobian effects, thereby avoiding heavy Gaussian concentration machinery. We illustrate the expansion on two representative examples.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.23151v1" target="_blank" rel="noopener noreferrer">
-    View PDF →
-  </a>
-</article>
-
-<article class="paper-card">
-  <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.23146v1" target="_blank" rel="noopener noreferrer">
-      Partial recovery of meter-scale surface weather
-    </a>
-  </h3>
-  <p class="paper-meta">
-    <span class="paper-authors">Jonathan Giezendanner, Qidong Yang, Eric Schmitt, Anirban Chandra, Daniel Salles Civitarese, Johannes Jakubik, Jeremy Vila, Detlef Hohl, Campbell Watson, Sherrie Wang</span>
-    <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-26</span>
-  </p>
-  <p class="paper-abstract">Near-surface atmospheric conditions can differ sharply over tens to hundreds of meters due to land cover and topography, yet this variability is absent from current weather analyses and forecasts. It is unclear whether such meter-scale variability reflects irreducibly chaotic dynamics or contains a component predictable from surface characteristics and large-scale atmospheric forcing. Here we show that a substantial, physically coherent component of meter-scale near-surface weather is statistically recoverable from existing observations. By conditioning coarse atmospheric state on sparse surface station measurements and high-resolution Earth observation data, we infer spatially continuous fields of near-surface wind, temperature, and humidity at 10 m resolution across the contiguous United States. Relative to ERA5, the inferred fields reduce wind error by 29% and temperature and dewpoint error by 6%, while explaining substantially more spatial variance at fixed time steps. They also exhibit physically interpretable structure, including urban heat islands, evapotranspiration-driven humidity contrasts, and wind speed differences across land cover types. Our findings expand the frontier of weather modeling by demonstrating a computationally feasible approach to continental-scale meter-resolution inference. More broadly, they illustrate how conditioning coarse dynamical models on static fine-scale features can reveal previously unresolved components of the Earth system.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.23146v1" target="_blank" rel="noopener noreferrer">
-    View PDF →
-  </a>
-</article>
-
-<article class="paper-card">
-  <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.23142v1" target="_blank" rel="noopener noreferrer">
-      Prediction of Diffusion Coefficients in Mixtures with Tensor Completion
-    </a>
-  </h3>
-  <p class="paper-meta">
-    <span class="paper-authors">Zeno Romero, Kerstin Münnemann, Hans Hasse, Fabian Jirasek</span>
-    <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-26</span>
-  </p>
-  <p class="paper-abstract">Predicting diffusion coefficients in mixtures is crucial for many applications, as experimental data remain scarce, and machine learning (ML) offers promising alternatives to established semi-empirical models. Among ML models, matrix completion methods (MCMs) have proven effective in predicting thermophysical properties, including diffusion coefficients in binary mixtures. However, MCMs are restricted to single-temperature predictions, and their accuracy depends strongly on the availability of high-quality experimental data for each temperature of interest. In this work, we address this challenge by presenting a hybrid tensor completion method (TCM) for predicting temperature-dependent diffusion coefficients at infinite dilution in binary mixtures. The TCM employs a Tucker decomposition and is jointly trained on experimental data for diffusion coefficients at infinite dilution in binary systems at 298 K, 313 K, and 333 K. Predictions from the semi-empirical SEGWE model serve as prior knowledge within a Bayesian training framework. The TCM then extrapolates linearly to any temperature between 268 K and 378 K, achieving markedly improved prediction accuracy compared to established models across all studied temperatures. To further enhance predictive performance, the experimental database was expanded using active learning (AL) strategies for targeted acquisition of new diffusion data by pulsed-field gradient (PFG) NMR measurements. Diffusion coefficients at infinite dilution in 19 solute + solvent systems were measured at 298 K, 313 K, and 333 K. Incorporating these results yields a substantial improvement in the TCM&#x27;s predictive accuracy. These findings highlight the potential of combining data-efficient ML methods with adaptive experimentation to advance predictive modeling of transport properties.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.23142v1" target="_blank" rel="noopener noreferrer">
-    View PDF →
-  </a>
-</article>
-
-<article class="paper-card">
-  <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.23131v1" target="_blank" rel="noopener noreferrer">
-      Titanic overconfidence -- dark uncertainty can sink hybrid metrology for semiconductor manufacturing
-    </a>
-  </h3>
-  <p class="paper-meta">
-    <span class="paper-authors">Ronald G. Dixson, Adam L. Pintar, R. Joseph. Kline, Thomas A. Germer, J. Alexander Liddle, John S. Villarrubia, Samuel M. Stavis</span>
-    <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-26</span>
-  </p>
-  <p class="paper-abstract">Hybrid metrology for semiconductor manufacturing is on a collision course with dark uncertainty. An IEEE technology roadmap for this venture has targeted a linewidth uncertainty of +/- 0.17 nm at 95 % coverage and advised the hybridization of results from different measurement methods to hit this target. Related studies have applied statistical models that require consistent results to compel a lower uncertainty, whereas inconsistent results are prevalent. We illuminate this lurking issue, studying how standard methods of uncertainty evaluation fail to account for the causes and effects of dark uncertainty. We revisit a comparison of imaging and scattering methods to measure linewidths of approximately 13 nm, applying contrasting statistical models to highlight the potential effect of dark uncertainty on hybrid metrology. A random effects model allows the combination of inconsistent results, accounting for dark uncertainty and estimating a total uncertainty of +/- 0.8 nm at 95 % coverage. In contrast, a common mean model requires consistent results for combination, ignoring dark uncertainty and underestimating the total uncertainty by as much as a factor of five. To avoid such titanic overconfidence, which can sink a venture, we outline good practices to reduce dark uncertainty and guide the combination of indeterminately consistent results.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.23131v1" target="_blank" rel="noopener noreferrer">
-    View PDF →
-  </a>
-</article>
-
-<article class="paper-card">
-  <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.23116v1" target="_blank" rel="noopener noreferrer">
-      Regularized Online RLHF with Generalized Bilinear Preferences
-    </a>
-  </h3>
-  <p class="paper-meta">
-    <span class="paper-authors">Junghyun Lee, Minju Hong, Kwang-Sung Jun, Chulhee Yun, Se-Young Yun</span>
-    <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-26</span>
-  </p>
-  <p class="paper-abstract">We consider the problem of contextual online RLHF with general preferences, where the goal is to identify the Nash Equilibrium. We adopt the Generalized Bilinear Preference Model (GBPM) to capture potentially intransitive preferences via low-rank, skew-symmetric matrices. We investigate general preference learning with any strongly convex regularizer (where $η^{-1}$ is the regularization strength), generalizing beyond prior works limited to reverse KL-regularization. Central to our analysis is proving that the dual gap of the greedy policy is bounded by the square of the estimation error - a result derived solely from strong convexity and the skew-symmetricity of GBPM.Building on this insight and a feature diversity assumption, we establish two regret bounds via two simple algorithms: (1) Greedy Sampling achieves polylogarithmic, $e^{O(η)}$-free regret $\tilde{O}(ηd^4 (\log T)^2)$. (2) Explore-Then-Commit achieves $\mathrm{poly}(d)$-free regret $\tilde{O}(\sqrt{ηr T})$ by exploiting the low-rank structure; this is the first statistically efficient guarantee for online RLHF in high-dimensions.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.23116v1" target="_blank" rel="noopener noreferrer">
-    View PDF →
-  </a>
-</article>
-
-<article class="paper-card">
-  <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.23084v1" target="_blank" rel="noopener noreferrer">
-      Machine Learning for Electron-phonon Interactions From Finite Difference
-    </a>
-  </h3>
-  <p class="paper-meta">
-    <span class="paper-authors">Zun Wang, Wenhui Duan, Zuzhang Lin</span>
-    <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-26</span>
-  </p>
-  <p class="paper-abstract">First-principles investigations of electron-phonon interactions (EPIs) play a crucial role in understanding a wide range of phenomena in physics and materials science. Among various approaches, the finite difference method offers a direct route to capture higher-order EPIs and is compatible with diverse electronic structure solvers. However, its considerable computational cost limits its broader application. To overcome this bottleneck, we present a machine learning electron-phonon interaction (MLEPI) pipeline that predicts force constants and electronic Hamiltonians for modeling EPIs from finite difference calculations, improving efficiency by orders of magnitude without compromising accuracy. The performance of MLEPI is validated by studying the temperature dependence of the electronic band properties in bilayer graphene, where both first- and second order EPIs are treated on an equal footing. Using a heterogeneous edge network, the pipeline integrates both interlayer and intralayer interactions, making it particularly suitable for studying multilayer materials. With its inherent adaptability and ease of transfer to other applications, our methodology provides a robust tool with a very favorable accuracy/efficiency balance for investigating EPIs in large-scale material systems.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.23084v1" target="_blank" rel="noopener noreferrer">
-    View PDF →
-  </a>
-</article>
-
-<article class="paper-card">
-  <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2602.23077v1" target="_blank" rel="noopener noreferrer">
-      Stochastic Evolution of Galactic Star Formation with Halo Coupling, AGN Quenching and Hopf Bifurcation Dynamics
-    </a>
-  </h3>
-  <p class="paper-meta">
-    <span class="paper-authors">Sanjeev Kumar, A. K. Awasthi, Mahesh Kumar</span>
-    <span class="paper-dot">•</span>
-    <span class="paper-date">2026-02-26</span>
-  </p>
-  <p class="paper-abstract">We present a computational framework for galactic evolution based on a coupled stochastic nonlinear oscillator, implemented with the \textbf{Stochastic Hopf Engine}. Gas density ($G$) and star formation rate ($S$) co-evolve through a supercritical Hopf bifurcation, capturing the transition from quiescent stability to merger-driven starbursts. Scatter in dark matter halo properties, modeled as multiplicative noise via the \textbf{Euler--Maruyama method}, broadens the bifurcation into a regime where noise-induced bursts occur below the deterministic threshold. Simulations reveal a periodic signature, the \textbf{Galactic Heartbeat}, emerging as a deterministic limit cycle validated by the \textbf{data3} resonance peak in the star-formation spectrum. A radial reduction yields an effective \textbf{Fokker--Planck equation} for burst amplitude; its stationary solution matches numerical PDFs, providing statistical closure. Including differential shear $Ω(r)$ and spatially varying bifurcation fields reproduces spiral morphologies and AGN-driven quenching. Driving the growth parameter sub-critical ($r_{agn} &lt; 0$) yields ``Red and Dead&#x27;&#x27; cores via attractor collapse. Dark matter halo scatter suppresses mean star formation while enhancing intermittency, offering a minimal yet interpretable framework linking local feedback and global potentials to macroscopic galactic evolution.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2602.23077v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
