@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-03-08 02:06 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-03-09 02:07 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05500v1" target="_blank" rel="noopener noreferrer">
-      POET-X: Memory-efficient LLM Training by Scaling Orthogonal Transformation
+    <a href="https://arxiv.org/pdf/2603.06567v1" target="_blank" rel="noopener noreferrer">
+      A recipe for scalable attention-based MLIPs: unlocking long-range accuracy with all-to-all node attention
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Zeju Qiu, Lixin Liu, Adrian Weller, Han Shi, Weiyang Liu</span>
+    <span class="paper-authors">Eric Qu, Brandon M. Wood, Aditi S. Krishnapriyan, Zachary W. Ulissi</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">Efficient and stable training of large language models (LLMs) remains a core challenge in modern machine learning systems. To address this challenge, Reparameterized Orthogonal Equivalence Training (POET), a spectrum-preserving framework that optimizes each weight matrix through orthogonal equivalence transformation, has been proposed. Although POET provides strong training stability, its original implementation incurs high memory consumption and computational overhead due to intensive matrix multiplications. To overcome these limitations, we introduce POET-X, a scalable and memory-efficient variant that performs orthogonal equivalence transformations with significantly reduced computational cost. POET-X maintains the generalization and stability benefits of POET while achieving substantial improvements in throughput and memory efficiency. In our experiments, POET-X enables the pretraining of billion-parameter LLMs on a single Nvidia H100 GPU, and in contrast, standard optimizers such as AdamW run out of memory under the same settings.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05500v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Machine-learning interatomic potentials (MLIPs) have advanced rapidly, with many top models relying on strong physics-based inductive biases. However, as models scale to larger systems like biomolecules and electrolytes, they struggle to accurately capture long-range (LR) interactions, leading current approaches to rely on explicit physics-based terms or components. In this work, we propose AllScAIP, a straightforward, attention-based, and energy-conserving MLIP model that scales to O(100 million) training samples. It addresses the long-range challenge using an all-to-all node attention component that is data-driven. Extensive ablations reveal that in low-data/small-model regimes, inductive biases improve sample efficiency. However, as data and model size scale, these benefits diminish or even reverse, while all-to-all attention remains critical for capturing LR interactions. Our model achieves state-of-the-art energy/force accuracy on molecular systems, as well as a number of physics-based evaluations (OMol25), while being competitive on materials (OMat24) and catalysts (OC20). Furthermore, it enables stable, long-timescale MD simulations that accurately recover experimental observables, including density and heat of vaporization predictions.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06567v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05495v1" target="_blank" rel="noopener noreferrer">
-      Cheap Thrills: Effective Amortized Optimization Using Inexpensive Labels
+    <a href="https://arxiv.org/pdf/2603.06563v1" target="_blank" rel="noopener noreferrer">
+      Convergence of Neural Network Policies for Risk--Reward Optimization
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Khai Nguyen, Petros Ellinas, Anvita Bhagavathula, Priya Donti</span>
+    <span class="paper-authors">Chang Chen, Duy-Minh Dang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">To scale the solution of optimization and simulation problems, prior work has explored machine-learning surrogates that inexpensively map problem parameters to corresponding solutions. Commonly used approaches, including supervised and self-supervised learning with either soft or hard feasibility enforcement, face inherent challenges such as reliance on expensive, high-quality labels or difficult optimization landscapes. To address their trade-offs, we propose a novel framework that first collects &quot;cheap&quot; imperfect labels, then performs supervised pretraining, and finally refines the model through self-supervised learning to improve overall performance. Our theoretical analysis and merit-based criterion show that labeled data need only place the model within a basin of attraction, confirming that only modest numbers of inexact labels and training epochs are required. We empirically validate our simple three-stage strategy across challenging domains, including nonconvex constrained optimization, power-grid operation, and stiff dynamical systems, and show that it yields faster convergence; improved accuracy, feasibility, and optimality; and up to 59x reductions in total offline cost.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05495v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We develop a neural-network framework for multi-period risk--reward stochastic control problems with constrained two-step feedback policies that may be discontinuous in the state. We allow a broad class of objectives built on a finite-dimensional performance vector, including terminal and path-dependent statistics, with risk functionals admitting auxiliary-variable optimization representations (e.g.\ Conditional Value-at-Risk and buffered probability of exceedance) and optional moment dependence. Our approach parametrizes the two-step policy using two coupled feedforward networks with constraint-enforcing output layers, reducing the constrained control problem to unconstrained training over network parameters. Under mild regularity conditions, we prove that the empirical optimum of the NN-parametrized objective converges in probability to the true optimal value as network capacity and training sample size increase. The proof is modular, separating policy approximation, propagation through the controlled recursion, and preservation under the scalarized risk--reward objective. Numerical experiments confirm the predicted convergence-in-probability behavior, show close agreement between learned and reference control heat maps, and demonstrate out-of-sample robustness on a large independent scenario set.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06563v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05480v1" target="_blank" rel="noopener noreferrer">
-      Thermodynamic Response Functions in Singular Bayesian Models
+    <a href="https://arxiv.org/pdf/2603.06555v1" target="_blank" rel="noopener noreferrer">
+      Hierarchical Industrial Demand Forecasting with Temporal and Uncertainty Explanations
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Sean Plummer</span>
+    <span class="paper-authors">Harshavardhan Kamarthi, Shangqing Xu, Xinjie Tong, Xingyu Zhou, James Peters, Joseph Czyzyk, B. Aditya Prakash</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">Singular statistical models-including mixtures, matrix factorization, and neural networks-violate regular asymptotics due to parameter non-identifiability and degenerate Fisher geometry. Although singular learning theory characterizes marginal likelihood behavior through invariants such as the real log canonical threshold and singular fluctuation, these quantities remain difficult to interpret operationally. At the same time, widely used criteria such as WAIC and WBIC appear disconnected from underlying singular geometry. We show that posterior tempering induces a one-parameter deformation of the posterior distribution whose associated observables generate a hierarchy of thermodynamic response functions. A universal covariance identity links derivatives of tempered expectations to posterior fluctuations, placing WAIC, WBIC, and singular fluctuation within a unified response framework. Within this framework, classical quantities from singular learning theory acquire natural thermodynamic interpretations: RLCT governs the leading free-energy slope, singular fluctuation corresponds to curvature of the tempered free energy, and WAIC measures predictive fluctuation. We formalize an observable algebra that quotients out non-identifiable directions, allowing structurally meaningful order parameters to be constructed in singular models. Across canonical singular examples-including symmetric Gaussian mixtures, reduced-rank regression, and overparameterized neural networks-we empirically demonstrate phase-transition-like behavior under tempering. Order parameters collapse, susceptibilities peak, and complexity measures align with structural reorganization in posterior geometry. Our results suggest that thermodynamic response theory provides a natural organizing framework for interpreting complexity, predictive variability, and structural reorganization in singular Bayesian learning.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05480v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Hierarchical time-series forecasting is essential for demand prediction across various industries. While machine learning models have obtained significant accuracy and scalability on such forecasting tasks, the interpretability of their predictions, informed by application, is still largely unexplored. To bridge this gap, we introduce a novel interpretability method for large hierarchical probabilistic time-series forecasting, adapting generic interpretability techniques while addressing challenges associated with hierarchical structures and uncertainty. Our approach offers valuable interpretative insights in response to real-world industrial supply chain scenarios, including 1) the significance of various time-series within the hierarchy and external variables at specific time points, 2) the impact of different variables on forecast uncertainty, and 3) explanations for forecast changes in response to modifications in the training dataset. To evaluate the explainability method, we generate semi-synthetic datasets based on real-world scenarios of explaining hierarchical demands for over ten thousand products at a large chemical company. The experiments showed that our explainability method successfully explained state-of-the-art industrial forecasting methods with significantly higher explainability accuracy. Furthermore, we provide multiple real-world case studies that show the efficacy of our approach in identifying important patterns and explanations that help stakeholders better understand the forecasts. Additionally, our method facilitates the identification of key drivers behind forecasted demand, enabling more informed decision-making and strategic planning. Our approach helps build trust and confidence among users, ultimately leading to better adoption and utilization of hierarchical forecasting models in practice.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06555v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05475v1" target="_blank" rel="noopener noreferrer">
-      Low-depth amplitude estimation via statistical eigengap estimation
+    <a href="https://arxiv.org/pdf/2603.06506v1" target="_blank" rel="noopener noreferrer">
+      Semantics-Aware Caching for Concept Learning
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Po-Wei Huang, Bálint Koczor</span>
+    <span class="paper-authors">Louis Mozart Kamdem Teyou, Caglar Demir, Axel-Cyrille Ngonga Ngomo</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">Amplitude estimation, in its original form, is formulated as phase estimation upon the Grover walk operator. Since its introduction, subsequent improvements to the algorithm have removed the use of phase estimation and introduced low-depth variants that trade speedup factors for lower circuit depth. We make the key observation that amplitude estimation is equivalent to estimating the energy gap of an effective Hamiltonian, whereby discrete time evolution is generated by amplitude amplification. This enables us to develop two amplitude estimation algorithms for both Heisenberg-limited and low-depth circuit regimes, inspired by statistical phase estimation techniques developed for seemingly unrelated early fault-tolerant ground-state energy estimation. Our approach has significant technical and practical benefits, and uses simplified classical post-processing compared to prior techniques -- our theoretical and numerical results indicate that we achieve state-of-the-art performance. Furthermore, while our approach achieves Heisenberg-limited scaling, we also establish optimal query-depth tradeoffs up to polylogarithmic factors in the low-depth regime with provable theoretical guarantees. Due to its flexibility, generality, and robustness, we expect our approach to be a key enabler for a broad range of early fault-tolerant applications.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05475v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Concept learning is a form of supervised machine learning that operates on knowledge bases in description logics. State-of-the-art concept learners often rely on an iterative search through a countably infinite concept space. In each iteration, they retrieve instances of candidate solutions to select the best concept for the next iteration. While simple learning problems might require a few dozen instance retrieval calls to find a fitting solution, complex learning problems might necessitate thousands of calls. We alleviate the resulting runtime challenge by presenting a semantics-aware caching approach. Our cache is essentially a subsumption-aware map that links concepts to a set of instances via crisp set operations. Our experiments on 5 datasets with 4 symbolic reasoners, a neuro-symbolic reasoner, and 5 popular pagination policies demonstrate that our cache can reduce the runtime of concept retrieval and concept learning by an order of magnitude while being effective for both symbolic and neuro-symbolic reasoners.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06506v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05457v1" target="_blank" rel="noopener noreferrer">
-      A likelihood analysis for gamma-ray background models
+    <a href="https://arxiv.org/pdf/2603.06496v1" target="_blank" rel="noopener noreferrer">
+      Rotation-invariant graph message passing enables acquisition protocol generalisation in learning-based brain microstructure estimation
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Chance Hoskinson, Jason Kumar, Pearl Sandick</span>
+    <span class="paper-authors">Leevi Kerkelä, Hui Zhang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">Indirect searches for dark matter using dwarf spheroidal galaxies are limited by systematic uncertainties in modeling diffuse gamma-ray backgrounds. We present a likelihood-based comparison of locally constructed empirical background models and theoretically-motivated models that incorporate the Fermi-LAT diffuse background. The empirical models we study include both an independent-binning approach and a covariance-based approach that captures cross-energy correlations. Using ensembles of blank-sky regions and information criteria which account for model complexity, we find that empirical background descriptions provide a statistically competitive fit to gamma-ray data on degree scales in high-latitude regions.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05457v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Estimating brain microstructure has important applications in medicine and neuroscience. Diffusion-weighted magnetic resonance imaging enables measuring microstructure \textit{in vivo}. Conventional biophysical model fitting can be accurate but is slow and impractical for time-critical clinical use, where machine learning can offer a potential route to rapid estimation. We address the problem of microstructure estimation under arbitrary acquisition protocols where most existing learning-based methods fail due to protocol assumptions, requiring retraining when the protocol changes. We present a graph neural network that represents input data as a point cloud in the 3D space where diffusion-weighted measurements are made and performs rotation-invariant message passing with permutation-invariant pooling, producing fixed-size embeddings that encode microstructure. The inductive biases of our relatively small model were guided by the underlying physics and symmetries of the problem rather than by generic model architectures. Trained on randomised simulated data, our model demonstrates domain generalisation, accurately estimating microstructure from data with unseen real-world protocols without retraining. This approach represents a step towards a &quot;train once, deploy anywhere&quot; architecture, bringing rapid learning-based microstructure mapping closer to clinical deployment.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06496v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05442v1" target="_blank" rel="noopener noreferrer">
-      High-Pressure Inelastic Neutron Spectroscopy: A true test of Machine-Learned Interatomic Potential energy landscapes
+    <a href="https://arxiv.org/pdf/2603.06485v1" target="_blank" rel="noopener noreferrer">
+      PONTE: Personalized Orchestration for Natural Language Trustworthy Explanations
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jeff Armstrong, Adam Jackson, Alin Elena</span>
+    <span class="paper-authors">Vittoria Vineis, Matteo Silvestri, Lorenzo Antonelli, Filippo Betello, Gabriele Tolomei</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">Machine-learned interatomic potentials (MLIPs) promise to provide near density-functional theory accuracy at a fraction of the computational cost, offering a transformative route toward genuinely predictive chemistry. Yet their predictive validity beyond the training regime remains largely untested experimentally. Here we use pressure-dependent broadband inelastic neutron spectroscopy (INS) as a direct experimental probe of MLIP transferability. Employing a newly developed high-pressure superalloy clamp cell, we measure INS spectra of crystalline 2,5-diiodothiophene at 10~K under ambient conditions and at 1.5~GPa. A MACE-based MLIP, fine-tuned on targeted DFT data, reproduces the experimental spectra across 0--1200~cm$^{-1}$ at both pressures and remains thermodynamically stable under rigorous molecular dynamics validation at 300~K. The model captures systematic pressure-induced blue shifts arising from steric stiffening and reproduces an anomalous red shift at 453~cm$^{-1}$ driven by pressure-modified intermolecular interactions, providing direct validation of its many-body character. This constitutes the first experimental demonstration of MLIP transferability across distinct thermodynamic states using neutron spectroscopy, and establishes high-pressure INS as a stringent benchmark for predictive machine-learned potentials.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05442v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Explainable Artificial Intelligence (XAI) seeks to enhance the transparency and accountability of machine learning systems, yet most methods follow a one-size-fits-all paradigm that neglects user differences in expertise, goals, and cognitive needs. Although Large Language Models can translate technical explanations into natural language, they introduce challenges related to faithfulness and hallucinations. To address these challenges, we present PONTE (Personalized Orchestration for Natural language Trustworthy Explanations), a human-in-the-loop framework for adaptive and reliable XAI narratives. PONTE models personalization as a closed-loop validation and adaptation process rather than prompt engineering. It combines: (i) a low-dimensional preference model capturing stylistic requirements; (ii) a preference-conditioned generator grounded in structured XAI artifacts; and (iii) verification modules enforcing numerical faithfulness, informational completeness, and stylistic alignment, optionally supported by retrieval-grounded argumentation. User feedback iteratively updates the preference state, enabling quick personalization. Automatic and human evaluations across healthcare and finance domains show that the verification-refinement loop substantially improves completeness and stylistic alignment over validation-free generation. Human studies further confirm strong agreement between intended preference vectors and perceived style, robustness to generation stochasticity, and consistently positive quality assessments.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06485v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05432v1" target="_blank" rel="noopener noreferrer">
-      Ensembling Language Models with Sequential Monte Carlo
+    <a href="https://arxiv.org/pdf/2603.06473v1" target="_blank" rel="noopener noreferrer">
+      A Mixture-of-Experts Framework for Practical Hybrid-Quantum Models in Credit Card Fraud Detection
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Robin Shing Moon Chan, Tianyu Liu, Samuel Kiegeland, Clemente Pasti, Jacob Hoover Vigly, Timothy J. O&#x27;Donnell, Ryan Cotterell, Tim Vieira</span>
+    <span class="paper-authors">Rodrigo Chaves, Kunal Kumar, Bruno Chagas, Rory Linerud, Brannen Sorem, Javier Mancilla, Bryn Bell</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">Practitioners have access to an abundance of language models and prompting strategies for solving many language modeling tasks; yet prior work shows that modeling performance is highly sensitive to both choices. Classical machine learning ensembling techniques offer a principled approach: aggregate predictions from multiple sources to achieve better performance than any single one. However, applying ensembling to language models during decoding is challenging: naively aggregating next-token probabilities yields samples from a locally normalized, biased approximation of the generally intractable ensemble distribution over strings. In this work, we introduce a unified framework for composing $K$ language models into $f$-ensemble distributions for a wide range of functions $f\colon\mathbb{R}_{\geq 0}^{K}\to\mathbb{R}_{\geq 0}$. To sample from these distributions, we propose a byte-level sequential Monte Carlo (SMC) algorithm that operates in a shared character space, enabling ensembles of models with mismatching vocabularies and consistent sampling in the limit. We evaluate a family of $f$-ensembles across prompt and model combinations for various structured text generation tasks, highlighting the benefits of alternative aggregation strategies over traditional probability averaging, and showing that better posterior approximations can yield better ensemble performance.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05432v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">This paper investigates whether hybrid quantum-classical machine learning can deliver practical improvements in financial fraud detection performance for card-based and other payment transactions. Building on a Guided Quantum Compressor architecture, the approach integrates an autoencoder, a variational quantum circuit, and a classical neural head, and then embeds this hybrid model into a mixture-of-experts framework including a state-of-the-art gradient-boosted tree classifier. Using a European credit card dataset with severe class imbalance, the routed hybrid architecture achieves average precision scores of $0.793\pm0.085$ compared to $0.770\pm0.065$ of XGBoost on 3 repeated 5-fold cross-validation benchmarks. Precision and recall comparisons reveals a possible trade-off of fraud and nominal detections with a reduction in false positives at the cost of a small reduction in fraud detections. The improvements are achieved while adding only 7 to 21 minutes of extra inference time depending on the choice of hyperparameters. These results indicate that selectively routing transactions to quantum-classical models can enhance fraud detection while remaining compatible with the latency and operational constraints of modern financial institutions.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06473v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05430v1" target="_blank" rel="noopener noreferrer">
-      Extreme Quantum Cognition Machines for Deliberative Decision Making
+    <a href="https://arxiv.org/pdf/2603.06459v1" target="_blank" rel="noopener noreferrer">
+      Do Foundation Models Know Geometry? Probing Frozen Features for Continuous Physical Measurement
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Francesco Romeo, Jacopo Settino</span>
+    <span class="paper-authors">Yakov Pyotr Shkolnikov</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">We introduce Extreme Quantum Cognition Machines, a class of quantum learning architectures for deliberative decision making that is tolerant to noisy and contradictory training data. Inspired by the quantum cognition paradigm, Extreme Quantum Cognition Machines are closely related to quantum extreme learning and quantum reservoir computing, where fixed quantum dynamics generates a nonlinear feature map and learning is confined to a linear readout. A dynamical attention mechanism, implemented through an input-dependent interaction term in the Hamiltonian, modulates the quantum evolution and biases the resulting feature embedding toward task-relevant correlations. The approach is validated on linguistic classification tasks, which serve as paradigmatic examples of deliberative inference. Hardware-compatible quantum implementations of the proposed framework are discussed, together with potential applications in symbolic inference, sequence analysis, anomaly detection, and automatic diagnosis, with direct relevance to domains such as biology, forensics, and cybersecurity.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05430v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Vision-language models encode continuous geometry that their text pathway fails to express: a 6,000-parameter linear probe extracts hand joint angles at 6.1 degrees MAE from frozen features, while the best text output achieves only 20.0 degrees -- a 3.3x bottleneck. LoRA fine-tuning (r=16, 2,000 images) narrows this gap to 6.5 degrees, providing evidence for a pathway-training deficit rather than a representational one. Training objective determines accuracy more than architecture: five encoders spanning self-supervised, contrastive, and hybrid paradigms converge to statistically equivalent accuracy (R^2 approximately 0.55, TOST-equivalent at delta=0.03) despite sharing as little as CKA=0.41 representational similarity -- functional convergence without representational convergence. Autoregressive generation damages geometric fidelity, but the damage originates in the generation process, not in language alignment: Qwen2.5-VL&#x27;s LLM layers actually improve probe accuracy over its raw vision encoder. Layer-wise analysis reveals a universal mid-network accuracy peak across all architectures, with attention heads in layers 18-22 carrying disproportionate geometric signal. These findings enable a single frozen backbone to function as a multi-task geometric sensor through lightweight probes, without fine-tuning or text generation.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06459v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05428v1" target="_blank" rel="noopener noreferrer">
-      Optimal Decoding with the Worm
+    <a href="https://arxiv.org/pdf/2603.06440v1" target="_blank" rel="noopener noreferrer">
+      Toward Generative Quantum Utility via Correlation-Complexity Map
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Zac Tobias, Nikolas P. Breuckmann, Benedikt Placke</span>
+    <span class="paper-authors">Chen-Yu Liu, Leonardo Placidi, Eric Brunner, Enrico Rinaldi</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">We propose a new decoder for ``matchable&#x27;&#x27; qLDPC codes that uses a Markov-Chain Monte-Carlo algorithm -- called the \emph{worm algorithm} -- to approximately compute the probabilities of logical error classes given a syndrome. The algorithm hence performs (approximate) \emph{optimal} decoding, and we expect it to be computationally efficient in certain settings. The algorithm is applicable to decoding random errors for the surface code, the honeycomb Floquet code, and hyperbolic surface codes with constant rate, in all cases with and without measurement errors. The efficiency of the decoder hinges on the mixing time of the underlying Markov chain. We give a rigorous mixing time guarantee in terms of a quantity that we call the \emph{defect susceptibility}. We connect this quantity to the notion of disorder operators in statistical mechanics and use this to argue (non-rigorously) that the algorithm is efficient for \emph{typical} errors in the entire decodable phase. We also demonstrate the effectiveness of the worm decoder numerically by applying it to the surface code with measurement errors as well as a family of hyperbolic surface codes. For most codes, the matchability condition restricts direct application of our decoder to noise models with independent bit-flip, phase-flip, and measurement errors. However, our decoder returns \emph{soft information} which makes it useful also in heuristic ``correlated decoding&#x27;&#x27; schemes which work beyond this simple setting. We demonstrate this by simulating decoding of the surface code under depolarizing noise, and we find that the threshold for ``correlated worm decoding&#x27;&#x27; is substantially higher than for both minimum-weight perfect matching and for correlated matching.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05428v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We propose a Correlation-Complexity Map as a practical diagnostic tool for determining when real-world data distributions are structurally aligned with IQP-type quantum generative models. Characterized by two complementary indicators: (i) a Quantum Correlation-Likeness Indicator (QCLI), computed from the dataset&#x27;s correlation-order (Walsh-Hadamard/Fourier) power spectrum aggregated by interaction order and quantified via Jensen-Shannon divergence from an i.i.d. binomial reference; and (ii) a Classical Correlation-Complexity Indicator (CCI), defined as the fraction of total correlation not captured by the optimal Chow-Liu tree approximation, normalized by total correlation. We provide theoretical support by relating QCLI to a support-mismatch mechanism, for fixed-architecture IQP families trained with an MMD objective, higher QCLI implies a smaller irreducible approximation floor. Using the map, we identify the classical turbulence data as both IQP-compatible and classically complex (high QCLI/high CCI). Guided by this placement, we use an invertible float-to-bitstring representation and a latent-parameter adaptation scheme that reuses a compact IQP circuit over a temporal sequence by learning and interpolating a low-dimensional latent trajectory. In comparative evaluations against classical models such as Restricted Boltzmann Machine (RBM) and Deep Convolutional Generative Adversarial Networks (DCGAN), the IQP approach achieves competitive distributional alignment while using substantially fewer training snapshots and a small latent block, supporting the use of QCLI/CCI as practical indicators for locating IQP-aligned domains and advancing generative quantum utility.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06440v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05423v1" target="_blank" rel="noopener noreferrer">
-      An interpretable prototype parts-based neural network for medical tabular data
+    <a href="https://arxiv.org/pdf/2603.06410v1" target="_blank" rel="noopener noreferrer">
+      Lyα Nebulae in HETDEX: The Largest Statistical Census Bridging Lyα Halos and Blobs across Cosmic Noon
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jacek Karolczak, Jerzy Stefanowski</span>
+    <span class="paper-authors">Erin Mentuch Cooper, Karl Gebhardt, Dustin Davis, Robin Ciardullo, Chris Byrohl, Chenxu Liu, Maya H. Debski, Óscar A. Chávez Ortiz, Maximilian Fabricius, Daniel J. Farrow, Steven L. Finkelstein, Caryl Gronwall, Gary J. Hill, Maja Lujan Niemeyer, Brianna McKay, Shiro Mukae, Masami Ouchi, Huub Röttgering, Donald P. Schneider, Sarah Tuttle, Lutz Wisotzki, Gregory Zeimann, Sai Zhai</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">The ability to interpret machine learning model decisions is critical in such domains as healthcare, where trust in model predictions is as important as their accuracy. Inspired by the development of prototype parts-based deep neural networks in computer vision, we propose a new model for tabular data, specifically tailored to medical records, that requires discretization of diagnostic result norms. Unlike the original vision models that rely on the spatial structure, our method employs trainable patching over features describing a patient, to learn meaningful prototypical parts from structured data. These parts are represented as binary or discretized feature subsets. This allows the model to express prototypes in human-readable terms, enabling alignment with clinical language and case-based reasoning. Our proposed neural network is inherently interpretable and offers interpretable concept-based predictions by comparing the patient&#x27;s description to learned prototypes in the latent space of the network. In experiments, we demonstrate that the model achieves classification performance competitive to widely used baseline models on medical benchmark datasets, while also offering transparency, bridging the gap between predictive performance and interpretability in clinical decision support.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05423v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The Hobby-Eberly Dark Energy Experiment (HETDEX) is an untargeted ~540 deg^2 spectroscopic survey of Lyα emission in the 1.9 &lt; z &lt; 3.5 Universe. In surface brightness, this survey reaches 1σ Lyα sensitivities of approximately 2-5 x 10^-18 erg s^-1 cm^-2 arcsec^-2, allowing large samples of extended Lyα nebulae (LAN) to be studied. We selected a sample of 70,691 Lyα-emitting galaxies (LAEs) with an emission-line signal-to-noise ratio greater than 6 and modeled the Lyα emission as a point-source component with an optional exponential envelope. Half (~47.5%) of the LAE sample (33,612 objects) exhibits significant extended emission and is best fit by the two-component model. The fraction of resolved sources increases with Lyα flux and luminosity. Their isophotal areas range from 10-130 arcsec^2 (median 15 arcsec^2), with integrated Lyα fluxes from 6-2000 x 10^-17 erg s^-1 cm^-2 (median 20 x 10^-17 erg s^-1 cm^-2). Comparison between point-spread-function-weighted and isophotal flux measurements shows that the HETDEX pipeline underestimates the total Lyα flux by ~30% on average, reflecting the substantial halo contribution in extended sources. Approximately 420 LANs are found per deg^2 over 79.5 deg^2 of non-contiguous sky. About 12% of resolved sources show active galactic nuclei signatures and are bright in Lyα and continuum. The remaining 88% span a wide range of morphologies and often lack continuum counterparts. Exponential scale lengths show no strong correlation with Lyα flux or luminosity (median 11.6 +/- 1.9 kpc). Only 2.9% of the full S/N &gt; 6 LAE population with ancillary data have radio counterparts, but 64% of those are found to be extended, with the radio fraction increasing with Lyα size.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06410v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05402v1" target="_blank" rel="noopener noreferrer">
-      Generalized matching decoders for 2D topological translationally-invariant codes
+    <a href="https://arxiv.org/pdf/2603.06396v1" target="_blank" rel="noopener noreferrer">
+      Long-range machine-learning potentials with environment-dependent charges enable predicting LO-TO splitting and dielectric constants
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Shi Jie Samuel Tan, Ian Gill, Eric Huang, Pengyu Liu, Chen Zhao, Hossein Dehghani, Aleksander Kubica, Hengyun Zhou, Arpit Dua</span>
+    <span class="paper-authors">Dmitry Korogod, Alexander V. Shapeev, Ivan S. Novikov</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">Two-dimensional topological translationally-invariant (TTI) quantum codes, such as the toric code (TC) and bivariate bicycle (BB) codes, are promising candidates for fault-tolerant quantum computation. For such codes to be practically relevant, their decoders must successfully correct the most likely errors while remaining computationally efficient. For the TC, graph-matching decoders satisfy both requirements and, additionally, admit provable performance guarantees. Given the equivalence between TTI codes and (multiple copies of) the TC, one may then ask whether TTI codes also admit analogous graph-matching decoders. In this work, we develop a graph-matching approach to decoding general TTI codes. Intuitively, our approach coarse-grains the TTI code to obtain an effective description of the syndrome in terms of TC excitations, which can then be removed using graph-matching techniques. We prove that our decoders correct errors of weight up to a constant fraction of the code distance and achieve non-zero code-capacity thresholds. We further numerically study a variant optimized for practically relevant BB codes and observe performance comparable to that of the belief propagation with ordered statistics decoder. Our results indicate that graph-matching decoders are a viable approach to decoding BB codes and other TTI codes.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05402v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We present two models with explicit long-range electrostatics in the form of Coulomb interactions. Both models include point charges depending on their local atomic environments, and the second model also conserves a total charge of an atomic system. We combine the proposed long-range models with local Moment Tensor Potential and demonstrate that they reduce the training errors of the MTP models fitted on the same training sets including the CH$_3$COO$^-$+4-methylphenol and CH$_3$COO$^-$+4-methylimidazole organic dimers (non-periodic systems) and the NaCl crystal (periodic system). For the organic dimers, the proposed models also give qualitatively correct predictions of the binding curves. Furthermore, in this study we introduce a method for calculating phonon spectra of isotropic materials only via these long-range models fitted to energies, forces, and stresses. The developed long-range model with point charges dependent on atomic environments and conserving total charge is capable of predicting the correct value of the LO-TO splitting in the $Γ$-point in the isotropic NaCl. For this system, we also predict dielectric constant from dipole moment fluctuations calculated with molecular dynamics simulations conducted with the developed long-range model. The calculated dielectric constant is in good agreement with experiment. Finally, we demonstrate the broader applicability of the introduced approach by computing the phonon spectrum of uniaxial tetragonal PbTiO$_3$. Although the method is formally derived for isotropic materials, we show that it is also perspective for uniaxial materials (e.g., PbTiO$_3$) as the spectrum obtained with our long-range interatomic potential corresponds to the one calculated with density functional theory.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06396v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05396v1" target="_blank" rel="noopener noreferrer">
-      Harnessing Synthetic Data from Generative AI for Statistical Inference
+    <a href="https://arxiv.org/pdf/2603.06380v1" target="_blank" rel="noopener noreferrer">
+      Kinetic-based regularization: Learning spatial derivatives and PDE applications
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ahmad Abdel-Azim, Ruoyu Wang, Xihong Lin</span>
+    <span class="paper-authors">Abhisek Ganguly, Santosh Ansumali, Sauro Succi</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">The emergence of generative AI models has dramatically expanded the availability and use of synthetic data across scientific, industrial, and policy domains. While these developments open new possibilities for data analysis, they also raise fundamental statistical questions about when synthetic data can be used in a valid, reliable, and principled manner. This paper reviews the current landscape of synthetic data generation and use from a statistical perspective, with the goal of clarifying the assumptions under which synthetic data can meaningfully support downstream discovery, inference, and prediction. We survey major classes of modern generative models, their intended use cases, and the benefits they offer, while also highlighting their limitations and characteristic failure modes. We additionally examine common pitfalls that arise when synthetic data are treated as surrogates for real observations, including biases from model misspecification, attenuated uncertainty, and difficulties in generalization. Building on these insights, we discuss emerging frameworks for the principled use of synthetic data. We conclude with practical recommendations, open problems, and cautions intended to guide both method developers and applied researchers.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05396v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Accurate estimation of spatial derivatives from discrete and noisy data is central to scientific machine learning and numerical solutions of PDEs. We extend kinetic-based regularization (KBR), a localized multidimensional kernel regression method with a single trainable parameter, to learn spatial derivatives with provable second-order accuracy in 1D. Two derivative-learning schemes are proposed: an explicit scheme based on the closed-form prediction expressions, and an implicit scheme that solves a perturbed linear system at the points of interest. The fully localized formulation enables efficient, noise-adaptive derivative estimation without requiring global system solving or heuristic smoothing. Both approaches exhibit quadratic convergence, matching second-order finite difference for clean data, along with a possible high-dimensional formulation. Preliminary results show that coupling KBR with conservative solvers enables stable shock capture in 1D hyperbolic PDEs, acting as a step towards solving PDEs on irregular point clouds in higher dimensions while preserving conservation laws.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06380v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05392v1" target="_blank" rel="noopener noreferrer">
-      Legal interpretation and AI: from expert systems to argumentation and LLMs
+    <a href="https://arxiv.org/pdf/2603.06364v1" target="_blank" rel="noopener noreferrer">
+      Generation of Imaging Air Cherenkov Telescope images using Diffusion Models
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Václav Janeček, Giovanni Sartor</span>
+    <span class="paper-authors">Christian Elflein, Stefan Funk, Jonas Glombitza, Vinicius Mikuni, Benjamin Nachman, Lark Wang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">AI and Law research has encountered legal interpretation in different ways, in the context of its evolving approaches and methodologies. Research on expert system has focused on legal knowledge engineering, with the goal of ensuring that human-generated interpretations can be precisely transferred into knowledge-bases, to be consistently applied. Research on argumentation has aimed at representing the structure of interpretive arguments, as well as their dialectical interactions, to assess of the acceptability of interpretive claims within argumentation frameworks. Research on machine learning has focused on the automated generation of interpretive suggestions and arguments, through general and specialised language models, now being increasingly deployed in legal practice.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05392v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Substantial amounts of air-shower simulations are needed to derive the instrument response for analyzing Imaging Air Cherenkov Telescope (IACT) data. This process is both computationally intensive and requires repetition under varying observation conditions, due to detector aging, changes in the atmosphere, or the instrument hardware. Generative models offer an efficient alternative, significantly accelerating simulations while compactly storing extensive simulation libraries, and providing a differentiable surrogate model of the instrument. However, their applicability has so far been limited in gamma-ray astronomy, particularly for modeling hadronic showers that dominate the background and exhibit significant intrinsic fluctuations that are challenging to model. In this study, we present the first application of score-based diffusion models to generate monoscopic $γ$-ray and proton shower images with nearly 2,000 pixels and benchmark the performance against Wasserstein GANs using H.E.S.S. simulations. We examine quality using both low-level parameters and well-established shower-shape observables, and assess analysis readiness via state-of-the-art $γ$-hadron separation. While GAN-based approaches can reproduce $γ$-ray showers with high fidelity, they fail to generate proton events of comparable quality, leading to a measurable degradation in analysis performance. In contrast, score-based diffusion modles achieve significantly superior quality for $γ$-ray and proton showers, accurately reproducing high-level correlations and generating events that are statistically indistinguishable from simulations at the analysis level. These results establish diffusion-based models as the first analysis-ready surrogate model of a single IACT, opening new prospects for fast instrument response generation, detector optimization, and connected downstream tasks.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06364v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05390v1" target="_blank" rel="noopener noreferrer">
-      Extreme Values of Infinite-Measure Processes
+    <a href="https://arxiv.org/pdf/2603.06359v1" target="_blank" rel="noopener noreferrer">
+      Tiny, Hardware-Independent, Compression-based Classification
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Talia Baravi, Eli Barkai</span>
+    <span class="paper-authors">Charles Meyers, Aaron MacSween, Erik Elmroth, Tommy Löfstedt</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">We study the statistics of the maximum and minimum of a set of $N$ random variables whose dynamical and statistical properties fall within the scope of infinite ergodic theory. These non-stationary yet recurrent systems are described, in the long-time limit, by a non-normalizable infinite invariant density. Extreme events in such systems emerge in a joint limit where the observation time $t$ is long and the number of variables $N$ is large. We show that the resulting extreme value statistics are controlled by the return exponent $α$ and the infinite invariant measure, and therefore depart from the classical Fréchet, Gumbel, and Weibull universality classes. We illustrate the theory for weakly chaotic intermittent maps, overdamped diffusion in an asymptotically flat potential, and a stochastic model of sub-recoil laser cooling, and show how measurements of extremes can be used to infer the infinite-density structure.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05390v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The recent developments in machine learning have highlighted a conflict between online platforms and their users in terms of privacy. The importance of user privacy and the struggle for power over user data has been intensified as regulators and operators attempt to police online platforms. As users have become increasingly aware of privacy issues, client-side data storage, management, and analysis have become a favoured approach to large-scale centralised machine learning. However, state-of-the-art machine learning methods require vast amounts of labelled user data, making them unsuitable for models that reside client-side and only have access to a single user&#x27;s data. State-of-the-art methods are also computationally expensive, which degrades the user experience on compute-limited hardware and also reduces battery life. A recent alternative approach has proven remarkably successful in classification tasks across a wide variety of data -- using a compression-based distance measure (called normalised compression distance) to measure the distance between generic objects in classical distance-based machine learning methods. In this work, we demonstrate that the normalised compression distance is actually not a metric; develop it for the wider context of kernel methods to allow modelling of complex data; and present techniques to improve the training time of models that use this distance measure. We demonstrate that the normalised compression distance works as well as and sometimes better than other metrics and kernels -- while requiring only marginally more computational costs and in spite of the lack of formal metric properties. The end results is a simple model with remarkable accuracy even when trained on a very small number of samples allowing for models that are small and effective enough to run entirely on a client device using only user-supplied data.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06359v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05375v1" target="_blank" rel="noopener noreferrer">
-      Robust Node Affinities via Jaccard-Biased Random Walks and Rank Aggregation
+    <a href="https://arxiv.org/pdf/2603.06341v1" target="_blank" rel="noopener noreferrer">
+      Disentangling the Galactic binary zoo: Machine learning classification of stellar remnant binaries in LISA data
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Bastian Pfeifer, Michael G. Schimek</span>
+    <span class="paper-authors">Irwin Khai Cheng Tay, Valeriya Korol, Thibault Lechien</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">Estimating node similarity is a fundamental task in network analysis and graph-based machine learning, with applications in clustering, community detection, classification, and recommendation. We propose TopKGraphs, a method based on start-node-anchored random walks that bias transitions toward nodes with structurally similar neighborhoods, measured via Jaccard similarity. Rather than computing stationary distributions, walks are treated as stochastic neighborhood samplers, producing partial node rankings that are aggregated using robust rank aggregation to construct interpretable node-to-node affinity matrices. TopKGraphs provides a non-parametric, interpretable, and general-purpose representation of node similarity that can be applied in both network analysis and machine learning workflows. We evaluate the method on synthetic graphs (stochastic block models, Lancichinetti-Fortunato-Radicchi benchmark graphs), k-nearest-neighbor graphs from tabular datasets, and a curated high-confidence protein-protein interaction network. Across all scenarios, TopKGraphs achieves competitive or superior performance compared to standard similarity measures (Jaccard, Dice), a diffusion-based method (personalized PageRank), and an embedding-based approach (Node2Vec), demonstrating robustness in sparse, noisy, or heterogeneous networks. These results suggest that TopKGraphs is a versatile and interpretable tool for bridging simple local similarity measures with more complex embedding-based approaches, facilitating both data mining and network analysis applications.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05375v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The Laser Interferometer Space Antenna (LISA) will open a new observational window in the millihertz gravitational-wave band, enabling the detection of tens of thousands of compact stellar remnant binaries across the Milky Way. Most of LISA&#x27;s sources will be double white dwarf (WDWD) systems, while neutron star-white dwarf (NSWD) binaries and higher-mass systems will be orders of magnitude rarer but of significant astrophysical interest. Disentangling these populations is challenging due to the strong overlap in their gravitational-wave features. In this work, we investigate the use of machine-learning techniques to classify LISA-detectable binaries based solely on LISA observables. Using mock catalogues of Galactic binaries constructed from population-synthesis studies, we evaluate a range of machine-learning classifiers. We find that ensemble-based methods-particularly gradient-boosting algorithms such as XGBoost-deliver the best performance on our highly imbalanced dataset. WDWD systems are identified with a recall of $\sim 99\%$, reflecting their dominant presence, and high-mass binaries are also classified with high recall ($\ge 85\%$). In contrast, NSWD systems remain the most challenging population to distinguish: their features overlap strongly with those of WDWD binaries, making them particularly prone to misclassification. Despite this, XGBoost correctly identifies 85.6% of NSWD systems in our simulated LISA detections, outperforming simple statistical approaches based on kernel density estimation. We further demonstrate that machine-learning classification can effectively support the interpretation of LISA data, enabling the identification of eccentric binaries and extremely rare subclasses.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06341v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05362v1" target="_blank" rel="noopener noreferrer">
-      Automated High-Throughput Screening of Polymers Using a Computational Workflow
+    <a href="https://arxiv.org/pdf/2603.06330v1" target="_blank" rel="noopener noreferrer">
+      Structured Exploration vs. Generative Flexibility: A Field Study Comparing Bandit and LLM Architectures for Personalised Health Behaviour Interventions
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Lois Smith, Samuel Ericson, Vittoria Fantauzzo, Chin Yong, Paola Carbone, Alessandro Troisi</span>
+    <span class="paper-authors">Dominik P. Hofer, Haochen Song, Rania Islambouli, Laura Hawkins, Ananya Bhattacharjee, Meredith Franklin, Joseph Jay Williams, Jan D. Smeddinck</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">High-throughput computational screening of polymers offers a powerful way to address the imbalance between the vast number of polymers synthesised for diverse applications and the relatively small subset that can be studied using atomistic simulations. This work presents an automatic workflow designed to enable the rapid and efficient screening of an extensive polymer library. The workflow integrates an automated annealing protocol with adaptive control, allowing for reproducible simulations with minimal human intervention and minimisation of the computational cost. The availability of a homogenous large set of simulations enables the adoption of machine learning approaches for a variety of tasks. We exemplify this possibility by proposing rapid machine-learning-based method to predict the (computed) polymer density and (experimental) glass transition temperature.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05362v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Behaviour Change Techniques (BCTs) are central to digital health interventions, yet selecting and delivering effective techniques remains challenging. Contextual bandits enable statistically grounded optimisation of BCT selection, while Large Language Models (LLMs) offer flexible, context-sensitive message generation. We conducted a 4-week study on physical activity motivation (N=54; 9 post-study interviews) that compared five daily messaging approaches: random templates, contextual bandit with templates, LLM generation, hybrid bandit+LLM, and LLM with interaction history. LLM-based approaches were rated substantially more helpful than templates, but no significant differences emerged among LLM conditions. Unexpectedly, bandit optimisation for BCTs selection yielded no additional perceived helpfulness compared with LLM-only approaches. Unconstrained LLMs focused heavily on a single BCT, whereas bandit systems enforced systematic exploration-exploitation across techniques. Quantitative and qualitative findings suggest contextual acknowledgement of user input drove perceived helpfulness. We contribute design suggestions for reflective AI health behaviour change systems that address a trade-off between structured exploration and generative autonomy.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06330v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05356v1" target="_blank" rel="noopener noreferrer">
-      Nuclear Physics of X-ray Bursts
+    <a href="https://arxiv.org/pdf/2603.06328v1" target="_blank" rel="noopener noreferrer">
+      Variable selection in linear mixed model meta-regression with suspected interaction effects -- How can tree-based methods help?
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yi Xu, Hendrik Schatz, Rita Lau, Zach Meisel, Peter Mohr</span>
+    <span class="paper-authors">Jan-Bernd Igelmann, Paula Lorenz, Markus Pauly</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">Thermonuclear X-ray bursts from the surface of accreting neutron stars are the most common astrophysical explosions in our galaxy. They provide a unique window into the physics of neutron stars, the physics of matter under extreme conditions, and the physics of astrophysical thermonuclear explosions. X-ray bursts are powered by a broad range of nuclear reactions that need to be understood to interpret observations. The relevant nuclei are mostly neutron deficient and unstable, and thus experimental information and theoretical understanding is limited and an active area of research in nuclear science. We review the current status of the nuclear physics of X-ray bursts, with special emphasis on new experimental and theoretical information on a large number of reaction rates. As such we provide an overview of the broad experimental and theoretical methods currently used to advance the nuclear physics of X-ray bursts. The new information is used to update the public JINA REACLIB database with 32 new reaction rates based on experimental information, and a new dataset of theoretical statistical model reaction rates where no experimental information is available. Using several models for X-ray bursts that are powered by mixed hydrogen and helium burning, we take advantage of the updated nuclear data to review the current understanding of the nuclear reaction sequences in such X-ray bursts, the modeling of light curves, and predictions of the composition of nuclear ashes.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05356v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Detecting interaction effects (IEs) in meta-regression is challenging, especially when few studies are available and many plausible interactions are considered. In many meta-analyses, interpretability is essential, which limits the use of complex machine learning methods. Tree-based approaches offer a potentially useful compromise, but their role in meta-regression with random effects is not yet well understood. This paper examines how traditional linear and tree-based methods can support variable selection for IEs in random effects meta-regression. We compare test-based and information-criterion-based linear selection procedures with meta-CART approaches. These include fixed effect and random effects trees and their stability-selected ensemble variants. All methods are evaluated using a real-world meta-analytic dataset and a plasmode simulation study. The data-generating process assumes linear IEs and is complemented by settings with nonlinear interactions. Our results show that under strictly linear interactions, linear selection methods perform as expected and achieve superior performance for IE detection. Tree-based methods are more conservative when the number of studies is small, but become competitive as sample size increases, particularly the stability-selected variants. When IEs deviate from strict linearity, even in simple ways, the performance of linear methods deteriorates, whereas tree-based approaches, especially stability-selected fixed effect trees, provide a more robust alternative. Overall, stability-selected random effects trees are useful complementary tools for IE detection in applied meta-regression, particularly for metric covariates. They are well suited for pre-selection and sensitivity analyses, and selection frequency patterns in tree ensembles can help reveal structural patterns in the data.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06328v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05353v1" target="_blank" rel="noopener noreferrer">
-      InfoFlow KV: Information-Flow-Aware KV Recomputation for Long Context
+    <a href="https://arxiv.org/pdf/2603.06319v1" target="_blank" rel="noopener noreferrer">
+      Learning to detect optical nonclassicality
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Xin Teng, Canyu Zhang, Shaoyi Zheng, Danyang Zhuo, Tianyi Zhou, Shengjie Wang</span>
+    <span class="paper-authors">Martina Jung, Suchitra Krishnaswamy, Timon Schapeler, Annabelle Bohrdt, Tim J. Bartley, Jan Sperling, Martin Gärttner</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">Retrieval-augmented generation (RAG) for long-context question answering is bottlenecked by inference-time prefilling over large retrieved contexts. A common strategy is to precompute key-value (KV) caches for individual documents and selectively recompute a small subset of tokens to restore global causal dependencies, but existing methods rely on heuristics or representation discrepancies without modeling whether selected tokens can effectively influence generation. We cast selective KV recomputation as an information flow problem and show that a simple attention-norm signal from the query reliably identifies tokens that are both semantically relevant and structurally positioned to propagate information, when computed under an inference-consistent RoPE geometry. We therefore reconstruct global positional assignments for retrieved chunks and introduce an information-flow-guided chunk reordering strategy. Experiments on LLM and VLM benchmarks demonstrate consistent gains over prior methods under comparable efficiency budgets.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05353v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Nonclassicality, defined in the quantum optical sense, serves as a resource for photon-based quantum technologies. Therefore, certifying the nonclassicality of a quantum state is crucial for gauging its potential for quantum advantage. However, traditional nonclassicality witnesses that assume perfect knowledge of the witness observables often fail in realistic scenarios with limited statistics and finite-resolution photon detectors. Furthermore, these witnesses do not exploit the fact that certain states are unlikely to be observed in a given experiment. Here, we train a variational model to distinguish classical from nonclassical states using finitely many measurement samples of multimode quantum states that are probed with different photon-number-resolving detection schemes. The learned decision rule is then an indicator of nonclassicality, tailored to a given set of physically relevant states. Our approach is both data-driven and interpretable in the sense that the learned analytical decision rule can be extracted. Training the model on experimental data measured with (i) a superconducting nanowire single-photon detector and (ii) a time-bin multiplexing detection scheme demonstrates the versatility of the approach, paving the way for efficient nonclassicality detection.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06319v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05351v1" target="_blank" rel="noopener noreferrer">
-      GASTON-GP: Source catalogue and millimetre variability of massive protostellar objects
+    <a href="https://arxiv.org/pdf/2603.06293v1" target="_blank" rel="noopener noreferrer">
+      Large Wave Direction Data Modeling Using Wrapped Spatial Gaussian Markov Random Fields
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ji-Xuan Zhou, Nicolas Peretto, A. J. Rigby, R. Adam, P. Ade, H. Ajeddig, S. Amarantidis, P. André, H. Aussel, A. Bacmann, A. Beelen, A. Benoît, S. Berta, M. Béthermin, A. Bongiovanni, J. Bounmy, O. Bourrion, M. Calvo, A. Catalano, D. Chérouvrier, M. De Petris, F. -X. Désert, S. Doyle, E. F. C. Driessen, G. Ejlali, A. Ferragamo, A. Gomez, J. Goupy, C. Hanser, S. Katsioli, F. Kéruzoré, C. Kramer, B. Ladjelate, G. Lagache, S. Leclercq, J. -F. Lestrade, J. F. Macías-Pérez, S. C. Madden, A. Maury, F. Mayet, A. Monfardini, A. Moyer-Anin, M. Muñoz-Echeverría, I. Myserlis, Q. Nguyen-Luong, A. Paliwal, L. Perotto, G. Pisano, N. Ponthieu, V. Revéret, A. Ritacco, H. Roussel, F. Ruppin, M. Sánchez-Portal, S. Savorgnano, K. Schuster, A. Sievers, C. Tucker, R. Zylka</span>
+    <span class="paper-authors">Arnab Hazra</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">The processes governing protostellar mass growth remain debated, although episodic accretion is now understood as a key feature of protostellar evolution across all masses. Luminosity bursts have been observed in both low- and high-mass protostars, but the overall statistics remain limited, especially for high-mass objects. Over the past decade, numerical simulations of high-mass core collapse have provided a theoretical framework for interpreting protostellar variability, yet additional observational constraints are required to determine the characteristics and importance of bursts. In this work, we analyse data from GASTON-GP programme, which mapped a 2.4 square degrees region of the Galactic plane (centred at l = 24 deg) at 1.15 and 2.00 mm using NIKA2 on the IRAM 30 m telescope. The survey obtained 11 epochs over four years, offering the first opportunity to study millimetre variability in a large sample of massive protostellar sources. From the combined dataset, we constructed catalogues of 2925 compact sources at 1.15 mm and 1713 at 2.00 mm. Using a dedicated relative calibration scheme, we generated millimetre light curves for around 200 high-signal-to-noise sources and identified one variable candidate. However, it is not protostellar. Consequently, we report no robust detections of variable protostellar sources in GASTON field. This is the direct consequence of observational limitations (i.e., sensitivity, resolution) combined with the lack of any 100-fold luminosity bursts during the observations, which is consistent with estimates inferred from isolated core collapse simulations. This study highlights the need for future high-resolution, high-cadence surveys to constrain the accretion histories of massive protostars.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05351v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Statistical modeling of dependent directional data remains relatively underexplored, particularly in high-dimensional spatial settings. Existing approaches for spatial angular data primarily rely on wrapped Gaussian process (WGP) models, which provide a coherent framework for capturing spatial dependence on the circle. However, WGP-based methods become computationally challenging when the spatial domain is large, and observations are available at high resolution. This limitation is especially relevant in the analysis of large-scale geological and climate phenomena, such as tsunamis and hurricanes, where directional measurements (e.g., wave or wind directions) may be available over an entire ocean basin. To address these challenges, we propose a wrapped Gaussian Markov random field (WGMRF) model for large spatial directional datasets. By exploiting the sparse precision structure inherent in Gaussian Markov random fields, the proposed approach achieves substantial computational gains while preserving flexible spatial dependence on the circular scale. We discuss key properties of the model, including its identifiability and dependence characteristics. The model fitting involves standard Markov chain Monte Carlo techniques. Through extensive simulation studies and an application to the wave direction data across the Indian Ocean during the 2004 Indian Ocean Tsunami, we compare the proposed method with both a non-spatial wrapped Gaussian model and a low-rank WGP alternative. The results demonstrate that the WGMRF offers improved predictive performance and scalability in large-domain applications.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06293v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.05350v1" target="_blank" rel="noopener noreferrer">
-      A Shift-Invariant Deep Learning Framework for Automated Analysis of XPS Spectra
+    <a href="https://arxiv.org/pdf/2603.06287v1" target="_blank" rel="noopener noreferrer">
+      Learning Where the Physics Is: Probabilistic Adaptive Sampling for Stiff PDEs
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Issa Saddiq, Yuxin Fan, Robert G. Palgrave, Mark A. Isaacs, David Morgan, Keith T. Butler</span>
+    <span class="paper-authors">Akshay Govind Srinivasan, Balaji Srinivasan</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-05</span>
+    <span class="paper-date">2026-03-06</span>
   </p>
-  <p class="paper-abstract">X-ray Photoelectron Spectroscopy (XPS) is a crucial technique for material surface analysis, yet interpreting its spectra is often challenging for both human analysts and automated methods due to the prevalence of variable spectral shifts and overlapping peaks. This project introduces a machine learning solution using a Spatial Transformer Network (STN), a type of neural network that implicitly learns to align spectra. An STN model was designed to classify the chemical environments present in an input spectrum, using functional groups as a proxy. The model was trained and tested on a large synthetic dataset of 100,000 spectra, created by linearly combining real experimental data from a library of 104 polymers. \cite{RN22} To simulate experimental variability, random uniform shifts and broadening were applied to the data. The STN was found to effectively correct for random electrostatic shifts (up to 3.0 eV) and achieved relatively high accuracy ($\sim$ 82\%) in identifying functional groups, despite utilizing a much simpler architecture than previous work. These findings demonstrate that neural networks can effectively learn the underlying relationships between spectral features and chemical composition when they are able to intrinsically account for variable shifts. This work advances the development of more reliable automated XPS analysis, offering potential as an assistive tool for researchers and as a core component in future autonomous systems like self-driving laboratories.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.05350v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Modeling stiff partial differential equations (PDEs) with sharp gradients remains a significant challenge for scientific machine learning. While Physics-Informed Neural Networks (PINNs) struggle with spectral bias and slow training times, Physics-Informed Extreme Learning Machines (PIELMs) offer a rapid, closed-form linear solution but are fundamentally limited by physics-agnostic, random initialization. We introduce the Gaussian Mixture Model Adaptive PIELM (GMM-PIELM), a probabilistic framework that learns a probability density function representing the ``location of physics&#x27;&#x27; for adaptively sampling kernels of PIELMs. By employing a weighted Expectation-Maximization (EM) algorithm, GMM-PIELM autonomously concentrates radial basis function centers in regions of high numerical error, such as shock fronts and boundary layers. This approach dynamically improves the conditioning of the hidden layer without the expensive gradient-based optimization(of PINNs) or Bayesian search. We evaluate our methodology on 1D singularly perturbed convection-diffusion equations with diffusion coefficients $ν=10^{-4}$. Our method achieves $L_2$ errors up to $7$ orders of magnitude lower than baseline RBF-PIELMs, successfully resolving exponentially thin boundary layers while retaining the orders-of-magnitude speed advantage of the ELM architecture.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.06287v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
