@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-03-11 01:59 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-03-12 02:06 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09662v1" target="_blank" rel="noopener noreferrer">
-      No evaluation without fair representation : Impact of label and selection bias on the evaluation, performance and mitigation of classification models
+    <a href="https://arxiv.org/pdf/2603.11032v1" target="_blank" rel="noopener noreferrer">
+      Uncovering statistical structure in large-scale neural activity with Restricted Boltzmann Machines
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Magali Legast, Toon Calders, François Fouss</span>
+    <span class="paper-authors">Nicolas Béreux, Giovanni Catania, Aurélien Decelle, Francesca Mignacco, Alfonso de Jesús Navas Gómez, Beatriz Seoane</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">Bias can be introduced in diverse ways in machine learning datasets, for example via selection or label bias. Although these bias types in themselves have an influence on important aspects of fair machine learning, their different impact has been understudied. In this work, we empirically analyze the effect of label bias and several subtypes of selection bias on the evaluation of classification models, on their performance, and on the effectiveness of bias mitigation methods. We also introduce a biasing and evaluation framework that allows to model fair worlds and their biased counterparts through the introduction of controlled bias in real-life datasets with low discrimination. Using our framework, we empirically analyze the impact of each bias type independently, while obtaining a more representative evaluation of models and mitigation methods than with the traditional use of a subset of biased data as test set. Our results highlight different factors that influence how impactful bias is on model performance. They also show an absence of trade-off between fairness and accuracy, and between individual and group fairness, when models are evaluated on a test set that does not exhibit unwanted bias. They furthermore indicate that the performance of bias mitigation methods is influenced by the type of bias present in the data. Our findings call for future work to develop more accurate evaluations of prediction models and fairness interventions, but also to better understand other types of bias, more complex scenarios involving the combination of different bias types, and other factors that impact the efficiency of the mitigation methods, such as dataset characteristics.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09662v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Large-scale electrophysiological recordings now allow simultaneous monitoring of thousands of neurons across multiple brain regions, revealing structured variability in neural population activity. Understanding how these collective patterns emerge from microscopic neural interactions requires models that are scalable, predictive, and interpretable. Statistical physics provides principled frameworks to address this complexity, including maximum-entropy models that offer transparent descriptions of collective neural activity but remain largely limited to pairwise interactions and modest system sizes. Here, we use Restricted Boltzmann Machines (RBMs) to model the activity of $\sim1500$-$2000$ simultaneously recorded neurons from the Allen Institute Visual Behavior Neuropixels dataset, spanning multiple cortical and subcortical regions of the mouse brain. RBMs extend the maximum-entropy framework through latent variables, enabling the capture of higher-order dependencies while allowing explicit extraction of effective interaction networks. Recent advances in efficient Markov Chain sampling and training enable accurate learning of these models at this scale. RBMs reproduce the complex statistics of neural recordings with high accuracy. Generated samples match empirical pairwise and higher-order correlations, as well as global statistics such as the distribution of population activity. The inferred parameters provide direct access to effective neuronal interactions, revealing coordination patterns in population activity. These couplings display clear anatomical structure: neurons within visual cortical areas show stronger interactions, consistent with visually driven behavior, while cross-area couplings are weaker. Despite being trained on temporally shuffled data, Markov Chain Monte Carlo simulations also reproduce the global relaxation dynamics of neural activity.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.11032v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09658v1" target="_blank" rel="noopener noreferrer">
-      Immiscible two-phase flow in porous media: a statistical mechanics approach
+    <a href="https://arxiv.org/pdf/2603.11019v1" target="_blank" rel="noopener noreferrer">
+      Don&#x27;t Disregard the Data for Lack of a Likelihood: Bayesian Synthetic Likelihood for Enhanced Multilevel Network Meta-Regression
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Alex Hansen, Santanu Sinha</span>
+    <span class="paper-authors">Harlan Campbell, Charles C. Margossian, Jeroen P. Jansen, Paul Gustafson</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">The central problem in the physics of immiscible two-phase flow in porous media is to find a proper description of the flow at scales large enough so that the medium may be regarded as a continuum: the scale-up problem. So far, the only workable approach to the multiphase flow scale-up problem has been a set of phenomenological equations that have obvious weaknesses. Attempts at going beyond this relative permeability theory have so far not led to practical applications due to exploding complexity. Edwin T. Jaynes proposed in the fifties a generalization of statistical mechanics to non-thermal systems based on the information theoretical entropy of Shannon. This approach is used to construct a description of immiscible two-phase flow in porous media at the continuum scales, which is directly related to the physics at the pore scale, and at a level of complexity that is manageable. The approach leads to a thermodynamics-like formalism at the continuum scale with all the relations between variables that &quot;normal&quot; thermodynamics has to offer. New emergent variables appear. Among these, the co-moving velocity stands out as a key variable with implications for ordinary thermodynamics. We present here a short review of this approach.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09658v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Multilevel network meta-regression (ML-NMR) enables population-adjusted indirect treatment comparisons by combining individual patient data (IPD) with aggregate data. When individual-level covariates are unavailable, ML-NMR marginalizes over the covariate distribution, but this strategy cannot exploit subgroup-level summary results that are often available and potentially highly informative. We propose using Bayesian Synthetic Likelihood (BSL) to leverage this ancillary summary information and present an implementation strategy for Hamiltonian Monte Carlo (HMC), a gradient-based Markov chain Monte Carlo (MCMC) algorithm. At each MCMC iteration, the BSL method imputes missing covariates by sampling from the model-implied conditional distribution, computes synthetic subgroup summaries from the imputed data, and matches these synthetic summaries to observed summaries via a multivariate normal synthetic likelihood. Fitting this model with HMC presents multiple challenges: first, gradients cannot be computed exactly but must be estimated stochastically; and second, the model&#x27;s likelihood may be non-differentiable at certain points, a pathology that can deeply frustrate the performance of HMC. We address these challenges with pre-drawn random numbers, continuous relaxation of the likelihood, and Pareto-smoothed importance sampling. This work (1) introduces a novel application of BSL to missing data problems where summary statistics from the complete dataset are available despite substantial missingness in the individual-level data, (2) demonstrates how BSL strategies can be implemented within Stan&#x27;s HMC framework, and (3) shows, using a network of plaque psoriasis trials, that BSL-enhanced ML-NMR can substantially improve upon standard ML-NMR by leveraging informative ancillary information.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.11019v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09648v1" target="_blank" rel="noopener noreferrer">
-      Perceptions and worldviews of Transgender individuals
+    <a href="https://arxiv.org/pdf/2603.11016v1" target="_blank" rel="noopener noreferrer">
+      A Model-Based Restricted Shapley Value to Measure the Players&#x27; Contribution to Shot Actions in Football
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Eiji Yamamura</span>
+    <span class="paper-authors">Mattia Cefis, Rodolfo Metulini, Maurizio Carpita</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">This study explores the different subjective values held by transgender people, including their subjective well-being, self-reported health status, and career-oriented decision-making. Using an individual-level panel dataset of over 19,000 observations, we discovered the following statistically significant findings: (1) The likelihood of transgender people being happy and healthy is lesser than that of non-transgender people by 7% and 12%, respectively. (2) The likelihood of transgender people supporting women empowerment and giving importance to changing one&#x27;s behavior for a desirable spouse is 5% lesser than that of non-transgender people. Transgender individuals are also less likely than others to endorse gender-related statements, irrespective of their direction. (3) Transgender people are 12% less likely than non-transgender people to make independent decisions for their future career and 2% more likely to follow their parents&#x27; and teachers&#x27; opinions. (4) Transgender people are 5% more likely to generally distrust others than non-transgender people. Transgender people&#x27;s subjective well-being and health status outcomes are consistent with those of previous studies, whereas their results for gender-related issues and decision-making do not align with the progressive view.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09648v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">This paper proposes a novel framework to assess individual player contributions in football, explicitly accounting for the cooperative nature of shot-ending offensive actions. By incorporating team interaction into player evaluation, it also supports economically sustainable decision-making, with practical implications for performance analysis and player scouting. Extending the expected Goal (xG) paradigm, we propose the expected Goal Action (xGA), a measure of shot quality that incorporates build-up play and passing networks. Furthermore, we adapt cooperative game theory and introduce the Player&#x27;s Restricted Shapley (PRS) statistic, a contribution metric based on restricted coalition structures derived from observed passing interactions, where xGA is adopted to compute the cohesion function. Unlike traditional Shapley approaches, the PRS one restricts coalitions to tactically admissible player subsets, offering action-specific, interpretable measures of marginal contribution in a cooperative context. We apply the framework to 8,421 shot-actions from the Italian League Serie A season 2022/23, and the case studies of AC Milan and SSC Napoli reveal some heterogeneity in contributions within teams. Furthermore, combining the PRS statistic with a final efficiency metric highlights the discrepancies between cooperative engagement and goal conversion.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.11016v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09645v1" target="_blank" rel="noopener noreferrer">
-      Evolution of Photonic Quantum Machine Learning under Noise
+    <a href="https://arxiv.org/pdf/2603.11006v1" target="_blank" rel="noopener noreferrer">
+      Layered Performance Analysis of TLS 1.3 Handshakes: Classical, Hybrid, and Pure Post-Quantum Key Exchange
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">A. M. A. S. D. Alagiyawanna, Asoka Karunananda</span>
+    <span class="paper-authors">David Gómez-Cambronero, Daniel Munteanu, Ana Isabel González-Tablas</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">Photonic Quantum Machine Learning (PQML) is an emerging approach that integrates photonic quantum computing technologies with machine learning techniques to enable scalable and energy-efficient quantum information processing. Photonic systems offer advantages such as room-temperature operation, high-speed signal processing, and the ability to represent information in high-dimensional Hilbert spaces. However, noise remains a major challenge affecting the performance, reliability, and scalability of PQML implementations. This review provides a systematic analysis of noise sources in photonic quantum machine learning systems. We discuss photonic quantum computing architectures and examine key quantum machine learning algorithms implemented on photonic platforms, including Variational Quantum Circuits, Quantum Neural Networks, and Quantum Support Vector Machines. The paper categorizes major noise mechanisms and analyzes their impact on learning performance, training stability, and convergence behavior. Furthermore, we review both traditional and advanced noise characterization techniques and survey recent strategies for noise mitigation in photonic quantum systems. Finally, we highlight recent experimental advances and discuss future research directions for developing robust and scalable PQML systems under realistic noise conditions.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09645v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">In this paper, we present a laboratory study focused on the impact of post-quantum cryptography (PQC) algorithms on multiple layers of stateful HTTP over TLS transactions: the TCP handshake, the intermediate TCP-TLS layer, the TLS handshake, the intermediate TLS layer, and the HTTP application layer. To this end, we propose a laboratory architecture that emulates a real-world setup in which a load test of up to 100 transactions per second is sent to a load balancer, which in turn forwards them to a backend server that returns the responses. Each set of tests is executed using the TLS 1.3 key exchange groups as follows: traditional (or non-PQC), hybrid PQC and pure PQC. Each set of tests also varied the backend response size. Across more than thirty experiments, we performed data reduction and statistical analysis for each layer, to determine the specific impact of each algorithm (PQC and traditional) at every stage of the HTTP-over-TLS transaction.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.11006v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09641v1" target="_blank" rel="noopener noreferrer">
-      PRECEPT: Planning Resilience via Experience, Context Engineering &amp; Probing Trajectories A Unified Framework for Test-Time Adaptation with Compositional Rule Learning and Pareto-Guided Prompt Evolution
+    <a href="https://arxiv.org/pdf/2603.11001v1" target="_blank" rel="noopener noreferrer">
+      RCTs &amp; Human Uplift Studies: Methodological Challenges and Practical Solutions for Frontier AI Evaluation
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Arash Shahmansoori</span>
+    <span class="paper-authors">Patricia Paskov, Kevin Wei, Shen Zhou Hong, Dan Bateyko, Xavier Roberts-Gaal, Carson Ezell, Gailius Praninskas, Valerie Chen, Umang Bhatt, Ella Guest</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">LLM agents that store knowledge as natural language suffer steep retrieval degradation as condition count grows, often struggle to compose learned rules reliably, and typically lack explicit mechanisms to detect stale or adversarial knowledge. We introduce PRECEPT, a unified framework for test-time adaptation with three tightly coupled components: (1) deterministic exact-match rule retrieval over structured condition keys, (2) conflict-aware memory with Bayesian source reliability and threshold-based rule invalidation, and (3) COMPASS, a Pareto-guided prompt-evolution outer loop. Exact retrieval eliminates partial-match interpretation errors on the deterministic path (0% by construction, vs 94.4% under Theorem~B.6&#x27;s independence model at N=10) and supports compositional stacking through a semantic tier hierarchy; conflict-aware memory resolves static--dynamic disagreements and supports drift adaptation; COMPASS evaluates prompts through the same end-to-end execution pipeline. Results (9--10 seeds): PRECEPT achieves a +41.1pp first-try advantage over Full Reflexion (d&gt;1.9), +33.3pp compositional generalization (d=1.55), 100% $P_1$ on 2-way logistics compositions (d=2.64), +40--55pp continuous learning gains, strong eventual robustness under adversarial static knowledge (100% logistics with adversarial SK active; partial recovery on integration), +55.0pp drift recovery (d=0.95, p=0.031), and 61% fewer steps. Core comparisons are statistically significant, often at p&lt;0.001.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09641v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Human uplift studies - or studies that measure AI effects on human performance relative to a status quo, typically using randomized controlled trial (RCT) methodology - are increasingly used to inform deployment, governance, and safety decisions for frontier AI systems. While the methods underlying these studies are well-established, their interaction with the distinctive properties of frontier AI systems remains underexamined, particularly when results are used to inform high-stakes decisions. We present findings from interviews with 16 expert practitioners with experience conducting human uplift studies in domains including biosecurity, cybersecurity, education, and labor. Across interviews, experts described a recurring tension between standard causal inference assumptions and the object of study itself. Rapidly evolving AI systems, shifting baselines, heterogeneous and changing user proficiency, and porous real-world settings strain assumptions underlying internal, external, and construct validity, complicating the interpretation and appropriate use of uplift evidence. We synthesize these challenges across key stages of the human uplift research lifecycle and map them to practitioner-reported solutions, clarifying both the limits and the appropriate uses of evidence from human uplift studies in high-stakes decision-making.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.11001v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09634v1" target="_blank" rel="noopener noreferrer">
-      A Short Survey of Averaging Techniques in Stochastic Gradient Methods
+    <a href="https://arxiv.org/pdf/2603.10999v1" target="_blank" rel="noopener noreferrer">
+      Double Machine Learning for Time Series
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">K. Lakshmanan</span>
+    <span class="paper-authors">Milos Ciganovic, Federico D&#x27;Amario, Massimiliano Tancioni</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">Stochastic gradient methods are among the most widely used algorithms for large-scale optimization and machine learning. A key technique for improving the statistical efficiency and stability of these methods is the use of averaging schemes applied to the sequence of iterates generated during optimization. Starting from the classical work on stochastic approximation, averaging techniques such as Polyak--Ruppert averaging have been shown to achieve optimal asymptotic variance and improved convergence behavior. In recent years, averaging methods have gained renewed attention in machine learning applications, particularly in the training of deep neural networks and large-scale learning systems. Techniques such as tail averaging, exponential moving averages, and stochastic weight averaging have demonstrated strong empirical performance and improved generalization properties. This paper provides a survey of averaging techniques in stochastic gradient optimization. We review the theoretical foundations of averaged stochastic approximation, discuss modern developments in stochastic gradient methods, and examine applications of averaging in machine learning. In addition, we summarize recent results on the finite-sample behavior of averaging schemes and highlight several open problems and directions for future research.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09634v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We modify the Double Machine Learning estimator to broaden its applicability to macroeconomic time-series settings. A deterministic cross-fitting step, termed Reverse Cross-Fitting, leverages the time-reversibility of stationary series to improve sample utilization and efficiency. We detail and prove the conditions under which the estimator is asymptotically valid. We then demonstrate, through simulations, that its performance remains valid in realistic finite samples and is robust to model misspecification and violations of assumptions, such as heteroskedasticity. In high dimensions, predictive metrics for tuning nuisance learners do not generally minimize bias in the causal score. We propose a calibration rule targeting a &quot;Goldilocks zone&quot;, a region of tuning parameters that delivers stable, partialled-out signals and reduced small-sample bias. Finally, we apply our procedure to residualized Local Projections to estimate the dynamic effects of a rise in Tier 1 regulatory capital. The results underscore the usefulness of the methodology for inference in macroeconomic applications.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.10999v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09629v1" target="_blank" rel="noopener noreferrer">
-      On the last time and the number of times an estimator is more than epsilon from its target value
+    <a href="https://arxiv.org/pdf/2603.10994v1" target="_blank" rel="noopener noreferrer">
+      Artificial Intelligence as a Catalyst for Innovation in Software Engineering
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Nils Lid Hjort, Grete Fenstad</span>
+    <span class="paper-authors">Carlos Alberto Fernández-y-Fernández, Jorge R. Aguilar-Cisneros</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">Suppose $\widehatθ_n$ is a strongly consistent estimator for $θ_0$ in some i.i.d. situation. Let $N_\varepsilon$ and $Q_\varepsilon$ be respectively the last $n$ and the total number of $n$ for which $\widehatθ_n$ is at least $\varepsilon$ away from $θ_0$. The limit distributions for ${\varepsilon}^2 N_\varepsilon$ and ${\varepsilon}^2 Q_\varepsilon$ as $\varepsilon$ goes to zero are obtained under natural and weak conditions. The theory covers both parametric and nonparametric cases, multi-dimensional parameters, and general distance functions. Our results are of probabilistic interest, and, on the statistical side, suggest ways in which competing estimators can be compared. In particular several new optimality properties for the maximum likelihood estimator sequence in parametric families are established. Another use of our results is ways of constructing sequential fixed-volume or shrinking-volume confidence sets, as well as sequential tests with power 1. The paper also includes limit distribution results for the last $n$ and the number of $n$ for which the supremum distance $\|F_n-F\|\ge\varepsilon$, where $F_n$ is the empirical distribution function. Yet other results are reached for $\varepsilon^{5/2} N_\varepsilon$ and $\varepsilon^{5/2} Q_\varepsilon$ in the context of nonparametric density estimation, referring to the last time and the number of times where $|f_n(x) f(x)|\ge\varepsilon$. Finally it is shown that our results extend to several non-i.i.d. situations.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09629v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The rapid evolution and inherent complexity of modern software requirements demand highly flexible and responsive development methodologies. While Agile frameworks have become the industry standard for prioritizing iteration, collaboration, and adaptability, software development teams continue to face persistent challenges in managing constantly evolving requirements and maintaining product quality under tight deadlines. This article explores the intersection of Artificial Intelligence (AI) and Software Engineering (SE), to analyze how AI serves as a powerful catalyst for enhancing agility and fostering innovation. The research combines a comprehensive review of existing literature with an empirical study, utilizing a survey directed at Software Engineering professionals to assess the perception, adoption, and impact of AI-driven tools. Key findings reveal that the integration of AI (specifically through Machine Learning (ML) and Natural Language Processing (NLP) )facilitates the automation of tedious tasks, from requirement management to code generation and testing . This paper demonstrates that AI not only optimizes current Agile practices but also introduces new capabilities essential for sustaining quality, speed, and innovation in the future landscape of software development.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.10994v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09626v1" target="_blank" rel="noopener noreferrer">
-      The Architecture of Inter-Level Representation
+    <a href="https://arxiv.org/pdf/2603.10991v1" target="_blank" rel="noopener noreferrer">
+      ForwardFlow: Simulation only statistical inference using deep learning
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Harry Sticker</span>
+    <span class="paper-authors">Stefan Böhringer</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">Inter-level connections in science routinely require constructs that neither of the connected theories contains. Statistical mechanics requires assumptions such as the Stosszahlansatz to generate thermodynamic irreversibility - assumptions that Hamiltonian mechanics cannot provide. Quantum chemistry offers four incompatible analyses of chemical bonding for the same quantum state, none of which are selected by the Schrodinger dynamics. Molecular genetics has not converged on a stable definition of the gene despite decades of molecular detail. These are not isolated anomalies but instances of a common architectural pattern. The missing apparatus is the bridge theory: a third theoretical role that connects a dynamical theory to an observational theory through a many-to-one inter-level map. That map generates the contingent space - the set of dynamical states compatible with an observational description but not selected by it - whose geometry neither connected theory determines. Completing the bridge theory requires three conditions in order: a Partition that defines observational equivalence classes; a Magnitude that characterizes the geometry and scale of the contingent space; and a Closure that selects or weights its elements. The framework yields an objective distinction between closing and introducing rules, formalized by the Mirror Test, and supports a tripartite taxonomy of emergence. It explains why some inter-level disputes persist and what would be required to resolve them.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09626v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Deep learning models are being used for the analysis of parametric statistical models based on simulation-only frameworks. Bayesian models using normalizing flows simulate data from a prior distribution and are composed of two deep neural networks: a summary network that learns a sufficient statistic for the parameter and a normalizing flow that conditional on the summary network can approximate the posterior distribution. Here, we explore frequentist models that are based on a single summary network. During training, input of the network is a simulated data set based on a parameter and the loss function minimizes the mean-square error between learned summary and parameter. The network thereby solves the inverse problem of parameter estimation. We propose a branched network structure that contains collapsing layers that reduce a data set to summary statistics that are further mapped through fully connected layers to approximate the parameter estimate. We motivate our choice of network structure by theoretical considerations. In simulations we demonstrate three desirable properties of parameter estimates: finite sample exactness, robustness to data contamination, and algorithm approximation. These properties are achieved offering the the network varying sample size, contaminated data, and data needing algorithmic reconstruction during the training phase. In our simulations an EM-algorithm for genetic data is automatically approximated by the network. Simulation only approaches seem to offer practical advantages in complex modeling tasks where the simpler data simulation part is left to the researcher and the more complex problem of solving the inverse problem is left to the neural network. Challenging future work includes offering pre-trained models that can be used in a wide variety of applications.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.10991v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09602v1" target="_blank" rel="noopener noreferrer">
-      Inhomogeneous Submatrix Detection
+    <a href="https://arxiv.org/pdf/2603.10989v1" target="_blank" rel="noopener noreferrer">
+      Causal Survival Analysis in Platform Trials with Non-Concurrent Controls
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Mor Oren-Loberman, Dvir Jerbi andd Tamir Bendory, Wasim Huleihel</span>
+    <span class="paper-authors">Antonio D&#x27;Alessandro, Samrachana Adhikari, Michele Santacatterina</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">In this paper, we study the problem of detecting multiple hidden submatrices in a large Gaussian random matrix when the planted signal is inhomogeneous across entries. Under the null hypothesis, the observed matrix has independent and identically distributed standard normal entries. Under the alternative, there exist several planted submatrices whose entries deviate from the background in one of two ways: in the mean-shift model, planted entries (templates) have nonzero and possibly varying means; in the variance-shift model, planted entries have inflated and possibly varying variances. We consider two placement regimes for the planted submatrices. In the first, the row and column index sets are arbitrary. Motivated by scientific applications, in the second regime the row and column indices are restricted to be consecutive. For both alternatives and both placement regimes, we analyze the statistical limits of detection by proving information-theoretic lower bounds and by designing algorithms that match these bounds up to logarithmic factors, for a wide family of templates.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09602v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Platform trials allow treatment arms to enter and exit over time while maintaining a shared control arm, yielding concurrent and non-concurrent controls (NCC). Pooling NCC is often motivated as a strategy to improve statistical efficiency, but it is unclear which estimand is targeted, what assumptions justify identification and estimation, and when precision gains are achievable; these questions are further complicated by time-to-event/survival data. Motivated by the Adaptive COVID-19 Treatment Trial (ACTT) platform trial with time to recovery as the primary endpoint, we develop an estimand-first causal survival framework targeting the treatment-specific counterfactual survival curve in the concurrent population and the corresponding functionals including the concurrent restricted mean survival time (RMST). We give nonparametric identification results and formalize conditions that justify pooling using NCC. We study covariate-adjusted outcome-regression (OR) and doubly robust (DR) estimators for the concurrent RMST, comparing concurrent-only versions to pooled-control versions. Pooling improves precision for OR estimators only when the pooling assumption holds and parametric hazard models are correctly specified; otherwise, pooling can induce bias. Moreover, in certain settings, pooling NCC yields no efficiency gain for the DR estimator. Overall, the most robust route to improve precision is to target concurrent causal survival estimands and use a covariate-adjusted DR estimation that uses only concurrent controls. An ACTT application corroborates these results.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.10989v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09597v1" target="_blank" rel="noopener noreferrer">
-      Symbolic Discovery of Stochastic Differential Equations with Genetic Programming
+    <a href="https://arxiv.org/pdf/2603.10967v1" target="_blank" rel="noopener noreferrer">
+      Med-DualLoRA: Local Adaptation of Foundation Models for 3D Cardiac MRI
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Sigur de Vries, Sander W. Keemink, Marcel A. J. van Gerven</span>
+    <span class="paper-authors">Joan Perramon-Llussà, Amelia Jiménez-Sánchez, Grzegorz Skorupko, Fotis Avgoustidis, Carlos Martín-Isla, Karim Lekadir, Polyxeni Gkontra</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">Automated scientific discovery aims to improve scientific understanding through machine learning. A central approach in this field is symbolic regression, which uses genetic programming or sparse regression to learn interpretable mathematical expressions to explain observed data. Conventionally, the focus of symbolic regression is on identifying ordinary differential equations. The general view is that noise only complicates the recovery of deterministic dynamics. However, explicitly learning a symbolic function of the noise component in stochastic differential equations enhances modelling capacity, increases knowledge gain and enables generative sampling. We introduce a method for symbolic discovery of stochastic differential equations based on genetic programming, jointly optimizing drift and diffusion functions via the maximum likelihood estimate. Our results demonstrate accurate recovery of governing equations, efficient scaling to higher-dimensional systems, robustness to sparsely sampled problems and generalization to stochastic partial differential equations. This work extends symbolic regression toward interpretable discovery of stochastic dynamical systems, contributing to the automation of science in a noisy and dynamic world.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09597v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Foundation models (FMs) show great promise for robust downstream performance across medical imaging tasks and modalities, including cardiac magnetic resonance (CMR), following task-specific adaptation. However, adaptation using single-site data may lead to suboptimal performance and increased model bias, while centralized fine-tuning on clinical data is often infeasible due to privacy constraints. Federated fine-tuning offers a privacy-preserving alternative; yet conventional approaches struggle under heterogeneous, non-IID multi-center data and incur substantial communication overhead when adapting large models. In this work, we study federated FM fine-tuning for 3D CMR disease detection and propose Med-DualLoRA, a client-aware parameter-efficient fine-tuning (PEFT) federated framework that disentangles globally shared and local low-rank adaptations (LoRA) through additive decomposition. Global and local LoRA modules are trained locally, but only the global component is shared and aggregated across sites, keeping local adapters private. This design improves personalization while significantly reducing communication cost, and experiments show that adapting only two transformer blocks preserves performance while further improving efficiency. We evaluate our method on a multi-center state-of-the-art cine 3D CMR FM fine-tuned for disease detection using ACDC and combined M\&amp;Ms datasets, treating each vendor as a federated client. Med-DualLoRA achieves statistically significant improved performance (balanced accuracy 0.768, specificity 0.612) compared to other federated PEFT baselines, while maintaining communication efficiency. Our approach provides a scalable solution for local federated adaptation of medical FMs under realistic clinical constraints.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.10967v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09590v1" target="_blank" rel="noopener noreferrer">
-      Benchmarking Dataset for Presence-Only Passive Reconnaissance in Wireless Smart-Grid Communications
+    <a href="https://arxiv.org/pdf/2603.10960v1" target="_blank" rel="noopener noreferrer">
+      Ranking Reasoning LLMs under Test-Time Scaling
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Bochra Al Agha, Razane Tajeddine</span>
+    <span class="paper-authors">Mohsen Hariri, Michael Hinczewski, Jing Ma, Vipin Chaudhary</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">Benchmarking presence-only passive reconnaissance in smart-grid communications is challenging because the adversary is receive-only, yet nearby observers can still alter propagation through additional shadowing and multipath that reshapes channel coherence. Public smart-grid cybersecurity datasets largely target active protocol- or measurement-layer attacks and rarely provide propagation-driven observables with tiered topology context, which limits reproducible evaluation under strictly passive threat models. This paper introduces an IEEE-inspired, literature-anchored benchmark dataset generator for passive reconnaissance over a tiered Home Area Network (HAN), Neighborhood Area Network (NAN), and Wide Area Network (WAN) communication graph with heterogeneous wireless and wireline links. Node-level time series are produced through a physically consistent channel-to-metrics mapping where channel state information (CSI) is represented via measurement-realistic amplitude and phase proxies that drive inferred signal-to-noise ratio (SNR), packet error behavior, and delay dynamics. Passive attacks are modeled only as windowed excess attenuation and coherence degradation with increased channel innovation, so reliability and latency deviations emerge through the same causal mapping without labels or feature shortcuts. The release provides split-independent realizations with burn-in removal, strictly causal temporal descriptors, adjacency-weighted neighbor aggregates and deviation features, and federated-ready per-node train, validation, and test partitions with train-only normalization metadata. Baseline federated experiments highlight technology-dependent detectability and enable standardized benchmarking of graph-temporal and federated detectors for passive reconnaissance.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09590v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Test-time scaling evaluates reasoning LLMs by sampling multiple outputs per prompt, but ranking models in this regime remains underexplored. We formalize dense benchmark ranking under test-time scaling and introduce Scorio, a library that implements statistical ranking methods such as paired-comparison models, item response theory (IRT) models, voting rules, and graph- and spectral-based methods. Across $20$ reasoning models on four Olympiad-style math benchmarks (AIME&#x27;24, AIME&#x27;25, HMMT&#x27;25, and BrUMO&#x27;25; up to $N=80$ trials), most full-trial rankings agree closely with the Bayesian gold standard $\mathrm{Bayes}_{\mathcal{U}}@80$ (mean Kendall&#x27;s $τ_b = 0.93$--$0.95$), and $19$--$34$ methods recover exactly the same ordering. In the single-trial regime, the best methods reach $τ_b \approx 0.86$. Using greedy decoding as an empirical prior ($\mathrm{Bayes}_{\mathbf{R}_0}@N$) reduces variance at $N=1$ by $16$--$52\%$, but can bias rankings when greedy and stochastic sampling disagree. These results identify reliable ranking methods for both high- and low-budget test-time scaling. We release Scorio as an open-source library at https://github.com/mohsenhariri/scorio.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.10960v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09559v1" target="_blank" rel="noopener noreferrer">
-      The statistics and structure of dissipation in subsonic and supersonic turbulence
+    <a href="https://arxiv.org/pdf/2603.10956v1" target="_blank" rel="noopener noreferrer">
+      Linear Readout of Neural Manifolds with Continuous Variables
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Edward Troccoli, Christoph Federrath</span>
+    <span class="paper-authors">Will Slatton, Chi-Ning Chou, SueYeon Chung</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">Turbulence plays a critical role in the atmosphere, oceans, engineering, and astrophysics. The dissipation (heating) induced by turbulent flows is particularly important for the thermodynamics and chemistry of interstellar clouds, yet its structure and statistics remain poorly understood. Using high-resolution turbulence simulations with controlled explicit viscosity, we study the kinetic energy dissipation rate, $\varepsilon_{\mathrm{kin}}$, across subsonic and supersonic regimes. We find that dissipation lags large-scale kinetic energy injection events by $1.64\pm0.21$ and $0.48\pm0.07$ turbulent turnover times in subsonic and supersonic turbulence, respectively. Correlations show $\varepsilon_{\mathrm{kin}}\propto\vert\nabla\times\mathbf{v}\vert^2$ (vorticity squared) in the subsonic regime, where density fluctuations are negligible, while in the supersonic regime dissipation is primarily correlated with density, $\varepsilon_{\mathrm{kin}}\proptoρ^{3/2}$. A spectral analysis demonstrates that achieving numerical convergence of $\varepsilon_{\mathrm{kin}}$ across all scales is challenging, especially in the subsonic case, even at $2048^3$ resolution. Nonetheless, subsonic dissipation is clearly localised on small vorticity-dominated scales, while supersonic dissipation spans many scales, combining elongated, thin shocks with small-scale vorticity. Finally, we determine the fractal dimension of $\varepsilon_{\mathrm{kin}}$. In the subsonic regime, intense dissipation is predominantly organised in flattened vortex filaments embedded in thin shearing layers on small scales, becoming more volume-filling at larger scales. In the supersonic regime, $\varepsilon_{\mathrm{kin}}$ exhibits a fractal dimension between 1 and 2 across nearly all scales, likely reflecting shock surfaces and their intersections forming filaments.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09559v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Brains and artificial neural networks compute with continuous variables such as object position or stimulus orientation. However, the complex variability in neural responses makes it difficult to link internal representational structure to task performance. We develop a statistical-mechanical theory of regression capacity that relates linear decoding efficiency of continuous variables to geometric properties of neural manifolds. Our theory handles complex neural variability and applies to real data, revealing increasing capacity for decoding object position and size along the monkey visual stream.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.10956v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09546v1" target="_blank" rel="noopener noreferrer">
-      ADMM-based Bilevel Descent Aggregation Algorithm for Sparse Hyperparameter Selection
+    <a href="https://arxiv.org/pdf/2603.10955v1" target="_blank" rel="noopener noreferrer">
+      Ab-initio superfluid weight and superconducting penetration depth
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yunhai Xiao, Anqi Liu, Peili Li, Yanyun Ding</span>
+    <span class="paper-authors">Kaja H. Hiorth, Martin Gutierrez-Amigo, Théo Cavignac, Kristjan Haule, Miguel A. L. Marques, Päivi Törmä</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">It is widely acknowledged that hyperparameter selection plays a critical role in the effectiveness of sparse optimization problems. The bilevel optimization provides a robust framework for addressing this issue, but these existing methods depend heavily on the lower-level singleton (LLS) assumption, which greatly limits their practical applicabilities. To tackle this technical challenge, this paper focus on a particular type of nonsmooth convex sparse optimization problem and presents a new bilevel optimization framework. This framework effectively integrates the alternating direction method of multipliers (ADMM) with a bilevel descent aggregation (BDA) algorithm. Specifically, it employs ADMM to efficiently address the lower-level problem and uses BDA to explore the hyperparameter space, thereby integrating both the upper and lower-level problems. It is important to emphasize that a key contribution of this paper lies in the presentation of a novel convergence analysis. The analysis illustrates that the proposed ADMM-BDA algorithm achieves global convergence under significantly relaxed conditions, thereby departing from the LLS assumption that are often required in the literature. We conduct a series of numerical experiments utilizing synthetic and real-world data, and do performance comparisions against some state-of-the-art algorithms. The results indicates that ADMM-BDA exhibits superior effectiveness and robustness for solving bilevel programming problems, especially when the lower-level problem is an elastic-net penalized statistics problem.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09546v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Machine learning and high-throughput screening approaches to superconductor discovery require physically meaningful descriptors that capture essential physics while remaining computationally tractable. The superfluid weight is an ideal descriptor as it is a prerequisite for superconductivity, determines the magnetic penetration depth and the Berezinskii-Kosterlitz-Thouless transition temperature in two-dimensional materials, may limit the critical temperature in unconventional superconductors through phase coherence, and reveals quantum geometric contributions to supercurrent transport. We develop a computationally efficient framework for calculating the zero-temperature, mean-field superfluid weight for uniform pairing from density functional theory band structures and Bloch wavefunctions. We separately evaluate the conventional contribution from band curvature and the geometric contribution from quantum geometry. To validate the method, we calculate London penetration depths for a few conventional superconductors (Al, Pb, Nb, MgB$_2$, LuRu$_3$B$_2$ and YRu$_3$B$_2$) and find good agreement with experiment after accounting for nonlocal corrections, strong-coupling effects, and sample quality. The conventional contribution dominates by orders of magnitude in these wide-band materials, as expected. This framework provides a foundation for large-scale screening of superconducting candidates and exploring quantum geometric effects in unconventional superconductors.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.10955v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09503v1" target="_blank" rel="noopener noreferrer">
-      Modelling the Diachronic Emergence of Phoneme Frequency Distributions
+    <a href="https://arxiv.org/pdf/2603.10950v1" target="_blank" rel="noopener noreferrer">
+      When should we trust the annotation? Selective prediction for molecular structure retrieval from mass spectra
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Fermín Moscoso del Prado Martín, Suchir Salhan</span>
+    <span class="paper-authors">Mira Jürgens, Gaetan De Waele, Morteza Rakhshaninejad, Willem Waegeman</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">Phoneme frequency distributions exhibit robust statistical regularities across languages, including exponential-tailed rank-frequency patterns and a negative relationship between phonemic inventory size and the relative entropy of the distribution. The origin of these patterns remains largely unexplained. In this paper, we investigate whether they can arise as consequences of the historical processes that shape phonological systems. We introduce a stochastic model of phonological change and simulate the diachronic evolution of phoneme inventories. A naïve version of the model reproduces the general shape of phoneme rank-frequency distributions but fails to capture other empirical properties. Extending the model with two additional assumptions -- an effect related to functional load and a stabilising tendency toward a preferred inventory size -- yields simulations that match both the observed distributions and the negative relationship between inventory size and relative entropy. These results suggest that some statistical regularities of phonological systems may arise as natural consequences of diachronic sound change rather than from explicit optimisation or compensatory mechanisms.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09503v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Machine learning methods for identifying molecular structures from tandem mass spectra (MS/MS) have advanced rapidly, yet current approaches still exhibit significant error rates. In high-stakes applications such as clinical metabolomics and environmental screening, incorrect annotations can have serious consequences, making it essential to determine when a prediction can be trusted. We introduce a selective prediction framework for molecular structure retrieval from MS/MS spectra, enabling models to abstain from predictions when uncertainty is too high. We formulate the problem within the risk-coverage tradeoff framework and comprehensively evaluate uncertainty quantification strategies at two levels of granularity: fingerprint-level uncertainty over predicted molecular fingerprint bits, and retrieval-level uncertainty over candidate rankings. We compare scoring functions including first-order confidence measures, aleatoric and epistemic uncertainty estimates from second-order distributions, as well as distance-based measures in the latent space. All experiments are conducted on the MassSpecGym benchmark. Our analysis reveals that while fingerprint-level uncertainty scores are poor proxies for retrieval success, computationally inexpensive first-order confidence measures and retrieval-level aleatoric uncertainty achieve strong risk-coverage tradeoffs across evaluation settings. We demonstrate that by applying distribution-free risk control via generalization bounds, practitioners can specify a tolerable error rate and obtain a subset of annotations satisfying that constraint with high probability.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.10950v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09474v1" target="_blank" rel="noopener noreferrer">
-      Empirical flare energy limits for the largest historical sunspots
+    <a href="https://arxiv.org/pdf/2603.10941v1" target="_blank" rel="noopener noreferrer">
+      Covariate-adjusted statistical dependence representation through partial copulas: bounds and new insights
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">N. A. Krivova, T. Chatzistergos, M. Kazachenko, E. Isik</span>
+    <span class="paper-authors">Vinícius Litvinoff Justus, Felipe Fontana Vieira</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">Extreme solar particle events reveal that the Sun can occasionally produce eruptions significantly more energetic than those observed in the modern era. These events are thought to originate from powerful coronal mass ejections, typically associated with large solar flares triggered by magnetic field reconnection in complex active regions. Stellar observations indicate that Sun-like stars can host superflares exceeding 10^34 erg roughly once per century, yet it remains uncertain whether the Sun can reach such flare energies. We empirically estimate the upper limit of solar flare energies using statistical relations between flare - ribbon areas and released energy derived from modern observations. By extrapolating these upper-envelope relations to the largest sunspot group recorded since 1859 - the Great Sunspot of 8 April 1947 - we find that exceptionally large and complex solar active regions could, in principle, produce flares with bolometric energies of a few 10^34 erg.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09474v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">In this paper, we revisit the notion of partial copula, originally introduced to test conditional independence, highlighting its capability to represent the dependence between two random variables after removing their dependence with a covariate. Building upon results previously presented in the literature, we show that partial copulas can be seen as a nonlinear analogue of partial correlation. Then, we prove several results showing how dependence properties of the conditional copulas constrain the form of the partial copula. Finally, a simulation study is conducted to illustrate the results and to show the potential of partial copula as a way to describe covariate-adjusted statistical dependence. This highlights the potential of the method to be used in causal inference problems and recover the true sign of a causal effect.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.10941v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09463v1" target="_blank" rel="noopener noreferrer">
-      An Empirical Study and Theoretical Explanation on Task-Level Model-Merging Collapse
+    <a href="https://arxiv.org/pdf/2603.10938v1" target="_blank" rel="noopener noreferrer">
+      Safe RLHF Beyond Expectation: Stochastic Dominance for Universal Spectral Risk Control
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yuan Cao, Dezhi Ran, Yuzhe Guo, Mengzhou Wu, Simin Chen, Linyi Li, Wei Yang, Tao Xie</span>
+    <span class="paper-authors">Yaswanth Chittepu, Ativ Joshi, Rajarshi Bhattacharjee, Scott Niekum</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">Model merging unifies independently fine-tuned LLMs from the same base, enabling reuse and integration of parallel development efforts without retraining. However, in practice we observe that merging does not always succeed: certain combinations of task-specialist models suffer from catastrophic performance degradation after merging. We refer to this failure mode as merging collapse. Intuitively, collapse arises when the learned representations or parameter adjustments for different tasks are fundamentally incompatible, so that merging forces destructive interference rather than synergy. In this paper, we identify and characterize the phenomenon of task-level merging collapse, where certain task combinations consistently trigger huge performance degradation across all merging methods. Through extensive experiments and statistical analysis, we demonstrate that representational incompatibility between tasks is strongly correlated with merging collapse, while parameter-space conflict metrics show minimal correlation, challenging conventional wisdom in model merging literature. We provide a theoretical explanation on this phenomenon through rate-distortion theory with a dimension-dependent bound, establishing fundamental limits on task mergeability regardless of methodology.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09463v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Safe Reinforcement Learning from Human Feedback (RLHF) typically enforces safety through expected cost constraints, but the expectation captures only a single statistic of the cost distribution and fails to account for distributional uncertainty, particularly under heavy tails or rare catastrophic events. This limitation is problematic when robustness and risk sensitivity are critical. Stochastic dominance offers a principled alternative by comparing entire cost distributions rather than just their averages, enabling direct control over tail risks and potential out-of-distribution failures that expectation-based constraints may overlook. In this work, we propose Risk-sensitive Alignment via Dominance (RAD), a novel alignment framework that replaces scalar expected cost constraints with First-Order Stochastic Dominance (FSD) constraints. We operationalize this constraint by comparing the target policy&#x27;s cost distribution to that of a reference policy within an Optimal Transport (OT) framework, using entropic regularization and Sinkhorn iterations to obtain a differentiable and computationally efficient objective for stable end-to-end optimization. Furthermore, we introduce quantile-weighted FSD constraints and show that weighted FSD universally controls a broad class of Spectral Risk Measures (SRMs), so that improvements under weighted dominance imply guaranteed improvements in the corresponding spectral risk. This provides a principled mechanism for tuning a model&#x27;s risk profile via the quantile weighting function. Empirical results demonstrate that RAD improves harmlessness over baselines while remaining competitive in helpfulness, and exhibits greater robustness on out-of-distribution harmlessness evaluations.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.10938v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09457v1" target="_blank" rel="noopener noreferrer">
-      Exploring the $S_8$ Tension: Insights from the CatNorth 1.5-Million Quasar Candidates
+    <a href="https://arxiv.org/pdf/2603.10916v1" target="_blank" rel="noopener noreferrer">
+      NCAA Bracket Prediction Using Machine Learning and Combinatorial Fusion Analysis
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jin Qin, Xue-Bing Wu, Yuming Fu, Haojie Xu, Yuxuan Pang, Yun-Hao Zhang, Pengjie Zhang</span>
+    <span class="paper-authors">Yuanhong Wu, Isaiah Smith, Tushar Marwah, Michael Schroeter, Mohamed Rahouti, D. Frank Hsu</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">The parameter $S_8$, a key probe of cosmic structure growth, exhibits a persistent $\sim3σ$ tension between high-redshift measurements from cosmic microwave background (CMB) anisotropies and low-redshift weak gravitational lensing observations. This discrepancy may indicate either unaccounted systematic effects or new physics beyond the standard $Λ$CDM cosmology. In this work, we constrain $S_8$ using the high purity CatNorth 1.5 million quasar candidate catalog and the {\it Planck} DR4 CMB lensing data across the broad redshift ranges through auto-correlation and cross-correlation analyses. To address the spatial incompleteness, we develop a machine-learning-based selection function that effectively suppresses the systematics-induced power spectrum excess on large scales. Our robust low-redshift measurements at $z&lt;1.5$ yield $S_8 = 0.844^{+0.058}_{-0.056}$, consistent with the {\it Planck} 2018 CMB anisotropies constraints of $S_8=0.834\pm0.016$ but lower than the $0.879^{+0.055}_{-0.055}$ reported by a previous work using the Quaia quasar candidate catalog. However, for high-redshift faint quasars at $z&gt;1.5$, we find a lower value of $S_8=0.724^{+0.058}_{-0.054}$, likely due to the sample incompleteness and/or the foreground contamination. Further tests on the volume-limited samples exhibit a consistent trend: $S_8 = 0.835^{+0.053}_{-0.049}$ for $z &lt; 2$, $0.824^{+0.061}_{-0.062}$ for $0.4 &lt; z &lt; 1.5$, and a lower value of $0.789^{+0.062}_{-0.062}$ for the higher redshift range of $1.5 &lt; z &lt; 2.5$. While future data may refine these results, our current measurements based on a large sample of quasar candidates show less evidence of the $S_8$ tension.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09457v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Machine learning models have demonstrated remarkable success in sports prediction in the past years, often treating sports prediction as a classification task within the field. This paper introduces new perspectives for analyzing sports data to predict outcomes more accurately. We leverage rankings to generate team rankings for the 2024 dataset using Combinatorial Fusion Analysis (CFA), a new paradigm for combining multiple scoring systems through the rank-score characteristic (RSC) function and cognitive diversity (CD). Our result based on rank combination with respect to team ranking has an accuracy rate of $74.60\%$, which is higher than the best of the ten popular public ranking systems ($73.02\%$). This exhibits the efficacy of CFA in enhancing the precision of sports prediction through different lens.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.10916v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09410v1" target="_blank" rel="noopener noreferrer">
-      Infrared spectroscopy of protonated water clusters via the quantum thermal bath method and highly accurate machine-learned potentials
+    <a href="https://arxiv.org/pdf/2603.10911v1" target="_blank" rel="noopener noreferrer">
+      Macroscopic Dominance from Microscopic Extremes: Symmetry Breaking in Spatial Competition
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">T. Baird, R. Vuilleumier, S. Bonella</span>
+    <span class="paper-authors">Stuti Guha, Shawn D. Ryan, Bhargav R. Karamched</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">The spectral features of water clusters provide important information on their structure and dynamics and can assist in deciphering the nature of the local environment of aqueous solutions in a variety of different conditions. Accurately capturing these features via numerical simulations is a non-trivial task that typically requires a sophisticated combination of high-level electronic structure methods and costly quantum dynamics techniques. We present results of molecular dynamics simulations of the IR spectra of protonated water clusters, ranging from the monomer to the tetramer, obtained via the combination of highly accurate machine-learned potential energy surfaces (PES) and dipole moment surfaces (DMS), and the quantum thermal bath (QTB) methodology which facilitates cost-effective inclusion of NQEs in molecular dynamics simulations. We compare our results with previous theoretical and experimental studies and show that this combination provides a significantly cheaper, yet still suitably accurate, alternative to more traditional computational approaches.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09410v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">How do competing populations convert a spatial advantage into macroscopic dominance? We introduce a stochastic model for resource competition that decouples the transient discovery phase from monopolization. Initial symmetry breaking is governed by extreme value statistics of first-passage times: a linear spatial disadvantage requires an exponentially larger population to overcome. However, transient superiority cannot stabilize dominance. A non-reciprocal interaction bias is strictly necessary to arrest local fluctuations and drive the system into a robust absorbing state.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.10911v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09386v1" target="_blank" rel="noopener noreferrer">
-      Deep Learning Search for Gravitational Waves from Compact Binary Coalescence
+    <a href="https://arxiv.org/pdf/2603.10905v1" target="_blank" rel="noopener noreferrer">
+      TOI-4616 b: a benchmark Earth-sized planet transiting a nearby M4 dwarf
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Lorenzo Mobilia, Tito Dal Canton, Gianluca Maria Guidi</span>
+    <span class="paper-authors">F. Zong Lang, B. O. Demory, Y. Gomez Maqueo Chew, Y. Schmid, M. Timmermans, F. J. Pozuelos, M. Gillon, Artem Y. Burdanov, Benjamin V. Rackham, Didier Queloz, Keivan G. Stassun, Khalid Barkaoui, Amaury Triaud, Julien de Wit, S. Zuniga-Fernandez, A. J. Burgasser, Elsa Ducrot, Madison G. Scott, D. Sebastian, A. Soubkiou, M. Lendl, I. Plauchu-Frayn, U. Schroffenegger, Erik Meier V., P. Pedersen, A. Khandelwal, Roman Gerasimov, C. Aganze, Chih-Chun Hsu, J. M. Jenkins, Aishwarya R. Iyer, C. Watkins, C. A. Theissen, K. A. Collins, H. P. Osborn, A. Shporer, Claudia Jano Munoz, Toshi Suganuma, Norio Narita, Akihiko Fukui, F. Murgas, J. de Leon, Enric Palle, Yasmin Davis, D. Kitzmann, M. Pichardo Marcano, M. J. Hooton</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">Gravitational wave searches rely on a combination of methods, including matched filtering, coherent analyses, and more recent machine learning based pipelines. For compact binary coalescences, where signals originate from the relativistic dynamics of compact objects, matched filtering remains a central element, but its computational cost will increase substantially with the data volumes and parameter-space coverage required by next-generation interferometers such as the Einstein Telescope. Developing complementary strategies that reduce computational load while preserving detection performance is therefore essential. We investigate a hybrid approach that combines matched-filtering concepts with Convolutional Neural Networks, enabling efficient signal searches without relying on the usual $χ^2$ rejection test. Using simulated data sets that include injected signals in Gaussian noise, transient noise, and physical effects not represented in template bank, such as eccentricity, precession and higher-order modes, we show that the method achieves a detection efficiency comparable to a standard matched-filtering search while offering a more resource efficient pipeline. These results indicate that deep learning assisted searches can support sustainable gravitational-wave data analysis in future detector eras.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09386v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Rocky exoplanets are particularly abundant around M-type stars. Their small radii and low luminosities provide favourable conditions for detecting transiting terrestrial planets and probing their atmospheric properties. We report the discovery and statistical validation of TOI-4616 b, an Earth-sized planet transiting a nearby mid-M dwarf observed by the Transiting Exoplanet Survey Satellite (TESS). We confirm the planetary nature of the signal and determine the system parameters by combining TESS photometry with ground-based multi-band transit observations, high-resolution imaging, and optical and near-infrared spectroscopy. The host star lies at a distance of 28.10 +(-) 0.07 pc and has a radius of 0.1889 +(-)0.0096 solar radii, a mass of 0.1881 +(-) 0.0094 solar masses, and an effective temperature of 3150 +(-) 75 K. TOI-4616 b has a radius of 1.22 Earth radii and an orbital period of 1.55 days. The planet receives an incident flux of approximately 40 times that of Earth, corresponding to an equilibrium temperature of about 525 K. This places TOI-4616 b in a regime intermediate between Earth-sized planets orbiting early M dwarfs and those around ultra-cool hosts. Statistical validation with the TRICERATOPS framework, supported by high-resolution imaging and chromatic transit constraints, yields a false-positive probability of 0.0135, below the recommended validation threshold of 0.015, confirming TOI-4616 b as a validated planet. Owing to its proximity to Earth, well-constrained stellar properties, and extensive multi-band follow-up, TOI-4616 b constitutes a valuable benchmark system for comparative studies of terrestrial planets around mid-M dwarfs and for future atmospheric investigations.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.10905v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.09340v1" target="_blank" rel="noopener noreferrer">
-      Testing Screened Modified Gravity with Strongly Lensed Gravitational Waves
+    <a href="https://arxiv.org/pdf/2603.10903v1" target="_blank" rel="noopener noreferrer">
+      Catalogue and statistics of greater than 100 MeV solar proton events during solar cycles 23-25 from SOHO-ERNE observations
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Chengsheng Mu, Shuo Cao, Shuxun Tian, Xinyue Jiang, Chenfa Zheng, Dadian Cheng</span>
+    <span class="paper-authors">M. Jarry, C. Palmroos, E. Lavasa, N. Talebpour Sheshvan, M. Koeberle, B. Heber, A. P. Rouillard, A. Papaioannou, J. Gieseler, C. Ngom, P. Oleynik, E. Riihonen, R. Vainio, G. Vasalos, A. Anastasiadis</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-10</span>
+    <span class="paper-date">2026-03-11</span>
   </p>
-  <p class="paper-abstract">Screening mechanisms are essential components in many modified gravity theories, which satisfy local tests of General Relativity (GR) and address cosmic acceleration on cosmological scales. The strong gravitational lensing of gravitational waves (GWs) offers a unique observational probe into cosmology and fundamental physics. In this paper, we investigate the possibility of testing screened modified gravity theories with strongly lensed gravitational waves. Specially, we develop the refined theoretical and statistical framework, in order to measure the post-Newtonian parameter $γ_{\text{PN}}$ in the presence of screening effects. Specially, the mass-truncated power-law and Navarro-Frenk-White (NFW) models are introduced to quantify the modified lensing potential. Our analysis also addresses the mass-sheet degeneracy (MSD) problem, by incorporating the absolute magnification and time delay measurements accessible through strongly lensed GW systems. We find that individual lensed GW system detected by next-generation GW detectors can provide stringent constraints on the PPN parameter ($γ_{\text{PN}}$) across different screening scales ($Λ$). Therefore, future measurements of strongly lensed GWs have great promise to seek departures from GR on kpc-Mpc scales, due to more precise time delay from lensed GW signals.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.09340v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The SPEARHEAD (specification, analysis, and re-calibration of high-energy particle data) project, funded by the European Union Horizon Europe programme, enhances the accuracy and usability of high-energy particle measurements. It investigates particle acceleration, release, and transport during solar eruptions by refining instrument response functions and cross-calibrating datasets. We present a comprehensive catalogue of greater than 100 MeV proton events identified from May 1996 to August 2024 using SOHO-ERNE penetrating-particle rates, together with associated solar phenomena derived from multi-instrument observations. The SEP events were detected through a systematic scan of ERNE-HED counter data and cross-calibrated with SOHO-EPHIN to derive peak fluxes and fluences. Each event was associated with its likely parent eruption using X-ray (XR) (GOES-XRS, RHESSI, SolO-STIX), radio (Wind-WAVES, STEREO-WAVES, ground-based observatories), and gamma-ray (Fermi-LAT) observations, CMEs (SOHO-LASCO), and ground-level enhancements (GLEs) (neutron monitors). Timings and physical properties were systematically compared to investigate the relationships between SEP onset, flare evolution, CME kinematics, and radio signatures. Statistical analyses reveal that most SEP releases closely follow flare and CME onsets, with moderate SEP-XR-CME correlations, and a strong SEP-GLE fluence link. These results indicate that high-energy SEP events are typically associated with strong solar activity signatures, with the observed intensities and timings strongly modulated by magnetic connectivity and coronal conditions. This catalogue provides the most extensive reference to date for high-energy SEP events over solar cycles 23-25, establishing a unified framework for future investigations of extreme particle acceleration.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.10903v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
