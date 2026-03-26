@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-03-25 02:10 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-03-26 02:24 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23465v1" target="_blank" rel="noopener noreferrer">
-      Statistical Efficiency of Single- and Multi-step Models for Forecasting and Control
+    <a href="https://arxiv.org/pdf/2603.24582v1" target="_blank" rel="noopener noreferrer">
+      The Stochastic Gap: A Markovian Framework for Pre-Deployment Reliability and Oversight-Cost Auditing in Agentic Artificial Intelligence
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Anne Somalwar, Bruce D. Lee, George J. Pappas, Nikolai Matni</span>
+    <span class="paper-authors">Biplab Pal, Santanu Bhattacharya</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">Compounding error, where small prediction mistakes accumulate over time, presents a major challenge in learning-based control. A common remedy is to train multi-step predictors directly instead of rolling out single-step models. However, it is unclear when the benefits of multi-step predictors outweigh the difficulty of learning a more complex model. We provide the first quantitative analysis of this trade-off for linear dynamical systems. We study three predictor classes: (i) single step models, (ii) multi-step models, and (iii) single step models trained with multi-step losses. We show that when the model class is well-specified and accurately captures the system dynamics, single-step models achieve the lowest asymptotic prediction error. On the other hand, when the model class is misspecified due to partial observability, direct multi-step predictors can significantly reduce bias and improve accuracy. We provide theoretical and empirical evidence that these trade-offs persist when predictors are used in closed-loop control.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23465v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Agentic artificial intelligence (AI) in organizations is a sequential decision problem constrained by reliability and oversight cost. When deterministic workflows are replaced by stochastic policies over actions and tool calls, the key question is not whether a next step appears plausible, but whether the resulting trajectory remains statistically supported, locally unambiguous, and economically governable. We develop a measure-theoretic Markov framework for this setting. The core quantities are state blind-spot mass B_n(tau), state-action blind mass B^SA_{pi,n}(tau), an entropy-based human-in-the-loop escalation gate, and an expected oversight-cost identity over the workflow visitation measure. We instantiate the framework on the Business Process Intelligence Challenge 2019 purchase-to-pay log (251,734 cases, 1,595,923 events, 42 distinct workflow actions) and construct a log-driven simulated agent from a chronological 80/20 split of the same process. The main empirical finding is that a large workflow can appear well supported at the state level while retaining substantial blind mass over next-step decisions: refining the operational state to include case context, economic magnitude, and actor class expands the state space from 42 to 668 and raises state-action blind mass from 0.0165 at tau=50 to 0.1253 at tau=1000. On the held-out split, m(s) = max_a pi-hat(a|s) tracks realized autonomous step accuracy within 3.4 percentage points on average. The same quantities that delimit statistically credible autonomy also determine expected oversight burden. The framework is demonstrated on a large-scale enterprise procurement workflow and is designed for direct application to engineering processes for which operational event logs are available.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24582v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23461v1" target="_blank" rel="noopener noreferrer">
-      End-to-End Efficient RL for Linear Bellman Complete MDPs with Deterministic Transitions
+    <a href="https://arxiv.org/pdf/2603.24545v1" target="_blank" rel="noopener noreferrer">
+      Detection of local geometry in random graphs: information-theoretic and computational limits
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Zakaria Mhammedi, Alexander Rakhlin, Nneka Okolo</span>
+    <span class="paper-authors">Jinho Bok, Shuangping Li, Sophie H. Yu</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">We study reinforcement learning (RL) with linear function approximation in Markov Decision Processes (MDPs) satisfying \emph{linear Bellman completeness} -- a fundamental setting where the Bellman backup of any linear value function remains linear. While statistically tractable, prior computationally efficient algorithms are either limited to small action spaces or require strong oracle assumptions over the feature space. We provide a computationally efficient algorithm for linear Bellman complete MDPs with \emph{deterministic transitions}, stochastic initial states, and stochastic rewards. For finite action spaces, our algorithm is end-to-end efficient; for large or infinite action spaces, we require only a standard argmax oracle over actions. Our algorithm learns an $\varepsilon$-optimal policy with sample and computational complexity polynomial in the horizon, feature dimension, and $1/\varepsilon$.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23461v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We study the problem of detecting local geometry in random graphs. We introduce a model $\mathcal{G}(n, p, d, k)$, where a hidden community of average size $k$ has edges drawn as a random geometric graph on $\mathbb{S}^{d-1}$, while all remaining edges follow the Erdős--Rényi model $\mathcal{G}(n, p)$. The random geometric graph is generated by thresholding inner products of latent vectors on $\mathbb{S}^{d-1}$, with each edge having marginal probability equal to $p$. This implies that $\mathcal{G}(n, p, d, k)$ and $\mathcal{G}(n, p)$ are indistinguishable at the level of the marginals, and the signal lies entirely in the edge dependencies induced by the local geometry. We investigate both the information-theoretic and computational limits of detection. On the information-theoretic side, our upper bounds follow from three tests based on signed triangle counts: a global test, a scan test, and a constrained scan test; our lower bounds follow from two complementary methods: truncated second moment via Wishart--GOE comparison, and tensorization of KL divergence. These results together settle the detection threshold at $d = \widetildeΘ(k^2 \vee k^6/n^3)$ for fixed $p$, and extend the state-of-the-art bounds from the full model (i.e., $k = n$) for vanishing $p$. On the computational side, we identify a computational--statistical gap and provide evidence via the low-degree polynomial framework, as well as the suboptimality of signed cycle counts of length $\ell \geq 4$.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24545v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23449v1" target="_blank" rel="noopener noreferrer">
-      Asymptotics of Nonparametric Estimation under general non-monotone MAR missingness: A Bayesian Approach
+    <a href="https://arxiv.org/pdf/2603.24522v1" target="_blank" rel="noopener noreferrer">
+      A Description of the Quantum Mpemba Effect using the Steepest-Entropy-Ascent Quantum Thermodynamics Framework
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Badr-Eddine Chérief-Abdellatif, Jeffrey Näf</span>
+    <span class="paper-authors">Luis Enrique Rocha-Soto, Cesar Eduardo Damian-Ascencio, Adriana Saldaña-Robles, Sergio Cano-Andrade</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">Missing values are ubiquitous in (data) science, with potential detrimental consequences for any statistical analysis. As a consequence, a wealth of methods and theoretical results have been developed in recent years. Still, many questions remain open, in particular in the case of general non-monotone missing at random (MAR). In this work, we extend nonparametric Bayesian theory to this MAR setting. We introduce a general theorem of posterior contraction under MAR and an additional mild positivity condition. Using this result, we are able to show that, despite the missing values, the density of the uncontaminated data can be estimated with the minimax posterior contraction rate up to log factors. To the best of our knowledge, this is the first nonparametric result showing that the uncontaminated distribution can be consistently estimated under Rubin&#x27;s MAR definition. As a consequence, we obtain an algorithm that takes data contaminated with missing values and returns a sample from a provably consistent estimate of the uncontaminated distribution.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23449v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The quantum Mpemba effect is a phenomenon characterized by an exponential relaxation from a non-equililbrium state to a steady state. This effect was predicted with an analysis of the Liouvillian superoperator and experimentally demonstrated in a three-level system. In this work, the system dynamics of the Mpemba effect is predicted within the steepest-entropy-ascent quantum thermodynamics framework considering a single constituent three-level isolated system. The system is projected from a four-dimensional Hilbert space onto a three-dimensional one using the Feshbach projection in order to compare the theoretical results with experimental data. Since the quantum Mpemba effect is characterized by a dissipative acceleration, the relaxation parameter, $τ_D$, plays a fundamental rol in the dissipative dynamics predicted by the model and is determined using machine learning methods, resulting in a model that thermodynamically describes this phenomenon at the quantum level.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24522v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23446v1" target="_blank" rel="noopener noreferrer">
-      A multi-ion optical clock with $\mathbf{5 \times 10^{-19}}$ uncertainty
+    <a href="https://arxiv.org/pdf/2603.24495v1" target="_blank" rel="noopener noreferrer">
+      Reflected diffusion models adapt to low-dimensional data
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Melina Filzinger, Martin R. Steinel, Jian Jiang, Daniel Bennett, Tanja E. Mehlstäubler, Ekkehard Peik, Nils Huntemann</span>
+    <span class="paper-authors">Asbjørn Holk, Claudia Strauch, Lukas Trottner</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">Today&#x27;s most accurate clocks are based on laser spectroscopy of electronic transitions in single trapped ions and feature fractional frequency uncertainties below $1\times10^{-18}$. Scaling these systems to multiple, simultaneously interrogated ions reduces measurement times, driving recent advances in multi-ion clocks. However, maintaining state-of-the-art systematic uncertainties while increasing the number of ions remains a central challenge. Here, we report on a multi-ion optical atomic clock with a fractional frequency uncertainty of $5.3\times10^{-19}$ and up to 10 \Sr ions. Ion-resolved state detection enables minimization of position-dependent shifts, with residual effects suppressed below the $10^{-20}$-level. Clock operation with eight to ten ions reduces the measurement time by a factor of 4.8 compared to single-ion operation. A comparison with an established \Yb single-ion clock yields an unperturbed frequency ratio of $0.6926711632159660405(20)$, with a statistical uncertainty of $0.9\times10^{-18}$ and a combined uncertainty of $2.9\times 10^{-18}$. These results demonstrate robust multi-ion clock operation with reduced averaging time and state-of-the-art accuracy.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23446v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">While the mathematical foundations of score-based generative models are increasingly well understood for unconstrained Euclidean spaces, many practical applications involve data restricted to bounded domains. This paper provides a statistical analysis of reflected diffusion models on the hypercube $[0,1]^D$ for target distributions supported on $d$-dimensional linear subspaces. A primary challenge in this setting is the absence of Gaussian transition kernels, which play a central role in standard theory in $\mathbb{R}^D$. By employing an easily implementable infinite series expansion of the transition densities, we develop analytic tools to bound the score function and its approximation by sparse ReLU networks. For target densities with Sobolev smoothness $α$, we establish a convergence rate in the $1$-Wasserstein distance of order $n^{-\frac{α+1-δ}{2α+d}}$ for arbitrarily small $δ&gt; 0$, demonstrating that the generative algorithm fully adapts to the intrinsic dimension $d$. These results confirm that the presence of reflecting boundaries does not degrade the fundamental statistical efficiency of the diffusion paradigm, matching the almost optimal rates known for unconstrained settings.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24495v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23442v1" target="_blank" rel="noopener noreferrer">
-      Structural Chart of Copper-Silver Nanoalloys through machine learning
+    <a href="https://arxiv.org/pdf/2603.24482v1" target="_blank" rel="noopener noreferrer">
+      Fine-tuning universal machine learning potentials for transition state search in surface catalysis
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Manoj Settem, Emanuele Telari, Antonio Tinti, Riccardo Ferrando, Alberto Giacomello</span>
+    <span class="paper-authors">Raffaele Cheula, Mie Andersen, John R. Kitchin</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">Nanoalloys (or alloy nanoparticles) are an important class of materials that are promising for their functional properties. However, designing synthesis protocols to control their structure and chemical ordering is rather challenging. Part of this difficulty stems from the lack of information on their metastable and stable structures. Here, we develop a general computational framework to construct a structural chart of nanoalloys using 38-atom AgCu nanoalloys as a model system. Initially, the equilibrium structural distribution is sampled using parallel tempering combined with molecular dynamics (PTMD). Using a machine learning (ML) based approach, the vast number of sampled configurations are classified into various structural classes. This ML approach produces a single three-dimensional map in which all structures and compositions can be visualized and discriminated. Finally, a finite-temperature structural chart is constructed which provides information on the dominant structures across the entire range of compositions and temperatures. In addition, the structural chart reveals significant differences in thermal stability between nanoalloys and bulk alloys. The presented framework provides an effective route to compute and map the vast structural and chemical space of multicomponent nanoparticles, paving the way to the rational design of functional nanoalloys.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23442v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Determining transition states (TSs) of surface reactions is central to understanding and designing heterogeneous catalysts but remains computationally prohibitive with density functional theory (DFT). While machine learning potentials (MLPs) offer significant speedups, task-specific models have limited transferability across catalytic systems, and universal MLPs (uMLPs) lack the accuracy needed for reactive configurations. Here, we present a workflow based on active learning to iteratively fine-tune uMLPs for DFT-quality TS search. Using 250 TSs from the CO2 hydrogenation reaction network on metal and single-atom alloy surfaces, we first benchmark TS search algorithms, identifying the Sella algorithm as most robust, and propose a modification (Bond-Aware Sella) that substantially improves its success rate. We then explore sequential and batch active-learning strategies for fine-tuning and show that DFT-quality TS structures can be found using only 8 DFT single-point calculations on average per structure. This demonstrates the viability of fine-tuned uMLPs for high-throughput catalyst screening.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24482v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23438v1" target="_blank" rel="noopener noreferrer">
-      Targeted Adversarial Traffic Generation : Black-box Approach to Evade Intrusion Detection Systems in IoT Networks
+    <a href="https://arxiv.org/pdf/2603.24466v1" target="_blank" rel="noopener noreferrer">
+      Short-Term Turbulence Prediction for Seeing Using Machine Learning
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Islam Debicha, Tayeb Kenaza, Ishak Charfi, Salah Mosbah, Mehdi Sehaki, Jean-Michel Dricot</span>
+    <span class="paper-authors">Mary Joe Medlej, Rahul Srinivasan, Simon Prunet, Aziz Ziad, Christophe Giordano</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">The integration of machine learning (ML) algorithms into Internet of Things (IoT) applications has introduced significant advantages alongside vulnerabilities to adversarial attacks, especially within IoT-based intrusion detection systems (IDS). While theoretical adversarial attacks have been extensively studied, practical implementation constraints have often been overlooked. This research addresses this gap by evaluating the feasibility of evasion attacks on IoT network-based IDSs, employing a novel black-box adversarial attack. Our study aims to bridge theoretical vulnerabilities with real-world applicability, enhancing understanding and defense against sophisticated threats in modern IoT ecosystems. Additionally, we propose a defense scheme tailored to mitigate the impact of evasion attacks, thereby reinforcing the resilience of ML-based IDSs. Our findings demonstrate successful evasion attacks against IDSs, underscoring their susceptibility to advanced techniques. In contrast, we proposed a defense mechanism that exhibits robust performance by effectively detecting the majority of adversarial traffic, showcasing promising outcomes compared to current state-of-the-art defenses. By addressing these critical cybersecurity challenges, our research contributes to advancing IoT security and provides insights for developing more resilient IDS.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23438v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Optical turbulence, driven by fluctuations of the atmospheric refractive index, poses a significant challenge to ground-based optical systems, as it distorts the propagation of light. This degradation affects both astronomical observations and free-space optical communications. While adaptive optics systems correct turbulence effects in real-time, their reactive nature limits their effectiveness under rapidly changing conditions, underscoring the need for predictive solutions. In this study, we address the problem of short-term turbulence forecasting by leveraging machine learning models to predict the atmospheric seeing parameter up to two hours in advance. We compare statistical and deep learning approaches, with a particular focus on probabilistic models that not only produce accurate forecasts but also quantify predictive uncertainty, crucial for robust decision-making in dynamic environments. Our evaluation includes Gaussian processes (GP) for statistical modeling, recurrent neural networks (RNNs) and long short-term memory networks (LSTMs) as deterministic baselines, and our novel implementation of a normalizing flow for time series (FloTS) as a flexible probabilistic deep learning method. All models are trained exclusively on historical seeing data, allowing for a fair performance comparison. We show that FloTS achieves the best overall balance between predictive accuracy and well-calibrated uncertainty.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24466v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23436v1" target="_blank" rel="noopener noreferrer">
-      Similarity-Aware Mixture-of-Experts for Data-Efficient Continual Learning
+    <a href="https://arxiv.org/pdf/2603.24450v1" target="_blank" rel="noopener noreferrer">
+      Prospect of the NUCLEUS Experiment at Chooz for Coherent Elastic Neutrino-Nucleus Scattering and New Physics Searches
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Connor Mclaughlin, Nigel Lee, Lili Su</span>
+    <span class="paper-authors">H. Abele, G. Angloher, B. Arnold, M. Atzori Corona, A. Bento, E. Bossio, F. Buchsteiner, J. Burkhart, F. Cappella, M. Cappelli, N. Casali, R. Cerulli, A. Cruciani, G. Del Castello, M. del Gallo Roccagiovine, S. Dorer, A. Erhart, M. Friedl, S. Fichtinger, V. M. Ghete, M. Giammei, C. Goupy, J. Hakenmüller, D. Hauff, F. Jeanneau, E. Jericha, M. Kaznacheeva, H. Kluck, A. Langenkämper, T. Lasserre, D. Lhuillier, M. Mancuso, R. Martin, B. Mauri, A. Mazzolari, L. McCallin, H. Neyrial, C. Nones, L. Oberauer, L. Peters, F. Petricca, W. Potzel, F. Pröbst, F. Pucci, F. Reindl, M. Romagnoni, J. Rothe, N. Schermer, J. Schieck, S. Schönert, C. Schwertner, L. Scola, G. Soum-Sidikov, L. Stodolsky, A. Schröder, R. Strauss, R. Thalmeier, C. Tomei, L. Valla, M. Vignati, M. Vivier, A. Wallach, P. Wasser, A. Wex, L. Wienke</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">Machine learning models often need to adapt to new data after deployment due to structured or unstructured real-world dynamics. The Continual Learning (CL) framework enables continuous model adaptation, but most existing approaches either assume each task contains sufficiently many data samples or that the learning tasks are non-overlapping. In this paper, we address the more general setting where each task may have a limited dataset, and tasks may overlap in an arbitrary manner without a priori knowledge. This general setting is substantially more challenging for two reasons. On the one hand, data scarcity necessitates effective contextualization of general knowledge and efficient knowledge transfer across tasks. On the other hand, unstructured task overlapping can easily result in negative knowledge transfer. To address the above challenges, we propose an adaptive mixture-of-experts (MoE) framework over pre-trained models that progressively establishes similarity awareness among tasks. Our design contains two innovative algorithmic components: incremental global pooling and instance-wise prompt masking. The former mitigates prompt association noise through gradual prompt introduction over time. The latter decomposes incoming task samples into those aligning with current prompts (in-distribution) and those requiring new prompts (out-of-distribution). Together, our design strategically leverages potential task overlaps while actively preventing negative mutual interference in the presence of per-task data scarcity. Experiments across varying data volumes and inter-task similarity show that our method enhances sample efficiency and is broadly applicable.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23436v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The NUCLEUS experiment aims to measure coherent elastic neutrino-nucleus scattering (CE$ν$NS) at unprecedentedly low nuclear recoil energies using gram-scale cryogenic calorimeters operated at the Chooz nuclear power plant in France. Access to recoil energies at the $\mathcal{O}(10~\mathrm{eV})$ scale enables CE$ν$NS studies at extremely low momentum transfer and provides enhanced sensitivity to new physics. In this work, we present sensitivity projections for the upcoming NUCLEUS technical and physics runs, incorporating a data-driven treatment of the low-energy excess (LEE) observed during commissioning. We develop a likelihood framework that exploits reactor-power variation to disentangle signal and background in a low signal-to-background regime and to assess the impact of the dominant systematic uncertainties. For the Technical Run with a 7 g CaWO$_4$ target, we find competitive sensitivity to several scenarios beyond the Standard Model, which do not require a CE$ν$NS observation. For the Physics Run, assuming complete suppression of the LEE, we project a 4.7 $σ$ observation of CE$ν$NS with a statistical precision of about 20 % in 1 year, enabling a determination of the weak mixing angle at the lowest momentum transfer probed to date with CE$ν$NS and leading CE$ν$NS-based constraints on the neutrino charge radius and new mediator models.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24450v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23416v1" target="_blank" rel="noopener noreferrer">
-      An Experimental Study of Machine Learning-Based Intrusion Detection for OPC UA over Industrial Private 5G Networks
+    <a href="https://arxiv.org/pdf/2603.24448v1" target="_blank" rel="noopener noreferrer">
+      Integrating Causal Machine Learning into Clinical Decision Support Systems: Insights from Literature and Practice
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Song Son Ha, Kunal Singh, Florian Foerster, Henry Beuster, Tim Kittel, Dominik Merli, Gerd Scholl</span>
+    <span class="paper-authors">Domenique Zipperling, Lukas Schmidt, Benedikt Hahn, Niklas Kühl, Steven Kimbrough</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">Industrial deployments increasingly rely on Open Platform Communications Unified Architecture (OPC UA) as a secure and platform-independent communication protocol, while private Fifth Generation (5G) networks provide low-latency and high-reliability connectivity for modern automation systems. However, their combination introduces new attack surfaces and traffic characteristics that remain insufficiently understood, particularly with respect to machine learning-based intrusion detection systems (ML-based IDS). This paper presents an experimental study on detecting cyberattacks against OPC UA applications operating over an operational private 5G network. Multiple attack scenarios are executed, and OPC UA traffic is captured and enriched with statistical flow-, packet-, and protocol-aware features. Several supervised ML models are trained and evaluated to distinguish benign and malicious traffic. The results demonstrate that the proposed ML-based IDS achieves high detection performance for a representative set of OPC UA-specific attack scenarios over an operational private 5G network.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23416v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Current clinical decision support systems (CDSSs) typically base their predictions on correlation, not causation. In recent years, causal machine learning (ML) has emerged as a promising way to improve decision-making with CDSSs by offering interpretable, treatment-specific reasoning. However, existing research often emphasizes model development rather than designing clinician-facing interfaces. To address this gap, we investigated how CDSSs based on causal ML should be designed to effectively support collaborative clinical decision-making. Using a design science research methodology, we conducted a structured literature review and interviewed experienced physicians. From these, we derived eight empirically grounded design requirements, developed seven design principles, and proposed nine practical design features. Our results establish guidance for designing CDSSs that deliver causal insights, integrate seamlessly into clinical workflows, and support trust, usability, and human-AI collaboration. We also reveal tensions around automation, responsibility, and regulation, highlighting the need for an adaptive certification process for ML-based medical products.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24448v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23407v1" target="_blank" rel="noopener noreferrer">
-      Encoding Numerical Data for Generative Quantum Machine Learning
+    <a href="https://arxiv.org/pdf/2603.24444v1" target="_blank" rel="noopener noreferrer">
+      Quantum walk with a local spin interaction
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Michael Krebsbach, Florentin Reiter, Thomas Wellens, Hagen-Henrik Kowalski, Ali Abedi</span>
+    <span class="paper-authors">Manami Yamagishi, Naomichi Hatano, Kohei Kawabata, Chusei Kiumi, Akinori Nishino, Franco Nori, Hideaki Obuse</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">Generative quantum machine learning models are trained to deduce the probability distribution underlying a given dataset, and to produce new, synthetic samples from it. The majority of such models proposed in the literature, like the Quantum Circuit Born Machine (QCBM), fundamentally work on a binary level. Real-world data, however, is often numeric, requiring the models to translate between binary and continuous representations. We analyze how this transition influences the performance of quantum models and show that it requires the models to learn correlations that are solely an artifact of the way the data is encoded, and not related to the data itself. At the same time, structure of the original data can be obscured in the binary representation, hindering generalization. To mitigate these effects, we propose a strategy based on Gray-codes that can be implemented with essentially no overhead, conserves structures in the data, and avoids artificial correlations in situations in which the standard approach creates them. Considering datasets drawn from various one-dimensional probability distributions, we verify that, in most cases, QCBMs using the reflected Gray code learn faster and more accurately than those with standard binary code.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23407v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We introduce a model of quantum walkers interacting with a magnetic impurity localized at the origin. First, we study a model of a single quantum walker interacting with a localized magnetic impurity. For a simple case of parameter values, we analytically obtain the eigenvalues and the eigenvectors of bound states, in which the quantum walker is bound to the magnetic impurity. Second, we study a model with two quantum walkers and one magnetic impurity, in which the two quantum walkers indirectly interact with each other via the magnetic impurity, as in the Kondo model. We numerically simulate the collision dynamics when the spin-spin interaction at the origin is of the XX type and the SU(2) Heisenberg type. In the case of the XX interaction, we calculate the entanglement negativity to quantify how much the two quantum walkers are entangled with each other, and find that the negativity increases drastically upon the collision of the two walkers. We compare the time dependence for different statistics, namely, fermionic, bosonic, and distinguishable walkers. In the case of the SU(2) interaction, we simulate the dynamics starting from the initial state in which one fermionic walker is in a bound eigenstate around the origin and the other fermionic walker is a delta function colliding with the first walker. We find that a bound eigenstate closest to the singlet state of the first walker and the magnetic impurity is least perturbed by the collision of the second walker. We speculate that this is a manifestation of Kondo physics at the lowest level of the real-space renormalization-group procedure.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24444v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23397v1" target="_blank" rel="noopener noreferrer">
-      Kinetic Langevin Splitting Schemes for Constrained Sampling
+    <a href="https://arxiv.org/pdf/2603.24435v1" target="_blank" rel="noopener noreferrer">
+      Machine Learning-Based Classification of Active Galaxies and Estimation of Supermassive Black Hole Masses
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Neil K. Chada, Lu Yu</span>
+    <span class="paper-authors">Farideh Mazoochi, Reihaneh Karimi, Mohammad Hossein Zhoolideh Haghighi, Fatemeh Tabatabaei</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">Constrained sampling is an important and challenging task in computational statistics, concerned with generating samples from a distribution under certain constraints. There are numerous types of algorithm aimed at this task, ranging from general Markov chain Monte Carlo, to unadjusted Langevin methods. In this article we propose a series of new sampling algorithms based on the latter of these, specifically the kinetic Langevin dynamics. Our series of algorithms are motivated on advanced numerical methods which are splitting order schemes, which include the BU and BAO families of splitting schemes.Their advantage lies in the fact that they have favorable strong order (bias) rates and computationally efficiency. In particular we provide a number of theoretical insights which include a Wasserstein contraction and convergence results. We are able to demonstrate favorable results, such as improved complexity bounds over existing non-splitting methodologies. Our results are verified through numerical experiments on a range of models with constraints, which include a toy example and Bayesian linear regression.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23397v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Distinguishing active galaxies from star-forming galaxies is essential for understanding galaxy evolution. Diagnostic methods like the BPT (Baldwin, Phillips, and Terlevich) diagram use optical emission-line ratios to separate galaxies. However, with growing availability of large surveys and high-resolution instruments, manually identifying galaxy types has become increasingly challenging. In this study, we investigate machine learning to classify active and star-forming galaxies using properties like stellar mass, stellar velocity dispersion, colour, redshift, and [O III] luminosity. These new approaches enable faster AGN/star-forming galaxy classification than the BPT diagram and provide a flexible, scalable alternative that can complement traditional diagnostics, particularly for large surveys or low-quality data. We employ four classification algorithms -- Decision Tree, Random Forest, Support Vector Classifier (SVC), and k-Nearest Neighbours (KNN) -- using the Galaxy Zoo 1 dataset derived from the SDSS sample. The dataset contains 47,675 galaxies within the redshift range 0.02--0.05, including 17,002 pure star-forming and 2,254 active galaxies, labeled using the BPT diagram. These labels train and evaluate our models through confusion matrices, learning curves, and receiver operating characteristic (ROC) curves. Among the four algorithms, the SVC and Random Forest models achieve the highest accuracy of approximately 93\%, while KNN shows the lowest at 88\%. Furthermore, we estimate supermassive black hole masses using stellar velocity dispersion ($σ$) and the $M_{\rm BH}-σ$ relation. We apply four regression models -- Random Forest Regressor, Support Vector Regressor (SVR), KNN Regressor, and Polynomial Regression. All four models produce similar results, with $R^2$ values from 0.75 to 0.77, indicating consistent performance.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24435v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23394v1" target="_blank" rel="noopener noreferrer">
-      Markov State--Space Modeling and Channel Characterization for DNA-Based Molecular Communication
+    <a href="https://arxiv.org/pdf/2603.24432v1" target="_blank" rel="noopener noreferrer">
+      What and When to Learn: CURriculum Ranking Loss for Large-Scale Speaker Verification
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ruifeng Zheng, Zhihan Xu, Veronika Volkova, Pengjie Zhou, Martín Schottlender, Juan A. Cabrera, Frank H. P. Fitzek, Pit Hofmann</span>
+    <span class="paper-authors">Massa Baali, Sarthak Bisht, Rita Singh, Bhiksha Raj</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">In this paper, we study DNA-based molecular communication with microarray-style reception under reversible hybridization, where the bound-state observation exhibits both inter-symbol interference and colored counting noise. To capture these effects in a communication-oriented form, we develop a Markov state-space framework based on a voxelized reaction--diffusion model, in which a block-structured transition matrix describes molecular transport and binding/unbinding dynamics. For the microarray specialization, this representation yields the channel impulse response, the equilibrium gain, and a settling-time-based characterization of the effective channel memory. Building on the resulting symbol-rate observation model for on--off keying, we derive a grouped-binomial counting model and obtain a closed-form expression for the covariance of the counting noise. Based on these statistics, we further develop a differential-threshold detector and a finite-memory decision-feedback equalizer. Numerical results validate the theoretical correlation behavior and show that the relative performance of the proposed receivers depends strongly on the channel-memory regime.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23394v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Speaker verification at large scale remains an open challenge as fixed-margin losses treat all samples equally regardless of quality. We hypothesize that mislabeled or degraded samples introduce noisy gradients that disrupt compact speaker manifolds. We propose Curry (CURriculum Ranking), an adaptive loss that estimates sample difficulty online via Sub-center ArcFace: confidence scores from dominant sub-center cosine similarity rank samples into easy, medium, and hard tiers using running batch statistics, without auxiliary annotations. Learnable weights guide the model from stable identity foundations through manifold refinement to boundary sharpening. To our knowledge, this is the largest-scale speaker verification system trained to date. Evaluated on VoxCeleb1-O, and SITW, Curry reduces EER by 86.8\% and 60.0\% over the Sub-center ArcFace baseline, establishing a new paradigm for robust speaker verification on imperfect large-scale data.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24432v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23380v1" target="_blank" rel="noopener noreferrer">
-      Eulerian polynomials and the alternating sum of excedances
+    <a href="https://arxiv.org/pdf/2603.24431v1" target="_blank" rel="noopener noreferrer">
+      Learning Response-Statistic Shifts and Parametric Roll Episodes from Wave--Vessel Time Series via LSTM Functional Models
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jean-Christophe Pain</span>
+    <span class="paper-authors">Jose del Aguila Ferrandis</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">Tangent numbers $T_{2n-1}$, which enumerate alternating permutations of odd length, play a prominent role in the Taylor series expansion of the tangent function $\tan(x)$. In this work, we adopt a combinatorial approach based on the excedance statistic of permutations, which allows us to interpret the coefficients of the tangent series in a structural and enumerative way. Using this framework, we establish a classical identity that relates the alternating sum of excedances to the hyperbolic tangent function. This perspective highlights deep connections with Eulerian polynomials, provides a combinatorial interpretation of tangent numbers, and links these sequences to Genocchi numbers and related arithmetic properties. The approach not only unifies analytic and combinatorial viewpoints but also opens the way to generalizations to other permutation statistics and families of specialized permutations.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23380v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Parametric roll is a rare but high-consequence instability that can trigger abrupt regime changes in ship response, including pronounced shifts in roll statistics and tail risk. This paper develops a data-driven surrogate that learns the nonlinear, causal functional mapping from incident wave--motion time series to vessel motions, and demonstrates that the surrogate reproduces both (i) parametric roll episodes and (ii) the associated statistical shifts in the response. Crucially, the learning framework is data-source agnostic: the paired wave--motion time series can be obtained from controlled experiments (e.g., towing-tank or basin tests with wave probes and motion tracking) when a hull exists, or from high-fidelity simulations during design when experiments are not yet available. To provide a controlled severe-sea demonstration, we generate training data with a URANS numerical wave tank, using long-crested irregular seas synthesized from a modified Pierson--Moskowitz spectrum. The demonstration dataset comprises 49 random-phase realizations for each of three sea states, simulated at a fixed forward speed selected to yield encounter conditions under which parametric-roll episodes can occur. A stacked LSTM surrogate is trained on wave-elevation time series and evaluated on held-out realizations using time-domain accuracy and distributional fidelity metrics. In the most severe case, the model tracks the onset and growth of large-amplitude roll consistent with parametric excitation, and captures the corresponding changes in roll probability density functions (PDFs). We further compare loss-function choices (MSE, relative-entropy-based objectives, and amplitude-weighted variants) and show how they trade average error for improved tail fidelity relevant to operability and risk assessment.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24431v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23373v1" target="_blank" rel="noopener noreferrer">
-      An Opacity-Free Test of the Cosmic Distance Duality Relation Using Strongly Lensed Gravitational Wave Signals with Space-Based Detector Networks
+    <a href="https://arxiv.org/pdf/2603.24421v1" target="_blank" rel="noopener noreferrer">
+      E-values as statistical evidence: A comparison to Bayes factors, likelihoods, and p-values
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yong Yuan, Minghui Du, Benyang Zhu, Xin-yi Lin, Wen-Fan Feng, Peng Xu, Xilong Fan</span>
+    <span class="paper-authors">Ben Chugg, Aaditya Ramdas, Peter Grünwald</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">The cosmic distance duality relation (CDDR), expressed as $d_L(z) = (1+z)^2 D_A(z)$, is a fundamental relation in modern cosmology. In this work, we apply a method to test the CDDR using simulated strongly lensed gravitational-wave (SLGW) signals from massive binary black holes (MBBH) as observed by proposed space-based detector networks. Our analysis is conducted under the point-mass lens model, considering the strong lensing scenario that produces two images. We generate 90 days of simulated SLGW data for 10 events based on the Population III stellar formation model, with source redshifts in the range $z_s \in [2,6]$ and lens redshifts in $z_L \in [0.2,1]$. The deviation of CDDR is parameterized by $η_1(z) = 1 + η_0 z$ and $η_2(z) = 1 + η_0 z/(1+z)$, and we incorporate the deviation parameter $η_0$ directly into the waveform model. Parameter estimation is performed within a Bayesian statistical framework, combining simulated data from both Taiji and LISA. For a single lensed event, the joint Taiji+LISA analysis improves the measurement precision of $η_0$ by roughly a factor of two compared with Taiji-only observations. By combining 10 simulated events, the population-level constraints on $η_0$, quantified by the half width of the $95\%$ credible interval, reach approximately $2.61\times10^{-4}$ ($1.72\times10^{-4}$) for the $η_1(z)$ parameterization and $1.22\times10^{-3}$ ($6.86\times10^{-4}$) for $η_2(z)$ in the Taiji-only (Taiji+LISA) scenario, respectively. The inferred values of $η_0$ remain consistent with $η_0 = 0$ within the estimated uncertainties, with no statistically significant evidence for deviations from the CDDR at the achieved precision. These results demonstrate the significant advantage of joint space-based observations for high-precision tests of the CDDR.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23373v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">A recurring debate in the philosophy of statistics concerns what, exactly, should count as a measure of evidence for or against a given hypothesis. P-values, likelihood ratios, and Bayes factors all have their defenders. In this paper we add two additional candidates to this list: the e-value and its sequential analogue, the e-process. E-values enjoy several desirable properties as measures of evidence: they combine naturally across studies, handle composite hypotheses, provide long-run error rates, and admit a useful interpretation as the wealth accrued by a bettor in a game against the null distribution. E-processes additionally handle optional stopping and optional continuation. This work examines the extent to which e-values and e-processes satisfy the evidential desiderata of different statistical traditions, concluding that they combine attractive features of p-values, likelihood ratios, and Bayes factors, and merit serious consideration as interpretable and intuitive measures of statistical evidence.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24421v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23358v1" target="_blank" rel="noopener noreferrer">
-      A Synchronous EEG-fNIRS BCI: A Proof-of-Concept for Multimodal Avalanche Analysis of Motor Cognition in Older Adults
+    <a href="https://arxiv.org/pdf/2603.24410v1" target="_blank" rel="noopener noreferrer">
+      Real Talk, Virtual Faces: A Formal Concept Analysis of Personality and Sentiment in Influencer Audiences
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Eva Guttmann-Flury, Yun-Hsuan Chen, Qiaoyuan Xiang, Hao Zhang, Mohamad Sawan</span>
+    <span class="paper-authors">Shahram Chaudhry, Sidahmed Benabderrahmane, Talal Rahwan</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">This proof-of-concept study introduces a novel multimodal framework combining synchronized EEG-fNIRS modalities with neuronal avalanche analysis to identify early network dysfunction in Alzheimer&#x27;s disease. The approach leverages complementary neural signals to examine motor network dynamics during execution and imagery tasks within an interactive task environment. Preliminary analysis of a small pilot cohort (N=4 subjects, including one with Mild Cognitive Impairment) validated the technical feasibility of the multimodal framework and revealed observable condition-dependent patterns in network organization. Two primary observations emerged: a reduced neural contrast between motor execution and imagery states, and increased trial-to-trial variability in network organization in the MCI participant. These initial results successfully validate the technical pipeline and provide hypothesis-generating observations for future statistically powered studies. The convergence of findings across modalities suggests that multimodal assessment of network flexibility may help detect functional changes in early Alzheimer&#x27;s continuum, supporting the future development of this BCI-inspired framework into an engaging diagnostic tool.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23358v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Virtual influencers~(VIs) -- digitally synthetic social-media personas -- attract audiences whose discourse appears qualitatively different from discourse around human influencers~(HIs). Existing work characterises this difference through surveys or aggregate engagement statistics, which reveal \emph{what} audiences say but not \emph{how} multiple signals co-occur. We propose a two-layer, structure-first framework grounded in Formal Concept Analysis~(FCA) and association rule mining. The first layer applies FCA with support-based iceberg filtering to weekly-aggregated comment data, extracting discourse profiles -- weekly co-occurrence bundles of sentiment, Big Five personality cues, and topic tags. The second layer mines association rules at the comment level, revealing personality--sentiment--topic dependencies invisible to frequency-table analysis. Applied to YouTube comments from three VI--HI influencer pairs, the two-layer analysis reveals a consistent structural divergence: HI discourse concentrates into a single, emotionally regulated (stability-centred) regime (low neuroticism anchoring positivity), while VI discourse supports three structurally distinct discourse modes, including an appearance-discourse cluster absent from HI despite near-equal marginal prevalence. Topic-specific analyses further show that VI contexts exhibit negative sentiment in psychologically sensitive domains (mental health, body image, artificial identity) relative to HI contexts. Our results position FCA as a principled tool for multi-signal discourse analysis and demonstrate that virtuality reshapes not just what audiences say, but the underlying grammar of how signals co-occur in their reactions.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24410v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23322v1" target="_blank" rel="noopener noreferrer">
-      Leveraging LLMs and Social Media to Understand User Perception of Smartphone-Based Earthquake Early Warnings
+    <a href="https://arxiv.org/pdf/2603.24392v1" target="_blank" rel="noopener noreferrer">
+      Federated fairness-aware classification under differential privacy
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Hanjing Wang, S. Mostafa Mousavi, Patrick Robertson, Richard M. Allen, Alexie Barski, Robert Bosch, Nivetha Thiruverahan, Youngmin Cho, Tajinder Gadh, Steve Malkos, Boone Spooner, Greg Wimpey, Marc Stogaitis</span>
+    <span class="paper-authors">Gengyu Xue, Yi Yu</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">Android&#x27;s Earthquake Alert (AEA) system provided timely early warnings to millions during the Mw 6.2 Marmara Ereglisi, Türkiye earthquake on April 23, 2025. This event, the largest in the region in 25 years, served as a critical real-world test for smartphone-based Earthquake Early Warning (EEW) systems. The AEA system successfully delivered alerts to users with high precision, offering over a minute of warning before the strongest shaking reached urban areas. This study leveraged Large Language Models (LLMs) to analyze more than 500 public social media posts from the X platform, extracting 42 distinct attributes related to user experience and behavior. Statistical analyses revealed significant relationships, notably a strong correlation between user trust and alert timeliness. Our results indicate a distinction between engineering and the user-centric definition of system accuracy. We found that timeliness is accuracy in the user&#x27;s mind. Overall, this study provides actionable insights for optimizing alert design, public education campaigns, and future behavioral research to improve the effectiveness of such systems in seismically active regions.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23322v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Privacy and algorithmic fairness have become two central issues in modern machine learning. Although each has separately emerged as a rapidly growing research area, their joint effect remains comparatively under-explored. In this paper, we systematically study the joint impact of differential privacy and fairness on classification in a federated setting, where data are distributed across multiple servers. Targeting demographic disparity constrained classification under federated differential privacy, we propose a two-step algorithm, namely FDP-Fair. In the special case where there is only one server, we further propose a simple yet powerful algorithm, namely CDP-Fair, serving as a computationally-lightweight alternative. Under mild structural assumptions, theoretical guarantees on privacy, fairness and excess risk control are established. In particular, we disentangle the source of the private fairness-aware excess risk into a) intrinsic cost of classification, b) cost of private classification, c) non-private cost of fairness and d) private cost of fairness. Our theoretical findings are complemented by extensive numerical experiments on both synthetic and real datasets, highlighting the practicality of our designed algorithms.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24392v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23320v1" target="_blank" rel="noopener noreferrer">
-      Internal stress drives ferromagnetic-like ordering in networks of proliferating bacteria
+    <a href="https://arxiv.org/pdf/2603.24388v1" target="_blank" rel="noopener noreferrer">
+      Causal Transfer in Medical Image Analysis
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Nicola Pellicciotta, Luca Angelani, Roberto Di Leonardo</span>
+    <span class="paper-authors">Mohammed M. Abdelsamea, Daniel Tweneboah Anyimadu, Tasneem Selim, Saif Alzubi, Lei Zhang, Ahmed Karam Eldaly, Xujiong Ye</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">Proliferation is a defining feature of life. Through growth, division, and death, living systems consume energy and inject mass, breaking conservation laws and driving collective phenomena from biofilm formation to embryonic development. Yet, while active matter physics has advanced our understanding of self-propelled agents, quantitative frameworks for proliferating systems are still emerging, and most work focuses on simplified settings. Here, we study \textit{E.coli} bacteria growing inside a network of single-file microchannels as a minimal model of structured environments. Competition for free volume drives the spontaneous emergence of coherent growth patterns that persist across generations but vanish when the channel links exceed the typical cell size at birth. Despite the strongly out-of-equilibrium character of the dynamics, the observed phenomenology can be quantitatively captured by an effective equilibrium description in which the flow state at each node is represented by a spin variable with ferromagnetic interactions. Simulations of growing elastic cells show that this coupling arises from internal stress accumulated at network nodes due to dynamical constraints. Our results reveal a surprising correspondence between proliferating active matter and equilibrium statistical mechanics, highlighting open fundamental questions and offering a first step toward describing growth phenomena in real-world complex environments.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23320v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Medical imaging models frequently fail when deployed across hospitals, scanners, populations, or imaging protocols due to domain shift, limiting their clinical reliability. While transfer learning and domain adaptation address such shifts statistically, they often rely on spurious correlations that break under changing conditions. On the other hand, causal inference provides a principled way to identify invariant mechanisms that remain stable across environments. This survey introduces and systematises Causal Transfer Learning (CTL) for medical image analysis. This paradigm integrates causal reasoning with cross-domain representation learning to enable robust and generalisable clinical AI. We frame domain shift as a causal problem and analyse how structural causal models, invariant risk minimisation, and counterfactual reasoning can be embedded within transfer learning pipelines. We studied spanning classification, segmentation, reconstruction, anomaly detection, and multimodal imaging, and organised them by task, shift type, and causal assumption. A unified taxonomy is proposed that connects causal frameworks and transfer mechanisms. We further summarise datasets, benchmarks, and empirical gains, highlighting when and why causal transfer outperforms correlation-based domain adaptation. Finally, we discuss how CTL supports fairness, robustness, and trustworthy deployment in multi-institutional and federated settings, and outline open challenges and research directions for clinically reliable medical imaging AI.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24388v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23313v1" target="_blank" rel="noopener noreferrer">
-      The Lyman-alpha Emission in Solar Flares. II. A Statistical Study on Its Relationship with the White-light plus Soft X-ray Emission
+    <a href="https://arxiv.org/pdf/2603.24384v1" target="_blank" rel="noopener noreferrer">
+      On the Use of Bagging for Local Intrinsic Dimensionality Estimation
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">De-Chao Song, Ying Li, Qiao Li, Xiaofeng Liu</span>
+    <span class="paper-authors">Kristóf Péter, Ricardo J. G. B. Campello, James Bailey, Michael E. Houle</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">The hydrogen \lya\ line and the white-light (WL) continuum are two key diagnostics of energy transport in the lower atmosphere during solar flares, yet their relationship remains poorly understood. Here we present a statistical analysis of 69 white-light flares (WLFs) to investigate the relationships among the \lya, soft X-ray (SXR), and WL continuum emissions using the data from GOES and the Helioseismic and Magnetic Imager (HMI) on the Solar Dynamics Observatory. We find that the \lya\ contrast in these WLFs ranges 0.8--28.5\% with a mean value of 7.0\%. Positive power-law relationships exist among peak enhancements in SXR, \lya, and WL. For most events, the \lya\ peak is nearly co-temporal with the peak of SXR time derivative, whereas the WL peak is either co-temporal with or lags those of \lya\ and SXR derivative. The \lya\ and WL rise times are similar ($\sim$3--4 min) and correlated. We also find that the radiated energy in \lya\ and HMI narrow-band WL has a positive power-law relationship with duration. In particular, the power-law index for the narrow-band WL is very close to 1/3 as predicted by magnetic reconnection theory. On average, the radiated energies in GOES \lya\ and SXR bands are approximately three orders of magnitude greater than the energy emitted in the continuum near 6173 Å with a bandwidth of 1 Å. Our findings provide new constraints on lower-atmosphere energy transport in solar flares and can serve as valuable references for modelling and interpreting the flares on solar-type stars.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23313v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The theory of Local Intrinsic Dimensionality (LID) has become a valuable tool for characterizing local complexity within and across data manifolds, supporting a range of data mining and machine learning tasks. Accurate LID estimation requires samples drawn from small neighborhoods around each query to avoid biases from nonlocal effects and potential manifold mixing, yet limited data within such neighborhoods tends to cause high estimation variance. As a variance reduction strategy, we propose an ensemble approach that uses subbagging to preserve the local distribution of nearest neighbor (NN) distances. The main challenge is that the uniform reduction in total sample size within each subsample increases the proximity threshold for finding a fixed number k of NNs around the query. As a result, in the specific context of LID estimation, the sampling rate has an additional, complex interplay with the neighborhood size, where both combined determine the sample size as well as the locality and resolution considered for estimation. We analyze both theoretically and experimentally how the choice of the sampling rate and the k-NN size used for LID estimation, alongside the ensemble size, affects performance, enabling informed prior selection of these hyper-parameters depending on application-based preferences. Our results indicate that within broad and well-characterized regions of the hyper-parameters space, using a bagged estimator will most often significantly reduce variance as well as the mean squared error when compared to the corresponding non-bagged baseline, with controllable impact on bias. We additionally propose and evaluate different ways of combining bagging with neighborhood smoothing for substantial further improvements on LID estimation performance.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24384v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23309v1" target="_blank" rel="noopener noreferrer">
-      Tail-Calibrated Estimation of Extreme Quantile Treatment Effects
+    <a href="https://arxiv.org/pdf/2603.24377v1" target="_blank" rel="noopener noreferrer">
+      Fluctuation-induced symmetry breaking in high harmonic generation for bicircular quantum light
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Mengran Li, Daniela Castro-Camilo</span>
+    <span class="paper-authors">Philipp Stammer, Camilo Granados, Javier Rivera-Dean</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">Extreme quantile treatment effects (eQTEs) measure the causal impact of a treatment on the tails of an outcome distribution and are central for studying rare, high-impact events. Standard QTE methods often fail in extreme regimes due to data sparsity, while existing eQTE methods rely on restrictive tail assumptions or on interior-quantile theory. We propose the Tail-Calibrated Inverse Estimating Equation (TIEE) framework, which combines information across quantile levels and anchors the tail using extreme value models within a unified estimating equation approach. We establish asymptotic properties of the resulting estimator and evaluate its performance through simulation under different tail behaviours and model misspecifications. An application to extreme precipitation in the Austrian Alps illustrates how TIEE enables observational causal attribution for very rare events under anthropogenic warming. More broadly, the proposed framework establishes a new foundation for causal inference on rare, high-impact outcomes, with relevance across environmental risk, economics, and public health.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23309v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Symmetries are ubiquitous in physics and play a pivotal role in light-matter interactions, where they determine the selection rules governing allowed atomic transitions and define the associated conserved quantities. For the up-conversion process of high harmonic generation, the symmetries of the driving field determine the allowed frequencies and the polarization properties of the resulting harmonics. As a consequence, it is possible to establish classical selection rules when the process is driven by coherent radiation. In this work, we show that fluctuation-induced symmetry breaking in the driving field leads to the appearance of otherwise forbidden harmonics. This is achieved by considering bicircular quantum light, and demonstrate that the enhanced quantum fluctuations due to squeezing in the driving field break the classical selection rules. To this end, we develop a quantum optical description of the dynamical symmetries in the process of high harmonic generation, revealing corrections to the classical selection rules. Moreover, we show that the new harmonics show squeezing-like signatures in their photon statistics, allowing them to be clearly distinguished from classical thermal fluctuations.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24377v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23294v1" target="_blank" rel="noopener noreferrer">
-      Granger Causality in Expectiles: an M-vine copula test
+    <a href="https://arxiv.org/pdf/2603.24369v1" target="_blank" rel="noopener noreferrer">
+      Adaptive decision-making for stochastic service network design
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Roberto Fuentes-Martínez, Irene Crimaldi</span>
+    <span class="paper-authors">Javier Duran Micco, Bilge Atasoy</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">A model-free measure of Granger causality in expectiles is proposed, generalizing the traditional mean-based measure to arbitrary positions of the conditional distribution. Expectiles are the only law-invariant risk measures that are both coherent and elicitable, making them particularly well-suited for studying distributional Granger causality where risk quantification and forecast evaluation are both relevant. Based on this measure, a test is developed using M-vine copula models that accounts for multivariate Granger causality with $d+1$ series under non-linear and non-Gaussian dependence, without imposing parametric assumptions on the joint distribution. Strong consistency of the test statistic is established under some regularity conditions. In finite samples, simulations show accurate size control and power increasing with sample size. A key advantage is the joint testing capability: causal relationships invisible to pairwise tests can be detected, as demonstrated both theoretically and empirically. Two applications to international stock market indices at the global and Asian regional level illustrate the practical relevance of the proposed framework.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23294v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">This paper addresses the Service Network Design (SND) problem for a logistics service provider (LSP) operating in a multimodal freight transport network, considering uncertain travel times and limited truck fleet availability. A two-stage optimization approach is proposed, which combines metaheuristics, simulation and machine learning components. This solution framework integrates tactical decisions, such as transport request acceptance and capacity booking for scheduled services, with operational decisions, including dynamic truck allocation, routing, and re-planning in response to disruptions. A simulated annealing (SA) metaheuristic is employed to solve the tactical problem, supported by an adaptive surrogate model trained using a discrete-event simulation model that captures operational complexities and cascading effects of uncertain travel times. The performance of the proposed method is evaluated using benchmark instances. First, the SA is tested on a deterministic version of the problem and compared to state-of-the-art results, demonstrating it can improve the solution quality and significantly reduce the computational time. Then, the proposed SA is applied to the more complex stochastic problem. Compared to a benchmark algorithm that executes a full simulation for each solution evaluation, the learning-based SA generates high quality solutions while significantly reducing computational effort, achieving only a 5% difference in objective function value while cutting computation time by up to 20 times. These results demonstrate the strong performance of the proposed algorithm in solving complex versions of the SND. Moreover, they highlight the effectiveness of integrating diverse modeling and optimization techniques, and the potential of such approaches to efficiently address freight transport planning challenges.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24369v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2603.23282v1" target="_blank" rel="noopener noreferrer">
-      A Comparative Study of Machine Learning Models for Hourly Forecasting of Air Temperature and Relative Humidity
+    <a href="https://arxiv.org/pdf/2603.24360v1" target="_blank" rel="noopener noreferrer">
+      Aluminum solidification and nanopolycrystal deformation via a Graph Neural Network Potential and Million-Atom Simulations
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jiaqi Dong</span>
+    <span class="paper-authors">Ian Störmer, Julija Zavadlav</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-03-24</span>
+    <span class="paper-date">2026-03-25</span>
   </p>
-  <p class="paper-abstract">Accurate short-term forecasting of air temperature and relative humidity is critical for urban management, especially in topographically complex cities such as Chongqing, China. This study compares seven machine learning models: eXtreme Gradient Boosting (XGBoost), Random Forest, Support Vector Regression (SVR), Multi-Layer Perceptron (MLP), Decision Tree, Long Short-Term Memory (LSTM) networks, and Convolutional Neural Network (CNN)-LSTM (CNN-LSTM), for hourly prediction using real-world open data. Based on a unified framework of data preprocessing, lag-feature construction, rolling statistical features, and time-series validation, the models are systematically evaluated in terms of predictive accuracy and robustness. The results show that XGBoost achieves the best overall performance, with a test mean absolute error (MAE) of 0.302 °C for air temperature and 1.271% for relative humidity, together with an average R2 of 0.989 across the two forecasting tasks. These findings demonstrate the strong effectiveness of tree-based ensemble learning for structured meteorological time-series forecasting and provide practical guidance for intelligent meteorological forecasting in mountainous cities.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2603.23282v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Solidification governs the microstructure and, therefore, the mechanical response of metal components, yet the atomistic details of nucleation and defect formation are often difficult to determine experimentally. Molecular dynamics can bridge this gap, but only if the interatomic model is both accurate and computationally efficient. Here, we develop a Machine Learning Potential (MLP) for aluminum and demonstrate its near ab initio fidelity when trained with the sequential-refinement workflow that fine-tunes the model on low-energy structures. The favorable scaling of the model enables nanosecond simulations involving millions of atoms, thereby overcoming finite-size effects in simulations of polycrystalline solidification and subsequent mechanical testing. Comparison with classical potentials and recent MLP models, including a general-purpose model, shows that inaccuracies in stacking-fault energetics and diffusion can lead to qualitatively incorrect solidified grain structures and post-solidification mechanical behavior. Since our framework is based on an equivariant graph neural network, it allows for straightforward extensions to multi-component systems, providing valuable guidance for the future design and fine-tuning of both specialized and universal MLPs in computational mechanics simulations.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2603.24360v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
