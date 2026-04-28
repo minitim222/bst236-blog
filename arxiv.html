@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-04-27 02:45 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-04-28 02:53 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22752v1" target="_blank" rel="noopener noreferrer">
-      From Physics to Statistics: A Simple Route to Exponential Families via Maximum Entropy
+    <a href="https://arxiv.org/pdf/2604.24654v1" target="_blank" rel="noopener noreferrer">
+      \texttt{SWIM}: Stochastic Warm Inflation Module to generate and analyse Warm Inflationary power spectrum
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Korbinian Strimmer</span>
+    <span class="paper-authors">Umang Kumar, Suratna Das</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">Exponential families form the backbone of modern statistics and machine learning, but textbooks seldom derive them from first principles in an accessible way. Although minimal sufficiency and the principle of maximum entropy, originating in physics, provide core motivation, they are often presented as technical and requiring advanced prerequisites. Here, a short, self-contained derivation of exponential families based on maximum entropy is presented that is straightforward to carry out, requires only a modest background in information entropy, and avoids technicalities like constrained optimisation. Two propositions are demonstrated in this fashion: i) exponential families with a general base maximise information entropy with respect to that base subject to fixed expectations of canonical statistics, and ii) exponential families with a uniform base maximise standard information entropy under the same constraints. Maximum entropy therefore provides a principled foundation for exponential families with minimal prerequisites, highlighting the value of teaching entropy in statistics courses.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22752v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Numerical analysis to determine the form of the scalar power spectrum in Warm Inflationary paradigm is inevitable. One further needs numerical techniques to analyse any Warm Inflation model with the current observational data through the MCMC codes that are available publicly, like COSMOMC or Cobaya. We present \texttt{SWIM} (Stochastic Warm Inflation Module) written in C++ and Python, that not only helps generate the Warm Inflationary scalar power spectrum, either semi-analytically or fully numerically, but also is integrated with Cobaya enabling the user to constrain the model parameters with current CMB data and thus to put any Warm Inflation model to test. \texttt{SWIM} numerically solves the standard stochastic perturbation equations of Warm Inflation without any approximations, uses machine learning techniques to speed up the MCMC analysis while analysing the fully numerical power spectrum that significantly reduces the computational cost, and is able to accommodate any Warm Inflation model with any form of inflationary potential and dissipative coefficient for numerical analysis. We show that \texttt{SWIM}, in most of the cases, outperforms other numerical codes on Warm Inflation that are designed to yield only the semi-analytical power spectrum as far as the runtimes are concerned. We further point out that there can be situations where the semi-analytical way of determining the scalar power spectrum in Warm Inflation can fall short, and one needs the full numerical power spectrum for parameter estimation given the observational data. In such cases, \texttt{SWIM} is the only code available so far that is designed to perform the task. Hence, \texttt{SWIM} offers a complete numerical platform for thorough analysis of Warm Inflation models against the current cosmological data. \texttt{SWIM} has been made publicly available at https://github.com/umg-kmr/SWIM.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24654v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22741v1" target="_blank" rel="noopener noreferrer">
-      Describing the swdatatoolkit: A Space Weather Data Analysis Library
+    <a href="https://arxiv.org/pdf/2604.24642v1" target="_blank" rel="noopener noreferrer">
+      Probing CLIP&#x27;s Comprehension of 360-Degree Textual and Visual Semantics
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Dustin Kempton, Griffin Goodwin, Tarun Kumar Reddy Thippareddy, Reet Gupta, Viacheslav Sadykov, Rafal Angryk</span>
+    <span class="paper-authors">Hai Wang, Xiaochen Yang, Mingzhi Dong, Jing-Hao Xue</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">swdatatoolkit is a Python-based scientific software library designed to support the acquisition, preprocessing, and analysis of solar and space weather data. The toolkit consolidates functionality across multiple domains, including data downloading from established heliophysics sources, image preprocessing, edge detection, image texture quantification, magnetic field analysis, and the derivation of higher-level parameters commonly used in solar physics research. Its modular structure reflects the heterogeneous nature of space weather data and enables reproducible, extensible workflows for both exploratory analysis and machine-learning-driven studies. This paper presents an overview of the library&#x27;s available capabilities, its scientific motivations, and its role in the broader space weather research ecosystem.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22741v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The dream of instantly creating rich 360-degree panoramic worlds from text is rapidly becoming a reality, yet a crucial gap exists in our ability to reliably evaluate their semantic alignment. Contrastive Language-Image Pre-training (CLIP) models, standard AI evaluators, predominantly trained on perspective image-text pairs, face an open question regarding their understanding of the unique characteristics of 360-degree panoramic image-text pairs. This paper addresses this gap by first introducing two concepts: \emph{360-degree textual semantics}, semantic information conveyed by explicit format identifiers, and \emph{360-degree visual semantics}, invariant semantics under horizontal circular shifts. To probe CLIP&#x27;s comprehension of these semantics, we then propose novel evaluation methodologies using keyword manipulation and horizontal circular shifts of varying magnitudes. Rigorous statistical analyses across popular CLIP configurations reveal that: (1) CLIP models effectively leverage explicit textual identifiers, demonstrating an understanding of 360-degree textual semantics; and (2) CLIP models fail to robustly preserve semantic alignment under horizontal circular shifts, indicating limited comprehension of 360-degree visual semantics. To address this limitation, we propose a LoRA-based fine-tuning framework that explicitly instills invariance to circular shifts. Our fine-tuned models exhibit improved comprehension of 360-degree visual semantics, though with a slight degradation in original semantic evaluation performance, highlighting a fundamental trade-off in adapting CLIP to 360-degree panoramic images. Code is available at https://github.com/littlewhitesea/360Semantics.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24642v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22738v1" target="_blank" rel="noopener noreferrer">
-      On the redshift evolution of the spin parameter in cosmological simulations
+    <a href="https://arxiv.org/pdf/2604.24634v1" target="_blank" rel="noopener noreferrer">
+      Computational Design and Experimental Validation of Photoactive PARP1 Inhibitors
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Tomas Riera, Alexander Knebe, Chris Power, Robert Adriel Mostoghiu Paun, Adam Ussing</span>
+    <span class="paper-authors">Simon Axelrod, Miroslav Kašpar, Kristýna Jelínková, Markéta Šmídková, Erika Bartůňková, Sille Štěpánová, Eugene Shakhnovich, Václav Kašička, Martin Dračínský, Zlatko Janeba, Rafael Gómez-Bombarelli</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">Although the spin parameter of dark matter halos is well known to follow a log-normal distribution at fixed epoch, its quantitative redshift evolution - encompassing both the mean and the dispersion - remains only partially explored. Prior studies either lack the mass resolution required to establish reliable evolutionary trends or do not provide analytical relations that enable forward modelling. Using a suite of LCDM N-body simulations with controlled resolution across the redshift range 0 &lt; z &lt; 5, we characterise the evolution of the mean and dispersion of the Peebles (lambda) and Bullock (lambda&#x27;) definitions of spin. We find a mild but statistically robust linear evolution for ln(lambda) and a non-monotonic trend with a turnover at z ~ 1 - 2 for ln lambda&#x27;, which we verify are unaffected by mass resolution of choice of halo definition. We provide closed-form fitting functions for these trends that allow modellers to draw physically motivated spin values at any redshift within our range of validity. This is a practical, redshift-dependent alternative to the common assumption of a constant spin distribution, and provides a useful input to semi-empirical and semi-analytic models of galaxy formation.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22738v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Light-activated drugs are a promising way to treat localized diseases for which existing treatments have severe side effects. However, their development is complicated by the set of photophysical and biological properties that must be simultaneously optimized. Here we used computational techniques to find a set of promising candidates for the photoactive inhibition of the poly(ADP-ribose) polymerase 1 (PARP1) cancer target. Using our recently developed methods based on atomistic simulation and machine learning (ML), we screened a set of 5 million hypothetical photoactive ligands. Our workflow used protein-ligand docking to identify candidates with differential PARP1 binding under light and dark conditions; ML force fields and quantum chemistry calculations to predict p$K_\mathrm{a}$, absorption spectra, and thermal half-lives; graph-based surrogate models to screen additional compounds; excited-state nonadiabatic dynamics with ML force fields to estimate quantum yields; and free energy perturbation (FEP) to refine binding predictions. From these predictions, we prioritized a small set of synthetically feasible candidates expected to have red-shifted absorption spectra, thermal half-lives on the order of seconds to minutes, and isomer-dependent PARP1 binding under visible-light control. We synthesized 10 candidates and experimentally characterized their photobehavior and PARP1 inhibition constants. Among the validated compounds, \textbf{1} showed a 15-fold increase in inhibition of PARP1 upon green-light irradiation at 519 nm (208.8 $\pm$ 28.3 $μ$M vs 14.4 $\pm$ 1.9 $μ$M). These results validate the computation-guided screening strategy for identifying red-shifted PARP1 photoinhibitors, while also underscoring current limitations such as rapid thermal relaxation in aqueous media.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24634v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22731v1" target="_blank" rel="noopener noreferrer">
-      Precision Analysis for $\boldsymbol{H_0}$ Using Upcoming Multi-band Gravitational Wave Observations
+    <a href="https://arxiv.org/pdf/2604.24631v1" target="_blank" rel="noopener noreferrer">
+      Measurement of the Weyl Potential Evolution and $E_G$ Statistic from KiDS-1000, BOSS and 2dFLenS
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Setabuddin, Md Riajul Haque, Ratna Koley, Supratik Pal</span>
+    <span class="paper-authors">Xuwei Zhang, Ming Zhang, Yunliang Ren, Xiaofeng Yang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">We investigate how multi-band gravitational wave (GW) observations can constrain the uncertainties in the Hubble parameter ($H_0$) using primordial black holes (PBHs) as possible sources. Our framework combines scalar-induced and merger-induced GWs from PBHs, and forecasts on a combination of two future detectors Square Kilometre Array (SKA) and the Einstein Telescope (ET), enabling a multi-band analysis. We perform a statistical forecast of the PBH parameters, $M_{\rm PBH}$ and $f_{\rm PBH}$, using signal-to-noise ratio (SNR) estimates and Fisher matrix analysis. Imposing $\mathrm{SNR} \geq 1$, we identify the accessible PBH parameter space and propagate these uncertainties to estimate the corresponding uncertainties in $H_0$. For $δθ_i/θ_i \leq 0.1$, with $θ_i \equiv M_{\rm PBH}(f_{\rm PBH})$, we find $δH_0 \lesssim 2~{\rm km\,s^{-1}\,Mpc^{-1}}$ in a conservative approach, improving to $δH_0 \lesssim \mathcal{O}(0.1)~{\rm km\,s^{-1}\,Mpc^{-1}}$ for $δθ_i/θ_i \leq 0.01$ for an optimistic approach of precision measurement. The results are further found to be largely insensitive to the fiducial choice of the $H_0$, with only moderate dependence on the PBH collapse efficiency. These findings demonstrate that multi-band GW observations provide an independent and complementary approach to constraining the uncertainties in $H_0$, with the potential to provide a novel, cosmic distance ladder-independent measure of the Hubble parameter.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22731v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">A recently developed model-independent approach to measuring the Weyl potential has shown some tensions with $Λ$CDM (Lambda Cold Dark Matter) in DES (Dark Energy Survey) Y3 data. We apply this framework to Kilo-Degree Survey (KiDS-1000) weak lensing and BOSS/2dFLenS galaxy clustering using the KiDS Cosmology Analysis Pipeline (KCAP) in two redshift bins. Without external CMB priors, both the Weyl potential and $E_G$ measurements are consistent with late time constraints. After imposing Planck18 priors, the low redshift bin remains compatible with General Relativity, whereas the high redshift bin shows a weaker Weyl potential and lower $E_G$, corresponding to a mild $1.52σ$ deviation from the $Λ$CDM cosmology. Furthermore, phenomenological modified gravity models show a mild preference for a suppressed high redshift Weyl potential, but late time data alone remain consistent with $Λ$CDM. Our results also suggest that this deviation is primarily driven by the specific high redshift CMASS sample, reflecting the well-known ``Lensing is low&#x27;&#x27; problem.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24631v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22724v1" target="_blank" rel="noopener noreferrer">
-      GCImOpt: Learning efficient goal-conditioned policies by imitating optimal trajectories
+    <a href="https://arxiv.org/pdf/2604.24621v1" target="_blank" rel="noopener noreferrer">
+      Evaluation of LLM-Based Software Engineering Tools: Practices, Challenges, and Future Directions
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jon Goikoetxea, Jesús F. Palacián</span>
+    <span class="paper-authors">Utku Boran Torun, Veli Karakaya, Ali Babar, Eray Tüzün</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">Imitation learning is a well-established approach for machine-learning-based control. However, its applicability depends on having access to demonstrations, which are often expensive to collect and/or suboptimal for solving the task. In this work, we present GCImOpt, an approach to learn efficient goal-conditioned policies by training on datasets generated by trajectory optimization. Our approach for dataset generation is computationally efficient, can generate thousands of optimal trajectories in minutes on a laptop computer, and produces high-quality demonstrations. Further, by means of a data augmentation scheme that treats intermediate states as goals, we are able to increase the training dataset size by an order of magnitude. Using our generated datasets, we train goal-conditioned neural network policies that can control the system towards arbitrary goals. To demonstrate the generality of our approach, we generate datasets and then train policies for various control tasks, namely cart-pole stabilization, planar and three-dimensional quadcopter stabilization, and point reaching using a 6-DoF robot arm. We show that our trained policies can achieve high success rates and near-optimal control profiles, all while being small (less than 80,000 neural network parameters) and fast enough (up to more than 6,000 times faster than a trajectory optimization solver) that they could be deployed onboard resource-constrained controllers. We provide videos, code, datasets and pre-trained policies under a free software license; see our project website https://jongoiko.github.io/gcimopt/.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22724v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Large Language Models (LLMs) are increasingly embedded in software engineering (SE) tools, powering applications such as code generation, automated code review, and bug triage. As these LLM-based AI for Software Engineering (AI4SE) systems transition from experimental prototypes to widely deployed tools, the question of what it means to evaluate their behavior reliably has become both critical and unanswered. Unlike traditional SE or machine learning systems, LLM-based tools often produce open-ended, natural language outputs, admit multiple valid answers, and exhibit non-deterministic behavior across runs. These characteristics fundamentally challenge long-standing evaluation assumptions such as the existence of a single ground truth, deterministic outputs, and objective correctness. In this paper, we examine LLM evaluation as a general, task-dependent concept through the lens of SE tasks. We discuss why reliable evaluation is essential for trust, adoption, and meaningful assessment of LLM-based tools, summarize the current state of evaluation practices, and highlight their limitations in realistic AI4SE settings. We then identify key challenges facing current approaches, including the absence of stable ground truth, subjectivity and multi-dimensional quality, evaluation instability due to non-determinism, limitations of automated and model-based evaluation, and fragmentation of evaluation practices. Finally, we outline future directions aimed at advancing LLM evaluation toward more robust, scalable, and trustworthy methodologies, to stimulate discussion on principled evaluation practices that can keep pace with the growing role of LLMs in SE.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24621v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22721v1" target="_blank" rel="noopener noreferrer">
-      Spectral-Domain Local Statistics with Missing-Data Support for Cartesian and Polar Grids
+    <a href="https://arxiv.org/pdf/2604.24617v1" target="_blank" rel="noopener noreferrer">
+      Accurate distances of the Galactic spiral arms from dust-scattered X-ray emission of gamma-ray bursts
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jairo M. Valdivia-Prado, William E. Chapman, Katja Friedrich</span>
+    <span class="paper-authors">B. Vaia, I. Fornasiero, A. Tiengo, A. Bracco, V. Jelić, Ž. Bošnjak, F. Pintore, P. Esposito</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">This paper presents a method for computing local mean, variance, standard deviation, and effective sample count on incomplete gridded data using boundary-aware spectral operators. The framework combines normalized convolution with explicit boundary-condition modeling: reflective Discrete Cosine Transform (DCT) for non-periodic Cartesian axes and periodic Real Fast Fourier Transform (RFFT) for circular azimuth processing in polar geometry. Stability safeguards (denominator floor, prefill fallback, and variance clamp) are specified for under-supported regions. We evaluate the framework across three targeted scenarios: a Cartesian boundary-condition check demonstrating the mitigation of wrap-around artifacts, a synthetic 3D outlier-identification test, and a real-radar polar application. Results establish bounded, support-aware interpretation of local statistics while preserving a concise reproducibility path through the open-source &#x27;dct\_toolkit&#x27; implementation.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22721v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The details of the spiral structure of the Milky Way are still debated due to large uncertainties in the distance estimates obtained through the most common tracers. X-ray dust scattering rings produced by short extragalactic X-ray transients provide instead a direct method to measure the 3D distribution of interstellar clouds up to the edges of our Galaxy with a few percent precision. We report on the analysis of all the available XMM-Newton and Chandra follow-up observations of three low-latitude gamma-ray bursts: GRB 031203 ($l \sim 255°$, $b \sim -5°$), GRB 160623A ($l \sim 84°$, $b \sim -3°$), and GRB 221009A ($l \sim 53°$, $b \sim 4°$). The previous detection of X-ray rings in these observations, produced by dust clouds located beyond 5 kpc, can be associated with dust in the Perseus, Outer, and Outer Scutum-Centaurus arms, thus providing direct distance measurements to these structures along three distinct lines of sight. We have identified two additional rings in the direction of GRB 160623A, produced by dusty clouds at $6.91\, \pm\,0.06$ kpc and $9.9\,\pm\,0.6$ kpc, and confirmed -- through a second XMM-Newton observation -- the presence of one cloud at $9.7\,\pm\,0.4$ kpc toward GRB 031203. We also accurately measured the distance of dusty clouds up to $19.0\,\pm\,0.2$ kpc owing to the analysis of one Chandra and four XMM-Newton observations of GRB 221009A. The small statistical and systematic uncertainties of these measurements place tight constraints on the geometry of the outer Milky Way and reveal significant deviations from current models, which critically depend on spectroscopy-based Galactic rotation curves at large distances.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24617v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22712v1" target="_blank" rel="noopener noreferrer">
-      Statistical Analysis of Markovian Generative Modeling
+    <a href="https://arxiv.org/pdf/2604.24611v1" target="_blank" rel="noopener noreferrer">
+      Uncovering Latent Patterns in Social Media Usage and Mental Health: A Clustering-Based Approach Using Unsupervised Machine Learning
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Eddie Aamari, Arthur Stéphanovitch</span>
+    <span class="paper-authors">Md All Shahria, Sanjeda Dewan Mithila, Touhid Alam, Mohammad Sakib Mahmood, Mahfuza Khatun</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">These lecture notes introduce the statistical analysis of continuous-time generative models built from Markov dynamics. We begin with the stochastic-calculus foundations of score-based diffusion models, including time reversal, score matching, and sampling from learned scores. We then present the broader framework of generator matching, which describes flows, diffusions, jump processes, and discrete generative models through their infinitesimal generators. We then focus on finite-sample guarantees. We explain how errors in the learned drift or generator propagate to the final generated distribution, why stability and regularity properties are essential, and how time-adaptive neural network classes can achieve optimal Wasserstein rates for smooth target distributions. Overall, the notes aim to connect modern generative modeling algorithms with the probabilistic, analytic, and statistical tools needed to understand their worst-case performance.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22712v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The widespread adoption of social media has heightened interest in its psychological effects, particularly on mental health indicators such as anxiety, depression, loneliness, and sleep quality, as these platforms increasingly influence social interactions and well-being. Although previous research has examined correlations between social media use and mental health, few studies have utilized unsupervised machine learning to segment users based on behavioral and psychological patterns, leaving a gap in identifying distinct risk profiles across diverse groups. This study seeks to address this by segmenting individuals according to their social media usage and psychological well-being, employing clustering to reveal hidden patterns and evaluate their mental health implications. Data from 551 participants, collected via an online survey, were preprocessed using KNN imputation for missing values, one-hot encoding for categorical variables like Gender with 5 unique values, and outlier detection via IQR and Z-score methods. K-Means clustering, optimized at 6 clusters using the Elbow Method and a Silhouette Score of 0.32, was applied, with PCA reducing 22 dimensions for visualization and a correlation heatmap highlighting relationships, such as a 0.28 correlation between social media hours and anxiety.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24611v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22702v1" target="_blank" rel="noopener noreferrer">
-      First Statistical Study of Over 100 Magnified Stellar Events at Redshift $z \approx 0.725$ with JWST
+    <a href="https://arxiv.org/pdf/2604.24607v1" target="_blank" rel="noopener noreferrer">
+      Errors that matter: Uncertainty-aware universal machine-learning potentials calibrated on experiments
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">J. M. Palencia, Fengwu Sun, J. M. Diego, Yoshinobu Fudamoto, Anton M. Koekemoer, Christopher N. A. Willmer, Eduardo Iani, Xiaojing Lin, Justin D. R. Pierel, Alfred Amruth, Tom Broadhurst, W. Chen, Liang Dai, Daniel Espada, Alexei V. Filippenko, Seiji Fujimoto, Mingyu Li, Sung Kei Li, Ashish Kumar Meena, Jordi Miralda-Escudé, P. Morilla, Mitchell F. Struble, Hayley Williams, Ruwen Zhou, Adi Zitrin</span>
+    <span class="paper-authors">Matthias Kellner, Teitur Hansen, Thomas Bligaard, Karsten Wedel Jacobsen, Michele Ceriotti</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">Highly magnified stars at cosmological distances ($z \gtrsim 0.7$) become detectable thanks to microlensing by intracluster stars near the critical curves of galaxy clusters. Multi-epoch photometric campaigns targeting caustic crossing galaxies magnified by massive galaxy clusters enable the detection of these objects as transient events. Such stars provide unique opportunities to study stellar populations at early cosmic times, probe the nature of dark matter, reveal small-scale structure in the cluster, and improve lens models. To date, only a few dozen high-redshift stars have been reported, with a single lensed galaxy, the Dragon, holding the current record of 44 detections. These numbers, however, remain insufficient to exploit their full potential. In this paper, owing to the inclusion of new observations, we report the identification of more than 100 magnified stellar events in the Dragon, behind the massive galaxy cluster Abell 370. The relatively low redshift of the Dragon ($z\approx0.725$) facilitates the detection of its most massive stars. Using imaging data from three different cycles (2022--2024) with the James Webb Space Telescope, we apply a time-domain technique to identify flux variations associated with caustic-crossing events. From the spatial distribution of stellar events we constrain the high-end slope of the stellar luminosity function, finding $β=2.18^{+0.20}_{-0.30}$. Alternatively, assuming a fixed slope, we constrain the microlens surface mass density. In addition, we examine the parity asymmetry of the detected caustic-crossing events, a proposed probe of wave dark matter, and find that it remains present. We also use the events to trace the regions of highest magnification, offering an alternative way to map the system critical curves.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22702v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Machine-learning models of atomic-scale interactions achieve the accuracy of the quantum mechanical calculations on which they are trained, but at a dramatically lower computational cost. Their predictions can be made trustworthy by uncertainty quantification techniques that estimate the residual error relative to their reference. These errors, however, do not include uncertainty contributions from the approximations inherent in the electronic structure calculations, which are often the main source of discrepancy with empirical observations. We construct an ensemble of ML potentials trained on multiple electronic-structure references and calibrate it against experimental data on cohesive energies, atomization energies, lattice constants and bulk moduli of simple materials and molecules, similar to the uncertainty-aware functional distribution approach. The resulting ensemble of models, which we call PET-UAFD, can be used to simulate matter across a wide range of compositions and thermodynamic conditions. By comparison with experimental measurements of the density and structure of liquids, we demonstrate that, even outside the static properties on which it was calibrated, PET-UAFD enables predictions that are as accurate against experiments as the best available electronic-structure reference and that the spread in the ensemble can be used to assess the reliability of such predictions. We also introduce the PET-EXP protocol that uses shallow ensembles and statistical reweighting techniques to provide accurate estimates of uncertainty relative to experimental measurements at virtually no additional cost over a simulation based on a single conventional ML potential. Ultimately, this approach provides a practical and inexpensive approach to elevate machine-learning potentials from faithful interpolators of approximate theories to genuinely predictive tools anchored in experimental reality.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24607v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22697v1" target="_blank" rel="noopener noreferrer">
-      RFID-Based Non-Biometric Classroom Attendance System: Proxy Attendance Detection via Weight Sensor Integration
+    <a href="https://arxiv.org/pdf/2604.24590v1" target="_blank" rel="noopener noreferrer">
+      Fraud Detection in Cryptocurrency Markets with Spatio-Temporal Graph Neural Networks
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Furkan Ege, Muhsin Özdemir</span>
+    <span class="paper-authors">Lidia Losavio, Luca Persia, Madan Sathe, Dimosthenis Pasadakis</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">Attendance tracking in educational institutions, when conducted through traditional methods, leads to structural problems that consume instruction time and threaten academic integrity. Attendance durations spanning several minutes in primary and secondary education and exceeding ten minutes in higher education, combined with the proxy attendance problem of signing on behalf of someone else, demonstrate the need for electronic systems. Most existing electronic solutions rely on biometric authentication, which raises legal and ethical risks under the European General Data Protection Regulation (GDPR), the Turkish Personal Data Protection Law (KVKK), and the United States Family Educational Rights and Privacy Act (FERPA). Systems using RFID alone provide no built-in safeguard against proxy attendance through card transfer. This study proposes a biometric-free IoT attendance system addressing both deficiencies. The prototype consists of an RFID module, RFID cards, weight sensors, a Bluetooth module, and an Arduino UNO microcontroller. After the student presents their RFID card, the weight sensor measurement is compared against a statistical reference range of 350 individuals (aged 18-22) compiled from three Kaggle datasets; no personal biometric data is recorded. A Python-based GUI performs student management, course tracking, and CSV-based reporting via Bluetooth. Qualitative tests in conditions close to a real classroom have shown that the RFID reading, weight verification, Bluetooth communication, and GUI modules operate in an integrated manner as expected. The proposed system offers a low-cost and reproducible solution that aims to reduce proxy attendance without storing biometric data.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22697v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Technological advancements in cryptocurrency markets have increased accessibility for investors, but concurrently exposed them to the risks of market manipulations. Existing fraud detection mechanisms typically rely on machine learning methods that treat each financial asset (i.e., token) and its related transactions independently. However, market manipulation strategies are rarely isolated events, but are rather characterized by coordination, repetition, and frequent transfers among related assets. This suggests that relational structure constitutes an integral component of the signal and can be effectively represented through graphical means. In this paper, we propose three graph construction methods that rely on aggregated hourly market data. The proposed graphs are processed by a unified spatio-temporal Graph Neural Network (GNN) architecture that combines attention-based spatial aggregation with temporal Transformer encoding. We evaluate our methodology on a real-world dataset comprised of pump-and-dump schemes in cryptocurrency markets, spanning a period of over three years. Our comparative results showcase that our graph-based models achieve significant improvements over standard machine learning baselines in detecting anomalous events. Our work highlights that learned market connectivity provides substantial gains for detecting coordinated market manipulation schemes.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24590v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22696v1" target="_blank" rel="noopener noreferrer">
-      Pressure-Temperature Phase Diagram and $λ$-Transition in Liquid Sulfur
+    <a href="https://arxiv.org/pdf/2604.24572v1" target="_blank" rel="noopener noreferrer">
+      FastOMOP: A Foundational Architecture for Reliable Agentic Real-World Evidence Generation on OMOP CDM data
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Sonia Salomoni, Frédéric Datchi, A. Marco Saitta, Arthur France-Lanord</span>
+    <span class="paper-authors">Niko Moeller-Grell, Shihao Shenzhang, Zhangshu Joshua Jiang, Richard JB Dobson, Vishnu V Chandrabalan</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">Using molecular dynamics simulations driven by a machine-learned interatomic potential, we investigate at low to intermediate pressures the $λ$-transition of sulfur, a temperature-induced polymerization. At ambient pressure, we capture the melting of crystalline cyclo-octasulfur into a liquid of molecular rings. Within this liquid, the concentration of non-S$_8$ rings increases with temperature; we show that these molecules act as reactive centers, which eventually trigger polymerization. We reproduce key experimental signatures of the $λ$-transition, including the sharp increase in heat capacity and the pronounced dependence of the transition temperature on the heating rate. Building on this, we reconstruct a phase diagram of polymerization up to intermediate pressures. Our results reveal a moderate decrease of the polymerization temperature with pressure, culminating with its merging with the melting line at a critical point. Beyond this point, we provide direct evidence of polymerization emerging from the crystalline phase. By analyzing temperature-ramp trajectories, we observe the formation of non-S$_8$ rings, open chains, and extended polymeric structures which retain features of the crystalline arrangement; further heating the system leads to disorder taking over through melting. Polymerization is therefore initiated slightly before melting. Altogether, our findings provide a microscopic picture of the $λ$-transition throughout the sulfur phase diagram.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22696v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The Observational Medical Outcomes Partnership Common Data Model (OMOP CDM), maintained by the Observational Health Data Sciences and Informatics (OHDSI) collaboration, enabled the harmonisation of electronic health records data of nearly one billion patients in 83 countries. Yet generating real-world evidence (RWE) from these repositories remains a manual process requiring clinical, epidemiological and technical expertise. LLMs and multi-agent systems have shown promise for clinical tasks, but RWE automation exposes a fundamental challenge: agentic systems introduce emergent behaviours, coordination failures and safety risks that existing approaches fail to govern. No infrastructure exists to ensure agentic RWE generation is flexible, safe and auditable across the lifecycle. We introduce FastOMOP, an open-source multi-agent architecture that addresses this gap by separating three infrastructure layers, governance, observability and orchestration, from pluggable agent-teams. Governance is enforced at the process boundary through deterministic validation independent of agent reasoning, ensuring no compromised or hallucinating agent can bypass safety controls. Agent teams for phenotyping, study design and statistical analysis inherit these guarantees through controlled tool exposure. We validated FastOMOP using a natural-language-to-SQL agent team across three OMOP CDM datasets: synthetic data from Synthea, MIMIC-IV and a real-world NHS dataset from Lancashire Teaching Hospitals (IDRIL). FastOMOP achieved reliability scores of 0.84-0.94 with perfect adversarial and out-of-scope block rates, demonstrating process-boundary governance delivers safety guarantees independent of model choice. These results indicate that the reliability gap in RWE deployment is architectural rather than model capability, and establish FastOMOP as a governed architecture for progressive RWE automation.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24572v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22688v1" target="_blank" rel="noopener noreferrer">
-      COMPASS: A Unified Decision-Intelligence System for Navigating Performance Trade-off in HPC
+    <a href="https://arxiv.org/pdf/2604.24563v1" target="_blank" rel="noopener noreferrer">
+      Enhancing molecular dynamics with equivariant machine-learned densities
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ankur Lahiry, Banooqa Banday, Yugesh Bhattarai, Tanzima Z. Islam, Mohammad Zaeed</span>
+    <span class="paper-authors">Mihail Bogojeski, Muhammad R. Hasyim, Leslie Vogt-Maranto, Klaus-Robert Müller, Kieron Burke, Mark E. Tuckerman</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">HPC systems expose many configuration parameters that jointly drive competing objectives. Existing tools such as autotuners recommend good configurations but do not identify minimal changes for a near-miss configuration to meet a performance objective, and they often ignore domain-specific constraints. To address this gap, we introduce COMPASS -- a modular, programmable engine that uses operational traces to generate HPC configuration recommendations and guide tuning decisions. This paper: (1) formalizes configuration questions into query patterns; (2) develops an interactive decision-making engine that formulates these queries as Machine Learning (ML) tasks; (3) quantifies the trustworthiness of its recommendations by providing evidence and quantifying uncertainty, and -- when confidence is low -- provides guidance on which configurations to run next. We validate COMPASS using analytical ground truth, reconstruction accuracy, reproduction of published findings, and when possible, running on real hardware. When integrated with an open-source HPC scheduling simulator, COMPASS cuts average job turnaround time by 65.93% and node usage by 80.93% relative to the state-of-the-art. Moreover, COMPASS achieves up to 100x faster training and 80x faster inference than state-of-the-art generative methods, and scales to traces with 1.3B samples and 126GB of data.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22688v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Machine-learning interatomic potentials (MLIPs) have enabled molecular dynamics at near ab initio accuracy, yet remain limited to energies and forces by construction, leaving electronic observables such as dipole moments and polarizabilities inaccessible. We introduce DenSNet, a density-first approach to machine-learned electronic structure that learns the Hohenberg--Kohn map from nuclear configurations to the ground-state electron density. Our approach employs an SE(3)-equivariant neural network to predict density coefficients of a flexible atom-centered Gaussian basis, combined with a $Δ$-learning strategy that uses superposed atomic densities as a prior to accelerate training. A second equivariant network then maps the predicted density to the total energy, providing a unified framework for molecular dynamics and electronic structure. We validate DenSNet on ethanol, ethanethiol, and resorcinol, where infrared spectra from machine-learned trajectories show excellent agreement with experimental gas-phase measurements. To test scalability, we train on polythiophene oligomers with 1--6 monomers and extrapolate to chains of up to 12 monomers, generating stable long-time trajectories whose infrared spectra agree with reference density functional theory calculations. Here, we show that reinstating the electron density as the central learned quantity opens a practical route to transferable prediction of spectroscopic and electronic observables in large-scale molecular simulations.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24563v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22670v1" target="_blank" rel="noopener noreferrer">
-      Curvature of optimal transport with respect to the cost and applications to inverse optimal transport
+    <a href="https://arxiv.org/pdf/2604.24554v1" target="_blank" rel="noopener noreferrer">
+      Balancing Quantum Memories in Asymmetric Repeaters for High-Fidelity Entanglement Distribution
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Gabriel Peyré, Clarice Poon, Oscar Tron</span>
+    <span class="paper-authors">Karim S. Elsayed, Amr Rizk</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">We study the inverse optimal transport problem of recovering the ground cost from an optimal transport plan. In discrete settings, this problem reduces to inverse linear programming and is intrinsically ill-posed, exhibiting non-identifiability and flat directions. We show that in the continuous setting, the regularity of the marginals fundamentally alters the structure of the inverse problem. Assuming smooth positive densities for the source and target measures, we characterize the second variation of the optimal transport functional with respect to the ground cost in Hölder spaces. In particular, we show that it is non-degenerate modulo the natural transport invariances, yielding a strict curvature property that is absent in discrete transport. As a consequence, we obtain local identifiability and stability results for inverse optimal transport. For the structured family of bilinear costs (i.e. Mahalanobis parametrizations), the ground cost can be uniquely recovered--up to the intrinsic invariances--from a single optimal coupling under a natural spanning condition. We further show that this identifiability property is generic under arbitrarily small perturbations of the marginals, while settings where the optimal transport map is affine (for instance Gaussian or elliptical marginals) remain degenerate. Finally, we establish precise bounds on the bias and statistical variance of inverse optimal transport under entropic regularization. These results reveal a structural parallel between forward and inverse optimal transport: regularity of the marginals ensures smooth optimal maps in the forward problem, while non-degeneracy of the induced transport plan yields curvature and local invertibility in the inverse problem.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22670v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">At the core of the quantum Internet lie quantum repeaters that enable remote end-to-end entanglement generation. Fundamentally, the entanglement generation rate and fidelity of quantum repeaters constitute the bottleneck for end-to-end performance. To achieve high rates, quantum repeaters employ quantum memory multiplexing. In a high-rate standard repeater, each memory sequentially generates an entanglement with its neighboring nodes and then applies entanglement swapping. This, however, results in low fidelity due to decoherence of the first-formed entanglement in the sequential generation process. By allocating different numbers of memories to simultaneously form entanglements with the left and right adjacent nodes, quantum repeaters reduce high waiting times and achieve high fidelity. In such a repeater, a mismatch problem arises due to the difference between the probabilistic number of generated entanglements on both sides. Consequently, some entanglements remain stored until opposite entanglements are available. The mismatch problem reduces the repeater rate and particularly the entanglement fidelity. In this paper, we consider the mismatch problem in an asymmetric repeater with different distances to its adjacent nodes. To mitigate the mismatch problem, we derive a dynamic optimal memory allocation. Under the optimal allocation, we derive statistical lower bounds on the achievable rate and fidelity. We demonstrate that the optimal allocation significantly improves the fidelity while maintaining a comparable rate to the standard repeater. In contrast, our results show that fixed memory allocation may be detrimental to the fidelity.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24554v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22669v1" target="_blank" rel="noopener noreferrer">
-      DeepHartree: A Poisson-Coupled Neural Field for Scalable Density Functional Theory
+    <a href="https://arxiv.org/pdf/2604.24544v1" target="_blank" rel="noopener noreferrer">
+      STELLAR-E: a Synthetic, Tailored, End-to-end LLM Application Rigorous Evaluator
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jiankun Wu, Jinming Fan, Chao Qian, Shaodong Zhou</span>
+    <span class="paper-authors">Alessio Sordo, Lingxiao Du, Meeka-Hanna Lenisa, Evgeny Bogdanov, Maxim Romanovsky</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">Ab initio calculations are fundamentally bottlenecked for large systems by the steep computational scaling of solving self-consistent field (SCF) equations. While machine learning offers potential accelerations, existing methods often compromise physical rigor or rely on basis-dependent, non-transferable representations. Here, we introduce DeepHartree, a Poisson-coupled neural field that accelerates linear combination of atomic orbitals (LCAO) density functional theory (DFT). By coupling an E(3)-equivariant neural network with the Poisson equation through automatic differentiation and mitigating nuclear singularities via delta-learning, DeepHartree simultaneously predicts mutually consistent real-space electron densities and Hartree potentials. This resolves the Coulomb bottleneck by substituting $\mathcal{O}(N^4)$ analytical integrals with GPU-accelerated, near-linear $\mathcal{O}(N)$ numerical inference. Trained solely on small molecules, DeepHartree enables scalable density functional theory through a two-level transferability: for SCF convergence acceleration, it achieves robust zero-shot transferability across diverse basis sets, functionals, and systems up to 168 atoms; for predicting other density-related physical quantities, it retains zero-shot capability on small molecules while enabling precise predictions for larger systems via efficient few-shot fine-tuning.Our model accelerates standard SCF protocols by reducing iterations by up to 40.6% via high-fidelity initial density matrices, and its rigorous long-range asymptotics provide a zero-cost physical uncertainty metric prior to grid evaluation. By grounding deep learning in Poisson-coupled neural fields, DeepHartree accelerates demanding tasks -- such as near-coupled-cluster dynamic infrared simulations -- by orders of magnitude, establishing a scalable paradigm for density functional theory.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22669v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The increasing reliance on Large Language Models (LLMs) across diverse sectors highlights the need for robust domain-specific and language-specific evaluation datasets; however, the collection of such datasets is challenging due to privacy concerns, regulatory restrictions, and the time cost for manual creation. Existing automated benchmarking methods are often limited by relying on pre-existing data, poor scalability, single-domain focus, and lack of multilingual support. We present STELLAR-E - a fully automated system to generate high-quality synthetic datasets of custom size, using minimal human inputs without depending on existing datasets. The system is structured in two stages: (1) We modify the TGRT Self-Instruct framework to create a synthetic data engine that enables controllable, custom synthetic dataset generation, and (2) an evaluation pipeline incorporating statistical and LLM-based metrics to assess the applicability of the synthetic dataset for LLM-based application evaluations. The synthetic datasets reach an average difference of +5.7% in terms of LLM-as-a-judge scores against existing language-specific benchmarks, demonstrating comparable quality for comprehensive assessment of big and small LLMs. While real datasets remain slightly more challenging for LLMs especially for smaller models, this work establishes a scalable and domain-adaptable benchmarking framework that supports fair evaluation of LLM applications, offering a faster alternative to manual approaches and enabling high-efficiency automated quality assurance cycles.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24544v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22653v1" target="_blank" rel="noopener noreferrer">
-      Verifier Warnings Do Not Improve Comprehensibility Prediction
+    <a href="https://arxiv.org/pdf/2604.24541v1" target="_blank" rel="noopener noreferrer">
+      Noise in analog programmable-photonic computation
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Nadeeshan De Silva, Martin Kellogg, Oscar Chaparro</span>
+    <span class="paper-authors">Raúl López-March, Andrés Macho-Ortiz, Francisco Javier Fraile-Peláez, José Capmany</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">Proponents of software verification suggest that code simplicity is linked to the effort to verify code, hypothesizing that formal verifiers produce fewer false positive warnings and require less manual intervention when analyzing simpler code. A recent meta-analysis study found empirical support for this hypothesis: a small correlation between the sum of verifier warnings and human-derived code comprehensibility metrics. Based on this finding, we conjectured that using the sum of verifier tool (verifier) warnings to represent program semantic information as an input feature to machine learning (ML) models for code comprehensibility prediction can enhance their performance, when combined with traditional syntactic and developer features. To test this conjecture, we performed a control-treatment experiment incorporating the verifier warning sum feature into machine learning models from the literature, and conducted a comparative analysis of their performance against models trained only on syntactic and developer features. We found no significant difference in the prediction performance of models with and without the warnings feature. Our findings suggest that while a correlation exists, the verifier warning sum offers limited discriminative power: combining syntactic and developer features is just as effective for predicting human-judged code comprehensibility.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22653v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Analog Programmable-Photonic Computation (APC) leverages programmable integrated photonics (PIP) to perform high-speed matrix operations using optical waves. However, the continuous nature of optical waves that implement the analog bits or anbits - the fundamental unit of information in APC - makes computational results intrinsically sensitive to physical noise. Here, we establish and experimentally validate a comprehensive noise analysis in APC platforms using the geometric representation of the anbit in the Generalized Bloch Sphere (GBS). By modeling the physical noise sources in PIP circuits as random photocurrent fluctuations at the output of the opto-electrical (O/E) converter, and using error propagation theory, the noise statistics can be projected onto the GBS. This approach leads to specific noise maps in the GBS for each noise source, enabling the identification of the dominant noise sources within the APC system. Analytical predictions are numerically and experimentally validated on a fabricated silicon PIP chip. Beyond statistical characterization of system noise, the proposed model provides quantitative design criteria for noise-adapted analog constellations in the GBS, advancing APC towards scalable and robust optical computing systems, with potential applications in emerging paradigms such as photonic neuromorphic computing.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24541v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22649v1" target="_blank" rel="noopener noreferrer">
-      Structure-Guided Diffusion Model for EEG-Based Visual Cognition Reconstruction
+    <a href="https://arxiv.org/pdf/2604.24520v1" target="_blank" rel="noopener noreferrer">
+      Mass-Transfer Control With Microbubbles in Highly Turbulent Decaying Flows
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yongxiang Lian, Yueyang Cang, Pingge Hu, Yuchen He, Li Shi</span>
+    <span class="paper-authors">Vivek Kumar, Prasoon Suchandra, Jason Rom, Shivam Prajapati, Suhas Jain, Cyrus Aidun</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">Objective: Decoding visual information from electroencephalography (EEG) is an important problem in neuroscience and brain-computer interface (BCI) research. Existing methods are largely restricted to natural images and categorical representations, with limited capacity to capture structural features and to differentiate objective perception from subjective cognition. We propose a Structure-Guided Diffusion Model (SGDM) that incorporates explicit structural information for EEG-based visual reconstruction. Approach: SGDM is evaluated on the Kilogram abstract visual object dataset and the THINGS natural image dataset using a two-stage generative mechanism. The framework combines a structurally supervised variational autoencoder with a spatiotemporal EEG encoder aligned to a visual embedding space via contrastive learning. Structural information is integrated into a diffusion model through ControlNet to guide image generation from EEG features. Results: SGDM outperforms existing methods on both abstract and natural image datasets. Reconstructed images achieve higher fidelity in low-level visual features and semantic representations, indicating improved decoding accuracy and strong generalization across diverse visual domains. Spatiotemporal analysis of EEG signals further reveals hierarchical structural encoding patterns, consistent with the neural dynamics of visual cognition. Significance: These findings validate the effectiveness of SGDM in capturing explicit structural geometry and generating images with high fidelity to individual cognitive representations. By enabling decoding of complex visual content from EEG signals, the framework extends neural decoding beyond low-dimensional or categorical outputs. This supports BCIs with increased degrees of freedom for intention decoding and more flexible brain-to-machine communication.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22649v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We hypothesize that combining extreme turbulence with a minute reduction in surface tension $σ$ (surface tension of the liquid) using surfactant provides a simple and scalable route for controlling micron scale bubble size in gas--liquid systems. To test this, we generate high-intensity turbulence using a multiphase pump [turbulent intensity $\ge 40\%$; Taylor Reynolds number $Re_λ=\mathcal{O}(10^3)$; bulk Reynolds number $Re=\mathcal{O}(10^5)$] feeding a straight duct, which produces a decaying turbulent flow where, without additives, bubble coalescence dominates and causes monotonic downstream growth in the mean diameter $d_\mathrm{avg}$ of the bubbles. This growth is governed by the turbulent dissipation rate $\varepsilon$. High-speed imaging, back-lit shadowgraph and particle shadow velocimetry (PSV) quantify bubble statistics ($d_\mathrm{avg}$, and the bubble-size distribution) and turbulence metrics (turbulent kinetic energy $k$, turbulence intensity $\mathcal{I}$, and dissipation rate $\varepsilon$). We then introduce a minute amount ($\sim 0.01\%$ critical micelle concentration) of additive that produces a slight reduction in $σ$, used here only as an interfacial tuning knob because the same change in surface tension can be achieved with non surface active agents. This small decrease in $σ$ enhances breakup, slightly suppresses coalescence, and makes smaller bubbles more breakup prone, resulting in reduced $d_\mathrm{avg}$ and a narrower bubble-size distribution. Turbulence statistics remain unchanged within experimental uncertainty, indicating that the effect arises entirely from interface rather than hydrodynamic changes. Overall, combining extreme turbulence with a minute reduction in surface tension offers a low complexity and tunable lever for setting bubble-size distributions and intensifying mass transfer in industrial multiphase flows.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24520v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22640v1" target="_blank" rel="noopener noreferrer">
-      Quality-Driven Selective Mutation for Deep Learning
+    <a href="https://arxiv.org/pdf/2604.24515v1" target="_blank" rel="noopener noreferrer">
+      SEARCH-R: Structured Entity-Aware Retrieval with Chain-of-Reasoning Navigator for Multi-hop Question Answering
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Zaheed Ahmed, Emmanuel Charleson Dapaah, Philip Makedonski, Jens Grabowski</span>
+    <span class="paper-authors">Yuqing Fu, Yimin Deng, Wanyu Wang, Yuhao Wang, Yejing Wang, Hongshi Liu, Yiqi Wang, Xiao Han, Maolin Wang, Guoshuai Zhao, Yi Chang, Xiangyu Zhao</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">Mutants support testing and debugging in two roles: (i) as test goals and (ii) as substitutes for real faults. Hard-to-kill mutants provide better guidance for test improvement, while realism is essential when mutants are used to simulate real bugs. Building on these roles, selective mutation for deep learning (DL) aims to reduce the cost of mutant generation and execution by choosing operator configurations that yield resistant and realistic mutants. However, the DL literature lacks a unified measure that captures both aspects. This study presents a probabilistic framework to quantify mutant quality along two complementary axes: resistance and realism. Resistance adapts the classical notion of hard-to-kill mutants to the DL setting using statistical killing probabilities, while realism is measured via the generalized Jaccard similarity between mutant and real-fault detectability patterns. The framework enables ranking and filtering of low-quality mutation-operator configurations without assuming a specific use case. We empirically evaluate the approach on four datasets of real DL faults. Three datasets (CleanML, DeepFD, and DeepLocalize) are used to estimate and select high-quality operator configurations, and the held-out defect4ML dataset is used for validation. Results show that quality-driven selection reduces the number of generated mutants by up to 55.6% while preserving typical levels of resistance and realism under baseline-aligned selection thresholds. These findings confirm that dual-objective selection can lower cost without compromising the usefulness of mutants for either role.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22640v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Multi-hop Question Answering (MHQA) aims to answer questions that require multi-step reasoning. It presents two key challenges: generating correct reasoning paths in response to the complex user queries, and accurately retrieving essential knowledge in the face of potential limitations in large language models (LLMs). Existing approaches primarily rely on prompt-based methods to generate reasoning paths, which are further combined with traditional sparse or dense retrieval to produce the final answer. However, the generation of reasoning paths commonly lacks effective control over the generative process, thus leading the reasoning astray. Meanwhile, the retrieval methods over-rely on knowledge matching or similarity scores rather than evaluating the practical utility of the information, resulting in retrieving homogeneous or non-useful information. Therefore, we propose a Structured Entity-Aware Retrieval with Chain-of-Reasoning Navigator framework named SEARCH-R. Specifically, SEARCH-R trains an end-to-end reasoning path navigator, which is able to provide a powerful sub-question decomposer by fine-tuning the Llama3.1-8B model. Moreover, a novel dependency tree-based retrieval is designed to evaluate the informational contribution of the document quantitatively. Extensive experiments on three challenging multi-hop datasets validate the effectiveness of the proposed framework. The code and dataset are available at: https://github.com/Applied-Machine-Learning-Lab/ACL2026_SEARCH-R.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24515v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22639v1" target="_blank" rel="noopener noreferrer">
-      Adversarial Malware Generation in Linux ELF Binaries via Semantic-Preserving Transformations
+    <a href="https://arxiv.org/pdf/2604.24512v1" target="_blank" rel="noopener noreferrer">
+      Beyond the Attention Stability Boundary: Agentic Self-Synthesizing Reasoning Protocols
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Lukáš Hrdonka, Martin Jureček</span>
+    <span class="paper-authors">Dahlia Shehata, Ming Li</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">Malware development and detection have undergone significant changes in recent years as modern concepts, such as machine learning, have been used for both adversarial attacks and defense. Despite intensive research on Windows Portable Executable (PE) files, there is minimal work on Linux Executable and Linkable Format (ELF). In this work, we summarize the academic papers submitted in this field and develop a new adversarial malware generator for the ELF format. Using a variety of metrics, we thoroughly evaluated our generator and achieved an Evasion Rate of 67.74 % while changing the confidence of the malware detector by -0.50 in the mean case for the dataset used. In our approach, we chose MalConv as the target classifier. Using this classifier, we found that the most successful modifications used strings typical of benign files as a data source. We conducted a variety of experiments and concluded that the target classifier appears sensitive to strings at any location within the executable file.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22639v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">As LLM agents transition to autonomous digital coworkers, maintaining deterministic goal-directedness in non-linear multi-turn conversations emerged as an architectural bottleneck. We identify and formalize a systemic failure mode termed the Attention Latch in decoder-only autoregressive Transformers. This phenomenon, a behavioral manifestation of Information Over-squashing, occurs when the cumulative probabilistic weight of historical context overrides mid-task updates, causing agents to remain anchored to obsolete constraints despite explicit contradictory instructions. We propose Self-Synthesizing Reasoning Protocols (SSRP), a metacognitive framework that implements a discrete separation between high-level architectural planning (Architect) and turn-by-turn procedural execution (Executive). We evaluate SSRP across 9K trajectories using the MultiWOZ 2.2 dataset and the Aggregate Pivot Accuracy (APA), a novel metric we validate by mapping its scores to the U-shaped &#x27;Lost in the Middle&#x27; curve. We present 3 experimental tiers: a shallow recency-based retrieval pilot, a high-entropy SOP, and a semantic hijacked 3-hop Multi-Fact Synthesis task. Our results empirically locate the Attention Stability Boundary, where stateless Vanilla ReAct baselines for GPT 5.4 collapse to 0.1% success while SSRP achieves a 715X Resilience Lift. We demonstrate statistically significant gains across Gemini 3.1 Pro, Claude Sonnet 4.6 and DeepSeek V3.2. Audits confirm SSRP necessity by proving attentional lapse via a recursive reflexion baseline (100% success); decoupling the latch from positional bias through equidistant stress testing (90% accuracy); and formalizing SSRP via the Information Bottleneck principle and granularity ablations. Procedural Integrity audit (98.8% adherence) reveals a Grounding Paradox where high-stability models fail by refusing to hallucinate under retrieval-reasoning contamination.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24512v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22636v1" target="_blank" rel="noopener noreferrer">
-      CLVAE: A Variational Autoencoder for Long-Term Customer Revenue Forecasting
+    <a href="https://arxiv.org/pdf/2604.24471v1" target="_blank" rel="noopener noreferrer">
+      Machine learning technique for morphological classification of galaxies from SDSS. IV. Visual inspection vs CNN for merging, irregular, edge-on, barred, ringed, and with dust lanes galaxies at 0.02&lt;z&lt;0.1
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jeffrey Näf, Riana Valera Mbelson, Markus Meierer</span>
+    <span class="paper-authors">Dobrycheva D. V., Vavilova I. B., Kompaniiets O. V., Khramtsov V., Vasylenko M. Yu., Hetmantsev O. O., Melnyk O. V., Karachentseva V. E</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">Predicting customers&#x27; long-term revenue from sparse and irregular transaction data is central to marketing resource allocation in non-contractual settings, yet existing approaches face a trade-off. Traditional probabilistic customer base models deliver robust long-horizon forecasts by imposing strong structural assumptions, while flexible machine-learning models often require substantial training data and careful tuning. We propose a variational-autoencoder-based model that preserves the process-based likelihood of established attrition-transaction-spend models conditional on customer heterogeneity, but replaces the restrictive parametric mixing distribution with a flexible latent representation learned by encoder-decoder networks. The resulting approach (i) provides a single model for customer attrition, transactions and spending, (ii) remains reliable when contextual covariates are unavailable, and (iii) flexibly incorporates rich covariates and nonlinear effects when they are available. This design balances structural stability with the flexibility needed to capture complex purchase dynamics. Across multiple real-world datasets and prediction horizons, the proposed model improves upon the latest benchmarks. Businesses benefit directly, as a better assessment of customers&#x27; future revenues improves the efficiency of campaign targeting. For research, this work provides guidance on how to embed domain-specific models into the variational autoencoder framework, enabling flexible representation learning while retaining an econometrically meaningful process structure.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22636v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Context. Convolutional neural networks (CNNs) are widely used for automated galaxy morphological classification in large surveys. However, projection effects, image artefacts, and intrinsic degeneracies limit reliable identification of detailed features, requiring large-scale visual validation. Aims. To visually inspect SDSS galaxies at 0.02 &lt; z &lt; 0.1 classified by a CNN as merging, irregular, edge-on, barred, ringed, or dust-lane galaxies; assess CNN completeness and failure modes; construct visually verified morphological catalogues; and determine nuclear activity types via BPT diagrams. Methods. We visually inspected all galaxies assigned by the CNN to six morphological classes: merging (2,574), irregular (9,432), edge-on (17,000), barred (6,000), ringed (13,882), and dust-lane (588), regardless of CNN probability. Refined samples were cross-matched with Galaxy Zoo 2; remaining galaxies were classified here for the first time. Nuclear activity was determined from SDSS DR17 spectra using Hααα, H\b{eta}β\b{eta}, [O III]λ$5007, and [N II] λ$6583 line ratios. Results. We present catalogues of 612 merging, 9,372 irregular, 16,822 edge-on, 575 dust-lane, 811 barred, and 2,150 ringed galaxies. CNN misclassifications stem primarily from projection effects, foreground stars, faint tidal features, and irregular star-forming structures. We characterise nuclear activity types for edge-on, barred, ringed, and dust-lane galaxies, finding systematic differences in LINER-like and composite fractions across subsamples. Five strong polar ring galaxy candidates were identified. Conclusions. Visual validation remains essential for refining CNN-based classifications. The resulting datasets support morphological studies, investigations of galaxy structure and secular evolution, and provide robust training samples for future machine learning models.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24471v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22613v1" target="_blank" rel="noopener noreferrer">
-      MUSE-DARK III: The evolution of the radial acceleration relation at intermediate redshifts
+    <a href="https://arxiv.org/pdf/2604.24449v1" target="_blank" rel="noopener noreferrer">
+      SPLIT: Separating Physical-Contact via Latent Arithmetic in Image-Based Tactile Sensors
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">B. I. Ciocan, N. F. Bouché, J. Fensch, D. Krajnović, J. Freundlich, H. Desmond, B. Famaey, R. Techi</span>
+    <span class="paper-authors">Wadhah Zai El Amri, Nicolás Navarro-Guerrero</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">The radial acceleration relation (RAR) is a tight empirical correlation between the observed radial acceleration (a_tot) and the baryonic radial acceleration (a_bar) measured across galaxy radii: these two accelerations start to deviate significantly from each other below a characteristic acceleration scale, a0. So far, observational studies of the RAR have predominantly focused on galaxies in the local Universe, leaving its evolution with cosmic time largely unexplored. Using high signal-to-noise data from the MUSE Hubble Ultra Deep Field survey, we investigate the RAR with a sample of 79 star-forming galaxies (complete above M* &gt;10^8.8 Msun) at intermediate redshifts (0.33 &lt;z &lt;1.44). We estimate the observed intrinsic acceleration and the baryonic acceleration from a disk-halo decomposition that incorporates stellar, gas, and dark matter components, with corrections for pressure support, using 3D forward modelling. We find a RAR in our intermediate-z sample offset from the local relation, with a higher characteristic acceleration scale, a0(z~1) = 2.38+/-0.1* 10^-10 m/s^2, and a larger intrinsic scatter (~0.17 dex). Dividing the sample into redshift bins and refitting the RAR in each bin, we find a characteristic acceleration scale that systematically increases with z. Parametrizing the z-dependence as a0(z)= a0(0) + a1 * z, we obtain a1 = 1.59+/-0.1 *10^-10 m/s^2, providing evidence for a z-evolution. We find similar results using various dark matter halo profiles as well as the Modified Newtonian Dynamics framework in our 3D forward modelling. Our results show that the RAR persists at intermediate redshift, with statistically significant redshift evolution of the characteristic acceleration, pointing to a possible evolution of the baryon-missing mass connection over cosmic time.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22613v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Training machine learning models for robotic tactile sensing requires vast amounts of data, yet obtaining realistic interaction data remains a challenge due to physical complexity and variability. Simulating tactile sensors is thus a crucial step in accelerating progress. This paper presents SPLIT, a novel method for simulating image-based tactile sensors, with a primary focus on the DIGIT sensor. Central to our approach is a latent space arithmetic strategy that explicitly disentangles contact geometry from sensor-specific optical properties. Unlike methods that require recalibration for every new unit, this disentanglement allows SPLIT to adapt to diverse DIGIT backgrounds and even transfer data to distinct sensors like the GelSight R1.5 without full model retraining. Beyond this adaptability, our approach achieves faster inference speeds than existing alternatives. Furthermore, we provide a calibrated finite element method (FEM) soft-body mesh simulation with variable resolution, offering a tunable trade-off between speed and fidelity. Additionally, our algorithm supports bidirectional simulation, allowing for both the generation of realistic images from deformation meshes and the reconstruction of meshes from tactile images. This versatility makes SPLIT a valuable tool for accelerating progress in robotic tactile sensing research.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24449v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2604.22587v1" target="_blank" rel="noopener noreferrer">
-      On the Optimum Secrecy Outage Probability and Ergodic Secrecy Rate over Wireless Channels
+    <a href="https://arxiv.org/pdf/2604.24446v1" target="_blank" rel="noopener noreferrer">
+      Energy spectrum of magnetic fields from electroweak symmetry breaking
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Clement Leroy, Tarak Arbi, Benoit Geller, Olivier Rioul</span>
+    <span class="paper-authors">Károly Seller, Günter Sigl</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-04-24</span>
+    <span class="paper-date">2026-04-27</span>
   </p>
-  <p class="paper-abstract">We study the secrecy of wireless channels in the presence of an eavesdropper, where the channels are random and the transmitter only has knowledge of the channel statistics. We investigate the optimal input distribution with respect to several secrecy metrics: the Secrecy Outage Probability (SOP), defined as the probability that the coding rate $r$ exceeds the instantaneous secrecy rate; the Ergodic Secrecy Rate (ESR), defined as the expected secrecy rate over channel realizations; and the Ergodic Positive Secrecy Rate (EPSR), defined as the expected value of the positive part of the secrecy rate. We introduce two partial orderings for random channels: the uniformly less noisy order and the less noisy on average order. We show that when the main channel is uniformly less noisy than the eavesdropper channel, the optimal input distribution is a non-precoded Gaussian input for both the SOP and the EPSR. Furthermore, we show that the same input distribution is optimal for the ESR when the less noisy on average order holds. In addition, similar optimality results for the SOP and the EPSR are obtained for single-transmit-antenna channels without requiring any channel ordering assumptions. Closed-form expressions of the secrecy metrics are derived for special cases of Rayleigh fading channels.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2604.22587v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We study the magnetic fields produced in the early Universe during the electroweak symmetry breaking by considering random configurations of an inhomogeneous Higgs field. By exploiting the inherent randomness of the initial configurations the spectrum of the produced magnetic field is essentially analytic, which bypasses the need for costly lattice simulations. On the numerical side, we devise a simulation framework which results in continuous fields capable of resolving the small-scale structure of the fields that was inaccessible for the lattice-based calculation. Finally, by revisiting the effects of statistical isotropy and causality on the spectrum, we define general correlation functions that are then fitted to the simulation data and compared to the analytic results.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2604.24446v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
