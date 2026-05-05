@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-05-04 02:50 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-05-05 02:42 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00821v1" target="_blank" rel="noopener noreferrer">
-      Optimization of Weak Lensing Lightcone Simulations for Higher-Order Statistics in the LSST era
+    <a href="https://arxiv.org/pdf/2605.02864v1" target="_blank" rel="noopener noreferrer">
+      Structures of Identical Particle Systems : Efficient Computation of Many-Body Density of States
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">J. Mena-Fernández, C. Doux, J. Harnois-Déraps, K. Heitmann, C. Combet, P. Larsen, N. Frontiere, A. Bera, S. Samario-Nava, L. Castiblanco, C. Uhlemann, the LSST Dark Energy Science Collaboration</span>
+    <span class="paper-authors">Hovan Lee, Rémi Lefèvre, Grégoire Ithier</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">We present a framework for generating lightcone simulations tailored to the analysis of Stage-IV cosmic shear data using Higher-Order Statistics (HOS). We revisit key design choices from previous simulation campaigns and re-optimize several internal parameters, benchmarking accuracy through changes in $χ^2$ of cosmic shear statistics under survey conditions mimicking 10 years of observations from the Legacy Survey of Space and Time (LSST). We find that discretizing the lightcone uniformly in scale factor yields higher accuracy than commonly adopted schemes such as uniform spacing in redshift or comoving distance. While $N_{\rm part} = 1024^3$ simulation particles (corresponding to a mass resolution of $m_{\rm part} = 2.08\times10^{10}M_\odot$) is sufficient to model two-point statistics up to $\ell = 5000$, we observed significant instabilities on our full suite of HOS as the number of mass shells used in the lightcone construction, $N_{\rm shells}$, is varied. In contrast, simulations with $N_{\rm part} = 2048^3$ particles ($m_{\rm part} = 2.60\times10^{9}M_\odot$) robustly reproduce all statistics considered. In this higher-resolution configuration, $N_{\rm shells}$ can be reduced to $\sim50$ with only minor deviations, no larger than $0.1-0.3σ$ relative to our highest-resolution case ($N_{\rm shells}\sim100$). This has been explicitly verified through a comparison between our fiducial lightcone production mode based on slicing particle snapshots and an exact lightcone mode where individual particle trajectories are solved for at runtime. We further show that the particle density per pixel can be downsampled by a significant amount for $z&gt;1.5$, saving large computational resources with no impact on the resulting statistics. These results guide the design of upcoming simulation campaigns geared towards forward-modeling and emulation-based analyses of Stage-IV data.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00821v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We present a method for approximating the many-body density of states of a system of quantum identical particles, with a reduction of the computational cost by a combinatorial factor compared to the full calculation. This is carried out by considering an isolated quantum system of identical particles, and studying its non-interacting many-body spectrum through the use of a new approach based on a separation of universal combinatorial properties from the system-specific quantities. In this paper we focus on a practical computation method that leverages our formalism of many-body combinatorics, in order to perform an efficient numerical computation of the many-body density of states. In addition, this method provides further computational improvements by allowing most of the results to be cached in persistent storage and computed incrementally, making way for efficient use of parallelization and dynamic programming techniques. We give an extensive description of the method and provide several detailed examples of approximations of bosonic many-body density of states with tunable accuracy requirements. Lastly, we demonstrate how one such approximation can be used to recover Bose-Einstein-like distributions without any particle statistics assumptions.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02864v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00820v1" target="_blank" rel="noopener noreferrer">
-      HyCOP: Hybrid Composition Operators for Interpretable Learning of PDEs
+    <a href="https://arxiv.org/pdf/2605.02852v1" target="_blank" rel="noopener noreferrer">
+      Inferring Active Neural Circuits Using Diffusion Scores
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jinpai Zhao, Nishant Panda, Yen Ting Lin, Eirik Valseth, Diane Oyen, Clint Dawson</span>
+    <span class="paper-authors">Savik Kinger, Johannes Bertram, Luciano Dyballa, Eviatar Yemini, Steven W. Zucker</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">We introduce HyCOP, a modular framework that learns parametric PDE solution operators by composing simple modules (advection, diffusion, learned closures, boundary handling) in a query-conditioned way. Rather than learning a monolithic map, HyCOP learns a policy over short programs - which module to apply and for how long - conditioned on regime features and state statistics. Modules may be numerical sub-solvers or learned components, enabling hybrid surrogates evaluated at arbitrary query times without autoregressive rollout. Across diverse PDE benchmarks, HyCOP produces interpretable programs, delivers order-of-magnitude OOD improvements over monolithic neural operators, and supports modular transfer through dictionary updates (e.g., boundary swaps, residual enrichment). Our theory characterizes expressivity and gives an error decomposition that separates composition error from module error and doubles as a process-level diagnostic.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00820v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">In biological systems, neural circuits compute through directed, short-latency interactions whose effects unfold across multiple time scales and behavioral contexts. We address the problem of inferring these local, lag-specific interactions from sampled neural population activity under varying stimuli, without assuming a parametric form for the underlying dynamics. Our approach leverages denoising score models by estimating joint-window scores over consecutive activity snapshots (i.e., brain states) and converting these scores into calibrated, directed edge tests via cross-block score products. The key insight is that these products recover the Jacobian of the transition map between brain states under nonlinear dynamics. To cleanly separate lag-specific effects, we introduce minimal multi-block windows that condition on intermediate time points, avoiding the omitted-lag bias inherent in pairwise analyses. The resulting method, Score--Block Time Graphs (SBTG), identifies lag-specific directed interactions in sampled neuronal population data. We specifically apply SBTG to whole-brain C. elegans calcium imaging data to recover lag-specific circuit structure not resolved by current methods, including improved alignment with independent connectomes, cell-type-specific temporal organization, and neuromodulatory profiles consistent with known receptor kinetics. These findings highlight the potential for SBTG to serve as a practical ``AI for science&#x27;&#x27; tool by turning high-dimensional neural population recordings into statistically testable circuit hypotheses.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02852v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00818v1" target="_blank" rel="noopener noreferrer">
-      $4\times3$ Point Correlation Functions in Galaxy Surveys: Impact of Baryonic Feedback
+    <a href="https://arxiv.org/pdf/2605.02851v1" target="_blank" rel="noopener noreferrer">
+      A CV-TMLE global test approach to improve power in rare disease clinical studies with multiple-component endpoints
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Avijit Bera, Joachim Harnois-Déraps, Juan Mena-Fernández, Mike Jarvis, Cyrille Doux, Katrin Heitmann, Mustapha Ishak, The LSST Dark Energy Science Collaboration</span>
+    <span class="paper-authors">Tianyue Zhou, Susan Gruber, Hana Lee, Wonyul Lee, Lei Nie, Mark van der Laan</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">We investigate the impact of baryonic feedback on two-point and three-point correlation functions (2PCFs and 3PCFs hereafter, respectively) involving galaxy density fields (g) and weak lensing shear fields (G), from simulated photometric catalogs of galaxies. Specifically, we baryonify high-resolution simulation using a baryonic correction model (BCM) and explore the consequences down to sub-arcminute (arcmin) scales, varying two model parameters with the largest impact on our probes: $M_{\rm c}$, which governs the amount of gas expelled beyond the halo boundary, and $θ_{\rm ej}$, which encodes the maximal ejection radius relative to halo boundary. We create lensing maps and galaxy catalogs assuming survey properties of the upcoming Year-10 data for the Vera C. Rubin Observatory&#x27;s Legacy Survey of Space and Time (LSST), and investigate the impact of baryonic feedback on the observed correlations, including the galaxy--galaxy--shear (ggG) and the galaxy--shear--shear (gGG) 3PCFs, which are measured, for the first time from simulations, with \textsc{TreeCorr}. Focusing on equilateral 3PCFs, we find that small scales are more heavily affected by baryonic effects than the corresponding 2PCFs, by up to 90 percent depending on the probe, redshift and BCM model. The galaxy--galaxy--galaxy (ggg) 3PCF is significantly affected at scales smaller than about 4 arcmin; a similar effect occurs at 10 arcmin for the ggG 3PCF, at 40 arcmin for the gGG 3PCF, and at about a degree for the shear--shear--shear (GGG) 3PCF. These four three-point statistics, which are collectively referred to as the $4\times3$PCFs, can be used at large scales to robustly constrain cosmological parameters. At smaller scales, their enhanced sensitivity to baryonic effects provides valuable leverage for constraining the BCM parameters and supplying informative priors. [Abridged]</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00818v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Rare disease trials face unique statistical challenges due to limited patient populations and heterogeneous clinical manifestations among patients. Multiple endpoints are often necessary to comprehensively capture treatment benefits. A global test is an approach for evaluating whether a treatment has any beneficial effect across multiple endpoints. We propose a new global test based on a weighted composite endpoint. The proposed global test employs shrinkage-based cross-validated targeted maximum likelihood estimation (CV-TMLE) to learn data-adaptive weights that maximize power while maintaining Type I error control. Shrinkage can be tailored to incorporate existing domain knowledge, such as anticipated relative effect sizes. In simulation studies designed to reflect real rare disease trial settings, the proposed procedure demonstrated improved power over standard multiplicity adjustments and classical global tests (such as the O&#x27;Brien test), while maintaining nominal Type I error, when effects are heterogeneous across endpoints. The proposed method simultaneously learns an optimal weighted composite outcome and provides an unbiased and efficient targeted maximum likelihood estimator (TMLE) for the average treatment effect (ATE) on that weighted outcome, with valid inference taking into account that the ATE is data dependent.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02851v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00813v1" target="_blank" rel="noopener noreferrer">
-      Statistical mechanics for Scrabble predicts strategy, entropy and language
+    <a href="https://arxiv.org/pdf/2605.02850v1" target="_blank" rel="noopener noreferrer">
+      Quantum Tilted Loss in Variational Optimization: Theory and Applications
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Olivier Witteveen, Marianne Bauer</span>
+    <span class="paper-authors">Yixian Qiu, Josep Lumbreras, Xiufan Li, Patrick Rebentrost</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">The crossword-like patterns of tiles in Scrabble form connected graphs of occupied sites on a square lattice. We find the most structureless description that reproduces means and covariances observed in real Scrabble games by adapting a maximum entropy approach to connected graphs. This pairwise model captures the data well, and predicts word-length statistics and geometric features of the Scrabble graphs correctly; in addition, the parameters of this model are interpretable and allow us to understand Scrabble playing strategies. Using this pairwise model, we calculate entropy differences and distinguishability of Scrabble graphs across languages, without having access to the letters on the tiles. Notably, we find that the entropy is predicted better by strategic gameplay -- such as word length on the board -- than lexicon size. Finally, we find that we can use the pairwise model to correctly assign Scrabble graphs to languages, avoiding explicit feature selection and at relatively low computational cost.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00813v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Variational quantum algorithms (VQAs) are leading strategies for using near-term quantum devices, with a well-studied bottleneck being their trainability. Standard expectation-value objectives with expressive circuits frequently encounter barren plateaus in the optimization landscape during training. To address this challenge, we introduce the Quantum Tilted Loss (QTL), an operator-level generalization of classical exponential tilting designed to systematically reshape the optimization landscape. By tuning a single continuous parameter, QTL can amplify gradient signals in structured settings while preserving the problem&#x27;s true global minima. We provide a theoretical foundation that unifies standard expectation minimization with popular tunable heuristics, such as Conditional Value-at-Risk (CVaR) and Gibbs formulations. Deploying this framework requires balancing the geometric benefits of a sharpened landscape against the statistical cost of estimating nonlinear gradients from finite quantum measurements. We formalize this trainability-estimability trade-off, demonstrating how aggressive tilting fundamentally shifts the optimization bottleneck from landscape flatness to sample complexity. Thus, the operational bottleneck shifts from vanishing gradients to measurement sampling variance. Finally, we exhibit through numerical simulations that ascending tilt schedules can outperform fixed-tilt training in finite-shot regimes.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02850v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00800v1" target="_blank" rel="noopener noreferrer">
-      Generating Statistical Charts with Validation-Driven LLM Workflows
+    <a href="https://arxiv.org/pdf/2605.02843v1" target="_blank" rel="noopener noreferrer">
+      PDRS : A Linear $\mathcal{O}(N)$ Algorithm for Segmentation of High-Activity Regions in Irregularly Sampled Time Series
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Pavlin G. Poličar, Andraž Pevcin, Blaž Zupan</span>
+    <span class="paper-authors">Atal Agrawal</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">Generating diverse, readable statistical charts from tabular data remains challenging for LLMs, as many failures become apparent after rendering and are not detectable from data or code alone. Existing chart datasets also rarely provide fully aligned artifacts, such as executable code, dataset context, and question-answer pairs. We present a structured LLM-based workflow that decomposes chart generation into dataset screening, plot proposal, code synthesis, rendering, validation-driven refinement, description generation, and question-answer generation. By incorporating rendered-output validation, the workflow addresses visualization-specific failure modes such as readability and semantic mismatch. It treats chart generation as an inspectable process rather than a one-shot prompt-to-code task, retaining each chart with its code, dataset context, description, and question-answer pairs. Applied to UCI datasets, the workflow produces 1,500 charts from 74 datasets, spanning 24 chart families and paired with 30,003 question-answer pairs. We evaluate 16 multimodal LLMs (MLLMs) on these chart-question pairs. The results show that chart-syntax questions are nearly saturated, while value extraction, comparison, and reasoning remain more challenging, illustrating the workflow&#x27;s utility for diagnostic studies of chart-grounded multimodal reasoning.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00800v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Identifying transient high-activity episodes in astronomical time series requires partitioning data into regions of distinct statistical behavior. A widely adopted approach combines Bayesian Blocks with a hill-climbing procedure to isolate high-activity regions, but carries $\mathcal{O}(N^2)$ complexity -- a scalability challenge for wide-field surveys like ZTF and the upcoming Rubin Observatory (LSST), where light curves routinely contain thousands of irregularly sampled observations. We present Peak-Driven Region Segmentation (PDRS), a linear-time $\mathcal{O}(N)$ algorithm for rapid extraction of high-activity regions in irregularly sampled data. PDRS seeds candidate regions at statistically significant local maxima and expands them via a gradient-aware multi-source breadth-first search. Saddle-point merging and a median-based filter suppress spurious detections. Functioning as a computationally efficient pre-processing stage, PDRS isolates candidate transient events for downstream analysis. We demonstrate its efficacy on quasar light curves from SDSS Stripe~82 and AGN light curves from ZTF DR23, showing that PDRS identifies candidate high-activity regions comparable to those from Bayesian Blocks at substantially reduced cost. Its domain-agnostic formulation and physically interpretable parameters make PDRS broadly applicable beyond astronomy, including biomedical signals, seismic recordings, and industrial sensor monitoring.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02843v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00788v1" target="_blank" rel="noopener noreferrer">
-      Repurposing Image Diffusion Models for Adversarial Synthetic Structured Data: A Case Study of Ground Truth Drift
+    <a href="https://arxiv.org/pdf/2605.02837v1" target="_blank" rel="noopener noreferrer">
+      A Statistical Survey of Faint Solar X-ray Transients Observed by NuSTAR
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Adam Arthur, Christopher Schwartz</span>
+    <span class="paper-authors">Reed B. Masek, Lindsay Glesener, Jessie Duncan, Kekoa Lasko, Natália Bajnoková, Mary Davenport, Marianne Peterson, Ian Markano, Zasha Avery, Kristopher Cooper, Iain G. Hannah, Brian W. Grefenstette, Stephen M. White, Hugh Hudson, Säm Krucker, David M. Smith, Sarah Paterson</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">Public image diffusion models are now powerful enough that an attacker without the resources to train a tabular-specific generator may repurpose one off the shelf. This study tests that possibility directly. An unmodified Stable Diffusion U-Net is applied to the UCI Adult Income dataset by reshaping each row into a small single-channel pseudo-image. The architecture&#x27;s inductive bias toward spatial locality makes feature placement a design variable, and several layouts are tested. However, this is only the beginning of the story, as this paper also draws two philosophical distinctions. One separates statistical from perceptual realism: whether synthetic content holds up to a machine&#x27;s correlation audits or a human&#x27;s sensory inspection. The other introduces synthetic evidence as a category alongside synthetic media: AI-generated material whose consumer is a machine in a closed evidentiary pipeline rather than a person in an open information system. An attacker succeeds with synthetic evidence by thinking like the machine that will receive it. And the more the attacker succeeds, the more they can induce ground truth drift: the silent reclassification of AI-generated outputs as authentic when reused in pipelines that do not interrogate their provenance.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00788v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">In this paper, we use a highly sensitive telescope to characterize solar X-ray transients ranging from microflares in active regions down to weakly energetic brightenings in the quiet Sun. X-rays are closely linked to the initial energy release and immediate heating of solar flares, making them invaluable in understanding their driving processes. NuSTAR is the first long-term, direct focusing hard X-ray observatory to have observed the Sun, offering a unique opportunity to search for and characterize X-ray events from inside and outside active regions that would be otherwise unobservable. We present the first statistical survey of NuSTAR solar observations, characterizing the thermal and possibly nonthermal properties of 113 weakly energetic transients down to $10^{26}$ erg, making this the first to directly compare events from the quiet Sun to those in active regions. Relative to RHESSI microflares, our NuSTAR transients are generally cooler, dimmer, and have slightly steeper spectra. Thermal energy content of active region transients appears to be independent of the volume of emitting plasma for transients produced by active regions. This is in contrast to those from the quiet corona, which on average have lower energy content, smaller emission volumes, and appear cool but bright rather than hot but dim, suggesting a break in trends from traditional microflares. We found no quiet Sun transients with a thermal energy content above $3^{27}$ erg, implying an upper limit on the amount of energy released in plasma above 3 MK by quiescent processes.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02837v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00755v1" target="_blank" rel="noopener noreferrer">
-      AdvNet: Revealing Performance Issues in Network Protocols by Generating Adversarial Environments
+    <a href="https://arxiv.org/pdf/2605.02836v1" target="_blank" rel="noopener noreferrer">
+      A Closed-Form Persistence-Landmark Pipeline for Certified Point-Cloud and Graph Classification
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Shehab Sarar Ahmed, William Sentosa, Yinjie Zhang, Yoav Lebendiker, Michael Shnaiderman, Tomer Gilad, Nathan H. Jay, Brighten Godfrey, Michael Schapira</span>
+    <span class="paper-authors">Sushovan Majhi, Atish Mitra, Žiga Virk, Pramita Bagchi</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">Infrastructure protocols like Congestion Control (CC) seek to provide reliable performance across a wide range of Internet environments. Currently, protocol designers assess performance through hand-designed test cases or data sets captured from real environments. However, such approaches may inadvertently overlook critical facets of the algorithm&#x27;s behavior when they encounter an unanticipated environment or workload. We seek to understand the unanticipated with \sys, a system that automatically generates adversarial network environments that cause a target protocol implementation to perform poorly. AdvNet employs machine learning-based optimization to generate environments, and incorporates a robust noise-handling mechanism to mitigate the variability inherent in real-world protocol performance. Although our approach is more general, this paper focuses specifically on transport protocols and their CC implementations. We showcase AdvNet&#x27;s capability to create adversarial scenarios for 27 kernel-space implementations of both single-path and multi-path CC protocols, for several use cases with different performance goals. AdvNet identifies problematic network conditions that expose previously unnoticed Linux kernel bugs and uncovers hidden limitations in CC implementations, and provides insights about robustness. These results suggest that automated adversarial testing can be a valuable tool in protocol development, and that robustness is a useful new dimension for benchmarking CC protocols.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00755v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We introduce PLACE (Persistence-Landmark Analytic Classification Engine), a closed-form pipeline for classifying point clouds and graphs through their persistent-homology signatures. Three quantitative guarantees -- a margin-based excess-risk rate, a closed-form descriptor-selection rule, and a per-prediction certificate -- are derived from training labels alone, with no learned weights or held-out calibration. The embedding sums Mitra-Virk single-point coordinate functions over a sparse landmark grid; closed-form weights maximize a structural distortion constant $λ(ν)$ (a Lipschitz lower bound on $\mathcal{D}_n$ under non-interference). (i) An $O(kR/(Δ\sqrt{m_{\min}}))$ margin bound, driven by class-mean separation $Δ$ and embedding radius $R$, matched by a sample-starved minimax lower bound. (ii) The Mahalanobis margin under Ledoit-Wolf-shrunk covariance is the strongest closed-form descriptor selector on a heterogeneous 64-descriptor chemical-graph pool (mean Spearman $ρ\approx +0.54$ across 10 benchmarks, positive on 9 of 10); the isotropic surrogate $Δ/\sqrt\ell$ admits a closed-form selection-consistency rate on homogeneous (14-15 descriptor) protein/social pools. (iii) A training-time-decided certificate with no per-prediction overhead, in non-asymptotic Pinelis and asymptotic Gaussian plug-in forms. Empirically, PLACE is the strongest diagram-based method on Orbit5k and matches the strongest topology-based baseline within statistical noise on MUTAG and COX2. The remaining gaps fall into two diagnosable regimes: descriptor blindness on NCI1/NCI109, and pool-coverage limits elsewhere. Both radii exceed the firing threshold $\hatΔ/2$ on every benchmark at our training-set sizes, dominated by the $\sqrt\ell$ scaling of the multivariate-norm bound; the per-prediction certificate is constructive but not yet operational at these sizes.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02836v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00750v1" target="_blank" rel="noopener noreferrer">
-      Quenched Amplification and Tail Shaping in Networked Systems with Memory and Regime Switching
+    <a href="https://arxiv.org/pdf/2605.02835v1" target="_blank" rel="noopener noreferrer">
+      Per-Platform GPIO Overhead in Hardware-Validated Edge ML Inference Timing
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Mauricio Herrera-Marín</span>
+    <span class="paper-authors">Akul Swami, Nikhil Chougule</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">Networked systems operating under intermittent adverse conditions and long memory can remain stable on average while exhibiting rare but extreme trajectory-level excursions. We study linear regime-switching network dynamics with Volterra-type memory, formulated through a finite-dimensional lifted ordinary differential equation embedding. Despite finite-horizon annealed boundedness, we show that quenched amplification emerges generically from the interaction of regime persistence, memory accumulation, and non-normal lifted operator geometry. A lower bound on burst-size distributions reveals power-law tails whose exponent is determined by the ratio between unfavorable dwell-time rates and an operator-defined instantaneous growth parameter. This parameter is computable online via the Euclidean logarithmic norm of the lifted operator, yielding a practical early-warning indicator. Building on this structure, we introduce a dynamic data-driven intervention strategy that enforces contraction on demand along rare amplification channels, thereby shaping or truncating tail risk without altering exogenous regime statistics or typical system behavior. The results provide a geometrically grounded and operationally actionable framework for understanding and mitigating extreme events in memory-driven regime-switching systems.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00750v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Edge machine learning (ML) deployments increasingly rely on per-inference timing measured by software clocks such as Python&#x27;s perf_counter, but these measurements are not always validated against external hardware references on embedded Linux, and edge ML benchmarking methodologies typically do not isolate platform-dependent instrumentation overhead. This paper reports a preliminary characterization of GPIO call overhead in hardware-validated edge ML inference timing on two embedded platforms running a one-dimensional convolutional neural network (1-D CNN) arrhythmia classifier on electrocardiogram (ECG) data from the MIT-BIH Arrhythmia Database, with five classes per the Association for the Advancement of Medical Instrumentation (AAMI) EC57 standard. Across $n = 10$ trials on each platform at a controlled steady-state baseline, the per-platform constant on the Jetson Orin Nano (TensorRT FP16, Jetson.GPIO) is approximately $-20\,μ$s, and on the Raspberry Pi 4 (ONNX Runtime CPU, pigpio) approximately $-86\,μ$s, yielding a cross-platform asymmetry of approximately $66\,μ$s that is large relative to commonly used uniform validation tolerances. The Jetson constant is well-approximated by direct GPIO call duration (the direct profile accounts for ~88% of the platform constant), while the Pi direct profile over-predicts the platform constant by ~19%, motivating empirical per-platform calibration in the deployed measurement context. The Pi constant is not a single sharp value but exhibits a cross-day range of approximately $6\,μ$s across the three sessions sampled, while the Jetson constant reproduces to within approximately $0.14\,μ$s. These preliminary results suggest that cross-platform edge ML timing studies may benefit from platform-aware and potentially session-aware validation gates.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02835v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00747v1" target="_blank" rel="noopener noreferrer">
-      Quantum Interval Bound Propagation for Certified Training of Quantum Neural Networks
+    <a href="https://arxiv.org/pdf/2605.02827v1" target="_blank" rel="noopener noreferrer">
+      First-Order Efficiency for Probabilistic Value Estimation via A Statistical Viewpoint
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Emma Andrews, Nahyeon Kim, Prabhat Mishra</span>
+    <span class="paper-authors">Ziqi Liu, Kiljae Lee, Yuan Zhang, Weijing Tang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">Quantum machine learning is a promising field for efficiently learning features of a dataset to perform a specified task, such as classification. Interval bound propagation (IBP) is a popular certified training method in classical machine learning, where the lower and upper bounds are tracked throughout the model. These bounds are used during training to ensure that the model is certified to predict the correct label even under adversarial perturbations. While IBP is successful in classical domain, there are limited certified training efforts in quantum domain. In this paper, we present quantum interval bound propagation (QIBP) to establish a certified training routine for quantum machine learning, certifying the accuracy of models under adversarial perturbations. We implement QIBP using both interval and affine arithmetic to explore the tradeoffs between the two implementations in terms of accuracy and other design considerations. Extensive evaluation demonstrates that the resulting certified trained models have robust decision boundaries, guaranteed to predict the correct class for the samples within the trained adversarial robustness bounds.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00747v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Probabilistic values, including Shapley values and semivalues, provide a model-agnostic framework to attribute the behavior of a black-box model to data points or features, with a wide range of applications including explainable artificial intelligence and data valuation. However, their exact computation requires utility evaluations over exponentially many coalitions, making Monte Carlo approximation essential in modern machine learning applications. Existing estimators are often developed through different identification strategies, including weighted averages, self-normalized weighting, regression adjustment, and weighted least squares. Our key observation is that these seemingly distinct constructions share a common first-order error structure, in which the leading term is an augmented inverse-probability weighted influence term determined by the sampling law and a working surrogate function. This first-order representation yields an explicit expression for the leading mean squared error (MSE), which characterizes how the sampling law and the surrogate jointly determine statistical efficiency. Guided by this criterion, we propose an Efficiency-Aware Surrogate-adjusted Estimator (EASE) that directly chooses the sampling law and surrogate to minimize the first-order MSE. We demonstrate that EASE consistently outperforms state-of-the-art estimators for various probabilistic values.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02827v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00738v1" target="_blank" rel="noopener noreferrer">
-      Temporal Data Requirement for Predicting Unplanned Hospital Readmissions
+    <a href="https://arxiv.org/pdf/2605.02821v1" target="_blank" rel="noopener noreferrer">
+      When Is the Same Model Not the Same Service? A Measurement Study of Hosted Open-Weight LLM APIs
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ramin Mohammadi, Vahab vahdat, Sarthak Jain, Amir T. Namin, Ramya Palacholla, Sagar Kamarthi</span>
+    <span class="paper-authors">Haorui Li, Zhenghui He, Xuanzi Liu, Yang Xu, Dongsheng Liu, Jiakang Ma, Lupan Wu, Yangjie Wu, Xiongchao Tang, Tianhui Shi</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">With the proliferation of Electronic Health Records (EHRs), a critical challenge in building predictive models is determining the optimal historical data time window to maximize accuracy. This study investigates the impact of various observation windows ranging from the day of surgery to three years prior on predicting 30-day readmission following hip and knee arthroplasties. The dataset encompasses both structured encounter records (over 4 million) and unstructured clinical notes (80,000) from 7,174 patients. To extract meaning from the clinical notes, we employed a suite of non neural (BOW, count BOW, TF IDF, LDA) and neural encoders (BERT, 1D CNN, BiLSTM, Average). We subsequently evaluated models utilizing clinical notes alone, structured data alone, and a combination of both modalities. Our results demonstrate that the optimal time window for unstructured clinical notes is significantly shorter than for structured data, maximum predictive performance was achieved using notes from just three to six months prior to surgery. In contrast, performance using structured data improved as the time window lengthened, but strictly plateaued after twelve months. These modality-specific temporal patterns remained consistent regardless of model complexity or encoder type. Ultimately, these findings challenge the general assumption that more historical data inherently yields better machine learning predictions, establishing targeted time-window guidelines for optimizing readmission prediction models.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00738v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Open-weight large language models (LLMs) are often described as downloadable model artifacts, but in production they are increasingly consumed as hosted APIs. This paper studies the intermediary service layer that turns a model release into an operational endpoint. Using sampled request logs, provider metadata, compatibility probes, pricing snapshots, and continuous latency measurements collected by AI Ping during Q4 2025, we analyze demand concentration, provider heterogeneity, and task-conditioned routing for popular open-weight model families. The first empirical pattern is concentration with inertia: among the model families displayed in the public aggregate, the largest family carries 32.0% of relative demand and the top five carry 87.4%, with a Gini coefficient of 0.693, yet older versions remain active after newer releases. The second pattern is a separation between supply and use: broad provider listing of a model does not imply realized adoption, and listed prices are more anchored than latency, throughput, context length, protocol support, and error semantics. The third pattern is conditionality: applications induce different token-length regimes, so the relevant service object is not a model name but a provider-model-task-time tuple under protocol and context constraints. In two representative counterfactuals, routing lowers Qwen3-32B cost by 37.8% and raises DeepSeek-V3.2 average throughput by about 90% relative to direct official access. These results suggest that open-weight LLM deployment should be studied as a constrained statistical decision problem over a heterogeneous service layer, rather than as a static catalog of model capabilities.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02821v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00729v1" target="_blank" rel="noopener noreferrer">
-      Intermittency induced by long memory under stochastic regime switching
+    <a href="https://arxiv.org/pdf/2605.02806v1" target="_blank" rel="noopener noreferrer">
+      Statistical Inference of Day-to-Day Traffic Dynamics
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Mauricio Herrera-Marín</span>
+    <span class="paper-authors">Minghui Wu, Yafeng Yin, Jerome P. Lynch, Zhichen Liu</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">We study a fundamental instability mechanism in nonlinear, nonlocal dynamical systems arising from the interaction of long-range memory and stochastic regime switching. The dynamics are governed by network-coupled, operator-valued Volterra evolutions with completely monotone memory kernels whose excitation operators and kernel parameters are modulated by an ergodic finite-state continuous-time Markov chain. We formalize a sharp separation between annealed stability (in expectation) and quenched behaviour (along typical sample paths). On the annealed side, we identify an averaged memory gain that yields uniform moment bounds and a memory-adapted Lyapunov functional implying mean-square control under an averaged subcriticality condition. On the quenched side, we show that rare but persistent excursions into supercritical regimes are amplified by memory, producing intermittent macroscopic bursts with heavy-tailed statistics and a deterministic almost sure growth exponent obtained via a subadditive ergodic argument. This establishes an annealed--quenched dichotomy specific to non-Markovian switching systems, where stability in expectation can coexist with pathwise growth and metastable burst phases. We further derive a micro--macro correspondence by proving that a population of regime-modulated self-exciting point processes converges, both annealed and quenched, to the random-coefficient Volterra limit, transferring the burst mechanism from microscopic branching dynamics to macroscopic long-memory flows. Numerical experiments illustrate how burst localization depends on graph geometry and on noncommuting excitation operators.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00729v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Day-to-day traffic dynamics are widely used to model flow evolution due to travelers&#x27; learning and adjustment behavior, yet empirical analysis of these models often relies on descriptive calibration with limited inferential content. This paper develops a statistical inference framework for day-to-day route choice dynamics based on a stochastic individual-level adjustment model. The framework enables uncertainty quantification and formal inference for behavioral parameters from trajectory data. We establish identifiability and consistency under mild conditions, and extend the framework to accommodate demand variation, user heterogeneity through a hierarchical structure, and anonymized observability caused by privacy constraints on trajectory data. Simulation studies demonstrate good finite-sample performance, calibrated uncertainty, and robustness to model misspecification. Empirical analyses of controlled laboratory experiments and real-world trajectory data from Ann Arbor, Michigan, show that the framework can generate novel behavioral insights across settings: it reveals the inadequacy of a purely inter-day learning model once en-route information is introduced, recovers systematic behavioral differences across participant types, and uncovers meaningful day-to-day learning together with substantial demand variation in real-world commuting behavior.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02806v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00718v1" target="_blank" rel="noopener noreferrer">
-      Learning Coarse-to-Fine Osteoarthritis Representations under Noisy Hierarchical Labels
+    <a href="https://arxiv.org/pdf/2605.02801v1" target="_blank" rel="noopener noreferrer">
+      Reinforcement Learning for LLM-based Multi-Agent Systems through Orchestration Traces
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Tongxu Zhang</span>
+    <span class="paper-authors">Chenchen Zhang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">Knee osteoarthritis (OA) assessment involves a natural but often underused label hierarchy: a coarse binary OA decision and a fine-grained Kellgren--Lawrence (KL) severity grade. Existing deep learning studies commonly treat these targets as separate classification problems, either reducing OA assessment to disease presence or directly optimizing noisy ordinal KL labels. In this work, we ask whether this clinical hierarchy can serve as a representation-level supervisory prior. Rather than introducing a complex architecture, we use a deliberately simple dual-head model with a shared encoder and two task-specific heads as a probe of hierarchical supervision. We compare single-OA, single-KL, and dual-head training across multiple 3D backbones under the same test protocol. Beyond standard classification metrics, we perform paired statistical comparisons, analyze latent severity-axis geometry, and examine saliency overlap with cartilage regions. The results show that dual-head supervision produces backbone-dependent gains, with clear improvements in KL-related metrics for selected backbones. More importantly, the gains are accompanied by a more ordered coarse-to-fine latent organization and, for responsive backbones, stronger anatomical alignment of saliency with cartilage. These findings suggest that even simple hierarchical dual-head supervision can reshape disease representations under noisy coarse/fine labels, providing a useful inductive bias for OA diagnosis and severity grading.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00718v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">As large language model (LLM) agents evolve from isolated tool users into coordinated teams, reinforcement learning (RL) must optimize not only individual actions but also how work is spawned, delegated, communicated, aggregated, and stopped. This paper studies RL for LLM-based multi-agent systems through orchestration traces: temporal interaction graphs whose events include sub-agent spawning, delegation, communication, tool use, return, aggregation, and stopping decisions. Using this lens, we identify three technical axes. First, reward design spans eight families, including orchestration rewards for parallelism speedup, split correctness, and aggregation quality. Second, reward and credit signals attach to eight credit- or signal-bearing units from token to team; explicit counterfactual message-level credit remains especially sparse in our curated pool. Third, orchestration learning decomposes into five sub-decisions: when to spawn, whom to delegate to, how to communicate, how to aggregate, and when to stop. In our curated pool as of May 4, 2026, we found no explicit RL training method for the stopping decision. We connect academic methods to public industrial evidence from Kimi Agent Swarm, OpenAI Codex, and Anthropic Claude Code. The resulting scale gap is a gap between publicly reported deployment envelopes and open academic evaluation regimes, not independent verification of industrial training traces. We release the artifact at https://github.com/xxzcc/awesome-llm-mas-rl, including an 84-entry tagged paper pool, a 32-record exclusion log, scripted corpus statistics, and a minimal JSON schema for replayable orchestration traces.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02801v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00717v1" target="_blank" rel="noopener noreferrer">
-      Leveraging Climate Services to Build Climate Resilient Power Systems
+    <a href="https://arxiv.org/pdf/2605.02773v1" target="_blank" rel="noopener noreferrer">
+      A Critical Pragmatism Approach for Algorithmic Fairness: Lessons from Urban Planning Theory
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Laurent Dubus, Alberto Troccoli, Aron zuiker, Laurens Stoop</span>
+    <span class="paper-authors">Jennah Gosciak, Karen Levy, Allison Koenecke</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">We explore the crucial interplay between climate change and power system planning, highlighting the urgent need to systematically integrate climate information into energy system studies. Climate change impacts the energy sector on multiple fronts. Short-term weather variability drives daily and seasonal fluctuations in supply and demand. Long-term trends and increased frequency of extremes pose risks to infrastructure performance, asset lifetimes, and system adequacy. Representing compound events and spatial correlations across borders is a complex challenge, and uncertainties persist due to uncertainties from different models, scenarios, and downscaling methodologies. The Pan-European Climate Database (PECD4.2), developed in partnership between ENTSO-E and C3S, marks a change in how energy system planning is conducted. The PECD4.2 integrates historical reanalysis and six climate models across four SSP&#x27;s, providing harmonised, openly available datasets tailored for power system studies. The physical conversion models for wind and solar energy better reflect technological progression than machine learning methods trained on historical data, improving robustness under changing future conditions. Despite these advances, challenges remain. Particularly in hydropower modelling and the lack of public harmonised energy datasets that are required to train these models. Complex processing chains from raw climate data to actionable insights and the lack of standardized integration of climate information lengthen lead times for energy-sector adoption. This leads to diverging approaches and variable consideration of climate risks. Closer, more generalised collaboration and communication between climate service providers and energy stakeholders are therefore necessary, as are the development of user-friendly tools for data manipulation and analysis and robust feedback loops.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00717v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">As data scientists grapple with increasingly complex ethical decisions in machine learning (ML) and data science, the field of algorithmic fairness has offered multiple solutions, from formal mathematical definitions to holistic notions of fairness drawn from various academic disciplines. However, navigating and implementing these fairness approaches in practice remains an ongoing challenge. In this paper, we draw a parallel between the types of problems arising in algorithmic fairness and urban planning. We frame algorithmic fairness problems as `wicked problems,&#x27; a term originating from the planning and policy space to describe the intractable, value-laden, and complex nature of this work. As such, we argue that the field of algorithmic fairness can learn from theoretical work in urban planning in ameliorating its own set of wicked problems. Urban planning is typically concerned with practical issues of governance, resource allocation, stakeholder engagement, and conflicts involving deep-seated differences. These are challenges that existing fairness frameworks can easily overlook. We present a flexible framework for designing fairer algorithms based on the urban planning theory approach of critical pragmatism -- a reflective and deliberative approach to addressing wicked problems that considers what practitioners actually do in the face of conflict and power. We provide specific recommendations and apply them to several case studies in ML and algorithm design: automated mortgage lending, school choice, and feminicide counterdata collection. Researchers and practitioners can incorporate these recommendations derived from urban planning into their ongoing work to more holistically address practical problems arising in fair algorithm design.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02773v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00716v1" target="_blank" rel="noopener noreferrer">
-      Aitchison Embeddings for Learning Compositional Graph Representations
+    <a href="https://arxiv.org/pdf/2605.02746v1" target="_blank" rel="noopener noreferrer">
+      Virtual Scanning for NSCLC Histology: Investigating the Discriminatory Power of Synthetic PET
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Nikolaos Nakis, Chrysoula Kosma, Panagiotis Promponas, Michail Chatzianastasis, Giannis Nikolentzos</span>
+    <span class="paper-authors">Fatih Aksu, Laura Ciuffetti, Francesco Di Feola, Filippo Ruffini, Giulia Romoli, Fabrizia Gelardi, Arturo Chiti, Valerio Guarrasi, Paolo Soda</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">Representation learning is central to graph machine learning, powering tasks such as link prediction and node classification. However, most graph embeddings are hard to interpret, offering limited insight into how learned features relate to graph structure. Many networks naturally admit a role-mixture view, where nodes are best described as mixtures over latent archetypal factors. Motivated by this structure, we propose a compositional graph embedding framework grounded in Aitchison geometry, the canonical geometry for comparing mixtures. Nodes are represented as simplex-valued compositions and embedded via isometric log-ratio (ILR) coordinates, which preserve Aitchison distances while enabling unconstrained optimization in Euclidean space. This yields intrinsically interpretable embeddings whose geometry reflects relative trade-offs among archetypes and supports coherent behavior under component restriction; we consider both fixed and learnable ILR bases. Across node classification and link prediction, our method achieves competitive performance with strong baselines while providing explainability by construction rather than post-hoc. Finally, subcompositional coherence enables principled component restriction: removing and renormalizing subsets preserves a well-defined geometry, which we exploit via subcompositional dimensionality removal to probe how archetype groups influence representations and predictions.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00716v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Accurate histological differentiation between adenocarcinoma (ADC) and squamous cell carcinoma (SCC) is critical for personalized treatment in non-small cell lung cancer (NSCLC). While [$^{18}$F]FDG PET/CT is a standard tool for the clinical evaluation of lung cancer, its utility is often limited by high costs and radiation exposure. In this paper, we investigate the feasibility of &quot;virtual scanning&quot; as a feature-enhancement strategy by evaluating whether synthetic PET data can provide complementary feature representations to supplement anatomical CT scans in histological subtype classification. We propose a framework that leverages a 3D Pix2Pix Generative Adversarial Network (GAN), pretrained on the FDG-PET/CT Lesions dataset, to synthesize pseudo-PET volumes from anatomical CT scans. These synthetic volumes are integrated with structural CT data within the MINT framework, a multi-stage intermediate fusion architecture. Our experiments, conducted on a multi-center dataset of 714 subjects, demonstrate that the inclusion of synthetic metabolic features significantly improves classification performance over a CT-only baseline. The multimodal approach achieved a statistically significant increase in the Area Under the Curve (AUC) from 0.489 to 0.591 and improved the Geometric Mean (GMean) from 0.305 to 0.524. These results suggest that synthetic PET scans provide discriminatory metabolic cues that enable deep learning models to exploit complementary cross-modal information, offering a potential feature-enhancement strategy for clinical scenarios where physical PET scans are unavailable.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02746v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00698v1" target="_blank" rel="noopener noreferrer">
-      FedKPer: Tackling Generalization and Personalization in Medical Federated Learning via Knowledge Personalization
+    <a href="https://arxiv.org/pdf/2605.02692v1" target="_blank" rel="noopener noreferrer">
+      ParaRNN: An Interpretable and Parallelizable Recurrent Neural Network for Time-Dependent Data
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Zoe Fowler, Ghassan AlRegib</span>
+    <span class="paper-authors">Yuxi Cai, Lan Li, Feiqing Huang, Guodong Li</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">Federated learning (FL) holds great potential for medical applications. However, statistical heterogeneity across healthcare institutions poses a major challenge for FL, as the global model struggles both to generalize across unseen patient populations and to adapt to the unique data distributions of individual hospitals. This heterogeneity also exacerbates forgetting at both the global and local level, resulting in previous learned patient patterns to be misclassified after model updates. While prior work has largely treated generalization and personalization as separate challenges, we show that a better balance between the two can be achieved through selective alignment with the global model and a modified aggregation scheme, which together mitigate the effects of statistical heterogeneity. Specifically, we introduce FedKPer, which introduces knowledge personalization into the training stage of each local device. Afterwards, generalization is considered via the global model aggregation process, where local updates that are reliable and label-diverse are emphasized. We evaluate the performance of FedKPer, devising additional metrics that relate to common consequences of forgetting. Overall, we demonstrate FedKPer improves the generalization-personalization trade-off without sacrificing retention.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00698v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The proliferation of large-scale and structurally complex data has spurred the integration of machine learning methods into statistical modeling. Recurrent neural networks (RNNs), a foundational class of models for time-dependent data, can be viewed as nonlinear extensions of classical autoregressive moving average models. Despite their flexibility and empirical success in machine learning, RNNs often suffer from limited interpretability and slow training, which hinders their use in statistics. This paper proposes the Parallelized RNN (ParaRNN), a novel model composed of multiple small recurrent units. ParaRNN admits an additive representation that decouples recurrent dynamics into interpretable components, whose behavior can be characterized through recurrence features. This interpretability enables its applications in nonparametric regression for time-dependent data, while the design also allows efficient parallelization. The approximation capacity and non-asymptotic prediction error bounds in a nonparametric regression setting are established for ParaRNN. Empirical results on three sequential modeling tasks further demonstrate that ParaRNN achieves performance comparable to vanilla RNNs while offering improved interpretability and efficiency.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02692v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00676v1" target="_blank" rel="noopener noreferrer">
-      Living Databases: A Unified Model for Continuous Schema Evolution, Versioning, and Transformations
+    <a href="https://arxiv.org/pdf/2605.02688v1" target="_blank" rel="noopener noreferrer">
+      Unified Mapping of Multi-Site Electrocatalytic Activity Using a Single Descriptor
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Amol Deshpande</span>
+    <span class="paper-authors">A. Dana, D. Terrones, S. Gelin, I. Dabo</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">Databases, and datasets more generally, evolve continuously through updates, transformations, versioning, schema changes, streaming operations, and other mechanisms. While prior work has noted connections among some of these areas, they have traditionally been studied in isolation, each with its own abstractions, algorithms, and system implementations. In this paper, we argue for unifying these diverse functionalities under a single abstraction and a common set of computational primitives. We present such an abstraction, powerful enough to encompass existing use cases and to support new ones. Going beyond previous approaches, our framework seamlessly integrates provenance tracking for system-visible operations, conditional propagation of updates, and configurable alerts on change events. It also offers a principled treatment of dependent objects such as views and derived artifacts like machine learning models, by providing declarative mechanisms to control their evolution. Finally, we sketch a prototype implementation in a relational-like database system based on an adaptation of the &quot;Prolly Tree&quot;, a Merkle tree-inspired data structure with tunable parameters to meet varying performance requirements, and present some initial experimental results.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00676v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We present a precise and general method to map the activity of electrocatalysts across multiple sites. Starting from a mean-field statistical mechanics model, we introduce an effective adsorption free energy descriptor that explicitly incorporates lateral adsorbate-adsorbate interactions, enabling the construction of coverage-consistent volcano relationships. Extending this approach, we show that adsorption energetics and interaction strength define a two-dimensional activity landscape that gives rise to a &quot;volcano ridge&quot; that captures the coupled influence of binding and interactions on catalytic performance. For multi-site systems, we demonstrate that the inherently nonlinear coupling between distinct adsorption environments leads to multi-peaked activity trends that cannot be represented by conventional single-site descriptors. To address this, we introduce a reduced descriptor mapping that projects the multidimensional activity landscape onto a single effective coordinate while preserving the underlying physics of site heterogeneity and lateral interactions. The resulting framework generalizes Sabatier-type analysis to complex alloy catalysts and provides a physically interpretable route for screening electrocatalytic materials of arbitrary compositional complexity.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02688v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00665v1" target="_blank" rel="noopener noreferrer">
-      Prediction of Alzheimer&#x27;s Disease Risk Factors from Retinal Images via Deep Learning: Development and Validation of Biologically Relevant Morphological Associations in the UK Biobank
+    <a href="https://arxiv.org/pdf/2605.02684v1" target="_blank" rel="noopener noreferrer">
+      Spectral Model eXplainer: a chemically-grounded explainability framework for spectral-based machine learning models
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Seowung Leem, Yunchao Yang, Adam J. Woods, Ruogu Fang</span>
+    <span class="paper-authors">Jose Vinicius Ribeiro, Rafael Figueira Goncalves, Fabio Luiz Melquiades, Sylvio Barbon Junior</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">The systemic, metabolic, lifestyle factors have established associations with Alzheimer&#x27;s Disease (AD) through epidemiologic and AD-specific biomarker studies. Whether colored fundus photography (CFP) contains retinal structural signatures corresponding to these AD-related risk domains remains unclear. To determine whether deep learning (DL) models can predict 12 AD-related risk factors from CFP and to characterize the retinal structures underlying these predictions, thereby assessing whether CFP reflects pathways to AD vulnerability. Using UK Biobank CFPs, DL models were trained using 62,876 images from 44,501 unique participants to predict 12 factors linked to AD incidence: 6 categorical (sex, smoking, sleeplessness, economic status, alcohol use, depression) and 6 continuous (age, age at completing education, BMI, systolic, diastolic blood pressure, HbA1c). Model performance, model saliency, and saliency-derived scores (CAM-Score) were evaluated and compared to retinal morphometry. The scores were also compared between incident-AD cases (average 8.55 years before onset) and matched controls. Performance of DL ranged from AUROC= 0.5654-0.9480 for categorical and R2=-0.0291-0.7620 for continuous factors, outperforming most of the morphometry-machine learning models. Saliency-based score consistently highlighted biologically meaningful regions, particularly the optic nerve head and retinal vasculature. It also aligned with present morphometric variations. Several saliency-based scores differed significantly between incident AD and matched controls, suggesting potential overlap between retinal correlates of risk factors and preclinical AD-associated changes. CFP encodes retinal signatures linked to AD risk factors. Although not diagnostic, DL-derived retinal representations may uncover biologically meaningful risk-related structural changes mirroring the potential AD vulnerability.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00665v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Spectral-based machine learning models have been increasingly deployed in chemometrics and spectroscopy, where predictive accuracy is as important as explainability. Current employed eXplainable Artificial Intelligence (XAI) methods are largely adapted from tabular or generic multivariate domains, assigning relevance to isolated spectral variables rather than to the chemically meaningful spectral zones. Widely adopted tools such as SHapley Additive exPlanations (SHAP), Permutation Feature Importance (PFI), and Variable Importance in Projection scores (VIP) were not designed for the physical continuity and high collinearity of spectral data, and their variable-level outputs require post-hoc aggregation to recover zone-level information. This study introduces the Spectral Model eXplainer (SMX), a post-hoc, global, model-agnostic XAI framework that explains spectral classifiers through expert-informed spectral zones. SMX summarizes each zone via PCA, defines quantile-based logical predicates, estimates predicate relevance with perturbation in stochastic subsamples, and aggregates bag-wise rankings in a directed weighted graph summarized by Local Reaching Centrality. A key component is threshold spectrum reconstruction, which back-projects predicate boundaries to the original spectral domain in natural measurement units, enabling direct visual comparison with measured spectra. The method was evaluated on eight real spectral datasets (six based on X-ray Fluorescence--XRF and two based on Gamma-ray Spectrometry) and one synthetic benchmark with known gr</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02684v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00662v1" target="_blank" rel="noopener noreferrer">
-      Spiking Sequence Machines and Transformers
+    <a href="https://arxiv.org/pdf/2605.02655v1" target="_blank" rel="noopener noreferrer">
+      Temporal State Tomography via Quantum Snapshotting the Temporal Quasiprobabilities
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Joy Bose</span>
+    <span class="paper-authors">Zhian Jia</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">Sequence learning reduces to similarity-based retrieval over a temporally indexed representation space, a constraint on any sequence model, not a property of a specific architecture. We show that a spiking Sparse Distributed Memory sequence machine (2007) and the transformer (2017) independently instantiate the same five functional operations (encoding, context maintenance, associative retrieval, storage, and decoding), with cosine similarity as the shared retrieval primitive in both. We formalise a Phase-Latency Isomorphism showing that sinusoidal positional phase and spike timing are linearly related, and prove that dot product attention is invariant to this mapping up to a global scale factor on the positional component (Lemma 1). Empirically, frequency-compressed positional encoding fails to converge on a positionally demanding copy task, while a learned rank-based embedding matches or exceeds sinusoidal encoding, indicating that the critical property for positional representation is distance discriminability under dot-product similarity, not sinusoidal form. Time, phase, and rank are three instantiations of the same computational primitive, an ordered index whose structure survives similarity-based retrieval.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00662v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Quantum tomography is a cornerstone of quantum information science, enabling the reconstruction of states and channels from experimental data. Here we introduce a new paradigm, temporal state tomography (TST), for reconstructing quantum processes across multiple times. Our approach is based on temporal quasiprobability distributions (TQDs), which, in the informationally complete setting, provide a complete description of multi-time quantum processes and uniquely determine temporal states. We formulate TST as a unified framework for reconstructing both density operators and quantum channels within a single scheme. We show that any TQD can be obtained via classical post-processing of measurement outcomes generated by a fixed set of quantum instruments, thereby establishing a direct operational route to accessing TQDs experimentally. For informationally complete TQDs, the associated temporal state can be reconstructed via a temporal Bloch-type representation. Leveraging this correspondence, we derive the sample complexity of TST, thereby quantifying its statistical efficiency.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02655v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00659v1" target="_blank" rel="noopener noreferrer">
-      The NIKA2 Cosmological Legacy Survey in COSMOS: Final 1.2mm and 2mm source catalogs and redshift distribution of dusty star-forming galaxies
+    <a href="https://arxiv.org/pdf/2605.02650v1" target="_blank" rel="noopener noreferrer">
+      Thermodynamic completeness in quantum and classical Markovian dynamics
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">C. R. Carvajal-Bohorquez, G. Lagache, A. Beelen, R. Adam, P. Ade, H. Ajeddig, S. Amarantidis, P. André, M. Aravena, H. Aussel, A. Benoît, S. Berta, M. Béthermin, L. -J. Bing, A. Bongiovanni, J. Bounmy, O. Bourrion, M. Calvo, Caitlin M. Casey, A. Catalano, D. Chérouvrier, U. Chowdhury, M. De Petris, F. -X. Désert, S. Doyle, E. F. C. Driessen, G. Ejlali, A. L. Faisst, A. Ferragamo, A. Gomez, J. Goupy, C. Hanser, Shuowen Jin, Jeyhan S. Kartaltepe, S. Katsioli, F. Kéruzoré, C. Kramer, B. Ladjelat, S. Leclercq, J. -F. Lestrade, J. F. Macías-Pérez, S. C. Madden, Felix Martinez, A. Maury, F. Mayet, A. Monfardini, A. Moyer-Anin, M. Muñoz-Echeverría, I. Myserlis, R. Neri, A. Paliwal, L. Perotto, G. Pisano, N. Ponthieu, V. Revéret, A. J. Rigby, A. Ritacco, H. Roussel, F. Ruppin, M. Sánchez-Portal, S. Savorgnano, K. Schuster, A. Sievers, S. Toft, C. Tucker, Jorge A. Zavala, R. Zylka</span>
+    <span class="paper-authors">Yang Tian</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">We present the final 1.2mm and 2mm source catalogs and the redshift distribution of the mm-selected population from the NIKA2 Cosmological Legacy Survey (N2CLS) in the COSMOS field. Our aim is to provide a comprehensive dataset for studying the physical properties and evolution of high-redshift DSFGs. N2CLS covers ~1070 arcmin2 with median noise levels of 315$μ$Jy and 91$μ$Jy at 1.2 and 2mm, respectively. Sources are extracted with a S/N threshold of 3.9, ensuring &gt;80% purity. Multi-wavelength counterparts are identified using high-resolution interferometric (sub-)mm data (NOEMA, ALMA) and radio observations (VLA, MeerKAT). Redshifts are compiled from spectroscopic and photometric catalogs (e.g., COSMOSWeb). The N2CLS master catalog includes 323 sources detected at &gt;80% purity, with 104 sources detected in both bands, 197 only at 1.2mm, and 22 only at 2mm. Multi-wavelength identifications are secured for ~89% of the sample. The redshift distribution of 1.2mm sources peaks at 2.8$\pm$0.1, consistent with the epoch of peak cosmic star formation. In the total sample, we lack redshift for ~2% of the identified galaxies, plus 34 sources for which no accurate positional proxy is available, preventing the identification of a multi-wavelength counterpart. We identify 66 galaxies at z&gt;4. The observed redshift distribution agrees well with the SIDES simulations, while four other galaxy evolution models are statistically inconsistent with the data. N2CLS is the largest contiguous deep survey to date with this depth and homogeneous coverage. This homogeneous coverage is important, as 25% of N2CLS sources lack a SCUBA2 850 mic counterpart, likely because the strongly non-uniform noise distribution of the SCUBA2 map results in lower sensitivity in parts of the field.The released data products provide a legacy dataset for studying dust-obscured galaxy evolution.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00659v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We develop a path-space action formulation for quantum and classical Markovian thermodynamics that addresses a reconstruction problem: which thermodynamic observables can be inferred from state trajectories alone, and which require additional current or measurement record? The formulation treats the state trajectory and the thermodynamic record as distinct components of a Markovian path. In quantum systems, the record is specified by a quantum instrument; in the commutative classical representation, it is a density current constrained by a continuity equation. The main result is a thermodynamic completeness test. It identifies current or measurement-record perturbations that do not change the state trajectory and shows that any observable changed by such a perturbation cannot be reconstructed from state data alone. Hence two Markovian models can have the same state generator, stationary state, linear response, and local state geometry, but different thermodynamic current means or current noise. For quantum Markovian dynamics, an unconditioned density-matrix generator therefore does not determine heat-current, particle-transfer, photon-counting, spin-transfer, or continuous-measurement statistics; the quantum instrument and the thermodynamic increment assigned to each record outcome must also be specified. For classical density-current dynamics, the same test identifies hidden exchange, reaction, transport, and kinetic current records that are eliminated by the projection to the state trajectory. We further show that this incompleteness has geometric and topological origins: the current-space Hessian projects to a quotient state geometry, while graph cycles, divergence-free currents, and harmonic currents span directions invisible to state observations.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02650v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.00649v1" target="_blank" rel="noopener noreferrer">
-      Budget Constraints as Riemannian Manifolds
+    <a href="https://arxiv.org/pdf/2605.02648v1" target="_blank" rel="noopener noreferrer">
+      A Virgo Environmental Survey Tracing Ionised Gas Emission (VESTIGE). XXI. Statistical properties of individual HII regions in perturbed galaxies
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Michael Helcig, Dan Alistarh</span>
+    <span class="paper-authors">A. Boselli, M. Fossati, Y. Roehlly, M. Boquien, J. Braine, P. Cote, J. C. Cuillandre, B. Epinat, L. Ferrarese, S. Gwyn, G. Hensler</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-01</span>
+    <span class="paper-date">2026-05-04</span>
   </p>
-  <p class="paper-abstract">Assigning one of K options to each of N groups under a total cost budget is a recurring problem in machine learning, appearing in mixed-precision quantization, non-uniform pruning, and expert selection. The objective (model loss) depends jointly on all assignments and does not decompose across groups, which prevents combinatorial solvers from optimizing the true objective directly and limits them to proxy objectives. Evolutionary search evaluates the actual loss but lacks gradient information, while penalty-based methods provide gradients but enforce the budget only approximately and require sensitive hyperparameter tuning. We observe that under softmax relaxation, the budget constraint defines a smooth Riemannian manifold in logit space with particularly simple geometry: the normal vector is available in closed form, shifting logits along the cost vector changes expected cost monotonically, allowing binary-search retraction, and vector transport reduces to a single inner product. Building on this structure, we propose Riemannian Constrained Optimization (RCO), which augments a standard Adam update with tangent projection, binary-search retraction, and momentum transport. Combined with Gumbel straight-through estimation and budget-constrained dynamic programming for discrete feasibility, RCO enables first-order optimization of the true objective under exact budget enforcement, without introducing constraint hyperparameters. On synthetic knapsack problems with known optima, the manifold-based constraint handling recovers optimal solutions, whereas penalty methods plateau at 83% of optimal. On LLM compression tasks, including mixed-precision quantization and MoE expert pruning, RCO matches or exceeds evolutionary search methods while requiring 3x to 16x lower wall-clock cost on the evaluated configurations.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.00649v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We use narrow-band Halpha+[NII] imaging data gathered during VESTIGE, a blind survey of the Virgo cluster carried out with MegaCam at the CFHT, to identify HII regions in 385 galaxies showing ionised gas emission. We identify 76645 HII regions in 322 star-forming galaxies and study their physical properties for those above the completeness limit (L(Ha)&gt;=10^37 erg s-1). The present work is focused on perturbed cluster galaxies, identified as those having a reduced amount of HI when compared to similar objects in the field. We derive composite luminosity functions, diameter and electron density distributions, and several scaling relations, and compare them to those already derived for gas-rich, unperturbed systems identified during the VESTIGE survey. The analysis shows that the statistical and physical properties of HI gas-deficient cluster galaxies are different from those of unperturbed systems, with perturbed objects having a steeper faint-end slope and a brighter characteristic Ha luminosity than gas-rich galaxies. The difference in the two distributions comes principally from the outer disc (outside the effective radius). The analysis of the scaling relations indicates that perturbed objects have a lower number of HII regions per unit stellar mass and disc surface than unperturbed systems, with differences increasing with the HI-deficiency parameter, principally in the outer disc where HII regions are less present in gas-poor systems. All these differences can be explained in the framework of galaxy evolution in rich environments, where their hydrodynamic interaction with the surrounding ICM (ram pressure) removes the gas outside-in quenching the star formation activity in the outer disc once the HI is removed.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.02648v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
