@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-05-06 02:49 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-05-07 02:50 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.04045v1" target="_blank" rel="noopener noreferrer">
-      Audio-Visual Intelligence in Large Foundation Models
+    <a href="https://arxiv.org/pdf/2605.05198v1" target="_blank" rel="noopener noreferrer">
+      S-LCG: Structured Linear Congruential Generator-Based Deterministic Algorithm for Search and Optimization
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">You Qin, Kai Liu, Shengqiong Wu, Kai Wang, Shijian Deng, Yapeng Tian, Junbin Xiao, Yazhou Xing, Yinghao Ma, Bobo Li, Roger Zimmermann, Lei Cui, Furu Wei, Jiebo Luo, Hao Fei</span>
+    <span class="paper-authors">Ahmed Qasim Mohammed, Haider Banka, Anamika Singh</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">Audio-Visual Intelligence (AVI) has emerged as a central frontier in artificial intelligence, bridging auditory and visual modalities to enable machines that can perceive, generate, and interact in the multimodal real world. In the era of large foundation models, joint modeling of audio and vision has become increasingly crucial, i.e., not only for understanding but also for controllable generation and reasoning across dynamic, temporally grounded signals. Recent advances, such as Meta MovieGen and Google Veo-3, highlight the growing industrial and academic focus on unified audio-vision architectures that learn from massive multimodal data. However, despite rapid progress, the literature remains fragmented, spanning diverse tasks, inconsistent taxonomies, and heterogeneous evaluation practices that impede systematic comparison and knowledge integration. This survey provides the first comprehensive review of AVI through the lens of large foundation models. We establish a unified taxonomy covering the broad landscape of AVI tasks, ranging from understanding (e.g., speech recognition, sound localization) to generation (e.g., audio-driven video synthesis, video-to-audio) and interaction (e.g., dialogue, embodied, or agentic interfaces). We synthesize methodological foundations, including modality tokenization, cross-modal fusion, autoregressive and diffusion-based generation, large-scale pretraining, instruction alignment, and preference optimization. Furthermore, we curate representative datasets, benchmarks, and evaluation metrics, offering a structured comparison across task families and identifying open challenges in synchronization, spatial reasoning, controllability, and safety. By consolidating this rapidly expanding field into a coherent framework, this survey aims to serve as a foundational reference for future research on large-scale AVI.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.04045v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">This study presents a novel deterministic optimization algorithm based on a special variant of the Linear Congruential Generator (LCG). While conventional algorithms generally operate within the search space, the introduced technique follows a two-level architecture. In particular, an external loop that adaptively balances between exploration and exploitation, while the internal loop evaluates solutions. It is motivated by the intrinsic structure of the generator, the reason behind naming it the Structured Linear Congruential Generator (S- LCG). which enjoys a number of unique characteristics as follows: 1) a memoryless scheme, which ensures non-overlapping sequences based on distinct seeds, thus ensuring no evaluation redundancy; 2) bit splitting representation, which converts LCG states into multi-dimensional points to overcome the Marsaglia lattice effect; 3) adaptive exploration-exploitation of the generator space, which leads to implicit optimization of the surrogate smooth objective function; and 4) constant information gathering speed to avoid the problem of premature convergence. Extensive testing on 26 benchmark functions across dimensions d = 2 to 30 demonstrates that S-LCG comes within 1% of the global optimum in 83.3% of 138 cases (100% at d = 2, 81.2% at d = 30) while the nearest competitor GA achieved 75.4%. Statistical validation shows that S-LCG outperforms eight cutting-edge binary algorithms. Furthermore, its practical value is confirmed by validation on three constrained engineering design problems. In the end, S-LCG offers an optimization framework that is strictly reproducible and requires only one sensitive parameter to be tuned.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05198v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.04033v1" target="_blank" rel="noopener noreferrer">
-      Probabilistic-bit Guided CDCL for SAT Solving using Ising Consensus Assumptions
+    <a href="https://arxiv.org/pdf/2605.05179v1" target="_blank" rel="noopener noreferrer">
+      Estimating the expected output of wide random MLPs more efficiently than sampling
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Melki Bino</span>
+    <span class="paper-authors">Wilson Wu, Victor Lecomte, Michael Winer, George Robinson, Jacob Hilton, Paul Christiano</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">Boolean satisfiability (SAT) solvers are widely used in hardware verification, cryptanalysis, automatic test-pattern generation, and side-channel reasoning workflows. Modern conflict-driven clause-learning (CDCL) solvers are highly effective, but satisfiable instances may still require substantial conflict analysis and Boolean propagation before identifying productive regions of the search space. This paper studies a hybrid SAT-solving framework in which a probabilistic-bit (p-bit) Ising sampler proposes high-agreement literals that are passed to CDCL as temporary assumptions. The goal is not to replace CDCL, but to evaluate whether stochastic low-violation samples can reduce CDCL internal search effort while retaining correctness through CDCL fallback. On selected controlled-backbone random 3-SAT benchmarks, the hybrid method reduces median conflicts by 80.8-85.5% and median propagations by 80.2-84.6% relative to pure CDCL. The observed benefit is distribution-sensitive, suggesting that p-bit guidance is effective only for certain instance classes. We further report exploratory machine-learning gates that estimate when hybrid solving is likely to help. On the selected run, a random-forest gate retains 94.8% of hybrid wins, indicating that lightweight gating may help avoid unproductive hybrid calls.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.04033v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">By far the most common way to estimate an expected loss in machine learning is to draw samples, compute the loss on each one, and take the empirical average. However, sampling is not necessarily optimal. Given an MLP at initialization, we show how to estimate its expected output over Gaussian inputs without running samples through the network at all. Instead, we produce approximate representations of the distributions of activations at each layer, leveraging tools such as cumulants and Hermite expansions. We show both theoretically and empirically that for sufficiently wide networks, our estimator achieves a target mean squared error using substantially fewer FLOPs than Monte Carlo sampling. We find moreover that our methods perform particularly well at estimating the probabilities of rare events, and additionally demonstrate how they can be used for model training. Together, these findings suggest a path to producing models with a greatly reduced probability of catastrophic tail risks.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05179v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.03737v1" target="_blank" rel="noopener noreferrer">
-      Discovering Reaction Mechanisms with Transition Path Sampling-Based Active Learning of Machine-Learned Potentials
+    <a href="https://arxiv.org/pdf/2605.05161v1" target="_blank" rel="noopener noreferrer">
+      Wasserstein-Aligned Localisation for VLM-Based Distributional OOD Detection in Medical Imaging
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ashique Lal, Rik S. Breebaart, Peter G. Bolhuis, Evert Jan Meijer</span>
+    <span class="paper-authors">Bernhard Kainz, Johanna P Mueller, Matthew Baugh, Cosmin Bercea</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">Machine-learned interatomic potentials (MLPs) provide near density functional theory (DFT) accuracy at reduced computational cost, but their reliability depends on representative training data and often deteriorates in transition-state regions governing rare events. We introduce an active-learning framework in which Transition Path Sampling (TPS) serves as a targeted data-generation engine for constructing MLPs accurate in barrier regions. TPS generates ensembles of unbiased reactive trajectories, and a committee-based uncertainty estimate identifies configurations for selective DFT labeling and retraining. Iterating this cycle systematically refines the potential energy surface in dynamically relevant regions, without the need of prior knowledge of the mechanism. Applied to electrochemical CO$_2$ reduction to CO on copper in explicit water, the approach removes nonphysical artifacts present in early models, achieves near-DFT energy and force accuracy, and enables stable long-time sampling of reactive pathways. Extended TPS simulations reveal multiple dynamically accessible protonation mechanisms. This work establishes TPS as an efficient and principled active-learning strategy for reactive molecular simulations at electrochemical interfaces.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.03737v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Zero-shot anomaly localisation via vision-language models (VLMs) offers a compelling approach for rare pathology detection, yet its performance is fundamentally limited by the absence of healthy anatomical context. We reformulate zero-shot localisation as a comparative inference problem in which anomalies are identified through structured comparison against reference distributions of normal anatomy. We introduce WALDO, a training-free framework grounded in optimal transport theory that enables comparative reasoning through: (i) entropy-weighted Sliced Wasserstein distances for anatomically-aware reference selection from DINOv2 patch distributions, (ii) Goldilocks zone sampling exploiting the non-monotonic relationship between reference similarity and localisation accuracy, and (iii) self-consistency aggregation via weighted non-maximum suppression. We theoretically analyse the Goldilocks effect through distributional divergence, and show that references with moderate similarity minimize a bias-variance trade-off in comparative visual reasoning. On the NOVA brain MRI benchmark, WALDO with Qwen2.5-VL-72B achieves $43.5_{\pm1.6}\%$ mAP@30 (95\% CI: [40.4, 46.7]), representing a 19\% relative improvement over zero-shot baselines. Cross-model evaluation shows consistent gains: GPT-4o achieves $32.0_{\pm6.5}\%$ and Qwen3-VL-32B achieves $32.0_{\pm6.6}\%$ mAP@30. Paired McNemar tests confirm statistical significance ($p&lt;0.01$). Source code is available at https://github.com/bkainz/WALDO_MICCAI26_demo .</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05161v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.04013v1" target="_blank" rel="noopener noreferrer">
-      Conditional Diffusion Sampling
+    <a href="https://arxiv.org/pdf/2605.05157v1" target="_blank" rel="noopener noreferrer">
+      Are PTA measurements sensitive to gravitational wave non-Gaussianities?
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Francisco M. Castro-Macías, Pablo Morales-Álvarez, Saifuddin Syed, Daniel Hernández-Lobato, Rafael Molina, José Miguel Hernández-Lobato</span>
+    <span class="paper-authors">Chiara Cecchini, Jonas El Gammal, Gabriele Franciolini, Mauro Pieroni</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">Sampling from unnormalized multimodal distributions with limited density evaluations remains a fundamental challenge in machine learning and natural sciences. Successful approaches construct a bridge between a tractable reference and the target distribution. Parallel Tempering (PT) serves as the gold standard, while recent diffusion-based approaches offer a continuous alternative at the cost of neural training. In this work, we introduce Conditional Diffusion Sampling (CDS), a framework that combines these two paradigms. To this end, we derive Conditional Interpolants, a class of stochastic processes whose transport dynamics are governed by an exact, closed-form stochastic differential equation (SDE), requiring no neural approximation. Although these dynamics require sampling from a non-trivial initialization distribution, we show both theoretically and empirically that the cost of this initialization diminishes for sufficiently short diffusion times. CDS leverages this by a two-stage procedure: (1) PT is used to efficiently sample the initial distribution, and then (2) samples are transported via the transport SDE. This combination couples the robust global exploration of PT with efficient local transport. Experiments suggest that CDS has the potential to achieve a superior trade-off between sample quality and density evaluation cost compared to state-of-the-art samplers.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.04013v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Observing non-Gaussianity in the timing residuals of Pulsar Timing Arrays (PTAs) has recently attracted attention as a potential discriminator between astrophysical and cosmological origins of the observed Gravitational Wave (GW) signal. In this work, we show that even in an idealized signal-dominated setup, after decorrelating data to avoid spurious detections, statistical tests applied to PTA data cannot distinguish between Gaussian and non-Gaussian GWBs in a model-agnostic way. In particular, without making strong assumptions on the GW spectrum or the properties of the population, the sensitivity to any distinctive non-Gaussian feature is washed out.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05157v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.04004v1" target="_blank" rel="noopener noreferrer">
-      Structural Limits of OHLCV-Based Intraday Signals in MNQ Futures: A Systematic Falsification Study
+    <a href="https://arxiv.org/pdf/2605.05136v1" target="_blank" rel="noopener noreferrer">
+      CPCANet: Deep Unfolding Common Principal Component Analysis for Domain Generalization
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Mathias Mesfin</span>
+    <span class="paper-authors">Yu-Hsi Chen, Abd-Krim Seghouane</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">This paper tests whether intraday momentum signals derived from open-high-low-close-volume (OHLCV) data produce a statistically significant trading edge in Micro E-mini Nasdaq 100 futures (MNQ) under realistic execution constraints. Using 947 trading days of five-minute data (2021-2025), fourteen signal families are evaluated, including opening range breakouts, gap strategies, volume signals, cross-session momentum, liquidity grabs, volatility-conditioned classifiers, and news-driven strategies. All signals are assessed using strict institutional criteria: out-of-sample walk-forward validation, minimum T-statistic of 2.0, at least 30 trades, positive net return after a fixed two-point round-trip cost, and multi-year stability. No signal satisfies all criteria simultaneously. The gross edge available to next-bar-open execution is constrained to approximately 0.07-1.50 points per trade, insufficient to overcome transaction costs. A gap-continuation signal achieves T = 3.23 and +14.52 points but fails minimum sample requirements (N = 22). Two validated signals from a separate research program are included as positive controls, confirming the methodology detects genuine edge when present. The primary contribution is a reproducible falsification framework and a documented null result, highlighting structural limits of OHLCV-based intraday strategies.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.04004v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Domain Generalization (DG) aims to learn representations that remain robust under out-of-distribution (OOD) shifts and generalize effectively to unseen target domains. While recent invariant learning strategies and architectural advances have achieved strong performance, explicitly discovering a structured domain-invariant subspace through second-order statistics remains underexplored. In this work, we propose CPCANet, a novel framework grounded in Common Principal Component Analysis (CPCA), which unrolls the iterative Flury-Gautschi (FG) algorithm into fully differentiable neural layers. This approach integrates the statistical properties of CPCA into an end-to-end trainable framework, enforcing the discovery of a shared subspace across diverse domains while preserving interpretability. Experiments on four standard DG benchmarks demonstrate that CPCANet achieves state-of-the-art (SOTA) performance in zero-shot transfer. Moreover, CPCANet is architecture-agnostic and requires no dataset-specific tuning, providing a simple and efficient approach to learning robust representations under distribution shift. Code is available at https://github.com/wish44165/CPCANet.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05136v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.03997v1" target="_blank" rel="noopener noreferrer">
-      Uncertainty Quantification in Forecast Comparisons
+    <a href="https://arxiv.org/pdf/2605.05125v1" target="_blank" rel="noopener noreferrer">
+      Joint Treatment Effect Estimation from Incomplete Healthcare Data: Temporal Causal Normalizing Flows with LLM-driven Evolutionary MNAR Imputation
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Marc-Oliver Pohle, Tanja Zahn, Sebastian Lerch</span>
+    <span class="paper-authors">Olivia Jullian Parra, Sara Zoccheddu, David Catalan Cerezo, Tom Forzy, Franziska Ulrich, William Sutcliffe, Jakob Martin Burgstaller, Oliver Senn, Patrick Owen, Nicola Serra</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">Skill scores, which measure the relative improvement of a forecasting method over a benchmark via consistent scoring functions and proper scoring rules, are a standard tool in forecast evaluation, yet their sampling uncertainty is rarely rigorously quantified. With modern forecasting applications being increasingly multivariate and involving evaluations across multiple horizons, variables, spatial locations, and forecasting methods, standard tools like the pairwise Diebold-Mariano forecast accuracy test or pointwise confidence intervals fail to account for the multiple comparison problem, leading to inflated Type I error rates and invalid joint inference. To address the lack of a coherent, statistically rigorous framework for quantifying uncertainty across these multi-dimensional evaluation problems, we introduce simultaneous confidence bands for expected scores and skill scores. Our framework provides a versatile tool for joint inference that is applicable to any forecast type from mean and quantile to full distributional forecasts. We develop a bootstrap implementation and show that our bands are valid under multivariate extensions of the classical Diebold-Mariano assumptions. We demonstrate the practical utility of the approach in two case studies by quantifying the benefits of time-varying parameter models for macroeconomic forecasting, and by comparing data-driven and physics-based models in probabilistic weather forecasting.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.03997v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Target trial emulation (TTE) enables causal questions to be studied with observational data when randomized controlled trials (RCTs) are infeasible. Yet treatment-effect methods often address causal estimation, missingness, and temporal structure separately, limiting their robustness in electronic health records (EHRs), where time-varying confounding and missing-not-at-random (MNAR) biomarkers can reach 50%--80%. We propose a two-stage pipeline for treatment effect estimation from incomplete longitudinal EHRs. First, CausalFlow-T, a directed acyclic graph (DAG)-constrained normalizing flow with long short-term memory (LSTM)-encoded patient history, performs exact invertible counterfactual inference, avoiding approximation errors from variational inference and separating confounding through explicit causal structure. Ablations on four synthetic and one semi-synthetic benchmark with known counterfactuals show that DAG constraints and exact inference address distinct failure modes: neither compensates for the other. Second, because CausalFlow-T requires completed inputs, we introduce an LLM-driven evolutionary imputer that proposes executable imputation operators rather than individual entries, and evaluate it with three large language model (LLM) backends, including two open-source models. Across 30%--80% MNAR missingness, this imputer achieves the best pooled rank over biomarker and causal metrics, leading in point-wise accuracy and temporal extrapolation while preserving average treatment effect (ATE) recovery as statistical baselines degrade. On Swiss primary-care EHRs from adults with type 2 diabetes initiating a GLP-1 receptor agonist or SGLT-2 inhibitor, the pipeline estimates a per-protocol weight-loss difference of -0.98 kg [95% CI -1.01, -0.96] favoring GLP-1 receptor agonists, consistent with randomized evidence and obtained from realistically incomplete real-world EHRs.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05125v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.03980v1" target="_blank" rel="noopener noreferrer">
-      Do Venture Capitalists Beat Random Allocation?
+    <a href="https://arxiv.org/pdf/2605.05120v1" target="_blank" rel="noopener noreferrer">
+      Physiologically Grounded Driver Behavior Classification: SHAP-Driven Elite Feature Selection and Hybrid Gradient Boosting for Multimodal Physiological Signals
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Max Sina Knicker, Jean-Philippe Bouchaud, Michael Benzaquen</span>
+    <span class="paper-authors">Sahar Askari, Mohammad Mahdi Mirza Ali Mohammadi, Fatemeh Ensafdoust, Amin Golnari, Saeid Sanei</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">Venture capital outcomes are dominated by a small number of extreme successes, making it difficult to distinguish investor skill from favorable realizations in a highly skewed return distribution. We study this question by comparing empirical VC portfolios to a constrained random benchmark that preserves key portfolio characteristics, including timing, geography, sector composition, and portfolio size, while randomizing individual company selection. Across funding stages, empirical portfolio distributions appear remarkably close to their random benchmarks. We find no evidence that portfolio construction increases the probability of high-multiple outcomes: the right tail remains statistically indistinguishable from random allocation. Deviations in the lower part of the distribution are small and sensitive to the interpretation of zero outcomes, suggesting at most weak evidence of downside improvement. We further introduce a rank-based benchmark distribution to evaluate outperformance at each position in the cross-section. This analysis shows that even the best-performing portfolios do not exceed the outcomes expected for their rank under random sampling. Our results suggest that VC portfolio outcomes are largely consistent with constrained random allocation, highlighting the difficulty of identifying aggregate skill in heavy-tailed investment environments. A similar conclusion holds for the performance of financial analysts in predicting future earnings.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.03980v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">An interpretable and scalable framework for decoding driving behaviors from multimodal physiological signals is proposed in this study. We utilize multimodal physiological driving behavior large-scale dataset comprising synchronized electroencephalogram (EEG), electromyography (EMG), and galvanic skin response (GSR) signals. Our approach involves rigorous preprocessing followed by a domain-specific feature extraction pipeline targeting time-domain, frequency-domain, and derived physiological indices. To address high dimensionality, we employ SHAP-based elite feature selection, retaining the top 250 features to reduce computational overhead while preserving predictive power. Hyperparameter optimization for extreme gradient boosting (XGBoost) and light gradient boosting machine (LightGBM) models is conducted using Bayesian optimization via Optuna. Finally, a weighted soft-voting ensemble is constructed to leverage the complementary strengths of both gradient boosting frameworks. The results demonstrate that the proposed ensemble achieves a test accuracy of 80.91% and a macro-F1 score of 0.79, significantly outperforming single-modality baselines and traditional machine learning models. Ablation studies confirm an 8% performance gain over the best single modality (EEG), validating the necessity of multimodal fusion. SHAP analysis further validates the physiological plausibility of the model, revealing that the EEG contributes the majority of predictive weight, GSR and EMG features provide critical discriminatory signals for high-arousal and motor-intensive maneuvers.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05120v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.03964v1" target="_blank" rel="noopener noreferrer">
-      Pretrained Model Representations as Acquisition Signals for Active Learning of MLIPs
+    <a href="https://arxiv.org/pdf/2605.05090v1" target="_blank" rel="noopener noreferrer">
+      Automatically Finding and Validating Unexpected Side-Effects of Interventions on Language Models
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Eszter Varga-Umbrich, Shikha Surana, Paul Duckworth, Jules Tilly, Olivier Peltre, Zachary Weller-Davies</span>
+    <span class="paper-authors">Quintin Pope, Ajay Hayagreeve Balaji, Jacques Thibodeau, Xiaoli Fern</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">Training machine learning interatomic potentials (MLIPs) for reactive chemistry is often bottlenecked by the high cost of quantum chemical labels and the scarcity of transition state configurations in candidate pools. Active learning (AL) can mitigate these costs, but its effectiveness hinges on the acquisition rule. We investigate whether the latent space of a pretrained MLIP already contains the information necessary for effective acquisition, eliminating the need for auxiliary uncertainty heads, Bayesian training and fine-tuning, or committee ensembles. We introduce two acquisition signals derived directly from a pretrained MACE potential: a finite-width neural tangent kernel (NTK) and an activation kernel built from hidden latent space features. On reactive-chemistry benchmarks, both kernels consistently outperform fixed-descriptor baselines, committee disagreement, and random acquisition, reducing the data required to reach performance targets by an average of 38% for energy error and 28% for force error. We further show that the pretrained model induces similarity spaces that preserve chemically meaningful structure and provide more reliable residual uncertainty estimates than randomly initialised or fixed-descriptor-based kernels. Our results suggest that pretraining aligns latent-space geometry with model error, yielding a practical and sufficient acquisition signal for reactive MLIP fine-tuning.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.03964v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We present an automated, contrastive evaluation pipeline for auditing the behavioral impact of interventions on large language models. Given a base model $M_1$ and an intervention model $M_2$, our method compares their free-form, multi-token generations across aligned prompt contexts and produces human-readable, statistically validated natural-language hypotheses describing how the models differ, along with recurring themes that summarize patterns across validated hypotheses. We evaluate the approach in synthetic setting by injecting known behavioral changes and showing that the pipeline reliably recovers them. We then apply it to three real-world interventions, reasoning distillation, knowledge editing and unlearning, demonstrating that the method surfaces both intended and unexpected behavioral shifts, distinguishes large from subtle interventions, and does not hallucinate differences when effects are absent or misaligned with the prompt bank. Overall, the pipeline provides a statistically grounded and interpretable tool for post-hoc auditing of intervention-induced changes in model behavior.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05090v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.03959v1" target="_blank" rel="noopener noreferrer">
-      Extended-variable relaxations for the constrained generalized maximum-entropy sampling problem
+    <a href="https://arxiv.org/pdf/2605.05084v1" target="_blank" rel="noopener noreferrer">
+      Order Matters: Improving Domain Adaptation by Reordering Data
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Gabriel Ponte, Kurt Anstreicher, Marcia Fampa, Jon Lee</span>
+    <span class="paper-authors">Andrea Napoli, Paul White</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">The constrained generalized maximum-entropy sampling problem (CGMESP) is to select an order-s principal submatrix from an order-n covariance matrix, subject to some linear side constraints, so as to maximize the product of its t greatest eigenvalues, 0 &lt; t &lt;= s &lt;n. GMESP refers to the version with no side constraints. Introduced more than 25 years ago, CGMESP is a natural generalization of two fundamental problems in statistical design theory: (i) constrained maximum-entropy sampling problem (CMESP); (ii) binary D-optimality (D-Opt). In the general case, it can be motivated by a selection problem in the context of principal component analysis (PCA). We present novel non-convex extended variable formulations for CGMESP. Using these formulations as points of departure, we present, first non-convex and then convex, continuous relaxations for CGMESP. We demonstrate many relations between different upper bounds for CGMESP, including upper bounds from the literature and our new upper bounds. We investigate the behavior of our relaxations related to the constraints linking the natural variables with the extended variables. We propose and investigate a generalized scaling technique for bound improvement. In the context of branch-and-bound, we determine the better of two natural branching techniques for fixing variables to zero. Finally, we present numerical experiments illustrating the value of our methods.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.03959v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Domain shift remains a key challenge in deploying machine learning models to the real world. Unsupervised domain adaptation (UDA) aims to address this by minimising domain discrepancy during training, but the discrepancy estimates suffer from high variance in stochastic settings, which can stifle the theoretical benefits of the method. This paper proposes Optimal Reordering of Data for Error-Reduced Estimation of Discrepancy (ORDERED), a novel unbiased stochastic variance reduction technique which reduces the discrepancy estimation error by optimising the order in which the training data are sampled. We consider two specific domain discrepancy losses (correlation alignment and the maximum mean discrepancy), formulate their stochastic estimation error as a function of the data sampling order, and propose a practical optimisation algorithm. Our simulations demonstrate reduced variance compared to related methods, and experiments on two domain shift image classification benchmarks show improved target domain accuracy.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05084v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.03958v1" target="_blank" rel="noopener noreferrer">
-      Fisher-Informational Time: A Causal-Geometric Framework for Emergent Clock Time Physical Distinguishability
+    <a href="https://arxiv.org/pdf/2605.05082v1" target="_blank" rel="noopener noreferrer">
+      External Validation of Deep Learning Models for BI-RADS Breast Density Prediction from Ultrasound Images
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">J. Sumaya-Martinez</span>
+    <span class="paper-authors">Yuxuan Chen, Arianna Bunnell, Yanqi Xu, Haoyan Yang, Thomas K. Wolfgruber, John A. Shepherd, Yiqiu Shen</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">We develop a Fisher-informational reformulation of physical time in which clock time is not regarded as a fundamental ontological substance, but as an emergent calibration of causally ordered distinguishability among physical states. The operational starting point is that clocks do not measure time itself; rather, they instantiate reproducible physical processes whose distinguishable states are correlated with other events. We introduce a causal-informational parameter, denoted by Lambda_F, defined as an accumulated Fisher-geometric distance along a causally admissible trajectory in state space. In classical statistical systems, this parameter is generated by the Fisher information metric; in quantum systems, the corresponding construction is associated with quantum Fisher information, the Bures metric, and the Fubini-Study geometry of projective Hilbert space. The manuscript distinguishes model-dependent Fisher information from quantum Fisher information, clarifies the reparameterization of Schrodinger dynamics, and gives explicit examples involving a qubit clock, an exponential decay process, and a Fisher characterization of clock quality. The proposal is positioned relative to relational time, the Page-Wootters mechanism, thermal time, quantum speed-limit relations, information geometry, and the problem of time in quantum gravity. We do not claim that relational or emergent time is new. The specific contribution is the use of Fisher distinguishability as an operational precursor from which ordinary clock time can be reconstructed. In this sense, the central statement of the paper is: time is not measured by clocks; clock time is reconstructed from the Fisher distinguishability accumulated along causally ordered physical changes.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.03958v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We externally validated three deep learning models (DenseNet121, ViT-B/32, and ResNet50) for predicting mammographic breast density from breast ultrasound exams on an independent cohort. The external validation set comprised 2,000 ultrasound exams, including 500 cancer cases defined by an initial negative exam (BI-RADS 1 or 2) followed by a cancer diagnosis within 6 months to 10 years, and 1,500 negative controls matched by manufacturer and study year. Performance was measured using patient-level AUROC across four density categories: A (fatty), B (scattered), C (heterogeneous), and D (extremely dense). As a downstream assessment, we also evaluated 10-year risk prediction by incorporating age and AI-derived density into the Tyrer-Cuzick model and comparing performance against a reference model using age and mammography-reported density. All three models performed best in extremely dense breasts (AUROC 0.868-0.899), with strong performance in fatty (0.814-0.838) and scattered density (0.764-0.799), and lower performance in heterogeneously dense breasts (0.699-0.729). DenseNet121 achieved the highest overall performance (micro-averaged AUROC 0.885), and performance across categories was comparable between internal and external testing. For risk modeling, age combined with AI-derived density yielded a lower AUROC than age combined with mammography-reported density (0.541 vs. 0.570; p = 0.23), with no statistically significant difference. These findings indicate that deep learning models generalize well to external data with different racial composition for breast density assessment. While performance is strongest in extremely dense breasts, heterogeneously dense remains more challenging, highlighting the need for targeted optimization.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05082v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.03947v1" target="_blank" rel="noopener noreferrer">
-      Effects of magnetically driven shocks on nucleosynthesis and kilonovae from neutron star mergers
+    <a href="https://arxiv.org/pdf/2605.05076v1" target="_blank" rel="noopener noreferrer">
+      High-Dimensional Statistics: Reflections on Progress and Open Problems
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yuan Feng, Oleg Korobkin, Elias R. Most, Ananda F. Smith, Christopher J. Fontes</span>
+    <span class="paper-authors">Arian Maleki, Subhabrata Sen, Sivaraman Balakrishna, Verena Zuber, Chao Gao, Rishabh Dudeja, Christos Thrampoulidis, Anru Zhang, Weijie Su, Jason M. Klusowski, Po-Ling Loh, Ali Shojaie</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">Neutron-star mergers can launch mildly relativistic to moderately relativistic outflows whose interaction with the ejecta can reshape kilonova emission. We parametrically study magnetically powered outbursts from long-lived merger remnants, such as flare-like eruptions and collapse-driven shocks, and quantify their impact on ejecta dynamics, composition, and observables. Using two-dimensional special-relativistic magnetohydrodynamic simulations, we follow magnetized blast waves injected into expanding merger ejecta for early- and late-launch scenarios across a range of shock strengths. We then post-process Lagrangian tracer histories with the nuclear reaction network WinNet and the radiative-transfer code SuperNu with realistic opacities, to connect shock heating directly to nucleosynthesis and kilonova light curves. We find that sufficiently strong shocks can reheat portions of the ejecta to nuclear statistical equilibrium, increase the electron fraction in the shocked material, and deposit entropy, leading to systematic changes in $r$-process yields. These thermodynamic and compositional changes can leave observable imprints on kilonova emission -- especially in color evolution and late-time light-curve behavior -- indicating that magnetically driven remnant variability can potentially contribute to kilonova diversity.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.03947v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Over the past two decades, the field of high-dimensional statistics has experienced substantial progress, driven largely by technological advances that have dramatically reduced the cost and effort for data collection and storage across a broad range of domains, including biology, medicine, astronomy, and the social and environmental sciences. Modern datasets are increasingly complex, often exhibiting rich dependency, heterogeneity, and other features that challenge traditional statistical methods. In response, high-dimensional statistics has evolved to address more sophisticated estimation and inference problems. This evolution has, in turn, fostered deep connections with and contributions to a wide range of research areas, including optimization, concentration of measure, random matrix theory, information theory, and theoretical computer science. Given the rapid pace of recent developments in high-dimensional statistics, our goal is to synthesize representative advances, highlight common themes and open problems, and point to important works that offer entry points into the field.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05076v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.03942v1" target="_blank" rel="noopener noreferrer">
-      Reservoir property image slices from the Groningen gas field for image translation and segmentation
+    <a href="https://arxiv.org/pdf/2605.05073v1" target="_blank" rel="noopener noreferrer">
+      Heterogeneous Judge-Aware Ranking with Sensitivity, Disagreement, and Confidence
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Abdulrahman Al-Fakih, Nabil Sariah, Ardiansyah Koeshidayatullah, SanLinn I. Kaka</span>
+    <span class="paper-authors">Shibo Yu, Yingzhou Wang, Yan Chen, Guodong Li, Jin-Hong Du</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">Reservoir characterization workflows increasingly rely on image-based and machine-learning/deep learning or even generative AI approaches, but openly available geological image datasets suitable for reproducible benchmarking remain limited. Here we describe a high-resolution dataset of reservoir-property image slices derived from the Groningen static geological model. The dataset contains aligned two-dimensional PNG images representing facies, porosity, permeability, and water saturation, generated from three-dimensional reservoir grids and prepared for downstream visualization, segmentation, and image-to-image translation tasks. In addition to the deposited original image corpus, we provide an archived software workflow for reproducing augmentation, mask generation, paired-image construction, and example baseline experiments. The resource is designed to support benchmarking of geological image analysis methods and the study of cross-domain relationships among reservoir properties. By separating the fixed image dataset from the reproducible processing workflow, this work provides a transparent foundation for reuse in geoscience, reservoir modeling, and machine-learning applications.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.03942v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Pairwise comparisons from multiple judges are central to large language model evaluation and preference modeling, yet standard ranking pipelines often pool judgments into a single score vector, treating systematic judge disagreement as noise. We propose Heterogeneous Judge-Aware (HJA) ranking, a structured multi-judge ranking framework that separates consensus ranking, judge-specific sensitivity to consensus, and residual preference disagreement. HJA thereby treats ranking, judge sensitivity, and structured disagreement as separate inferential targets.We establish conditions under which this decomposition is identifiable and develop an anchored alternating algorithm that preserves the identifying geometry. For confidence quantification, we study a fixed-panel repeated-comparison regime in which the judge panel may remain fixed or modest while information grows through repeated judgments. This yields uncertainty statements for consensus and judge-specific ranking contrasts, sensitivity parameters, pairwise probabilities, and summaries of residual disagreement.Experiments on synthetic and real multi-judge comparison data show that HJA improves recovery, robustness, uncertainty calibration, and near-tie performance relative to pooled and sensitivity-only baselines. The fitted model also provides diagnostics for judge disagreement and model-affinity patterns, giving a statistically grounded framework for ranking under heterogeneous comparative judgments.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05073v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.03933v1" target="_blank" rel="noopener noreferrer">
-      Turbulent Boundary Layer Height Scales in Hurricanes
+    <a href="https://arxiv.org/pdf/2605.05071v1" target="_blank" rel="noopener noreferrer">
+      Look Once, Beam Twice: Camera-Primed Real-Time Double-Directional mmWave Beam Management for Vehicular Connectivity
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Kishore Ram Sathia, Marco Giovanni Giometto</span>
+    <span class="paper-authors">Avhishek Biswas, Apala Pramanik, Eylem Ekici, Mehmet C. Vuran</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">Boundary layer processes drive the air-sea exchange of momentum, heat, and moisture that powers and shapes hurricanes. The height of the boundary layer is a critical parameter in engineering and meteorological models of hurricane wind speed, turbulence intensity, and storm strength. Existing models rely on a height scale derived with the assumption of a constant eddy viscosity, a strong simplification that limits physical accuracy. This work proposes formulae for the turbulent boundary layer height in hurricanes outside the eyewall. The proposed scalings are $u_\star/β$ for neutral stratification, and $u_\star/\sqrt{βN}$ for stable stratification, where $u_\star$ is the friction velocity, $β$ is the absolute fluid vorticity and N is the Brunt-Vaisala frequency of the background stratification. These scalings are analogous to those used in the literature for neutrally and stably stratified turbulent atmospheric boundary layers. The formulae are backed by analytical derivation and validated against velocity profiles from large-eddy simulations and field observations. They are predictive to within 2.5% relative error on average and yield a good collapse of the simulated and observational velocity profiles away from the surface. The results further enable quantitative relationships between boundary layer height and other characteristic scales, including the height of maximum wind speed and the depth of the inflow layer. The proposed expressions offer a practical basis for interpreting observational data, informing mesoscale simulations, and specifying turbulent flow statistics in wind engineering and coastal resilience.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.03933v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Millimeter-wave (mmWave) frequencies promise multi-gigabit connectivity for vehicle-to-everything (V2X) networks, but face challenges in terms of severe path loss and mobility-related beam misalignment. Reliable V2X connectivity requires fast, double-directional beam alignment. However, existing methods suffer from high training overhead and limited generalization to unseen scenarios. This paper presents VIsion-based BEamforming(VIBE), a hybrid model-based, closed-loop, learning architecture for real-time double-directional mmWave beam management primed by camera sensing. VIBE fuses machine learning, model-based reasoning, and closed-loop RF feedback to balance beam-pair establishment latency with link quality. VIBE bypasses exhaustive training overhead and accelerates link establishment by leveraging camera observations to reduce the beam-search space. Lightweight beam refinement and offset tracking mechanisms adaptively refine beams in response to dynamic application requirements. VIBE is implemented and evaluated across online indoor/outdoor testbeds, public datasets, and real-time vehicular experiments, demonstrating strong generalization capabilities, making it suitable for real-time V2X communication. Comparisons with 5G NR hierarchical beamforming show that VIBE consistently maintains lower outage rates. Furthermore, VIBE outperforms state-of-the-art end-to-end ML models for beam selection when evaluated on public datasets and achieves outage rates as low as 1.1-1.4 %. The results show that a hybrid model-based, closed-loop learning architecture is better suited for real-world mmWave vehicular connectivity than end-to-end trained ML models. For reproducibility, we publish our code to https://github.com/UNL-CPN-Lab/Look-Once-Beam-Twice.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05071v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.03924v1" target="_blank" rel="noopener noreferrer">
-      On the slope of the power spectrum of the density field in isothermal supersonic compressible turbulence
+    <a href="https://arxiv.org/pdf/2605.05070v1" target="_blank" rel="noopener noreferrer">
+      Nonconvex optimization methods for ground states in disordered continuous-spin models
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Pierre Dumond, Jérémy Fensch, Gilles Chabrier, Noé Brucy</span>
+    <span class="paper-authors">Ramgopal Agrawal, Lorenzo Ciarpaglini, Enzo Marinari, Marco Sciandrone, Diego Scuppa, Elisa Trasatti</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">The power spectrum (PS) of the density field in supersonic turbulence is a fundamental quantity that characterizes the statistical properties of the structures formed in compressible flows. It is also widely used to estimate the Mach number in the interstellar medium from simulation-derived relations. We provide here a first quantitative explanation for the evolution of the slope of the PS of the density field with the Mach number in homogeneous isotropic isothermal turbulence using a time-invariant quantity derived by Chandrasekhar (1951). For simulated turbulent flows, the model reproduces very well the measured slopes for different widths of the inertial range and density variances. Our model also provides a comprehensive interpretation of the characteristic slopes of the PS of the density field measured in the interstellar medium. Based on these results, we stress that the Mach number cannot be reliably deduced from the slope of the PS of the density field. We finally discuss a resolution criterion that must be fulfilled to correctly simulate a turbulent flow with a given density PS slope.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.03924v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">This work explores the global optimization problem of finding lowest-energy configurations (ground states) in disordered continuous spins models from statistical physics, with a particular focus on the random field XY model. Due to an extremely non-convex nature of the associated energy landscape, this problem remains highly challenging. From an optimization perspective, we reformulate the traditional angular Hamiltonian as a constrained problem on the Cartesian product of spheres, allowing the application of Riemannian optimization techniques, which show better computational performances. We compare a MultiStart (MS) strategy against a Monotonic Basin Hopping (MBH) framework, with the aim of highlighting the limitations of standard approaches and the resulting need to resort to more advanced global optimization techniques. Our results demonstrate that MBH consistently outperforms MS in identifying lower-energy configurations, offering superior computational efficiency and numerical stability. This approach establishes a robust link between continuous-spin systems and continuous global optimization, providing a high-performance benchmark for exploring complex energy landscapes.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05070v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.03911v1" target="_blank" rel="noopener noreferrer">
-      The Multiplicative Quasi-Instrumental Variable Model
+    <a href="https://arxiv.org/pdf/2605.05052v1" target="_blank" rel="noopener noreferrer">
+      Interpretable Neural Networks to Predict Momentum Fluxes of Orographic Gravity Waves
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jiewen Liu, Chan Park, David Richardson, Eric J. Tchetgen Tchetgen</span>
+    <span class="paper-authors">Elias Haslauer, Mierk Schwabe, Andreas Dörnbrack, Edwin P. Gerber, Markus Rapp, Nedjeljka Žagar, Veronika Eyring</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">We introduce the Multiplicative Quasi-Instrumental Variable (MQIV) model, a framework for causal inference with unmeasured confounding that leverages an instrument that may be imperfectly exogenous. We allow the candidate quasi-instrument to have a direct effect on the outcome not mediated by the treatment, thus violating the standard IV exclusion restriction. We establish nonparametric identification of the population average treatment effect on the treated (ATT) under a treatment model that is multiplicative with respect to the quasi-IV and the hidden confounder (Hernan and Robins, 2006). Such a multiplicative treatment model may arise naturally either when treatment occurs only if two independent instrument-driven and confounder-driven causal mechanisms are present; or alternatively, when an instrument&#x27;s effect on treatment uptake is inherently heterogeneous and scales with a person&#x27;s latent propensity, best capturing settings in which it is challenging for a given instrument to overcome a person&#x27;s inherent lack of preference for the treatment in view. Importantly, as we establish, the MQIV model is simultaneously agnostic to treatment-effect heterogeneity with respect to hidden confounders and violation of the core IV exclusion restriction condition. Identification is achieved via a modified Wald ratio estimand, which corrects the bias due to the exclusion restriction violation, and we propose a new class of estimators that are multiply robust and semiparametric efficient. Finally, we evaluate the approach in extensive simulations and an application to evaluate the causal effect of having three or more children on mothers&#x27; labor-market engagement.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.03911v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">State-of-the-art Earth system models (ESMs) cannot explicitly resolve many small-scale atmospheric processes such as atmospheric gravity waves, and thus must represent, or parameterise, their effects on the resolved state. Machine learning (ML) has the potential to improve these parameterisations. In our study, we train neural networks (NNs) on ERA5 reanalysis data to predict momentum fluxes of orographic gravity waves as a function of the state variables at the resolution of a coarse ESM. Employing a full year of data, we extract inertia-gravity waves using the software MODES, which applies linear theory for wave filtering, and train ML models on data coarse-grained to the ESM&#x27;s target resolution. We consider four different cases: the full spectrum of inertia-gravity waves resolved in ERA5, or just the part of the spectrum that is subgrid-scale in the target ESM, both over all land or just over mountainous terrain. Our NNs successfully predict momentum fluxes, with a global coefficient of determination ($R^2$) ranging from 0.72 to 0.56, depending on the case, when evaluated offline with data from another year. An analysis of our models using SHAP values, an explainable AI technique, suggests that the networks learned physically meaningful relationships. In addition, we give a comparison with the physics-based parameterisation scheme by Lott and Miller. This work forms the basis for the development of operational ML-based parameterisations to improve the representation of gravity waves and their effects in climate models.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05052v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.03905v1" target="_blank" rel="noopener noreferrer">
-      Microlensing time-scales and flux magnification probabilities of a sample of 204 lensed quasars
+    <a href="https://arxiv.org/pdf/2605.05051v1" target="_blank" rel="noopener noreferrer">
+      Impossibility of Distribution-Free Predictive Inference for Individual Treatment Effects
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">F. Ávila-Vera, V. Motta, E. Mediavilla</span>
+    <span class="paper-authors">Chongguang Tao, Zheng Zhou, Yuhong Yang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">Quasar microlensing is both a very useful tool in cosmology and astrophysics, and a source of uncertainty in some studies like the determination of the Hubble constant from lensed quasars. Microlensing probability and time-scales have been statistically studied using as a reference scale the Einstein ring crossing time of an isolated mass. Our goal is to extend the statistical analysis of microlensing to all currently known lensed quasars with available data, considering realistic optical depths and the gravitational effect of the lens galaxy. We take into account new observational results about quasar sizes and peculiar velocities of lens galaxies. We apply automatic lens modeling to the 204 systems available. For each image, we compute microlensing magnification maps and histograms. Using thin disk source sizes scaled to take into account recent measurements of accretion disk sizes, we find a mean source crossing time of $2.59\pm 0.07$ years. The mean Einstein radius crossing time is $ 11.29 \pm 0.05$ years. When a fraction of mass in microlenses $α=0.2$ is adopted, we find a good matching between the modeled histogram of mean microlensing magnifications for the images in our sample and the experimental histogram of microlensing magnifications. From the modeling of microlensing magnification histograms, we estimate the average half-light radius of the quasar source, $R_{1/2}=5.4\pm 2.7$ light-days, and a lower limit to the mass fraction in microlenses, $α\ge 0.15$. From the microlensing magnification maps, we find that a lensed quasar image has a mean probability of approximately 9% of being involved in a high-magnification event ($Δm \le -0.32$). We select a group of images with the largest probabilities and the smallest crossing times.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.03905v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Uncertainty quantification for individual treatment effects (ITEs) is a daunting challenge in causal inference. Motivated by recent advances in conformal prediction, several works aim to construct distribution-free prediction sets for ITEs with desired coverage under standard assumptions such as strong ignorability and overlap. In this paper, we show that such goals are fundamentally unattainable in the presence of continuous covariates. Specifically, we establish finite-sample and asymptotic impossibility results demonstrating that any distribution-free prediction set achieving desired coverage for ITEs must be trivial, in the sense that it has infinite expected length. Our analysis relies on a connection between ITE inference and the hardness of conditional independence testing, and highlights the intrinsic limitations imposed by the missing data nature of causal inference. These results provide a new perspective on existing methods, clarifying that their apparent success necessarily relies on additional structural assumptions beyond standard causal assumptions.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05051v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.03901v1" target="_blank" rel="noopener noreferrer">
-      Graph Neural Networks in the Wilson Loop Representation of Abelian Lattice Gauge Theories
+    <a href="https://arxiv.org/pdf/2605.05040v1" target="_blank" rel="noopener noreferrer">
+      Preference-Based Self-Distillation: Beyond KL Matching via Reward Regularization
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ali Rayat, Gia-Wei Chern</span>
+    <span class="paper-authors">Xin Yu, Liuchen Liao, Yiwen Zhang, Yingchen Yu, Lingzhou Xue, Qinzhen Guo</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">Local gauge structures play a central role in a wide range of condensed matter systems and synthetic quantum platforms, where they emerge as effective descriptions of strongly correlated phases and engineered dynamics. We introduce a gauge-invariant graph neural network (GNN) architecture for Abelian lattice gauge models, in which symmetry is enforced explicitly through local gauge-invariant inputs, such as Wilson loops, and preserved throughout message passing, eliminating redundant gauge degrees of freedom while retaining expressive power. We benchmark the approach on both $\mathbb{Z}_2$ and $\mathrm{U}(1)$ lattice gauge models, achieving accurate predictions of global observables and spatially resolved quantities despite the nonlocal correlations induced by gauge-matter coupling. We further demonstrate that the learned model serves as an efficient surrogate for semiclassical dynamics in $\mathrm{U}(1)$ quantum link models, enabling stable and scalable time evolution without repeated fermionic diagonalization, while faithfully reproducing both local dynamics and statistical correlations. These results establish gauge-invariant message passing as a compact and physically grounded framework for learning and simulating Abelian lattice gauge systems.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.03901v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">On-policy distillation is an efficient alternative to reinforcement learning, offering dense token-level training signals. However, its reliance on a stronger external teacher has driven recent work on on-policy self-distillation, where the same model serves as both teacher and student under different prompt contexts. Yet, existing self-distillation methods largely reduce learning to KL matching toward the context-augmented teacher model. This approach often suffers from training instability and can degrade reasoning performance over time. Moreover, self-distillation from the same model with prompt augmentation lacks the exploratory diversity provided by a genuine external teacher. To address these limitations, we move beyond fixed-teacher KL matching and propose \textbf{P}reference-\textbf{B}ased \textbf{S}elf-\textbf{D}istillation (\textbf{PBSD}), which revisits on-policy self-distillation through a reward-regularized perspective. Instead of directly matching the teacher distribution, we derive a reward-regularized objective whose analytic optimum is a reward-reweighted teacher distribution, yielding a target policy provably superior to the original teacher under this objective. Practically, PBSD optimizes preference gaps between teacher and student samples while maintaining on-policy student sampling. We support this framework with a statistical analysis of the induced preference-learning problem, formally establishing when on policy self-distillation is preferable to learning from an external teacher in our setting. Experiments on mathematical reasoning and tool-use benchmarks across multiple model scales demonstrate that PBSD consistently achieves the strongest average performance among comparable baselines, showing improved training stability over prior self-distillation baselines while preserving token efficiency.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05040v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.03886v1" target="_blank" rel="noopener noreferrer">
-      More Permutations Do Not Always Increase Power: Non-monotonicity in Monte Carlo Permutation Tests
+    <a href="https://arxiv.org/pdf/2605.05035v1" target="_blank" rel="noopener noreferrer">
+      Network-Mediated Capacitive Coupling Drives Fast OTOC Saturation in Superconducting Circuits
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Suman Cha, Seongchan Lee, Antonin Schrab, Ilmun Kim</span>
+    <span class="paper-authors">Carla Caro Villanova, Alan C. Santos</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">Monte Carlo permutation tests are a cornerstone of valid, model-free statistical inference. A widely held practical intuition is that increasing the number of sampled permutations improves test performance, in particular that statistical power tends to increase with the Monte Carlo budget. In this paper, we show that these intuitions are false in general. Leveraging the saw-toothed structure of power arising from distributional discreteness, we provide a simple structural explanation for why power can decrease as the number of sampled permutations increases, and we prove that such decreases occur infinitely often as the Monte Carlo budget grows.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.03886v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We investigate the dynamical and spectral consequences of capacitance-network-mediated interactions in superconducting transmon arrays beyond effective nearest-neighbor descriptions. While weak coupling regimes are well captured by an effective nearest-neighbor interacting models, we show that increasing capacitive connectivity induces a pronounced departure from this approximation in dynamical observables. Using Out-of-Time-Ordered Correlators (OTOCs), we demonstrate that such network-mediated couplings significantly accelerate operator scrambling, leading to rapid saturation compared to the nearest-neighbor limit. This dynamical crossover is accompanied by a shift in spectral statistics away from Poissonian behavior toward level repulsion, with the ratio parameter remaining intermediate between Poisson and Gaussian Orthogonal Ensemble (GOE) limits. This indicates the emergence of partial ergodicity rather than fully developed quantum chaos. As this behavior arises within experimentally realistic regimes of current superconducting transmon devices, identifying when network-mediated couplings qualitatively alter information dynamics is directly relevant for scalable superconducting architectures.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05035v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.03880v1" target="_blank" rel="noopener noreferrer">
-      Exclusive photoproduction of a di-meson pair with large invariant mass
+    <a href="https://arxiv.org/pdf/2605.05026v1" target="_blank" rel="noopener noreferrer">
+      Local Intrinsic Dimension Unveils Hallucinations in Diffusion Models
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Saad Nabeebaccus, David Perez, Lech Szymanowski, Samuel Wallon</span>
+    <span class="paper-authors">Bartlomiej Sobieski, Matthew Tivnan, Dawid Płudowski, Michał Jan Włodarczyk, Pengfei Jin, Przemyslaw Biecek, Quanzheng Li</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">The exclusive photoproduction of a pair of light mesons is studied within the framework of collinear factorisation. The amplitude factorises into a process-dependent perturbatively calculable hard part, a generalised parton distribution (GPD) and two distribution amplitudes (DAs). We focus on the production of any combination of $ρ$ and $π$ mesons (of any charge and polarisation) that do not involve neutral $C=+$ exchanges with the nucleon. This gives a total of 26 distinct channels, which are sensitive to quark GPDs only. We calculate the amplitude for these di-meson processes at leading order in $α_s$ and at leading twist, in a fully-automated way. Depending on the choice of mesons in the final state, some of these processes are sensitive to chiral-odd (helicity-flip) GPDs. Particular attention is given to the treatment of poles in the 3-dimensional convolution integral of the momentum fractions connecting the hard part with the different non-perturbative components. These poles are regularised by usual Feynman $i ε$ factors, but lead to numerical instabilities if not dealt with properly. We also discuss in detail the construction of the phase space. Importantly, we propose a resolution for the inconsistency of the kinematics of the hard part of the process, where hadron masses and other soft scales are neglected, with the rest of the process. As a proof of concept, we explicitly evaluate the cross section, for a subset of processes whose amplitudes have been constructed, at energies typical of the CLAS12 experiment at JLab. Our results indicate that exclusive di-meson photoproduction processes have very good statistics, which can be a factor of up to a hundred more than the exclusive photon-meson photoproduction process. Therefore, the family of processes that we study here represents a great opportunity for GPD extraction.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.03880v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Diffusion models are prone to generating structural hallucinations - samples that match the statistical properties of the training data yet defy underlying structural rules, resulting in anomalies like hands with more than five fingers. Recent research studied this failure mode from several viewpoints, offering partial explanations to their occurrence, such as mode interpolation. In this work, we propose a complementary perspective that treats hallucinations as instabilities on the model-induced manifold. We begin by showing that a hallucination filter based on such instabilities matches or exceeds the performance of the recently proposed temporal one. By tracing the source of these instabilities, we identify local intrinsic dimension (LID) as their primary driver and propose Intrinsic Quenching (IQ), a direct corrective mechanism that deflates it to alleviate hallucinations. IQ consistently outperforms standard hallucination reduction baselines across a wide array of benchmarks and offers a highly promising solution for enforcing anatomical consistency in downstream medical imaging tasks.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05026v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.03879v1" target="_blank" rel="noopener noreferrer">
-      Thermodynamic phase transitions reveal the resilience structure of urban traffic congestion
+    <a href="https://arxiv.org/pdf/2605.05006v1" target="_blank" rel="noopener noreferrer">
+      Uncovering hidden bias in neutron diffraction residual strain measurements
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Luis E. Olmos</span>
+    <span class="paper-authors">Cole Franz, Michael B. Prime, Jeffrey Bunn, Andrew Payzant, Katharine Page</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-05</span>
+    <span class="paper-date">2026-05-06</span>
   </p>
-  <p class="paper-abstract">Understanding how cities transition from free-flowing to congested traffic remains a central open problem in urban science. Here we show that city-scale congestion undergoes a reproducible nonlinear transition analogous to an order-disorder phase transition in statistical mechanics, in which aggregate mobility acts as a control parameter and jam extent as a collective order parameter. Crucially, this analogy is not merely formal: we derive and empirically identify an effective thermodynamic temperature with concrete physical meaning, quantifying infrastructural heterogeneity and how broadly a city explores congestion configurations as demand increases. Low-temperature cities are congestion-fragile: small mobility increases trigger sharp, system-wide jam transitions. This framework further reveals that the macroscopic fundamental diagram is an incomplete description of the traffic state: it emerges as a projection of a richer free-energy landscape governed by entropy-capacity trade-offs. Validated across 46 cities in Latin America and the Caribbean and independently confirmed with loop-detector data from 8 cities on three continents, these results establish a physics-based foundation for comparing urban traffic resilience and anticipating congestion regime shifts under changing mobility demand.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.03879v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">When calculating residual strain via neutron or X-ray diffraction, uncertainties propagated from the peak fit are often inadequate to describe the true scatter of measurements about a singular strain state, such as one that should describe a macroscopic continuum. Because diffraction is inherently a selective process, orientation dependent scatter arises from the sub-sampling of strong microstructure and strain gradients. This paper investigates the appropriateness of propagated uncertainties with reference to their original intention, i.e., noise about a mean value. Thirty-six unique orientations of strain measurements are taken at multiple locations within an additive friction-stir deposition component with fine-scale gradients (~200 um) of plastic strain, texture, and residual elastic strain. Multiple strain and stress calculation pathways are compared: direct substitution of three measurements into Hooke&#x27;s law, direct inversion of any six unique orientations into the strain state tensor, and thirty-six measurement least-squares estimation. For the latter two cases, the appropriateness of the uncertainty interval is statistically evaluated based on a physical constraint: common agreement under the strain transformation law. For this sample, the direct inversion of six measurements retains a conservative estimate of the uncertainty. However, propagated uncertainties in the least-squares solution greatly underestimate the true experimental scatter. A simple pathway to estimate appropriate uncertainty intervals is suggested. These results demonstrate that interpretation of uncertainty in residual strain is strongly dependent on intrinsic, sample-dependent effects, and that oversampling orientations and statistical analysis can give more accurate results with realistic uncertainties.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.05006v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
