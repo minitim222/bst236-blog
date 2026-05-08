@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-05-07 02:50 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-05-08 02:53 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05198v1" target="_blank" rel="noopener noreferrer">
-      S-LCG: Structured Linear Congruential Generator-Based Deterministic Algorithm for Search and Optimization
+    <a href="https://arxiv.org/pdf/2605.06656v1" target="_blank" rel="noopener noreferrer">
+      Why Global LLM Leaderboards Are Misleading: Small Portfolios for Heterogeneous Supervised ML
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ahmed Qasim Mohammed, Haider Banka, Anamika Singh</span>
+    <span class="paper-authors">Jai Moondra, Ayela Chughtai, Bhargavi Lanka, Swati Gupta</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">This study presents a novel deterministic optimization algorithm based on a special variant of the Linear Congruential Generator (LCG). While conventional algorithms generally operate within the search space, the introduced technique follows a two-level architecture. In particular, an external loop that adaptively balances between exploration and exploitation, while the internal loop evaluates solutions. It is motivated by the intrinsic structure of the generator, the reason behind naming it the Structured Linear Congruential Generator (S- LCG). which enjoys a number of unique characteristics as follows: 1) a memoryless scheme, which ensures non-overlapping sequences based on distinct seeds, thus ensuring no evaluation redundancy; 2) bit splitting representation, which converts LCG states into multi-dimensional points to overcome the Marsaglia lattice effect; 3) adaptive exploration-exploitation of the generator space, which leads to implicit optimization of the surrogate smooth objective function; and 4) constant information gathering speed to avoid the problem of premature convergence. Extensive testing on 26 benchmark functions across dimensions d = 2 to 30 demonstrates that S-LCG comes within 1% of the global optimum in 83.3% of 138 cases (100% at d = 2, 81.2% at d = 30) while the nearest competitor GA achieved 75.4%. Statistical validation shows that S-LCG outperforms eight cutting-edge binary algorithms. Furthermore, its practical value is confirmed by validation on three constrained engineering design problems. In the end, S-LCG offers an optimization framework that is strictly reproducible and requires only one sensitive parameter to be tuned.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05198v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Ranking LLMs via pairwise human feedback underpins current leaderboards for open-ended tasks, such as creative writing and problem-solving. We analyze ~89K comparisons in 116 languages from 52 LLMs from Arena, and show that the best-fit global Bradley-Terry (BT) ranking is misleading. Nearly 2/3 of the decisive votes cancel out, and even the top 50 models according to the global BT ranking are statistically indistinguishable (pairwise win probabilities are at most 0.53 within the top 50 models). We trace this failure to strong, structured heterogeneity of opinions across language, task, and time. Moreover, we find an important characteristic - *language* plays a key role. Grouping by language (and families) increases the agreement of votes massively, resulting in two orders of magnitude higher spread in the ELO scores (i.e., very consistent rankings). What appears as global noise is in fact a mixture of coherent but conflicting subpopulations. To address such heterogeneity in supervised machine learning, we introduce the framework of $(λ, ν)$-portfolios, which are small sets of models that achieve a prediction error at most $λ$, &quot;covering&quot; at least a $ν$ fraction of users. We formulate this as a variant of the set cover problem and provide guarantees using the VC dimension of the underlying set system. On the Arena data, our algorithms recover just 5 distinct BT rankings that cover over 96% of votes at a modest $λ$, compared to the 21% coverage by the global ranking. We also provide a portfolio of 6 LLMs that cover twice as many votes as the top-6 LLMs from a global ranking. We further construct portfolios for a classification problem on the COMPAS dataset using an ensemble of fairness-regularized classification models and show that these portfolios can be used to detect blind spots in the data, which might be of independent interest to policymakers.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06656v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05179v1" target="_blank" rel="noopener noreferrer">
-      Estimating the expected output of wide random MLPs more efficiently than sampling
+    <a href="https://arxiv.org/pdf/2605.06655v1" target="_blank" rel="noopener noreferrer">
+      Improving Variance Estimation for Covariate Adjustment with Binary Outcomes
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Wilson Wu, Victor Lecomte, Michael Winer, George Robinson, Jacob Hilton, Paul Christiano</span>
+    <span class="paper-authors">Kaitlyn Lee, Alex Ocampo, Courtney Schiffman, Michael Friesenhahn, Christina Rabe, Michael Rosenblum</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">By far the most common way to estimate an expected loss in machine learning is to draw samples, compute the loss on each one, and take the empirical average. However, sampling is not necessarily optimal. Given an MLP at initialization, we show how to estimate its expected output over Gaussian inputs without running samples through the network at all. Instead, we produce approximate representations of the distributions of activations at each layer, leveraging tools such as cumulants and Hermite expansions. We show both theoretically and empirically that for sufficiently wide networks, our estimator achieves a target mean squared error using substantially fewer FLOPs than Monte Carlo sampling. We find moreover that our methods perform particularly well at estimating the probabilities of rare events, and additionally demonstrate how they can be used for model training. Together, these findings suggest a path to producing models with a greatly reduced probability of catastrophic tail risks.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05179v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Covariate adjustment is a general method for improving precision when estimating treatment effects in randomized trials and is recommended by the FDA in its 2023 guidance when baseline variables are prognostic for the primary outcome. We focus on a method highlighted in that guidance called ``standardization&quot; (or ``g-computation&quot;) for estimating the marginal treatment effect. We address the question of how to reliably estimate variance for binary outcomes when marginal outcome probabilities are close to 0 or 1. We propose an influence function-based leave-one-out cross-validated (IF-LOO) variance estimator for the standardized difference-in-means average treatment effect. Through simulation studies, we show that this estimator provides appropriate type-I error control and performs reliably in challenging settings where existing methods can yield inflated type-I error or fail entirely, such as when outcome events are rare or sample sizes are small. In addition to having desirable statistical properties, we derive a closed-form expression for the proposed estimator, enabling straightforward and reliable implementation by study statisticians. The robust finite-sample performance and ease of implementation suggest the IF-LOO variance estimator is a prudent default choice for standardization in clinical trials.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06655v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05161v1" target="_blank" rel="noopener noreferrer">
-      Wasserstein-Aligned Localisation for VLM-Based Distributional OOD Detection in Medical Imaging
+    <a href="https://arxiv.org/pdf/2605.06648v1" target="_blank" rel="noopener noreferrer">
+      A preliminary exploration of the effects of baseline length for the LIFE space mission
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Bernhard Kainz, Johanna P Mueller, Matthew Baugh, Cosmin Bercea</span>
+    <span class="paper-authors">Jonah T. Hansen, Thomas Birbacher, Felix A. Dannert, Philipp Huber, Andrea Fortier, Adrian M. Glauser, Jens Kammerer, Romain Laugier, Lia Sartori, Sascha P. Quanz</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">Zero-shot anomaly localisation via vision-language models (VLMs) offers a compelling approach for rare pathology detection, yet its performance is fundamentally limited by the absence of healthy anatomical context. We reformulate zero-shot localisation as a comparative inference problem in which anomalies are identified through structured comparison against reference distributions of normal anatomy. We introduce WALDO, a training-free framework grounded in optimal transport theory that enables comparative reasoning through: (i) entropy-weighted Sliced Wasserstein distances for anatomically-aware reference selection from DINOv2 patch distributions, (ii) Goldilocks zone sampling exploiting the non-monotonic relationship between reference similarity and localisation accuracy, and (iii) self-consistency aggregation via weighted non-maximum suppression. We theoretically analyse the Goldilocks effect through distributional divergence, and show that references with moderate similarity minimize a bias-variance trade-off in comparative visual reasoning. On the NOVA brain MRI benchmark, WALDO with Qwen2.5-VL-72B achieves $43.5_{\pm1.6}\%$ mAP@30 (95\% CI: [40.4, 46.7]), representing a 19\% relative improvement over zero-shot baselines. Cross-model evaluation shows consistent gains: GPT-4o achieves $32.0_{\pm6.5}\%$ and Qwen3-VL-32B achieves $32.0_{\pm6.6}\%$ mAP@30. Paired McNemar tests confirm statistical significance ($p&lt;0.01$). Source code is available at https://github.com/bkainz/WALDO_MICCAI26_demo .</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05161v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">By aiming to find and characterise dozens of habitable exoplanets through the technique of nulling interferometry, the LIFE space mission will produce transformational science. One of the key parameters for such an interferometric mission is the nulling baseline length - the distance between nulled apertures, which past studies have assumed to be 10-100m. Advances in planet occurrence statistics and simulation tools allow us now to revisit this key assumption with significantly more detail, particularly with the intention to reduce the range of baselines considered due to mission implementation concerns. We utilise the LIFEsim mission simulator along with revised mathematical tools to identify whether the range of baselines could be reduced without significantly affecting planet yield and fringe tracking performance. Along the way, we also determine a new astrophysically motivated technique for choosing which baselines are optimal for a given science target. We find that indeed, LIFE could utilise a considerably shorter range of baselines, such as 25-80m, or even discrete baselines without much (&lt;10%) loss of performance. Nevertheless, careful trade-offs between performance and implementation simplification must be made, especially considering any spectral weighting that may be required by the scientific goals, and the potential loss of target-specific baseline optimisation.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06648v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05157v1" target="_blank" rel="noopener noreferrer">
-      Are PTA measurements sensitive to gravitational wave non-Gaussianities?
+    <a href="https://arxiv.org/pdf/2605.06647v1" target="_blank" rel="noopener noreferrer">
+      Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Chiara Cecchini, Jonas El Gammal, Gabriele Franciolini, Mauro Pieroni</span>
+    <span class="paper-authors">Zeyu Yang, Qi Ma, Jason Chen, Anshumali Shrivastava</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">Observing non-Gaussianity in the timing residuals of Pulsar Timing Arrays (PTAs) has recently attracted attention as a potential discriminator between astrophysical and cosmological origins of the observed Gravitational Wave (GW) signal. In this work, we show that even in an idealized signal-dominated setup, after decorrelating data to avoid spurious detections, statistical tests applied to PTA data cannot distinguish between Gaussian and non-Gaussian GWBs in a model-agnostic way. In particular, without making strong assumptions on the GW spectrum or the properties of the population, the sensitivity to any distinctive non-Gaussian feature is washed out.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05157v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Retrieval-augmented agents are increasingly the interface to large organizational knowledge bases, yet most still treat retrieval as a black box: they issue exploratory queries, inspect returned snippets, and iteratively reformulate until useful evidence emerges. This approach resembles how a newcomer searches an unfamiliar database rather than how an expert navigates it with strong priors about terminology and likely evidence, and results in unnecessary retrieval rounds, increased latency, and poor recall. We introduce \textit{SuperIntelligent Retrieval Agent} (SIRA), which defines \emph{superintelligence} in retrieval as the ability to compress multi-round exploratory search into a single corpus-discriminative retrieval action. SIRA does not merely ask what terms are relevant to the query; it asks which terms are likely to separate the desired evidence from corpus-level confusers. On the corpus side, an LLM enriches each document offline with missing search vocabulary; on the query side, it predicts evidence vocabulary omitted by the query; and document-frequency statistics as a tool call to filter proposed terms that are absent, overly common, or unlikely to create retrieval margin. The final retrieval step is a single weighted BM25 call combining the original query with the validated expansion. Across ten BEIR benchmarks and downstream question-answering tasks, SIRA achieves the significantly superior performance outperforming dense retrievers and state-of-the-art multi-round agentic baselines, demonstrating that one well-formed lexical query, guided by LLM cognition and lightweight corpus statistics, can exceed substantially more expensive multi-round search while remaining interpretable, training-free, and efficient.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06647v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05136v1" target="_blank" rel="noopener noreferrer">
-      CPCANet: Deep Unfolding Common Principal Component Analysis for Domain Generalization
+    <a href="https://arxiv.org/pdf/2605.06640v1" target="_blank" rel="noopener noreferrer">
+      Concept-Based Abductive and Contrastive Explanations for Behaviors of Vision Models
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yu-Hsi Chen, Abd-Krim Seghouane</span>
+    <span class="paper-authors">Ronaldo Canizales, Divya Gopinath, Corina Păsăreanu, Ravi Mangal</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">Domain Generalization (DG) aims to learn representations that remain robust under out-of-distribution (OOD) shifts and generalize effectively to unseen target domains. While recent invariant learning strategies and architectural advances have achieved strong performance, explicitly discovering a structured domain-invariant subspace through second-order statistics remains underexplored. In this work, we propose CPCANet, a novel framework grounded in Common Principal Component Analysis (CPCA), which unrolls the iterative Flury-Gautschi (FG) algorithm into fully differentiable neural layers. This approach integrates the statistical properties of CPCA into an end-to-end trainable framework, enforcing the discovery of a shared subspace across diverse domains while preserving interpretability. Experiments on four standard DG benchmarks demonstrate that CPCANet achieves state-of-the-art (SOTA) performance in zero-shot transfer. Moreover, CPCANet is architecture-agnostic and requires no dataset-specific tuning, providing a simple and efficient approach to learning robust representations under distribution shift. Code is available at https://github.com/wish44165/CPCANet.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05136v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">*Concept-based explanations* offer a promising approach for explaining the predictions of deep neural networks in terms of high-level, human-understandable concepts. However, existing methods either do not establish a causal connection between the concepts and model predictions or are limited in expressivity and only able to infer causal explanations involving single concepts. At the same time, the parallel line of work on *formal abductive and contrastive explanations* computes the minimal set of input features causally relevant for model outcomes but only considers low-level features such as pixels. Merging these two threads, in this work, we propose the notion of *concept-based abductive and contrastive explanations* that capture the minimal sets of high-level concepts causally relevant for model outcomes. We then present a family of algorithms that enumerate all minimal explanations while using *concept erasure* procedures to establish causal relationships. By appropriately aggregating such explanations, we are not only able to understand model predictions on individual images but also on collections of images where the model exhibits a user-specified, common *behavior*. We evaluate our approach on multiple models, datasets, and behaviors, and demonstrate its effectiveness in computing helpful, user-friendly explanations.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06640v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05125v1" target="_blank" rel="noopener noreferrer">
-      Joint Treatment Effect Estimation from Incomplete Healthcare Data: Temporal Causal Normalizing Flows with LLM-driven Evolutionary MNAR Imputation
+    <a href="https://arxiv.org/pdf/2605.06641v1" target="_blank" rel="noopener noreferrer">
+      GlazyBench: A Benchmark for Ceramic Glaze Property Prediction and Image Generation
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Olivia Jullian Parra, Sara Zoccheddu, David Catalan Cerezo, Tom Forzy, Franziska Ulrich, William Sutcliffe, Jakob Martin Burgstaller, Oliver Senn, Patrick Owen, Nicola Serra</span>
+    <span class="paper-authors">Ziyu Zhai, Siyou Li, Juexi Shao, Juntao Yu</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">Target trial emulation (TTE) enables causal questions to be studied with observational data when randomized controlled trials (RCTs) are infeasible. Yet treatment-effect methods often address causal estimation, missingness, and temporal structure separately, limiting their robustness in electronic health records (EHRs), where time-varying confounding and missing-not-at-random (MNAR) biomarkers can reach 50%--80%. We propose a two-stage pipeline for treatment effect estimation from incomplete longitudinal EHRs. First, CausalFlow-T, a directed acyclic graph (DAG)-constrained normalizing flow with long short-term memory (LSTM)-encoded patient history, performs exact invertible counterfactual inference, avoiding approximation errors from variational inference and separating confounding through explicit causal structure. Ablations on four synthetic and one semi-synthetic benchmark with known counterfactuals show that DAG constraints and exact inference address distinct failure modes: neither compensates for the other. Second, because CausalFlow-T requires completed inputs, we introduce an LLM-driven evolutionary imputer that proposes executable imputation operators rather than individual entries, and evaluate it with three large language model (LLM) backends, including two open-source models. Across 30%--80% MNAR missingness, this imputer achieves the best pooled rank over biomarker and causal metrics, leading in point-wise accuracy and temporal extrapolation while preserving average treatment effect (ATE) recovery as statistical baselines degrade. On Swiss primary-care EHRs from adults with type 2 diabetes initiating a GLP-1 receptor agonist or SGLT-2 inhibitor, the pipeline estimates a per-protocol weight-loss difference of -0.98 kg [95% CI -1.01, -0.96] favoring GLP-1 receptor agonists, consistent with randomized evidence and obtained from realistically incomplete real-world EHRs.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05125v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Developing ceramic glazes is a costly, time-consuming process of trial and error due to complex chemistry, placing a significant burden on independent artists. While recent advances in multimodal AI offer a modern solution, the field lacks the large-scale datasets required to train these models. We propose GlazyBench, the first dataset for AI-assisted glaze design. Comprising 23,148 real glaze formulations, GlazyBench supports two primary tasks: predicting post-firing surface properties, such as color and transparency, from raw materials, and generating accurate visual representations of the glaze based on these properties. We establish comprehensive baselines for property prediction using traditional machine learning and large language models, alongside image generation benchmarks using deep generative and large multimodal models. Our experiments demonstrate promising yet challenging results. GlazyBench pioneers a new research direction in AI-assisted material design, providing a standardized benchmark for systematic evaluation.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06641v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05120v1" target="_blank" rel="noopener noreferrer">
-      Physiologically Grounded Driver Behavior Classification: SHAP-Driven Elite Feature Selection and Hybrid Gradient Boosting for Multimodal Physiological Signals
+    <a href="https://arxiv.org/pdf/2605.06633v1" target="_blank" rel="noopener noreferrer">
+      Machine Learning Approaches to Building Quantum Circuits for Sets of Matrices
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Sahar Askari, Mohammad Mahdi Mirza Ali Mohammadi, Fatemeh Ensafdoust, Amin Golnari, Saeid Sanei</span>
+    <span class="paper-authors">Matvei Fedin, Andrei Morozov</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">An interpretable and scalable framework for decoding driving behaviors from multimodal physiological signals is proposed in this study. We utilize multimodal physiological driving behavior large-scale dataset comprising synchronized electroencephalogram (EEG), electromyography (EMG), and galvanic skin response (GSR) signals. Our approach involves rigorous preprocessing followed by a domain-specific feature extraction pipeline targeting time-domain, frequency-domain, and derived physiological indices. To address high dimensionality, we employ SHAP-based elite feature selection, retaining the top 250 features to reduce computational overhead while preserving predictive power. Hyperparameter optimization for extreme gradient boosting (XGBoost) and light gradient boosting machine (LightGBM) models is conducted using Bayesian optimization via Optuna. Finally, a weighted soft-voting ensemble is constructed to leverage the complementary strengths of both gradient boosting frameworks. The results demonstrate that the proposed ensemble achieves a test accuracy of 80.91% and a macro-F1 score of 0.79, significantly outperforming single-modality baselines and traditional machine learning models. Ablation studies confirm an 8% performance gain over the best single modality (EEG), validating the necessity of multimodal fusion. SHAP analysis further validates the physiological plausibility of the model, revealing that the EEG contributes the majority of predictive weight, GSR and EMG features provide critical discriminatory signals for high-arousal and motor-intensive maneuvers.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05120v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Machine learning nowadays becomes a useful instrument in many subjects. In this paper we use interpretable machine learning to build quantum algorithm. By studying the parameters of the machine learning algorithm we were able to construct universal shortest analytic quantum algorithm for arbitrary diagonal matrix of any size.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06633v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05090v1" target="_blank" rel="noopener noreferrer">
-      Automatically Finding and Validating Unexpected Side-Effects of Interventions on Language Models
+    <a href="https://arxiv.org/pdf/2605.06632v1" target="_blank" rel="noopener noreferrer">
+      Crafting Reversible SFT Behaviors in Large Language Models
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Quintin Pope, Ajay Hayagreeve Balaji, Jacques Thibodeau, Xiaoli Fern</span>
+    <span class="paper-authors">Yuping Lin, Pengfei He, Yue Xing, Yingqian Cui, Jiayuan Ding, Subhabrata Mukherjee, Hui Liu, Zhen Xiang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">We present an automated, contrastive evaluation pipeline for auditing the behavioral impact of interventions on large language models. Given a base model $M_1$ and an intervention model $M_2$, our method compares their free-form, multi-token generations across aligned prompt contexts and produces human-readable, statistically validated natural-language hypotheses describing how the models differ, along with recurring themes that summarize patterns across validated hypotheses. We evaluate the approach in synthetic setting by injecting known behavioral changes and showing that the pipeline reliably recovers them. We then apply it to three real-world interventions, reasoning distillation, knowledge editing and unlearning, demonstrating that the method surfaces both intended and unexpected behavioral shifts, distinguishes large from subtle interventions, and does not hallucinate differences when effects are absent or misaligned with the prompt bank. Overall, the pipeline provides a statistically grounded and interpretable tool for post-hoc auditing of intervention-induced changes in model behavior.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05090v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Supervised fine-tuning (SFT) induces new behaviors in large language models, yet imposes no structural constraint on how these behaviors are distributed within the model. Existing behavior interpretation methods, such as circuit attribution approaches, identify sparse subnetworks correlated with SFT-induced behaviors post-hoc. However, such correlations do not imply *causal necessity*, limiting the ability to selectively control SFT-induced behaviors at inference time. We pursue an alternative by asking: can an SFT-induced behavior be deliberately compressed into a sparse, mechanistically necessary subnetwork, termed a *carrier*, while remaining controllable at inference time without weight modification? We propose (a) **Loss-Constrained Dual Descent (LCDD)**, which constructs such carriers by jointly optimizing routing masks and model weights under an explicit utility budget, and (b) **SFT-Eraser**, a soft prompt optimized via activation matching on extracted carrier channels, to reverse the SFT-induced behavior. Across safety, fixed-response, and style behaviors on multiple model families, LCDD yields sparse carriers that preserve target behaviors while enabling strong reversion when triggered by SFT-Eraser. Ablations further establish that the sparse structure is the key precondition for reversal: the same trigger optimization fails on standard SFT models, confirming that structure rather than trigger design is the operative factor. These results provide direct evidence that the learned carriers are causally necessary for the behaviors, pointing to a new direction for systematically localizing and selectively suppressing SFT-induced behaviors in deployed models.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06632v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05084v1" target="_blank" rel="noopener noreferrer">
-      Order Matters: Improving Domain Adaptation by Reordering Data
+    <a href="https://arxiv.org/pdf/2605.06631v1" target="_blank" rel="noopener noreferrer">
+      Task-Aware Answer Preservation under Audio Compression for Large Audio Language Models
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Andrea Napoli, Paul White</span>
+    <span class="paper-authors">Amir Ivry</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">Domain shift remains a key challenge in deploying machine learning models to the real world. Unsupervised domain adaptation (UDA) aims to address this by minimising domain discrepancy during training, but the discrepancy estimates suffer from high variance in stochastic settings, which can stifle the theoretical benefits of the method. This paper proposes Optimal Reordering of Data for Error-Reduced Estimation of Discrepancy (ORDERED), a novel unbiased stochastic variance reduction technique which reduces the discrepancy estimation error by optimising the order in which the training data are sampled. We consider two specific domain discrepancy losses (correlation alignment and the maximum mean discrepancy), formulate their stochastic estimation error as a function of the data sampling order, and propose a practical optimisation algorithm. Our simulations demonstrate reduced variance compared to related methods, and experiments on two domain shift image classification benchmarks show improved target domain accuracy.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05084v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Large audio language models (LALMs) are increasingly used to reason over long audio clips, yet deployment often compresses audio before inference to reduce memory and latency. The risk is that compression can leave aggregate accuracy acceptable while sharply degrading answers for a deployment-critical query family. We study answer-preserving audio compression, judging a compressor by the excess answer-error it induces, especially for the worst-affected family. We formulate this theoretically as a compressor acceptance-rejection criterion, derive a practical sign-off protocol that returns compression budgets satisfying worst-family checks with statistical confidence, and evaluate it on five multiple-choice audio question-answering benchmarks with two Qwen-based backbones. The protocol exposes hidden family-level damage, shows that the chosen query-family partition can change the approved budget, and identifies regimes where query-conditioned compression helps maintain answer preservation.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06631v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05082v1" target="_blank" rel="noopener noreferrer">
-      External Validation of Deep Learning Models for BI-RADS Breast Density Prediction from Ultrasound Images
+    <a href="https://arxiv.org/pdf/2605.06629v1" target="_blank" rel="noopener noreferrer">
+      Hybrid Quantum-Classical GANs for the Generation of Adversarial Network Flows
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yuxuan Chen, Arianna Bunnell, Yanqi Xu, Haoyan Yang, Thomas K. Wolfgruber, John A. Shepherd, Yiqiu Shen</span>
+    <span class="paper-authors">Prateek Paudel, Nitin Jha, Abhishek Parakh, Mahadevan Subramaniam</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">We externally validated three deep learning models (DenseNet121, ViT-B/32, and ResNet50) for predicting mammographic breast density from breast ultrasound exams on an independent cohort. The external validation set comprised 2,000 ultrasound exams, including 500 cancer cases defined by an initial negative exam (BI-RADS 1 or 2) followed by a cancer diagnosis within 6 months to 10 years, and 1,500 negative controls matched by manufacturer and study year. Performance was measured using patient-level AUROC across four density categories: A (fatty), B (scattered), C (heterogeneous), and D (extremely dense). As a downstream assessment, we also evaluated 10-year risk prediction by incorporating age and AI-derived density into the Tyrer-Cuzick model and comparing performance against a reference model using age and mammography-reported density. All three models performed best in extremely dense breasts (AUROC 0.868-0.899), with strong performance in fatty (0.814-0.838) and scattered density (0.764-0.799), and lower performance in heterogeneously dense breasts (0.699-0.729). DenseNet121 achieved the highest overall performance (micro-averaged AUROC 0.885), and performance across categories was comparable between internal and external testing. For risk modeling, age combined with AI-derived density yielded a lower AUROC than age combined with mammography-reported density (0.541 vs. 0.570; p = 0.23), with no statistically significant difference. These findings indicate that deep learning models generalize well to external data with different racial composition for breast density assessment. While performance is strongest in extremely dense breasts, heterogeneously dense remains more challenging, highlighting the need for targeted optimization.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05082v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Classical generative adversarial networks (GANs) have been applied to generate adversarial network traffic capable of attacking intrusion detection systems, but they suffer from shortcomings such as the need for large amounts of high-dimensional datasets, mode collapse, and high computational overhead. In this work, we propose a hybrid quantum-classical GAN (QC-GAN) framework where a variational quantum generator is used to generate synthetic network traffic flows mimicking malicious traffic using latent representations. Instead of sampling classical noise vectors, we encode the latent vector (the hidden features) as a quantum state, which is the basis for claiming more expressive latent representations and reducing computational overhead. A classical discriminator will be trained on real-world datasets (UNSW-NB15) and the proposed QC-GAN-generated fake network flows. In this configuration, the generator aims to minimize the discriminator&#x27;s ability to distinguish real from fake traffic, while the discriminator aims to maximize its classification accuracy, in an iterative manner. In our attack model, we assume that the attacker is a state actor with access to limited quantum computing power, whereas the discriminator is chosen to be classical, as will likely be the case for most end users and organizations. We test the generated flows using classical intrusion detection system (IDS) models, such as a random forest classifier and a convolutional neural network-based classifier, for their ability to bypass the detection process. This work aims to highlight the possibilities of quantum machine learning as a means of generating advanced attack flows and stress testing classical IDS. Lastly, we further evaluate how hardware-based noise affects these attacks to offer a new perspective on IDS, highlighting the need for a quantum resilient defense system.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06629v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05076v1" target="_blank" rel="noopener noreferrer">
-      High-Dimensional Statistics: Reflections on Progress and Open Problems
+    <a href="https://arxiv.org/pdf/2605.06611v1" target="_blank" rel="noopener noreferrer">
+      The Structural Origin of Attention Sink: Variance Discrepancy, Super Neurons, and Dimension Disparity
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Arian Maleki, Subhabrata Sen, Sivaraman Balakrishna, Verena Zuber, Chao Gao, Rishabh Dudeja, Christos Thrampoulidis, Anru Zhang, Weijie Su, Jason M. Klusowski, Po-Ling Loh, Ali Shojaie</span>
+    <span class="paper-authors">Siquan Li, Kaiqi Jiang, Jiacheng Sun, Tianyang Hu</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">Over the past two decades, the field of high-dimensional statistics has experienced substantial progress, driven largely by technological advances that have dramatically reduced the cost and effort for data collection and storage across a broad range of domains, including biology, medicine, astronomy, and the social and environmental sciences. Modern datasets are increasingly complex, often exhibiting rich dependency, heterogeneity, and other features that challenge traditional statistical methods. In response, high-dimensional statistics has evolved to address more sophisticated estimation and inference problems. This evolution has, in turn, fostered deep connections with and contributions to a wide range of research areas, including optimization, concentration of measure, random matrix theory, information theory, and theoretical computer science. Given the rapid pace of recent developments in high-dimensional statistics, our goal is to synthesize representative advances, highlight common themes and open problems, and point to important works that offer entry points into the field.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05076v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Despite the prevalence of the attention sink phenomenon in Large Language Models (LLMs), where initial tokens disproportionately monopolize attention scores, its structural origins remain elusive. This work provides a \textit{mechanistic explanation} for this phenomenon. First, we trace its root to the value aggregation process inherent in self-attention, which induces a systematic variance discrepancy. We further demonstrate that this discrepancy is drastically amplified by the activation of super neurons within Feed-Forward Network (FFN) layers. Specifically, the channel-sparse down-projections trigger a dimension disparity of the first-token representation, necessitating the formation of attention sinks as a structural anchor. Then, we validate this causal chain through two controlled interventions: (i) isolating the aggregation effect via attention mask modifications and (ii) amplifying the variance of targeted token representations. Both interventions can replicate attention sinks at arbitrary positions. Our mechanistic understanding offers a foundation for the systematic control of sink formation. Finally, as a proof of concept, we propose \textit{head-wise RMSNorm}, an architectural modification that stabilizes value aggregation outputs during pre-training. Our experiments demonstrate that restoring statistical parity across positions significantly accelerates convergence.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06611v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05073v1" target="_blank" rel="noopener noreferrer">
-      Heterogeneous Judge-Aware Ranking with Sensitivity, Disagreement, and Confidence
+    <a href="https://arxiv.org/pdf/2605.06608v1" target="_blank" rel="noopener noreferrer">
+      DARTS: Targeting Prognostic Covariates in Budget-Constrained Sequential Experiments
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Shibo Yu, Yingzhou Wang, Yan Chen, Guodong Li, Jin-Hong Du</span>
+    <span class="paper-authors">Kateryna Husar, Alexander Volfovsky</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">Pairwise comparisons from multiple judges are central to large language model evaluation and preference modeling, yet standard ranking pipelines often pool judgments into a single score vector, treating systematic judge disagreement as noise. We propose Heterogeneous Judge-Aware (HJA) ranking, a structured multi-judge ranking framework that separates consensus ranking, judge-specific sensitivity to consensus, and residual preference disagreement. HJA thereby treats ranking, judge sensitivity, and structured disagreement as separate inferential targets.We establish conditions under which this decomposition is identifiable and develop an anchored alternating algorithm that preserves the identifying geometry. For confidence quantification, we study a fixed-panel repeated-comparison regime in which the judge panel may remain fixed or modest while information grows through repeated judgments. This yields uncertainty statements for consensus and judge-specific ranking contrasts, sensitivity parameters, pairwise probabilities, and summaries of residual disagreement.Experiments on synthetic and real multi-judge comparison data show that HJA improves recovery, robustness, uncertainty calibration, and near-tie performance relative to pooled and sensitivity-only baselines. The fitted model also provides diagnostics for judge disagreement and model-affinity patterns, giving a statistically grounded framework for ranking under heterogeneous comparative judgments.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05073v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Randomized controlled trials typically assume that prognostic covariates are known and available at no cost. In practice, obtaining high-dimensional pretreatment data is costly, forcing a trade-off between covariate-adaptive precision and a measurement budget. We introduce Dynamic Adaptive Rerandomization via Thompson Sampling (DARTS), which treats covariate acquisition as a sequential optimization problem embedded within a design-based causal inference task. A budgeted combinatorial Thompson sampler learns which covariates are most prognostic across successive batches; selected covariates then drive rerandomization and regression adjustment to reduce batch-level average treatment effect variance. Our primary theoretical contribution is a decoupling result: adaptive covariate selection based on past batches preserves batch-level randomization validity, and the cumulative inverse-variance weighted estimator achieves at least nominal asymptotic coverage. We further derive a Bayes risk bound for the acquisition layer that matches the minimax lower bound up to logarithmic factors. Empirically, DARTS systematically concentrates the budget on informative features, significantly closing the efficiency gap to oracle designs while maintaining strict inferential validity.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06608v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05071v1" target="_blank" rel="noopener noreferrer">
-      Look Once, Beam Twice: Camera-Primed Real-Time Double-Directional mmWave Beam Management for Vehicular Connectivity
+    <a href="https://arxiv.org/pdf/2605.06607v1" target="_blank" rel="noopener noreferrer">
+      AI CFD Scientist: Toward Open-Ended Computational Fluid Dynamics Discovery with Physics-Aware AI Agents
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Avhishek Biswas, Apala Pramanik, Eylem Ekici, Mehmet C. Vuran</span>
+    <span class="paper-authors">Nithin Somasekharan, Rabi Pathak, Manushri Dhanakoti, Tingwen Zhang, Ling Yue, Andy Zhu, Shaowu Pan</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">Millimeter-wave (mmWave) frequencies promise multi-gigabit connectivity for vehicle-to-everything (V2X) networks, but face challenges in terms of severe path loss and mobility-related beam misalignment. Reliable V2X connectivity requires fast, double-directional beam alignment. However, existing methods suffer from high training overhead and limited generalization to unseen scenarios. This paper presents VIsion-based BEamforming(VIBE), a hybrid model-based, closed-loop, learning architecture for real-time double-directional mmWave beam management primed by camera sensing. VIBE fuses machine learning, model-based reasoning, and closed-loop RF feedback to balance beam-pair establishment latency with link quality. VIBE bypasses exhaustive training overhead and accelerates link establishment by leveraging camera observations to reduce the beam-search space. Lightweight beam refinement and offset tracking mechanisms adaptively refine beams in response to dynamic application requirements. VIBE is implemented and evaluated across online indoor/outdoor testbeds, public datasets, and real-time vehicular experiments, demonstrating strong generalization capabilities, making it suitable for real-time V2X communication. Comparisons with 5G NR hierarchical beamforming show that VIBE consistently maintains lower outage rates. Furthermore, VIBE outperforms state-of-the-art end-to-end ML models for beam selection when evaluated on public datasets and achieves outage rates as low as 1.1-1.4 %. The results show that a hybrid model-based, closed-loop learning architecture is better suited for real-world mmWave vehicular connectivity than end-to-end trained ML models. For reproducibility, we publish our code to https://github.com/UNL-CPN-Lab/Look-Once-Beam-Twice.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05071v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Recent LLM-based agents have closed substantial portions of the scientific discovery loop in software-only machine-learning research, in chemistry, and in biology. Extending the same loop to high-fidelity physical simulators is harder, because solver completion does not imply physical validity and many failure modes appear only in field-level imagery rather than in solver logs. We present AI CFD Scientist, an open-source AI scientist for computational fluid dynamics (CFD) that, to our knowledge, is the first to span literature-grounded ideation, validated execution, vision-based physics verification, source-code modification, and figure-grounded writing within a single inspectable workflow. Three coupled pathways cover parameter sweeps within a fixed solver, case-local C++ library compilation for new physical models, and open-ended hypothesis search against a reference comparator, all running on OpenFOAM through Foam-Agent. At the center of the framework is a vision-language physics-verification gate that inspects rendered flow fields before any result is accepted, rerun, or written into a manuscript. On five tasks under a shared GPT-5.5 backbone, AI CFD Scientist autonomously discovers a Spalart-Allmaras runtime correction that reduces lower-wall Cf RMSE against DNS by 7.89% on the periodic hill at Reh=5600; under matched LLM cost, two strong general AI-scientist baselines (ARIS, DeepScientist) execute partial CFD workflows but lack the domain-specific validity gates needed to convert runs into defensible scientific claims; and a controlled planted-failure ablation shows that the vision-language gate detects 14 of 16 silent failures missed by solver-level checks. Code, prompts, and run artifacts are released at https://github.com/csml-rpi/cfd-scientist.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06607v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05070v1" target="_blank" rel="noopener noreferrer">
-      Nonconvex optimization methods for ground states in disordered continuous-spin models
+    <a href="https://arxiv.org/pdf/2605.06606v1" target="_blank" rel="noopener noreferrer">
+      TMDs in the Lens of Generative AI: A Pixel-Based Approach to Partonic Imaging
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ramgopal Agrawal, Lorenzo Ciarpaglini, Enzo Marinari, Marco Sciandrone, Diego Scuppa, Elisa Trasatti</span>
+    <span class="paper-authors">Marco Zaccheddu, Leonard Gamberg, Wally Melnitchouk, Daniel Pitonyak, Alexei Prokudin, Jian-Wei Qiu, Nobuo Sato</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">This work explores the global optimization problem of finding lowest-energy configurations (ground states) in disordered continuous spins models from statistical physics, with a particular focus on the random field XY model. Due to an extremely non-convex nature of the associated energy landscape, this problem remains highly challenging. From an optimization perspective, we reformulate the traditional angular Hamiltonian as a constrained problem on the Cartesian product of spheres, allowing the application of Riemannian optimization techniques, which show better computational performances. We compare a MultiStart (MS) strategy against a Monotonic Basin Hopping (MBH) framework, with the aim of highlighting the limitations of standard approaches and the resulting need to resort to more advanced global optimization techniques. Our results demonstrate that MBH consistently outperforms MS in identifying lower-energy configurations, offering superior computational efficiency and numerical stability. This approach establishes a robust link between continuous-spin systems and continuous global optimization, providing a high-performance benchmark for exploring complex energy landscapes.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05070v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">This work introduces a novel, nonparametric pixel-based framework for the Bayesian inference and imaging of transverse momentum dependent (TMD) parton distributions. The methodology is built upon a fully differentiable framework that integrates TMD evolution with the Collins-Soper-Sterman formalism, enabling the simultaneous extraction of partonic distributions and the nonperturbative evolution kernel. To achieve efficient and exact sampling of the high-dimensional posterior, we leverage generative AI through a hybrid normalizing flow-driven Metropolis-Hastings approach. The framework is validated through multi-scale closure tests of increasing complexity, ranging from basic functional models to convoluted structure functions. Using singular value decomposition (SVD), we rigorously characterize the uncertainty of the reconstructed distributions and reveal the existence of null TMDs, which are functional components in the null space of the kernel that remain unconstrained by observables. The new framework provides the first integration of pixel-based discretization, generative AI, and SVD within a Bayesian context to solve the TMD inverse problem. This synergy between machine learning and multi-scale data removes inherent degeneracies and enables unbiased 3D partonic imaging.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06606v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05052v1" target="_blank" rel="noopener noreferrer">
-      Interpretable Neural Networks to Predict Momentum Fluxes of Orographic Gravity Waves
+    <a href="https://arxiv.org/pdf/2605.06604v1" target="_blank" rel="noopener noreferrer">
+      A Geometry-Aware Residual Correction of Hagan&#x27;s SABR Implied Volatility Formula
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Elias Haslauer, Mierk Schwabe, Andreas Dörnbrack, Edwin P. Gerber, Markus Rapp, Nedjeljka Žagar, Veronika Eyring</span>
+    <span class="paper-authors">Adil Reghai, Lama Tarsissi, Gérard Biau, Alex Lipton</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">State-of-the-art Earth system models (ESMs) cannot explicitly resolve many small-scale atmospheric processes such as atmospheric gravity waves, and thus must represent, or parameterise, their effects on the resolved state. Machine learning (ML) has the potential to improve these parameterisations. In our study, we train neural networks (NNs) on ERA5 reanalysis data to predict momentum fluxes of orographic gravity waves as a function of the state variables at the resolution of a coarse ESM. Employing a full year of data, we extract inertia-gravity waves using the software MODES, which applies linear theory for wave filtering, and train ML models on data coarse-grained to the ESM&#x27;s target resolution. We consider four different cases: the full spectrum of inertia-gravity waves resolved in ERA5, or just the part of the spectrum that is subgrid-scale in the target ESM, both over all land or just over mountainous terrain. Our NNs successfully predict momentum fluxes, with a global coefficient of determination ($R^2$) ranging from 0.72 to 0.56, depending on the case, when evaluated offline with data from another year. An analysis of our models using SHAP values, an explainable AI technique, suggests that the networks learned physically meaningful relationships. In addition, we give a comparison with the physics-based parameterisation scheme by Lott and Miller. This work forms the basis for the development of operational ML-based parameterisations to improve the representation of gravity waves and their effects in climate models.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05052v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">This paper proposes a hybrid methodology to improve the approximation of SABR (Stochastic Alpha Beta Rho) implied volatility by combining analytical structure with machine learning. The approach augments the neural-network input representation with geometric features derived from the stochastic differential equations of the SABR model. Unlike approaches that fully replace analytical formulas with black-box models, the proposed framework preserves the analytical backbone of the model. The hybridization operates along two complementary dimensions. First, geometry-aware variables reflecting intrinsic properties of the SABR dynamics are used as structured inputs to the network. Second, the neural network is trained to learn the residual error relative to Hagan&#x27;s closed-form approximation rather than implied volatility directly. The resulting model acts as a structured residual correction to the analytical formula, retaining interpretability while capturing higher-order effects that are not included in the asymptotic expansion. Numerical experiments conducted over realistic parameter domains, as well as stressed environments, show that the method improves accuracy and robustness compared with both analytical approximations and standard neural-network approaches. Because the correction remains lightweight and structurally consistent with the underlying model, the framework is well suited for real-time pricing and calibration in practical trading environments.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06604v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05051v1" target="_blank" rel="noopener noreferrer">
-      Impossibility of Distribution-Free Predictive Inference for Individual Treatment Effects
+    <a href="https://arxiv.org/pdf/2605.06594v1" target="_blank" rel="noopener noreferrer">
+      Automated Clinical Report Generation for Remote Cognitive Remediation: Comparing Knowledge-Engineered Templates and LLMs in Low-Resource Settings
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Chongguang Tao, Zheng Zhou, Yuhong Yang</span>
+    <span class="paper-authors">Yongxin Zhou, Fabien Ringeval, François Portet</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">Uncertainty quantification for individual treatment effects (ITEs) is a daunting challenge in causal inference. Motivated by recent advances in conformal prediction, several works aim to construct distribution-free prediction sets for ITEs with desired coverage under standard assumptions such as strong ignorability and overlap. In this paper, we show that such goals are fundamentally unattainable in the presence of continuous covariates. Specifically, we establish finite-sample and asymptotic impossibility results demonstrating that any distribution-free prediction set achieving desired coverage for ITEs must be trivial, in the sense that it has infinite expected length. Our analysis relies on a connection between ITE inference and the hardness of conditional independence testing, and highlights the intrinsic limitations imposed by the missing data nature of causal inference. These results provide a new perspective on existing methods, clarifying that their apparent success necessarily relies on additional structural assumptions beyond standard causal assumptions.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05051v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The growing demand for cognitive remediation therapy, combined with limited speech therapist availability, has accelerated the adoption of remote rehabilitation tools. These systems generate large volumes of interaction data that are difficult for clinicians to review efficiently. This paper investigates automated clinical report generation for avatar-guided, home-based cognitive remediation sessions in a low-resource setting with no reference reports. We present and compare two approaches: (1) a rule-based template system encoding speech therapy domain knowledge as explicit decision rules and validated templates, ensuring clinical reliability and traceability; and (2) a zero-shot LLM-based approach (GPT-4) aimed at more fluent and concise output. Both systems use identical pre-extracted, expert-validated structured variables, enabling a controlled factual comparison. Outputs were evaluated by eight speech therapists and final-year students using a nine-criterion questionnaire. Results reveal a clear trade-off between clinical reliability and linguistic quality. The template-based system scored higher on fluidity, coherence, and results presentation, while GPT-4 produced more concise output. Directional differences are consistent across evaluation dimensions, though no comparison reached statistical significance after correction, reflecting the scale constraints of expert clinical evaluation. Based on evaluator feedback, we derive eight design recommendations for clinical reporting systems in remote rehabilitation settings. More broadly, this work contributes a replicable methodology combining expert elicitation, taxonomy-driven generation, and multi-dimensional human evaluation for clinical NLG in low-resource settings, and illustrates how controlled comparisons can inform the responsible adoption of generative AI in healthcare.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06594v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05040v1" target="_blank" rel="noopener noreferrer">
-      Preference-Based Self-Distillation: Beyond KL Matching via Reward Regularization
+    <a href="https://arxiv.org/pdf/2605.06590v1" target="_blank" rel="noopener noreferrer">
+      Unbiased estimation in two-stage adaptive enrichment designs
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Xin Yu, Liuchen Liao, Yiwen Zhang, Yingchen Yu, Lingzhou Xue, Qinzhen Guo</span>
+    <span class="paper-authors">Enyu Li, Nigel Stallard, Ekkehard Glimm, Peter K. Kimani</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">On-policy distillation is an efficient alternative to reinforcement learning, offering dense token-level training signals. However, its reliance on a stronger external teacher has driven recent work on on-policy self-distillation, where the same model serves as both teacher and student under different prompt contexts. Yet, existing self-distillation methods largely reduce learning to KL matching toward the context-augmented teacher model. This approach often suffers from training instability and can degrade reasoning performance over time. Moreover, self-distillation from the same model with prompt augmentation lacks the exploratory diversity provided by a genuine external teacher. To address these limitations, we move beyond fixed-teacher KL matching and propose \textbf{P}reference-\textbf{B}ased \textbf{S}elf-\textbf{D}istillation (\textbf{PBSD}), which revisits on-policy self-distillation through a reward-regularized perspective. Instead of directly matching the teacher distribution, we derive a reward-regularized objective whose analytic optimum is a reward-reweighted teacher distribution, yielding a target policy provably superior to the original teacher under this objective. Practically, PBSD optimizes preference gaps between teacher and student samples while maintaining on-policy student sampling. We support this framework with a statistical analysis of the induced preference-learning problem, formally establishing when on policy self-distillation is preferable to learning from an external teacher in our setting. Experiments on mathematical reasoning and tool-use benchmarks across multiple model scales demonstrate that PBSD consistently achieves the strongest average performance among comparable baselines, showing improved training stability over prior self-distillation baselines while preserving token efficiency.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05040v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Recent advances in biomedical research have identified an increasing number of biomarkers associated with heterogeneity in patient responses to medical treatments. When a treatment is suspected to benefit certain patient subpopulations, adaptive enrichment designs may be more efficient and ethical. In such designs, an interim analysis is incorporated during the trial to select patient subpopulations for which the experimental treatment appears promising, according to predefined subpopulation selection rules. However, data-dependent selection can induce selection bias, causing conventional maximum likelihood estimators (MLEs) to overestimate the treatment effect in the selected patient subgroup. Existing inference methods for addressing this bias are typically rule-specific, highlighting the need for an estimation framework that accommodate a broader class of subpopulation selection rules. In this work, we define a general class of subpopulation selection rules based on the sample space partition condition and provide a systematic derivation that yields a unified formula for the Uniformly Minimum Variance Conditional Unbiased Estimator (UMVCUE). This generality allows our formulation to encompass a wide spectrum of adaptive enrichment designs, eliminating the necessity for case-specific derivations for each new design. Extensive simulations confirm the unbiasedness of the proposed UMVCUE, ensuring that therapeutic benefits are not overestimated. By bridging the gap between flexible interim subpopulation selection and rigorous statistical inference, our framework has the potential to facilitate the implementation of diverse subpopulation selection rules with greater ease in real-world trials and promote more efficient and ethical drug development.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06590v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05035v1" target="_blank" rel="noopener noreferrer">
-      Network-Mediated Capacitive Coupling Drives Fast OTOC Saturation in Superconducting Circuits
+    <a href="https://arxiv.org/pdf/2605.06587v1" target="_blank" rel="noopener noreferrer">
+      Constraining Galaxy Cluster Triaxiality via Weak Lensing -- I. Preparation for the Rubin Data Beyond Leading Order
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Carla Caro Villanova, Alan C. Santos</span>
+    <span class="paper-authors">Shenming Fu, Radhakrishnan Srinivasan, Tae-hyeon Shin, Rance Solomon, Deric Jones, Camille Avestruz, Yuanyuan Zhang, Michel Aguena, Céline Combet, Anthony Englert, Benjamin Levine, Alex I. Malz, Constantin Payerne, Marina Ricci, Anja von der Linden, the LSST Dark Energy Science Collaboration</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">We investigate the dynamical and spectral consequences of capacitance-network-mediated interactions in superconducting transmon arrays beyond effective nearest-neighbor descriptions. While weak coupling regimes are well captured by an effective nearest-neighbor interacting models, we show that increasing capacitive connectivity induces a pronounced departure from this approximation in dynamical observables. Using Out-of-Time-Ordered Correlators (OTOCs), we demonstrate that such network-mediated couplings significantly accelerate operator scrambling, leading to rapid saturation compared to the nearest-neighbor limit. This dynamical crossover is accompanied by a shift in spectral statistics away from Poissonian behavior toward level repulsion, with the ratio parameter remaining intermediate between Poisson and Gaussian Orthogonal Ensemble (GOE) limits. This indicates the emergence of partial ergodicity rather than fully developed quantum chaos. As this behavior arises within experimentally realistic regimes of current superconducting transmon devices, identifying when network-mediated couplings qualitatively alter information dynamics is directly relevant for scalable superconducting architectures.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05035v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The 3D mass distributions of galaxy clusters are generally triaxial, a geometry that is difficult to constrain from projected observations. In this work, we measure the projected halo shapes of clusters from their weak lensing signatures using the triaxiality functionality in the Cluster Lensing Mass Modeling software, a tool developed by the Dark Energy Science Collaboration to analyze data from NSF-DOE Rubin Observatory&#x27;s Legacy Survey of Space and Time (LSST). We measure ensemble halo ellipticity on the plane of the sky via axis-aligned stacking and multipole expansion of the weak lensing data. We study a precursor dataset -- the redMaPPer cluster catalog, the metacalibration shape catalog, and the Directional Neighborhood Fitting photometric redshift catalog from the Dark Energy Survey Year 3 public data release. We select clusters that have a high centering probability (&gt;90%) of the identified central galaxy, and use the satellite galaxy distribution to determine the major-axis orientation for stacking. We extend the analysis to the second order of ellipticity in the monopole and quadrupole measurement. The projected ellipticity of the cluster sample is found to be $0.310^{+0.017}_{-0.016}$ (axis ratio $0.527^{+0.018}_{-0.019}$). The projected cluster ellipticity shows no statistically significant dependence on mass and redshift. We further verify the accuracy of the cluster shape measurement using mock catalogs. This analysis is applicable to datasets from upcoming wide-area cosmic surveys such as LSST, Euclid, and the Roman Space Telescope, where larger sample sizes will lead to tighter constraints on the cluster ellipticities.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06587v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05026v1" target="_blank" rel="noopener noreferrer">
-      Local Intrinsic Dimension Unveils Hallucinations in Diffusion Models
+    <a href="https://arxiv.org/pdf/2605.06584v1" target="_blank" rel="noopener noreferrer">
+      NeuroAgent: LLM Agents for Multimodal Neuroimaging Analysis and Research
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Bartlomiej Sobieski, Matthew Tivnan, Dawid Płudowski, Michał Jan Włodarczyk, Pengfei Jin, Przemyslaw Biecek, Quanzheng Li</span>
+    <span class="paper-authors">Lujia Zhong, Yihao Xia, Jianwei Zhang, Shuo huang, Jiaxin Yue, Mingyang Xia, Yonggang Shi</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">Diffusion models are prone to generating structural hallucinations - samples that match the statistical properties of the training data yet defy underlying structural rules, resulting in anomalies like hands with more than five fingers. Recent research studied this failure mode from several viewpoints, offering partial explanations to their occurrence, such as mode interpolation. In this work, we propose a complementary perspective that treats hallucinations as instabilities on the model-induced manifold. We begin by showing that a hallucination filter based on such instabilities matches or exceeds the performance of the recently proposed temporal one. By tracing the source of these instabilities, we identify local intrinsic dimension (LID) as their primary driver and propose Intrinsic Quenching (IQ), a direct corrective mechanism that deflates it to alleviate hallucinations. IQ consistently outperforms standard hallucination reduction baselines across a wide array of benchmarks and offers a highly promising solution for enforcing anatomical consistency in downstream medical imaging tasks.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05026v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Multimodal neuroimaging analysis often involves complex, modality-specific preprocessing workflows that require careful configuration, quality control, and coordination across heterogeneous toolchains. Beyond preprocessing, downstream statistical analysis and disease classification commonly require task-specific code, evaluation protocols, and data-format conventions, creating additional barriers between raw acquisitions and reproducible scientific analysis. We present NeuroAgent, an LLM-driven agentic framework that automates key preprocessing and analysis steps for heterogeneous neuroimaging data, including sMRI, fMRI, dMRI, and PET, and supports interactive downstream analysis through natural-language queries. NeuroAgent employs a hierarchical multi-agent architecture with a feedback-driven Generate-Execute-Validate engine: agents autonomously generate executable preprocessing code, detect and recover from runtime errors, and validate output integrity. We evaluate the system on 1,470 subjects pooled across all ADNI phases (CN=1,000, AD=470), where all subjects have sMRI and tabular data, with subsets also having Tau-PET (n=469), fMRI (n=278), and DTI ($n=620$). Pipeline ablation studies across multiple LLM backends show that capable models reach up to 100% intent-parsing accuracy, with the strongest backend (Qwen3.5-27B) reaching 84.8% end-to-end preprocessing step correctness. Automated recovery limits manual intervention to edge cases where human review is required via the Human-In-The-Loop interface. For Alzheimer&#x27;s Disease classification using automatically preprocessed multimodal data, our agent ensemble achieves an AUC of 0.9518 with four modalities, outperforming all single-modality baselines. These results show that NeuroAgent can reduce the manual effort required for neuroimaging preprocessing and enable end-to-end automated analysis pipelines for neuroimaging research.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06584v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.05006v1" target="_blank" rel="noopener noreferrer">
-      Uncovering hidden bias in neutron diffraction residual strain measurements
+    <a href="https://arxiv.org/pdf/2605.06568v1" target="_blank" rel="noopener noreferrer">
+      Statistical Significance Revisited
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Cole Franz, Michael B. Prime, Jeffrey Bunn, Andrew Payzant, Katharine Page</span>
+    <span class="paper-authors">Reason Machete</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-06</span>
+    <span class="paper-date">2026-05-07</span>
   </p>
-  <p class="paper-abstract">When calculating residual strain via neutron or X-ray diffraction, uncertainties propagated from the peak fit are often inadequate to describe the true scatter of measurements about a singular strain state, such as one that should describe a macroscopic continuum. Because diffraction is inherently a selective process, orientation dependent scatter arises from the sub-sampling of strong microstructure and strain gradients. This paper investigates the appropriateness of propagated uncertainties with reference to their original intention, i.e., noise about a mean value. Thirty-six unique orientations of strain measurements are taken at multiple locations within an additive friction-stir deposition component with fine-scale gradients (~200 um) of plastic strain, texture, and residual elastic strain. Multiple strain and stress calculation pathways are compared: direct substitution of three measurements into Hooke&#x27;s law, direct inversion of any six unique orientations into the strain state tensor, and thirty-six measurement least-squares estimation. For the latter two cases, the appropriateness of the uncertainty interval is statistically evaluated based on a physical constraint: common agreement under the strain transformation law. For this sample, the direct inversion of six measurements retains a conservative estimate of the uncertainty. However, propagated uncertainties in the least-squares solution greatly underestimate the true experimental scatter. A simple pathway to estimate appropriate uncertainty intervals is suggested. These results demonstrate that interpretation of uncertainty in residual strain is strongly dependent on intrinsic, sample-dependent effects, and that oversampling orientations and statistical analysis can give more accurate results with realistic uncertainties.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.05006v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Since its introduction by Fisher, the method of hypothesis testing that relies on computing error probabilities has witnessed several developments. Perhaps the most significant development was the seminal contributions of Neyman and Pearson who brought in the concept of the alternative hypothesis with its corresponding error of the second kind. Significance tests have played a major role in various scientific and technological developments, but not without controversies. Although originally cast as frequentist approaches, Bayesian ideas have been incorporated into significance tests, widening access to them. The quantities central to computations of error probabilities are the sampling distributions, which can be computed even without thresholds or alternative hypotheses. Even though Fisher used the significance threshold of 0.05 in his calculations, he cautioned against prescribing any specific threshold. Recently, there have been calls for reformation in practice with regard to the almost standard use of the significance threshold of 0.05, prepublication confirmatory studies, the dichotomous consideration of the null and alternative hypothesis and abandoning significance tests altogether in favour of other approaches such as confidence intervals and Bayesian decision theory. In this paper, we examine these calls for reform and unearth their strengths and short comings.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.06568v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
