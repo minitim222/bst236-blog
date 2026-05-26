@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-05-24 00:51 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-05-26 00:50 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22800v1" target="_blank" rel="noopener noreferrer">
-      The Matching Principle: A Geometric Theory of Loss Functions for Nuisance-Robust Representation Learning
+    <a href="https://arxiv.org/pdf/2605.23887v1" target="_blank" rel="noopener noreferrer">
+      CHRONOS: Temporally-Aware Multi-Agent Coordination for Evolving Data Marketplaces
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Vishal Rajput</span>
+    <span class="paper-authors">Joydeep Chandra</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">Robustness, domain adaptation, photometric and occlusion invariance, compositional generalisation, temporal robustness, alignment safety, and classical anisotropic regularisation are usually treated as separate problems with separate method families. This paper argues that much of their shared structure is one statistical problem: estimate the covariance of label-preserving deployment nuisance, then regularise the encoder Jacobian along a matrix whose range covers that covariance (the matching principle). CORAL, adversarial training, IRM, augmentation, metric learning, Jacobian penalties, and alignment-style constraints are different estimators of that object, not independent robustness tricks. In the linear-Gaussian model we prove closed-form optimality (Theorem A), including cube-root water-filling within the matched range; necessity of range coverage for quadratic Jacobian penalties (Theorem G); the same range dichotomy at deep global minima; and two falsification controls (Lemma C; Corollaries E), with seven conditional consistency lemmas (D1-D7) for estimation under standard identifiability assumptions. We introduce the Trajectory Deviation Index (TDI), a label-free probe of embedding sensitivity when task accuracy or Jacobian Frobenius norm is insufficient. Thirteen pre-registered blocks from classical ML through Qwen2.5-7B test the predicted matched, then isotropic, then wrong-W ordering on geometry and deployment drift; twelve pass, and the sole exception (Office-31) is an eigengap failure named before the run. At 7B scale, matched style-PMH improves selective honesty and preserves Style TDI where standard DPO degrades it. The contribution is naming the deployment nuisance covariance, stating what the regulariser must do, and supplying a closed-form falsifiable theory once that object is identified, not universality on every leaderboard.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22800v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Temporal knowledge-graph data marketplaces face three coupled failures in static designs: stale hybrid index shortcuts reduce recall as edges evolve, stationary Shapley pricing misattributes value after distribution shifts, and uncoordinated agents over-consume a shared differential-privacy budget. We present CHRONOS, a three-layer architecture providing a unified treatment of these challenges with explicit public and private separation. Layer one applies neural-ODE temporal decay to shortcut edges, providing a per-query expected recall-loss bound of Big-O of Pq lambda delta t, with a monotone-envelope guarantee reducing bound looseness to 1.8 to 3.2 times observed loss. Layer two conditions Shapley valuation on detected changepoints and provides finite-sample error guarantees under noise. Layer three uses EXP3-IX to achieve Big-O of the square root of T log T regret while enforcing epsilon and delta differential privacy via moments accounting. CHRONOS releases a privatized affinity matrix per epoch using the Gaussian mechanism; all retrieval and ranking are post-processing, incurring no extra privacy cost. We provide multi-epoch settlement, scalability analysis for 500 sellers, and comparisons against accelerated baselines. Across four benchmarks, CHRONOS shows 0.937 recall at ten, 2.74 queries per second, 161 ms latency, and total epsilon of 4.25 at delta of 10 to the power of negative 6 under zCDP composition. These results indicate a competitive operating point. A limitation is that at this privacy level, released valuations remain noise-dominated; utility derives primarily from public index routing and adaptive scheduling driven by low-sensitivity statistics.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23887v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22773v1" target="_blank" rel="noopener noreferrer">
-      Deep Reinforcement Learning for Flexible Job Shop Scheduling with Random Job Arrivals
+    <a href="https://arxiv.org/pdf/2605.23870v1" target="_blank" rel="noopener noreferrer">
+      Vapor-Cell-Induced Uncertainty in Rydberg Atom Measurements via the Electric-Field Volume-Integral-Equation Method
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yu Tang, Muhammad Zakwan, Efe Balta, John Lygeros, Alisa Rupenyan</span>
+    <span class="paper-authors">Martin Stumpf, William J. Watterson, Rajavardhan Talashila, Matt T. Simons, Alexandra Artusio-Glimpse, Lawrence Carslake, Tian Hong Loh, Christopher L. Holloway</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">The Flexible Job Shop Scheduling Problem (FJSP) is the optimal allocation of a set of jobs to machines. Two primary challenges persist in FJSP: the unpredictable arrival of future jobs and the combinatorial complexity of the problem, rendering it intractable for conventional mixed-integer linear programming solvers. This paper proposes an event-based \gls{DRL} approach to solve FJSP with random job arrivals. Specifically, we employ the Proximal Policy Optimization algorithm and use lightweight Multi-Layer Perceptrons to train the \gls{DRL} agent for minimizing the total completion time of all jobs. We design the state representation to be directly accessible from the environment, and limit the learning agent to selecting from among a set of well-established dispatching rules. Simulations show that our \gls{DRL} approach outperforms any of the individual dispatching rules on datasets with varying heterogeneity and job arrival rates. We benchmark our \gls{DRL} against an arrival-triggered mixed-integer linear programming solution and show that our method achieves good performance especially when the datasets are heterogeneous.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22773v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Electromagnetic scattering effects of a vapor cell on electric-field measurements using Rydberg atom-based sensors are analyzed with the aid of the volume integral equation method. In a manner similar to measurement, this computational approach determines the electric field over grid points within the vapor cell. Its relatively high computational efficiency makes it suitable for use in optimization routines and statistical uncertainty studies. We apply this method to compare uncertainty contributions arising due to the presence of the vapor cell, such as uncertainty in the glass relative permittivity or standing wave formation inside the cell, to those arising from the atomic spectroscopic measurement, such as uncertainty in the atomic dipole moment. For vapor cell dimensions less than half a wavelength, the dominant uncertainty source arises from uncertainty in the glass relative permittivity, resulting in a total uncertainty of $\sim$3.5\% -- comparable to the best uncertainties obtained with traditional field generation methods at national metrology institutes. Precise permittivity measurements have the potential to further reduce measurement uncertainty to $&lt;1$\%.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23870v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22755v1" target="_blank" rel="noopener noreferrer">
-      Assessing global drivers of forest transpiration using clustered machine learning models
+    <a href="https://arxiv.org/pdf/2605.23861v1" target="_blank" rel="noopener noreferrer">
+      Leveraging Foundation Models for Causal Generative Modeling
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Morgan Thornwell, David Yang, Cheng-Wei Huang, Peyman Abbaszadeh, Samantha Hartzell</span>
+    <span class="paper-authors">Aneesh Komanduri, Xintao Wu</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">Understanding the environmental drivers of forest transpiration is critical for improving global predictions of water availability and ecosystem health. Due to many competing controls on plant water stress and ecosystem transpiration, however, these drivers may vary widely across tree species which have adapted hydraulically to local climate conditions. Here, clustered machine learning models were used to analyze global drivers of forest transpiration rates using the SAPFLUXNET database. Sap flux data from a total of ninety-five sites spanning seven biomes were grouped using two clustering strategies: by biome and by plant functional type. Two supervised machine learning algorithms, a random forest algorithm and a neural network algorithm, were used to predict rates of sap flux for each cluster. The performance and feature importance in each model were analyzed and compared to evaluate the environmental variables that control each cluster&#x27;s performance. By defining site clusters, these models are able to predict transpiration and its environmental drivers across a wide variety of geographical sites and tree species. Unlike models trained on the entire dataset, high-performing clustered models achieved R$^2$ values to measurement data in the range of 0.74 to 0.90, with the highest performance being achieved in mid-sized clusters of up to thirty-six sites. There was high variance in feature importance between clusters, indicating that key predictors of transpiration varied strongly across both plant functional type and biome. Overall, water-limited climates tended to be more controlled by soil moisture, whereas climates with high mean annual temperature tended to be more controlled by solar radiation and less dependent on air temperature. These findings provide insights into how forest transpiration responds to environmental factors across a wide range of climate types and tree species.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22755v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Causal generative modeling is essential for developing reliable and transparent AI systems capable of counterfactual reasoning. While existing approaches focus on integrating causal constraints during the training of generative models, they often lack a unified framework to leverage the zero-shot reasoning capabilities of pretrained foundation models. We introduce FM-CGM, a modular framework for end-to-end visual causal reasoning using pretrained foundation models. FM-CGM formalizes the causal pipeline through three core components: a concept extractor, a concept manipulator, and a counterfactual generator. By leveraging a large reasoning model for causal inference and a text-to-image diffusion model for generation, our approach enables zero-shot causal discovery, intervention, and counterfactual generation. We then develop Causal Semantic Guidance (CSG), a cross-attention-based mechanism that ensures semantic interventions propagate to descendant concepts while preserving invariant regions. We empirically show that our approach can identify plausible causal structures and is suitable for faithful counterfactual image generation.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23861v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22753v1" target="_blank" rel="noopener noreferrer">
-      Signatures of quantum chaos in phonon-polariton billiards
+    <a href="https://arxiv.org/pdf/2605.23860v1" target="_blank" rel="noopener noreferrer">
+      TCAD + Allpi$\text{x}^2$ Simulation study of MALTA2, a Depleted Monolithic Active Pixel Sensor for future tracking
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yinan Dong, Felix Liu, Ekrem Demirboga, Andrey Grankin, Dihao Sun, Yuchen Lin, Lukas Wehmeier, Matthew Fu, Cory R. Dean, Song Liu, James H. Edgar, Michael M. Folger, Victor M. Galitski, Dmitri N. Basov</span>
+    <span class="paper-authors">L. Li, P. Behera, D. V. Berlea, D. Bortoletto, C. Buttar, T. Chembakan, V. Dao, G. Dash, Y. Enari, L. Fasselt, S. Haberl, T. Inada, F. K. Isik, C. Issever, X. Li, Y. Okazaki, H. Pernegger, P. Riedler, W. Snoeys, C. A Solans Sanchez, A. Swoboda, I. Turk Cakir, M. van Rijnbach, A. Vijay, S. Worm</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">We use scanning near-field optical microscopy to image hyperbolic phonon polaritons in hexagonal boron nitride (hBN) billiards with integrable and chaotic geometries. In Sinai billiards, we observe irregular mode patterns consistent with quantum scarring, together with an unexpected sensitivity to weak probe perturbations. These random-wave features coexist with non-chaotic one-dimensional boundary modes arising from nontrivial polariton reflection at the billiard edge. As the billiard boundary becomes increasingly complex, the Fourier transforms of the measured signals evolve toward ring-like structures consistent with Berry&#x27;s random-wave conjecture. We develop a numerical framework based on the Helmholtz equation with generalized boundary conditions that encode angle-dependent reflection phase shifts. The calculated level statistics exhibit a crossover from Poisson-like behavior in integrable billiards to Wigner-Dyson-like behavior in chaotic geometries, with small deviations from the canonical form arising from nonlinear boundary conditions that require self-consistent bulk-boundary analysis. Theoretical analysis based on dissipative Green&#x27;s functions qualitatively reproduces the near-field data. These results establish mesoscopic van der Waals billiards as a rich platform for studying generalized chaotic dynamics of hybrid light-matter polaritons.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22753v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">In this work, a hybrid simulation framework combining TCAD and Allpi$\text{x}^2$ is presented to investigate the sensor properties of MALTA2, a depleted monolithic active pixel sensor designed for future tracking. The study starts from 3D modeling and transient simulations in TCAD, with generic doping profiles and simple well structures. The resulting doping profiles and electric field are extracted and fed into Allpi$\text{x}^2$ for high-statistics Monte Carlo simulations in both DUT-only and full-telescope mode. Simulations reveal a strong dependence of sensor performance, specifically the detection efficiency and cluster size, on the doping concentration of the N-type blanket at the sensor surface. The doping concentration is then optimized by comparing simulations with measurement data. The active depth of the depleted region of the MALTA2 sensor is estimated in both simulations and measurements using a grazing angle method, in which the sensor is positioned at various inclinations relative to the beam, covering angles from 0 to 60 degrees. Excellent agreement on active depth is obtained with the optimal doping concentration, showing a deviation of 2\% from the measured value at a threshold of 450\,$\text{e}^-$. Consequently, the framework offers a generic toolkit for sensor studies without requiring proprietary information.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23860v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22749v1" target="_blank" rel="noopener noreferrer">
-      Cyber-Physical Anomaly Detection in IoT-Enabled Smart Grids Using Machine Learning and Metaheuristic Feature Optimization
+    <a href="https://arxiv.org/pdf/2605.23839v1" target="_blank" rel="noopener noreferrer">
+      cloelib: A Flexible Python Library for Computing Cosmological Observables in the Euclid Era
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Adis Alihodžić, Eva Tuba, Milan Tuba</span>
+    <span class="paper-authors">Marco Bonici, Guadalupe Cañas-Herrera, Pedro Carrilho, Santiago Casas, Chiara Moretti, Andrea Pezzotta, Michel Aguena, Giovanni Aricó, Zahra Baghkhani, Matteo Baratto, Emilio Bellini, Jip de Buck, Klara Bertmann, Ben Bose, Jeger C. Broxterman, Pierre Burger, Carmelita Carbone, Chaitanya Chawak, Jose Coloma-Nadal, Martin Crocce, Stefano Davini, Christopher A. J. Duncan, Samuel Farrens, Lisa Goh, Nastassia Grimm, Alex Hall, Ryusei R. Kano, Martin Kärcher, Felicitas Keil, Raphaël Kou, Laila Linke, Arthur Loureiro, Katarina Markovic, David Navarro-Gironés, Filippo Oppizzi, Gabriele Parimbelli, Anna Porredon, Robert Reischke, Jaime Ruiz Zapatero, Iñigo Sáez-Casares, Ziad Sakr, Neel Shah, Davide Sciotti, Matthieu Schaller, Ivan Sladoljev, Arghavan Souki, Sankarshana Srinivasan, Konstantinos Tanidis, Peter L. Taylor, Nicolas Tessore, Linus Thummel, Maria Tsedrik, Isaac Tutusaus, Casper Vedder, Angus H. Wright, Miguel Zumalacárregui, Joe Zuntz</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">Modern smart grids rely on dense measurement infrastructures, communication links, and intelligent field devices. Although this improves supervision and control, it also increases vulnerability to cyber-physical disruptions. Operators must distinguish physical incidents, such as faults or line disturbances, from malicious actions, such as false data injection or unauthorized command execution. This chapter investigates this problem using the well-known MSU/ORNL Power System Attack Dataset. The proposed method combines machine learning with genetic-algorithm-based feature selection. The objective is twofold: to classify attack and natural events accurately, and to determine whether a reduced set of physically informative PMU/IED measurements can support reliable detection. Several baseline models are evaluated, including logistic regression, RBF-SVM, XGBoost, Random Forest, and Extra Trees. The results show that tree-based ensemble models are the most effective for the considered dataset, with Extra Trees providing the strongest full-feature baseline. After feature selection, the GA + Extra Trees model reduces the clean PMU feature space from 112 attributes to an average of 27.4 attributes over five runs, while increasing macro-F1 from 0.9118 to 0.9212 and ROC-AUC from 0.9791 to 0.9837. These results indicate that many synchronized electrical measurements are redundant. A compact subset of phasor-based features can still provide accurate and interpretable anomaly detection in smart grids.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22749v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">cloelib is a Python library developed to compute cosmological observables within the Cosmology Likelihood for Observables in Euclid (CLOE) ecosystem (cloe-org). As cosmology enters a precision era driven by galaxy survey missions such as Euclid, there is a growing need for flexible, efficient, and differentiable software capable of supporting next-generation inference pipelines. cloelib addresses these demands through a modular architecture that interfaces seamlessly with established Boltzmann solvers whilst incorporating JAX-based automatic differentiation to enable gradient-based methods. The library defines consistent protocols for background evolution, perturbations, and non-linear structure formation, and supports a wide range of observables, including photometric and spectroscopic large-scale structure probes, as well as cross-correlations with the Cosmic Microwave Background and galaxy clusters. In its finalised form, cloelib is intended to serve as the reference theory computation infrastructure for Euclid&#x27;s first cosmological release, bridging traditional numerical cosmology with modern optimisation techniques and emerging machine learning approaches to inference.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23839v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22742v1" target="_blank" rel="noopener noreferrer">
-      Complete lattice QCD calculation of $K^{-}\to \ell^{-}\barν_{\ell}\ell^{&#x27;+}\ell^{&#x27;-}$ form factors
+    <a href="https://arxiv.org/pdf/2605.23831v1" target="_blank" rel="noopener noreferrer">
+      Ray-Tracing vs. 3GPP TDL: Power Delay Profile Analysis in Outdoor-to-Indoor and Indoor Channels
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">R. Di Palma, R. Frezzotti, G. Gagliardi, V. Lubicz, G. Martinelli, C. T. Sachrajda, F. Sanfilippo, S. Simula, N. Tantalo</span>
+    <span class="paper-authors">Julia Andrusenko, Chloe Makdad</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">We present the first complete lattice QCD calculation of the four structure-dependent form factors governing the rare charged kaon decay $K^- \to \ell^- \barν_\ell \ell&#x27;^+ \ell&#x27;^-$, with fully controlled statistical and systematic uncertainties. Our calculation is based on gauge ensembles generated by the Extended Twisted Mass Collaboration (ETMC) with $N_f = 2+1+1$ flavors of Wilson-clover twisted-mass fermions. Simulations are performed directly at the physical values of the light and strange quark masses, and include an estimate of the quark-disconnected contributions in which the virtual photon couples to sea quarks. All four form factors are determined across the kinematical region probed by experiments. The Spectral Function Reconstruction (SFR) method of Ref. [1] is employed to overcome the analytic continuation problem for dilepton invariant masses above the two-pion threshold. Finite-volume effects are investigated using ensembles with spatial extents $L\simeq [3.8,7.6]~\mathrm{fm}$, while the continuum limit is obtained from three lattice spacings in the range $a\in[0.057, 0.08]~\mathrm{fm}$. Our results for the form factors enable the evaluation of decay rates and differential observables for all four channels, $K^- \to e^- \barν_e e^+ e^-$, $K^- \to e^- \barν_e μ^+ μ^-$, $K^- \to μ^- \barν_μe^+ e^-$, and $K^- \to μ^- \barν_μμ^+ μ^-$, thereby providing first-principles Standard Model predictions against which existing and upcoming measurements can be directly compared. A detailed phenomenological analysis of the decay rates and associated observables is presented in a companion paper [2].</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22742v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">3rd Generation Partnership Project (3GPP) Technical Report (TR) 38.901 channel models (Releases 15-19) are widely used for physical-layer design and system-level evaluation in dense urban outdoor-to-indoor (O2I) and indoor environments. These models capture ensemble-averaged channel statistics but do not account for site-specific geometry. In this paper, we compare Power Delay Profiles (PDPs) derived from a deterministic ray-tracing model (Remcom Wireless InSite software) with those from the 3GPP TR 38.901 Tapped Delay Line (TDL) channel models. This comparative analysis is performed using a dense urban O2I scenario and a representative single-story indoor layout modeled in Washington, D.C., under matched link-distance and Non-Line-of-Sight (NLOS) conditions. All Wireless InSite PDPs are power-normalized to enable comparison of relative multipath delay structure. We evaluate root-mean-square (RMS) delay spread, mean excess delay, effective maximum delay, and Kullback-Leibler (KL) distribution divergence. Results indicate that 3GPP TDL models generally exhibit longer delay spreads and often fail to capture deterministic, site-specific features such as late-arriving energy and irregular spikes. While TDL models can approximate primary channel features in some cases, their reliance on ensemble-averaged statistics rather than geometry limits their representation of fine multipath structures. We conclude that while 3GPP TDL models are suitable for large-scale system evaluation, deterministic or hybrid approaches are more appropriate for site-specific physical-layer design.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23831v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22740v1" target="_blank" rel="noopener noreferrer">
-      Ternary Decision Trees with Locally-Adaptive Uncertainty Zones
+    <a href="https://arxiv.org/pdf/2605.23821v1" target="_blank" rel="noopener noreferrer">
+      Hierarchical Concept Geometry in Language Models Emerges from Word Co-occurrence
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">William Smits</span>
+    <span class="paper-authors">Andres Nava, Matthieu Wyart</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">Decision trees partition the feature space using hard binary thresholds, assigning identical confidence to instances far from a decision boundary and to those directly on it. We introduce ternary decision trees, which augment each split node with an uncertainty zone of half-width delta centered on the optimal threshold. Instances in this zone receive predictions formed by weighted blending of both child subtrees and are flagged as boundary-uncertain, signaling that downstream applications may treat these predictions differently. Crucially, delta is computed locally at each node from statistics already available during standard CART split finding, requiring no external noise specification. We propose and evaluate five delta-estimation methods: quality-plateau (plateau width of the split criterion curve), class-overlap (empirical class-distribution overlap), gain-ratio (split quality relative to split entropy), node-bootstrap (threshold variance under node-level resampling), and margin (SVM-inspired distance to the nearest cross-class training example). Evaluated across 72 OpenML-CC18 datasets with 5-fold cross-validation, all five methods with probabilistic routing significantly outperform standard CART on decided accuracy (Wilcoxon signed-rank, p &lt; 0.001). The margin method achieves the best efficiency (0.104 accuracy gain per unit of boundary-uncertain flagging rate), wins on 42 of 72 datasets, and requires zero additional hyperparameters. Analysis on three Breiman synthetic benchmarks reveals that margin is self-calibrating on clean data while node-bootstrap and quality-plateau best track theoretical irreducible error. Experiments on four medical and financial datasets demonstrate practical value: on mammography, node-bootstrap achieves +0.71% decided accuracy by flagging 10.8% of screening cases as boundary-uncertain.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22740v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We propose a distributional theory of how hypernymy -- the ``is-a&#x27;&#x27; relation between general and specific concepts -- is encoded geometrically in language representations. Starting from the empirically verified assumption that words closer on the WordNet hypernym graph co-occur more often, we characterize theoretically the spectrum of the resulting embedding Gram matrix of word2vec embeddings. Under mild positivity and decay conditions on the co-occurrence kernel, we prove that the leading eigenvectors first separate broad taxonomic branches and then progressively finer sub-branches, producing a \emph{hierarchical splitting geometry} with a coarse-to-fine spectral organization that mirrors the tree. We confirm these predictions in word2vec embeddings across many sampled WordNet subtrees, and show that the same signature extends strikingly well to Gemma 2B unembeddings. Our results indicate that hierarchical concept geometry in LLMs need not reflect a hierarchy-specific functional mechanism, but emerges from the spectral structure of pairwise word statistics.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23821v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22738v1" target="_blank" rel="noopener noreferrer">
-      Proxy-Based Approximation of Shapley and Banzhaf Interactions
+    <a href="https://arxiv.org/pdf/2605.23811v1" target="_blank" rel="noopener noreferrer">
+      A Machine Learning Framework for Large-Scale Static Wireless Mesh Networks
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Santo M. A. R. Thies, Hubert Baniecki, R. Teal Witter, Eyke Hüllermeier, Maximilian Muschalik, Fabian Fumagalli</span>
+    <span class="paper-authors">Julia Andrusenko</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">Shapley and Banzhaf interactions capture the complex dynamics inherent in modern machine learning applications. However, current estimators for these higher-order interactions trade off between speed and accuracy. To overcome this limitation, we introduce ProxySHAP. ProxySHAP reconciles the high sample efficiency of tree-based proxy models with a principled path to consistency via residual correction. On a theoretical level, we derive a polynomial-time generalization of interventional TreeSHAP to compute exact interaction indices for tree ensembles, successfully bypassing exponential tree-depth dependencies in prior methods. Furthermore, we formally analyze the residual adjustment strategy, characterizing the specific conditions under which Maximum Sample Reuse (MSR) corrects proxy bias without its variance scaling exponentially with interaction size. Extensive benchmarking demonstrates that ProxySHAP sets a new state-of-the-art standard for approximation quality, including in large-scale applications with thousands of features. By achieving the lowest error in both small- and large-budget regimes, ProxySHAP significantly outperforms the prior best estimators ProxySPEX and KernelSHAP-IQ, while also delivering superior performance on downstream explainability tasks.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22738v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">This paper presents a system design methodology for a large-scale static wireless mesh network for 155 commercial off-the-shelf (COTS) radio nodes at fixed infrastructure sites in a challenging island environment. The architecture consists of approximately ten 15-node clusters, each with designated primary and secondary gateway nodes to support inter-cluster communication. A structured, multi-stage planning methodology was developed to guide network design. Site-specific radio frequency (RF) path loss predictions were generated using Remcom&#x27;s Wireless InSite ray-tracing platform, incorporating terrain, buildings, and dense foliage effects. To optimize connectivity under physical-layer and operational constraints, spectral embedding combined with balanced k-means clustering was applied to partition the nodes into clusters of comparable size. A link budget analysis determined the maximum tolerable path loss under waveform and hardware constraints, defining the connectivity threshold used in the clustering framework. This work integrates deterministic RF propagation modeling with constrained clustering optimization to provide a scalable framework for planning static wireless mesh networks in complex geographic environments. Node mobility and higher-layer networking protocols were outside the scope of this study.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23811v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22724v1" target="_blank" rel="noopener noreferrer">
-      Multiple Neural Operators Achieve Near-Optimal Rates for Multi-Task Learning
+    <a href="https://arxiv.org/pdf/2605.23801v1" target="_blank" rel="noopener noreferrer">
+      Unsupervised Chemo-Dynamical Dissection of the Inner Galactic Halo: Discovery of Five Accreted Substructures with SDSS-V and Gaia
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Adrien Weihs, Hayden Schaeffer</span>
+    <span class="paper-authors">Furkan Akbaba, Olcay Plevne</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">We study the approximation and statistical complexity of learning collections of operators in a shared multi-task setting, with a focus on the Multiple Neural Operators (MNO) architecture. For broad classes of Lipschitz multiple operator maps, we derive near-optimal upper bounds for approximation and statistical generalization. On the lower-bound side, we establish a curse of parametric complexity and prove corresponding minimax rates. Together, these results show that shared representations across tasks do not increase the overall cost: multi-task operator learning follows the same scaling laws as single operator learning. We also compare MNO with a multi-task extension of DeepONet based on concatenated task inputs and show that, from a worst-case approximation-complexity perspective, both architectures satisfy essentially the same asymptotic rates.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22724v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The inner Galactic halo is a complex graveyard of the Milky Way&#x27;s earliest accretion events, where severe orbital phase-mixing challenges traditional dynamical stream-finding techniques. We present a purely data-driven, 12-dimensional chemo-dynamical analysis of the inner halo using \textsl{SDSS-V Milky Way Mapper} (DR19) and \textsl{Gaia} DR3. Utilizing an unsupervised machine learning framework based on UMAP and HDBSCAN, we perform a blind search for clustered populations within a chemically selected \textit{ex-situ} sample of 2,185 stars without kinematic pre-selection. Our pipeline recovers nine kinematic groupings corresponding to seven known substructures (including \textsl{Gaia}-Enceladus/Sausage, the Helmi Streams, and Sequoia), validating the robustness of the high-dimensional feature space. We also report five new tightly bound candidate substructures, designated FO1--FO5 ($E_{\rm tot} \leq -1.8 \times 10^5~\mathrm{km^2~s^{-2}}$). Four candidates (FO1, FO3, FO4, FO5) are confirmed as robust chemo-dynamical overdensities, while FO2 exhibits a striking nitrogen enhancement ($[\mathrm{N/Fe}] = +0.83 \pm 0.16$) suggestive of tidal debris from a disrupted massive globular cluster. Finally, we demonstrate that high-dimensional chemical information is critical for resolving dynamical degeneracies in the crowded inner halo, differentiating structures sharing similar orbits but distinct chemistry (e.g., FO5 and Shiva), and the reverse (e.g., FO3 and the Helmi Streams). These findings confirm that the deepest regions of the Galactic potential preserve a rich record of the Galaxy&#x27;s assembly history.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23801v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22702v1" target="_blank" rel="noopener noreferrer">
-      Follow the wobble: Statistical methods to detect astrometric binary asteroids in Gaia FPR
+    <a href="https://arxiv.org/pdf/2605.23797v1" target="_blank" rel="noopener noreferrer">
+      Debiased Negative Mining Improves Out-of-distribution Detection with Pre-trained Vision-Language Models
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Luana Liberato, Paolo Tanga, David Mary, Raphael Lallemand, Ziu Liu, Benoit Carry, Josselin Desmars, Daniel Hestroffer, Kate Minker, Alexandros Siakas</span>
+    <span class="paper-authors">Bo Peng, Jie Lu, Guangquan Zhang, Zhen Fang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">In a previous article, we obtained the first-ever list of astrometric binary asteroid candidates. Some of these candidates have now been confirmed. In that previous work, however, the details of the statistical methods were not provided. Our first aim is to provide methodological details and performance evaluation of the approach used for detecting binaries. Our second aim is to establish an updated list of binary asteroid candidates from Gaia FPR astrometric residuals exploration, where we account for the statistical properties of FPR data. We account for the astrometric uncertainties from FPR and we refine the statistical model of the data, which we use in MC simulation to evaluate the strength of the individual detections; we set up a trend detection method in the residuals and apply a dedicated period search algorithm; we update the statistical selection process to build the list of candidates; we set up a method for detecting objects in multiple windows of consecutive observation; we refine the method for confidence interval estimation of these parameters and we better constrain the physical parameter selection. We detect 343 binary asteroid candidates corresponding to 410 windows of consecutive observations in the astrometric data. We show that in noise-only control simulations, the typical number of detections is 88% lower than in the FPR data. We also detect 9 known binaries, 25 candidates overlapping with the Pan-STARSS survey and 99 overlapping with our previous binary search in DR3. Finally, we report the detection of 45 objects with trends in residuals suggestive of wide binary systems. Our results and analyses demonstrate that although detecting binary asteroids is a difficult problem due to their low signal level, the proposed method is likely to provide a reliable list of detections, including systems poorly accessible to conventional techniques.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22702v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Aiming at identifying unexpected inputs from unknown classes, out-of-distribution (OOD) detection has emerged as a pivotal approach to enhancing the reliability of machine learning models. This paper focuses on the burgeoning paradigm of post-hoc OOD detection with pre-trained vision-language models (VLMs), where a popular pipeline is to detect OOD inputs by examining their affinities between ID labels and negative labels, i.e., those semantically different from ID labels. Due to the unavailability of target OOD labels, existing works predominantly rely on heuristic rules to mine negative labels from unlabeled wild corpus data. Despite the empirical success, we argue that the power of VLM-based OOD detection has yet to be fully unleashed since the notorious false negative problem is far from addressed in the literature. With this motivation, we are interested in addressing the challenge of mining true negative labels for OOD scoring. To this end, we develop a theoretical framework for correcting the sampling bias of negatives labels by indirectly approximating the distribution of negative labels. Perhaps surprisingly, we show that the debiased negative mining can be naturally converted into Monte-Carlo sampling based on ID labels and the unlabeled wild corpus data. Extensive experiments empirically manifest that our method establishes a new state-of-the-art in a variety of OOD detection setups. Code is publicly available at \href{https://github.com/60pen9/Debiased-Negative-Mining-Improves-OOD-Detection-with-Pre-trained-VLMs}{\textcolor{red}{here}}.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23797v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22701v1" target="_blank" rel="noopener noreferrer">
-      Monitored quantum transport through a disordered one-dimensional conductor
+    <a href="https://arxiv.org/pdf/2605.23789v1" target="_blank" rel="noopener noreferrer">
+      Orientable Surfactants on Thin Liquid Films: A Dynamic Density-Functional Theory Approach
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">J. Sánchez Fernán, J. Tworzydło, C. W. J. Beenakker</span>
+    <span class="paper-authors">Toby Kay, Serafim Kalliadasis</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">We formulate a quantum master equation for the many-particle density matrix of electrons propagating through a single-mode conductor, combining elastic scattering by disorder with time-resolved projective measurements that monitor the outcome of scattering events. The full counting statistics of transmitted electrons has a binomial distribution function, whose mean ${\cal T}$ and variance ${\cal T}(1-{\cal T})$ determine the conductance and shot noise power, respectively. Monitoring suppresses the phase coherence responsible for one-dimensional localization: The decay with conductor length $L$ of the typical transmission probability crosses over at $L\simeq \ell_φ$ from the exponential $e^{-L/ξ}$ (with localization length $ξ$) to the Ohmic $1/L$ decay. Numerical solution of the master equation gives, for weak monitoring, a logarithmic dependence $\ell_φ\simeq ξ\ln(v_{\rm F}τ_φ/ξ)$ of the coherence length $\ell_φ$ on the mean time $τ_φ$ between measurements.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22701v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Thin liquid films are ubiquitous across many natural and engineering systems, including films which are laden with surface active molecules, i.e. surfactants. The presence of surfactants may have a destabilising effect on the film owing to their influence on surface tension, the so-called Marangoni effect, which in turn can induce flows in the film. Classical thin-film models for surfactant-laden films lead to paradigmatic gradient dynamics equations governing the film height and surfactant concentration and have been widely studied. However, in all these works, which are based on fluid dynamics or nonequilibrium thermodynamics, the shape of surfactants is neglected, and they have been treated as symmetric point-like particles. In general, this is a drastic oversimplification, as surfactants are amphiphilic with a polar head-tail structure. To account for this effect we use elements from the statistical mechanics of classical fluids, namely density-functional theory (DFT), and its dynamic extension (DDFT). Starting from DDFT and under the long-wave approximation, we derive the pertinent thin-film equations with the surfactants treated as polar uniaxial particles. These are equations which govern the film height, as well as the surfactant concentration and polarisation field. They preserve the gradient dynamics form by appropriately defining the free energy, which contains the usual interfacial contributions, as well as further contributions from the polarisation field. In doing so, we uncover a novel form of a generalised surface tension that is dependent on the surfactant polarisation as well as concentration, and show that it arises in a thermodynamically consistent way.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23789v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22698v1" target="_blank" rel="noopener noreferrer">
-      Machine Learning Interatomic Potentials: Advancing Open-Source Software for Efficient and Scalable Molecular Simulation
+    <a href="https://arxiv.org/pdf/2605.23777v1" target="_blank" rel="noopener noreferrer">
+      Machine learning applied to emerald gemstone grading: framework proposal and creation of a public dataset
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Christoph Brunken, Titouan Cormier, Lucien Walewski, Marco Carobene, Yessine Khanfir, Zachary Weller-Davies, Miguel Bragança, Armand Picard, Adrien Pichard, Leon Wehrhan, Heloise Chomet, Eszter Varga-Umbrich, Marie Bluntzer, Massimo Bortone, Valentin Heyraud, Silvia Acosta-Gutiérrez, Jules Tilly, Olivier Peltre</span>
+    <span class="paper-authors">FB Pena, D Crabi, Sandro C Izidoro, Érick O Rodrigues, G Bernardes</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">Machine learning interatomic potentials (MLIPs) enable atomistic simulations with near ab initio accuracy at significantly reduced computational cost, but their broader adoption is often limited by fragmented tooling, limited scalability, and inflexible software design. We present mlip v2, a new generation of the mlip library that advances efficient and scalable molecular simulation through a unified and extensible framework. The new release features a targeted API redesign with improved modularity and control, enabling flexible customization of training, data processing, and simulation workflows. It further integrates a new high-performance backend for equivariant operations, e3j, significantly accelerating model inference and simulations. In addition, the framework introduces a range of entirely new capabilities, including the eSEN architecture with a Mixture-of-Experts formulation for scalable training on large and diverse datasets, improved handling of electrostatics through more physically grounded charge modeling and long-range interaction treatment, and advanced simulation features such as NPT ensembles and nudged elastic band methods. Together, these extensions significantly broaden the scope of MLIP applications, enabling efficient modeling of complex, reactive, and out-of-equilibrium systems, and bridging the gap between ML research and practical molecular simulation applications. The library is available on GitHub and on PyPI under the Apache license 2.0.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22698v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The grading of gemstones is currently a manual procedure performed by gemologists. A popular approach uses reference stones, where those are visually inspected by specialists that decide which one of the available reference stone is the most similar to the inspected stone. This procedure is very subjective as different specialists may end up with different grading choices. This work proposes a complete framework that entails the image acquisition and goes up to the final stone categorization. The proposal is able to automate the entire process apart from including the stone in the created chamber for the image acquisition. It discards the subjective decisions made by specialists. This is the first work to propose a machine learning approach coupled with image processing techniques for emerald grading. The proposed framework achieves 98% of accuracy (correctly categorized stones), outperforming a deep learning approach. Furthermore, we also create and publish the used dataset that contains 192 images of emerald stones along with their extracted and pre-processed features.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23777v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22692v1" target="_blank" rel="noopener noreferrer">
-      Mechanisms and Pathways of Extreme Events in Partially-Observed Stochastic Dynamical Systems
+    <a href="https://arxiv.org/pdf/2605.23776v1" target="_blank" rel="noopener noreferrer">
+      Precipitation diffusion downscaling and application to out-of-distribution simulations with and without stratospheric aerosol injection
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Charlotte Moser, Nan Chen, Marios Andreou</span>
+    <span class="paper-authors">Cameron Dong, James W. Hurrell, Elizabeth A. Barnes</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">Extreme events occur across the natural, engineering, and socioeconomic sciences, where rare but high-impact episodes can lead to disproportionate consequences that pose major challenges for prediction and risk management. Existing studies have mainly focused on the statistics, sampling, forecasting, and attribution of extremes from observable variables. In this paper, we develop a mathematical framework for studying the mechanisms and pathways of extreme events in partially-observed stochastic dynamical systems with hidden variables. By integrating data assimilation with information-theoretic and trajectory-based diagnostics, we infer latent precursor dynamics from observations, quantify their uncertainty, and determine how their influence propagates toward observed extreme events. Conditional Gaussian models provide a tractable analytical setting for deriving closed-form diagnostics, while the framework extends through numerical methods. The analysis proceeds from two complementary perspectives. From a trajectory-wise viewpoint, we compare filtering and smoothing distributions to identify the onset of hidden precursors and quantify temporal influence. From a statistical viewpoint, we construct event-conditioned hidden-state distributions to identify sensitive triggering directions, latent pathways, and multiple classes of extreme-event mechanisms through clustering. Three numerical examples illustrate the methodology. In an intermittent stochastic model, hidden damping dynamics emerge before observed bursts, where discrepancies between the filter and smoother provide an onset diagnostic. In a stochastic model with damping and forcing, separate damping-induced, forcing-driven, and mixed pathways to extremes are identified. In a nonlinear topographic-flow model, distinct mechanisms and pathways for blocking and unblocking patterns associated with observed extreme events are revealed.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22692v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Stratospheric aerosol injection (SAI), a possible climate engineering strategy where reflective particles are injected into the stratosphere, has been explored to mitigate global warming and its associated risks, such as the intensification of extreme precipitation events. However, current Earth system models (ESMs) often used to simulate SAI and other climate change scenarios are too coarse to properly assess such risks. Traditional statistical downscaling methods, used to project higher resolution impacts, may be biased and unrealistic. To address this, we train a deep learning diffusion downscaler to generate 0.25° contiguous United States (CONUS) daily precipitation using historical and future climate simulations from the Mesoscale Atmosphere-Ocean Interaction in Seasonal-to-Decadal Climate Prediction (MESACLIP) project, then apply the diffusion downscaler to out-of-distribution CESM2 simulations with and without SAI. The diffusion model generates realistic downscaled precipitation using either MESACLIP or CESM2 inputs. It also faithfully recreates the climate change projections of extreme precipitation in MESACLIP. Diffusion-downscaled projections of the future CESM2 SAI scenarios suggest that SAI could nearly cut in half the CONUS-average increase in yearly max precipitation, compared to the non-SAI scenario. However, there is considerable regional variation and internal variability, with SAI modeled to only slightly reduce increases in extreme precipitation frequency in the Mid Atlantic and the Pacific Northwest, but mitigating most intensification in other regions. Future application of diffusion downscaling to a wider variety of SAI scenarios would provide valuable insight into how proposed SAI strategies may affect precipitation variability on fine spatial scales for regional impact assessments.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23776v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22670v1" target="_blank" rel="noopener noreferrer">
-      Measurements of the absolute branching fractions of $D^0\toγ\bar K^{*0}$ and $D^0\toγφ$
+    <a href="https://arxiv.org/pdf/2605.23768v1" target="_blank" rel="noopener noreferrer">
+      GMRT Survey of Radio Emission from Magnetic Massive Stars -- I: Emission from Single Stars at sub-GHz Frequencies
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">BESIII Collaboration</span>
+    <span class="paper-authors">Ayan Biswas, Gregg A. Wade, Barnali Das, Veronique Petit, Matthew E. Shultz</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">By analyzing a sample of 20.3 fb$^{-1}$ of $e^+e^-$ annihilation data collected at the center-of-mass energy of 3.773~GeV with the BESIII detector, we have made a first measurement of the absolute branching fractions of the radiative decays $D^0\toγ\bar K^{*0}$ and $D^0\toγφ$ to be $(3.81 \pm 0.18_{\rm stat.} \pm 0.20_{\rm syst.})\times 10^{-4}$ and $(2.51 \pm 0.44_{\rm stat.} \pm 0.11_{\rm syst.})\times 10^{-5}$, respectively. The statistical significances of $D^0\toγ\bar K^{*0}$ and $D^0\toγφ$ are $26.8σ$ and $7.9σ$, respectively. The obtained branching fractions are consistent with the corresponding world average values. In addition, the measured $C\!P$ asymmetry $\mathcal{A}_{C\!P}(D^0\toγ\bar K^{*0})=(-0.7\pm5.0_{\rm stat.} \pm4.1_{\rm syst.})\%$ is consistent with $C\!P$ conservation.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22670v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">With the growing subset of magnetic massive stars, it is now possible to conduct a systematic survey of radio emission from magnetic hot stars to better understand the underlying emission mechanisms. Previous surveys of radio emission from hot star magnetospheres have focused on high frequencies ($&gt;$2 GHz). At lower frequencies, additional emission and absorption mechanisms are expected, increasing the complexity of the observed emission. In this work, we survey towards lower frequencies while also increasing the sample size. We report the study of 28 magnetic hot stars with the Giant Metrewave Radio Telescope (GMRT) during cycles 27 and 28 of its operation. Among these, we found 11 detections and 17 non-detections. We also include 16 additional targets observed with GMRT from the literature. We investigated the dependence of low-frequency radio luminosity on different stellar parameters and searched for a scaling relationship at low frequencies. We further test the centrifugal breakout model for gyrosynchrotron emission. The observed low-frequency radio luminosities show a clear dependence of radio emission on magnetic field strength and rotation period, consistent with high-frequency studies. We observe a trend in scaling relationships with frequency and comment on the statistical behavior of gyrosynchrotron spectra. The observed low-frequency behavior likely reflects a combination of free-free absorption and the location of the low-frequency turnover in the gyrosynchrotron spectrum, which may vary among stars depending on their magnetospheric properties and can suppress detectable sub-GHz emission. One of the detected stars, HD 37742, is the first magnetic O-type star detected at sub-GHz frequencies.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23768v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22665v1" target="_blank" rel="noopener noreferrer">
-      Fitness Inference in Presence of Migrations between Coupled Evolving Populations
+    <a href="https://arxiv.org/pdf/2605.23760v1" target="_blank" rel="noopener noreferrer">
+      Global Sensitivity Analysis: a novel generation of mighty estimators based on rank statistics
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yu-Han Huang, Bastien Dumont, Hong-Li Zeng, John Barton, Erik Aurell</span>
+    <span class="paper-authors">Fabrice Gamboa, Pierre Gremaud, Thierry Klein, Agnès Lagnoux</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">The phase of Quasi-Linkage Equilibrium (QLE) in evolutionary populations is analogous to the thermal equilibrium state in statistical mechanics, a concept pioneered by Kimura in 1965 for two-locus two-allele models. QLE describes a stationary state maintained by the interplay of selection, mutation, recombination and genetic drift. Here we extend QLE theory to populations connected by migration, a fundamental evolutionary force that couples the evolutionary dynamics of interacting subpopulations. Specifically, we examine two populations interacting via symmetric or asymmetric migration while evolving under multi-locus selection. Using whole-genome time-series data generated through FFPopSim, we demonstrate that the QLE phase persists under conditions of sufficiently low migration rates. In this regime, we derive analytical inference relations that allow for the accurate and quantitative estimation of both additive fitness and epistatic interactions.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22665v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We propose a new statistical estimation framework for a large family of global sensitivity analysis indices. Our approach is based on rank statistics and uses an empirical correlation coefficient recently introduced by Chatterjee [9]. We show how to apply this approach to compute not only the Cram{é}r-von-Mises indices, which are directly related to Chatterjee&#x27;s notion of correlation, but also first-order Sobol indices, general metric space indices and higher-order moment indices. We establish consistency of the resulting estimators and demonstrate their numerical efficiency, especially for small sample sizes. In addition, we prove a central limit theorem for the estimators of the first-order Sobol indices.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23760v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22660v1" target="_blank" rel="noopener noreferrer">
-      Moral Semantics Survive Machine Translation: Cross-Lingual Evidence from Moral Foundations Corpora
+    <a href="https://arxiv.org/pdf/2605.23754v1" target="_blank" rel="noopener noreferrer">
+      LLM-driven design of physics-constrained constitutive models: two agents are better than one
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Maciej Skorski</span>
+    <span class="paper-authors">Marius Tacke, Matthias Busch, Kian Abdolazizi, Jonas Eichinger, Kevin Linka, Roland Aydin, Christian Cyron</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">Moral language is subtle and culturally variable, making it difficult to translate faithfully across languages. Idiomatic expressions, slang, and cultural references introduce hard-to-avoid translation artifacts. Yet automated moral values classification depends on language-specific annotated corpora that exist almost exclusively in English. We investigate whether LLM-based translation can bridge this gap, taking Polish as a test case. Using $\sim$50k morally-annotated social media posts from a diverse range of topics, we apply a principled four-method validation pipeline: LaBSE cross-lingual embedding similarity, Centered Kernel Alignment (CKA), LLM-as-judge evaluation, and deep learning classifier parity tests. We show that despite shortcomings in handling slang, vulgarity, and culturally-loaded expressions, direct translation preserves subtle moral cues well enough to be harvested by cross-lingual machine learning -- with mean cosine similarity of 0.86 and AUC gaps of 0.01--0.02 across all foundations closing further under fine-tuning of language models. These results demonstrate that machine translation is a practical and cost-effective path to moral values research in languages currently under-resourced in this domain. We demonstrate this for Polish as a representative Slavic language, with expected generalisation to related languages.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22660v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Developing constitutive models that capture how materials deform under load traditionally requires years of specialized expertise in continuum mechanics, machine learning, and scientific programming. Large language models (LLMs) have recently been shown to lower this barrier by generating constitutive models on demand, but existing single-agent pipelines lack systematic checks that the resulting models respect fundamental physical laws. To close this gap, we introduce the first multi-agent LLM-driven approach for constitutive model generation: a Creator agent proposes a model tailored to the data, while an Inspector agent critically audits each proposal against nine physical constraints and returns it for refinement whenever a violation is detected. We demonstrate this concept with constitutive artificial neural networks (CANNs) and benchmark it on brain tissue, experimental rubber, and synthetic rubber, using two different LLM backbones (Claude Opus 4.7 and Kimi K2.5). Adding the Inspector raises the share of exported models that truly satisfy all physical constraints from 91% to a perfect 100% for Opus and from 37% to 56% for Kimi, while preserving near-baseline accuracy and remarkable generalization to unseen loading paths. In combination, the generated models are physically valid, highly accurate, and extrapolate reliably beyond the training data - properties that together make them directly usable in practice. Separating generation from inspection thus turns LLM-driven constitutive modeling into a genuinely trustworthy process. The paradigm is deliberately technique-agnostic and scales automatically with advances in LLM capability, opening a promising path toward automated, physics-aware model discovery.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23754v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22655v1" target="_blank" rel="noopener noreferrer">
-      Evidence of Radius Inflation Based on 50 Transiting Brown Dwarfs and Low-mass Stellar Companions
+    <a href="https://arxiv.org/pdf/2605.23744v1" target="_blank" rel="noopener noreferrer">
+      Contrast to Detect: Dynamic Graph Contrastive Regularization for Unsupervised Anomaly Detection in Multivariate Time Series
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Aarushi Mehrotra, Chih-Chun Hsu, Jason J. Wang, Christopher A. Theissen, Adam J. Burgasser</span>
+    <span class="paper-authors">Yunhua Pei, Zixing Song, Jin Zheng, John Cartlidge</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">Statistical assessment of stellar parameters enables validation and improvements in theoretical models. We compiled a sample of 85 transiting stellar and substellar companions, with masses ranging from $\sim$13-100 $M_\mathrm{Jup}$. We focus on analyzing 50 transiting companions with robust ages and model constraints, and evaluate the degree of radius inflation versus mass, separation, equilibrium temperature, and metallicity. Our evaluation of the differences between measured and model radii indicates an $8.7\pm1.9$% radius inflation for the full sample, at $4.6σ$ discrepancy, validating the existence of radius inflation at a population level in transiting brown dwarfs. For brown dwarfs at separations $\leq 0.05$ au, we find an even higher radius inflation, with a median inflation of $16\pm6$% at $2.7σ$, and the inflation decreases toward wider separations, likely due to reduced stellar irradiation. Finally, we provide our compilation for the community to use.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22655v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Anomaly detection in multivariate time series (MTS) is hindered by dynamic inter-variable dependencies and feature entanglement under spectral noise, and in practice, is further complicated by the absence of anomaly labels. Existing reconstruction-based detectors tend to recover anomalies as faithfully as normal patterns, while prevailing graph contrastive methods enforce invariance across views and thus assume a stationary relational structure, an assumption that breaks under structural drift in real systems. We propose ContrastAD, an unsupervised framework that turns structural evolution itself into a learning signal rather than suppressing it. A Multi-Perspective Embedder encodes inputs from temporal, attribute, and structural perspectives. A Frequency-Aware Attention Mixer then performs spectral top-K filtering before attention, preventing noise from leaking into query-key similarities. The core component, a Dynamic Graph Contrastive Learner, builds power-law-inspired sparse graph snapshots from batch-level DTW distances and contrasts the most divergent pair against a stable anchor, regularizing the latent space without imposing rigid invariance. Across five real-world benchmarks, ContrastAD attains the highest mean F1 on all five datasets and the highest AUC on three (SWaT 93.60, SMD 98.66, PSM 97.79), with statistically significant F1 and AUC margins over the strongest baseline on SWaT and PSM. On MSL and SMAP, it trails the AUC leader by under 0.7 points while still leading on F1. Ablation and sensitivity studies further confirm that the contrastive objective works best as a soft regularizer, supporting our claim that strict invariance is suboptimal under non-stationary dynamics.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23744v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22630v1" target="_blank" rel="noopener noreferrer">
-      Towards precision cosmology with Void x CMB correlations (II): Impact of mock catalogs on the Void x CMB lensing signal
+    <a href="https://arxiv.org/pdf/2605.23715v1" target="_blank" rel="noopener noreferrer">
+      NLG Evaluation: Past, Present, Future
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Mar Pérez Sar, Carlos Hernández Monteagudo, András Kovács, Alice Pisani, Yun Wang</span>
+    <span class="paper-authors">Ehud Reiter</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">Gravitational lensing by large-scale structure imprints secondary anisotropies on the Cosmic Microwave Background (CMB) that can be exploited to probe cosmology. In particular, cosmic voids produce a characteristic lensing signature detectable through Void x CMB cross-correlations. This signal has been robustly measured in the past but its cosmological constraining power remains limited by the incomplete knowledge of how methodological choices affect its measurement and by its uncertain dependence on cosmological parameters. Using a set of validated Roman mock catalogs, we first quantify how mock construction impacts the measured signal and then forecast the capabilities of Roman, in combination with current and upcoming CMB surveys such as Planck, SO and CMB-S4-like experiments. We analyze the signal-to-noise ratio (S/N) for different void definitions (2D and 3D), stacking approaches (rescaled versus non-rescaled profiles), CMB map filtering schemes and noise levels. In contrast to galaxy and void statistics, we find that the Void x CMB lensing signal is less sensitive to the choice of mock catalog, indicating that future tensions with data are unlikely to stem from mock inaccuracies alone. The highest S/N is achieved for 2D voids with rescaled profiles. We forecast S/N ~13$σ$ (8$σ$) for 2D (3D) Roman voids combined with Planck, increasing to 22$σ$ (13$σ$) for SO and 31$σ$ (18$σ$) for CMB-S4-like surveys. While the cosmological dependence of this observable remains to be quantified, Roman together with next-generation of LSS and CMB surveys opens a path toward the first direct cosmological constraints from Void x CMB lensing.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22630v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Natural Language Generation (NLG) evaluation has changed dramatically since 1990, and will continue to evolve in the future. In 1990, when NLG had close ties to linguistics, there was very little formal experimental evaluation in the modern sense. In 2026, when NLG is closely linked to machine learning, experimental evaluation is expected and indeed fundamental to research. Many evaluation techniques were developed over this period, including most recently LLM-as-Judge. I expect NLG evaluation will continue to evolve in the future. In particular, impact, qualitative, and safety evaluation will become more important as large numbers of people routinely use NLG technology.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23715v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22611v1" target="_blank" rel="noopener noreferrer">
-      Benchmarking Machine Learning Architectures for Antimicrobial Stewardship in Pediatric ICUs
+    <a href="https://arxiv.org/pdf/2605.23702v1" target="_blank" rel="noopener noreferrer">
+      TubiFM: Unified Item, Carousel, and Search Ranking for Streaming Discovery
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Niklas Raehse, Luregn J. Schlapbach, Daphné Chopard</span>
+    <span class="paper-authors">Alexandre Salle, Chenglei Niu, Suchismit Mahapatra, Xiaoxiao Chen, Suvash Sedhain, Yaqi Wang, Shervin Shahryari, Saurabh Agrawal, Qiang Chen, Michael Tamir</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">Antimicrobial stewardship (AMS) is critical in pediatric intensive care units (PICUs), where diagnostic uncertainty often drives broad-spectrum antibiotic use, increasing antimicrobial resistance and potential long-term harms. Machine learning offers a promising approach for identifying patient-level opportunities for stewardship interventions from electronic health record data, yet prior work has focused largely on adult populations and static tabular representations. We present a systematic benchmarking study of AMS intervention prediction in the PICU across a public dataset and a private institutional cohort. We define four clinically relevant proxy targets for reducing antibiotic exposure: intravenous-to-oral switching, de-escalation, discontinuation, and short-course therapy. Under a unified evaluation framework, we compare tabular, sequence-based, and graph-based temporal models at multiple temporal resolutions. We find that predictive performance is driven primarily by target prevalence and dataset characteristics rather than model complexity. Sequence models improve the precision-recall trade-off over tabular approaches at coarse (24-hour) resolution, while finer temporal modeling provides limited additional benefit. However, these gains come at the cost of poorer calibration, with simpler tabular models yielding more reliable probability estimates. Multi-task learning produces only marginal improvements, suggesting limited shared structure across stewardship targets. Our findings highlight the importance of target design, temporal representation, and calibration in clinical machine learning, and provide practical guidance for developing reliable decision support systems for pediatric AMS.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22611v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Personalized discovery systems often train separate models for item ranking, carousel ranking, and search, even though these tasks expose complementary signals from the same viewer journey: watches shape carousel and item ranking, search queries reveal intent even when they do not lead to a catalog match, and watch history helps interpret search as rewatching, continuation, or new discovery. We introduce the user story, a serialized representation that turns a user&#x27;s cross-surface history - attributes, sessions, watch events with surface and carousel context, and search events - into a single token sequence. By interleaving pretrained language tokens with domain-specific event tokens, user stories let heterogeneous recommendation and search tasks be expressed as prompted next-token prediction over a shared grammar. TubiFM is one instantiation of this approach: a Llama 3.2 1B-based model trained on user stories and prompted to rank items, carousels, or search results without task-specific architectures. In offline evaluation, this single model outperforms specialist baselines across item, carousel, and search ranking. In online A/B tests, TubiFM significantly improves search total viewing time (TVT) by $+3.9\%$ and carousel TVT by $+0.30\%$. Item ranking is statistically neutral on TVT ($+0.14\%$), but matches a mature production stack; across all three tasks, TubiFM serves on L40S GPUs and reduces p99 ranking latency from 500ms to 200ms. These results show that shared user stories can improve discovery while simplifying ranking systems.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23702v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2605.22604v1" target="_blank" rel="noopener noreferrer">
-      Innovations in Cardless Artificial Intelligence Banking: A Comprehensive Framework for Cyber Secure and Fraud Mitigation using Machine Learning Algorithms
+    <a href="https://arxiv.org/pdf/2605.23701v1" target="_blank" rel="noopener noreferrer">
+      Metadata Predictability Is Not Evidence Dependence: An Intervention-Based Audit for Weak-Label Benchmarks
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Md Israfeel</span>
+    <span class="paper-authors">Kan Shao</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-05-21</span>
+    <span class="paper-date">2026-05-22</span>
   </p>
-  <p class="paper-abstract">The advent of cardless artificial intelligence (AI) banking heralds a paradigm shift in the financial landscape, offering users unprecedented security and convenience. This paper outlines a comprehensive framework designed to enhance cybersecurity, introduce auto-generated virtual cards, and mitigate fraud risks within cardless AI banking systems. The framework envisions a future banking architecture that employs AI-powered data cryptography to create secure virtual cards for seamless transactions. By emphasizing secure communication channels, it ensures the integrity of financial activities among banking systems, cardholders, and third-party vendors. AI-based authorization methodologies play a pivotal role in authenticating each transaction while proactively identifying potential fraud, demonstrating the framework&#x27;s efficacy in fortifying cardless AI banking security. The initial approach, featuring an AI-driven, feature-based banking system, ensures the generation of virtual cards with encrypted data, minimizing information exposure and reducing fraud risks. Integrating a machine learning algorithm adds an additional layer of protection against potential fraudulent activities. In conclusion, the proposed framework establishes a holistic cybersecurity and fraud-mitigation paradigm for cardless AI banking systems. Its implementation empowers financial institutions to address security concerns associated with traditional banking, paving the way for a future banking landscape that is not only fraud-resistant but also secure and convenient for users.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2605.22604v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We study a protocol-level test for weak-label benchmarks: whether benchmark outputs change when the provided evidence is intervened on. Metadata-only shortcut checks answer a different question, namely whether outputs are predictable from metadata priors. We therefore combine a metadata statistic, the Metadata Prior Dominance Score (MPDS), with an evidence-intervention statistic, ΔEvi, measuring sensitivity to evidence identity under cross-item shuffling. Synthetic HotpotQA gives a constructed counterexample to metadata-only screening: MPDS is only moderate (0.643), yet ΔEvi is zero. Stronger-reader reruns show why calibration belongs in the test procedure: SNLI shows a calibration reversal, reconstructed HotpotQA occupies a question-dominant warning region, and FEVER is a strongly evidence-sensitive positive control across four transformers. The practical lesson is simple: benchmark audits should report metadata-only screening, evidence intervention, and reader-strength calibration together.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2605.23701v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
