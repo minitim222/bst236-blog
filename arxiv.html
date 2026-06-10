@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-06-09 00:50 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-06-10 00:56 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07512v1" target="_blank" rel="noopener noreferrer">
-      MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Hierarchical Graph Memory and Agentic Retrieval Mechanism
+    <a href="https://arxiv.org/pdf/2606.09791v1" target="_blank" rel="noopener noreferrer">
+      Certified spectral functions from lattice Monte Carlo data
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Cong Chen, Guo Gan, Kaixiang Ji, ChaoYang Zhang, Zhen Yang, Guangming Yao, Hao Chen, Jingdong Chen, Yi Yuan, Chunhua Shen</span>
+    <span class="paper-authors">Sophie Mutzel, Antoine Tilloy</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">Current Vision-Language Models struggle with hours-long videos because processing full-length visual sequences induces prohibitive token explosion and attention dilution. To overcome this, we introduce MemDreamer to decouple perception and reasoning, shifting long-video understanding into an agentic exploration process. As a plug-and-play framework, it incrementally streams videos to construct a Hierarchical Graph Memory, a top-down three-tier architecture for semantic abstraction, anchored by a foundational graph capturing spatiotemporal and causal relations. During inference, the reasoning model employs agentic tool-augmented retrieval, navigating hierarchies, searching nodes, and traversing logical edges via an Observation-Reason-Action loop. Experiments show MemDreamer achieves SOTA results across four mainstream benchmarks, narrowing the gap with human experts to only 3.7 points. It constrains the reasoning context window to merely 2% of full-context ingestion while delivering a 12.5 point absolute accuracy gain. Furthermore, statistical analysis uncovers a strong positive linear correlation between an VLM&#x27;s performance on logic reasoning and long-video understanding benchmarks, establishing agentic capability scaling as a new paradigm for multimodal comprehension.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07512v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The Monte Carlo method, applied to lattice quantum field theory, gives access to Euclidean correlation functions with well-understood error bars. Recovering the observables one cares about, such as the spectral density, requires solving an ill-posed inverse problem, usually tackled with heuristics that lose rigorous control of the error. Instead of trying to find the ``best&#x27;&#x27; spectral density $ρ(ω)$, we ask how small or large linear functionals $\int_{\mathbb{R}^+} G(ω) ρ(ω) \mathrm{d} ω$ of it can be, given the Monte Carlo data and the reflection positivity of the lattice action. This is a convex but infinite-dimensional problem. We show how its dual can be rigorously relaxed into a hierarchy of finite semidefinite programs, solvable with standard solvers and enjoying strong convergence guarantees. The resulting bounds are rigorous even when the relaxation is not tight, and converge quickly to the regime where the error is entirely dominated by Monte Carlo statistics. The method also flags implausible Monte Carlo data, for instance underestimated error bars, through an infeasibility certificate. We demonstrate it on lattice $φ^4$ theory in two dimensions.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09791v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07503v1" target="_blank" rel="noopener noreferrer">
-      Differences in Detection: Explainability Where it Matters
+    <a href="https://arxiv.org/pdf/2606.09767v1" target="_blank" rel="noopener noreferrer">
+      Data Synthesis and Parameter-Efficient Fine-Tuning for Low-Resource NMT: A Case Study on Q&#x27;eqchi&#x27; Mayan
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Johannes Theodoridis, Johannes Maucher, Andreas Schilling</span>
+    <span class="paper-authors">Alexander Chulzhanov, Soeren Eberhardt, Arjun Mukherjee</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">We propose Differences in Detection (DnD), an intuitive method to compare two object detection models. Based on the same matching algorithm, it complements the standard metrics of mean Average Precision ($mAP$) and TIDE error analysis with the ability to compare two models directly. More specifically, we calculate the intersection of ground truth labels that are recognized by both models, followed by the corresponding difference sets and the complement set of ground truth labels that are missed by both models. The resulting comparison is more direct and intuitive than a comparison of independent summary statistics. It reveals individual and shared mistakes and becomes particularly interesting when combined with error types. In this case, the differences in detection errors can be analyzed naturally in a standard confusion matrix. While valuable in itself, we believe that one of the best applications of DnD is to guide explainability methods such as ODAM towards metric-relevant examples, grounded in structured subsets. The code for our method is available here: https://github.com/JohannesTheo/differences-in-detection</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07503v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Neural machine translation for digitally low-resource Indigenous languages is often hindered by extreme data scarcity, prompting reliance on extractive web-scraping. To ensure data sovereignty, this study introduces a data synthesis methodology to bootstrap NMT models without scraping target-language parallel text. Focusing on Q&#x27;eqchi&#x27; Mayan, we transformed community-sourced dictionaries into a massive synthetic corpus, utilizing Parameter-Efficient Fine-Tuning (PEFT) via LoRA adapters on an mT5-base model. In-domain evaluation demonstrates high structural acquisition (BLEU 42.02), proving that synthetic constraints effectively teach complex agglutinative morphology and VOS word order. However, evaluation against an organic glossary reveals a structural-semantic gap (BLEU 0.59), where the model maintains grammatical integrity but lacks the lexical grounding of natural language. The model exhibits overfitting to the constrained structural variance of the synthetic templates; despite high semantic entropy in the pipeline, it struggles with the syntactic fluidity of natural language, forcing organic inputs into rigid learned patterns. Furthermore, an ablation study utilizing a Multi-Task Learning architecture resulted in negative transfer, suggesting that auxiliary tasks competed for limited parameter capacity within the LoRA adapters, causing over-optimization for synthetic markers at the expense of organic flexibility. Ultimately, we establish that synthetic bootstrapping is a highly effective structural primer, but requires authentic data for semantic refinement via Curriculum Learning.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09767v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07497v1" target="_blank" rel="noopener noreferrer">
-      The Roasting Marshmallows Program with IGRINS on Gemini South V: Atmosphere of MASCARA-1b is Enriched in Refractory Elements
+    <a href="https://arxiv.org/pdf/2606.09735v1" target="_blank" rel="noopener noreferrer">
+      The Neutral Mask: How RLHF Provides Shallow Alignment while Leaving Partisan Structure Intact in a Large Language Model
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Krishna Kanumalla, Michael R. Line, Martina Chiarella, Matteo Brogi, Peter C. B. Smith, Jorge A. Sanchez, Yayaati Chachan, Joshua Lothringer, Joost P. Wardenier, Hayley Beltz, Carlos Saffe, Emily K. Deibert, Megan Weiner Mansfield, Stefan Pelletier, Vivien Parmentier, Yeon-ho Choi, Swaetha Ramkumar, Arjun B. Savel, Luis Welbanks, Jacob L. Bean, Vatsal Panwar, Tomás Azevedo Silva, Lorenzo Pino, Yuya Hayashi, Dongwook Lim, Cicero X. Lu, Venu M. Kalari, Teo Močnik, Mark G. Rawlings, Heeyoung Oh, Ruben J. Diaz, Chan Park, Jae-Joon Lee, Sanghyuk Kim, Ueejeong Jeong, Hye-In Lee, Woojin Park, Youngsam Yu, Yunjong Kim, Moo-Young Chun, Jae Sok Oh, Sungho Lee, Jeong-Gyun Jang, Bi-Ho Jang, Hyeon Cheol Seong, Hyun-Jeong Kim, Cynthia B. Brooks, Gregory N. Mace, Hanshin Lee, John M. Good, Daniel T. Jaffe, Kang-Min Kim, In-Soo Yuk, Narae Hwang, Byeong-Gon Park, Hwihyun Kim, Brian Chinn, Francisco Ramos, Pablo Prado, John White, Andres Olivares, Valentina Oyarzun, Emma Kurz, Hawi Stecher, Carlos Quiroz, Ignacio Arriagada, Thomas L. Hayward, Hyewon Suh, Jen Miller, Siyi Xu, Emanuele Paolo Farina, Charlie Figura, Andrew Stephens, Bryan Miller, Kathleen Labrie, Paul Hirst, Edo Tapia, Zachary Hartmann</span>
+    <span class="paper-authors">Wendy K. Tam</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">Ultra-hot Jupiters (UHJs; $T_{\rm eq} \gtrsim 2000$ K) enable simultaneous detection of volatile (ice-forming) and refractory (rock-forming) species in planetary atmospheres, providing a powerful diagnostic of planet formation and atmospheric processing. We present a comprehensive high-resolution cross-correlation spectroscopy (HRCCS) analysis of the UHJ MASCARA-1b ($T_{\rm eq} \approx 2600$ K) using the IGRINS and IGRINS-2 spectrographs. We detect robust (SNR$&gt;$4) signals from H$_2$O, CO, OH, Fe I, Mg I, Ca I, and Ti I, marking the most complete atmospheric inventory of MASCARA-1b to date. Using a chemically consistent atmospheric inference framework, we constrain elemental abundances to a typical precision of $\approx$0.2 dex, retrieving a solar atmospheric metallicity ([M/H]$_\odot$ $= 0.07^{+0.17}_{-0.13}$ $\approx 1.2\times$ solar), a C/O ratio (C/O $= 0.65^{+0.08}_{-0.08}$) consistent with solar value (C/O $=$ 0.59), an enhanced refractory abundance ([R/H]$_\odot$ $= 0.40^{+0.23}_{-0.17} \approx 2.5\times$ solar; $\approx 3.8\times$ stellar), and a moderately super-solar refractory-to-volatile ratio ([R/V]$_\odot$ $= 0.36^{+0.11}_{-0.09}$ $\approx 2.3\times$ solar). Comparison with formation models suggests that MASCARA-1b most likely accreted material between the soot-H$_2$O or H$_2$O-CO snowlines (at 68$\%$ confidence). We additionally find stellar values for atmospheric Ti/Mg and Ca/Mg ratios (at 68$\%$ confidence). The Mg/Fe is also found to be consistent with stellar value at 95$\%$ confidence. Therefore, we do not find strong indication of nightside cold trapping in MASCARA-1b. As homogeneous refractory-to-volatile measurements expand across the UHJ population, particularly with upcoming Extremely Large Telescopes, these diagnostics will enable statistically robust tests of emerging trends in giant planet formation and atmospheric evolution.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07497v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The ambition behind alignment training is to make large language models safe and useful. The primary mechanism, reinforcement learning from human feedback (RLHF), shapes the behavior of deployed language models by aligning them with ``human values.&#x27;&#x27; Yet the process is opaque. What values are being encoded; whose values are they; and how does RLHF encode them? A growing body of evidence suggests that RLHF produces only functional compliance rather than deep alignment. We offer a mechanistic case study of this phenomenon for partisan political orientation with a comparison of the internal representations of Llama 3.1 8B before and after RLHF. We show that RLHF does not remove the structured partisan direction in the base model. Instead, it compresses the variance of the partisan signal to generate consistently balanced and non-partisan output. Sparse autoencoder decomposition reveals that policy-encoding features, which activate sporadically in the base model, are completely inactive in the Instruct model. Feature-level steering experiments confirm the causal disconnect. RLHF thus encodes a norm of political neutrality, not by erasing the model&#x27;s knowledge of partisanship, but by severing the causal pathway from partisan geometry to output generation. Importantly, this neutrality is functional, not structural so that the underlying geometry that enables partisan steering remains intact. The mechanisms that bypass RLHF&#x27;s guardrails, such as inferring and amplifying a user&#x27;s partisan identity, reactivate partisan generation. If RLHF operates by disconnecting rather than removing value-laden structure, then the same pattern may hold for other value domains, and the aligned model&#x27;s behavior may be more fragile than its outputs suggest.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09735v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07495v1" target="_blank" rel="noopener noreferrer">
-      Second-Order Path Kernel Interpolation Formulas in Machine Learning
+    <a href="https://arxiv.org/pdf/2606.09729v1" target="_blank" rel="noopener noreferrer">
+      Bayesian Probing on Graphs
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jin Guo, Roy Y. He, Jean-Michel Morel</span>
+    <span class="paper-authors">Anupam Gupta, Benjamin Moseley, Rudy Zhou</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">Understanding how training data shape neural network predictions is a central problem in modern learning theory. In 2020, Pedro Domingos proposed an interpolation formula valid for every model learned by deterministic gradient descent. It expresses the model&#x27;s prediction as an integral, along the optimization path, of a data-dependent kernel that aligns the model&#x27;s gradients at the test and training data. Such a first-order characterization remains valid for models trained with batch-based stochastic optimization. In this paper, we develop second-order forms of these interpolation formulas. We show that the leading path-kernel interpolation is supplemented by a curvature-weighted interpolation term. For stochastic gradient descent, an additional sampling-induced component appears, coupling the curvature of the prediction with the covariance of mini-batch gradient noise. We also extend the representation to stochastic gradient descent with momentum, where the interpolation structure is preserved but with the weights modified by a memory-related factor. Moreover, we establish a concentration estimate for the terminal prediction, identifying the fluctuation scale around the expected second-order representation. Together, these results provide a refinement of the path-kernel interpretation of neural network prediction.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07495v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We introduce a stochastic probing problem with correlated items. In our model, which we call Bayesian Probing, the correlations are modeled by an underlying graph $G$. Each vertex is independently active with a known probability. Each item corresponds to an edge in the graph. Probing an edge has some cost, gives some reward if both endpoints are active, and also reveals the state of its endpoints. Hence a probe induces a Bayesian update on the remaining edges. The goal is to adaptively probe items/edges subject to a knapsack constraint to maximize the expected total reward obtained from the probed edges. Bayesian Probing generalizes stochastic knapsack and stochastic probing by allowing correlations between items. Moreover, it gives a tractable model for the Bayesian Active Search problem, a popular problem considered in the machine learning community. In Bayesian Active Search, the goal is to find items in a particular class by adaptively probing at most, say $k$, items. Given a prior distribution over items, we want to compute a Bayesian policy to maximize the number of such items found. For this general problem with arbitrary priors, there are strong lower bounds on efficiently computing good policies. In this paper, we design efficient approximation algorithms for Bayesian Probing. These results give the first efficient approximation algorithms for Bayesian Active Search, for a class of practically-relevant prior distributions.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09729v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07494v1" target="_blank" rel="noopener noreferrer">
-      Mitigating Proxy-to-Wild Domain Gap in Deepfake Speech
+    <a href="https://arxiv.org/pdf/2606.09725v1" target="_blank" rel="noopener noreferrer">
+      Disentanglement with Holographic Reduced Representations
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Xuanjun Chen, Yun-Shing Wu, Wei-Chung Lu, Claire Lin, Haibin Wu, Hung-yi Lee, Jyh-Shing Roger Jang</span>
+    <span class="paper-authors">Jhonny J. Velasquez Olivera, Christo K. Thomas, Walid Saad</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">Recent neural audio codec-based speech generation (CodecFake) produces highly realistic audio, posing a challenge to existing deepfake countermeasure models. While using codec resynthesized speech (CoRS) as proxy data improves performance, it often suffers from limited generalization. We propose Domain-Shift Feature Augmentation (DSFA), which simulates &quot;in-the-wild&quot; variations by transforming deterministic feature statistics into stochastic distributions during fine-tuning. To evaluate generalization, we further introduce Codec-based Speech Generation Extension Evaluation (CoSG ExtEval) dataset, a more challenging extension of the CoSG Eval (from CodecFake+) dataset, featuring 40 unseen generative models and long-form audio. Experimental results demonstrate that combining a post-trained SSL backbone with DSFA effectively narrows the proxy-to-wild domain gap. This approach achieves state-of-the-art performance across diverse CodecFake attacks in both CoSG Eval and CoSG ExtEval.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07494v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Disentanglement, the separation of factors of variation in data using neural networks, remains a long-standing challenge in machine learning. Prior work has addressed this problem with variational autoencoders and generative adversarial networks that incorporate ideas from variational inference and information-theoretic constraints. In contrast to methods that rely on continuous representations, we propose a design that treats disentangled representations as symbolic structures, motivated by the compositional relationships among the concepts that make up samples from a distribution. However, learning discrete symbolic structures with neural networks while maintaining differentiability is difficult and often requires complex architectures. To address this, we introduce an unsupervised learning algorithm that uses holographic reduced representations (HRR) for neural disentanglement. We show that the HRR unbinding operation provides an inductive bias for separating factors and yields competitive results against baselines, as measured by latent traversals and disentanglement metrics. We complement these empirical findings with an information-theoretic analysis of the HRR unbinding channel. We prove that unbinding induces approximately independent symbol-value pairs and derive a per-slot capacity bound that quantifies how many distinct symbolic concepts can be reliably encoded, giving a quantitative account of the inductive bias toward disentanglement. The resulting representations differ from standard autoencoder-based models, in that their latent units are vectors that are summed together, rather than scalar dimensions of a low-dimensional latent vector. We show that this HRR representation is more robust to noise than other disentangled representations and maintains reconstruction quality across a range of SNRs.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09725v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07492v1" target="_blank" rel="noopener noreferrer">
-      Bradley-Terry Rankings for Recommender Systems Across Dataset Taxonomies
+    <a href="https://arxiv.org/pdf/2606.09704v1" target="_blank" rel="noopener noreferrer">
+      Bi-S network origin of cation-disorder stability and dispersive band edges in AgBiS2
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ekaterina Grishina, Stepan Kuznetsov, Askar Tsyganov, Ilya Ivanov, Daria Korovaitceva, Margarita Rusanova, Uliana Parkina, Alexander Derevyagin, Evgeny Frolov, Sergey Samsonov, Anton Lysenko</span>
+    <span class="paper-authors">Han-Pu Liang, Songyuan Geng, Heng Kang, Chen Qiu, Xiao-Ping Yao, Qing&#x27;an Li, Bozhao Zhang, Lechuan Sun, Yuxuan Chen, Shan Zhang, Su-Huai Wei, Peng-Fei Guan</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">The ranking of recommendation algorithms is a challenging problem since model performance is sensitive to dataset characteristics such as sparsity, sequential structure, and scale. This drives a demand for a proper methodology for fair comparison between algorithms. Naive aggregation of performance metrics (e.g., averaging NDCG over benchmarks) can yield misleading rankings, undermining practical selection. To address this problem, we introduce a novel, data-driven ranking methodology based on Bradley-Terry (BT) model. We demonstrate that the obtained ranking depends on key dataset statistics. Additionally, we propose a novel metric for evaluating ranking consistency and demonstrate robustness of our ranking to incomplete data. Finally, we introduce a dataset-specific methodology for ranking algorithms on unseen datasets without running the models, relying on extensions of the Bradley-Terry framework, including BT trees and BT models with covariates.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07492v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Cation-disordered AgBiS2 is a promising lead-free optoelectronic material, but both its ordered structure and the microscopic origin of its favorable electronic properties remain debated. Theory has proposed a mixed-coordination tendency with tetrahedral AgS4 and octahedral BiS6 units, whereas experiments mainly report octahedrally coordinated ordered and cation-disordered phases, together with local cation off-centering. Here, we combine a machine-learning interatomic potential with a deep-learning Hamiltonian to resolve the coupled structural and electronic evolution of AgBiS2 at large length scales. We identify the three-dimensional Bi-S network as the central structural motif governing both disorder stability and band-edge electronic states. At weak disorder, Ag/Bi exchange competes with the off-centering tendency of the Ag sublattice, producing strongly distorted local environments and convoluted diffraction signatures that hinder the identification of the ordered phase. With increasing disorder, BiS6-like units connect into a continuous Bi-S network, which stabilizes the rocksalt-like disordered phase. Despite strong cation disorder, AgBiS2 retains clear semiconductor-like band dispersion and develops a direct band gap. The connected Bi:p-S:p states supported by the Bi-S network preserve a dispersive conduction-band edge and a small electron effective mass. In contrast, mobile Ag disrupts the long-range periodicity of Ag-S bonding, leading to strongly localized valence states. These results clarify the structural controversy in ordered AgBiS2 and establish a unified physical picture of disorder stability and optoelectronic response in nonisovalent semiconductor alloys.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09704v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07483v1" target="_blank" rel="noopener noreferrer">
-      Network Recovery from Cascade Data: A Debiased Jacobian-Based Machine Learning Approach
+    <a href="https://arxiv.org/pdf/2606.09692v1" target="_blank" rel="noopener noreferrer">
+      Observability for Delegated Execution in Agentic AI Systems
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Lei Huang</span>
+    <span class="paper-authors">Abhinav Mishra, Kumar Sharad</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">Many important outcomes unfold as dynamic cascades, including product adoption, disease spread, financial distress, and information diffusion. A central challenge is to recover the hidden influence network behind these cascades. Existing methods typically assume a specific diffusion model, and their performance degrades substantially when that assumption is misspecified. We propose CascadeNet, a Jacobian-based machine learning framework for network recovery that does not require specifying a diffusion mechanism. The key idea is that the underlying influence structure can be characterized by the Jacobian of the one-step transition function. CascadeNet first constructs a flexible estimator of the transition function, and further applies Neyman-orthogonal debiasing via the Riesz representer, so that the debiased Jacobian is $\sqrt{n}$-consistent and asymptotically normal, enabling formal inference on the network structure. We validate CascadeNet in both a simulation exercise and a real-world empirical application. In simulations, where the data-generating process is known, CascadeNet achieves the highest network recovery accuracy across nine common data-generating processes. In an empirical application to COVID-19 transmission across Spain&#x27;s 52 provinces, CascadeNet recovers transmission networks that are significantly correlated with the true inter-province mobility network, whereas networks recovered by baseline methods show no significant alignment with the ground truth.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07483v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Delegation-scoped execution is not identifiable from standard observables: audit logs and execution traces can be identical under multiple incompatible delegation assignments. This gap is especially acute in LLM-based agentic systems, where agents dynamically select tools, vary execution sequences across runs for the same instruction, and spawn cooperating sub-agents. These dynamics fragment and interleave traces, making delegation-scoped reconstruction from causal structure alone structurally underdetermined. Although individual actions are authorized and logged, existing audit, tracing, and security schemas lack the semantics to reconstruct what actions occurred under a given delegation across heterogeneous systems. We focus on delegation-scoped attribution and access/share footprint reconstruction, not intent inference or reasoning reconstruction. We present an agent-aware observability substrate consisting of a lightweight gateway and a common information model that binds delegation context at execution time. This enables reliable cross-tool delegation-scoped reconstruction and direct forensic queries without heuristic time-window correlation.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09692v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07469v1" target="_blank" rel="noopener noreferrer">
-      Statistical and Numerical Convergence in Stochastic Equilibrium
+    <a href="https://arxiv.org/pdf/2606.09686v1" target="_blank" rel="noopener noreferrer">
+      An 84-Format Numeric Catalog with Bit-Exact Conformance Vectors: A Vendor-Neutral Reference for FP8, BF16, MXFP4, and Microscaling Formats
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">David Staines</span>
+    <span class="paper-authors">Dmitrii Vasilev</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">This paper sets out the most general computational and econometric implications of the rigorous stochastic equilibrium theory from SELCKE (Staines (2024a)) arXiv:2312.16214. The analytical backbone is the discovery that the system converges geometrically to long-run equilibrium, at a rate given by the greater of the eigenvalue or inverse eigenvalue (from outside) closest to the unit circle and the maximum shock persistence. High-order shocks converge faster. I develop a simulation procedure to test, with asymptotic power, whether stochastic equilibrium exists for a particular model. The fundamental approximation result asserts that, whatever the order of expansion or loss function, the stochastic steady state delivers the most accurate perturbation solution. I also show that super-consistent parameter estimators $O(1/T)$ arise whenever second-order terms vanish. Besides Calvo, I study stochastic equilibrium in two alternative pricing models. Dynamics simplify considerably. I bound the time the impulse response peaks, by the maximum lag in the errors. This lends empirical support to Taylor contracts, although there are issues surrounding unit roots and the strong cost-channel. For menu costs, I demonstrate that the initial price distribution decays away super-exponentially, producing a system equivalent to Calvo with an endogenous reset probability. The impact of idiosyncratic disturbances appears as an additional wedge between actual and efficient output. Blow-up of the objective function at the boundary is proven, with the help of new distributional arguments, so the model meets existing eigenvalue existence conditions for the recursive equilibrium. Along the way, new light is shone on existing theoretical models and statistical procedures.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07469v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Numeric format proliferation in machine learning hardware -- FP8 (E4M3 and E5M2), BF16, MXFP4, microscaling block formats, and dozens of research variants -- has outpaced the availability of vendor-neutral, bit-exact reference material. Engineers porting models across accelerators encounter silent divergences that are difficult to diagnose without a shared ruler. This paper describes a catalog of 84 numeric formats spanning 13 families, a suite of six bit-exact conformance packs covering GF16, MXFP4 element, BF16, FP8 E4M3, FP8 E5M2, and E8M0 block scale, and an IEEE P3109 v3.2.0 cross-walk that maps each pack to its corresponding standards-track configured format. Each pack is a self-contained JSON document with a SHA-256 fingerprint, a shared row schema, and an anchor vector that encodes 3.0 -- the identity phi^2 + 1/phi^2 = 3 -- as a cross-pack sanity check. Packs are cross-validated against ml_dtypes 0.5.4 (Google/JAX); any divergence is documented explicitly and interpreted as a spec-permitted interpretation gap rather than hidden. The work is framed as registry filling: it does not propose new formats, make model-accuracy claims, or assert superiority over any vendor&#x27;s implementation. All artifacts are publicly available at https://github.com/gHashTag/t27 under an open license.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09686v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07466v1" target="_blank" rel="noopener noreferrer">
-      Covariance-Adaptive Residualization and Stagewise Calibration for Dependent Multiple Testing
+    <a href="https://arxiv.org/pdf/2606.09671v1" target="_blank" rel="noopener noreferrer">
+      Transition-Based Digital Twin Modelling for Alzheimer&#x27;s Disease under Sparse Longitudinal Data
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Prasenjit Ghosh, Arijit Chakrabarti</span>
+    <span class="paper-authors">Yinyu Huang, Yilin Zhang, Sofia Michopoulou, Christopher Kipps, Rahman Attar</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">In this paper, we study simultaneous hypothesis testing for multivariate Gaussian means under arbitrary covariance dependence. Building on the Maximum Residual Down (MRD) procedure of Cohen et al. (2009), we investigate a new calibration strategy based on the generalized step-down critical constants of Gavrilov et al. (2009). The resulting procedure retains the covariance-adaptive residualization mechanism of MRD while replacing the original model-dependent threshold specification with a simple stagewise calibration rule. Since the proposed procedure belongs to the class of monotone residual-based step-down procedures studied by Ghosh and Chakrabarti (2026), its admissibility follows directly from their theory. We also derive alternative representations of the MRD residual statistics that express all active residuals through a single active precision matrix, substantially reducing computational complexity. Simulation studies across a broad range of dependence structures show that the proposed methodology often achieves a lower normalized misclassification risk than several widely used marginal testing procedures. Under several structured dependence models, the procedure also exhibits strong signal-recovery behavior, attaining false discovery rates near the nominal level, extremely small false non-discovery rates, powers approaching one, and average numbers of rejections close to the expected number of true signals. These findings provide empirical evidence that covariance-adaptive residualization and stagewise calibration may interact in a highly favorable manner for dependent multiple testing.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07466v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Alzheimer&#x27;s disease (AD) progression is highly heterogeneous and is typically observed through sparse and irregular longitudinal data, posing challenges for prediction and personalised monitoring. Existing machine learning approaches have improved AD prediction using multimodal data, yet often focus on static classification or cohort-level risk estimation, providing limited support for subject-specific modelling and uncertainty-aware reasoning. To address these limitations, we present a personalised digital twin framework for AD prediction and scenario-based analysis using multimodal longitudinal data. The proposed approach integrates complementary modelling strategies to capture clinical transitions and temporal dependencies across visits. Using data from the Alzheimer&#x27;s Disease Neuroimaging Initiative (ADNI), including cognitive assessments, clinical variables, and MRI-derived phenotypes, the framework predicts cognitive status and diagnostic categories while quantifying predictive uncertainty and enabling patient-specific what-if trajectory analysis. Evaluation on leak-free subject-level splits demonstrates strong performance in score forecasting and diagnosis classification. In this sparse and irregular ADNI setting, transition-based modelling of adjacent visits achieved higher predictive accuracy than the sequence-based branch, suggesting that local transition modelling may be more data-efficient. While sequence models remain valuable for uncertainty-aware trajectory forecasting, local transition modelling offers a more data-efficient and robust predictive strategy. These findings highlight the importance of aligning temporal modelling strategies with clinical data structure and suggest that transition-based digital twin formulations may provide a practical and interpretable approach for personalised disease forecasting in neurodegenerative disorders.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09671v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07463v1" target="_blank" rel="noopener noreferrer">
-      Amortized Neural Optimization for Pre-Layout Signal Integrity Design Space Exploration using Differentiable Surrogates
+    <a href="https://arxiv.org/pdf/2606.09668v1" target="_blank" rel="noopener noreferrer">
+      Algorithm for Contextual Queueing Bandits with Rate-Optimal Queue Length Regret
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Julian Withöft, Werner John, Emre Ecik, Ralf Brüning, Jürgen Götze</span>
+    <span class="paper-authors">Seoungbin Bae, Dabeen Lee</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">Pre-layout design space exploration (DSE) for high-speed signal integrity (SI) analysis is often limited by the computational cost of simulations and iterative optimization algorithms within modern electronic design automation (EDA) workflows. While machine learning surrogate models accelerate the simulation step, optimizing designs still requires utilizing iterative black-box search methods. This iterative nature scales poorly, making multi-corner sweeps computationally expensive. As a solution, this paper proposes amortized neural optimization (ANO) for pre-layout SI design. ANO entirely eliminates iterative black-box inference by utilizing fully differentiable neural network surrogate models. ANO extracts analytical gradients from the surrogate to train a global optimization policy. Instead of solving the optimization problem repeatedly at inference, the optimization process is learned offline and therefore amortized. Once the ANO policy is trained, it maps different channel contexts directly to near-optimal design parameters in a single deterministic forward pass. The efficiency and accuracy of the ANO framework are demonstrated based on three complex SI design scenarios, including DDR5 decision feedback equalization (DFE), 9-dimensional SerDes Tx/Rx co-equalization, and DDR3 DQS differential pair routing to optimize eye diagram metrics under intra-pair skew constraints. By trading roughly 10% in optimality compared to instance-specific black-box algorithms, it realizes speedups of three to four orders of magnitude. For a large-scale 320,000-instance multi-corner SerDes sweep optimization, ANO collapses what would have taken days of computation using iterative search algorithms into a single batched forward pass that completes in milliseconds. This transforms computationally expensive SI optimization into real-time and interactive pre-layout DSE.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07463v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Contextual queueing bandits provide a framework for learning to schedule heterogeneous jobs under unknown context-dependent service rates. Under stochastic contexts, existing algorithms achieve $\widetilde{\mathcal{O}}(T^{-1/4})$ queue length regret, defined as the expected difference between the learner&#x27;s and oracle&#x27;s queue lengths at horizon $T$. In this paper, we improve this rate to $\widetilde{\mathcal{O}}(T^{-1/2})$. The key observation is that random exploration is needed only up to a carefully chosen cutoff round, rather than throughout the entire horizon. We propose CQB-$η$-2, a three-phase algorithm: (i) pure random exploration to construct an initial estimator, (ii) $η$-random exploration combined with a UCB rule to continue learning while maintaining negative drift, and (iii) pure UCB after the exploration cutoff. Our proof decomposes the queue length regret at the cutoff round. Before the cutoff, negative drift suppresses queue length differences caused by suboptimal choices. After the cutoff, the first two phases provide sufficient random exploration samples, ensuring that UCB decisions incur small departure-rate gaps. Combining these two bounds yields queue length regret of order $\widetilde{\mathcal{O}}(T^{-1/2})$. We further prove a minimax lower bound of order $Ω(T^{-1/2})$. The proof constructs two hard instances that are statistically indistinguishable up to the final service decision, and uses a queue-specific coupling argument to convert the resulting testing error into queue length regret. Together, our upper and lower bounds characterize the minimax dependence on the horizon $T$ up to logarithmic factors.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09668v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07399v1" target="_blank" rel="noopener noreferrer">
-      Automatic, Debiased, and Invariant Counterfactual Generation under General Interventions
+    <a href="https://arxiv.org/pdf/2606.09661v1" target="_blank" rel="noopener noreferrer">
+      A Differentiable Simulation of the Eye for Patient-Specific Strabismus Surgery Planning
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Raphael C Kim, Jingsen Zhu, Ramin Zabih, Michele Santacatterina</span>
+    <span class="paper-authors">Even Harsigny, Pablo Alvarez, Michel Duprez, Stéphane Cotin</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">Generative models for counterfactual outcomes have great potential to support decision-making under complex interventions, but existing approaches are limited by unstable estimation, poor generalization across environments, and bias from nuisance model misspecification. We introduce ADIGen, a framework for automatic, debiased, and invariant counterfactual generation under general interventions, including high-dimensional interventions and outcomes. ADIGen combines Riesz regression to avoid unstable density-ratio estimation, causal invariance to improve generalization under distribution shift, and orthogonal statistical learning to obtain doubly robust guarantees against nuisance model misspecification. We provide excess-risk bounds showing that ADIGen controls counterfactual risk under general interventions, with a product-bias nuisance remainder and an invariant risk bound across environments.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07399v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Purpose: Up to 4% of adults will develop strabismus in their lifetime. The most common surgical intervention involves adjusting the length of one or more extraocular muscles to correct the angular deviation. This correction depends on surgical expertise and statistical reference tables, which often fail to yield optimal results for patients with atypical eye morphology. Our work proposes a physics-based modeling approach to personalized surgical planning, accounting for patient-specific eye anatomy. Methods: We built a physics-based simulator of the eye and its muscles, incorporating patient-specific geometry and Hill-type muscle biomechanics. We solve an optimization problem to find the surgical dosage that minimizes angular deviation. The model is implemented as a fully differentiable simulation, enabling efficient optimization. We validated the framework by comparing its predictions with standard surgical tables for emmetropic eyes before applying it to anatomically atypical virtual patients. Results: Our model&#x27;s predictions for emmetropic eyes were first validated, demonstrating a strong fit with standard surgical tables. More importantly, for high-myopia models, the framework computed a clinically significant increase in the required surgical dosage compared to standard eyes. This computed recession difference is highly relevant as surgical plans are adjusted in 0.5 mm increments. Conclusion: Our results show that our model provides a calibrated surgical plan that, unlike standard tables, also accounts for pathologies involving atypical eye shapes. This patient-specific model represents a step toward personalized surgical planning, with the potential to improve dosage accuracy and surgical outcomes for atypical cases.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09661v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07396v1" target="_blank" rel="noopener noreferrer">
-      Scalable Prediction of Complex Surface Reconstructions under Operating Conditions via Harmony-Search-Based Global Optimization
+    <a href="https://arxiv.org/pdf/2606.09627v1" target="_blank" rel="noopener noreferrer">
+      Balmer decrements as a new diagnostic for period-bounce Cataclysmic Variable stars
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Shi-Yang Chen, Xiao-Ming Cao</span>
+    <span class="paper-authors">Santiago Hernández-Díaz, Beate Stelzer, Daniela Muñoz-Giraldo</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">The dynamic structural evolution of catalyst surfaces under operating conditions dictates catalytic performance, yet capturing these reconstructions atomically remains challenging. Global optimization based on machine learning interatomic potentials (MLIPs) is promising, but scaling to large-scale, low-symmetry operando systems is hindered by expansive search spaces and potential energy surface (PES) inaccuracies. Herein, we present Harmony-search-based Atomic Structural Global Optimization (HASGO), a framework integrating universal MLIPs with a harmony search algorithm. HASGO overcomes the problem of PES softening by incorporating a multi-head replay fine-tuning protocol. Moreover, the stochastic structural perturbation step in its algorithm offers a fault-tolerant strategy to enhance the robustness of global convergence. These enable HASGO to identify intricate surface oxide overlayers that align with atomic-resolution microscopy, thereby resolving the square-pyramidal subsurface O5 motif on Ag(100) during ethylene epoxidation. This scalable framework provides a robust approach for uncovering operando structures, accelerating the rational design of industrial catalysts.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07396v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Cataclysmic variable stars (CVs) evolve toward shorter orbital periods ($P_{\rm orb}$) until they reach a minimum $P_{\rm orb}$ near $P_{\rm orb}\sim80$ min. Beyond this point, the donor star becomes out of thermal equilibrium or increasingly degenerate, causing the system to &quot;bounce back&quot; to longer $P_{\rm orb}$ values. Such highly evolved systems are known as period-bouncers. Although 40-80\% of all CVs are expected to have reached this stage, period-bouncers come up for only 3-25\% of the observed CV population. This is likely a consequence of their intrinsic faintness associated with lower mass-transfer rates. Establishing new diagnostics to unveil this missing population is therefore crucial. Two samples of non-magnetic CVs with public SDSS optical spectra were constructed: one of short-period pre-bounce CVs and another of period-bounce CVs. For systems showing Balmer absorption from the white dwarf (WD), hydrogen-dominated atmosphere models were fitted and subtracted to correct for the WD component. H$α$, H$β$, and H$γ$ fluxes were measured. We then investigated statistical relations between the Balmer decrements, the H$β$ line luminosity, and $P_{\rm orb}$, and compared the measured Balmer decrements with theoretical predictions from accretion disc models. Short-period pre-bounce CVs show flat Balmer decrements, that is Balmer line ratios close to unity. In contrast, systems near and beyond the period minimum exhibit progressively steeper decrements (H$α$/H$β$&gt;1 and H$γ$/H$β$&lt;1). This behaviour is attributed to their lower mass accretion rates, as inferred from the H$β$ line luminosity. We fitted a linear logistic regression model to the diagram of H$γ$/H$β$ versus H$α$/H$β$. We establish that this diagnostic diagram effectively separates period-bouncers from pre-bounce CVs.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09627v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07390v1" target="_blank" rel="noopener noreferrer">
-      Exact output statistics of Icart&#x27;s encoding in the exceptional \(j=0\) case
+    <a href="https://arxiv.org/pdf/2606.09607v1" target="_blank" rel="noopener noreferrer">
+      Closure-Validated Circuit Discovery in Attention Heads: Co-activation Proposes, Ablation Disposes
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">David Kumallagov</span>
+    <span class="paper-authors">Yongzhong Xu</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">Icart&#x27;s encoding is a classical deterministic map from finite fields to elliptic curves and a basic ingredient in early hash-to-curve constructions. We determine the exact one-output distribution of this map in the exceptional \(j=0\) case. More precisely, for \[ E_{0,b}:Y^2=X^3+b,\ q\equiv2\pmod3, \] we compute the complete fibre distribution of \(f_{0,b}:\mathbb F_q\to E_{0,b}(\mathbb F_q)\). This gives closed formulae for the image size, total variation distance from uniform, collision probability, power sums, entropy measures and basic batch statistics. We also derive the exact second moment of all nontrivial character sums of the output distribution. Via the Weil pairing, this becomes an exact energy formula for pairing-character tests on the supersingular \(j=0\) family whose odd prime order subgroups have embedding degree two.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07390v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Interpretability increasingly treats groups of components, not individual units, as the basic object, and proposes to find them by clustering co-activation statistics. We ask whether such a cheap signal actually identifies an attention-head circuit. Adapting a sparse-autoencoder clustering recipe to attention heads -- but validating by causal ablation rather than reconstruction -- we cluster heads and then run a closure test: ablate the discovered community and compare per-example damage to matched-random controls. Across two dense 1B-scale models (Pythia 1B, OLMo 1B) and two input distributions, the communities pass closure. In a Mixture-of-Experts model (OLMoE-1B-7B), route-conditional clustering recovers a statistically real signal that nonetheless does not survive closure -- ablation improves loss, the wrong direction. Extending closure across training, attention-target selectivity and participation ratio decouple from function in both directions. We conclude that a cheap signal is a circuit proposal, not a confirmed circuit; closure is what separates them.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09607v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07385v1" target="_blank" rel="noopener noreferrer">
-      Unified Geometry-Guided ML-FTLE for Tracking Transient Chaos from Scalar Time Series
+    <a href="https://arxiv.org/pdf/2606.09591v1" target="_blank" rel="noopener noreferrer">
+      Fine-scale statistics for $\mathbb{Q}^n$
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">S. V. Manivelan, Andrei Velichko, I. Manimehan</span>
+    <span class="paper-authors">Gaurav Aggarwal, Anish Ghosh, Jens Marklof</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">Detecting transient chaos from scalar observations without governing equations represents a fundamental challenge in nonlinear dynamics. We propose a geometry-guided machine learning framework that unifies predictive trajectory divergence with macroscopic attractor morphology to track abrupt regime shifts. The methodology extracts a local instability scale via out-of-sample k-nearest neighbor forecast errors to establish the ML-FTLE estimator, subsequently mapping this temporal divergence onto a structural closeness matrix derived from a minimal dictionary of Poincare occupancy grids. By employing partial least squares regression, we extract a latent geometric component calibrated directly to the empirical finite-time Lyapunov spectrum, yielding the Poincare-based geometric-guided FTLE. Validation against analytical QR-FTLE baselines confirms that fusing topological state spaces with predictive divergence systematically improves continuous transition tracking. The Structural Similarity Index optimally resolves gradual damping, while Hausdorff Distance exhibits extreme resilience during abrupt phase-space collapses. Furthermore, macroscopic spatial discretization acts as a robust topological regularizer against additive Gaussian noise, preserving deterministic signatures even at moderate signal thresholds. This equation-free framework provides a highly accurate, noise-resilient diagnostic for monitoring structural transitions in complex non-stationary systems.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07385v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We study the distribution of rational points in $\mathbb{R}^n$, with denominators restricted to the interval $[Q-Δ, Q]$, and $Q,Δ\to\infty$ such that $Δ/Q\to 0$. Previous results in the literature, due to Hall and others, were limited to Farey sequences, where the window size $Δ$ is of the same order as $Q$. We prove the convergence of fine-scale statistics in a range of scaling limits and express the limit laws in terms of natural probability measures on the space of affine lattices. The key technical ingredient of our approach is an equidistribution theorem for slowly expanding horospheres, with some new exotic limit measures. Our techniques furthermore allow us to answer a recent question by Anderson, Boca, Cobeli and Zaharescu concerning the directional statistics of lattice points.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09591v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07382v1" target="_blank" rel="noopener noreferrer">
-      Covariance Shrinkage via Stochastic Interpolation
+    <a href="https://arxiv.org/pdf/2606.09582v1" target="_blank" rel="noopener noreferrer">
+      On Choosing the $μ$ Parameter in Gaussian Differential Privacy
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Mathieu Chalvidal, Florentin Coeurdoux, Eric Vanden-Eijnden</span>
+    <span class="paper-authors">Bogdan Kulynych, Antti Honkela</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">We recast classical shrinkage of high-dimensional covariance estimators as empirical risk minimization over a parametric stochastic interpolant between a source and a target distribution. This formalism recovers known shrinkage estimators as special cases and reveals three distinct mechanisms for reducing statistical risk: (i) Scheduling: the interpolant schedule determines the class of admissible covariances, and hence the achievable risk. (ii) Flow maps and couplings: whereas naive constructions amount to assuming independence between the distributions, specific coupling structures (e.g., solutions of optimal transport problems) can lower the empirical risk. Moreover, non-linear flow maps realizing such couplings free the interpolant covariance from the eigenbasis of the empirical estimate, enabling eigenvector regularization. (iii) Early stopping: estimators defined by integrating a regressed vector field afford an additional bias-variance trade-off through approximation of the true interpolant distribution. We then propose a neural estimator of the interpolant, together with an upper bound on its quadratic risk in terms of the interpolant approximation error, and validate both on synthetic experiments. Finally, we apply the estimator to real neuroimaging data, demonstrating the additional regularization power this approach offers in practice.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07382v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Recent work argues for using Gaussian differential privacy (GDP) to report the privacy guarantees in privacy-preserving machine learning. We provide principled mappings from pure-DP $\varepsilon$ to GDP $μ$ by matching the worst-case success of a strong-adversary membership inference attack in terms of three metrics: multiplicative advantage at fixed FPR, precision at fixed recall, and the standard privacy profile. We tabulate $μ$ values across a useful range of parameters and recommend $μ\approx \varepsilon/5$ as a conservative general-purpose conversion.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09582v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07380v1" target="_blank" rel="noopener noreferrer">
-      Topologically Enforced Lifshitz Multicriticality in One Dimension
+    <a href="https://arxiv.org/pdf/2606.09576v1" target="_blank" rel="noopener noreferrer">
+      Characterizing Stellar Streams with Error-Aware Machine Learning
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Kuang-Hung Chou, Xue-Jia Yu</span>
+    <span class="paper-authors">Alexandros Pratsos, Biprateep Dey, Ting S. Li</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">Recent advances have revealed that topology can further enrich the universality classes of quantum phase transitions, thereby extending beyond the traditional paradigms of statistical and condensed matter physics. However, multicriticality between topologically distinct quantum critical lines remains insufficiently explored. In this Letter, we systematically construct and investigate a novel class of topologically enforced Lifshitz multicritical points in one dimensional chiral symmetric fermionic systems. Such multicriticality is driven solely by changes in the topology of neighboring critical lines, beyond previously recognized multicritical points that are typically induced by changes in critical exponents. More importantly, the topologically enforced multicriticality identified here can host robust topological degeneracies while surprisingly exhibiting a breakdown of the Li Haldane bulk boundary correspondence-a phenomenon we elucidate through a simple physical picture.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07380v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Stellar streams are thin, elongated collections of stars formed by gravitational disruption of orbiting star clusters or dwarf galaxies and are highly sensitive probes of the Milky Way&#x27;s dark matter distribution and formation history. We present $\texttt{SCREAM}$ ($\textbf{S}$tream $\textbf{C}$ha$\textbf{R}$acterization with $\textbf{E}$rror $\textbf{A}$ware $\textbf{M}$achine Learning), a weakly-supervised framework to identify member stars of stellar streams. Building on the $\texttt{CATHODE}$ method originally developed for particle physics, $\texttt{SCREAM}$ identifies streams as localized feature-space over-densities, avoiding rigid physical priors like assumed gravitational potentials or strict isochrone filtering. Crucially, $\texttt{SCREAM}$ is the first machine learning (ML) framework in this domain to directly incorporate observational uncertainties into the neural network training objective. Using astrometric and photometric data from Gaia Data Release 3 and the Dark Energy Spectroscopic Instrument (DESI) Legacy imaging survey, we demonstrate our algorithm&#x27;s performance on the prominent GD-1 stream. Validated against independent labels, $\texttt{SCREAM}$ achieves an F1 score of 0.745, substantially outperforming existing ML methods in both precision and recall. Furthermore, $\texttt{SCREAM}$ recovers the physically expected diffuse &quot;cocoon&quot; of GD-1 and faint main-sequence members that classical physics-based algorithms (e.g., $\texttt{STREAMFINDER}$) miss. Our results highlight the transformative potential of uncertainty-aware, weakly-supervised ML to uncover complex galactic structures.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09576v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07346v1" target="_blank" rel="noopener noreferrer">
-      Geometric Factorization of Sufficient Harmonic Representations
+    <a href="https://arxiv.org/pdf/2606.09543v1" target="_blank" rel="noopener noreferrer">
+      From Genes to Tokens: a GWAS-inspired Approach for Interpretable Stylometric Analysis
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Kennon Stewart</span>
+    <span class="paper-authors">Dmitry Pronin, Evgeny Kazartsev</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">For tasks of likelihood families invariant under the action of a lie group, the quotient is the minimal sufficient invariant representation. On compact homogeneous spaces, this quotient representation admits a harmonic realization through spherical Fourier coefficients; for finite-band harmonic exponential families, the empirical harmonic coefficients are minimal sufficient statistics. The partition function can be expressed algebraically by extracting the trivial representation component through Clebsch-Gordan decomposition.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07346v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">This short paper introduces a stylometric interpretation method inspired by genome-wide association studies (GWAS). Each &quot;gene&quot; token&#x27;s association with &quot;phenotype&quot; authorship is tested using logistic regression with multiple-comparison correction. Applied to English, German, and Russian corpora, the method detects statistically significant lexical markers distinctive of individual authors.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09543v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07343v1" target="_blank" rel="noopener noreferrer">
-      Simple cyanides and formylium ions isotopologues in early star-forming molecular cores
+    <a href="https://arxiv.org/pdf/2606.09531v1" target="_blank" rel="noopener noreferrer">
+      Asymptotics of an Explosive Autoregression under Dependence
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">R. D. Taboada, S. Paron, N. C. Martinez, M. E. Ortega</span>
+    <span class="paper-authors">Kasper Sunn Blumensaat</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">Understanding the chemistry related to the early stages of star formation is of great importance, as it is linked to the beginnings of the most complex chemistry in the interstellar medium. In this context, we investigate the chemical behaviour of simple cyano-bearing molecules and formylium ions isotopologues in a sample of massive infrared-quiet molecular cores. Using archive ALMA Band 7 data of 37 early molecular cores embedded in ATLASGAL clumps, we obtain abundances of HC$_{3}$N, H$^{13}$CN, HN$^{13}$C, H$^{13}$CO$^+$, and HC$^{17}$O$^+$. We used various statistical methods, including hierarchical clustering, to analyse the correlations between molecular abundances, ratios and temperature. We find that HN$^{13}$C, H$^{13}$CO$^{+}$, and HC$^{17}$O$^{+}$ abundances correlate positively with kinetic temperature, suggesting temperature-driven chemical regulation in young massive cores. A similar trend is observed for H$^{13}$CN, although the limited number of detections prevents a definitive conclusion. HC$_3$N abundances show no dependence on temperature within the 40-100 K range, suggesting a chemical steady state between gas-phase production and grain-surface depletion. Similarly, the H$^{13}$CN/HN$^{13}$C ratio, measured in only six regions, suggests no correlation with temperature, differing from findings at lower temperatures. Using a hierarchical clustering method based on abundance ratios, novel in astrochemistry, we identified chemically distinct core groups that align with thermal conditions. Additionally, we provide HC$^{17}$O$^+$ detections for 28 cores-a significant expansion of existing literature-and find evidence that H$^{13}$CO$^{+}$ transitions may have higher optical depths than commonly assumed. These results are important because characterizing the chemical state of early star-forming stages is essential for understanding the onset of the most complex chemistry.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07343v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We generalize the convergence results of an explosive autoregression, pioneered in Anderson (1959), in three ways: First, we demonstrate that the centered least-squares estimator converges geometrically to a ratio of limits, even in settings where the innovations are correlated and not centered around zero. Secondly, we demonstrate that the requirement of independent innovations in Anderson (1959), Theorem 2.3, can be relaxed to $α$-mixing. Third, we provide an autocorrelation-robust feasible test statistic for the explosive parameter under Gaussian ARMA innovations.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09531v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07334v1" target="_blank" rel="noopener noreferrer">
-      How Far Can Chord-Symbol Time-Series Adaptation Carry Genre Identity? Capabilities and Boundaries in Multi-Genre Chord-Symbol Modeling
+    <a href="https://arxiv.org/pdf/2606.09517v1" target="_blank" rel="noopener noreferrer">
+      Investigating Calibration Challenges in Probabilistic Electricity Price Forecasting
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jinju Lee</span>
+    <span class="paper-authors">Jan Niklas Lettner, Hadeer El Ashhab, Benjamin Schäfer</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">Harmony is a compact symbolic layer where mathematical pitch relations, acoustic consonance, and musical convention meet. This report treats chord-symbol sequences not as a complete representation of music, but as an interpretable, controllable time series for genre-local harmonic modeling. Starting from a frozen pop-jazz Music Transformer checkpoint, I evaluate how far small adaptation interfaces can extend the model to eleven target genres: blues, bossa nova, Bach chorales, country, electronic, folk, funk, gospel, hip-hop, R&amp;B/soul, and rock. The main evaluation compares LoRA, IA3, BitFit, prefix tuning, and full fine-tuning over 11 genres and 3 seeds, a complete 165-cell grid. All five methods improve over the frozen base on held-out chord prediction, with macro gains from +2.89 to +3.61 points; LoRA and IA3 score highest, but Wilcoxon tests with Holm and Benjamini-Hochberg correction do not support a decisive winner. A matched-data-size control sharpens this: when genres are sub-sampled to a common corpus size, IA3 stays on top but LoRA&#x27;s full-data edge disappears and it falls to last, indicating the small gaps are partly data-driven. A control-token baseline is also strong, and wrong-genre adapters often beat the frozen base, suggesting much of the effect comes from lightweight conditioning over a reusable harmonic base rather than one particular adapter family. Additional diagnostics (rank sweeps, wrong-genre rotation, a base-checkpoint ablation, chord-only genre classification, generated-output statistics, real-song evaluation, and duplicate analysis) support a bounded conclusion: chord-symbol adaptation reliably improves genre-local harmonic prediction, but chord symbols alone do not carry complete genre identity. The report therefore avoids claims about perceived genre authenticity or full musical quality, which require controlled listener or musician evaluation.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07334v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">As renewable energy integration increases market volatility, probabilistic electricity price forecasting has become essential for effective risk management. However, current-proper-scoring rules often prioritize forecast sharpness at the expense of calibration, leading to overconfident and statistically unreliable uncertainty estimates. This work highlights the critical gap between theoretical scoring and practical calibration, demonstrating that models can become mere proxies for deterministic forecasts when reliability is neglected. We conclude that future research must shift toward calibration-aware objectives and architectures to ensure the distributional integrity of energy market forecasts.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09517v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.07330v1" target="_blank" rel="noopener noreferrer">
-      Red noise and evolving signals: a complete frequentist approach to supermassive black hole binary searches with pulsar timing array
+    <a href="https://arxiv.org/pdf/2606.09516v1" target="_blank" rel="noopener noreferrer">
+      SwiftVR: Real-Time One-Step Generative Video Restoration
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Xuan Tao, Boris Goncharov, Yiqian Qian, Yan Wang, Soumya D. Mohanty</span>
+    <span class="paper-authors">Jiaqi Yan, Xiangyu Chen, Xinlin Zhong, Haibin Huang, Chi Zhang, Jie Liu, Jiantao Zhou, Xuelong Li</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-05</span>
+    <span class="paper-date">2026-06-08</span>
   </p>
-  <p class="paper-abstract">Searches for gravitational waves (GWs) from isolated supermassive black hole binaries (SMBHBs) in pulsar timing array (PTA) data require simultaneous estimation of signal and noise parameters, so the dimensionality of the fit scales with the number of observed pulsars. This computational difficulty is exacerbated when source evolution from GW emission is included, since retaining both Earth and pulsar terms introduces the unknown pulsar distances. Existing frequentist methods such as the $\mathcal{F}$-statistic, restricted so far to non-evolving sources, effectively, imply a circular analysis, which may lead to biased estimators. We present a Generalized Likelihood Ratio Test (GLRT) and the associated $\mathcal{T}$-statistic that overcomes the aforementioned limitations. The formulation of the GLRT extends earlier work in which the dimensionality of the fitting problem was drastically reduced by semi-analytical maximization of the likelihood over the pulsar phase parameters, followed by efficient global optimization over the remaining parameters using Particle Swarm Optimization. Our simulations demonstrate that for an evolving SMBHB signal with chirp mass $\mathcal{M}=10^{9.2}\,M_\odot$ and signal-to-noise ratio $20$, this detection statistic achieves a $100\%$ detection probability at a false-alarm probability of $0.06$ in a 30-pulsar timing array, which is characterized by a $100~\mathrm{ns}$ root-mean-square white noise residual and pulsar-specific red noise.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.07330v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Real-time video restoration (VR) for live streams requires high-resolution outputs under strict per-frame latency constraints. Existing one-step diffusion-based VR models remain difficult to deploy on consumer-grade GPUs due to two main bottlenecks: quadratic spatial attention at high resolutions and the latency-memory overhead of large video autoencoders. We present SwiftVR, a streaming one-step generative VR framework that reduces both bottlenecks under a causal chunk-wise protocol. For attention, mask-free shifted-window self-attention gathers each spatial window into a dense tensor via deterministic indexing, keeping all attention calls on the dense scaled dot-product attention path without masks, cyclic shifts, padding, or hardware-specific sparse kernels. Because SwiftVR uses only standard dense SDPA calls, the trained model transfers to consumer GPUs without retraining or custom kernels. For autoencoding, a lightweight Restoration-aware Autoencoder enables fast chunk-wise decoding while preserving reconstruction quality. On a single H100, SwiftVR sustains 31~FPS at 2560x1440 and 14~FPS at 3840x2160, whereas all compared diffusion-based VR baselines exceed the memory limit at 4K. On a consumer RTX~5090, SwiftVR reaches 26~FPS at 1920x1080. To our knowledge, SwiftVR is the first generative VR model to achieve real-time 1080p streaming on a consumer-grade GPU, while attaining strong no-reference perceptual quality with lower inference cost. Project is available at https://h-oliday.github.io/SwiftVR.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.09516v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
