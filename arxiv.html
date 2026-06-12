@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-06-11 00:55 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-06-12 00:59 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.11187v1" target="_blank" rel="noopener noreferrer">
-      Next Forcing: Causal World Modeling with Multi-Chunk Prediction
+    <a href="https://arxiv.org/pdf/2606.12409v1" target="_blank" rel="noopener noreferrer">
+      A Pfaffian quantum Hall state of ultracold bosons
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Gangwei Xu, Qihang Zhang, Jiaming Zhou, Xing Zhu, Yujun Shen, Xin Yang, Yinghao Xu</span>
+    <span class="paper-authors">Joyce Kwan, Perrin Segura, Yanfei Li, Tizian Blatz, Annie Zhi, Brice Bakkali-Hassani, Annabelle Bohrdt, Martin Greiter, Fabian Grusdt, Markus Greiner</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">Autoregressive video generation has emerged as a powerful paradigm for World Action Models (WAMs). However, existing approaches suffer from slow training convergence and limited converged accuracy, particularly at high frame rates, as the training supervision is confined to the current chunk without explicit signals about future dynamics; they also suffer from slow inference due to iterative video denoising. In this paper, we present Next Forcing, a multi-chunk prediction (MCP) framework for causal world modeling that enables faster training, higher accuracy, and accelerated inference. Inspired by multi-token prediction in large language models, Next Forcing introduces an MCP training objective that augments the main model with lightweight auxiliary MCP modules to simultaneously denoise video chunks at multiple future temporal horizons (next$^1$, next$^2$, next$^3$ chunks). These MCP modules form a causal chain across prediction depths, where intermediate features fused from multiple layers of the main model are leveraged to predict future dynamics, allowing near-future predictions to inform farther-future ones and providing dense multi-scale temporal supervision back to the main model. During training, the MCP modules significantly accelerate convergence and improve converged accuracy, especially at high frame rates: at 50 fps, Next Forcing achieves a 93.1% relative improvement over LingBot-VA at 5k training steps and 2.3x faster convergence, and establishes new state-of-the-art results on the RoboTwin benchmark (94.1/93.5% on Clean/Random). At inference, the MCP modules can be retained to predict the next video chunk in parallel with the current one, achieving 2x inference acceleration. Next Forcing also demonstrates significant improvements on PhyWorld, a benchmark evaluating adherence to physical laws in video generation, and over 50% FVD reduction on general video pretraining.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.11187v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Fractional quantum Hall states are a cornerstone of topological physics, hosting fractionally charged quasiparticles with exotic statistics that promise to enable topologically protected quantum information processing. Among these, the Pfaffian state introduced by Moore and Read implements a p-wave pairing structure that supports excitations with non-Abelian exchange statistics. Despite extensive study in electronic systems, direct access to its pairing structure has remained limited. Here we realize a three-particle bosonic Pfaffian state of ultracold $^{87}\mathrm{Rb}$ atoms in an optical lattice subject to a Floquet-engineered synthetic magnetic field. Using a Bayesian-optimized adiabatic protocol, we prepare a state exhibiting Pfaffian pairing correlations. Site-resolved measurements of multi-point density correlations reveal a pronounced suppression of short-range three-body coincidences, reflecting the underlying pairing structure. We further probe the state&#x27;s transport response through Hall drift measurements. Our results establish a bottom-up approach to engineering non-Abelian topological order and lay the groundwork for future explorations of anyonic braiding in synthetic matter.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12409v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.11181v1" target="_blank" rel="noopener noreferrer">
-      Combined Analysis of Lattice QCD and Experimental Data on the Pion Transition Form Factor
+    <a href="https://arxiv.org/pdf/2606.12389v1" target="_blank" rel="noopener noreferrer">
+      KiDS-Legacy: Joint analysis of second- and third-order cosmic shear
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Franziska Hagelstein, Danaheb Naomi Navarro Durán, Timon Esser, Vadim Lensky, Sotiris Pitelis, Vladyslava Sharkovska</span>
+    <span class="paper-authors">L. Linke, L. Porth, P. Burger, J. Harnois-Déraps, S. Heydenreich, P. Schneider, M. Asgari, M. Bilicki, C. Georgiou, C. Heymans, H. Hildebrandt, H. Hoekstra, P. Jalan, B. Joachimi, S. Joudaki, K. Kuijken, S. Li, L. Moscardini, M. Radovich, R. Reischke, B. Stölzner, A. H. Wright, Z. Yan, Y. -H. Zhang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">The evaluation of the hadronic light-by-light scattering contribution to the muon anomalous magnetic moment requires precise knowledge of the pion transition form factor (TFF). In this work, we present a feasibility study for a combined analysis of lattice QCD (LQCD) and experimental data. Our methodology is driven by the goal of combining complementary datasets to leverage their respective kinematic advantages: while LQCD provides robust predictions for the doubly-virtual TFF, $e^+e^-$ scattering experiments offer high-precision singly-virtual measurements up to large momentum transfers. To ensure a statistically rigorous combination, we implement a global one-stage fitting approach based on the modified $z$-expansion, utilizing synthetic jackknife replicate sampling and a normalized $χ^2$ weighting scheme. We demonstrate that the inclusion of experimental data substantially tightens the constraints on the pion TFF, yielding up to a factor of three reduction in uncertainty in the singly-virtual limit. In contrast, the uncertainty of the resulting pion-pole contribution to the muon $g-2$ improves by a factor of $1.5$. This more modest improvement reflects the fact that the $g-2$ integral is heavily dominated by the low-$Q^2$ region, which is already well constrained by physical normalization constraints.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.11181v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Weak lensing by large-scale structure is a powerful cosmological probe. While most analyses rely on second-order correlations, these are primarily sensitive to the parameter combination $S_8 = σ_8 (Ω_m/0.3)^{0.5}$, limiting their ability to constrain $Ω_m$ and other cosmological parameters independently. Higher-order statistics capture non-Gaussian features of the density field and can therefore break parameter degeneracies and extract more cosmological information from weak lensing surveys. We present a joint analysis of second- and third-order cosmic shear in the final data release of the Kilo-Degree Survey (KiDS-Legacy). We combine COSEBIs (Complete Orthogonal Sets of E-/B-mode Integrals) at scales between 2&#x27; and 300&#x27; with third-order aperture mass moments at scales between 4&#x27; and 32&#x27; to perform a joint analysis of second- and third-order statistics. Compared to previous KiDS analyses, we implement several methodological advances: an intrinsic alignment model with redshift and mass dependence, a baryon correction model validated on multiple hydrodynamical simulations, and corrections for reduced shear and source clustering. Combining COSEBIs with third-order aperture mass statistics in KiDS-Legacy yields $Ω_m = 0.297^{+0.056}_{-0.040}$ and $S_8 = 0.806^{+0.025}_{-0.023}$, significantly tightening the $Ω_m$ constraints and more than doubling the figure of merit in the $Ω_m$--$S_8$ plane compared to the two-point analysis alone. The third-order measurements pass stringent internal consistency tests, are fully compatible with the KiDS-Legacy 2-point constraints, other 2+3-point lensing results and with Planck CMB measurements within $1σ$, providing no evidence for an $S_8$ tension and demonstrating the maturity of 3-point cosmic shear as a key probe for forthcoming surveys.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12389v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.11180v1" target="_blank" rel="noopener noreferrer">
-      Lip Forcing: Few-Step Autoregressive Diffusion for Real-time Lip Synchronization
+    <a href="https://arxiv.org/pdf/2606.12387v1" target="_blank" rel="noopener noreferrer">
+      TAHOE: Text-to-SQL with Automated Hint Optimization from Experience
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Paul Hyunbin Cho, Jinhyuk Jang, SeokYoung Lee, Joungbin Lee, Siyoon Jin, Heeseong Shin, Jung Yi, Yunjin Park, Chulmin Park, Seungryong Kim</span>
+    <span class="paper-authors">Zhiyi Chen, Jie Song, Peng Li</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">Diffusion-based lip synchronization models achieve strong visual quality and audio-visual alignment, but full-sequence bidirectional attention and many denoising steps make them impractical for real-time inference. We present Lip Forcing, to our knowledge the first autoregressive diffusion method for video-to-video (V2V) lip synchronization, which distills a 14B audio-conditioned bidirectional video diffusion teacher into causal students. At inference, the students generate each chunk in only two denoising steps without inference-time CFG, enabling real-time lip synchronization. A lip-sync-specific teacher-trajectory analysis reveals a CFG fidelity-sync tradeoff: no-CFG predictions favor reference fidelity, whereas CFG-guided predictions favor synchronization within a mid-trajectory band. Lip Forcing translates this finding into three analysis-derived components: Sync-Window DMD, a two-step inference schedule, and a SyncNet-based reward. We validate Lip Forcing at two student scales, both distilled from the 14B teacher. The 1.3B student crosses into real-time streaming at 31 FPS, $17.6\times$ faster than its same-scale bidirectional model. The 14B student, the largest diffusion model reported for V2V lip synchronization, runs $39.8\times$ faster than its teacher at comparable reference fidelity. Time-to-first-frame is sub-millisecond at both scales, far below every diffusion baseline.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.11180v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Large Language Models (LLMs) have democratized database access through Text-to-SQL, but moving from prototypes to production remains difficult. Real deployments must handle strict SQL dialects, massive schemas, and evolving user preferences, while supervised fine-tuning is costly and rigid and agentic test-time scaling is expensive. We present Tahoe, a system that treats prompt optimization as a dynamic data management problem. Tahoe uses an error-driven hint learning pipeline across Development and Deployment to consolidate debugging traces into a structured Hint Bank. Compiler feedback is distilled into reusable Syntax Hints for dialect-specific rules, while execution and user feedback are converted into Semantic Hints for schema- and user-specific logic. Tahoe further introduces a Strategy Layer that models conflicting user intents as competing strategies under shared natural-language triggers, with recency signals and post-learning attribution statistics that summarize empirical success, harm, inertness, and support. At inference time, Tahoe retrieves relevant hints and guides the LLM through Logic Planning followed by SQL Synthesis. We implement and evaluate the development-phase workflow, leaving deployment-time human-feedback updates for future work. On Spider 2.0-Snow, Tahoe substantially improves Text-to-SQL without updating model parameters. On 113 supervised Spider 2.0-Snow-0212 examples using GPT-5.5, Tahoe raises pass rate from 61.95 percent to 79.42 percent and pass-at-4 from 72.57 percent to 87.61 percent, achieves 100 percent Snowflake syntax pass rate, and reduces average compiler-feedback critic rounds from 2.79 to 0.12 per sampled candidate. The same Hint Bank also transfers to weaker backbones, including a 19.7 percentage-point pass-rate gain on Doubao-2.0-lite.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12387v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.11176v1" target="_blank" rel="noopener noreferrer">
-      Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories
+    <a href="https://arxiv.org/pdf/2606.12367v1" target="_blank" rel="noopener noreferrer">
+      Nonadditivity in Quantum Field Theory: Replica Energies, Scaling Filters, and the Renormalization Group
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Kevin Qinghong Lin, Batu EI, Yuhong Shi, Pan Lu, Philip Torr, James Zou</span>
+    <span class="paper-authors">Giacomo Santoni, Francesco Scardino</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">Data tells stories that shape society; the data journalist&#x27;s job is to turn raw information into stories non-experts can trust. A high-quality news feature takes a newsroom team weeks: hunting for context, running statistics, choosing an angle, and designing visuals. Recent agents handle individual steps well: data-science agents close the analysis loop, while design agents synthesize beautiful websites. But can an agent serve as a data journalist end to end? We introduce Data Journalist Agent (Data2Story), a multi-agent framework that orchestrates specialized roles into a single virtual newsroom. Data2Story contributes two innovations. (i) Claims are evidence-grounded: an Inspector links every number, angle, and asset back to data, code, or an external reference. (ii) Articles are multimodally generative: rather than defaulting to plain text and static charts, Data2Story reasons about what readers will want to see, then deploys multimodal tools, such as interactive maps for geography and audio for music. We evaluate Data2Story on 18 articles, each paired with the originally published expert piece, along four axes: (a) human-agent angle coverage; (b) rubric evaluation with 53 participants across five dimensions; (c) computer-use agents as judges, a cost-saving proxy for how readers navigate interactive articles; and (d) verifiability, where a coding verifier re-executes statements against the data and checks claims against references. Data2Story produces competitive, evidence-traceable multimedia stories, with particular strength in transparency and auditability. Human articles retain an edge in editorial angle, creative design, and presentation. We position Data2Story as a collaborator for journalists, enabling more evidence-based, transparent, and verifiable reporting. Code and demos are available at https://data2story.github.io.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.11176v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Extensive systems have a simple thermodynamic signature: the logarithm of the partition function scales homogeneously with the size of the system. We show that the failure of this scaling, measured by the replica energy ${\cal E}$, provides a useful bridge between statistical mechanics and quantum field theory. The associated differential operator $(1-\frac1d L\partial_L)$ removes the leading bulk contribution to $W=\log Z$ and isolates the part that is sensitive to boundaries, topology, defects, long-range forces, or other sources of nonadditivity. In quantum field theory this thermodynamic idea has two closely related uses. For ordinary finite-volume or spherical partition functions, suitable higher-order versions of the same filter remove local counterterms and extract universal fixed-point data such as the central charge, the sphere free energy $F$, and the Euler anomaly coefficient $a$. For replica geometries with entangling defects, the same filtering principle gives the renormalized defect free energy. In $2+1$ dimensions, its $n\to1$ limit is precisely the entropic $F$-function. We use this perspective to distinguish ordinary finite-size corrections, topology-dependent constants in gapped phases, subextensive fracton degeneracies, and genuinely nonextensive systems with long-range interactions such as self-gravitating thermal matter. Replica energy therefore offers a common thermodynamic language for additivity, defect free energies, and renormalization-group irreversibility.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12367v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.11158v1" target="_blank" rel="noopener noreferrer">
-      Defeat the Heap: Zero-Copy Data Movement in AXI4MLIR
+    <a href="https://arxiv.org/pdf/2606.12360v1" target="_blank" rel="noopener noreferrer">
+      Anatomy of Post-Training: Using Interpretability to Characterize Data and Shape the Learning Signal
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Elam Cohavi, Nicolas Bohm Agostini, Jude Haris, Antonino Tumeo, David Kaeli, José Cano</span>
+    <span class="paper-authors">Leon Bergen, Usha Bhalla, Sidharth Baskaran, Max Loeffler, Raphael Sarfati, Dhruvil Gala, Ryan Panwar, Santiago Aranguri, Thomas Fel, Atticus Geiger, Matthew Kowal, Siddharth Boppana, Daniel Balsam, Owen Lewis, Jack Merullo, Thomas McGrath, Ekdeep Singh Lubana</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">As custom hardware accelerators become increasingly central to machine learning workloads, efficient data transfer is critical for maximizing accelerator performance on linear algebra kernels. AXI4MLIR, an extension of the Multi-Level Intermediate Representation (MLIR) compiler framework for automated generation of host-accelerator driver code, incurs significant runtime overhead due to non-zero-copy CPU-accelerator data movement. During transfers from the host to the accelerator, data is copied from heap-allocated memory buffers into contiguous Direct Memory Access (DMA)-mapped buffers. This work identifies this copy as a redundant staging operation and eliminates it through zero-copy data movement. The optimization extends accel, an MLIR dialect introduced by AXI4MLIR, and implements lowering support that allocates buffers directly within DMA-mapped memory, thereby omitting the staging copy. We evaluate the proposed scheme using a configurable matrix-matrix multiplication accelerator and show that the zero-copy optimization reduces main memory data movement by up to 2x, increasing overall accelerator utilization.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.11158v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Language-model post-training is the main stage at which model behavior is shaped, yet it still largely involves optimization of scalar rewards that summarize diverse desiderata. This abstraction gives practitioners little visibility into what their data actually teaches models, allowing spurious correlations to be learned by a model and inducing undesirable behaviors such as over-stylization and sycophancy. To address this problem, we ask: can we inspect a preference dataset before optimization and decide, at the level of concepts, which behaviors a model should be allowed to learn? Motivated by this, we introduce a data-centric post-training pipeline that uses interpretability protocols to develop statistical hypotheses for the latent concepts separating preferred from dispreferred generations, making them explicit for fine-grained user feedback. Building on this view, we unify several interpretability-based training protocols as ways of shaping rewards via feature or data interventions. Empirically, we show that our pipeline diagnoses undesirable signals in existing preference data, mitigates off-target learning, and can also help amplify or shape desired properties such as safeguards and model personality. More broadly, our results suggest that interpretability can turn post-training from optimizing opaque proxy rewards into a process of auditing and sculpting the learning signal itself.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12360v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.11147v1" target="_blank" rel="noopener noreferrer">
-      Quantum statistics in an extended collider coupled to a qubit
+    <a href="https://arxiv.org/pdf/2606.12355v1" target="_blank" rel="noopener noreferrer">
+      Between Degeneracy and Evolution: UV-to-optical Insights into the BH$^*$ Model in Little Red Dots
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Rishav Chaudhuri, Sai Satyam Samal</span>
+    <span class="paper-authors">Rosa M. Mérida, Marcin Sawicki, Chris J. Willott, Gaia Gaspar, Kartheik G. Iyer</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">Mesoscopic colliders provide an effective platform for probing the mutual statistics of quantum particles. Recent experiments have successfully extracted the mutual statistics of fermions, and more exotic anyons using quantum point contacts (QPCs). Coupling a point-like collider, such as a quantum point contact, to a two-level impurity or qubit can induce statistical transmutation of fermions, causing them to display boson-like bunching tendencies. Here, we extend the analysis to an extended collider. We investigate the scattering of two incoming fermionic and bosonic wave packets in the presence of post-selection on the impurity state, and systematically analyze the possible benchmarks used to characterize bunching and infer the underlying mutual statistics. We show that only a specific benchmark faithfully captures the mutual statistics of the colliding particles, while alternative choices can produce spurious statistical signatures. Hence, the correct benchmark for probing the quantum statistics depends on the intricate details of the mesoscopic collider.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.11147v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Little Red Dots (LRDs) are a heterogeneous class of objects, with several proposed scenarios for their physical nature and evolution. While these theories have been tested on individual LRDs using limited spectral features, a systematic Bayesian analysis of the LRD population incorporating the different models across a broad wavelength range is still lacking. In this study, we conduct a consistent ultraviolet (UV)-to-optical continuum fitting analysis of 66 LRDs at 2&lt;z&lt;6 using JWST/NIRSpec PRISM spectroscopy. Employing a modified version of Bagpipes--including blackbody (BB) emission affected by Balmer absorption, stellar and nebular emission attenuated by dust, and an active galactic nucleus (AGN) component--we assess the performance of the black hole star (BH*) model in describing the LRD population. We adopt broad priors and therefore do not impose any specific physical scenario. Our results show that only ~6% of LRDs with statistically robust solutions (52 objects in total) are best-fit by a BH* in the optical and a host galaxy in the UV. ~8% of LRDs show BB-dominated optical continua but lack a stellar component or exhibit AGN UV leakage. Most LRDs are dominated by stellar and/or AGN emission in the optical, with minor BB contribution. When we adopt a prior that disfavors a strong AGN continuum to enforce BH*-like solutions, the percentage of BH$^*$ systems increases to ~40%, highlighting the strong degeneracy between a BH* solution and alternative scenarios. Even when BH*-like solutions are enforced, many LRDs still require a stellar-dominated optical continuum. This may reveal limitations of the BH* model or point to an evolutionary sequence in which the BB contribution decreases as the host grows, leading to lower BB temperatures and higher stellar masses at lower z. In this scenario, more pronounced &#x27;&#x27;V&#x27;&#x27; shapes would correspond to later stages in LRD evolution.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12355v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.11110v1" target="_blank" rel="noopener noreferrer">
-      Fixed-Threshold One-Bit Toeplitz Covariance Estimation under Sparse-Ruler Sampling
+    <a href="https://arxiv.org/pdf/2606.12326v1" target="_blank" rel="noopener noreferrer">
+      Transferable Machine Learning of Electronic Hamiltonians with Superposition-of-Atomic-Potentials Features
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Zhiyong Cheng, Shengyao Chen</span>
+    <span class="paper-authors">Chaoqun Zhang, Christian Venturella, Enzhi Chen, Tianyu Zhu</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">We study Toeplitz covariance estimation when fixed-threshold one-bit quantization is combined with deterministic sparse-ruler sampling. Each observed bit can enter many lag products. At a nonzero threshold the signs have nonzero mean, and this deterministic vertex reuse gives raw sign products a coherent one-vertex component. This component changes the variance geometry. Raw nonzero-threshold products are governed by weighted-degree row sums rather than by lag coverage or edge Frobenius geometry. Centering the signs removes the vertex component and leaves a degenerate sparse-pair statistic. We then prove a dimension-free Gaussian variance contraction theorem for hollow quadratic forms of bounded coordinate transforms. The theorem applies to hard threshold signs and controls arbitrary deterministic sparse supports by the Frobenius norm of the edge weights, with no dependence on dimension, support size or maximum degree. For operator-norm estimation, we construct centered sparse-ruler Toeplitz estimators with pooled marginal calibration. The leading oracle term is \[ γ_0 L_1κ_{\rm obs} \sqrt{\frac{\varphi(Ω)\log d}{n}}, \qquad \varphi(Ω)=\sum_{s=1}^{d-1}q_s^{-1}, \] while the plug-in term is governed by the marginal bit budget \(n|Ω|\). A real spectral-packing lower bound in a known-scale identity-neighborhood submodel shows that the \(\sqrt{\varphi(Ω)\log d/n}\) dependence is intrinsic under balanced coverage geometry. In the non-saturated regime where this coverage term dominates, the oracle estimator is therefore minimax rate optimal over the submodel; the optimal dependence on the conditioning, curvature and plug-in calibration constants is left open.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.11110v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Machine learning (ML) of electronic Hamiltonians offers a unified route to electronic wave functions and physical observables. We introduce a Hamiltonian learning framework built on electronic features derived from the superposition-of-atomic-potentials (SAP) approximation, an efficient self-consistent-field initial guess that captures essential electron-electron screening. SAP quantities define a symmetry-adapted intrinsic atomic orbital learning basis and provide physics-informed inputs to an orbital-based graph neural network that predicts converged Kohn-Sham Fock matrices. To extend the approach to larger basis sets, we further develop a downfolding scheme that predicts large-basis electronic structure from minimal-basis features. On the QM9 dataset, the model accurately reproduces frontier and core orbital energies, dipole moments, and the full density of states. For organic charge-transport materials, it yields accurate intermolecular transfer integrals for benzene, tetracyanoquinodimethane (TCNQ), and tetrathiafulvalene (TTF) dimers, and transfers to unseen substituted-benzene heterodimers with a mean absolute error of 4.8 meV. These results establish SAP-based ML of electronic Hamiltonians as a transferable and scalable tool for high-throughput electronic-structure prediction.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12326v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.11097v1" target="_blank" rel="noopener noreferrer">
-      A data-driven method for measuring corner-clipping probabilities in segmented particle detectors
+    <a href="https://arxiv.org/pdf/2606.12317v1" target="_blank" rel="noopener noreferrer">
+      ShrinkageTrees: An R Package for Bayesian Tree Ensembles for Survival Analysis and Causal Inference
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Joaquín de Jesús, Juan Manuel Figueira, Federico Sánchez, Darko Veberič</span>
+    <span class="paper-authors">Tijn Jacobs</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">The accuracy of particle counting in highly segmented detectors is limited by the corner-clipping effect, in which a single ionizing particle generates signals in adjacent detection elements. This phenomenon introduces a direction-dependent overcounting bias that distorts reconstructed observables and is commonly corrected using Monte-Carlo simulations, thereby inheriting modeling uncertainties. We present a fully data-driven method to directly measure the single-particle corner-clipping probability, exploiting the nanosecond timing resolution of modern detectors to statistically distinguish genuine corner-clipping events from random coincidences, with non-neighboring detection elements serving as an intrinsic control sample. The technique is validated using detailed simulations of the Underground Muon Detector of the Pierre Auger Observatory, reproducing the true angular dependence of the corner-clipping probability with absolute deviations below 0.01. To parameterize the results, we introduce a compact analytical model incorporating detector geometry, minimum detectable path length, and orientation-independent contributions. The proposed methodology and parameterization enable the direct incorporation of data-driven corner-clipping corrections into reconstruction algorithms, mitigating the overcounting bias and ultimately yielding a more accurate determination of the muonic component of extensive air showers. These developments are broadly applicable to any segmented detector with sufficient timing resolution, making them relevant to a wide range of experiments in high-energy and astroparticle physics.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.11097v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">ShrinkageTrees is an R package for Bayesian tree ensembles in survival analysis and causal inference. The package implements Bayesian additive regression tree models for right- and interval-censored survival outcomes within an accelerated failure time (AFT) framework, with optional decomposition into prognostic and treatment-effect components for causal inference. Two complementary forms of regularisation are available: regularisation of the tree structure, via depth-penalising priors and Dirichlet splitting priors, and regularisation of the step heights, via global-local shrinkage priors. ShrinkageTrees provides the first implementation of the Horseshoe Forest, which places a horseshoe prior on the step heights. These regularisation strategies extend Bayesian tree ensembles to high-dimensional settings. An efficient Rcpp backend, multi-chain MCMC, and S3 methods support the full workflow: fitting, prediction, causal effect estimation, and convergence diagnostics.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12317v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.11072v1" target="_blank" rel="noopener noreferrer">
-      Approaching the Limit of Intrinsic Crystalline Thermal Insulation
+    <a href="https://arxiv.org/pdf/2606.12301v1" target="_blank" rel="noopener noreferrer">
+      An iterative Ising decoder for quantum error correction codes
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ruihuan Cheng, Zhiqiang Cui, Mani Jayaraman, Lincong Ji, Chen Wang, Zesheng Zeng, Petr Levinsky, Jiri Hejtmanek, Christophe Candolfi, Emmanuel Guilmeau, Xingchen Shen, Yue Chen</span>
+    <span class="paper-authors">Yuanqi Liu, Weilei Zeng, Peixiang Li, Yantong Liu, Guangyao Huang, Yingwen Liu, Dongyang Wang, Junjie Wu, Lingling Lao</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">Crystalline materials with ultralow thermal conductivity ($κ$) are potential thermal barrier coatings or thermoelectrics, yet the discovery of ultralow-$κ$ materials remains inefficient due to the limitations of trial-and-error approaches. Herein, we propose a state-of-the-art high-throughput workflow that integrates universal machine learning interatomic potentials with high-fidelity phonon transport theories to accelerate the exploration of thermal insulators. Applying this approach, we identify dozens of crystalline materials with intrinsic room-temperature $κ$ values below 0.2 $\rm W m^{-1} K^{-1}$. Among them, we report and experimentally validate CsTlI$_4$, a record-breaking material with an ultralow $κ$ of 0.14 $\rm W m^{-1} K^{-1}$ at 300 K. Structural and bond analyses reveal that a hierarchical bonding framework, consisting of multi-coordinated Cs-I and antibonding Tl-I interactions, leads to weak chemical bonding and a soft lattice. These features reduce phonon group velocities, enhance phonon scattering, and induce strong vibrational mismatch between sublattices, collectively suppressing both particle-like phonon propagation and wave-like tunneling. Beyond this specific system, we establish physically interpretable descriptors based on interatomic force constants that correlate strongly with ultralow $κ$ and capture the role of bonding hierarchy and coordination environments in governing thermal transport. This work demonstrates a robust data-driven strategy for accelerating the discovery of thermal insulators and provides microscopic insight into how hierarchical bonding and strong anharmonicity cooperate to impede heat-carrying vibrations.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.11072v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The Ising framework maps the decoding problem in quantum error correction onto ground-state optimization of a classical Hamiltonian, in which $X$-$Z$ error correlations enter as cross terms. Under phenomenological depolarizing noise, the exact joint formulation contains up to 8-body interactions for the toric code and 10-body for the $6.6.6$ color code. These high-order terms degrade solver convergence, inflate runtime, and raise the auxiliary spin overhead when embedding into native 2-body Ising hardware. In this work, we propose the iterative low-order decoding (ILOD) algorithm, which alternates between $X$- and $Z$-type sub-Hamiltonians, approximating cross-type correlations through Bayesian priors that reweight each type&#x27;s couplings using the other type&#x27;s inferred error configuration. This halves the maximum body count of interaction terms in the Hamiltonian, accelerating the solver, restoring convergence at larger code distances, and reducing the total spin count for 2-body embedding by a factor of $2.5$. For the toric code, ILOD attains a threshold of $4.73%$ versus $4.83%$ for the joint formulation, with the empirical runtime ratio scaling as $(0.81)^d$. For the $6.6.6$ color code, their thresholds agree within statistical uncertainty for small code distances, and ILOD remains convergent for larger distances where the joint formulation fails to converge despite a larger annealing budget.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12301v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.11066v1" target="_blank" rel="noopener noreferrer">
-      GRAFT: Gain-Recalibrated Adapters for Transformer-Based Neural Population Activity Modeling
+    <a href="https://arxiv.org/pdf/2606.12297v1" target="_blank" rel="noopener noreferrer">
+      A post-selected quantum model of cosmic acceleration
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Xiangsheng Ge, Yang Xie</span>
+    <span class="paper-authors">Dimitris Lionas, Charis Anastopoulos, Konstantinos Gourgouliatos</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">Neural population activity models can recover rich temporal structure from binned spikes, but their read-in and readout layers often remain tied to a fixed set of recorded neurons. This coupling limits reuse in long-term brain-computer interfaces, where recorded neuron identities, counts, and response statistics can change across days. We introduce GRAFT, a Transformer-based neural population activity model that separates reusable temporal dynamics from a recalibratable neuron interface. The neuron interface controls how recorded neurons enter and leave the shared backbone, and auxiliary gain and positional mechanisms support neural activity modeling inside the Transformer. On MC Maze under the standard NLB&#x27;21 protocol, GRAFT reaches 0.3866 co-bps as an ensemble, setting a new state of the art on the primary co-bps metric among public and reported NLB&#x27;21 results. In a cross-day protocol constructed from the NLB&#x27;21 MC Maze dataset series, GRAFT recalibrates from MC Maze to the scaled MC Maze datasets (Large/Medium/Small) by updating only 9.21% of parameters, reaching 0.3749, 0.3112, and 0.3152 co-bps with restricted target-day support sets. These results show that the same interface-backbone separation supports both strong Transformer-based neural population activity modeling and data-efficient cross-day recalibration.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.11066v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The origin of cosmic acceleration remains a central problem in cosmology, commonly attributed to a cosmological constant within the $Λ$CDM model or to dynamical dark energy. Here, we develop an alternative approach in which acceleration emerges from quantum post-selection, a standard feature of quantum theory that is not usually incorporated into cosmological modelling. While quantum theory admits both pre-selected and post-selected ensembles, quantum cosmological models are almost exclusively formulated in terms of initial conditions. Building on previous work on post-selected quasiclassical dynamics, we construct a minimal predictive cosmological model in which post-selection and coarse-graining generate effective late-time acceleration without introducing a cosmological constant, dark energy, or modifications of general relativity. The resulting expansion history is highly constrained theoretically and depends on at most two parameters beyond standard Friedmann evolution. Confrontation with type Ia supernova and cosmic chronometer data yields statistically competitive fits while naturally avoiding the coincidence problem. The model also reproduces the standard radiation- and matter-dominated behaviour at early times and predicts a present-day jerk parameter significantly different from the $Λ$CDM value. These results suggest that cosmic acceleration may arise as a macroscopic quantum cosmological effect rather than from additional cosmological fluids or modified gravitational dynamics.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12297v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.11045v1" target="_blank" rel="noopener noreferrer">
-      What Fits (Into Few Tokens) Doesn&#x27;t Overfit: Compression and Generalization in ML Research Agents
+    <a href="https://arxiv.org/pdf/2606.12289v1" target="_blank" rel="noopener noreferrer">
+      The Standard Interpretable Model: A general theory of interpretable machine learning to deductively design interpretable methods using Lagrangian mechanics
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Martin Andres Bertran, Aaron Roth, Zhiwei Steven Wu</span>
+    <span class="paper-authors">Pietro Barbiero, Giovanni De Felice, Mateo Espinosa Zarlenga, Francesco Giannini, Filippo Bonchi, Mateja Jamnik, Giuseppe Marra, Ruggero Noris</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">Reusing a held-out benchmark adaptively should, in principle, invite overfitting. Yet benchmark-driven machine learning (ML) has produced surprisingly little overfitting in practice. An attractive hypothesis is that successful ML strategies are highly compressible. We study this in the setting of LLM-driven research agents, where the hypothesis becomes directly testable via two complementary information bottlenecks. In \emph{output compression}, an exploration agent adaptively searches for high-performance models using a validation set, and we test whether a fresh ``reproducer agent&#x27;&#x27; can reproduce its performance given only an extremely short prompt and the training data. In \emph{input compression}, the explorer receives only one-bit feedback indicating whether each submitted model improves on the running best. Across 8 datasets spanning tabular classification, vision, language modeling, diffusion modeling, and reward modeling, we find that these bottlenecks have little effect on performance: short prompts and compressible feedback are sufficient to reproduce and find high-performance models. The hypothesis is falsifiable: when we deliberately induce validation-set overfitting, the results fail to reproduce with short prompts. Taken together, our results support a description-length explanation for the lack of overfitting in benchmark-driven ML: successful strategies occupy a low-complexity region of strategy space.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.11045v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">As Artificial Intelligence models grow in complexity, interpretability has become an indispensable tool for understanding, debugging, and controlling their computations. However, interpretability lacks general theories to deductively design interpretable methods. This gap between theories and methods results in a fragmented literature and inconsistent evaluation protocols. To fill this gap, we introduce the Standard Interpretable Model (SIM), a general theory grounded in Lagrangian mechanics that enables the deductive design of interpretable methods. Specifically, the SIM summarises, in a set of premises, what interpretability is for a target user. From these premises, the SIM systematically derives interpretability symmetries and corresponding constraints, which shape the landscape of a Lagrangian whose minima correspond to optimal interpretable models. To reach the minima, one can either update the parameter values of an opaque model to make it more interpretable or compile constraints into an interpretable architecture. We empirically show that the SIM identifies and solves limitations of existing methods (including traditional, concept-based, and mechanistic interpretability), highlights underexplored research directions, and informs the design of core programming interfaces. Beyond being a research method, the deductive nature of the SIM offers pedagogical grounding for interpretability curricula and may shift the scientific community&#x27;s perspective of a discipline that has long been fragmented.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12289v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.11038v1" target="_blank" rel="noopener noreferrer">
-      Synthetic pre-training of graph-network models for predicting solid-state NMR parameters
+    <a href="https://arxiv.org/pdf/2606.12255v1" target="_blank" rel="noopener noreferrer">
+      Towards Practical Field-Level Inference for Weak Lensing
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Chiheb Ben Mahmoud, Carlos Bornes, Christopher J. Heard, Lukáš Grajciar, Jonathan R. Yates, Volker L. Deringer</span>
+    <span class="paper-authors">Yuuki Omori, Justine Zeghal, Chihway Chang, François Lanusse, Laurence Perreault-Levasseur</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">Nuclear magnetic resonance (NMR) is a powerful probe of atomic structure, but accurate quantum-mechanical predictions of tensorial NMR parameters are computationally demanding. This creates a bottleneck both for direct quantum-mechanical studies and for collecting high-quality training data for machine-learning (ML) models. Here, we introduce a synthetic pre-training and fine-tuning protocol for graph-based ML models of solid-state NMR parameters. We first pre-train models on synthetic tensorial data, as obtained using an existing ML model, and subsequently fine-tune those models on new ground-truth data. We observe a pronounced improvement in data efficiency when pre-training and fine-tuning span the same compositional and configurational space, and we carry out initial experiments regarding chemical transferability. Our work outlines a route toward future data-efficient training workflows for tensorial ML models for solid-state NMR, combining inexpensive synthetic supervision with targeted first-principles refinement.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.11038v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Nonlinear structure growth generates higher-order correlations and morphological features in the cosmic density field that cannot be fully characterized by two-point statistics. Upcoming surveys will measure these features with greater precision, making it essential to develop methods capable of extracting as much cosmological information as possible from them. Field-level inference (FLI) is one such approach, in which cosmological parameters are constrained by comparing observed maps to forward-modeled maps, either directly or through learned summaries that retain map-level information. In this work, we compare FLI with power-spectrum-based inference using the same forward-modeling pipeline for generating weak lensing maps, with the goal of quantifying the gain from map-level analysis relative to two-point statistics. We perform this comparison with both implicit and explicit inference methods, using 8-million-parameter forward models based on Lagrangian perturbation theory and particle-mesh (PM) N-body evolution. The two FLI approaches yield closely consistent posteriors; this agreement, together with coverage tests confirming the calibration of the implicit analyses, gives us confidence in the recovered field-level constraints. Relative to the power-spectrum-based analyses, these results show significant gains in cosmological information, especially when small scales are included in the PM-based forward model. We then discuss the remaining challenges that must be addressed before PM-based explicit FLI can be applied to observational datasets.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12255v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.11031v1" target="_blank" rel="noopener noreferrer">
-      Influence of CeO$_2$MnO$_x$ heterostructure on Hydrogen Peroxide Electrogeneration on Carbon-Based Catalysts
+    <a href="https://arxiv.org/pdf/2606.12249v1" target="_blank" rel="noopener noreferrer">
+      Spatially Resolved Nebular-Stellar Reddening with JWST/NIRISS
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Caroline de O. Carrilho, Juliana M. S. de Jesus, João Paulo C. Moura, Dara Silva Santos, Aline B. Trench, Caio Machado Fernandes, Aila O. Santos, Odivaldo C. Alves, Júlio C. M. Silva, Mauro C. dos Santos</span>
+    <span class="paper-authors">Peter J. Watson, Benedetta Vulcani, Tommaso Treu, Ayan Acharyya, Marc Rafelski, Anahita Alavi, Matthew Hayes, Keunho Kim, Faezeh Manesh, Claudia Scarlata</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">The sustainable electrogeneration of hydrogen peroxide (H2O2) via the two-electron oxygen reduction reaction (2e$^-$ ORR) represents a promising alternative to conventional production methods. In this study, CeO2 and CeO2MnOx nanoparticles were synthesized and supported on Vulcan XC-72 carbon at varying loadings (1, 3, and 5%), aiming to assess the lowest metal loading and high H2O2 electrosynthesis. Physicochemical characterizations confirmed the successful formation of CeO2 nanowires and the effectiveness of the MnOx surface modification. XRD, TEM, XPS, EPR, and contact angle analyses revealed that CeO2 loading increased surface hydrophilicity through the presence of oxygenated functional groups, thereby favoring electrochemical activity. On the other hand, all CeO2MnOx loadings were statistically equivalent to Vulcan XC-72 in terms of contact angle. Electrochemical evaluations using a rotating ring-disk electrode (RRDE) demonstrated enhanced ORR activity and high H2O2 selectivity for the 1% CeO2MnOx/C and 3% CeO2/C catalysts, achieving up to 90% selectivity and elevated ring currents. The results suggest that low metal loading and surface modification via MnOx improve the balance between active site exposure, oxygen adsorption, and intermediate stabilization, thus favoring the selective 2e$^-$ pathway. These findings support the development of cost-effective, non-noble-metal catalysts for green H2O2 production via electrosynthesis.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.11031v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">An accurate determination of the dust attenuation within galaxies is essential to derive key physical properties such as the star formation rate (SFR). We present an analysis using the JWST/NIRISS data from the GLASS-JWST ERS programme to investigate and characterise the stellar and nebular reddening of galaxies at $1.0&lt;z&lt;2.4$, down to the sub-kpc scale. We use a multiregion fitting method to extract high-quality H$α$ and H$β$ emission line maps for 99 individual galaxies across a stellar mass range $7.0&lt;\log_{10}(M_*/\mathrm{M}_{\odot})&lt;10.5$. We find no evidence for ratios of the Balmer decrement (H$α$/H$β$) below the intrinsic limit for Case B recombination, beyond the expected variation from observational uncertainties. We reproduce the local correlation between the Balmer decrement and total stellar mass, and find no measurable difference when splitting the sample by redshift, with negligible attenuation below $\log_{10}(M_*/\mathrm{M}_{\odot})\lesssim8.5$. Similarly, the best-fit relation between the nebular and continuum reddening follows the same relation as in local starburst galaxies, $E(B-V)_{\mathrm{SED}} = (0.46\pm0.02)E(B-V)_{\mathrm{neb}}$, together indicating no significant evolution in the dust geometry within galaxies out to $z\lesssim2.4$. We derive best-fit linear relations between the differential nebular-stellar reddening and the SED-derived star formation rate (SFR) and stellar mass, finding statistically significant relations for both quantities. We use our spatially-resolved measurements to derive an empirical calibration between the resolved differential reddening, and the SFR surface density. These will enable crucial dust attenuation corrections for spatially-resolved science at higher redshifts where the Balmer lines are inaccessible, such as with future Roman grism observations.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12249v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.11013v1" target="_blank" rel="noopener noreferrer">
-      Empirical stratification for treatment effect heterogeneity with post-treatment variables
+    <a href="https://arxiv.org/pdf/2606.12226v1" target="_blank" rel="noopener noreferrer">
+      An Electric Potential-Augmented Benchmark Dataset for Physics-Guided Image Reconstruction of Electrical Capacitance Tomography
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Chao Cheng, Rui Wang, Yichi Zhang</span>
+    <span class="paper-authors">Xinqi Zhang, Qiming Ma, Lihui Peng</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">Post-treatment variables (PVs), such as treatment noncompliance, behavioral responses, intercurrent events, often modify the ultimate treatment effect on the primary outcome. However, existing methods provide limited tools for studying treatment effect heterogeneity with respect to PVs. Conventional heterogeneous treatment effect estimands condition on baseline covariates. However, similarly conditioning on the observed PV can induce endogenous selection bias for the treatment effect estimation. Principal stratification offers a rigorous framework for studying principal causal effects across principal strata, but principal strata are latent and their identification often requires stringent assumptions. This paper develops an assumption-lean empirical stratification framework for characterizing treatment effect heterogeneity with respect to PVs. We define empirical scores using the predicted potential PV responses based on baseline covariates, and use the empirical scores to construct empirically accessible subgroups. The resulting empirical-stratum treatment effects (ETEs) are identifiable under standard causal assumptions. We connect the proposed framework to principal stratification by showing that the average ETE recovers principal causal effects under the principal ignorability assumption, but remains informative under violations of this assumption. We further introduce projected ETE curves and develop efficient influence function-based estimators for the semiparametric inference. We illustrate the proposed framework with two real-world applications.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.11013v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">While deep learning has significantly advanced image reconstruction of Electrical Capacitance Tomography (ECT), most data-driven methods map directly between capacitance and permittivity distribution, treating the sensor as a black box. This overlooks the electric potential field -- the fundamental physical link governing the nonlinear and ill-posed ``soft-field&#x27;&#x27; effect. To address this, we propose an electric potential-augmented ECT benchmark dataset designed to explicitly integrate latent physics behind ECT into the learning process. Generated via a COMSOL-MATLAB pipeline for an eight-electrode sensor as an example, the dataset comprises 20,000 randomized samples across four typical flow patterns. Crucially, alongside the conventional capacitance vectors and permittivity distributions depicted as images, each sample preserves eight excitation-wise full-field potential maps. Beyond data release, we provide illustrative evaluation protocols for both forward and inverse problems of ECT. Through comprehensive testing on both in-distribution (IID) and out-of-distribution (OOD) scenarios, we systematically demonstrate how the inclusion of electric potential maps enhances modeling accuracy and robustness. Fundamentally, the explicit inclusion of latent field information significantly lowers the barrier to integrating physical laws into ECT modeling, thereby establishing a standardized foundation for future physics-guided machine learning of ECT image reconstruction.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12226v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.10983v1" target="_blank" rel="noopener noreferrer">
-      Robust self-testing based on Gisin&#x27;s arbitrary-input Bell inequality
+    <a href="https://arxiv.org/pdf/2606.12225v1" target="_blank" rel="noopener noreferrer">
+      Bridging the Smart City Cybersecurity Data Gap Through AI-Driven Synthetic Dataset Generation
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Rajdeep Paul, Alok Kumar Pan</span>
+    <span class="paper-authors">Stephanie Polczynski, John D. Hastings, Varghese Vaidyan, Kyle Korman</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">Self-testing refers to the strongest device-independent (DI) certification method that validates the nature of a quantum system and devices solely based on the observed statistics. We demonstrate the self-testing of state and measurements based on the Gisin Bell inequality (GBI) featuring arbitrary inputs for both parties. We introduce a systematic and elegant sum-of-squares (SOS) approach that enables the dimension-independent derivation of the optimal quantum violation of GBI. We derive the state and the interrelation between the local observables directly from the optimization condition. Since the practical experimental scenario involves inevitable noise and imperfection, we present a comprehensive strategy for robust self-testing.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.10983v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Smart cities rely on interconnected cyber-physical systems that integrate sensors, IoT devices, cloud platforms, and AI-driven services and decision-making. While these systems enhance city services, they also introduce complex cybersecurity challenges due to their large attack surfaces, heterogeneous data flows, and evolving threat vectors. Developing and validating cybersecurity tools for smart cities requires high-quality datasets that accurately represent real operational conditions. However, real-world datasets are often incomplete, contain privacy-sensitive data, are difficult to access, or lack sufficient malicious activity to support tool development. This research addresses this critical gap by proposing an AI-based synthetic data generation (SDG) framework designed specifically for smart city cybersecurity research. The proposed framework leverages generative artificial intelligence models to produce high-fidelity synthetic cybersecurity datasets that replicate realistic device behaviors, network interactions, and cyber-attack scenarios. The synthetic datasets are evaluated for conformity to protocol standards, statistical similarity to original datasets, and utility in common security tools. The resulting synthetic data generation framework and evaluation metrics are expected to advance smart city cybersecurity by enabling researchers to model threats more effectively and evaluate defensive techniques more comprehensively to better protect critical smart city infrastructures.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12225v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.10969v1" target="_blank" rel="noopener noreferrer">
-      A Functional Data Framework For Analyzing Shapes and Textures in Images
+    <a href="https://arxiv.org/pdf/2606.12214v1" target="_blank" rel="noopener noreferrer">
+      Identifying cybersickness causes in virtual reality games using symbolic machine learning algorithms
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Issam-Ali Moindjié</span>
+    <span class="paper-authors">Thiago Porcino, Erick Oliveira Rodrigues, Flavia Bernardini, Daniela Trevisan, Esteban Clua</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">Images represent objects characterized by contours and textures. From a statistical perspective these features can be defined as observations of continuous random functions. However, most existing approaches rely on pixel-based discretizations which lead to high-dimensional representations and heavy computational costs. In this note, we introduce an alternative more frugal representation. This representation assumes that the object has a star-shaped domain interior. Under this condition, we explore the analysis of images from a functional data analysis perspective. The proposed framework is illustrated on a real data supervised image classification problem.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.10969v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Virtual reality (VR) and head-mounted displays are constantly gaining popularity in various fields such as education, military, entertainment, and health. Although such technologies provide a high sense of immersion, they can also trigger symptoms of discomfort. This condition is called cybersickness (CS) and is quite popular in recent virtual reality publications. This work proposes a novel experimental analysis using symbolic machine learning to rank potential causes of CS in VR games. We estimate CS causes and rank them according to their impact using classical machine learning. Experiments are performed using two virtual reality games and 6 experimental protocols along with 37 valid samples from a total of 88 volunteers. Our results show that rotation and acceleration triggered cybersickness more frequently in a flight game in contrast to a race game. We could also observe that subjects that are less experienced with VR are more prone to feel discomfort. Former experience plays a more important role on the race game, as this game provides more liberty to the user in terms of controllers, more displacement alternatives and a more user-controlled acceleration. Furthermore, different causes that trigger discomfort arise based on short or long term VR exposures. We suggest strategies for mitigating CS for these two scenarios: short and long term exposure experiences and compare the two highlighted scenarios (race and flight).</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12214v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.10960v1" target="_blank" rel="noopener noreferrer">
-      Understanding Energy Dependent Hadronic Calorimeter Response from a Machine Learning Perspective
+    <a href="https://arxiv.org/pdf/2606.12211v1" target="_blank" rel="noopener noreferrer">
+      Quantum Occam Learning: Sample-Supported Expressibility for Circuit-Based Quantum Learning
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Shuai-Chun Wang, Huang-Ran Shen, Wan-Bing He, Wei-Hu Ma, Peng-Jie Li, De-Qing Fang, Yu-Gang Ma</span>
+    <span class="paper-authors">Jeongho Bang, Kyoungho Cho, Jeongwoo Jae</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">To meet the precision requirements of future high-energy physics experiments, improving the energy resolution of hadronic calorimeters remains a critical challenge. This work presents a systematic investigation of hadronic energy reconstruction using machine learning, highlighting the roles of various signal channels, including scintillation light, Cherenkov light, charged particles, and the full three-dimensional topology of hadronic showers in the energy range up to 10 GeV. Throughout this study, detector effects are not taken into account. Under these conditions, the intrinsic resolution of hadronic showers reaches approximately $(10.8\pm0.3)\% / \sqrt{E/GeV}$ when all signal channels and the full 3D shower information are fully utilized. Compared with the traditional signal-summing approach, machine-learning-based reconstruction can significantly improve energy resolution, even under a limited sampling fraction of 10\%, enhancing it from $(57.6\pm3.7)\%/\sqrt{E/GeV}$ to $(34.1\pm2.8)\%/\sqrt{E/GeV}$. These results highlight the critical importance of both multi-channel information and detailed spatial shower features in hadronic energy reconstruction, and demonstrate the substantial potential of combining high-granularity and dual-readout calorimeter designs with machine-learning-based reconstruction techniques for future experiments.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.10960v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">A central principle in quantum machine learning is that an ansatz should be expressive enough to represent the quantum data of interest. Yet, the expressibility is statistically meaningful only insofar as it can be learned from finitely many copies of an unknown quantum state. In this work, we develop an information-theoretic Occam theory for quantum data generated by finite-size quantum circuits. For the class $S_{n,G}$ of $n$-qubit pure states preparable with at most $G$ two-qubit gates, a metric-entropy argument gives the realizable sample law $\widetildeΘ(G/ε^2)$ in the circuit-limited regime. For an arbitrary source $\hatρ$, we introduce the best $G$-gate approximation error $d_G(\hatρ)$ and the approximate circuit complexity $C_η(\hatρ)$. We prove an agnostic quantum Occam theorem: with $M$ copies, one can learn up to the best $G$-gate approximation error plus a statistical penalty $\widetilde{O}(\sqrt{G/M})$. We then remove the need to know $G$ in advance through an adaptive model-selection theorem whose oracle inequality selects the circuit complexity justified by the data. Matching lower bounds yield a sample-supported expressibility law: at trace-distance accuracy $ε$, $M$ samples can support only $G_{\rm supported} \simeq Mε^2$ gates, up to logarithmic factors and tomography saturation at $2^n$. Thus, the circuit complexity becomes an adaptive statistical resource rather than a static promise. Our framework turns bounded circuit complexity into a model-selection principle for quantum machine learning.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12211v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.10957v1" target="_blank" rel="noopener noreferrer">
-      Random Matrix Theory for Chaotic Wave Scattering and Transport
+    <a href="https://arxiv.org/pdf/2606.12208v1" target="_blank" rel="noopener noreferrer">
+      Weakly interacting Bose gases in the canonical ensemble
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yan V. Fyodorov, Dmitry V. Savin</span>
+    <span class="paper-authors">Jonata S. Soares, Axel Pelster, Arnaldo Gammal</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">We review random matrix approaches to chaotic wave scattering and transport in open systems. Starting from the effective non-Hermitian Hamiltonian formulation, we discuss the scattering matrix, reaction matrix, time delays, and complex resonances as complementary probes of open chaotic dynamics. We emphasize universal statistics governed by symmetry, openness, and channel coupling. Topics include the maximum-entropy description of fixed-energy scattering and its applications to quantum transport, energy correlations, resonance and eigenfunction statistics, and selected wave-chaotic phenomena induced by finite absorption. The focus throughout is on non-perturbative methods and universal structures underlying open quantum and wave chaotic systems.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.10957v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Based on the canonical description of a non-interacting Bose gas, we work out how both thermodynamic and statistical properties change perturbatively with respect to weak two-particle interactions. Up to first order, we obtain a recursion formula for the canonical partition function, which consists of the same Feynman diagrams as the grand-canonical description but with different Feynman rules. Resumming this recursion formula for the canonical partition function allows one to characterize the statistics of the ground-state occupancy by its respective cumulants. We demonstrate the applicability of this approach by analyzing a dilute Bose gas with contact interaction in a box trap. To this end, we used Dirichlet boundary conditions in view of their relevance for current experiments with atomic gases, where the box trap is implemented, for instance, with digital mirror devices.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12208v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.10942v1" target="_blank" rel="noopener noreferrer">
-      Generative Explainability for Next-Generation Networks: LLM-Augmented XAI with Mutual Feature Interactions
+    <a href="https://arxiv.org/pdf/2606.12200v1" target="_blank" rel="noopener noreferrer">
+      Implicit Neural Representations of Individual Behavior
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Kiarash Rezaei, Omran Ayoub, Sebastian Troia, Francesco Lelli, Paolo Monti, Carlos Natalino</span>
+    <span class="paper-authors">Andrew Kang, Priya Narasimhan</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">As artificial intelligence and machine learning (AI/ML) models become integral to network operations, their lack of transparency poses a significant barrier to operator trust. Existing explainable artificial intelligence (XAI) techniques often fail to bridge this gap for non-specialists, producing technical outputs that are difficult to translate into actionable insights. This paper presents a framework specifically designed to address this shortcoming. It leverages a moderately sized large language model (LLM) and extends beyond the standard use of SHapley Additive exPlanations (SHAP) feature influence values. The framework employs a structured prompt enriched with mutual feature interaction data to generate human-understandable natural language explanations. To validate our framework, we performed an empirical evaluation on an optical quality of transmission (QoT) estimation use case with human evaluators. We collected independent performance evaluations from specialists, which showed a high inter-evaluator agreement. Compared to a state-of-the-art baseline that uses only SHAP feature influence values in a straightforward prompt, our approach improves the explanation usefulness and scope by 12.2% and 6.2%, while achieving 97.5% correctness.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.10942v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We study policy representation learning from unlabeled multi-policy behavioral data. Each episode is generated by a fixed policy, but policy labels are unavailable. This setting appears in robotics play, demonstrations, games, racing, and other datasets where heterogeneous behaviors are mixed without annotations. We introduce \emph{Behavioral INR}, a self-supervised generative model that adapts implicit neural representations (INRs) from vision to behavior. Instead of mapping coordinates to RGB values, Behavioral INR represents a policy as a state-action function mapping states to subsequent actions. An episode-level latent modulates this function through FiLM layers, yielding a generative prior over policies and allowing policy identity to be inferred without supervision. Because INRs treat each datapoint as samples from an underlying function, the same model naturally accommodates variable episode lengths and different sampling granularities, as in vision INRs with different image resolutions. We also define policy-level out-of-distribution (OOD) shifts along state-distribution and action-distribution axes, which arise when policies overlap in states or actions but are not captured by standard behavioral OOD settings based only on new agents or environments. We evaluate on synthetic Gaussian random field data, MuJoCo demonstrations with controlled OOD splits, and real-world chess, Formula 1 racing, robotics, and Seek-Avoid datasets. Behavioral INR most consistently improves policy identifiability in the hardest continuous state-action settings, especially when longer episodes, more policies, and OOD splits reduce the usefulness of marginal shortcuts; amortized history encoders remain competitive when policy identity can be recovered from symbolic repetition or low-dimensional action statistics. We release code and checkpoints.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12200v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2606.10940v1" target="_blank" rel="noopener noreferrer">
-      Democratising Camera Trap AI: An Open-Source Model for Detecting UK Mammals
+    <a href="https://arxiv.org/pdf/2606.12190v1" target="_blank" rel="noopener noreferrer">
+      Roughening of active nonlinear interfaces with broken tilt symmetry
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Paul Fergus, Philip Stephens, Russell A. Hill, Lee Oliver, Katie Appleby, Sarah Beatham, Naomi Davies Walsh, Stuart Nixon, Naomi Matthews, Chris Sutherland, Kelly Hitchcock</span>
+    <span class="paper-authors">Ailén M. Cámara, Alejandro B. Kolton, José Luis Iguaín</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-06-09</span>
+    <span class="paper-date">2026-06-10</span>
   </p>
-  <p class="paper-abstract">Camera traps have become a cornerstone of biodiversity monitoring, but the artificial intelligence that turns vast quantities of images into usable ecological data is often locked behind commercial platforms or trained on fauna that does not match that of the British Isles. In an attempt to remove barriers and increase uptake, we release an open-source object detection model for 31 classes, 28 common UK mammal and bird species, plus utility classes for humans, calibration poles, and vehicles, drawn from a curated dataset of 48,165 labelled instances assembled from multiple sites over a decade of operational deployment through Conservation AI and its successor, Trap Tracker. The model, a YOLO26x detector trained and tested on an 80/10/10 class-stratified split, achieves a mean Average Precision of 0.984 at Intersection over Union (IoU) of 0.5 (0.956 at IoU 0.5-0.95) on the held-out validation set, with precision 0.988 and recall 0.965. On an unseen held-out test split, mean per-species confidence ranged from 0.96 to 0.99 across the 31 classes, with a 0.17% false-negative rate concentrated in difficult night-time, distant, or occluded images. These metrics are from data from the same pool of sites and cameras as training, so performance at entirely new sites is left to future work. We release the trained weights in ONNX format under a non-commercial licence, with local desktop and real-time camera support, aimed explicitly at ecologists with no machine-learning experience. This release is a deliberate counterweight to the multiple paid for models that have developed over the last decade.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2606.10940v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We study the roughening of an interface with nonlinear elasticity driven by temporally correlated noise, which breaks statistical tilt symmetry. Using scaling arguments and a self-consistent Hartree approximation, we derive the crossover diagram and the steady-state structure factor. We identify three scaling regimes associated with the Larkin, anharmonic Larkin, and Edwards--Wilkinson universality classes, and obtain the crossover lengths separating them. Numerical simulations of large systems confirm the analytical predictions over the full parameter range. Our results provide a unified description of finite-size and crossover effects in a minimal nonlinear-elastic Ornstein--Uhlenbeck active interface.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2606.12190v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
