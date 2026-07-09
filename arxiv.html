@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-07-07 03:20 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-07-09 02:56 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05375v1" target="_blank" rel="noopener noreferrer">
-      Fitted Occupancy-Ratio Evaluation without Bellman Completeness
+    <a href="https://arxiv.org/pdf/2607.07706v1" target="_blank" rel="noopener noreferrer">
+      The Key to Going Linear: Analysis-Driven Transformer Linearization
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Lars van der Laan, Nathan Kallus</span>
+    <span class="paper-authors">Anna Kuzina, Paul N. Whatmough, Babak Ehteshami Bejnordi</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">Occupancy ratios correct distribution shift in offline reinforcement learning and are central to off-policy evaluation. Existing primal-dual and minimax methods typically estimate these ratios by enforcing occupancy-balance moments over a critic class. We propose fitted occupancy-ratio evaluation (FORE), a fitted fixed-point method that characterizes the discounted occupancy ratio through an adjoint Bellman recursion. At each iteration, FORE solves a single-level density-ratio objective on one-step-transition data, thereby projecting the adjoint Bellman image onto a log-ratio class in Kullback--Leibler (KL) divergence. Unlike analyses of fitted Q-evaluation, which typically require value-function realizability together with Bellman completeness or projected-operator stability, our central approximation condition is just realizability of the discounted occupancy ratio itself. Under this condition, the population KL-projected recursion contracts in relative entropy toward the true ratio by virtue of the adjoint Bellman operator being a KL-contraction. For the empirical recursion, we establish finite-sample regret bounds that yield convergence in KL up to log-ratio approximation error and a statistical error governed by the complexity of the ratio hypothesis class. The fitted ratio supports direct value estimation by reward reweighting, occupancy-weighted fitted Q-evaluation, and doubly robust estimation that combines the fitted ratio with a fitted Q-function. Together, these results identify discounted occupancy-ratio realizability as a sufficient condition for offline policy evaluation without any completeness assumptions.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05375v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The quadratic cost of causal self-attention severely bottlenecks long-context transformer inference. While numerous post hoc linearization pipelines exist, it is difficult to identify which components preserve model quality. This work isolates the effect of state update design in a strict frozen-backbone regime. We show that softmax relies on key-dependent, rank-1 orthogonal projections, elucidating why delta-style networks outperform purely gated accumulation. We identify a potential source of approximation errors and introduce structural interventions, specifically sink tokens, short convolutions, and fixed-budget cache routing, which reduces the remaining gap. We scale this linearization approach across LLaMA and Qwen models up to 32B parameters, outperforming prior post hoc baselines on MMLU and matching the long-context retrieval of complex adaptive-caching frameworks.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07706v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05370v1" target="_blank" rel="noopener noreferrer">
-      Calibration of systematic distortions in quantum emitter localization microscopy for deterministic nanophotonic fabrication
+    <a href="https://arxiv.org/pdf/2607.07695v1" target="_blank" rel="noopener noreferrer">
+      Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Chenxi Ma, Maximilian Heller, Timon Handrup, Yiteng Zhang, Tobias M. Krieger, Thomas Oberleitner, Zenghui Jiang, Xian Zheng, Eddy P. Rugeramigabo, Folke Dencker, Armando Rastelli, Fei Ding, Michael Zopf</span>
+    <span class="paper-authors">Yujiao Chen</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">Quantum photonic technologies greatly benefit from quantum light emitters with high brightness, indistinguishability, and reliable polarization characteristics. Achieving optimal performance relies on the accurate localization of emitters and their deterministic integration into tailored photonic structures with nanometer-scale accuracy. Although marker-based photoluminescence imaging techniques can achieve statistical fitting uncertainties below 10 nm, the ultimate integration yield is often limited by uncorrected systematic distortions in custom cryo-optical setups that compromise metrological accuracy. Here, we present an in situ calibration protocol that uses lithographically defined gold nanodisk arrays as references to calibrate optical distortions with a Zernike vector-field model. On held-out validation patterns beyond the calibration dataset, this correction reduces the residual systematic bias to 5.3 nm with a 2D scatter of 24.6 nm across the analyzed field of view. Furthermore, we demonstrate that applying this correction to the deterministic fabrication of circular mesa structures around semiconductor quantum dots reduces the variance in emission polarization by 49%, indicating improved registration accuracy. This calibration strategy offers a practical route to high-yield deterministic integration of quantum emitters into scalable quantum photonic circuits.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05370v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We introduce institutional red-teaming, an evaluation methodology for testing deployment rules in multi-agent AI: hold the agents, objectives, and task state fixed, vary only one rule, and attribute the resulting change in collective behavior to that rule. We instantiate the methodology in IABench-CA, a consequence-allocation benchmark spanning 228 contexts, five canonical rules, and seven model populations (33,924 games), with a normative cooperative reference and auto-labelled reasoning traces. Three findings emerge. (1) Deployment rules causally alter collective safety: changing only the consequence rule moves mean fatality by 22 to 58 percentage points within every population. (2) There is no safe default, but the targeting hazard is universal: the safest rule, the least-safe rule, and even the direction of the incidence effect vary across populations, yet regressive identity-targeting is never decisively safest in any context for any population, eliminates the least-resourced agent in 30-87% of games everywhere, and is selection-unsafe relative to the cooperative reference for all seven populations. (3) Identity salience is the mechanism: a one-shot anonymization ablation on the most exploitation-prone population (gpt-5.1) shows that merely naming the loss bearer in the rule text drives targeted elimination from 22% to 81% at identical payoffs; under repeated play, anonymization only delays the targeting, as agents re-infer the hidden rule from observed eliminations. We package the methodology as a safety-case workflow that certifies a provisional rule region $Φ(c,P)$ per deployment context and population, with explicit residual risks and monitoring obligations.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07695v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05321v1" target="_blank" rel="noopener noreferrer">
-      Data-driven atomistic modelling of hybrid halide perovskite passivation
+    <a href="https://arxiv.org/pdf/2607.07680v1" target="_blank" rel="noopener noreferrer">
+      Any-Dimensional Learning by Sampling
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Laura-Bianca Paşca, Henry J. Snaith, Volker L. Deringer</span>
+    <span class="paper-authors">Eitan Levin, Venkat Chandrasekaran</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">Molecular passivation of surface defects is key to improving the optoelectronic performance of hybrid halide perovskite materials, but the underlying atomistic mechanisms are incompletely understood. While machine-learned interatomic potentials are now widely used to simulate complex molecular and crystalline systems, their application to experimentally-realistic scenarios - such as molecules coordinating to perovskite surfaces - is still far from trivial. Here, we describe a multistep training pipeline, resembling continuous fine-tuning used for large language models, to underpin atomistic modelling and computational experiments in this domain. Our protocol involves two components: (i) a large, curated, and open dataset of diverse metal and hybrid halide perovskite structures (&#x27;hyP-26&#x27;); and (ii) a small, specialised dataset for an amino-silane molecule passivating the surface, providing highly specific information for fine-tuning. We apply this approach to explore collective behaviour at a mixed-composition halide perovskite surface passivated with a varying coverage of amino-silane molecules, revealing an evolution of interactions with increasing molecular surface coverage.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05321v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Many machine learning models are defined for inputs of different sizes, such as point clouds containing different numbers of points, sequences of tokens of different lengths, and graphs on different numbers of nodes. Such models are trained on finitely-many examples of necessarily limited sizes. How well do these models generalize from inputs of small size to larger inputs of size not seen during training? Furthermore, evaluating such models on large inputs is often expensive. How can we sketch large inputs to obtain smaller ones on which the model takes similar values? At the heart of both questions is the need to compare inputs of different sizes and to approximate large inputs by small ones. We present a unified approach to address these questions by using random sampling maps to compare inputs of different sizes. The sampling maps we consider are generalizations of sampling with replacement, random binning, and species sampling. We characterize the application domains in which each type of sampling is appropriate in terms of the symmetries and relations between problem instances of different sizes in the domain. Our framework yields explicit generalization and sketching rates for function classes continuous with respect to a chosen notion of sampling, encompassing large families of functions defined on sequences, graphs, and tensors of different sizes. Specific examples include moment polynomials on measures, homomorphism densities and numbers of graphs, permutation-invariant transformers, and graph neural networks.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07680v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05316v1" target="_blank" rel="noopener noreferrer">
-      How Much is Left? LLMs Linearly Encode Their Remaining Output Length
+    <a href="https://arxiv.org/pdf/2607.07660v1" target="_blank" rel="noopener noreferrer">
+      Wavelength-resolved small-angle neutron spectroscopy of spin waves in MnSi under pressure
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Mohamed Amine Merzouk, Dmitri Carpov, Mirko Bronzi, Damiano Fornasiere, Adam Oberman</span>
+    <span class="paper-authors">E. V. Altynbaev, D. O. Skanchenko, Z. Xie, Y. Ke, Y. Bao, A. V. Tsvyashchenko</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">Large language models generate one token at a time, yet their responses show remarkably consistent length structure: step-by-step solutions converge in predictable token counts, retrievals stop after a few sentences, retractions extend responses by measurable amounts. We ask whether the model carries an internal estimate of how much response remains. Training minimal-capacity linear probes on frozen hidden states of three open-weight 7-8B models across seven completion-style datasets, we find three converging pieces of evidence. First, total response length is linearly decodable from the prompt&#x27;s last hidden state alone, before any output is emitted. Second, probe directions trained on natural-language datasets transfer broadly, including to controlled synthetic completions never seen in training, outperforming a statistical baseline; the converse direction generally fails, and this asymmetry is itself informative. Third, on curated high-loss completions, the probe&#x27;s per-position estimate shifts upward at the moment the model retracts and restarts a partial solution, a directional behavior no position-only predictor can reproduce (qualitative, not aggregate). We frame this as approximate estimation of remaining generation length, distinct from exact-counting impossibility results for transformers, and interpret it as evidence that LLMs maintain a plan-like internal representation of output length (decodable, not necessarily used causally).</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05316v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We report wavelength-resolved spin-wave small-angle neutron scattering (SWSANS) on the time-of-flight SANS instrument BL01 at the China Spallation Neutron Source and extend the method to pressure-cell measurements of MnSi. MnSi is used as a benchmark B20 helimagnet because its helimagnetic order and spin-wave stiffness are well characterized at ambient pressure. In a fixed magnetic field, the time-of-flight measurement provides a spectrum of neutron wavelengths. For each detector branch $s=\pm1$, the intensity profile is recentered relative to the wavelength-dependent Bragg angle $θ_B (λ) = k_s λ/ 2π$, and the cutoff angle $θ_C (λ)$ is extracted in the local branch coordinate. The cutoff-derived spin-wave stiffness $A$ is obtained from a linear fit of $θ_C^2$ as a function of $λ^2$. Ambient-pressure measurements reproduce the known stiffness scale of MnSi. Structural SANS at ambient pressure and at nominal 5 and 11 kbar verifies the magnetic state and provides an internal pressure-state check for the pressure-cell measurements. At nominal 11 kbar, within the present cutoff model, the cutoff-derived stiffness is substantially reduced, whereas the structural field scale $H_{C2}$ remains high. This contrast shows that $A$ cannot be inferred from static structural parameters alone under pressure. To our knowledge, these measurements constitute the first SWSANS implementation on a pulsed neutron source and the first SWSANS determination of spin-wave stiffness under pressure. The experiment also shows that reliable high-pressure SWSANS on a pulsed source requires high source brilliance, stable wavelength-dependent normalization, and sufficient statistics in each wavelength window.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07660v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05284v1" target="_blank" rel="noopener noreferrer">
-      Edgeworth Expansions for Linear Rank Statistics -- Consolidated Version
+    <a href="https://arxiv.org/pdf/2607.07647v1" target="_blank" rel="noopener noreferrer">
+      Are Machine Learning Interatomic Potentials Truly Practical? A Benchmark of 23 Mainstream Models
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Walter Schneller</span>
+    <span class="paper-authors">Hanwen Kang, Tenglong Lu, Sheng Meng, Miao Liu</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">An Edgeworth expansion of first order is established for general linear rank statistics under the null hypothesis with a remainder term that is usually of order $n^{-1}$. Furthermore, corresponding results for the second order are formulated, but not proved here. The proof for the first order is based on Stein&#x27;s method and on an extension of the combinatorial method of Bolthausen. It is also shown that conditions of van Zwet imply up to a small factor our conditions for the validity of Edgeworth expansions. Moreover, our proof for the first order also provides us with a result about Edgeworth expansions for smooth functions.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05284v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Most MLIP benchmarks reward static accuracy while ignoring inference efficiency and hardware scalability -- driving model bloat with unclear real-world value. We benchmark 23 mainstream open-source MLIPs on a low-cost NVIDIA DGX Spark (128 GB native memory, capped at 80 GB to mimic ordinary lab hardware), using a fixed 192-atom system under a unified ASE-based pipeline. We evaluate three dimensions: predictive accuracy, MD simulation throughput, and atomic scalability. Our results expose a sharp accuracy-efficiency trade-off: large SOTA models deliver only 3-5 meV/atom more accuracy than lightweight ones, but lose orders of magnitude in throughput -- in the worst case, becoming only marginally faster than DFT itself. Lightweight MLIPs, by contrast, sit on the Pareto frontier and run on modest hardware. The lesson is that single-dimensional benchmarks mislead the field, and that future MLIP development should value efficiency and scalability alongside accuracy.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07647v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05280v1" target="_blank" rel="noopener noreferrer">
-      Advances in Neural Controlled Differential Equations
+    <a href="https://arxiv.org/pdf/2607.07623v1" target="_blank" rel="noopener noreferrer">
+      Higher-Order Geometric Updates for Levenberg-Marquardt Method via Riemann Normal Coordinates
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Benjamin Walker</span>
+    <span class="paper-authors">Jianing Liu, Dong H. Zhang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">Many real-world systems evolve continuously, yet most machine learning models interpret time series as discrete sequences. Continuous-time approaches instead treat time series as samples from an underlying input path, a formulation that naturally accommodates irregularly sampled or oversampled data. Among these, Neural Controlled Differential Equations (NCDEs) are a maximally expressive class of models that parametrise a vector field using a neural network and evolve their hidden state by solving a dynamical system driven by the input path. NCDEs typically use a non-linear vector field, so their expressive power and continuous-time flexibility come at the cost of a forward pass that is both computationally expensive and inherently sequential, limiting their scalability and practical applicability. This thesis advances the training and scalability of NCDEs through three complementary contributions. First, building on neural rough differential equations, Log-NCDEs apply the Log-ODE method to efficiently approximate an NCDE&#x27;s solution during training, improving both computational speed and empirical performance. Second, Linear NCDEs replace the non-linear vector field with a linear one, enabling closed-form solutions and parallel-in-time computation without sacrificing theoretical expressivity. Third, Structured Linear NCDEs use structured linear vector fields to further enhance efficiency while maintaining theoretical expressiveness and empirical performance. Collectively, these methods reduce the time per training step for an NCDE by up to three orders of magnitude while achieving state-of-the-art performance across diverse time series benchmarks.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05280v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Nonlinear least-squares optimization is central to regression, physics-informed neural networks, and other machine-learning tasks. Such problems have a natural geometric interpretation, model predictions form a manifold in data space, while the chosen parameterization can introduce parameter-effects curvature that becomes a dominant source of nonlinearity. This exposes a limitation of the Levenberg-Marquardt (LM) method, its tangent-space step is applied as a straight update in parameter coordinates. Geodesic acceleration gives a second-order correction, but its removal of parameter-effect curvature is exact only in the infinitesimal-step limit. We propose a Riemann-normal-coordinate Levenberg-Marquardt method (RNC-LM) to improve this consistency for finite optimization steps. By reformulating the geodesic equation, RNC-LM extends geodesic acceleration to arbitrary-order corrections and constructs finite-step updates with progressively higher reparameterization consistency. A line search along the resulting RNC curve controls the traveled distance while keeping the cost close to standard LM. The method eliminates the tangential component of residual acceleration order by order in a moving tangent frame, making the actual objective reduction more consistent with the linear model prediction of LM. On classical nonlinear least-squares benchmarks, RNC-LM improves convergence and robustness in curved valleys and rank-deficient problems. On a reaction-diffusion PINN failure-mode benchmark, it reduces the relative L2 error to the order of 1e-3 and recovers a physically meaningful solution. On a large-scale machine-learning potential-energy-surface fitting task, it achieves a 34-fold speedup over standard LM.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07623v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05273v1" target="_blank" rel="noopener noreferrer">
-      Subgraph counting estimation for the $β$-model in sparse networks
+    <a href="https://arxiv.org/pdf/2607.07619v1" target="_blank" rel="noopener noreferrer">
+      Rethinking Code Performance Benchmarks for LLMs
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Qunqiang Feng, Jiashun Jin, Yaru Tian, Ting Yan</span>
+    <span class="paper-authors">Nhat Minh Le, Yisen Xu, Zhijie Wang, Tse-Hsun, Chen</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">The $β$-model is popular for characterizing the commonly observed degree heterogeneity phenomenon in real-world networks. In this study, we develop a cycle counting approach to estimate $n$ node-specific parameters in the $β$-model for moderate or extremely sparse networks. Our proposed estimators, called \emph{Cycle Counting Ratio (CCR) Estimator}, are based on the log-ratios of two network cycle counting statistics with explicit expressions and therefore easy to compute. We focus on conditions to guarantee statistical properties of the single estimator for each node. Under the very weak conditions that $\max_t θ_t \to 0$ and $θ_t \|θ\|_1 \to \infty$, we show that the CCR estimator is consistent and achieves the minimax rate in terms of the mean squared error, which is the squared signal-to-noise ratio for $\hatβ_t$ up to a constant factor. Here, $\hatβ_t$ is the CCR estimator of the node-specific parameter $β_t$, $θ_t = \exp(β_t)$ and $θ=(θ_1, \ldots, θ_n)$. Even if the whole network density is close to the Erdős-Rényi lower bound $\log n/n$, the CCR estimator for the single parameter $β_t$ is still consistent as long as $θ_t \|θ\|_1 \to \infty$. To the best of our knowledge, this is the first time to derive the minimax rate and consistency result under such weak conditions. Under a slight stronger condition, we further establish its uniform consistency and asymptotic normality, whose asymptotic variance is $θ_t \|θ\|_1$. Numerical studies and an application to a sparse network data set demonstrate our theoretical findings.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05273v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Many function-level performance benchmarks have been proposed to evaluate whether large language models (LLMs) can generate efficient programs. However, results on these benchmarks often show that LLM-generated implementations have little or no execution-time difference from canonical solutions. In this paper, we revisit four popular benchmarks: EffiBench, Enamel, EvalPerf, and Mercury. We evaluate 1,538 tasks under more rigorous setting by running each task 30 times and assessing the runtime differences between the canonical solutions and benchmark-provided performant implementations with statistical testing. With the benchmark-provided test suites, only 6.11% of the performant implementations are significantly faster than the canonical solutions. In a manual analysis of 308 non-significant tasks, 99 performant implementations contain no meaningful performance change, while 209 contain potential performance improvements that are not exposed by the original tests. These results suggest that the main limitation is not only the evaluation method, but also the limited sufficiency of the benchmark-provided performance tests. To address this limitation, we propose an LLM-based multi-agent framework to generate performance-oriented tests that expose runtime differences more effectively than the original tests. The framework uses three separate agents to generate, diagnose, and repair deterministic tests that preserve functional correctness while better exposing performance differences. Across 1,345 benchmark tasks for which the original tests found no significant performance difference, tests generated by our framework with DeepSeek-v3.1 and GPT-4o reveal statistically significant improvements in 24.01% and 25.43% of the tasks, respectively, outperforming the SOTA LLM-based performance test generation method.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07619v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05255v1" target="_blank" rel="noopener noreferrer">
-      No-$(k+1)$-in-line problem for $k \geqslant 3$
+    <a href="https://arxiv.org/pdf/2607.07617v1" target="_blank" rel="noopener noreferrer">
+      Loop Equations Characterize Random Matrix Statistics
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Anubhab Ghosal, Ritesh Goenka, Alexandr Grebennikov, Peter Keevash, Matthew Kwan, Huy Tuan Pham</span>
+    <span class="paper-authors">Paul Bourgade, Jiaoyang Huang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">What is the maximum number of points one can place in an $n \times n$ grid such that every Euclidean line contains at most $k$ points? For $k = 2$, this is the notorious no-three-in-line problem of Dudeney. In this paper, we resolve this problem for all other $k$ (and sufficiently large $n$). Namely, for $k \geqslant 3$ and sufficiently large $n$, we show that this maximum is exactly $kn$. To prove this, our key observation is that in the regime $k \geqslant 3$, the problem is dominated in a certain statistical sense by the influence of a small number of &quot;heavy&quot; lines with many grid points. We apply a result of Ehard-Glock-Joos on pseudorandom hypergraph matchings to construct a set of size $kn - o(n)$ with at most $k$ points on each heavy line, and then a crude deletion argument yields a no-$(k+1)$-in-line set of nearly the same size. Finally, we use a randomised switching procedure to complete the construction (building upon ideas of Simkin and Luria). Using similar ideas, we also address the no-four-on-a-circle problem of Erdős and Purdy. Namely, we prove the existence of a set of $2n - o(n)$ points in the $n \times n$ grid such that no four of these points lie on a circle or a line, improving on the previous construction of size $n - o(n)$ due to Dong and Xu.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05255v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We prove that the universal local point processes of random matrix theory are characterized by their loop equation hierarchies. More precisely, for every rational $β&gt;0$, the $\mathrm{Sine}_β$ point process is the unique solution of the bulk loop equation hierarchy, and the $\mathrm{Airy}_β$ point process is the unique solution of the edge loop equation hierarchy. These uniqueness results provide a direct route to universality: it suffices to verify the corresponding approximate loop equations for the ensemble. In many models, these equations follow from local laws and integration by parts.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07617v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05240v1" target="_blank" rel="noopener noreferrer">
-      Optimizing ML Workload Partitioning between CPUs and CIM Accelerators for Heterogeneous Computing
+    <a href="https://arxiv.org/pdf/2607.07609v1" target="_blank" rel="noopener noreferrer">
+      Bayesian spatial modelling framework for assessing residential flood risk in property insurance
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Joel Klein, Rebecca Pelke, Roberto Laudani, Jan Moritz Joseph, Rainer Leupers</span>
+    <span class="paper-authors">Mulah Moriah, Franck Vermet, Pierre Ailliot, Philippe Naveau, Juliette Legrand</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">Computing-in-Memory (CIM) accelerators execute Matrix-Vector Multiplications (MVMs) in memory, making them a compelling solution for Machine Learning (ML) workloads. However, existing ML workload partitioning approaches for CIM accelerators do not fully account for Resistive Random Access Memory (RRAM) constraints such as limited memory, high write latency, and limited endurance. They also neglect parallelism, low-level architectural effects, or the Central Processing Unit (CPU) as a complementary compute resource. To address these limitations, we propose an Integer Linear Programming (ILP)-based workload partitioning framework for heterogeneous CPU-CIM systems. It minimizes end-to-end inference latency under RRAM constraints, captures parallelism, and combines empirical profiling with analytical models. Using our framework, heterogeneous CPU-CIM execution achieves speedups of up to 30.9x over CPU-only execution on an edge CPU and 7.3x over a high-performance CPU. A Design Space Exploration (DSE) yields further design insights for future CIM accelerators.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05240v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Spatial heterogeneity in insurance risk modelling is often represented using coarse areal structures, which can obscure fine-scale patterns critical for accurate risk assessment. This study introduces a point-referenced Bayesian framework to model claim occurrence and severity at the policyholder level, avoiding reliance on predefined geographic aggregation. Drawing on a large French insurance portfolio combined with high-resolution environmental variables, rainfall records, and institutional hazard maps, we compare a benchmark GLM with several discrete Bayesian specifications, including independent random effects, intrinsic conditional autoregressive (iCAR) and Besag-York-Mollie (BYM) models, and a continuously indexed Gaussian random field constructed using the stochastic partial differential equation (SPDE) approach. Inference is performed using Integrated Nested Laplace Approximation (INLA), enabling efficient estimation of latent spatial fields and non-linear covariate effects. Our results show that accounting for spatial dependence substantially improves occurrence modelling, while gains in severity prediction are more limited. The SPDE formulation further outperforms areal models by capturing sub-municipal risk gradients and reducing artefacts induced by arbitrary geographic partitioning. By conditioning on detailed building-level attributes, we isolate the contribution of latent spatial effects, refine the interpretation of observed covariates, and improve the allocation of risk premiums across the portfolio. In addition to enhanced predictive performance, the framework provides coherent uncertainty quantification and supports tail-risk assessment. To our knowledge, this is the first application of point-referenced SPDE models to flood insurance, offering a scalable statistical alternative for pricing and managing risks with strong spatial structure.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07609v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05230v1" target="_blank" rel="noopener noreferrer">
-      Video-based detection of cessation of breathing in pre-term infants using machine learning
+    <a href="https://arxiv.org/pdf/2607.07606v1" target="_blank" rel="noopener noreferrer">
+      MLIP Studio: An Open Platform for Interactive Benchmarking and Atomistic Simulations Using Machine Learning Interatomic Potentials
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Dineo Serame, Lionel Tarassenko, Mauricio Villarroel</span>
+    <span class="paper-authors">Manas Sharma, Sudeep Punnathanam, Ananth Govind Rajan</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">Pre-term infants are susceptible to potentially harmful apnoea-related cessations of breathing due to immature respiratory control. However, reliable respiratory monitoring in the neonatal intensive care unit (NICU) remains challenging because motion artefacts, sensor displacement, and skin fragility can compromise contact-based measurements. Non-contact video monitoring offers a complementary approach that does not depend on adhesive sensors while providing additional respiratory information. We investigated whether camera-based signals can detect apnoea-related cessation of breathing (COBE) and provide complementary information to routinely acquired physiological signals. Using video and clinical recordings from 30 pre-term infants, respiratory motion was extracted from dynamically tracked torso regions to generate camera-derived time-series signals. Camera-only models were trained using residual network (ResNet) architectures, while hybrid models combined video-derived signals with impedance pneumography (IP), ECG-derived respiration (EDR), and the PPG-derived respiratory envelope. Camera-only models achieved a balanced accuracy of 76.9%, demonstrating the feasibility of non-contact COBE detection. Combining video-derived features with IP improved balanced accuracy to 90.6%, outperforming either modality alone and indicating that video provides respiratory information beyond standard physiological signals. These findings show that video-derived signals contain clinically relevant respiratory features and enhance COBE detection when combined with conventional physiological signals. This supports non-contact video as a complementary modality for automated COBE detection and highlights its potential to improve the robustness of neonatal respiratory monitoring.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05230v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Universal machine learning interatomic potentials (MLIPs) are foundation AI models transforming atomistic simulations, but their practical use remains hindered by fragmented software ecosystems, dependency conflicts, and the lack of accessible benchmarking tools. These models approach first-principles density functional theory (DFT) accuracy at a fraction of the computational cost. We introduce MLIP Studio (available at https://mlipstudio.iisc.ac.in), an open and free platform that brings more than 60 universal MLIPs into a unified interactive interface for molecules and materials. The platform enables end-to-end MLIP-driven workflows, including property prediction, geometry optimization, vibrational and equation-of-state analysis, spin-state determination, custom model deployment, and high-throughput benchmarking against reference data. Automated parity plots and sortable error tables facilitate rapid identification of element-wise outliers and problematic data points. We demonstrate that MLIP-based pre-optimization can reduce subsequent DFT optimization effort by ~33$\times$. Additionally, the application enables benchmarking of computational performance. Through a comprehensive case study involving the 2D magnetic material CrCl$_3$ on a sapphire substrate, we show how cross-model comparisons of various properties and potential-energy landscapes can guide task-specific MLIP selection. Overall, MLIP Studio lowers the barrier to the reliable use of foundation models in end-to-end research workflows, benchmarking, and education in computational chemistry and materials science.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07606v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05225v1" target="_blank" rel="noopener noreferrer">
-      A Century of Group Theory in Particle Physics and Beyond
+    <a href="https://arxiv.org/pdf/2607.07593v1" target="_blank" rel="noopener noreferrer">
+      What Makes a Good Bug Report for an AI Agent?
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Paul Sorba</span>
+    <span class="paper-authors">Lara Khatib, Noble Saji Mathews, Meiyappan Nagappan, Pengyu Nie, Thomas Zimmermann</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">The development of Group Theory in Mathematics as well as its impact in Physics has been spectacular during the twentieth century, and more particularly these last fifty years. If its contribution to Particle Physics deserves a special consideration, its usefulness cannot be neglected in other domains like Statistical Physics for example, and might also be of interest in Theoretical Biology. Some of these aspects will be examined.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05225v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Automated program repair (APR) agents are transitioning from research benchmarks to developer workflows, yet they still begin with bug reports written for human developers. While decades of research have established what makes a good bug report for humans (e.g., steps to reproduce, stack traces), it remains unclear whether these features transfer to LLM-based agents. We study this question in two analyses. First, we use statistical modeling to examine associations between 27 bug-report features and repair success across 433 SWE-bench Verified issues attempted by 87 repair agents. We find that fix suggestions, reproduction scripts, repository source code, and localization info are associated with higher resolution likelihood, while longer reports are associated with lower odds. Second, we conduct controlled ablations across 2 models and 17 problem-statement mutations on SWE-bench Pro, varying the information available to an agent while holding the underlying task fixed. We remove or isolate selected bug-report content, delete fault-localization cues, and test structural changes that flatten lists or remove section headers. We find that both models depend on localization cues and expected behavior, and that structural changes alone can reduce solve rates, even without removing any content. The two models diverge in how they handle missing information: Qwen searches more widely and can exhaust its turn budget, while Gemma commits to a plausible interpretation early and patches on it. Our findings indicate that a good bug report for an agent overlaps with, but is not identical to, a good report for a human: agents benefit most from concrete, executable, and well-localized information, whereas some qualities long emphasized for human readers, such as natural language steps to reproduce and readable descriptions, contribute little or even correlate with lower success.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07593v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05215v1" target="_blank" rel="noopener noreferrer">
-      Variance Estimation for Saturated Fixed-Effect Specifications
+    <a href="https://arxiv.org/pdf/2607.07588v1" target="_blank" rel="noopener noreferrer">
+      Tasting the equality of estimable parameters
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Stanisław M. S. Halkiewicz</span>
+    <span class="paper-authors">M. Romero-Madroñal, M. Remedios Sillero-Denamiel, M. Dolores Jiménez-Gamero</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">We characterize the asymptotic behavior of conventional variance estimators in linear regression with high-dimensional fixed effects under a drift in which both the proportional fixed-effect dimension $ρ_n = d_{K_n}/n \to ρ\in [0,1)$ and the residual treatment variance $τ_n^2 = nQ_{K_n} \to τ^2 \in (0, \infty]$ are non-degenerate. Three findings emerge. First, under strict exogeneity and conditional homoskedasticity, the Cattaneo--Jansson--Newey-corrected $t$-statistic is asymptotically exact for any $τ^2 &gt; 0$: there is no Stock--Yogo-style threshold in $τ^2$. Second, the Eicker--White HC0 estimator is biased downward by a fixed factor $(1-ρ)$, producing over-rejection that grows with saturation. Third, HC3 over-corrects in the opposite direction by a factor $1/(1-ρ)$. The leave-one-out estimator (HC2) removes the first-order leverage distortion and is asymptotically exact under homoskedasticity or design-balanced heteroskedasticity; under general heteroskedasticity with non-uniform leverage, HC2 retains an additional bias of order $ρ|μ- ω^2|$ that we characterize. An empirical application to Piotroski F-Score returns in CEE markets illustrates the predicted variance hierarchy in real data.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05215v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">This paper proposes a general and unified framework for testing the equality of a broad class of parameters, defined via $U$-statistics, across multiple independent populations. This approach encompasses various common statistical problems, such as comparing variances, correlation coefficients, or Gini indices, among many others. We consider two test statistics, a Wald-type statistic and an ANOVA-type statistic. The asymptotic distribution of the first one is derived under a fixed-dimension regime, whereas the second one is studied under both fixed and increasing-dimension regimes, where the parameter dimension diverges with the sample size. Based on these limiting distributions, we construct test procedures enabling asymptotically exact inference without parametric assumptions. Additionally, an alternative null distribution estimator based on a weighted bootstrap approximation is studied, which is applicable to the ANOVA-type statistic under a fixed-dimension regime. The finite-sample performance and computational efficiency of the proposed procedures are evaluated through an extensive simulation study. Finally, an application to a real dataset illustrates the usefulness of the proposed methodology.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07588v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05208v1" target="_blank" rel="noopener noreferrer">
-      Comparing gravitational wave background predictions from cosmological simulations to pulsar timing observations
+    <a href="https://arxiv.org/pdf/2607.07573v1" target="_blank" rel="noopener noreferrer">
+      Multi-Class vs. Multi-Label BERT for CVE-to-CWE Mapping: How Taxonomy Structure Shapes the Errors
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Stephanie Buttigieg, Debora Sijacki, Christopher J. Moore, Martin A. Bourne, Alberto Sesana</span>
+    <span class="paper-authors">Ana Schwengber Kelm, Christian Bockermann, Jörg Frochte</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">The recent detection of a gravitational wave background (GWB) by pulsar timing arrays (PTAs) may represent the first evidence of gravitational waves from merging supermassive black hole binaries, opening a new window on the low-frequency end of the gravitational wave spectrum. These inspiralling binaries are expected to dominate the signal, although most theoretical models seem to predict somewhat lower amplitudes than what is observed. We present the first comprehensive statistical framework to quantify the tension between PTA measurements and theoretical predictions, maximising the constraining power of current data and allowing straightforward application to future PTA datasets. We further investigate how different assumptions in the observational inference, particularly the use of a power-law model for the GWB spectrum, can bias tension estimates and potentially overstate discrepancies with theory. We apply our framework to compare predictions from the FABLE cosmological simulation with the NANOGrav 15-year dataset. For our fiducial black hole population, we find tension values of $1σ$-$2.5σ$, indicating no statistically significant disagreement with the observations. We further explore physically motivated modifications to the merging black hole population, guided by electromagnetic observations and theoretical uncertainties. In particular, scenarios with boosted black hole masses at high redshift and more equal-mass mergers substantially increase the predicted GWB amplitude, improving agreement with PTA data. Finally, we investigate the high-mass end of the black hole mass function and the impact of finite simulation volume. We find that the $(100 \, \mathrm{cMpc} \, h^{-1})^3$ FABLE box is sufficient to robustly predict the GWB signal at the most constraining frequency.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05208v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Assigning Common Weakness Enumeration (CWE) categories to Common Vulnerabilities and Exposures (CVE) records remains an important but largely manual step in vulnerability analysis. We study this task as a text classification problem and compare two modelling choices: a \emph{multi-class} formulation that predicts a single CWE per CVE and a \emph{multi-label} formulation that allows multiple assignments. Three transformer encoders (BERT Base, SecureBERT, and CySecBERT) are evaluated on three nested label spaces (83, 47, and 25 classes). Multi-class training achieves higher macro-F1 across all settings, although the gap to multi-label narrows from 21 to 2 percentage points as the label space shrinks. Post-hoc threshold optimisation on the multi-label side closes this gap on the 25-class setting. Confusion analysis shows that the dominant misclassification patterns follow the CWE hierarchy and are shared across all three encoders (Pearson $r &gt; 0.92$), which suggests that the error structure is driven more by taxonomy design than by encoder choice. A hierarchy-relaxed evaluation that forgives within-family confusions raises macro-F1 from ${\sim}$81\% to ${\sim}$90\%, indicating that strict metrics understate branch-level classifier quality. CySecBERT achieves the strongest results overall, with statistically significant gains concentrated in the multi-label setting.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07573v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05207v1" target="_blank" rel="noopener noreferrer">
-      Probing Geospatial SSL Representations with Environmental Signals
+    <a href="https://arxiv.org/pdf/2607.07565v1" target="_blank" rel="noopener noreferrer">
+      Collaborative Synthetic Data Generation for Knowledge Transfer in Federated Learning
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Rohita Mocharla, Vishal M. Patel</span>
+    <span class="paper-authors">Maximilian Andreas Hoefler, Karsten Mueller, Wojciech Samek</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">Self-supervised learning (SSL) is designed to learn generic, transferable representations rather than representations optimized for a single task. Most geospatial benchmarks evaluate representations solely through downstream tasks, providing limited insight into the information encoded within the representation itself. We ask a different question: do SSL representations of satellite imagery preserve statistical associations with environmental variables that co-vary with the imaging process? To answer this question, we probe SSL representations using co-located ERA5 reanalysis variables, a global dataset of physically consistent environmental variables, including temperature, precipitation, surface solar radiation, surface pressure, and volumetric soil water. These variables are physically related to the spectral reflectance and radar backscatter recorded by Sentinel-1 and Sentinel-2, making them meaningful evaluation targets despite not being used during SSL pretraining. We complement this probing analysis with intrinsic representation metrics to characterize representation geometry and investigate how these properties relate to downstream performance and the encoding of environmental signals. Using DINO, MAE, and MoCo models trained under identical conditions, we show that representation-level metrics distinguish models with similar downstream benchmark performance, providing complementary information beyond task-driven benchmarks. We further find that the linear accessibility of environmental signals is associated with performance on environmentally dependent tasks in the PANGAEA benchmark. Finally, we release ERA5 annotations co-located with the SSL4EO dataset to enable physically grounded representation evaluation for future geospatial foundation models.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05207v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">One-shot federated learning (OSFL) addresses the communication overhead of federated learning by limiting training to a single round, but doing so without sacrificing model quality is non-trivial, particularly when client data distributions diverge. Recent work has addressed this challenge by aggregating client knowledge on the server through the construction of transferable synthetic datasets or distillates. However, most of these methods lack formal privacy guarantees, leaving a gap in jointly achieving low communication, robustness to heterogeneity, and rigorous privacy. We propose FedKT-CSD (Federated Knowledge Transfer via Collaborative Synthetic Data), a framework inspired by neural image compression that closes this gap by leveraging publicly pretrained autoencoders as a shared latent space. Each client encodes its private data in a single forward pass, computes class-conditional latent statistics, and transmits these to the server. The server aggregates these statistics via secure aggregation, adds calibrated differential privacy noise, and decodes a synthetic dataset for training a global model and further downstream tasks. This design provides formal $(\varepsilon,δ)$-differential privacy by construction, while keeping client-side computation and communication lightweight. Despite operating under privacy constraints, FedKT-CSD is competitive with and even outperforms non-private baselines across diverse datasets and heterogeneity settings, and scales to a large number of clients. Our code is available at: https://github.com/an7123/FedKT-CSD</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07565v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05187v1" target="_blank" rel="noopener noreferrer">
-      SMART: A Machine Learning and Monte Carlo Framework for Rapid Analysis of Stochastic Transistor Aging and Process Variation in Digital Circuits
+    <a href="https://arxiv.org/pdf/2607.07551v1" target="_blank" rel="noopener noreferrer">
+      Extracting Barrier Distributions from Fusion Cross Sections
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Arash Esshaghi, Siavash Es&#x27;haghi, Gholamreza Shahabadi, Alireza Moradi</span>
+    <span class="paper-authors">Aaron Philip</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">As CMOS technology scales into the deep nanometer regime, digital circuit reliability is increasingly threatened by the combined stochastic effects of Bias Temperature Instability (BTI) and Process Variation (PV). Traditional reliability analysis methods, which rely on computationally intensive simulations or extensive lookup tables, fail to scale efficiently for large designs, creating a critical bottleneck in design space exploration. To address this, we propose SMART, a novel framework that integrates Machine Learning (ML) with Monte Carlo simulation to enable rapid, high-fidelity reliability analysis. SMART employs Random Forest regression to predict gate delay distributions directly, bypassing time-consuming atomic model parameter extractions. Crucially, the model utilizes Bayesian Optimization for automated hyperparameter tuning, ensuring maximum predictive robustness across diverse libraries. Experimental validation on ISCAS85 benchmark circuits demonstrates that SMART achieves a 94.54% reduction in analysis time compared to state-of-the-art methods, while maintaining a remarkable average accuracy error of just 1.63%. By shifting computational complexity to an offline training phase, the proposed framework offers a scalable, accurate solution for designing resilient, reliability-aware digital systems.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05187v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Studying fusion cross sections provides insight into the fusion process, details about the internal structure of heavier nuclear systems, and a window into astrophysical processes. Barrier distributions, extracted from fusion excitation functions, are immensely useful for comparing theoretical model predictions and experimental results. Extracting this barrier distribution from the measured cross-section data amounts to taking the second derivative of the energy-weighted cross section. In practice, barrier distributions are highly sensitive to the quality of collected experimental data and the choice of step size when using standard point difference schemes. In this work, we explore Bayesian methods for extracting a posterior distribution over barrier distributions that could reasonably describe experimental data. We benchmark Gaussian processes and recently developed Bayesian machine learning inference algorithms against realistic simulated data generated from a simple model of fusion excitation functions. We find that Gaussian processes often exhibit aliasing at higher energies of the barrier distribution. We demonstrate that the BNN architectures can more faithfully recover the barrier distribution with quantified uncertainties at all energies, while also identifying key regions of high uncertainty and model discrepancy to determine precisely where additional experiments would be maximally impactful. We use our conclusions to calibrate models to measured experimental data. All methods are comparatively robust to data sparsity and irregularity, but we find that the single most important factor dictating the fidelity of all models is the relative size of experimental uncertainties. We release an open-source version of our analysis and a user-friendly implementation of our method to encourage its future usage for experimental analysis.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07551v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05173v1" target="_blank" rel="noopener noreferrer">
-      Semi-Markovian switching in a fluctuating harmonic trap: An age-structured formulation
+    <a href="https://arxiv.org/pdf/2607.07543v1" target="_blank" rel="noopener noreferrer">
+      Equivalence testing in pesticide risk assessment -- Evaluation and practical guidance for design, analysis and interpretation
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Derek Frydel</span>
+    <span class="paper-authors">Dimitry Wintermantel, Julia Osterman, Magdalena M. Mair, Florian Hartig</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">We study a Brownian particle in a harmonic trap whose stiffness switches between two values with arbitrary waiting-time statistics, generating semi-Markovian dynamics. To treat the resulting temporal memory, we formulate the problem in an enlarged age-structured state space, restoring Markovianity and yielding a local Fokker--Planck description. Within this framework, we derive exact steady-state integral equations for the spatial and birth distributions and obtain exact expressions for stationary moments, injected power, and potential energy. In the second part of the paper, we analyze the stochastic-resetting limit, corresponding to a particle alternately released and trapped. By representing the stationary spatial distribution as a superposition of Gaussian states with fluctuating variance, the problem can be reformulated as a switching process in variance space. This yields exact integral equations for the variance distributions and leads to a simplified description amenable to direct analytical treatment.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05173v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Harmful pesticide effects exceeding specific protection goals (SPG) may go undetected in underpowered experimental designs. Regulatory honeybee field studies have consistently failed to reach the statistical power required under European Food Safety Authority (EFSA) guidance, which may have caused approval of high-risk substances. Therefore, EFSA advised a shift from testing the null hypothesis of &#x27;no effect&#x27; to equivalence testing. Under this approach, a pesticide is classified as &#x27;low risk&#x27; if the null hypothesis that its effect exceeds the SPG can be rejected. For honeybees, the recommended SPG is a colony size reduction below 10%. Critics have argued that this framework requires excessive site replication to demonstrate pesticide safety and proposed an alternative equivalence test defining treatment effects relative to the lower bound of the 90%-control-group confidence interval. Using simulations mimicking a regulatory honeybee field study, we show that although the two equivalence tests share the same trade-off between false &#x27;low-risk&#x27; and false &#x27;high-risk&#x27; classifications, only EFSA&#x27;s original recommendation reliably identifies pesticides with effects &gt; SPG at alpha = 0.2. Our results show that increasing site replication beyond the current practice is unavoidable for a reliable regulatory assessment. However, for pesticides with effect sizes of 5% or less, site requirements remain lower than those implied by the power requirement of the former EFSA guidance. Moreover, covariate adjustment through a model term or balanced colony allocation using anticlustering randomisation can reduce site requirements without losing power and thus save costs. Finally, we provide guidance and R functions for anticlustering randomisation and equivalence testing for pesticide risk assessment.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07543v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05156v1" target="_blank" rel="noopener noreferrer">
-      Emergence of high-mass stars in complex fiber networks (EMERGE) VI. Turbulence dissipation and the formation of dense fibers
+    <a href="https://arxiv.org/pdf/2607.07540v1" target="_blank" rel="noopener noreferrer">
+      Towards Minimax Estimation of High-Order Functionals by Quantum Arguments
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">F. Bonanomi, A. Hacar, A. Socci, S. Heigl</span>
+    <span class="paper-authors">Qisheng Wang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">(Abridged) The turbulent cascade naturally generates a hierarchy of filaments within molecular clouds, with fibers suggested to be the first (tran-)sonic components formed out of it. We aim to investigate the diffuse gas kinematics and its interaction with the dense gas composing fibers using HNC as molecular tracer. We use high-resolution (4.5&quot; or 2000au) large-scale ALMA+IRAM-30m mosaics to survey five star-forming regions in Orion, as part of the EMERGE Early ALMA Survey covering a wide range of stellar activity, cloud morphology, and evolutionary stages. We observe our targets in HNC(1-0) as probe of diffuse gas in the regions and compare it to the N2H+(1-0) emission tracing the dense gas. Our high resolution observations reveal that HNC traces lukewarm, diffuse ($\sim5\times10^{21}$ cm$^{-2}$) material around dense fibers. The properties of the diffuse gas appear to be similar across our sample, despite the wide range of different environments. Compared to the quiescent and subsonic gas inside fibers, the diffuse gas is, however, more turbulent ($M_\text{s}=2.9$). Understanding the dissipation process is crucial to mark the transition between the dense subsonic gas and diffuse turbulent material occurs. We investigated the turbulence dissipation through the statistical analysis of the HNC velocity gradients. We identified high-shear regions showing higher gradients with $\nabla V_{lsr}\ge10~\mathrm{km~s^{-1}~pc^{-1}}$ concentrated in small features of 0.1-0.3 pc in size located near the dense gas. These high-shear structures appear to be major contributors of the turbulence dissipation in our targets. Our results suggest that in Orion the transition to coherence occurs at the fiber level, as suggested by the turbulence being effectively dissipated before the formation of cores and during the formation of these first dense structures.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05156v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We propose a novel approach to the minimax estimation of high-order functionals from the perspective of quantum computing. Specifically, for any real number $α\gg 1$, we present two estimators, one for the classical functional $\mathrm{F}_α(P) = \sum_{i=1}^S p_i^α$ of a discrete distribution $P$ and the other for the quantum functional $\mathrm{F}_α(ρ) = \operatorname{tr}(ρ^α)$ of a mixed state $ρ$. These functionals have close connections with the Rényi entropy and the Tsallis entropy. We show that both estimators achieve the minimax optimal $L_2$ rate $α\mathsf{n}^{-1}$ in the range $α\lesssim \mathsf{n} \lesssim α^{3-o(1)}$, where the support size $S$ of $P$ or the dimension of $ρ$ can be much larger than the number of samples $\mathsf{n}$. As a result, both estimators achieve the \textit{optimal} sample complexity $\mathsf{n} \asymp α$, improving upon the prior best upper bounds $O(α^2)$ established by Jiao, Venkat, Han, and Weissman (IEEE Trans. Inf. Theory 2017) for classical functionals and Chen and Wang (COLT 2025) for quantum functionals. Our estimators are constructed under a unified framework using quantum primitives and run in linear time on a quantum computer. This work reveals an unexpected path from quantum computing to statistics, suggesting a conceptually new methodology for functional estimation. It adds to the growing list of quantum proofs for classical theorems.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07540v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05153v1" target="_blank" rel="noopener noreferrer">
-      Geometric Causal Models
+    <a href="https://arxiv.org/pdf/2607.07522v1" target="_blank" rel="noopener noreferrer">
+      Two-player Alternate Uses Test: A Controlled Testbed for Interactive Human-AI and Human-Human Co-Creation
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Eli N. Weinstein, David M. Blei</span>
+    <span class="paper-authors">Babak Hemmatian, Anita Keshmirian, Yijun Lin, Shravan Ramamoorthy, Maryam Jahadakbar, Eli Khuri-Reid, Jingtong Wang, Sarah Hadjarab, Sindre Veum, Pranav Gupta, Deepak Somaya, Lav R. Varshney</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">Scientists often seek to draw causal inferences from structured data that is not independently and identically distributed, such as spatial data, network data, or molecular data. We develop geometric causal models (GCMs), a framework for causal inference from dependent data that exploits underlying symmetries of the data generating process. For example, in spatial data, we consider processes that are symmetric under translations, or in graph data, symmetric under permutations of the nodes. We show how symmetries, formalized with group theory, can enable causal identification and estimation. We deploy ergodic theory for amenable groups to establish identification, and combine geometric deep learning with scalable Bayesian inference for estimation. We recover i.i.d. causal models and do-calculus when the data is a sequence and the symmetry is permutation equivariance, and find novel types of causal models when we use alternate structures and symmetries. As an example, we construct a causal model that satisfies the symmetries of DNA. This GCM enables new estimators for the effects of genetic variation, combining deep functional genomics models to describe outcomes and DNA language models to describe propensities. We illustrate on semisynthetic data.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05153v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Controlled research on AI ideation typically compares independent agents, while field studies of human-AI collaboration sacrifice experimental control. We introduce a controlled, two-player extension of the Alternate Uses Test (AUT) that enables comparison of human-human and human-AI co-creation under matched interactive conditions, alongside calibrated non-interactive baselines. The platform supports decomposition of performance into three typically confounded factors: participant traits, partner perceptions, and content dynamics. An in-person pilot (N = 62) demonstrates its utility. Under matched time limits, originality with a GPT-4 partner is statistically equivalent to that with a human partner. Approach motivation (BAS Drive) moderates whether interactive partnership benefits originality, and self-reported cognitive outsourcing predicts lower originality specifically in human-human dyads. Prior exposure to highly creative ideas improves later performance, suggesting a &quot;seeding&quot; intervention. We release the platform, code, and dataset as a shared testbed for controlled studies of human-AI co-creation.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07522v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05133v1" target="_blank" rel="noopener noreferrer">
-      UNIVERSE: Unified Video Action Models for Autonomous Driving with Flexible Mask-Modulated Modality Generation
+    <a href="https://arxiv.org/pdf/2607.07505v1" target="_blank" rel="noopener noreferrer">
+      On the coverage of electroweak-inos within the pMSSM with SModelS -- a comparison with the ATLAS pMSSM study
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Mengmeng Liu, Diankun Zhang, Jiuming Liu, Jianfeng Cui, Hongwei Xie, Guang Chen, Hangjun Ye, Francesco Nex, Hao Cheng, Michael Ying Yang</span>
+    <span class="paper-authors">Leo Constantin</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">World Action Models (WAMs) have shown strong potential for improving action generalization in autonomous driving by using future video prediction as dense supervision for scene dynamics and temporal causality. However, it remains unclear which architecture better transfers video-modeling benefits to trajectory generation. Existing cascaded or dual-DiT designs separate video imagination from action prediction, weakening the transfer of video-learned world dynamics to the trajectory branch: the action model may still overfit dataset-specific driving priors, while the video model only indirectly regularizes planning. We propose UNIVERSE, a unified video-action model built upon a single mask-modulated Diffusion Transformer. By co-training future video latents and ego-trajectory tokens within shared generative parameters, UNIVERSE allows dense video supervision to directly shape trajectory denoising, leading to stronger cross-domain action generalization. To ensure causal validity and efficient deployment, we introduce a Modality-Decoupling Visibility Mask, which shares historical context across modalities while blocking mutual attention between future video and trajectory tokens. This prevents future-target leakage and enables trajectory-only inference by removing future-video denoising at test time, achieving a $4.3\times$ speedup over joint video-action rollout while maintaining comparable planning accuracy. The same model also supports video-only and joint video-action rollouts. Experiments show that UNIVERSE achieves 91.0 PDMS on NAVSIM (vs. 89.6 for the Two-DiT variant), and demonstrates strong zero-shot transfer to nuScenes and Bench2Drive without fine-tuning, while ablations confirm the importance of single-DiT unification, video co-training, and mask-based modality decoupling.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05133v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The ATLAS collaboration has recently performed a vast scan of the phenomenological Minimal Supersymmetric Standard Model (pMSSM) with a focus on the electroweak-ino sector, and analysed how their Run 2 searches for electroweak production of supersymmetric (SUSY) particles constrain this dataset. All the SLHA files from the scan as well as the constraints from the eight individual searches considered by ATLAS were made publicly available. We use this material to study how well the ATLAS constraints can be reproduced with SModelS v3.0. Moreover, we explore how the picture changes when also including CMS results, and what can be gained by the statistical combination of analyses. Finally, we discuss the part of parameter space with light electroweak-inos that remains valid despite the stringent LHC limits. Our results underscore the need of a broad, multifaceted approach for maximising sensitivity and closing loopholes in the extensive SUSY parameter space.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07505v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2607.05114v1" target="_blank" rel="noopener noreferrer">
-      Localized LoRA-MoE: Block-wise Low-Rank Experts With Adaptive Routing
+    <a href="https://arxiv.org/pdf/2607.07504v1" target="_blank" rel="noopener noreferrer">
+      Do LLM-Generated Skills Make Better AI Data Scientists? A Component Ablation Across Data-Science Workflows
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Babak Barazandeh, Subhabrata Majumdar, Vinay Prithyani, George Michailidis</span>
+    <span class="paper-authors">Wei-Jung Huang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-07-06</span>
+    <span class="paper-date">2026-07-08</span>
   </p>
-  <p class="paper-abstract">Large Language Models (LLMs) and high-dimensional perception networks increasingly rely on parameter-efficient fine-tuning (PEFT) to adapt to diverse operational contexts. However, standard methods like LoRA are structurally limited by a monolithic bottleneck, making them highly susceptible to gradient warfare. Interleaved multi-task streams may trigger destructive optimization feedback, collapsing adapter weights into unspecialized averages. While recent spatial partitioning methods have introduced block-wise isolation, they remain trapped in static topologies, unable to adapt to dynamic task-switching or environmental sensor failure. In this work, we introduce Localized LoRA-MoE, a unified framework that fuses localized spatial blocking with dynamic, context-conditioned routing. We propose and evaluate two novel architectural paradigms: Block-Wise LoRA-MoE (Centralized Macro-Routing), which modulates the entire structural grid via a monolithic context signal, and Cell-Wise LoRA-MoE (Decentralized Micro-Routing), which empowers every coordinate cell in the matrix grid with autonomous, localized expert gating. Through a comprehensive suite of benchmarks, ranging from high-dimensional SVD matrix simulations and real-world tabular transformations to spatial vision perception under sensor degradation, we demonstrate that both architectures resolve optimization deadlocks inherent in static baselines. Our empirical results establish that decentralized cell-level gating achieves complete statistical parity with an omniscient global coordinator, providing a robust &quot;gradient firewall&quot; that protects surviving pathways from fault-propagated corruption. Our proposals consistently outperform static baselines, offering a scalable and parameter-efficient solution for dynamic model adaptation across granular coordinate fields and shifting operational regimes.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2607.05114v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Product data scientists often ask LLM-based agents to help with recurring execution tasks such as cleaning data, writing SQL, choosing statistical tests, and formatting results. Reusable skill files are meant to avoid prompting from scratch by packaging guidance for a task family. Expert-written skills can encode high-quality guidance, but writing and maintaining them across many data-science task families creates a manual bottleneck. We ask whether LLM-generated skills offer a useful low-curation alternative: do they improve performance over the task prompt alone? We test this question across four lifecycle stages: data preparation, data extraction, statistical analysis, and reporting, using one generated skill per stage. We find no reliable improvement from full generated skills over No-Skill prompting. We then ask whether any part of the skill is useful by ablating different skill components. The main ablation covers 56 tasks, nine model configurations, and three providers, yielding 7,560 runs. Compared with prompting using the task alone, neither the full generated skill nor any ablated skill variant significantly improves performance; all p-values are at least 0.396, and the total spread across variants is only 1.2 pp. A supplemental token-matched control adds 1,512 runs and finds that Full skills perform similarly to task-irrelevant skill-formatted content. The results caution against using one LLM-generated skill per data-science workflow as a default single-shot prompting strategy.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2607.07504v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
