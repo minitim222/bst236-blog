@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-08-30 03:52 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-08-31 03:55 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27458v1" target="_blank" rel="noopener noreferrer">
-      The Atacama Cosmology Telescope: Constraints on the anisotropic screening and birefringence effects with DR6
+    <a href="https://arxiv.org/pdf/2608.28581v1" target="_blank" rel="noopener noreferrer">
+      Renormalization-guided cascade upscaling for lattice field generation
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Darby M. Kramer, Alexander van Engelen, Frank J. Qu, Christopher Cain, Irene Abril-Cabezas, J. Richard Bond, Vera Gluscevic, Carlos Hervías-Caimapo, Niall MacCrann, Mathew S. Madhavacheril, Jeff McMahon, Toshiya Namikawa, Bruce Partridge, Emmanuel Schaan, Neelima Sehgal, Cristóbal Sifón, Ed Wollack</span>
+    <span class="paper-authors">Anna Hasenfratz, Ethan T. Neil, Letizia Parato, Noah Schwartz</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">While we have learned much from recent surveys of the mm-wave sky, many secondary anisotropies of the CMB remain under-explored. We consider two of these here: the anisotropic screening induced by Thomson scattering of CMB photons off free electrons, and cosmic birefringence, the rotation of CMB polarization due to parity-violating physics beyond the standard model. To measure these effects, we apply state-of-the-art estimators for statistical anisotropy to the ACT Data Release 6 CMB data and construct noisy maps and power spectra of both effects. For anisotropic screening, we find no significant detection with the baseline data, and place an upper limit on its power spectrum that is two orders of magnitude above predictions from current reionization models. We obtain evidence for some foreground contamination at one of our frequencies that is consistent with expectations from extragalactic simulations. For our anisotropic birefringence analysis, we also find no detection and place an upper limit on the signal that is consistent with previous analyses. We report a corresponding upper limit on the Chern-Simons coupling term $g_{a γ} &lt; 4.9 \times 10^{-2} / H_\mathrm{I}$, with $H_\mathrm{I}$ the inflationary Hubble scale. These analyses pave the way toward obtaining improved constraints with the next generation of ground-based CMB surveys.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27458v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We introduce a renormalization-group (RG) guided machine-learning algorithm for lattice field generation based on approximate inversion of an RG transformation. A ``perfect blocking&#x27;&#x27; construction supplies equilibrated long-distance modes, while a conditional normalizing flow reconstructs short-distance details and brief rethermalization removes residual errors. In 2D $φ^4$ theory at criticality, a flow trained at $L\le32$ is reused recursively in cascades reaching $L=2048$ with correct long-distance physics.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28581v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27451v1" target="_blank" rel="noopener noreferrer">
-      Tacet: A Language and Type System for Automatic Statistical Validity Accounting
+    <a href="https://arxiv.org/pdf/2608.28580v1" target="_blank" rel="noopener noreferrer">
+      Renormalization-guided inverse blocking for lattice field generation: construction and validation
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Chiké Abuah</span>
+    <span class="paper-authors">Anna Hasenfratz, Ethan T. Neil, Letizia Parato, Noah Schwartz</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">Empirical comparisons between systems are a standard form of evidence in computer science research, but few are checked for statistical validity: most are never framed as statistical tests at all. Existing multiple-comparison procedures could control the resulting error, but need inputs (what an analysis examined, and how its observations are arranged) that are not recoverable from a list of p-values. We introduce Tacet, a language in which an analysis declares what it generated, states what it expects to find, and is refused any claim it cannot afford or cannot properly test. Its core calculus T pairs a free estimation sublanguage, carrying a reported footprint and a purity bit that records whether any outcome was consulted in building a value, with a priced claim sublanguage, carrying a wealth transformer, connected only by a mechanism that prices a comparison. A sample selected by reading outcomes sets the purity bit and is recorded as having examined everything it read, permanently, so it can never be granted a one-sided or confirmatory price, without the system ever asking whether the analyst intended to cherry-pick. Whether a comparison is paired or clustered is computed statically from the artifact schema, from declared functional dependencies between key fields alone and before any data is read, and a mechanism that assumes that structure away is refused rather than priced. Because the wealth transformer is antitone in the realized p-value, affordability can be checked before the analysis runs too, turning pre-registration into a typing rule. We prove the metatheory machine-checked in Lean 4 with no admitted gaps, and demonstrate the approach on a reference implementation and two case studies on published artifacts, the SWE-bench Verified leaderboard and BIG-Bench Hard.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27451v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We propose an algorithm for generating lattice field configurations based on the approximate inversion of a renormalization-group blocking transformation. We optimize the blocking transformation using a ``perfect blocking&#x27;&#x27; condition so that the blocked lattice distribution is well approximated by a simple coarse action. The blocking is separated into an invertible smoothing transformation followed by decimation. Machine learning, in the form of a conditional normalizing flow, is used to reconstruct the short-distance degrees of freedom removed by the decimation. A short fine-action rethermalization then removes the residual mismatch. Because the coarse ensemble supplies the long-distance modes, the same blocking transformation and conditional flow can be reused recursively on larger lattices, producing a cascade of configurations from an initial small-volume ensemble. We test the method in two-dimensional $φ^4$ theory with $λ=1$ at criticality and demonstrate stable cascade upscaling from $16^2$ to $2048^2$ lattices on local computational resources. Controlled rethermalization tests show that short-distance mismatches relax rapidly, whereas a deliberately introduced mismatch in the relevant thermal direction relaxes much more slowly. The construction uses ingredients that admit natural extensions to higher-dimensional systems and, ultimately, to gauge and fermionic degrees of freedom.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28580v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27429v1" target="_blank" rel="noopener noreferrer">
-      Mechanistic Reaction Prediction via Discrete Flow Matching on Graph-Structured Electron Occupation
+    <a href="https://arxiv.org/pdf/2608.28576v1" target="_blank" rel="noopener noreferrer">
+      Learning a Size-Weight Frontier for Synthetic-Augmented Inference
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Nguyen Xuan-Vu, Octavian Susanu, Daniel Armstrong, Philippe Schwaller</span>
+    <span class="paper-authors">Chengpiao Huang, Kaizheng Wang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">Chemical reactions are fundamentally transformations in electron space, yet most machine learning approaches model them either through \textit{de novo} generation of product molecules or through heuristic graph edits that operate directly on molecular topology. We introduce MAELLE (\textbf{M}ech\textbf{A}nistic \textbf{E}dit f\textbf{L}ow-matching on e\textbf{L}ectron r\textbf{E}arrangements), which instead models reactions as discrete flow matching over electron occupation vectors. Concretely, we formulate the reactant-to-product mapping as a Continuous-time Markov Chain (CTMC) over the graph-structured integer-valued electron occupation space defined on all bonding, non-bonding, and hydrogen sites. To construct the intermediate edit trajectories, we generalize the discrete flow matching mixture path to discrete electron rearrangements using Optimal Transport, yielding a sequence of mechanistically interpretable edit moves without requiring elementary step annotations. MAELLE achieves competitive performance on the USPTO-480K benchmark compared with leading reaction prediction models. Beyond in-distribution accuracy, we evaluate robustness across two out-of-distribution settings - structural complexity and reaction type - and find that MAELLE maintains strong performance where existing methods degrade. Finally, because the learned flow operates over the full electron redistribution, MAELLE naturally recovers mechanistic trajectories that align with known chemistry and can predict side products of a reaction.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27429v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Synthetic data can improve statistical inference when real data are scarce, but naively treating synthetic samples as real data can introduce bias and lead to unreliable inference. We develop a general framework for synthetic-augmented inference across a population of related tasks. It characterizes synthetic augmentation by the number of synthetic observations and their weight. Central to our framework is a size-weight frontier that specifies, for each weight, the largest synthetic sample size for which all smaller sizes attain the target task-marginal coverage. We estimate this frontier from historical tasks, and establish a finite-sample coverage guarantee simultaneously for all size-weight configurations on or below the estimated frontier. In experiments using large language model responses to augment opinion survey data, our procedure achieves target coverage and substantially narrows confidence intervals.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28576v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27424v1" target="_blank" rel="noopener noreferrer">
-      Beyond F1: Evaluating Coverage and Failure Recovery in AI Model Security Scanners
+    <a href="https://arxiv.org/pdf/2608.28557v1" target="_blank" rel="noopener noreferrer">
+      Blog: Survey of Optimizers
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Qianlong Lan, Vinothini Pandurangan, Anuj Kaul, Indranil Sanyal</span>
+    <span class="paper-authors">Ruoran Xu</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">Static scanners are increasingly used to identify executable or otherwise unsafe content in machine- learning artifacts, yet conventional evaluation metrics characterize only cases where a scanner yields a usable security judgment. We evaluate ModelScan, ModelAudit, and Fickling using a controlled, artifact-backed benchmark on a synthetic corpus of 170 Pickle and PyTorch focused artifacts across 145 specimen families, 135 of which have binary security ground truth and 10 of which are intentionally malformed without labels. We explicitly distinguish non-N/A coverage, analysis completion, definitive security decisions, non-security findings, and unsupported outcomes. On labeled families, ModelAudit produced definitive security decisions for all 135 families (100%), Fickling for 110 (81.5%), and ModelScan for 67 (49.6%). Conditional on making a definitive judgment, ModelScan achieved 100% precision, recall, and F1. Fickling identified no unique true- positive families beyond those found by the combination of ModelAudit and ModelScan. Furthermore, for the 48 malicious families where ModelScan failed to complete its analysis, both ModelAudit and Fickling generated detections consistent with ground truth. These findings underscore the need to separate judgment accuracy from judgment availability, as well as incremental detection coverage from tool-level redundancy.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27424v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Neural-network optimization in 2025-2026 is no longer well described as a succession of new Adam variants. The design space has expanded from coordinates to matrices and layers, from fixed training horizons to policies over time, and from mathematical update rules to state representations that must survive sharding and low-precision computation. This survey organizes recent optimizers and training optimization methods along four largely independent axes: temporal estimation, update geometry, horizon management, and representation and systems. It connects the spectral normalization of Muon, the historical matrix statistics of Shampoo and SOAP, adaptive and hybrid matrix methods, memory-efficient optimizers, schedule-free training, small-batch corrections, and quantized optimizer states. The central empirical conclusion is deliberately non-triumphal: matrix-aware methods represent a genuine advance, but there is no context-independent replacement for AdamW. Rankings change with model scale, data-to-parameter ratio, batch size, schedule, parameter partition, tuning budget, and whether the target metric is tokens, FLOPs, wall-clock time, or memory. The practical consequence is a compositional view of optimizer design and a stricter protocol for evaluating optimizer claims.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28557v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27402v1" target="_blank" rel="noopener noreferrer">
-      How Language Models Organize and Structure Moral Knowledge
+    <a href="https://arxiv.org/pdf/2608.28556v1" target="_blank" rel="noopener noreferrer">
+      A Complete Characterization of Tensorizable $f$-divergences
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Orion Reblitz-Richardson</span>
+    <span class="paper-authors">Rodrigo Cruz, Flavio P. Calmon, Qian Yu</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">How do large language models (LLMs) organize moral knowledge? Models detect moral content broadly, but detection is a low bar. We ask whether they go further, distinguishing moral foundations from one another and organizing the relationships between them geometrically. We train six independent linear probes on open-weight language models, one per Moral Foundations Theory (MFT) category (care/harm, fair/cheat, lib/oppress, loy/betray, auth/subv, sanc/degrade), and examine how the resulting directions relate to each other in representation space. We find the directions neither collapse into a single moral detector nor isolate from one another. Rather, they span a near-maximal number of independent dimensions while sharing a positive common component. The shared component is the signature of integration, and it is moral-specific relative to a matched non-moral concept battery built identically (mean pairwise cosine 0.26 vs. 0.013). The geometry is consistent across architectures and scale and reaches its integration regime early in pre-training, well before probe accuracy saturates. The structure the model discovers shows no evidence of the individualizing/binding distinction predicted by Moral Foundations Theory (an underpowered test: only 20 candidate partitions exist) but rather reflects corpus statistics. Extending to moral dilemmas, each dilemma direction partially composes from its component foundations, at 2.7x a mismatched-pair baseline, while the majority of its variance encodes conflict-specific structure. The model represents moral tension itself, not a pre-resolved judgment.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27402v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Csiszar&#x27;s formulation of the $f$-divergence introduced a vast family of functionals for quantifying dissimilarity between probability distributions. However, many applications in statistics and information theory rely only on a few $f$-divergences, such as the Kullback-Leibler divergence, the $χ^2$-divergence, and the squared Hellinger distance. These divergences are especially useful because they admit simple compositional formulas under product measures, a property sometimes referred to as tensorization. In this work, we refine a formalism of tensorization previously introduced in the literature. Then, we show that any possible tensorization formula has a multi-affine form characterized by a single parameter, and identify all tensorizable $f$-divergences under our adopted notion of tensorization.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28556v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27384v1" target="_blank" rel="noopener noreferrer">
-      FlashVLA: Streaming Action Decoding for Fast and Asynchronous VLA Inference
+    <a href="https://arxiv.org/pdf/2608.28554v1" target="_blank" rel="noopener noreferrer">
+      Machine learned designs of functional colloidal foldamers
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Zekai Li, Jiaming Tang, Zhijian Liu</span>
+    <span class="paper-authors">Ryan van Mastrigt, Zorana Zeravcic</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">Vision-Language-Action (VLA) models are increasingly promising for robotic manipulation, yet their real-world deployment remains bottlenecked by high inference latency and unstable asynchronous execution. This challenge is particularly pronounced in flow-matching-based VLA models, where action decoding requires multiple iterative steps conditioned on the VLM context. While efficient inference methods improve control frequency and asynchronous methods reduce execution idle time, existing approaches often fail to jointly achieve low-latency inference and accurate, temporally consistent asynchronous execution. We introduce \textbf{FlashVLA}, a streaming action decoding framework that addresses both challenges in a unified formulation. FlashVLA maintains a streaming action buffer with multiple chunks at different noise levels and decodes them using chunk-wise causal attention. This design allows FlashVLA to produce one executable action chunk per inference step. Moreover, its chunk-wise autoregressive formulation implicitly preserves action continuity, enabling smooth asynchronous execution without extra future-state conditioning. Across extensive simulated and real-world experiments, FlashVLA substantially improves inference speed while maintaining strong task performance. It can achieve $\geq$30\,Hz control frequency on a single GPU with smooth asynchronous inference in real-world deployment.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27384v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">A protein&#x27;s function follows from the structure it adopts, and which structure that is depends on the pathway taken. In programmable matter the target is fixed before assembly, and whatever else forms is treated as error. Here we show that pathways themselves form a design space. Using reinforcement learning, we fold model DNA-coated droplet chains into rigid two-dimensional geometries, uncovering two classes of pathways: downhill, in which bonds are only added, and detour, in which bonds are broken and remade before the target is reached: for some the only route that exists. Coarse-graining pathways by interactions gives experimentally realizable protocols. Some produce one geometry, others several: structures sharing a detour route can be cycled between, while those that coexist assemble into superstructures inaccessible to a uniform product. Function emerges from the pathways rather than being designed. Designing the process instead of the components could give colloidal materials that reconfigure and repair themselves on demand.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28554v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27380v1" target="_blank" rel="noopener noreferrer">
-      D2C-Routing: Dimension-to-Composition Evidence Routing for Mixed-Origin AI-Generated Text Detection
+    <a href="https://arxiv.org/pdf/2608.28550v1" target="_blank" rel="noopener noreferrer">
+      ExoMOD II. A Statistical Model of Transit Timing Variations in Kepler Multi-Planet Systems
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Xin Chen, Fuwei Zhang, Yiqi Tong, Wei Guo, Yutian Xiao, Fuzhen Zhuang</span>
+    <span class="paper-authors">David Nesvorny, Daniel A. Yahalomi, David Kipping, Cristian Beauge, Sarah C. Millholland</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">AI-generated text detection is commonly framed as a binary document-level judgment about whether a text is human-written or machine-generated. This framing breaks down for mixed-origin writing, where content origin and expression origin may differ. We cast mixed-origin detection as dimension-to-composition source attribution, inferring content origin and expression origin before composing them into four collaboration types. We propose Dimension-to-Composition Routing (D2C-Routing), which routes content-side and expression-side evidence to supervised dimension heads before a learned gated composition layer predicts the final label. On MixD2C, a reconstructed split derived from the HART mixed-origin benchmark, our disclosed D2C-Routing-based detector system reaches 0.8603 four-way Avg TPR@1%FPR, 6.5 points above the same-split RACE-local rerun. Core ablations support the routing design, while error analysis shows that distinguishing AI-content/human-expression from fully AI-generated text remains the hardest boundary. Code is available at https://github.com/bystander563/d2c-routing-artifact.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27380v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">In Paper I (Nesvorný et al. 2026), we forward modeled transit observations of the Kepler telescope to characterize the orbital properties of close-in planetary systems. The new population model, ExoMOD, was calibrated on Kepler&#x27;s DR25 data. Here we use ExoMOD to statistically predict Transit Timing Variations (TTVs) from gravitationally interacting planets in the close-in systems, and compare these predictions with TTVs actually detected in the Kepler data. We find that planet-planet interactions are not expected to produce significant {\it short-period} TTVs, $P_{\rm TTV}/P_{\rm orb}&lt;10$, where $P_{\rm TTV}$ and $P_{\rm orb}$ are the TTV and orbital periods, often enough to explain the short-period TTV signals inferred from the Kepler data. Most measured short-period signals must therefore have a different origin. The statistics of {\it long-period} TTVs -- likely arising from the gravitational interaction between planets -- indicates that single transiting planets have TTV-inducing companions nearly as often as doubles, thus ruling out multiplicity distributions with a prevalence of intrinsic singles. The fraction of planets with measured long-period TTVs increases to $\simeq 15$-18\% for observed multiplicities $m \geq 3$, suggesting a change in the orbital architecture. High-multiplicity planetary systems have low gap complexities and probably retained a memory of their formation conditions. Ultimately, our work aims at developing a more informative feedback between observations and planet formation theories.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28550v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27378v1" target="_blank" rel="noopener noreferrer">
-      How well can Diffusion Models learn Lagrangian-Tracer Statistics in Non-reciprocal Turbulence?
+    <a href="https://arxiv.org/pdf/2608.28548v1" target="_blank" rel="noopener noreferrer">
+      ExoMOD I. A Forward Model for the Orbital Architecture of Kepler Multi-Planet Systems
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Pratyush Jha, Biswajit Maji, Rahul Pandit</span>
+    <span class="paper-authors">David Nesvorny, Daniel A. Yahalomi, David Kipping, Cristian Beauge</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">Recent advances in generative artificial intelligence have led to significant potential applications in conventional fluid flows, including those that are turbulent. Can these methods be carried over to studies of novel types of turbulence, such as turbulence induced by non-reciprocity in binary-fluid systems? To answer this question, we analyze the statistics of Lagrangian-tracer particles in non-reciprocal binary-fluid turbulence, which has been studied recently in the non-reciprocal Cahn-Hilliard-Navier-Stokes (NRCHNS). We obtain our ground-truth data via extensive pseudospectral direct numerical simulations (DNSs) of the two-dimensionsl (2D) NRCHNS model. Our study yields a variety of intriguing results for probability distribution functions (PDFs) for particle accelerations and velocity-component PDFs; the latter turn out to be bimodal, completely unlike their 2D-fluid-turbulence counterparts. We relate this bimodality to lane-type structures in Eulerian-velocity components. Furthermore, we characterize Lagrangian multiscaling via Lagrangian velocity increments, their structure functions and flatnesses, and multiscaling exponent ratios, for the first time in non-reciprocal hydrodynamics. Finally, we use generative diffusion models to obtain synthetic Lagrangian trajectories for the NRCHNS system, assess how effectively they can emulate the Lagrangian statistics that we obtain from our DNSs, and highlight open challenges in the application of generative artificial intelligence in non-reciprocal systems.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27378v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Transit observations only detect planets with favorable, near edge-on orientation of orbits as seen by a distant observer, which leaves much freedom for various interpretations in terms of the underlying planetary system architecture. Here we forward model transit observations of the Kepler telescope to characterize the orbital properties of close-in planetary systems. We make sensible choices about the underlying distributions of planet radii, masses and orbital periods, parameterize the orbital excitation with the Angular Momentum Deficit (AMD), and adopt an accurate method to account for transit detection. The fits to Kepler&#x27;s DR25 data are executed with {\tt MultiNest}. We find that the orbital period distributions of Kepler singles and multis are statistically different from each other -- possibly a consequence of Kepler&#x27;s observational baseline. The observed gap complexity distribution is reproduced when planets in high multiplicity systems ($m \geq 5$) are assigned ideally correlated period ratios. The high-multiplicity systems probably retained a memory of their formation conditions. The gap complexity metric also helps to constrain the AMD distribution. We find that systems with positive radius monotonicities typically harbor smaller planets, as expected if the radius monotonicity is influenced by non-detections. A FGK dwarf in the Kepler field should host $\simeq 2.4 \pm 0.2$ planets on average with radii $0.5 &lt; R_{\rm pl}/R_\oplus &lt; 7$ and orbital periods $3&lt;P_{\rm orb}&lt;300$ d. For a detected planetary system, there is roughly a 50\% chance that Kepler transit observations missed at least one inner or intermediate-period planet.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28548v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27373v1" target="_blank" rel="noopener noreferrer">
-      Non-isothermal vertical distribution functions for the Milky Way
+    <a href="https://arxiv.org/pdf/2608.28535v1" target="_blank" rel="noopener noreferrer">
+      Hardware-Efficient Error Mitigation and Shot-Efficient Sampling on IBM Quantum Hardware
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Maria Djurić, Ralph Schönrich</span>
+    <span class="paper-authors">Sumit Chongder</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">The vertical structure of our Galaxy has commonly been assumed to follow a pseudo-isothermal distribution. However, there is no \textit{a priori} reason to expect this form to arise from scattering by giant molecular clouds (GMCs), since GMCs are confined to a narrow layer around the Galactic midplane and therefore do not randomise stars uniformly in vertical phase space. We first present a simple statistical argument to derive a new vertical distribution function (DF), in the limiting case of a razor-thin distribution of GMCs, which admits an extra factor of ${J_z}^{-α}$, where $α&gt;0$ and varies for different potentials. In light of this, we revisit the diffusion coefficients for vertical heating from the mechanics of two-body scattering, in a more realistic, extended distribution of GMCs. The resulting drift and diffusion coefficients are strongly non-linear in $v_z$, particularly at low relative velocities, where the effective range of weak, local encounters can vanish. We determine stationary solutions, and also numerically solve the orbit-averaged Fokker--Planck equation with time-dependent coefficients. We find, in both cases, a vertical action distribution that deviates from that of the pseudo-isothermal case, and propose a new, family of vertical DFs that generalise the pseudo-isothermal form. We find the two primary agents of non-isothermality are: (i) a GMC distribution confined near the midplane, and (ii) the fact that the Coulomb logarithm, $Λ$ is strongly velocity-dependent at small velocities, and cannot be treated as a constant, contrary to the commonly adopted assumption.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27373v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We experimentally study error mitigation and finite-shot sampling on superconducting quantum hardware under a constrained execution budget. The study combines calibration-aware qubit selection, circuit-depth scaling, zero-noise extrapolation, dynamical decoupling, readout-error mitigation, and repeated-shot estimation on an IBM Quantum processor. Experiments are organized across ideal simulation, noise-model simulation, and physical-device execution to separate sampling uncertainty from device-induced error. We investigate how mitigation performance changes with circuit depth, effective noise scale, qubit connectivity, and measurement budget, and quantify accuracy using expectation-value error, mean-squared error, statistical uncertainty, and mitigation gain. A fixed hardware-execution budget is used to evaluate shot allocation strategies and repeated measurements without relying on unlimited sampling. The resulting analysis provides a hardware-aware characterization of when mitigation improves expectation-value estimation and when finite-shot fluctuations offset the benefit of additional mitigation overhead. The implementation uses contemporary Qiskit and IBM Quantum Runtime workflows and is designed to provide reproducible experimental evidence for error-mitigation studies on current quantum processors.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28535v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27367v1" target="_blank" rel="noopener noreferrer">
-      Successive Capacity Growth: Task-Complexity-Driven Width and Depth Expansion for Vision Transformer Encoders in JEPA World Models
+    <a href="https://arxiv.org/pdf/2608.28530v1" target="_blank" rel="noopener noreferrer">
+      On Nonsmooth and Relatively Weakly Convex Minimization
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Frederik Berenz</span>
+    <span class="paper-authors">Chen Jiang, Jiawen Bi, Shuzhong Zhang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">Joint-Embedding Predictive Architectures (JEPAs) for world modeling typically employ fixed-size Vision Transformer encoders that are over-provisioned for simple tasks and under-provisioned for complex ones, with significant redundancy across attention heads. We propose Successive Capacity Growth (SCG), a method that starts from a minimal encoder (1 head, 2 layers, 283K parameters) and grows incrementally in width (adding attention heads for low-level semantic capacity) or depth (adding transformer blocks for higher-order semantic abstraction), driven by a task-agnostic test-and-verify mechanism that exploits function-preserving expansion to safely trial architectural changes and roll back if they do not improve prediction loss. The Sketched Isotropic Gaussian Regularizer (SIGReg) ensures that all learned semantic dimensions remain statistically independent and aligned with the predictive objective, preventing collapse even as the architecture grows. On a 60-dimensional multi-object dynamics task, SCG naturally triggers depth expansion, improving prediction loss by 20.3% over the fixed small baseline with 56 times greater parameter efficiency than scaling to the fixed large model; on a 2D navigation task, a single width expansion yields even an 23% improvement over the fixed large model. Across all three tested environments of increasing complexity, the adaptive encoder matches or exceeds the fixed small baseline, with zero false-positive expansions and bit-exact function preservation (ratio = 1.0, absolute difference = 0.0). The take-away is that JEPA world model encoders need not be pre-allocated at maximum capacity - they can grow successively as the task demands, achieving significant compute and data efficiency while maintaining representation quality.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27367v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Composite optimization plays a central role in modern machine learning and signal processing, as it offers a natural balance between data fidelity and structural properties. In this paper, we study composite optimization in the setting where both components are nonsmooth and nonconvex. We start with a deterministic Bregman proximal subgradient method that converges under subgradient upper-bound conditions. This approach relaxes the standard requirement on the convexity of the regularization term, thus accommodating a broader range of applications. To extend this to the stochastic regime, we develop a model-based minimization method under a relative Lipschitz condition and establish a convergence rate of $\mathcal{O}(\varepsilon^{-4})$. We also extend the framework with convergence guarantees to the setting where the distance generating function and its gradient are accessible only through a stochastic oracle.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28530v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27365v1" target="_blank" rel="noopener noreferrer">
-      KnockGS:interaction-Grounded Calibrationof Physical Gaussian Representations
+    <a href="https://arxiv.org/pdf/2608.28525v1" target="_blank" rel="noopener noreferrer">
+      A physics-constrained machine-learning sub-grid-scale modeling approach for turbulent premixed flames
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Chenchen Ge, Hanwen Shen, Bowen Jing, Jiyuan Cai, Xiaofeng Wang, Hongsen Lei, Weitao Zhou, Dandan Zhang, Haibao Yu</span>
+    <span class="paper-authors">Seung Won Suh, Jonathan F. MacArt, Luke N. Olson, Jonathan B. Freund</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">Physics-integrated 3D Gaussian representations now allow reconstructed deformable objects to be simulated and rendered under explicit material models. Existing pipelines, however, assume that material parameters are known or manually specified, limiting their applicability when these parameters must be inferred from observed object dynamics. We propose KnockGS, an interaction-response PhysicalGS framework that estimates the elasticity and density scales of a 3D Gaussian object from its dynamics under a known applied force. Rather than treating physical simulation only as a forward process, we turn the force-induced response into a calibration signal: temporal response features are xtracted from the observed dynamics, the two material scales are estimated from those features, and the estimate is then frozen and written back into the same simulator so that it can be tested on an interaction it was never fitted to.We evaluate the framework on both parameter recovery and response-level fidelity. The estimated scales are compared against hidden ground truth, and the re-simulated object is measured against the target using 3D particle trajectories, response-curve statistics, and rendered-frame quality. Across five held-out material targets, our method recovers the scales substantially more accurately than response retrieval, global regression, or a fixed default material, and the frozen estimate remains predictive under interactions that differ in direction and in magnitude. Interaction response therefore carries enough information to calibrate material scales in physically grounded 3D Gaussian representations.Our study is a first step toward interactive PhysicalGS systems that calibrate a Gaussian asset whose rendered appearance and simulated response are consistent.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27365v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">A physics-embedded training framework is used to close the sub-grid-scale dynamics of turbulent premixed flames. The trained model augments the resolved flow equations and is trained to match its predicted flow field to trusted data. An end-to-end optimization of the coupled resolved equations and embedded model leads to a model that is robust and effective for a freely propagating premixed flame in turbulence, modeled by a single-species, single-step, and irreversible chemical reaction. Important constraints are built into the training formulation for conservation, scalar boundedness, and equivariance. The model is scaled based on the residual of the resolved flow equations to focus its influence where the closure is needed. It outperforms other cases considered --- no-model, dynamic closure, and the same machine learning model trained directly to fit the residual data --- for a long-time simulation, correcting the turbulence dissipation and flame kinematics. Finally, it is shown how the prediction-based training better informs the model than the precise residual data.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28525v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27355v1" target="_blank" rel="noopener noreferrer">
-      Dynamical slowdown, bottlenecks, and multiscaling in Voigt-regularised turbulence
+    <a href="https://arxiv.org/pdf/2608.28516v1" target="_blank" rel="noopener noreferrer">
+      A reaction volume bias Monte Carlo trial for sampling chemisorption in confinement
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Anikat Kankaria, Bikram Pal, Edriss S. Titi, Samriddhi Sankar Ray</span>
+    <span class="paper-authors">Samiha Sharlin, Harold W. Hatch, Daniel W. Siderius, Tyler R. Josephson</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">We investigate bottleneck formation in turbulence using the Voigt-regularised SABRA model and DNS of the corresponding Voigt-Navier-Stokes (NSV) equations. The Voigt regularisation introduces a scale-dependent slowdown of nonlinear interactions without enhancing dissipation, providing a natural setting to study the interplay between nonlinear transfer and thermalised behaviour. We find three distinct spectral regimes: an inertial range at $k&lt;k_I$, an intermediate equilibrium-like range associated with partial thermalisation for $k_I&lt;k&lt;k_{II}$, and a high-$k$ thermal regime for $k&gt;k_{II}$, where the Voigt contribution dominates the conserved invariant. The crossover to the high-$k$ regime occurs at $k_{II}\sim 1/α$, while $k_I$ marks the onset of thermalised behaviour. Equal and multi-time statistics reveal a progressive suppression of intermittency and a tendency towards Gaussianity at small scales, together with a transition from dynamic multiscaling in the turbulent regime to simple scaling in the equilibrium ranges. The shell model resolves these three regimes over a broad range of scales, while DNS of the corresponding NSV equations reproduces the same qualitative trends, including bottleneck formation, delayed cascade completion, reduced intermittency, and a tendency towards Gaussianity at small scales. We find that bottleneck formation might be associated with scale-dependent dynamical slowdown and incipient thermalisation, rather than being purely dissipative in origin. We provide strong evidence that, in the regime where the regularization parameter $α$ is much smaller than the dissipation length scale, the Voigt model reproduces the same inertial-range turbulent regime and turbulence statistics as the Navier-Stokes (NS) equations. This provides evidence that the Voigt model constitutes an excellent practical approximation to the NS equations for small $α$.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27355v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Molecular modeling of chemisorption with Monte Carlo requires the development of new trial moves to efficiently sample complex fluids such as water in Bronsted acid zeolites. Here, we develop a reaction volume bias (RxVB) Monte Carlo trial for modeling chemisorption by combining identity-switch and aggregation-volume-bias (AVB) moves. This method aims to promote the sampling of reactions by choosing reactive pairs that are within an arbitrarily specified reaction volume. The RxVB move achieves up to a 90-fold increase in accepted reaction events over unbiased moves in a single-site slit-pore model, corresponding to a 70-fold gain in statistical efficiency after accounting for computational overhead. But when the same move is applied to water in a Bronsted acid zeolite without orientational bias, there is no measurable speedup for a single MFI unit cell. We demonstrate a simple expression that predicts the maximum efficiency increase in the simplest case where selecting reactants that are near each other is the major sampling bottleneck. Dense water systems may require additional configuration-bias or orientational bias to improve sampling of the hydrogen bond network in order to increase acceptance. This new RxVB trial was made available with examples in the open-source Free Energy and Advanced Sampling Simulation Toolkit (FEASST) simulation package.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28516v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27320v1" target="_blank" rel="noopener noreferrer">
-      Evidence, Calibration, and Stability: A Triadic Framework for Hypothesis Testing Under Model Uncertainty
+    <a href="https://arxiv.org/pdf/2608.28513v1" target="_blank" rel="noopener noreferrer">
+      Machine-learning-assisted multiscale topology optimization of functionally graded superimposed lattice structures
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Subir Hait</span>
+    <span class="paper-authors">Prashant Kumar Gupta, Jonathan Stollberg, Dominik Schillinger, Mohammad Ashraf Iqbal</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">Statistical tests are often asked to do too much. A single reported result is expected to describe what the observed data say, reassure readers about repeated-sampling behavior, and remain convincing when the working model is perturbed. Those tasks are connected, but they are not equivalent. Fisherian inductive inference and Neyman-Pearson decision theory clarify the first two; robust testing, sensitivity analysis, fragility measures, multiverse analysis, and distributional-stability methods speak to the third. I propose Evidence-Calibration-Stability (ECS) as a framework for keeping these roles separate while reporting them together. Evidence is post-data. Calibration belongs to the design or procedure. Stability is the post-data distance from the benchmark analysis to a conclusion-reversing perturbation within a declared model neighborhood. Full ECS support is conjunctive: a strong coordinate cannot rescue a failed one. For finite-dimensional affine perturbations, I derive an exact ellipsoidal stability radius. For smooth nonlinear margins, a uniform quadratic-remainder condition yields a certified lower bound over a declared neighborhood, showing when the affine formula is only a surrogate. I also establish coordinate invariance and a matrix extension for multiple claims, and distinguish confirmatory calibration from descriptive calibration profiles when prespecification is unavailable. Simulations for the one-sample t test and Student&#x27;s historical sleep data show that the three coordinates can lead to different interpretations. ECS is a formal synthesis, not a claim that evidence, power, or robustness is itself new.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27320v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Functionally graded lattice structures enable lightweight designs with spatially tunable stiffness and density, but their use in multiscale topology optimization is limited by the cost of repeated computational homogenization. This work presents a machine learning-assisted multiscale optimization framework for regular superimposed lattice structures. The unit cell is formed by combining body-centered cubic, face-centered cubic, and simple cubic lattice components, each controlled by an independent geometric parameter. Offline computational homogenization is used to generate effective stiffness data, which are then used to train a Cholesky-constrained neural network surrogate. This representation reconstructs the homogenized stiffness tensor in a physically admissible form. A separate neural network is trained to predict relative density from Monte Carlo-based density estimates. We incorporate our surrogates into a two-stage topology optimization strategy. First, a macroscale topology is obtained using the solid isotropic material with penalization (SIMP) method. The resulting solid region is then used for microscale lattice optimization, where the local lattice parameters are updated using the method of moving asymptotes (MMA). The trained stiffness and density surrogates replace repeated online homogenization during this stage. The method is demonstrated on a three-dimensional Messerschmitt-Bölkow-Blohm (MBB) beam benchmark, producing spatially varying lattice parameters and relative density fields consistent with compliance minimization under a material constraint.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28513v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27315v1" target="_blank" rel="noopener noreferrer">
-      Hyperuniformity as a unifying organizational principle across diatom architectures
+    <a href="https://arxiv.org/pdf/2608.28499v1" target="_blank" rel="noopener noreferrer">
+      REPLICANT: Learning Policies for Evading and Hardening Malware Detectors
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Eric Ballestero, Chiara Gazzola, Raj Kumar Pal, Vicent Romero-Garcıa, Marco Miniaci</span>
+    <span class="paper-authors">Shae McFadden, Ilias Tsingenopoulos, Mario D&#x27;Onghia, Alexander Herzog, Myles Foley, Chris Hicks, Lorenzo Cavallaro, Fabio Pierazzi</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">Diatom frustules have long fascinated scientists for the extraordinary beauty, diversity, and functionality of their intricate silica architectures. Yet, the spatial organization of these structures has so far been primarily described in terms of morphology, symmetry, and crystallographic order, leaving common statistical properties across distinct diatom architectures largely unexplored. By analyzing diatom frustules through the lens of hyperuniformity for the first time, we reveal a striking commonality across their remarkable diversity: all analyzed genera exhibit signatures of suppressed long-wavelength density fluctuations. Specifically, we find that these architectures range from strongly ordered Class I to disordered Class III hyperuniform systems. We show that local order, spatial correlations, and long-range fluctuation suppression can vary partially independently, giving rise to a continuous spectrum of multiscale architectures. Our multiscale approach reveals that hyperuniformity can be reliably characterized in finite biological structures, beyond what conventional asymptotic diagnostics can resolve. Together, these results prove that hyperuniformity provides a unifying statistical framework for describing diatom diversity beyond conventional classifications of structural order.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27315v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">To determine the real-world effectiveness of machine learning based malware detection, it is vital to evaluate its robustness against highly capable adversaries. However, state-of-the-art attacks do not effectively model realistic adversaries, as they often assume access to privileged information such as the training data, feature space, or confidence scores of the target. In this work, we present Replicant, a deep reinforcement learning framework that learns the realistic task of evasion under a strict label-only black-box threat model. Replicant learns a reusable policy on how to modify a malware sample and when to query the target, which transfers across samples, detectors, and feature spaces. Across seven Android malware detectors and three feature spaces, Replicant is the strongest and most query-efficient approach achieving a mean attack success rate of 78.8%, a relative improvement of 20.9%-39.2% over the state-of-the-art. Furthermore, when used for adversarial training, Replicant also outperforms the state-of-the art by producing detectors with more generalizable robustness. With Replicant we demonstrate that learning the task of evasion not only results in stronger attack performance but, crucially, provides a better signal for hardening malware detectors.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28499v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27309v1" target="_blank" rel="noopener noreferrer">
-      Difference-in-Differences on a Censored Rating Scale Can Manufacture an Effect: Evidence from a Pre-Registered LLM-Judge Audit
+    <a href="https://arxiv.org/pdf/2608.28495v1" target="_blank" rel="noopener noreferrer">
+      Automated Dislocation Detection in Electron Channelling Contrast Imaging: A Comparative Study of Rule-Based, Neural Network, and Deep Learning Approaches
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Shuyi Fan, Boyuan Deng, Mengyu Xu, Xinhong Xie, Chenyang Li, Hongyang Zhang</span>
+    <span class="paper-authors">A. Holmes, C. Trager-Cowan, J. Bruckbauer, B. Hourahine</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">Audits of LLM judges certify a bias by contrasting matched conditions, and the strongest designs difference twice: a within-item contrast between two candidate responses, differenced again across a manipulated attribute, read off a bounded rating scale. We show that this endpoint is not identified on the scale that reports it. Each term of the double difference is censored by its own share, so the observed statistic confounds differential preference with differential attenuation: a severity shift common to both responses manufactures an interaction whenever the two censor it unequally, as unequal distances from the bounds make them, exactly where good stimuli place them. We exhibit the failure inside a pre-registered audit of a frozen pedagogy judge, sealed before the first of its 990 calls. The registered primary endpoint, the effect of a stated learner profile on the judge&#x27;s scaffolding preference, is null: $+0.085$ points (95\% BCa $[-0.167, +0.353]$, $p = 0.684$). The audit&#x27;s one nominally significant interaction, $+0.378$ ($p = 0.002$), is not identified as preference: a construction containing zero differential preference reproduces 79 to 85\% of it from the observed severity shift and the scale floor alone. We derive the mechanism in closed form and show that its contribution is measurable from an audit&#x27;s own ratings.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27309v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Quantifying threading dislocations in semiconductor materials via electron channelling contrast imaging (ECCI) is heavily bottlenecked by slow manual analysis. This work benchmarks three automated detection pipelines on ECCI micrographs of gallium nitride (GaN) against a statistical ground truth. A classical rule-based computer vision approach proved unreliable due to extensive per-image tuning requirements, while a convolutional neural network (CNN)-based multi-stage classification and locator method achieved 87% accuracy but required significant time for a test image and was less efficient in high-density regions. By contrast, a unified single-stage you only look once (YOLOv8) architecture achieved a counting accuracy of 98.6%, alongside 98.7% precision and 98.7% recall across 7451 dislocations over multiple images, with rapid inference times. Successful deployment of YOLOv8 required addressing two domain-specific machine learning challenges. First, to mitigate the model&#x27;s scale sensitivity, an adaptive gaussian tile-sizing algorithm was developed to optimise the field of view per image. Second, the deployed confidence threshold (0.025) differed substantially from the suggested inference default value for YOLOv8 (0.25), raising counting accuracy from 90.8% to 99.3% on a subsection of the benchmark image. In this case, low confidence scores represented physical signal strength rather than classification ambiguity. This unified, scale-adaptive approach demonstrates practical viability for high-throughput, quantitative semiconductor defect characterisation.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28495v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27306v1" target="_blank" rel="noopener noreferrer">
-      Accelerating Optical Photon Simulation in DUNE with Opticks
+    <a href="https://arxiv.org/pdf/2608.28474v1" target="_blank" rel="noopener noreferrer">
+      Structural Change and Random Graph Models in Global Oil Trade Networks
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ilker Parmaksiz, Aaron Higuera, Laura Paulucci, Viktor Pec, Estanislao Forino</span>
+    <span class="paper-authors">Anthony Bonato, Vincent Luong, Kyne Santos</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">Optical photon simulation is among the most computationally demanding tasks in complex and large detector geometries. In the Deep Underground Neutrino Experiment (DUNE), the scale of the far-detector modules makes photon-by-photon transport with \texttt{GEANT4} prohibitively expensive on CPUs. We present the first implementation and performance evaluation of GPU-accelerated optical photon simulation at the 10~kt scale, based on \texttt{Opticks} and applied to the DUNE far-detector horizontal-drift (FD-HD) geometry. On the full FD-HD geometry, \texttt{Opticks} propagates the same photons as \texttt{GEANT4} with a speedup of $313 \pm 3$ over single-threaded and $83 \pm 1$ over four-thread \texttt{GEANT4}, and is validated against the reference \texttt{GEANT4} simulation across all metrics considered. We further integrate \texttt{Opticks} into the \texttt{LArSoft}-based DUNE software stack. Photons simulated on the GPU with \texttt{GEANT4}-equivalent physics retain full Monte Carlo fidelity at a computational cost that makes high-statistics optical studies and the generation of labeled datasets for machine learning feasible at the kiloton scale.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27306v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We studied structural change in global oil trade using a network approach. Using UN Comtrade data, we examined the temporal evolution of international trade networks, with an emphasis on crude oil. Weighted in-degree identified major changes in country rankings in 1991, 2011, 2017, and 2021, while PageRank detected pronounced changes around 1991 and 2024. The Louvain algorithm identified clear geographic communities within the overall trade network. In the oil trade network, modularity declined from the 1990s to the 2010s, with node2vec embeddings showing weaker clustering in 2011 than in 1991. We also compared the oil trade network with several random graph models using 3- and 4-node subgraph profiles and machine learning classification. The oil trade network was consistently classified as a Chung-Lu graph, while the Geometric model was not favored, suggesting that a model based on the degree distribution better matched its subgraph profiles than the other models considered.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28474v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27295v1" target="_blank" rel="noopener noreferrer">
-      A Temporal Multiplex Graph Neural Network for Systemic Risk Transmission in Global Banking
+    <a href="https://arxiv.org/pdf/2608.28440v1" target="_blank" rel="noopener noreferrer">
+      From quantum reservoirs to quantum extreme learning machines through a nearest-neighbor spin chain with tunable quantum memory
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Nneka Umeorah, Tolulope Fadina</span>
+    <span class="paper-authors">Carlos Ramon-Escandell, Arnau Riera, Marcin Płodzień</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">This paper develops a unified framework for assessing systemic risk and identifying contagion channels in the global banking system using a Temporal Heterogeneous Multiplex Graph Neural Network. We construct a harmonised quarterly panel combining bank fundamentals, CDS spreads, and macroeconomic indicators, and represent these data as dynamic multiplex networks linking banks through financial similarity and liquidity co-movement, augmented with country-level macroeconomic relationships. The model integrates graph convolutional layers with recurrent GRU dynamics and incorporates a learnable fusion gate to capture time-varying reliance on alternative contagion channels. Empirical results show that the framework outperforms conventional econometric, machine learning, and graph-based benchmarks for short-term changes in CDS spreads. Beyond forecasting, we provide an interpretable framework to quantify bank-level systemic importance via stress testing, assess country-level spillovers under macroeconomic shocks, and uncover transmission pathways through edge perturbation analysis. Robustness tests confirm the stability of both predictive accuracy and systemic risk rankings.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27295v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Quantum Reservoir Computing (QRC) processes temporal data by retaining a memory of past inputs in the recurrent state of a quantum system, whereas a Quantum Extreme-Learning Machine (QELM) discards that memory, resetting the system at every step so that only the most recent input shapes the response. The two are usually treated as separate computational paradigms. We show that they are the two limits of a single architecture, connected by the input-encoding length, that is, the number of qubits overwritten with fresh data at each step. When a single qubit is re-encoded the system operates as a standard QRC, when the whole register is re-encoded it operates as a QELM, and intermediate lengths interpolate between them. The overwritten qubits hold the recent past in an explicit register, while the remaining qubits are never reset and carry older inputs forward in their evolving quantum state, so the encoding length redistributes memory between explicit and recurrent storage at fixed system size. Tuning the reservoir Hamiltonian and the evolution time with Bayesian optimization at each encoding length, we find that recurrent quantum memory is essential when a task must reach far into the past, and dispensable when the relevant history is short, where the memoryless reset limit already suffices. For every task the best reservoirs operate at the edge of chaos, where they perform as well as a densely connected reservoir with random all-to-all couplings of the same size, indicating that what temporal processing requires is the dynamical regime rather than the connectivity.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28440v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27281v1" target="_blank" rel="noopener noreferrer">
-      Efficient formation and identification of single emitters in 4H-SiC following maskless heavy ion implantation
+    <a href="https://arxiv.org/pdf/2608.28408v1" target="_blank" rel="noopener noreferrer">
+      SymboLLM-FE: LLM-Accelerated Symbolic Regression for Automated Feature Engineering on Tabular Data
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">S. Eserin, L. K. S. Zimmermann, E. Schneider, M. Ludlow, J. Heiler, O. G. Lloyd-Willard, K. Stockbridge, G. Aresta, L. Antwis, S. K. Clowes, M. Hofmann, S. Kucera, P. Berwian, F. Kaiser, B. N. Murdin</span>
+    <span class="paper-authors">Zi-Jian Cheng, Zi-Yi Jia, Zhi Zhou, Yu-Feng Li, Lan-Zhe Guo</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">Single photon emitters in silicon carbide (SiC) are a leading platform for scalable quantum technologies. Recent interest has focused on oxygen-vacancy-related emitters, which show exceptionally high optical brightness and strong spin readout contrast. One barrier to scalable quantum devices based on these emitters is the challenge of maskless formation and rapid identification. Here, we demonstrate the formation of isolated bright single emitters in 4H-SiC, using low-energy maskless implantation of heavy ions bismuth and tin. Following annealing, up to 18% of implanted sites host a single emitter, with optimal yields achieved at annealing temperatures of 900-1000 degrees C. Occupancy statistics are modelled to estimate the implantation dose that maximises single-emitter yield. We introduce a tiered characterisation scheme, where a simple intensity threshold isolates single-emitter candidates, confirmed through photon correlation measurements, after which correlations between polarisation, saturation count rate and magnetic resonance frequency assign emitter type. It is shown that time-consuming low-temperature spectroscopy is not necessary to distinguish emitter types. Together, maskless heavy-ion implantation and selective screening offer an efficient route to forming and rapidly identifying near-surface single emitters for room-temperature quantum technologies such as quantum sensing.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27281v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Tabular data, as a core data format in machine learning, often lacks the discriminative power needed for high-performance modeling due to insufficient feature informativeness. Automated Feature Engineering (AutoFE) overcomes this by automating feature generation and selection, ensuring both model performance and operational efficiency. However, traditional AutoFE often yield features with poor interpretability because they rely on blind mathematical transformations, while large language models (LLM)-based AutoFE faces challenges in requiring costly multi-round iterations to generate high-utility features to effectively enhance model performance, compounded by inherent risks of bias and hallucination. In this paper, we combine symbolic regression with LLMs for feature engineering (SymboLLM-FE) to solve these challenges. We extract mathematically expressive formulas strongly correlated with the target via symbolic regression, which can enhance model performance, then refine them by LLMs with rich prior knowledge to ensure interpretability. Empirical results on six real-world datasets and four Kaggle competitions demonstrate that SymboLLM-FE outperforms existing AutoFE. SymboLLM-FE also addresses the dual challenges of poor interpretability and numerous iterations by employing a statistical prior-grounded LLM refinement mechanism and single-digit LLM calls.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28408v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27277v1" target="_blank" rel="noopener noreferrer">
-      Benchmarking of Fast and Interpretable UF Machine Learning Potentials
+    <a href="https://arxiv.org/pdf/2608.28402v1" target="_blank" rel="noopener noreferrer">
+      VERA-8B: Evidence-Grounded Audit Risk Reasoning from SEC Filings
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Pawan Prakash, Sam Dong, Richard G. Hennig</span>
+    <span class="paper-authors">Menghan Liu, Elynn Chen</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">Machine learning interatomic potentials (MLIPs) have emerged as a powerful alternative to density functional theory (DFT) for molecular dynamics simulations, offering near-DFT accuracy at a fraction of the computational cost. However, many state-of-the-art MLIPs remain computationally demanding and act as black boxes, limiting physical interpretability. In this work, we evaluate the ultra-fast force field (UF$^3$) potential, which employs linear regression with cubic B-spline basis to represent effective two- and three-body interactions. We show that UF$^3$ displays accuracy comparable to established models such as GAP, MTP, NNP (Behler Parrinello), and qSNAP MLIPs. We further investigate the transferability of UF$^3$ by computing melting points for six elemental systems with potentials fitted without any solid-liquid interface configurations or explicit thermodynamic information about melting. The model reproduces experimental melting points within $\sim$6% for simple metals (Ni, Cu, Li), but substantially underestimates them for Mo and Si and fails to yield a stable potential for Ge, reflecting the limitations of a fixed expansion truncated at the three-body term for systems with strong angular or covalent bonding. We further illustrate how UF$^3$&#x27;s spline-based formulation allows direct visualization of the learned interactions, enabling identification of unphysical behavior that black-box approaches often obscure.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27277v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Across audit applications, judgments must be supported by reasonable evidence. However, standard financial language models prioritize fluency over evidence. They are built for general financial reasoning and may produce plausible but ambiguous answers, creating a grounding gap that makes them unsuitable for audit work. We address this gap with VERA-8B, a new end-to-end audit reasoning system that identifies audit risks before enforcement actions occur. Constructing such a model raises several challenges, as no prior machine learning work targets pre-enforcement audit prediction. To our knowledge, we are the first to unify SFT and GRPO for evidence-grounded audit reasoning under one evidence standard, achieving performance that surpasses all evaluated baselines. Because auditing cannot tolerate unsupported claims, we introduce abstention and uncertainty qualification to defer uncertain or evidence-incomplete cases. Finally, we design an AuditBridge to ground model reasoning for practical audit work. It transforms raw filings into verified records and then into reviewer-ready reports, bridging finance and computation with broad generality. Together, these components produce auditable, review-ready outputs suitable for practical audit work.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28402v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.27273v1" target="_blank" rel="noopener noreferrer">
-      Grain-Boundary Premelting in High-Entropy Transition Metal Carbides
+    <a href="https://arxiv.org/pdf/2608.28396v1" target="_blank" rel="noopener noreferrer">
+      Sustainability of Open-Source Machine Learning Robustness Assessment Tools: A Repository Mining Study
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Marium M. Mou, Caleb Schenck, Samuel E. Daigle, William G. Fahrenholtz, Bharat Gwalani, Stefano Curtarolo, Donald W. Brenner</span>
+    <span class="paper-authors">Joshua Owotogbe, Indika Kumara, Willem-Jan van den Heuvel, Damian Tamburri</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-27</span>
+    <span class="paper-date">2026-08-28</span>
   </p>
-  <p class="paper-abstract">Grain-boundary segregation and thermally induced interfacial disordering were investigated in four high-entropy transition metal carbides using Monte Carlo (MC) sampling and molecular dynamics (MD) with the universal MACE-OMAT-0 machine-learning interatomic potential. MC sampling segregated the group-VI element (Cr, Mo, or W) and Zr to grain boundaries, where the group-VI content reached approximately 45 at.%, consistent with STEM-EDS observations. During MD heating, the grain-boundary Lindemann index, a normalized measure of interatomic distance fluctuations, reached the liquid-like threshold of $δ=0.15$ near $1390^{\circ}\mathrm{C}$ for the Cr-containing carbides, $1660^{\circ}\mathrm{C}$ for Mo, and $1890^{\circ}\mathrm{C}$ for W, while the grain interiors remained below the threshold. A chemically random (Cr,Hf,Ta,Ti,Zr)C reference crossed about $60^{\circ}\mathrm{C}$ later and showed less boundary-localized disorder, highlighting the role of interfacial chemistry in premelting. Species-resolved displacements showed enhanced grain-boundary mobility, particularly for carbon. Overall, Cr-rich interfaces showed the earliest and most extensive premelting-like response, followed by Mo- and W-containing boundaries.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.27273v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Robustness evaluation is essential for deploying machine-learning (ML) systems in real-world settings, where models may face adversarial perturbations, distribution shifts, and other operational stressors. Many open-source tools, including Adversarial Robustness Toolbox, Foolbox, and Robustness Gym, support robustness testing and evaluation. However, little is known about how these tools are maintained, publicly engaged with, and sustained over time, even though practitioners may rely on them to select evaluation dependencies, reproduce robustness assessments, and provide evidence for AI assurance. We present an empirical study of the open-source robustness tooling ecosystem. Starting from a curated seed set derived from prior work, we systematically searched GitHub and identified 28 robustness-tool repositories. We analyzed repository artifacts to characterize observable community engagement, maintenance activity, and project longevity using established software-engineering metrics. Our results show that engagement and maintenance are unevenly distributed, with sustained activity concentrated in a small subset of repositories. At the data collection date of January 21, 2026, five repositories were classified as active, 22 as inactive, and one as archived. These findings highlight the need to treat robustness tools as evolving software systems.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2608.28396v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
