@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-08-31 03:55 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-09-02 03:05 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28581v1" target="_blank" rel="noopener noreferrer">
-      Renormalization-guided cascade upscaling for lattice field generation
+    <a href="https://arxiv.org/pdf/2609.01598v1" target="_blank" rel="noopener noreferrer">
+      UI-VISA: U-Net Initialized Vascular Image Segmentation Architecture
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Anna Hasenfratz, Ethan T. Neil, Letizia Parato, Noah Schwartz</span>
+    <span class="paper-authors">Asees Kaur, Suzanne S. Sindi, Erica M. Rutter</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">We introduce a renormalization-group (RG) guided machine-learning algorithm for lattice field generation based on approximate inversion of an RG transformation. A ``perfect blocking&#x27;&#x27; construction supplies equilibrated long-distance modes, while a conditional normalizing flow reconstructs short-distance details and brief rethermalization removes residual errors. In 2D $φ^4$ theory at criticality, a flow trained at $L\le32$ is reused recursively in cascades reaching $L=2048$ with correct long-distance physics.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28581v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Accurate segmentation of vascular structures in digital subtraction angiography (DSA) images remains challenging due to the thin, elongated, and branching nature of blood vessels. Pixel-wise deep learning approaches such as U-Net achieve strong general-purpose segmentation performance but often produce fragmented or discontinuous predictions in fine vascular regions, since they do not explicitly enforce structural connectivity. Region growing algorithms preserve spatial context and topological continuity, but are highly sensitive to seed point initialization and can be computationally expensive. We propose UI-VISA (U-Net Initialized Vascular Image Segmentation Architecture), a hybrid pipeline that combines the complementary strengths of both approaches. UI-VISA uses U-Net&#x27;s foreground predictions as informed seed points for a CNN-guided region growing algorithm, which then iteratively refines the segmentation by enforcing local connectivity and recovering fine vessel details that U-Net alone tends to miss or over-predict. We evaluate UI-VISA against standalone U-Net and a prior region-growing-based method (VISA) using 5-fold cross-validation on 26 DSA images. UI-VISA achieves the highest mean Dice and clDice scores across folds, and a paired Wilcoxon signed-rank test shows the improvement in clDice is statistically significant ($p=0.023$), consistent with the method&#x27;s design goal of preserving vascular connectivity, while the improvement in Dice does not reach significance ($p=0.104$).</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01598v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28580v1" target="_blank" rel="noopener noreferrer">
-      Renormalization-guided inverse blocking for lattice field generation: construction and validation
+    <a href="https://arxiv.org/pdf/2609.01587v1" target="_blank" rel="noopener noreferrer">
+      The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Anna Hasenfratz, Ethan T. Neil, Letizia Parato, Noah Schwartz</span>
+    <span class="paper-authors">Jundong Hu, Shekar Ramachandran</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">We propose an algorithm for generating lattice field configurations based on the approximate inversion of a renormalization-group blocking transformation. We optimize the blocking transformation using a ``perfect blocking&#x27;&#x27; condition so that the blocked lattice distribution is well approximated by a simple coarse action. The blocking is separated into an invertible smoothing transformation followed by decimation. Machine learning, in the form of a conditional normalizing flow, is used to reconstruct the short-distance degrees of freedom removed by the decimation. A short fine-action rethermalization then removes the residual mismatch. Because the coarse ensemble supplies the long-distance modes, the same blocking transformation and conditional flow can be reused recursively on larger lattices, producing a cascade of configurations from an initial small-volume ensemble. We test the method in two-dimensional $φ^4$ theory with $λ=1$ at criticality and demonstrate stable cascade upscaling from $16^2$ to $2048^2$ lattices on local computational resources. Controlled rethermalization tests show that short-distance mismatches relax rapidly, whereas a deliberately introduced mismatch in the relevant thermal direction relaxes much more slowly. The construction uses ingredients that admit natural extensions to higher-dimensional systems and, ultimately, to gauge and fermionic degrees of freedom.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28580v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Post-training quantization (PTQ) is widely used to reduce the cost of serving large language models (LLMs), but its accuracy cost is uneven and is often tuned per model. We study where quantization damage occurs and how to allocate a small additional precision budget. Using causal mixed-precision intervention as ground truth (raise each layer to 8-bit in turn and measure the accuracy it recovers) across 9 open-weight models in 4 architecture families, we test 3 intuitive hypotheses: that quantization damage lives in task circuits, where the model computes, or in weight statistics. None of them predicts which layers benefit from restored precision. Recovery is instead diffuse: for 8 of 9 models, recovering 75% of the gap takes roughly half the layers; the lone exception, Qwen3-8B, is sharply concentrated. At a matched precision budget, spending it globally on finer quantization granularity beats locally repairing the most recoverable layers for all 8 group-128-compatible models (all but OpenLLaMA, whose width rules out group-128), by 21-52 points, including the concentrated Qwen3-8B. We report 2 secondary findings: the residual is budget-limited (8-bit is near-lossless in our evaluation across RTN, GPTQ, and AWQ), and the location of peak recovery correlates with architecture within a family, though not across families. Within this budget setting, global granularity is a better default than selectively protecting critical layers. More broadly, cheap signals that correlate with quantization damage do not necessarily identify where restoring precision improves accuracy; this must be tested with causal intervention.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01587v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28576v1" target="_blank" rel="noopener noreferrer">
-      Learning a Size-Weight Frontier for Synthetic-Augmented Inference
+    <a href="https://arxiv.org/pdf/2609.01544v1" target="_blank" rel="noopener noreferrer">
+      Variable Selection for Feature-Based Newsvendor
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Chengpiao Huang, Kaizheng Wang</span>
+    <span class="paper-authors">Zhaoliang Yuan, Jie Wang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">Synthetic data can improve statistical inference when real data are scarce, but naively treating synthetic samples as real data can introduce bias and lead to unreliable inference. We develop a general framework for synthetic-augmented inference across a population of related tasks. It characterizes synthetic augmentation by the number of synthetic observations and their weight. Central to our framework is a size-weight frontier that specifies, for each weight, the largest synthetic sample size for which all smaller sizes attain the target task-marginal coverage. We estimate this frontier from historical tasks, and establish a finite-sample coverage guarantee simultaneously for all size-weight configurations on or below the estimated frontier. In experiments using large language model responses to augment opinion survey data, our procedure achieves target coverage and substantially narrows confidence intervals.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28576v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Feature-based newsvendor models use observable covariates to tailor inventory decisions, aiming to balance holding and shortage costs under demand uncertainty. However, high-dimensional feature sets often hinder interpretability and inflate data collection and implementation costs. This paper studies variable selection for the feature-based newsvendor problem under a hard cardinality constraint on the number of selected features. We formulate the resulting $\ell_0$-constrained empirical newsvendor problem with $\ell_2$-regularization, establish its computational hardness, and develop a mixed-integer second-order cone programming reformulation that strengthens the standard Big-$M$ formulation. To enable scalability beyond exact optimization, we develop a randomized-rounding algorithm with a bi-criteria guarantee and a greedy heuristic. Statistically, we provide theoretical analysis of the resulting sparse policy estimator, including finite-sample estimation error, out-of-sample risk bounds, and support recovery guarantees. Extensive experiments on both synthetic and real data illustrate the computational and statistical trade-offs among various baselines. Our results demonstrate that the proposed variable selection framework achieves competitive out-of-sample operational costs while using substantially fewer covariates.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01544v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28557v1" target="_blank" rel="noopener noreferrer">
-      Blog: Survey of Optimizers
+    <a href="https://arxiv.org/pdf/2609.01537v1" target="_blank" rel="noopener noreferrer">
+      Quantum Sparse Autoencoders for Q-Matrix Estimation in Cognitive Diagnosis
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ruoran Xu</span>
+    <span class="paper-authors">Arif Hassan Zidan, Yi Pan, Bowen Guo, Xiang Li, Yu Bao, Yingfeng Wang, Tianming Liu, Wei Zhang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">Neural-network optimization in 2025-2026 is no longer well described as a succession of new Adam variants. The design space has expanded from coordinates to matrices and layers, from fixed training horizons to policies over time, and from mathematical update rules to state representations that must survive sharding and low-precision computation. This survey organizes recent optimizers and training optimization methods along four largely independent axes: temporal estimation, update geometry, horizon management, and representation and systems. It connects the spectral normalization of Muon, the historical matrix statistics of Shampoo and SOAP, adaptive and hybrid matrix methods, memory-efficient optimizers, schedule-free training, small-batch corrections, and quantized optimizer states. The central empirical conclusion is deliberately non-triumphal: matrix-aware methods represent a genuine advance, but there is no context-independent replacement for AdamW. Rankings change with model scale, data-to-parameter ratio, batch size, schedule, parameter partition, tuning budget, and whether the target metric is tokens, FLOPs, wall-clock time, or memory. The practical consequence is a compositional view of optimizer design and a stricter protocol for evaluating optimizer claims.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28557v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Q-matrices play a central role in cognitive diagnosis within educational data mining (EDM), specifying which latent skills each assessment item requires. Data-driven Q-matrix estimation remains challenging when assessments involve many correlated skills and when real response patterns depart from idealized generative assumptions. We introduce a novel quantum sparse autoencoder (QSAE) for Q-matrix estimation, which, to the best of our knowledge, is the first application of quantum machine learning (QML) to cognitive diagnosis. Overall, the QSAE embeds each student&#x27;s binary response vector into a quantum circuit using an encoder, compresses it into a sparse latent representation, and maps that representation to the Q-matrix. We benchmark the QSAE against a classical autoencoder (CAE) across 60 simulated datasets and 9 real-world assessment datasets. The results reveal complementary strengths. Although the CAE partially achieves higher average accuracy under several simulation conditions, the QSAE is substantially more stable across replications, exhibiting lower variance in 49 of the 60 conditions. Moreover, on real assessment data, the QSAE outperforms the CAE on 6 of the 9 datasets. These findings suggest that the principal advancement of QML in this setting is not universal accuracy improvement, but enhanced robustness and capability to explore latent-structure complexity in real datasets.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01537v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28556v1" target="_blank" rel="noopener noreferrer">
-      A Complete Characterization of Tensorizable $f$-divergences
+    <a href="https://arxiv.org/pdf/2609.01509v1" target="_blank" rel="noopener noreferrer">
+      Characterizing High-dimensional Dynamics by Combinatorial-Topological Methods on a Latent Space
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Rodrigo Cruz, Flavio P. Calmon, Qian Yu</span>
+    <span class="paper-authors">Patrick Bailon, Marcio Gameiro, Brittany Gelb, William Kalies, Miroslav Kramar, Konstantin Mischaikow, Bernardo Rivas, Ewerton Vieira</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">Csiszar&#x27;s formulation of the $f$-divergence introduced a vast family of functionals for quantifying dissimilarity between probability distributions. However, many applications in statistics and information theory rely only on a few $f$-divergences, such as the Kullback-Leibler divergence, the $χ^2$-divergence, and the squared Hellinger distance. These divergences are especially useful because they admit simple compositional formulas under product measures, a property sometimes referred to as tensorization. In this work, we refine a formalism of tensorization previously introduced in the literature. Then, we show that any possible tensorization formula has a multi-affine form characterized by a single parameter, and identify all tensorizable $f$-divergences under our adopted notion of tensorization.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28556v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Combinatorial-topological methods for characterizing dynamics are rigorous, generalizable, computable, and they only require approximations, but the dimension of the phase space is a computational bottleneck to their wider application. Motivated by the growing number of machine learning techniques for obtaining lower-dimensional latent representations of dynamics, we present an initial study of combinatorial-topological techniques in the dimensionality reduction setting. We establish bounds under which an algebraic structure that organizes dynamics can be lifted from the latent space to the original system. As a corollary, one can conclude the existence of attractors within certain regions of the original phase space. The hypothesis of these results is expressed in terms of an approximate semiconjugacy between the original and latent dynamics. To demonstrate the ideas, we combine autoencoder-based models with Conley-Morse graph computations for Leslie population models, a thirteen-dimensional Mediterranean red coral population model, and the Chafee--Infante equation. While the lift of the Conley index is still an open question, the examples recover the expected algebraic topological invariants in several settings.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01509v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28554v1" target="_blank" rel="noopener noreferrer">
-      Machine learned designs of functional colloidal foldamers
+    <a href="https://arxiv.org/pdf/2609.01500v1" target="_blank" rel="noopener noreferrer">
+      A relational fabrication-to-modeling database for memristor devices
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ryan van Mastrigt, Zorana Zeravcic</span>
+    <span class="paper-authors">Lai Gan, Guoyang Huang, Deepika Yadav, Spyros Stathopoulos, Ben D. Rowlinson, Themis Prodromakis</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">A protein&#x27;s function follows from the structure it adopts, and which structure that is depends on the pathway taken. In programmable matter the target is fixed before assembly, and whatever else forms is treated as error. Here we show that pathways themselves form a design space. Using reinforcement learning, we fold model DNA-coated droplet chains into rigid two-dimensional geometries, uncovering two classes of pathways: downhill, in which bonds are only added, and detour, in which bonds are broken and remade before the target is reached: for some the only route that exists. Coarse-graining pathways by interactions gives experimentally realizable protocols. Some produce one geometry, others several: structures sharing a detour route can be cycled between, while those that coexist assemble into superstructures inaccessible to a uniform product. Function emerges from the pathways rather than being designed. Designing the process instead of the components could give colloidal materials that reconfigure and repair themselves on demand.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28554v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Resistive random access memory (RRAM) devices, also known as memristors, are highly dependent on fabrication, location on the wafer, and measurement protocols. However, openly available large-scale memristor datasets remain scarce, particularly those that combine experimental metadata with electrical measurements and preserve explicit links across the experimental workflow. Here, we present a comprehensive relational database of automated electrical characterization data from oxide-based memristors. The database links 6,190 memristor devices across TiN/HfOx/TiN, Pt/TiOx/AlOy/Pt, and Pt/TiOx/Pt stacks to 161,006 validated experiments and over 169 million electrical point records. It integrates fabrication, wafer mapping, electrical characterization, and modeling to describe electroforming, current-voltage non-linearity, memory windows (R_off/R_on), switching dynamics, and short-term volatility. Released as a normalized and indexed SQLite database with schema documentation, graphical user interfaces, and examples of empirical modeling, this resource supports provenance-aware querying, statistical analysis, and data-driven applications for the development of future memristor technologies.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01500v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28550v1" target="_blank" rel="noopener noreferrer">
-      ExoMOD II. A Statistical Model of Transit Timing Variations in Kepler Multi-Planet Systems
+    <a href="https://arxiv.org/pdf/2609.01492v1" target="_blank" rel="noopener noreferrer">
+      Accelerating dynamic simulations of photoexcited materials and their evolution by electron-informed machine learning
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">David Nesvorny, Daniel A. Yahalomi, David Kipping, Cristian Beauge, Sarah C. Millholland</span>
+    <span class="paper-authors">Yunzhe Jia, Fankai Xie, Yunfei Bai, Miao Liu, Cui Zhang, Sheng Meng</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">In Paper I (Nesvorný et al. 2026), we forward modeled transit observations of the Kepler telescope to characterize the orbital properties of close-in planetary systems. The new population model, ExoMOD, was calibrated on Kepler&#x27;s DR25 data. Here we use ExoMOD to statistically predict Transit Timing Variations (TTVs) from gravitationally interacting planets in the close-in systems, and compare these predictions with TTVs actually detected in the Kepler data. We find that planet-planet interactions are not expected to produce significant {\it short-period} TTVs, $P_{\rm TTV}/P_{\rm orb}&lt;10$, where $P_{\rm TTV}$ and $P_{\rm orb}$ are the TTV and orbital periods, often enough to explain the short-period TTV signals inferred from the Kepler data. Most measured short-period signals must therefore have a different origin. The statistics of {\it long-period} TTVs -- likely arising from the gravitational interaction between planets -- indicates that single transiting planets have TTV-inducing companions nearly as often as doubles, thus ruling out multiplicity distributions with a prevalence of intrinsic singles. The fraction of planets with measured long-period TTVs increases to $\simeq 15$-18\% for observed multiplicities $m \geq 3$, suggesting a change in the orbital architecture. High-multiplicity planetary systems have low gap complexities and probably retained a memory of their formation conditions. Ultimately, our work aims at developing a more informative feedback between observations and planet formation theories.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28550v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Nonadiabatic coupled electron-nuclear dynamics upon electronic excitation underpin the microscopic mechanism and rational modulation of diverse photoinduced functional phenomena in materials, yet their direct first-principles simulations remain computationally demanding. Here we develop a framework for nonadiabatic excited-state machine-learning molecular dynamics (EMLMD) simulations, where the nonequilibrium electronic information upon photoexcitation such as electron temperature is rigorously calibrated from high-precision real-time time-dependent density functional theory (rt-TDDFT) benchmark simulations, enabling accurate reconstruction of excited-state potential energy surfaces (PES). This framework natively incorporates the excited-state electron-phonon couplings and intrinsically captures photoinduced phonon anharmonicity, both of which are missing in standard machine learning molecular dynamics, thus delivering first-principles-level accuracy for excited-state atomic evolutions. Large-scale EMLMD simulations resolve time- and momentum-resolved phonon dynamics in photoexcited materials, directly uncovering the competition between photogenerated coherent phonons and thermal phonons during photoinduced phase transition of bismuth. It also simultaneously resolves elusive atomic-scale microscopic dynamics and global structural rearrangement for selenium photoamorphization. Balancing high accuracy and efficiency, EMLMD offers a versatile paradigm to tackle key challenges in the study of complex excited-state molecular dynamics.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01492v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28548v1" target="_blank" rel="noopener noreferrer">
-      ExoMOD I. A Forward Model for the Orbital Architecture of Kepler Multi-Planet Systems
+    <a href="https://arxiv.org/pdf/2609.01466v1" target="_blank" rel="noopener noreferrer">
+      Parsing the Stream: A Live Trace Model for Long-Horizon Agents and Their Observers
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">David Nesvorny, Daniel A. Yahalomi, David Kipping, Cristian Beauge</span>
+    <span class="paper-authors">Egor Pakhomov, Erik Nijkamp</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">Transit observations only detect planets with favorable, near edge-on orientation of orbits as seen by a distant observer, which leaves much freedom for various interpretations in terms of the underlying planetary system architecture. Here we forward model transit observations of the Kepler telescope to characterize the orbital properties of close-in planetary systems. We make sensible choices about the underlying distributions of planet radii, masses and orbital periods, parameterize the orbital excitation with the Angular Momentum Deficit (AMD), and adopt an accurate method to account for transit detection. The fits to Kepler&#x27;s DR25 data are executed with {\tt MultiNest}. We find that the orbital period distributions of Kepler singles and multis are statistically different from each other -- possibly a consequence of Kepler&#x27;s observational baseline. The observed gap complexity distribution is reproduced when planets in high multiplicity systems ($m \geq 5$) are assigned ideally correlated period ratios. The high-multiplicity systems probably retained a memory of their formation conditions. The gap complexity metric also helps to constrain the AMD distribution. We find that systems with positive radius monotonicities typically harbor smaller planets, as expected if the radius monotonicity is influenced by non-detections. A FGK dwarf in the Kepler field should host $\simeq 2.4 \pm 0.2$ planets on average with radii $0.5 &lt; R_{\rm pl}/R_\oplus &lt; 7$ and orbital periods $3&lt;P_{\rm orb}&lt;300$ d. For a detected planetary system, there is roughly a 50\% chance that Kepler transit observations missed at least one inner or intermediate-period planet.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28548v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">A long-horizon agent&#x27;s trace outgrows both of its consumers: the human observer monitoring the run, and the agent itself, whose bounded context the trace must be folded back into. We present a live trace model, an append-only event ledger folded incrementally into typed run state and compiled into per-consumer views, and evaluate it for both consumers against deterministic ground truth. For the observer side, evaluated with an LLM reader as proxy, the compiled view answers monitoring questions using approximately 14x and 15x fewer input tokens (by reader) and at 5-7x lower cost than a budget-capped single-call reading of the raw trace, with higher accuracy (0.85-0.87 versus 0.48). Because the questions were co-designed with the view schema, we treat the token and cost reduction, conditional on schema coverage, as the transferable result. For the agent, on 120-link sequential-dependency tasks, mechanisms that maintain the task&#x27;s running statistic in per-step state succeed where full-context prompting fails (30/30 versus 8/30 under a clean protocol, n=30, labeled descriptive owing to benchmark-system co-development); a prompt-level scratchpad matches the fold&#x27;s accuracy at lower cost, and a two-arm decomposition attributes the fold&#x27;s accuracy to its deterministic aggregate and its cost advantage to its compactness. The fold&#x27;s remaining value over cheaper alternatives is deterministic auditability and serving the observer from the same state. We derive eleven candidate requirements for trace folding from observed failures and delimit them with an order-sensitive task family on which the fold ceases to help. Code, benchmarks, a regenerable synthetic corpus, and all workbench traces are released.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01466v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28535v1" target="_blank" rel="noopener noreferrer">
-      Hardware-Efficient Error Mitigation and Shot-Efficient Sampling on IBM Quantum Hardware
+    <a href="https://arxiv.org/pdf/2609.01437v1" target="_blank" rel="noopener noreferrer">
+      HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Sumit Chongder</span>
+    <span class="paper-authors">Yuhao Wu, Jingyuan Zhang, Jiajun Shi, Xinping Lei, Qingshui Gu, Yuxuan Zhang, Zexuan Wang, Chen He, Chen Huang, Maojia Song, Zhiyuan Zeng, Shaowen Wang, Jinkai Liu, Yunfeng Shi, Jiaheng Liu, Shen Yan, Wenhao Huang, Ge Zhang, Wenxuan Zhang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">We experimentally study error mitigation and finite-shot sampling on superconducting quantum hardware under a constrained execution budget. The study combines calibration-aware qubit selection, circuit-depth scaling, zero-noise extrapolation, dynamical decoupling, readout-error mitigation, and repeated-shot estimation on an IBM Quantum processor. Experiments are organized across ideal simulation, noise-model simulation, and physical-device execution to separate sampling uncertainty from device-induced error. We investigate how mitigation performance changes with circuit depth, effective noise scale, qubit connectivity, and measurement budget, and quantify accuracy using expectation-value error, mean-squared error, statistical uncertainty, and mitigation gain. A fixed hardware-execution budget is used to evaluate shot allocation strategies and repeated measurements without relying on unlimited sampling. The resulting analysis provides a hardware-aware characterization of when mitigation improves expectation-value estimation and when finite-shot fluctuations offset the benefit of additional mitigation overhead. The implementation uses contemporary Qiskit and IBM Quantum Runtime workflows and is designed to provide reproducible experimental evidence for error-mitigation studies on current quantum processors.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28535v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">As agents move from research prototypes to deployed tools, their capability increasingly depends on model-external execution infrastructure, commonly termed the agent harness. Changing this harness while holding model weights fixed can substantially alter task performance. Current agent evaluations typically report downstream performance under a chosen harness, leaving a model&#x27;s ability to develop the harness itself comparatively underexplored. We introduce HarnessDev, a benchmark that shifts the unit of evaluation from task outputs to runnable infrastructure. HarnessDev covers two stages. In Creation, the agent starts from a minimal seed and a small number of cases, then builds a complete execution system. In Evolution, it starts from its own created harness and iteratively revises it using downstream execution feedback, with the goal of improving benchmark performance. We then evaluate each constructed harness on capability (task success on held-out benchmarks) and efficiency (execution-token cost). The reported Creation results cover six creator LLMs, four domains, and five downstream benchmarks totaling 2,207 unique downstream instances, with hidden evaluation tasks withheld from development. We find that generated harnesses remain substantially behind mature human-engineered references on code and on search and research, while matching or exceeding the selected references on writing and machine-learning experimentation, with large variation in execution cost. Evolution produces some performance gains, but they are unstable and transfer only partially to held-out tasks. Experiments with a fixed runtime model further show that the gains depend strongly on the model executing the harness, indicating limited transfer across models.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01437v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28530v1" target="_blank" rel="noopener noreferrer">
-      On Nonsmooth and Relatively Weakly Convex Minimization
+    <a href="https://arxiv.org/pdf/2609.01435v1" target="_blank" rel="noopener noreferrer">
+      Gaussian Processes on Directed Metric Graphs
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Chen Jiang, Jiawen Bi, Shuzhong Zhang</span>
+    <span class="paper-authors">David Bolin, Alexandre de Bustamante Simas, Erik Karlsson Strandh, Jonas Wallin</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">Composite optimization plays a central role in modern machine learning and signal processing, as it offers a natural balance between data fidelity and structural properties. In this paper, we study composite optimization in the setting where both components are nonsmooth and nonconvex. We start with a deterministic Bregman proximal subgradient method that converges under subgradient upper-bound conditions. This approach relaxes the standard requirement on the convexity of the regularization term, thus accommodating a broader range of applications. To extend this to the stochastic regime, we develop a model-based minimization method under a relative Lipschitz condition and establish a convergence rate of $\mathcal{O}(\varepsilon^{-4})$. We also extend the framework with convergence guarantees to the setting where the distance generating function and its gradient are accessible only through a stochastic oracle.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28530v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We introduce a statistical framework for Gaussian fields indexed at arbitrary edge locations on general compact directed metric graphs. The construction is based on a stochastic differential equation with a first-order operator and conditions at the vertices. We characterise well-posedness and identify the covariance reproducing kernel Hilbert space. We also connect the proposed framework to earlier stream-network models, showing that these arise from the same system under particular boundary conditions, and introduce new boundary conditions that yield more physically realistic processes. The differential-equation representation enables computationally efficient inference and prediction. This makes the method applicable to large data sets without approximation. Applications to temperature modelling on river networks and traffic speeds on road networks illustrate the framework, including the computational efficiency and improved performance under physically informed vertex conditions.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01435v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28525v1" target="_blank" rel="noopener noreferrer">
-      A physics-constrained machine-learning sub-grid-scale modeling approach for turbulent premixed flames
+    <a href="https://arxiv.org/pdf/2609.01430v1" target="_blank" rel="noopener noreferrer">
+      Learning Sparse Decision Trees via Transformer Variational Auto-Encoders
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Seung Won Suh, Jonathan F. MacArt, Luke N. Olson, Jonathan B. Freund</span>
+    <span class="paper-authors">Giacomo Fidone, Alessio Cascione, Riccardo Guidotti</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">A physics-embedded training framework is used to close the sub-grid-scale dynamics of turbulent premixed flames. The trained model augments the resolved flow equations and is trained to match its predicted flow field to trusted data. An end-to-end optimization of the coupled resolved equations and embedded model leads to a model that is robust and effective for a freely propagating premixed flame in turbulence, modeled by a single-species, single-step, and irreversible chemical reaction. Important constraints are built into the training formulation for conservation, scalar boundedness, and equivariance. The model is scaled based on the residual of the resolved flow equations to focus its influence where the closure is needed. It outperforms other cases considered --- no-model, dynamic closure, and the same machine learning model trained directly to fit the residual data --- for a long-time simulation, correcting the turbulence dissipation and flame kinematics. Finally, it is shown how the prediction-based training better informs the model than the precise residual data.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28525v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Decision trees are among the most widely used models in machine learning, largely due to their transparent decision logic, making them well-suited for high-stakes decision-making contexts. However, most existing learning algorithms focus on predictive performance, overlooking the joint optimization of other desirable properties, such as structural sparsity. In this work we propose TREVIS, an approach for learning decision trees with respect to complex objectives, based on the exploration of the latent space of a Tree Transformer Variational Auto-Encoder (TTVAE). By mapping decision trees onto latent representations, TREVIS replaces the discrete search space with a continuous one, enabling gradient-based optimization via a differentiable surrogate model. We experiment with TREVIS for learning decision trees that jointly optimize predictive performance and sparsity. Results show that TREVIS discovers decision trees matching the predictive performance of existing near-optimal algorithms while improving their structural sparsity.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01430v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28516v1" target="_blank" rel="noopener noreferrer">
-      A reaction volume bias Monte Carlo trial for sampling chemisorption in confinement
+    <a href="https://arxiv.org/pdf/2609.01413v1" target="_blank" rel="noopener noreferrer">
+      Sharp Threshold for Universality of Rational Canonical Forms over a Finite Field
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Samiha Sharlin, Harold W. Hatch, Daniel W. Siderius, Tyler R. Josephson</span>
+    <span class="paper-authors">Jiahe Shen</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">Molecular modeling of chemisorption with Monte Carlo requires the development of new trial moves to efficiently sample complex fluids such as water in Bronsted acid zeolites. Here, we develop a reaction volume bias (RxVB) Monte Carlo trial for modeling chemisorption by combining identity-switch and aggregation-volume-bias (AVB) moves. This method aims to promote the sampling of reactions by choosing reactive pairs that are within an arbitrarily specified reaction volume. The RxVB move achieves up to a 90-fold increase in accepted reaction events over unbiased moves in a single-site slit-pore model, corresponding to a 70-fold gain in statistical efficiency after accounting for computational overhead. But when the same move is applied to water in a Bronsted acid zeolite without orientational bias, there is no measurable speedup for a single MFI unit cell. We demonstrate a simple expression that predicts the maximum efficiency increase in the simplest case where selecting reactants that are near each other is the major sampling bottleneck. Dense water systems may require additional configuration-bias or orientational bias to improve sampling of the hydrogen bond network in order to increase acceptance. This new RxVB trial was made available with examples in the open-source Free Energy and Advanced Sampling Simulation Toolkit (FEASST) simulation package.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28516v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We study the rational canonical form of sparse random matrices over a finite field. Suppose $A_n\in \operatorname{Mat}_n(\mathbb{F}_p)$ has independent and $α_n$-balanced entries. We prove that if $$ \liminf_{n\to\infty}\frac{nα_n}{\log n}&gt;1, $$ then, for every fixed collection of distinct monic irreducible polynomials over $\mathbb{F}_p$, the corresponding primary partitions of $A_n$ converge jointly to the same asymptotically independent Cohen-Lenstra distributions as in the uniform model studied by Fulman in his thesis. The sharp sparsity threshold for the full rational canonical form coincides with the threshold previously obtained by Lee for finite-field cokernels and by Jung-Lee-Yu for random matrix models over $\mathbb{Z}_p$. Our proof is based on the surjection moment method over the function field $\mathbb{F}_p[t]$, applied to the finite module $\operatorname{Cok}_{\mathbb{F}_p[t]}(tI_n-A_n)$, whose primary decomposition records the rational canonical form. We also construct degree-$d$ critical sparse obstructions, suggesting a polynomial-dependent threshold $1/d$ for statistics associated with irreducible polynomials of minimal degree $d$.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01413v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28513v1" target="_blank" rel="noopener noreferrer">
-      Machine-learning-assisted multiscale topology optimization of functionally graded superimposed lattice structures
+    <a href="https://arxiv.org/pdf/2609.01410v1" target="_blank" rel="noopener noreferrer">
+      On the Reliability of Generative Augmentation: A Wasserstein-Based Theoretical and Empirical Study
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Prashant Kumar Gupta, Jonathan Stollberg, Dominik Schillinger, Mohammad Ashraf Iqbal</span>
+    <span class="paper-authors">Chathurika S Abeykoon, Mathias Nthiani Muia, Mallory Goldstein</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">Functionally graded lattice structures enable lightweight designs with spatially tunable stiffness and density, but their use in multiscale topology optimization is limited by the cost of repeated computational homogenization. This work presents a machine learning-assisted multiscale optimization framework for regular superimposed lattice structures. The unit cell is formed by combining body-centered cubic, face-centered cubic, and simple cubic lattice components, each controlled by an independent geometric parameter. Offline computational homogenization is used to generate effective stiffness data, which are then used to train a Cholesky-constrained neural network surrogate. This representation reconstructs the homogenized stiffness tensor in a physically admissible form. A separate neural network is trained to predict relative density from Monte Carlo-based density estimates. We incorporate our surrogates into a two-stage topology optimization strategy. First, a macroscale topology is obtained using the solid isotropic material with penalization (SIMP) method. The resulting solid region is then used for microscale lattice optimization, where the local lattice parameters are updated using the method of moving asymptotes (MMA). The trained stiffness and density surrogates replace repeated online homogenization during this stage. The method is demonstrated on a three-dimensional Messerschmitt-Bölkow-Blohm (MBB) beam benchmark, producing spatially varying lattice parameters and relative density fields consistent with compliance minimization under a material constraint.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28513v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Generative data augmentation is widely used to mitigate class imbalance, yet its theoretical effect on downstream generalization remains poorly understood. In this work, we develop a statistical framework for conditional generative augmentation and analyze its impact on classification risk. We formalize augmentation as a distribution-mixing process and show that the resulting risk distortion is controlled by both the augmentation strength and the class-conditional Wasserstein discrepancy between real and generated distributions. We further derive a capacity-dependent generalization bound based on Rademacher complexity, revealing an explicit trade-off between hypothesis complexity, augmentation intensity, and generative fidelity. Empirically, we evaluate the framework on binary and multiclass imbalanced classification tasks using Conditional GAN and Conditional WGAN-GP augmentation. Across datasets, CWGAN-GP consistently achieves lower Wasserstein discrepancies than CGAN, indicating improved distributional fidelity. However, improved fidelity does not necessarily translate into superior classification performance, with classical oversampling methods often remaining competitive. These findings support the central theoretical prediction that augmentation reliability is governed by distributional approximation error rather than predictive performance alone. Overall, this work establishes generative augmentation as a distributional perturbation process whose reliability can be quantified through Wasserstein-based measures and supported by finite-sample generalization guarantees. The proposed framework provides a principled foundation for evaluating synthetic data quality beyond classification accuracy alone.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01410v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28499v1" target="_blank" rel="noopener noreferrer">
-      REPLICANT: Learning Policies for Evading and Hardening Malware Detectors
+    <a href="https://arxiv.org/pdf/2609.01408v1" target="_blank" rel="noopener noreferrer">
+      Neuro-Symbolic Geometric Abstraction (NeuSOGA): From Observations to Symbolic Mathematical Representations
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Shae McFadden, Ilias Tsingenopoulos, Mario D&#x27;Onghia, Alexander Herzog, Myles Foley, Chris Hicks, Lorenzo Cavallaro, Fabio Pierazzi</span>
+    <span class="paper-authors">Qingde Li, Qingqi Hong, Jie Tian</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">To determine the real-world effectiveness of machine learning based malware detection, it is vital to evaluate its robustness against highly capable adversaries. However, state-of-the-art attacks do not effectively model realistic adversaries, as they often assume access to privileged information such as the training data, feature space, or confidence scores of the target. In this work, we present Replicant, a deep reinforcement learning framework that learns the realistic task of evasion under a strict label-only black-box threat model. Replicant learns a reusable policy on how to modify a malware sample and when to query the target, which transfers across samples, detectors, and feature spaces. Across seven Android malware detectors and three feature spaces, Replicant is the strongest and most query-efficient approach achieving a mean attack success rate of 78.8%, a relative improvement of 20.9%-39.2% over the state-of-the-art. Furthermore, when used for adversarial training, Replicant also outperforms the state-of-the art by producing detectors with more generalizable robustness. With Replicant we demonstrate that learning the task of evasion not only results in stronger attack performance but, crucially, provides a better signal for hardening malware detectors.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28499v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">A fundamental challenge in artificial intelligence is the transformation of observations into explicit symbolic representations suitable for abstraction, interpretation, and reasoning. While modern AI systems achieve remarkable perceptual capabilities through large-scale statistical learning, the resulting knowledge is typically encoded within latent parameters that are difficult to inspect or manipulate analytically. Inspired by Neuro-Symbolic AI and theories of human abstraction, this paper investigates the formation of symbolic mathematical representations from geometric observations. We propose NeuSOGA (Neuro-Symbolic Geometric Abstraction), a framework that progressively transforms observations into topological abstractions, geometric abstractions, and ultimately symbolic mathematical representations. The architecture combines topology-guided structural discovery using Euclidean Distance Transforms, foundation-model perception using Segment Anything, adaptive multi-scale geometric abstraction, and symbolic synthesis through Implicit Area Splines. The resulting representation is an analytical implicit model supporting arbitrary-order smoothness, additive composition, and closed-form evaluation. Unlike neural latent encodings, the generated representation remains interpretable, editable, and mathematically explicit. Experiments on ModelNet40 point clouds, arbitrary-view projections, and segmented optical observations demonstrate that NeuSOGA transforms diverse observations into compact symbolic representations while preserving essential geometric and topological structure across sensing modalities and viewing directions. NeuSOGA provides an interpretable and explainable pathway from observation to symbol and establishes</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01408v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28495v1" target="_blank" rel="noopener noreferrer">
-      Automated Dislocation Detection in Electron Channelling Contrast Imaging: A Comparative Study of Rule-Based, Neural Network, and Deep Learning Approaches
+    <a href="https://arxiv.org/pdf/2609.01397v1" target="_blank" rel="noopener noreferrer">
+      Measuring consistency via ensemble margin and local prediction variability: Auditing decision systems in the presence of predictive multiplicity
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">A. Holmes, C. Trager-Cowan, J. Bruckbauer, B. Hourahine</span>
+    <span class="paper-authors">Sinjini Banerjee, Tim Marrinan, Anand D. Sarwate</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">Quantifying threading dislocations in semiconductor materials via electron channelling contrast imaging (ECCI) is heavily bottlenecked by slow manual analysis. This work benchmarks three automated detection pipelines on ECCI micrographs of gallium nitride (GaN) against a statistical ground truth. A classical rule-based computer vision approach proved unreliable due to extensive per-image tuning requirements, while a convolutional neural network (CNN)-based multi-stage classification and locator method achieved 87% accuracy but required significant time for a test image and was less efficient in high-density regions. By contrast, a unified single-stage you only look once (YOLOv8) architecture achieved a counting accuracy of 98.6%, alongside 98.7% precision and 98.7% recall across 7451 dislocations over multiple images, with rapid inference times. Successful deployment of YOLOv8 required addressing two domain-specific machine learning challenges. First, to mitigate the model&#x27;s scale sensitivity, an adaptive gaussian tile-sizing algorithm was developed to optimise the field of view per image. Second, the deployed confidence threshold (0.025) differed substantially from the suggested inference default value for YOLOv8 (0.25), raising counting accuracy from 90.8% to 99.3% on a subsection of the benchmark image. In this case, low confidence scores represented physical signal strength rather than classification ambiguity. This unified, scale-adaptive approach demonstrates practical viability for high-throughput, quantitative semiconductor defect characterisation.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28495v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The Rashomon effect is a machine learning phenomenon where equally accurate models produce different predictions for the same inputs (predictive multiplicity). Existing work primarily focuses on multiplicity within individual models, but in more complex decision systems, the impact of the Rashomon effect is less well understood. In this work, we study multiplicity from the perspective of auditing incorrect ensemble predictions, where the decision to divert an instance for human review is based on a consistency criterion that combines the ensemble margin with a measure of local prediction variability for each constituent model. With mild assumptions about stability and smoothness, we show that the consistency scores of finite ensembles converge to the corresponding consistency score of the expected model from the Rashomon set as the ensemble size and the number of samples used to measure local prediction variability increase. To demonstrate the efficacy of the proposed criterion, we evaluate the framework with respect to transformer models applied to natural language understanding tasks and parameter-efficient fine-tuning of large language models used for tabular data classification tasks. Our experiments show that ensembling models from the Rashomon set substantially reduces the risk of incorrect predictions going unchecked compared with auditing a single model, while incurring only a moderate increase in the number of diversions. Moreover, the auditing behavior of the full Rashomon set can be closely approximated by finite ensembles of relatively modest size, with the risk approaching zero for some datasets. We further demonstrate that the proposed measure exhibits stronger agreement with established predictive multiplicity metrics than existing consistency measures, providing a more reliable way to capture multiplicity in the Rashomon set.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01397v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28474v1" target="_blank" rel="noopener noreferrer">
-      Structural Change and Random Graph Models in Global Oil Trade Networks
+    <a href="https://arxiv.org/pdf/2609.01395v1" target="_blank" rel="noopener noreferrer">
+      Quasi-normal-mode signatures of periodicity and hyperuniformity
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Anthony Bonato, Vincent Luong, Kyne Santos</span>
+    <span class="paper-authors">V. Romero-García, M. Martí-Sabaté, V. F. Dal Poggetto, L. M. García-Raffi, M. Lázaro</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">We studied structural change in global oil trade using a network approach. Using UN Comtrade data, we examined the temporal evolution of international trade networks, with an emphasis on crude oil. Weighted in-degree identified major changes in country rankings in 1991, 2011, 2017, and 2021, while PageRank detected pronounced changes around 1991 and 2024. The Louvain algorithm identified clear geographic communities within the overall trade network. In the oil trade network, modularity declined from the 1990s to the 2010s, with node2vec embeddings showing weaker clustering in 2011 than in 1991. We also compared the oil trade network with several random graph models using 3- and 4-node subgraph profiles and machine learning classification. The oil trade network was consistently classified as a Chung-Lu graph, while the Geometric model was not favored, suggesting that a model based on the degree distribution better matched its subgraph profiles than the other models considered.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28474v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Hyperuniform materials occupy an intermediate regime between periodic order and conventional disorder, characterized by a suppression of long-wavelength density fluctuations, commonly quantified by the structure factor. This characterization, however, relies on the statistical properties of an extended configuration or supercell representation and does not directly describe the resonant response of a finite structure, as typically encountered in scattering experiments. Here, we introduce the quasi-normal-mode spectrum as a complementary framework for characterizing the wave properties of finite stealthy hyperuniform materials. We analyze the complex eigenfrequencies of both periodic and stealthy hyperuniform structures over a range of the stealthiness parameter ($χ$), and investigate how the spatial organization of scatterers is encoded in both frequency and spatial profiles of their quasi-normal modes. We find systematic changes in the quasi-normal modes spectrum as the degree of hyperuniformity is varied, revealing signatures that are not captured solely by the structure factor. In particular, the evolution of the resonant states provides a direct connection between structural correlations and the scattering response of finite systems. Our results establish quasi-normal modes as a real-space and open-system characterization of hyperuniformity and provide a unified framework for comparing discrete heterogeneous materials from the perspective of their scattering and resonant dynamics.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01395v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28440v1" target="_blank" rel="noopener noreferrer">
-      From quantum reservoirs to quantum extreme learning machines through a nearest-neighbor spin chain with tunable quantum memory
+    <a href="https://arxiv.org/pdf/2609.01375v1" target="_blank" rel="noopener noreferrer">
+      IntroConformal: Conformal Factuality Guarantees for Large Vision-Language Models via Introspective Signals
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Carlos Ramon-Escandell, Arnau Riera, Marcin Płodzień</span>
+    <span class="paper-authors">Md. Atabuzzaman, Christian Alexander, Chris Thomas</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">Quantum Reservoir Computing (QRC) processes temporal data by retaining a memory of past inputs in the recurrent state of a quantum system, whereas a Quantum Extreme-Learning Machine (QELM) discards that memory, resetting the system at every step so that only the most recent input shapes the response. The two are usually treated as separate computational paradigms. We show that they are the two limits of a single architecture, connected by the input-encoding length, that is, the number of qubits overwritten with fresh data at each step. When a single qubit is re-encoded the system operates as a standard QRC, when the whole register is re-encoded it operates as a QELM, and intermediate lengths interpolate between them. The overwritten qubits hold the recent past in an explicit register, while the remaining qubits are never reset and carry older inputs forward in their evolving quantum state, so the encoding length redistributes memory between explicit and recurrent storage at fixed system size. Tuning the reservoir Hamiltonian and the evolution time with Bayesian optimization at each encoding length, we find that recurrent quantum memory is essential when a task must reach far into the past, and dispensable when the relevant history is short, where the memoryless reset limit already suffices. For every task the best reservoirs operate at the edge of chaos, where they perform as well as a densely connected reservoir with random all-to-all couplings of the same size, indicating that what temporal processing requires is the dynamical regime rather than the connectivity.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28440v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Large Vision-Language Models (LVLMs) have achieved strong multimodal performance, yet ensuring the factual correctness of generated content remains challenging. Existing methods that provide statistical guarantees on factuality typically rely on external verifiers or generation-time confidence signals, which introduce auxiliary dependencies or often fail for confident but incorrect outputs. We argue that reliable factuality control can instead be achieved through introspective signals derived from the model itself. We introduce IntroConformal, a training-free Conformal Risk Control (CRC) framework that provides finite-sample, distribution-free factuality guarantees. We first instantiate it with layer-wise semantic stability, a conformity score derived from hidden-state representations, and then propose verification probability, a stronger score capturing the model&#x27;s self-administered judgment on claim factuality. Across multiple LVLM architectures, IntroConformal satisfies the conformal risk guarantee while substantially reducing abstention and achieving competitive or superior claim-level discrimination relative to external verifier-based baselines.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01375v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28408v1" target="_blank" rel="noopener noreferrer">
-      SymboLLM-FE: LLM-Accelerated Symbolic Regression for Automated Feature Engineering on Tabular Data
+    <a href="https://arxiv.org/pdf/2609.01360v1" target="_blank" rel="noopener noreferrer">
+      EDGE: Error Dependency Graph-Guided Multi-Error Attribution in Multi-Agent LLM Systems
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Zi-Jian Cheng, Zi-Yi Jia, Zhi Zhou, Yu-Feng Li, Lan-Zhe Guo</span>
+    <span class="paper-authors">Jun Hou, Priya Pitre, Yi Fang, Xuan Wang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">Tabular data, as a core data format in machine learning, often lacks the discriminative power needed for high-performance modeling due to insufficient feature informativeness. Automated Feature Engineering (AutoFE) overcomes this by automating feature generation and selection, ensuring both model performance and operational efficiency. However, traditional AutoFE often yield features with poor interpretability because they rely on blind mathematical transformations, while large language models (LLM)-based AutoFE faces challenges in requiring costly multi-round iterations to generate high-utility features to effectively enhance model performance, compounded by inherent risks of bias and hallucination. In this paper, we combine symbolic regression with LLMs for feature engineering (SymboLLM-FE) to solve these challenges. We extract mathematically expressive formulas strongly correlated with the target via symbolic regression, which can enhance model performance, then refine them by LLMs with rich prior knowledge to ensure interpretability. Empirical results on six real-world datasets and four Kaggle competitions demonstrate that SymboLLM-FE outperforms existing AutoFE. SymboLLM-FE also addresses the dual challenges of poor interpretability and numerous iterations by employing a statistical prior-grounded LLM refinement mechanism and single-digit LLM calls.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28408v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Large language model (LLM) agent failures often contain multiple related errors rather than a single mistake. Existing attribution methods usually identify a responsible agent, step, or root cause, but do not explicitly model dependency between errors. We introduce EDGE, an Error Dependency Graph-guided multi-Error attribution framework. EDGE constructs an error dependency graph from observed error events and validates a reliable causal subset through counterfactual rollout. The inference graph guides a two-stage LLM-as-judge detector for error attribution, and the intervention-validated subgraph provides a more reliable basis for explanation and repair analysis. Experiments on TRAIL and MAST show that EDGE improves category-level multi-error attribution across most evaluated models and settings. Experiments with adapted Who&amp;When-style prompts show that the graph helps across prompting strategies. These results suggest that dependency structure is a useful diagnostic prior for agent failures beyond isolated root-cause prediction.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01360v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28402v1" target="_blank" rel="noopener noreferrer">
-      VERA-8B: Evidence-Grounded Audit Risk Reasoning from SEC Filings
+    <a href="https://arxiv.org/pdf/2609.01357v1" target="_blank" rel="noopener noreferrer">
+      PopPert: Population-level Joint-Distribution Modeling for Single-Cell Perturbation Prediction
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Menghan Liu, Elynn Chen</span>
+    <span class="paper-authors">Handong Wang, Jiaxin Qi, Haochen Feng, Baisheng Lai</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">Across audit applications, judgments must be supported by reasonable evidence. However, standard financial language models prioritize fluency over evidence. They are built for general financial reasoning and may produce plausible but ambiguous answers, creating a grounding gap that makes them unsuitable for audit work. We address this gap with VERA-8B, a new end-to-end audit reasoning system that identifies audit risks before enforcement actions occur. Constructing such a model raises several challenges, as no prior machine learning work targets pre-enforcement audit prediction. To our knowledge, we are the first to unify SFT and GRPO for evidence-grounded audit reasoning under one evidence standard, achieving performance that surpasses all evaluated baselines. Because auditing cannot tolerate unsupported claims, we introduce abstention and uncertainty qualification to defer uncertain or evidence-incomplete cases. Finally, we design an AuditBridge to ground model reasoning for practical audit work. It transforms raw filings into verified records and then into reviewer-ready reports, bridging finance and computation with broad generality. Together, these components produce auditable, review-ready outputs suitable for practical audit work.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28402v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Predicting transcriptional responses to specific perturbations is critical for understanding cellular regulatory mechanisms and accelerating drug discovery. Single-cell RNA sequencing destroys each measured cell, yielding only unpaired populations of control and perturbed cells. However, existing methods typically model perturbation prediction at the single-cell level and assume cell-to-cell correspondence, which conflicts with the unpaired nature of the observed data. To address this challenge, we propose PopPert, a framework that explicitly parameterizes population-level joint gene expression distributions for collective transcriptional state modeling. Given a control population distribution and a perturbation condition, PopPert predicts perturbation-induced changes in distribution parameters, eliminating the need for cell-level correspondence and reducing sensitivity to single-cell noise. To effectively capture gene co-expression patterns, PopPert leverages a low-rank Gaussian Copula to model cross-gene statistical dependencies and construct the joint gene expression distribution, additionally allowing sampling of synthetic perturbed single-cell profiles. Across multiple single-cell benchmarks spanning both genetic and chemical perturbations, PopPert achieves superior overall performance in differential expression recovery, perturbation effect estimation, and population-level distribution matching. These results establish population-level joint distribution learning as an effective paradigm for predicting transcriptional responses from unpaired single-cell populations. Code for PopPert is publicly available at https://github.com/whd1125/PopPert.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01357v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2608.28396v1" target="_blank" rel="noopener noreferrer">
-      Sustainability of Open-Source Machine Learning Robustness Assessment Tools: A Repository Mining Study
+    <a href="https://arxiv.org/pdf/2609.01355v1" target="_blank" rel="noopener noreferrer">
+      Exact Risk-Complexity Laws for Projective Boundaries in Scenario Optimization and Distribution-Free Certification
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Joshua Owotogbe, Indika Kumara, Willem-Jan van den Heuvel, Damian Tamburri</span>
+    <span class="paper-authors">Giuseppe C. Calafiore</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-08-28</span>
+    <span class="paper-date">2026-09-01</span>
   </p>
-  <p class="paper-abstract">Robustness evaluation is essential for deploying machine-learning (ML) systems in real-world settings, where models may face adversarial perturbations, distribution shifts, and other operational stressors. Many open-source tools, including Adversarial Robustness Toolbox, Foolbox, and Robustness Gym, support robustness testing and evaluation. However, little is known about how these tools are maintained, publicly engaged with, and sustained over time, even though practitioners may rely on them to select evaluation dependencies, reproduce robustness assessments, and provide evidence for AI assurance. We present an empirical study of the open-source robustness tooling ecosystem. Starting from a curated seed set derived from prior work, we systematically searched GitHub and identified 28 robustness-tool repositories. We analyzed repository artifacts to characterize observable community engagement, maintenance activity, and project longevity using established software-engineering metrics. Our results show that engagement and maintenance are unevenly distributed, with sustained activity concentrated in a small subset of repositories. At the data collection date of January 21, 2026, five repositories were classified as active, 22 as inactive, and one as archived. These findings highlight the need to treat robustness tools as evolving software systems.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2608.28396v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Scenario optimization, conformal prediction, and related distribution-free certification methods use finite samples to construct decisions or prediction sets with violation-risk guarantees for fresh observations. In several classical settings, the conditional violation risk follows an exact beta law, whose tail has a beta-binomial representation and whose parameter is a support, calibration, or compression dimension. This paper identifies the deterministic boundary mechanism behind these formulas and derives the corresponding law when the observed boundary size is random. A decision rule is represented by an acceptance set for future observations, together with a boundary map selecting the sample points responsible for that set. The resulting pair is called a {\em proper projective boundary scheme} when held-out samples are accepted precisely if the full-sample boundary is retained, and accepted non-boundary samples can be deleted without changing that boundary. For every such scheme, the conditional law of the violation risk given the observed boundary size is determined by the boundary&#x27;s cross-sample complexity profile. A stable profile yields the usual beta law, whereas a varying profile produces an exact profile correction. The framework covers scalar order-statistic calibration, support-reconstructive scenario programs, cascaded support-removal certificates, coordinatewise envelopes, and Pareto-frontier calibration with vector scores. It also yields conditional probabilistic certificates and a no-go result explaining why observed complexity alone is insufficient.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.01355v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
