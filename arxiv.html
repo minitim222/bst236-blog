@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-09-02 03:05 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-09-09 03:18 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01598v1" target="_blank" rel="noopener noreferrer">
-      UI-VISA: U-Net Initialized Vascular Image Segmentation Architecture
+    <a href="https://arxiv.org/pdf/2609.09106v1" target="_blank" rel="noopener noreferrer">
+      A Two-Dimensional Test of Cosmological Parity Violation with the 3-Point Correlation Function
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Asees Kaur, Suzanne S. Sindi, Erica M. Rutter</span>
+    <span class="paper-authors">William Ortolá Leonard, Zachary Slepian</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">Accurate segmentation of vascular structures in digital subtraction angiography (DSA) images remains challenging due to the thin, elongated, and branching nature of blood vessels. Pixel-wise deep learning approaches such as U-Net achieve strong general-purpose segmentation performance but often produce fragmented or discontinuous predictions in fine vascular regions, since they do not explicitly enforce structural connectivity. Region growing algorithms preserve spatial context and topological continuity, but are highly sensitive to seed point initialization and can be computationally expensive. We propose UI-VISA (U-Net Initialized Vascular Image Segmentation Architecture), a hybrid pipeline that combines the complementary strengths of both approaches. UI-VISA uses U-Net&#x27;s foreground predictions as informed seed points for a CNN-guided region growing algorithm, which then iteratively refines the segmentation by enforcing local connectivity and recovering fine vessel details that U-Net alone tends to miss or over-predict. We evaluate UI-VISA against standalone U-Net and a prior region-growing-based method (VISA) using 5-fold cross-validation on 26 DSA images. UI-VISA achieves the highest mean Dice and clDice scores across folds, and a paired Wilcoxon signed-rank test shows the improvement in clDice is statistically significant ($p=0.023$), consistent with the method&#x27;s design goal of preserving vascular connectivity, while the improvement in Dice does not reach significance ($p=0.104$).</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01598v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Searches for parity violation (PV) in the Universe&#x27;s large-scale structure have recently been carried out using parity-odd modes of the galaxy 4-Point Correlation Function (4PCF). Here, we introduce a new estimator for a 3-Point Correlation Function (3PCF) that is sensitive to PV. The construction exploits the handedness of triangles formed on 2D spherical shells, where mirror-image configurations cannot be related by proper rotations within the surface. By dotting the oriented area vector with an externally-defined normal vector to the shell, we obtain sensitivity to PV. We present a discrete estimator for this statistic and also show how to correct for the survey geometry. This parity-odd 3PCF provides a complementary test of PV in galaxy surveys and a potential cross-check of PV 4PCF measurements.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.09106v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01587v1" target="_blank" rel="noopener noreferrer">
-      The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally
+    <a href="https://arxiv.org/pdf/2609.09102v1" target="_blank" rel="noopener noreferrer">
+      TILING I: Field-level Bayesian reconstruction of cosmological initial conditions during the epoch of reionization
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jundong Hu, Shekar Ramachandran</span>
+    <span class="paper-authors">Nikolaos Triantafyllou, Andrei Mesinger, Steven Murray, Samuel Gagnon-Hartman</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">Post-training quantization (PTQ) is widely used to reduce the cost of serving large language models (LLMs), but its accuracy cost is uneven and is often tuned per model. We study where quantization damage occurs and how to allocate a small additional precision budget. Using causal mixed-precision intervention as ground truth (raise each layer to 8-bit in turn and measure the accuracy it recovers) across 9 open-weight models in 4 architecture families, we test 3 intuitive hypotheses: that quantization damage lives in task circuits, where the model computes, or in weight statistics. None of them predicts which layers benefit from restored precision. Recovery is instead diffuse: for 8 of 9 models, recovering 75% of the gap takes roughly half the layers; the lone exception, Qwen3-8B, is sharply concentrated. At a matched precision budget, spending it globally on finer quantization granularity beats locally repairing the most recoverable layers for all 8 group-128-compatible models (all but OpenLLaMA, whose width rules out group-128), by 21-52 points, including the concentrated Qwen3-8B. We report 2 secondary findings: the residual is budget-limited (8-bit is near-lossless in our evaluation across RTN, GPTQ, and AWQ), and the location of peak recovery correlates with architecture within a family, though not across families. Within this budget setting, global granularity is a better default than selectively protecting critical layers. More broadly, cheap signals that correlate with quantization damage do not necessarily identify where restoring precision improves accuracy; this must be tested with causal intervention.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01587v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Reconstructing the initial conditions (ICs) of the matter field for an observed volume gives a complete picture of that region&#x27;s temporal evolution. IC reconstruction is common at low redshifts but largely unexplored during the epoch of reionization (EoR; $z\gtrsim 5$), partly due to difficulties modeling inhomogeneous cosmic radiation fields. Yet the EoR spans half the observable Universe, offering unmatched potential for astrophysics and cosmology. Here we quantify how well upcoming galaxy and 21cm observations can constrain ICs during the EoR. We develop $\tt TILING$ ($\bf T$omographic $\bf I$nference of $\bf L$inear $\bf I$Cs via $\bf N$etwork $\bf G$rafting): a hybrid machine learning pipeline that first produces a point estimate of the ICs, which then improves a score-based diffusion network for generating posterior samples. We train $\tt TILING$ on mock galaxy maps at varying UV magnitude limits, plus corresponding 21cm maps at varying noise levels and foreground &quot;wedge&quot; contamination. For fiducial survey choices, we achieve accurate IC reconstruction (posterior mean cross-correlation coefficients &gt;0.8 and power spectrum errors under a few percent) down to $\text{k}\lesssim 0.2 \text{cMpc}^{-1}$. While 21cm interferometry aids recovery of IC power spectra, most constraining power, especially for IC Fourier phases, comes from galaxy maps, underscoring the need for complementary observations when interpreting the 21cm signal. We show how $\tt TILING$ can recover 21cm power spectrum modes excised by foreground contamination. Our framework can also: (i) guide follow-up observations of sub-volumes of interest; (ii) reconstruct galaxy evolution and reionization morphology for specific volumes; and (iii) isolate the contribution to reionization from the vast majority of galaxies unobservable by optical/IR telescopes like $\it JWST$. Our code is publicly available.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.09102v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01544v1" target="_blank" rel="noopener noreferrer">
-      Variable Selection for Feature-Based Newsvendor
+    <a href="https://arxiv.org/pdf/2609.09093v1" target="_blank" rel="noopener noreferrer">
+      Three formulas for the Ising and Potts invariants of a knot or link
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Zhaoliang Yuan, Jie Wang</span>
+    <span class="paper-authors">Tristan Bullock, Thomas Kindred</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">Feature-based newsvendor models use observable covariates to tailor inventory decisions, aiming to balance holding and shortage costs under demand uncertainty. However, high-dimensional feature sets often hinder interpretability and inflate data collection and implementation costs. This paper studies variable selection for the feature-based newsvendor problem under a hard cardinality constraint on the number of selected features. We formulate the resulting $\ell_0$-constrained empirical newsvendor problem with $\ell_2$-regularization, establish its computational hardness, and develop a mixed-integer second-order cone programming reformulation that strengthens the standard Big-$M$ formulation. To enable scalability beyond exact optimization, we develop a randomized-rounding algorithm with a bi-criteria guarantee and a greedy heuristic. Statistically, we provide theoretical analysis of the resulting sparse policy estimator, including finite-sample estimation error, out-of-sample risk bounds, and support recovery guarantees. Extensive experiments on both synthetic and real data illustrate the computational and statistical trade-offs among various baselines. Our results demonstrate that the proposed variable selection framework achieves competitive out-of-sample operational costs while using substantially fewer covariates.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01544v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Jones described how the Ising and Potts models from statistical mechanics give rise, with appropriate choices of Boltzmann weights, to invariants of an oriented link. The Boltzmann weights that Jones proposed, however, work only with a correction factor that he does not mention. We fill in the missing details in two different ways. We also show that all of these invariants, which we call the Ising and Potts invariants, are given by evaluating the Jones polynomial at $t$ equal to one of these Boltzmann weights.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.09093v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01537v1" target="_blank" rel="noopener noreferrer">
-      Quantum Sparse Autoencoders for Q-Matrix Estimation in Cognitive Diagnosis
+    <a href="https://arxiv.org/pdf/2609.09083v1" target="_blank" rel="noopener noreferrer">
+      Breaking binary formation mechanism degeneracies with gravitational wave clustering
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Arif Hassan Zidan, Yi Pan, Bowen Guo, Xiang Li, Yu Bao, Yingfeng Wang, Tianming Liu, Wei Zhang</span>
+    <span class="paper-authors">Nicola Bellomo, Michele Bosi, Sarah Libanore, Michele Liguori, Michela Mapelli, Federico Semenzato, Stefano Torniamenti</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">Q-matrices play a central role in cognitive diagnosis within educational data mining (EDM), specifying which latent skills each assessment item requires. Data-driven Q-matrix estimation remains challenging when assessments involve many correlated skills and when real response patterns depart from idealized generative assumptions. We introduce a novel quantum sparse autoencoder (QSAE) for Q-matrix estimation, which, to the best of our knowledge, is the first application of quantum machine learning (QML) to cognitive diagnosis. Overall, the QSAE embeds each student&#x27;s binary response vector into a quantum circuit using an encoder, compresses it into a sparse latent representation, and maps that representation to the Q-matrix. We benchmark the QSAE against a classical autoencoder (CAE) across 60 simulated datasets and 9 real-world assessment datasets. The results reveal complementary strengths. Although the CAE partially achieves higher average accuracy under several simulation conditions, the QSAE is substantially more stable across replications, exhibiting lower variance in 49 of the 60 conditions. Moreover, on real assessment data, the QSAE outperforms the CAE on 6 of the 9 datasets. These findings suggest that the principal advancement of QML in this setting is not universal accuracy improvement, but enhanced robustness and capability to explore latent-structure complexity in real datasets.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01537v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Thanks to the almost 400 gravitational wave events detected, we are currently able to grasp the fundamental features of black hole mass, spin, and distance distributions. However, such a fast increase in the precision of the measurements does not necessarily correspond to a better theoretical understanding of gravitational wave sources, especially in current scenarios where the number of free parameters is significantly larger than the number of inferred properties of the black hole population. In this work, we showcase how the landscape of theoretical models can be chipped away by complementary data-analysis strategies, in particular by studying the statistical properties of gravitational wave anisotropic distribution. Specifically, we show how gravitational wave clustering is sensitive to two unique features of each binary formation mechanism: the time-delay distribution and the properties of the binary hosts. First, we consider a model-agnostic scenario and show the impact that different time-delay distributions have on the gravitational wave bias. Then, we consider a realistic scenario where gravitational wave events are sourced either by isolated binary evolution or dynamical processes in globular clusters, and study how the gravitational wave bias is unique sensitive to the specific properties of the environment. In both scenarios, we show how the cross-correlation between galaxy and gravitational wave catalogs is able to distinguish between models with different time delays or with different binary sub-populations originated in specific formation channels.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.09083v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01509v1" target="_blank" rel="noopener noreferrer">
-      Characterizing High-dimensional Dynamics by Combinatorial-Topological Methods on a Latent Space
+    <a href="https://arxiv.org/pdf/2609.09071v1" target="_blank" rel="noopener noreferrer">
+      The Path Integral Monte Carlo Sign Problem Is Not Always NP-Hard: Harmonic Fermions Can Be Solved in Quadratic Time
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Patrick Bailon, Marcio Gameiro, Brittany Gelb, William Kalies, Miroslav Kramar, Konstantin Mischaikow, Bernardo Rivas, Ewerton Vieira</span>
+    <span class="paper-authors">Aarif Chaudhary, Jonas Valenzuela, Siu A. Chin</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">Combinatorial-topological methods for characterizing dynamics are rigorous, generalizable, computable, and they only require approximations, but the dimension of the phase space is a computational bottleneck to their wider application. Motivated by the growing number of machine learning techniques for obtaining lower-dimensional latent representations of dynamics, we present an initial study of combinatorial-topological techniques in the dimensionality reduction setting. We establish bounds under which an algebraic structure that organizes dynamics can be lifted from the latent space to the original system. As a corollary, one can conclude the existence of attractors within certain regions of the original phase space. The hypothesis of these results is expressed in terms of an approximate semiconjugacy between the original and latent dynamics. To demonstrate the ideas, we combine autoencoder-based models with Conley-Morse graph computations for Leslie population models, a thirteen-dimensional Mediterranean red coral population model, and the Chafee--Infante equation. While the lift of the Conley index is still an open question, the examples recover the expected algebraic topological invariants in several settings.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01509v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">In the Path Integral Monte Carlo (PIMC) simulation of fermions in a harmonic trap, with and without pairwise harmonic interactions, the partition functions for any discrete number of imaginary time slices (or beads) and for any choice of the short-time propagator can be analytically obtained from the contracted determinant form of the propagator. This work shows that the resulting recursion relation can be reformulated in the $λ$-ring language, yielding a closed-form finite-bead partition function in two dimensions in terms of permutation statistics. This closed-form partition function can be evaluated by a special algorithm in $O(n^2)$ time, providing an exact and numerically stable scheme for reproducing the energies of the original (undoable) fermion PIMC simulation for $n=10^4$ or more fermions. This result provides a concrete framework in which the numerical instability of the sign problem is completely bypassed, and serves as a counterexample to the prevailing view that all truly fermionic PIMC sign problems are NP-hard.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.09071v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01500v1" target="_blank" rel="noopener noreferrer">
-      A relational fabrication-to-modeling database for memristor devices
+    <a href="https://arxiv.org/pdf/2609.09055v1" target="_blank" rel="noopener noreferrer">
+      &quot;World Knowledge&quot; in the Weights: Reading Concept Circuits of Vision Transformers
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Lai Gan, Guoyang Huang, Deepika Yadav, Spyros Stathopoulos, Ben D. Rowlinson, Themis Prodromakis</span>
+    <span class="paper-authors">Yanlin Chen, Tang Li, Xi Peng</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">Resistive random access memory (RRAM) devices, also known as memristors, are highly dependent on fabrication, location on the wafer, and measurement protocols. However, openly available large-scale memristor datasets remain scarce, particularly those that combine experimental metadata with electrical measurements and preserve explicit links across the experimental workflow. Here, we present a comprehensive relational database of automated electrical characterization data from oxide-based memristors. The database links 6,190 memristor devices across TiN/HfOx/TiN, Pt/TiOx/AlOy/Pt, and Pt/TiOx/Pt stacks to 161,006 validated experiments and over 169 million electrical point records. It integrates fabrication, wafer mapping, electrical characterization, and modeling to describe electroforming, current-voltage non-linearity, memory windows (R_off/R_on), switching dynamics, and short-term volatility. Released as a normalized and indexed SQLite database with schema documentation, graphical user interfaces, and examples of empirical modeling, this resource supports provenance-aware querying, statistical analysis, and data-driven applications for the development of future memristor technologies.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01500v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Vision transformers (ViTs) have achieved remarkable generalization across visual domains, yet little is known about how they internally represent the structure of the world. To address this gap, we use Cross-Layer Transcoders (CLTs) to read concept circuits from ViTs: directed graphs whose nodes correspond to sparse, interpretable concepts and edges capture concept interactions across layers. Our method yields two complementary views of model behavior. The global concept circuit is input-invariant and can be recovered directly from learned cross-layer weights, exposing the reusable &quot;world knowledge&quot; encoded in the model. The instance concept circuit is input-dependent and identifies the concepts and pathways actually used for a specific prediction, enabling faithful example-level explanations. We demonstrate the utility of concept circuits in three ways: (1) Automatic spurious correlation discovery: leveraging the statistics of our global concept circuits to identify shortcut dependencies within the model. (2) Spurious correlation removal: intervening on the instance concept circuit to steer the model towards correct predictions. Empirical results show that our method outperforms existing counterparts by 11.0% on the Waterbird dataset. (3) Model comparison: contrasting the global concept circuits of different foundation models (e.g., CLIP vs. DINO) to reveal how supervision paradigms shape representational structure. Our code is available at https://github.com/deep-real/VisionCLT</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.09055v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01492v1" target="_blank" rel="noopener noreferrer">
-      Accelerating dynamic simulations of photoexcited materials and their evolution by electron-informed machine learning
+    <a href="https://arxiv.org/pdf/2609.09054v1" target="_blank" rel="noopener noreferrer">
+      Training-Free Task Vectors for LLM Behavioral Control
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yunzhe Jia, Fankai Xie, Yunfei Bai, Miao Liu, Cui Zhang, Sheng Meng</span>
+    <span class="paper-authors">Gabriel J. Perin, Lucas Boscaini, André Araujo, Nina S. T. Hirata</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">Nonadiabatic coupled electron-nuclear dynamics upon electronic excitation underpin the microscopic mechanism and rational modulation of diverse photoinduced functional phenomena in materials, yet their direct first-principles simulations remain computationally demanding. Here we develop a framework for nonadiabatic excited-state machine-learning molecular dynamics (EMLMD) simulations, where the nonequilibrium electronic information upon photoexcitation such as electron temperature is rigorously calibrated from high-precision real-time time-dependent density functional theory (rt-TDDFT) benchmark simulations, enabling accurate reconstruction of excited-state potential energy surfaces (PES). This framework natively incorporates the excited-state electron-phonon couplings and intrinsically captures photoinduced phonon anharmonicity, both of which are missing in standard machine learning molecular dynamics, thus delivering first-principles-level accuracy for excited-state atomic evolutions. Large-scale EMLMD simulations resolve time- and momentum-resolved phonon dynamics in photoexcited materials, directly uncovering the competition between photogenerated coherent phonons and thermal phonons during photoinduced phase transition of bismuth. It also simultaneously resolves elusive atomic-scale microscopic dynamics and global structural rearrangement for selenium photoamorphization. Balancing high accuracy and efficiency, EMLMD offers a versatile paradigm to tackle key challenges in the study of complex excited-state molecular dynamics.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01492v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Task vectors enable post-training model editing by identifying semantically meaningful directions in weight space, typically computed as the difference between a fine-tuned model and its pretrained initialization. However, this reliance on fine-tuning makes discovering such directions costly and limits the practicality of post-training model editing. To address this limitation, we introduce Training-Free Task Vectors (TFTVs), a novel method to compute task-vector-like directions without requiring fine-tuning. Our method maps activation steering vectors to rank-one weight-space edits using only forward-pass statistics, while satisfying arithmetic properties that directly support learning via addition, forgetting via subtraction, and the composition of multiple edits. Empirically, we evaluate TFTVs on large language model behavioral control tasks and show that they consistently amplify, suppress, and compose target behaviors while preserving general knowledge and problem-solving skills. We also validate our method against other editing and steering baselines, experimentally demonstrating that TFTVs achieve stronger trait control with better or competitive utility preservation. We hope our work opens new directions for the community in post-training model editing and broader training-free model control. Code is available on the project website: tftv-llm.github.io.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.09054v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01466v1" target="_blank" rel="noopener noreferrer">
-      Parsing the Stream: A Live Trace Model for Long-Horizon Agents and Their Observers
+    <a href="https://arxiv.org/pdf/2609.09047v1" target="_blank" rel="noopener noreferrer">
+      Bottomonium suppression with a machine-learning-informed Debye mass
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Egor Pakhomov, Erik Nijkamp</span>
+    <span class="paper-authors">Ajaharul Islam, Shibo Chen, Fu-Peng Li, Long-Gang Pang, Guang-You Qin</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">A long-horizon agent&#x27;s trace outgrows both of its consumers: the human observer monitoring the run, and the agent itself, whose bounded context the trace must be folded back into. We present a live trace model, an append-only event ledger folded incrementally into typed run state and compiled into per-consumer views, and evaluate it for both consumers against deterministic ground truth. For the observer side, evaluated with an LLM reader as proxy, the compiled view answers monitoring questions using approximately 14x and 15x fewer input tokens (by reader) and at 5-7x lower cost than a budget-capped single-call reading of the raw trace, with higher accuracy (0.85-0.87 versus 0.48). Because the questions were co-designed with the view schema, we treat the token and cost reduction, conditional on schema coverage, as the transferable result. For the agent, on 120-link sequential-dependency tasks, mechanisms that maintain the task&#x27;s running statistic in per-step state succeed where full-context prompting fails (30/30 versus 8/30 under a clean protocol, n=30, labeled descriptive owing to benchmark-system co-development); a prompt-level scratchpad matches the fold&#x27;s accuracy at lower cost, and a two-arm decomposition attributes the fold&#x27;s accuracy to its deterministic aggregate and its cost advantage to its compactness. The fold&#x27;s remaining value over cheaper alternatives is deterministic auditability and serving the observer from the same state. We derive eleven candidate requirements for trace folding from observed failures and delimit them with an order-sensitive task family on which the fold ceases to help. Code, benchmarks, a regenerable synthetic corpus, and all workbench traces are released.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01466v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Motivated by recent progress in data-driven approaches, we introduce a machine-learning (ML)-informed Debye mass, extracted from lattice-informed inputs, exclusively in the complex-valued heavy-quark Kent State University (KSU) potential. The resulting complex potential is used to solve the real-time Schrödinger equation within the quantum trajectories (QTraj) framework for the evolution of bottomonium in the quark-gluon plasma. We then compute the nuclear modification factors and double ratios for bottomonium $Υ(1S)$, $Υ(2S)$, and $Υ(3S)$ states in Pb-Pb collisions at $\sqrt{s_{NN}} = 5.02$ TeV. We compare our ML-induced results with those from the original KSU model and with experimental measurements from ALICE, ATLAS, and CMS collaborations. We find that the machine-learned Debye mass leads to improved agreement with data, particularly for excited states, highlighting the utility of machine learning in modeling in-medium QCD effects.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.09047v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01437v1" target="_blank" rel="noopener noreferrer">
-      HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?
+    <a href="https://arxiv.org/pdf/2609.09044v1" target="_blank" rel="noopener noreferrer">
+      The Luminosity Function of Ultra-Faint Trans-Neptunian Objects Detected by JWST
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yuhao Wu, Jingyuan Zhang, Jiajun Shi, Xinping Lei, Qingshui Gu, Yuxuan Zhang, Zexuan Wang, Chen He, Chen Huang, Maojia Song, Zhiyuan Zeng, Shaowen Wang, Jinkai Liu, Yunfeng Shi, Jiaheng Liu, Shen Yan, Wenhao Huang, Ge Zhang, Wenxuan Zhang</span>
+    <span class="paper-authors">Marielle R. Eduardo, Anastasia N. Morgan, Wesley C. Fraser, David E. Trilling, Gary M. Bernstein, John A. Stansberry, Bryan Hilbert, Matthew J. Holman, William M. Grundy, Thomas L. Storer, Kevin J. Napier</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">As agents move from research prototypes to deployed tools, their capability increasingly depends on model-external execution infrastructure, commonly termed the agent harness. Changing this harness while holding model weights fixed can substantially alter task performance. Current agent evaluations typically report downstream performance under a chosen harness, leaving a model&#x27;s ability to develop the harness itself comparatively underexplored. We introduce HarnessDev, a benchmark that shifts the unit of evaluation from task outputs to runnable infrastructure. HarnessDev covers two stages. In Creation, the agent starts from a minimal seed and a small number of cases, then builds a complete execution system. In Evolution, it starts from its own created harness and iteratively revises it using downstream execution feedback, with the goal of improving benchmark performance. We then evaluate each constructed harness on capability (task success on held-out benchmarks) and efficiency (execution-token cost). The reported Creation results cover six creator LLMs, four domains, and five downstream benchmarks totaling 2,207 unique downstream instances, with hidden evaluation tasks withheld from development. We find that generated harnesses remain substantially behind mature human-engineered references on code and on search and research, while matching or exceeding the selected references on writing and machine-learning experimentation, with large variation in execution cost. Evolution produces some performance gains, but they are unstable and transfer only partially to held-out tasks. Experiments with a fixed runtime model further show that the gains depend strongly on the model executing the harness, indicating limited transfer across models.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01437v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We present a definitive discovery of 27 trans-Neptunian objects (TNOs) using the Near-Infrared Camera (NIRCam) aboard the James Webb Space Telescope (JWST). By employing a shift-and-stack technique and a machine learning network geared specifically to identifying false-positive detections in JWST images produced through the shift-and-stack process, we achieved a 40\% detection threshold of $m_{F150W2}=28.8$ mag (corresponding to $m_r\sim29.8$ mag) across a sky area of $0.05 \ \text{deg}^2$. This marks the deepest Solar System survey to date, reaching magnitudes that allow us to explore never-before-seen regions of the TNO size distribution. Our faintest detection has $m_{F150W2}=29.3$ mag and diameter of $\sim10$ km (assuming 15\% albedo). Within our sample, we find that both the Cold and Hot TNO subpopulations exhibit a power-law slope. The distribution of apparent magnitudes of our nominal sample (detections at all epochs) are well fit by a single power law $dN/dm \propto 10^{αm}$ with $α=0.29^{+0.08}_{-0.07}$. The dynamically hot and cold subsamples in our discovery set are consistent with the same power law, suggesting that the planetesimal formation process yields similar slopes despite the differing disk conditions at the presumed $\sim25$ and $\sim45$~au formation regions of the two populations.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.09044v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01435v1" target="_blank" rel="noopener noreferrer">
-      Gaussian Processes on Directed Metric Graphs
+    <a href="https://arxiv.org/pdf/2609.09011v1" target="_blank" rel="noopener noreferrer">
+      Closed-Form of the Local Galactic Potential and Stellar Distribution Function from Gaia DR3
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">David Bolin, Alexandre de Bustamante Simas, Erik Karlsson Strandh, Jonas Wallin</span>
+    <span class="paper-authors">Indranil Das, Adam Kamoski, Dora Demiri, Brianna Isola, Hanieh Karimi, Dmitrii S. Zagorulia</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">We introduce a statistical framework for Gaussian fields indexed at arbitrary edge locations on general compact directed metric graphs. The construction is based on a stochastic differential equation with a first-order operator and conditions at the vertices. We characterise well-posedness and identify the covariance reproducing kernel Hilbert space. We also connect the proposed framework to earlier stream-network models, showing that these arise from the same system under particular boundary conditions, and introduce new boundary conditions that yield more physically realistic processes. The differential-equation representation enables computationally efficient inference and prediction. This makes the method applicable to large data sets without approximation. Applications to temperature modelling on river networks and traffic speeds on road networks illustrate the framework, including the computational efficiency and improved performance under physically informed vertex conditions.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01435v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The local dark matter density determines the strength of the signal expected in direct-detection experiments, yet published estimates from stellar motions disagree by more than their errors, and the most recent machine-learning analysis of Gaia data finds a local density consistent with zero. According to Jeans&#x27; theorem, a distribution function built from integrals of motion satisfies the collisionless Boltzmann equation (CBE) trivially for any choice of potential, so a search that simultaneously fits the distribution function and the potential to the CBE identifies neither. Our pipeline instead estimates the distribution function in isolation, linearizing the equation in terms of accelerations and allowing for direct measurement of the local force field, and then fits closed forms to that field via symbolic regression. Throughout, we find that the usable information lies not in the CBE residual but in the stellar number counts, the observable most distorted by survey selection. Along the vertical profile, our recovered potential agrees with the classical self-gravitating isothermal disc.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.09011v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01430v1" target="_blank" rel="noopener noreferrer">
-      Learning Sparse Decision Trees via Transformer Variational Auto-Encoders
+    <a href="https://arxiv.org/pdf/2609.09010v1" target="_blank" rel="noopener noreferrer">
+      A Joint 2D-3D Statistical Shape Model for Orthopedic Reconstruction
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Giacomo Fidone, Alessio Cascione, Riccardo Guidotti</span>
+    <span class="paper-authors">Florence Dell&#x27;Aniello Picard, Pranav Poudel, Nairouz Shehata, Frédéric Lavoie, Herve Lombaert</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">Decision trees are among the most widely used models in machine learning, largely due to their transparent decision logic, making them well-suited for high-stakes decision-making contexts. However, most existing learning algorithms focus on predictive performance, overlooking the joint optimization of other desirable properties, such as structural sparsity. In this work we propose TREVIS, an approach for learning decision trees with respect to complex objectives, based on the exploration of the latent space of a Tree Transformer Variational Auto-Encoder (TTVAE). By mapping decision trees onto latent representations, TREVIS replaces the discrete search space with a continuous one, enabling gradient-based optimization via a differentiable surrogate model. We experiment with TREVIS for learning decision trees that jointly optimize predictive performance and sparsity. Results show that TREVIS discovers decision trees matching the predictive performance of existing near-optimal algorithms while improving their structural sparsity.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01430v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Three-dimensional femoral reconstruction from radiographs supports surgical planning, implant sizing, and post-operative follow-up, but remains ill-posed as X-ray projections discard depth information. Existing methods often incorporate a 3D statistical shape model (SSM) as a shape prior to guide reconstructions toward anatomically plausible shapes, relying on iterative 3D-to-2D projection matching. Yet, these approaches are computationally expensive and constrain their SSM to a single dimensionality, leaving the statistical relationship between 2D observations and 3D geometry largely unexploited and unexplored. We instead propose a joint 2D-3D SSM that explicitly captures the co-variation between 2D and 3D segmentations in a shared latent space. During training, 2D and 3D segmentations are registered to a common 3D template and its corresponding 2D projections, and the resulting stationary velocity fields are jointly decomposed using principal component analysis (PCA). This joint modeling allows the 2D-to-3D mapping to be learned directly from data rather than computing correspondences at inference time. For unseen subjects, the 3D shape is recovered directly by lifting the 2D latent coordinates to the 3D PCA subspace, thereby eliminating the need for iterative 3D-to-2D projection. Experiments on NMDID demonstrate that the proposed joint 2D-3D SSM outperforms a widely-used 3D-only SSM baseline while achieving inference approximately 4 times faster, at under 3 seconds per subject. The code is available at: https://github.com/florence-dellaniello-picard/joint2d3d-ssm.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.09010v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01413v1" target="_blank" rel="noopener noreferrer">
-      Sharp Threshold for Universality of Rational Canonical Forms over a Finite Field
+    <a href="https://arxiv.org/pdf/2609.08988v1" target="_blank" rel="noopener noreferrer">
+      Triaxiality of the Milky Way dark matter halo and the microlensing optical depth towards the Large Magellanic Cloud
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jiahe Shen</span>
+    <span class="paper-authors">J. García-Bellido, M. R. S. Hawkins</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">We study the rational canonical form of sparse random matrices over a finite field. Suppose $A_n\in \operatorname{Mat}_n(\mathbb{F}_p)$ has independent and $α_n$-balanced entries. We prove that if $$ \liminf_{n\to\infty}\frac{nα_n}{\log n}&gt;1, $$ then, for every fixed collection of distinct monic irreducible polynomials over $\mathbb{F}_p$, the corresponding primary partitions of $A_n$ converge jointly to the same asymptotically independent Cohen-Lenstra distributions as in the uniform model studied by Fulman in his thesis. The sharp sparsity threshold for the full rational canonical form coincides with the threshold previously obtained by Lee for finite-field cokernels and by Jung-Lee-Yu for random matrix models over $\mathbb{Z}_p$. Our proof is based on the surjection moment method over the function field $\mathbb{F}_p[t]$, applied to the finite module $\operatorname{Cok}_{\mathbb{F}_p[t]}(tI_n-A_n)$, whose primary decomposition records the rational canonical form. We also construct degree-$d$ critical sparse obstructions, suggesting a polynomial-dependent threshold $1/d$ for statistics associated with irreducible polynomials of minimal degree $d$.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01413v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The microlensing optical depth towards the Large Magellanic Cloud (LMC), $τ_{\rm LMC}$, bounds the compact-object fraction of the Galactic dark matter halo, but is almost always evaluated for a spherical halo. We compute it for triaxial haloes and show that the shape dependence is carried entirely by the projection of the line of sight onto the halo principal axes: for a scale-free halo $ρ\propto R^{-α}$ at fixed local density it factorises exactly as $τ/τ_{\rm sph}=S_\odot^α\langle S^{-α}\rangle_w$, with $S(Ω)$ the ellipsoidal shape function. The LMC lies only $0\fdg78$ from perpendicular to the Sun-Galactic Centre line, making it a near-optimal probe of in-plane elongation and a poor probe of vertical flattening. For the halo shapes favoured by \textit{Gaia} we find $τ_{\rm LMC}/τ_{\rm sph}=0.95$--$1.15$ at fixed local density, $1.57$ for the Law-Majewski logarithmic potential, and $0.67$--$1.54$ when the major-axis azimuth is left free. For the Einasto halo required by the declining \textit{Gaia} DR3 rotation curve, truncation near $25\kpc$ is offset by the larger local density it implies and $τ$ falls by only $7$--$15$ per cent; but the median lens distance moves inwards from $13.4$ to $8.5\kpc$, where the logarithmic slope is steep and rising, amplifying the shape sensitivity: the \textit{Gaia} RR~Lyrae enhancement grows from $15$ to $23$ per cent and the orientation-free range widens to $0.62$--$1.62$. The systematic on the inferred MACHO or primordial-black-hole fraction is two-sided, of order $\pm15$ per cent for the measured shapes and a factor $2.6$ under full orientation freedom, exceeding the statistical errors of the EROS-2 and OGLE bounds.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.08988v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01410v1" target="_blank" rel="noopener noreferrer">
-      On the Reliability of Generative Augmentation: A Wasserstein-Based Theoretical and Empirical Study
+    <a href="https://arxiv.org/pdf/2609.08982v1" target="_blank" rel="noopener noreferrer">
+      Embedded Human-Centered Data Science in a Graduate Programming Course: A Framework and Case Study
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Chathurika S Abeykoon, Mathias Nthiani Muia, Mallory Goldstein</span>
+    <span class="paper-authors">Victoria Chui, Kelly McConvey, Daniel Chui, Malayna Bernstein, Shion Guha</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">Generative data augmentation is widely used to mitigate class imbalance, yet its theoretical effect on downstream generalization remains poorly understood. In this work, we develop a statistical framework for conditional generative augmentation and analyze its impact on classification risk. We formalize augmentation as a distribution-mixing process and show that the resulting risk distortion is controlled by both the augmentation strength and the class-conditional Wasserstein discrepancy between real and generated distributions. We further derive a capacity-dependent generalization bound based on Rademacher complexity, revealing an explicit trade-off between hypothesis complexity, augmentation intensity, and generative fidelity. Empirically, we evaluate the framework on binary and multiclass imbalanced classification tasks using Conditional GAN and Conditional WGAN-GP augmentation. Across datasets, CWGAN-GP consistently achieves lower Wasserstein discrepancies than CGAN, indicating improved distributional fidelity. However, improved fidelity does not necessarily translate into superior classification performance, with classical oversampling methods often remaining competitive. These findings support the central theoretical prediction that augmentation reliability is governed by distributional approximation error rather than predictive performance alone. Overall, this work establishes generative augmentation as a distributional perturbation process whose reliability can be quantified through Wasserstein-based measures and supported by finite-sample generalization guarantees. The proposed framework provides a principled foundation for evaluating synthetic data quality beyond classification accuracy alone.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01410v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">As AI and data-driven systems pervade practice, there is an imperative for instructors to embed societal impact and ethics content into computing courses. In response, we present the Human-Centered Education for Learning in Information and eXplainable Computing (HELIX) framework for information science programs, organized around three iterative pillars - knowledge building, decision-making, and empowerment - with concrete actions for instructors and students. We applied the framework in a graduate, introductory programming course using readings, algorithmic design activities, and scenario-based reflections. We present a pilot implementation of this framework to examine changes in students&#x27; (n=22) knowledge acquisition, decision-making processes, and self-reflection regarding human-centered perspectives in data science. We release an anonymized materials kit (survey, assignments, analysis code) to support adoption. We discuss design tensions (workload, assessment, relevance to diverse information science learners) and provide guidelines for integrating human-centered content without overwhelming technical outcomes. Findings suggest that the HELIX Framework is feasible in information science contexts and future work should use comparative survey assessment to strengthen causal inferences.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.08982v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01408v1" target="_blank" rel="noopener noreferrer">
-      Neuro-Symbolic Geometric Abstraction (NeuSOGA): From Observations to Symbolic Mathematical Representations
+    <a href="https://arxiv.org/pdf/2609.08981v1" target="_blank" rel="noopener noreferrer">
+      Transformers as In-Context Samplers: From Closed-Form Diffusion to Estimation-Free Sampling
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Qingde Li, Qingqi Hong, Jie Tian</span>
+    <span class="paper-authors">Arman Adibi, Alireza Jafari, Mohammad Ghavamzadeh, Hadi Daneshmand</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">A fundamental challenge in artificial intelligence is the transformation of observations into explicit symbolic representations suitable for abstraction, interpretation, and reasoning. While modern AI systems achieve remarkable perceptual capabilities through large-scale statistical learning, the resulting knowledge is typically encoded within latent parameters that are difficult to inspect or manipulate analytically. Inspired by Neuro-Symbolic AI and theories of human abstraction, this paper investigates the formation of symbolic mathematical representations from geometric observations. We propose NeuSOGA (Neuro-Symbolic Geometric Abstraction), a framework that progressively transforms observations into topological abstractions, geometric abstractions, and ultimately symbolic mathematical representations. The architecture combines topology-guided structural discovery using Euclidean Distance Transforms, foundation-model perception using Segment Anything, adaptive multi-scale geometric abstraction, and symbolic synthesis through Implicit Area Splines. The resulting representation is an analytical implicit model supporting arbitrary-order smoothness, additive composition, and closed-form evaluation. Unlike neural latent encodings, the generated representation remains interpretable, editable, and mathematically explicit. Experiments on ModelNet40 point clouds, arbitrary-view projections, and segmented optical observations demonstrate that NeuSOGA transforms diverse observations into compact symbolic representations while preserving essential geometric and topological structure across sensing modalities and viewing directions. NeuSOGA provides an interpretable and explainable pathway from observation to symbol and establishes</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01408v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">A growing body of work establishes that large language models are not mere statistical memorizers, but are capable of in-context learning: performing inference at test time using only examples provided in the prompt, without any parameter updates. Prior theoretical work has shown that this capability extends to supervised learning tasks such as linear regression. We prove that in-context learning extends further to \emph{data generation}: frozen transformers can simulate iterative generative samplers from in-context samples. We first show that transformers can realize closed-form and smoothed closed-form diffusion samplers. The construction identifies a concrete generative role for softmax attention: it computes responsibility weights and weighted empirical averages, while feedforward layers implement Euler updates. To empirically relate these constructions to pretrained language models, we study \emph{semantic-topic sampling}: prompts consisting of words drawn from a common semantic category, such as animals, foods, or cities. Across transformer layers, the normalized hidden states exhibit a two-stage geometry: they move toward a uniform spherical reference in intermediate layers and then return to structured, topic-dependent representations near the output. We further measure an interacting-particle energy on these hidden-state clouds and observe the same U-shape pattern. We then prove that transformers can approximate an energy-based sampler, constructing the same U-shape energy across the layers.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.08981v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01397v1" target="_blank" rel="noopener noreferrer">
-      Measuring consistency via ensemble margin and local prediction variability: Auditing decision systems in the presence of predictive multiplicity
+    <a href="https://arxiv.org/pdf/2609.08942v1" target="_blank" rel="noopener noreferrer">
+      An analysis of four stellar rings
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Sinjini Banerjee, Tim Marrinan, Anand D. Sarwate</span>
+    <span class="paper-authors">E. Paunzen, J. Florian, A. Gütl-Wallner, A. Herdin, E. Kralofsky, K. Leschinski, M. Mach, H. M. Maitzen, M. Prišegen, M. Rockenbauer, M. Rode-Paunzen, S. Wallner</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">The Rashomon effect is a machine learning phenomenon where equally accurate models produce different predictions for the same inputs (predictive multiplicity). Existing work primarily focuses on multiplicity within individual models, but in more complex decision systems, the impact of the Rashomon effect is less well understood. In this work, we study multiplicity from the perspective of auditing incorrect ensemble predictions, where the decision to divert an instance for human review is based on a consistency criterion that combines the ensemble margin with a measure of local prediction variability for each constituent model. With mild assumptions about stability and smoothness, we show that the consistency scores of finite ensembles converge to the corresponding consistency score of the expected model from the Rashomon set as the ensemble size and the number of samples used to measure local prediction variability increase. To demonstrate the efficacy of the proposed criterion, we evaluate the framework with respect to transformer models applied to natural language understanding tasks and parameter-efficient fine-tuning of large language models used for tabular data classification tasks. Our experiments show that ensembling models from the Rashomon set substantially reduces the risk of incorrect predictions going unchecked compared with auditing a single model, while incurring only a moderate increase in the number of diversions. Moreover, the auditing behavior of the full Rashomon set can be closely approximated by finite ensembles of relatively modest size, with the risk approaching zero for some datasets. We further demonstrate that the proposed measure exhibits stronger agreement with established predictive multiplicity metrics than existing consistency measures, providing a more reliable way to capture multiplicity in the Rashomon set.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01397v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">About 50 years ago, one thousand ring-like structures (called stellar-rings) were discovered by Isserstedt (1968). They were believed to be groups of young stars formed by shell-like triggered star formation, which would make them excellent tracers of spiral arms, for example. Neglected for 40 years, we used highly accurate kinematic, astrometric, and photometric data to investigate the four most prominent stellar rings. The aim is to investigate if those structures are indeed physically related groups of stars. We used proper motions and parallaxes from the Gaia DR2 to calculate distances and to search for common properties. Color-magnitude diagrams using BVJHKs measurements were investigated and isochrones fitted. None of the four stellar rings consists of a physically related group of young stars. The location of stars in the line-of-sight mimics a ring-like structure on the sky. The color-magnitude diagrams are typical for an integrated field population and not for a young star cluster, for example. The currently available data are sufficient to analyze ring-like structures with a high statistical significance. This allows a new search for such structures in the Milky Way.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.08942v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01395v1" target="_blank" rel="noopener noreferrer">
-      Quasi-normal-mode signatures of periodicity and hyperuniformity
+    <a href="https://arxiv.org/pdf/2609.08939v1" target="_blank" rel="noopener noreferrer">
+      Optical Depths from the Thermal Sunyaev-Zel&#x27;dovich Effect with ACT DR6 and DESI DR1 Spectroscopic Galaxies and Optically-Selected Clusters
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">V. Romero-García, M. Martí-Sabaté, V. F. Dal Poggetto, L. M. García-Raffi, M. Lázaro</span>
+    <span class="paper-authors">J. E. Moore, C. Popik, Y. Gong, Y-H. Hsu, E. M. Vavagiakis, N. Battaglia, R. Bean, D. Gruen, P. Gallardo, B. Hadzhiyska, G. Ockert, J. Aguilar, S. Ahlen, A. Aviles, F. Beutler, D. Bianchi, J. R. Bond, D. Brooks, E. Bulbul, A. Carnero Rosell, E. Chaussidon, T. Claybaugh, J. Comparat, A. de la Macorra, Biprateep Dey, P. Doel, S. Ferraro, A. Font-Ribera, J. E. Forero-Romero, E. Gaztañaga, Satya Gontcho A Gontcho, G. Gutierrez, K. Honscheid, M. Ishak, S. Juneau, T. Karim, R. Kehoe, M. Kluge, A. Kremin, A. Kusiak, O. Lahav, M. Landriau, L. Le Guillou, M. Manera, A. Meisner, R. Miquel, T. Mroczkowski, S. Nadathur, J. A. Newman, M. D. Niemack, H. E. Noriega, E. Paillas, W. J. Percival, F. Prada, I. Pérez-Ràfols, C. Ravoux, B. Ried Guachalla, G. Rossi, R. Ruggeri, L. Samushia, E. Sanchez, C. Saulder, D. Schlegel, J. Silber, M. Siudek, G. Tarlé, B. A. Weaver, E. J. Wollack, H. Zou</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">Hyperuniform materials occupy an intermediate regime between periodic order and conventional disorder, characterized by a suppression of long-wavelength density fluctuations, commonly quantified by the structure factor. This characterization, however, relies on the statistical properties of an extended configuration or supercell representation and does not directly describe the resonant response of a finite structure, as typically encountered in scattering experiments. Here, we introduce the quasi-normal-mode spectrum as a complementary framework for characterizing the wave properties of finite stealthy hyperuniform materials. We analyze the complex eigenfrequencies of both periodic and stealthy hyperuniform structures over a range of the stealthiness parameter ($χ$), and investigate how the spatial organization of scatterers is encoded in both frequency and spatial profiles of their quasi-normal modes. We find systematic changes in the quasi-normal modes spectrum as the degree of hyperuniformity is varied, revealing signatures that are not captured solely by the structure factor. In particular, the evolution of the resonant states provides a direct connection between structural correlations and the scattering response of finite systems. Our results establish quasi-normal modes as a real-space and open-system characterization of hyperuniformity and provide a unified framework for comparing discrete heterogeneous materials from the perspective of their scattering and resonant dynamics.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01395v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We present stacked thermal Sunyaev-Zel&#x27;dovich (tSZ) effect measurements for three samples of galaxy groups and clusters: those traced by the Dark Energy Spectroscopic Intstrument Data Release 1 (DESI DR1) luminous red galaxies (LRG) and the DESI DR1 Bright Galaxy Sample (BGS), and an eROMaPPer optically-selected sample from the DESI Legacy Imaging Survey. We use the latest Atacama Cosmology Telescope DR6 (ACT)+Planck component-separated internal linear combination (ILC) Compton-$y$ maps and ACT+Planck coadded 90, 150, and 220 GHz temperature maps to extract the tSZ signal within a $\sim2&#x27;$ disk aperture for sources binned by luminosity, richness, or mass. We measure the average tSZ signal with high statistical significance, with signal-to-noise ratios surpassing 38 for LRG, 27 for BGS, and 39 for the eROMaPPer sample using the 90 GHz ACT DR6+Planck map. We conduct a detailed study of systematics and foregrounds such as dust and cosmic infrared background (CIB) contamination, which remain a core challenge for tSZ analysis. For the LRG and BGS samples, we find that dust and radio source emission dominate the tSZ signal at scales near and below the disk aperture radius. Large-scale ($R&gt;4&#x27;$) contamination from the CIB is less significant. We mitigate these contaminants to isolate the tSZ signal and use a combination of simulated and real measurements to develop Compton-$y-$optical depth ($\bar y-\bar τ$) scaling relations to infer optical depths, which are found to be in agreement with values measured using the pairwise kinematic SZ effect for the same tracer samples. The $\bar y-\bar τ$ scaling relation for the eROMaPPer sample is the first such relationship to be derived directly from SZ measurements.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.08939v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01375v1" target="_blank" rel="noopener noreferrer">
-      IntroConformal: Conformal Factuality Guarantees for Large Vision-Language Models via Introspective Signals
+    <a href="https://arxiv.org/pdf/2609.08909v1" target="_blank" rel="noopener noreferrer">
+      To Stop or Not to Stop: Exploring the Intention-Behavior Gaps in Smartphone Usage
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Md. Atabuzzaman, Christian Alexander, Chris Thomas</span>
+    <span class="paper-authors">Jian Zheng, Eun Kyoung Choe</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">Large Vision-Language Models (LVLMs) have achieved strong multimodal performance, yet ensuring the factual correctness of generated content remains challenging. Existing methods that provide statistical guarantees on factuality typically rely on external verifiers or generation-time confidence signals, which introduce auxiliary dependencies or often fail for confident but incorrect outputs. We argue that reliable factuality control can instead be achieved through introspective signals derived from the model itself. We introduce IntroConformal, a training-free Conformal Risk Control (CRC) framework that provides finite-sample, distribution-free factuality guarantees. We first instantiate it with layer-wise semantic stability, a conformity score derived from hidden-state representations, and then propose verification probability, a stronger score capturing the model&#x27;s self-administered judgment on claim factuality. Across multiple LVLM architectures, IntroConformal satisfies the conformal risk guarantee while substantially reducing abstention and achieving competitive or superior claim-level discrimination relative to external verifier-based baselines.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01375v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">As smartphones become integral to daily life, researchers have sought to identify when the use becomes problematic. Previous studies have operationalized problematic smartphone usage (PSU) from either an intention or a behavior perspective. Both risk delivering interventions not welcomed by users. We propose a novel approach to operationalizing PSU as the intention-behavior gap (IBG). We collected self-reported data on intentions to stop phone usage, alongside usage behavior data, from 37 participants over two weeks. We calculated IBG, examined effects of demographic and contextual variables, and developed machine learning models to predict IBG in real time. We found that IBG was explained by gender, time, app, and input interactions, among other factors. Intention was predicted most accurately with only personal data, whereas behavior and IBG were predicted most accurately with both personal and global data. Our findings can inform the design of future intervention tools optimized for timing and adaptive intensity.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.08909v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01360v1" target="_blank" rel="noopener noreferrer">
-      EDGE: Error Dependency Graph-Guided Multi-Error Attribution in Multi-Agent LLM Systems
+    <a href="https://arxiv.org/pdf/2609.08901v1" target="_blank" rel="noopener noreferrer">
+      The BatchNorm Illusion: Diagnosing Normalization Artifacts in Machine Unlearning Evaluation
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jun Hou, Priya Pitre, Yi Fang, Xuan Wang</span>
+    <span class="paper-authors">Aaryaman Kalani, Murari Mandal, Dhruv Kumar, Mohan Kankanhalli, Yash Sinha</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">Large language model (LLM) agent failures often contain multiple related errors rather than a single mistake. Existing attribution methods usually identify a responsible agent, step, or root cause, but do not explicitly model dependency between errors. We introduce EDGE, an Error Dependency Graph-guided multi-Error attribution framework. EDGE constructs an error dependency graph from observed error events and validates a reliable causal subset through counterfactual rollout. The inference graph guides a two-stage LLM-as-judge detector for error attribution, and the intervention-validated subgraph provides a more reliable basis for explanation and repair analysis. Experiments on TRAIL and MAST show that EDGE improves category-level multi-error attribution across most evaluated models and settings. Experiments with adapted Who&amp;When-style prompts show that the graph helps across prompting strategies. These results suggest that dependency structure is a useful diagnostic prior for agent failures beyond isolated root-cause prediction.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01360v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Approximate machine unlearning aims to remove the influence of specific training data from a trained model without retraining from scratch. We identify a previously undocumented confound in how unlearning is evaluated on BatchNorm-based architectures: a single forward pass over retain data, an operation that modifies no weight, can deterministically rewrite the model&#x27;s normalization state and reverse the apparent surface-metric forgetting. We formalize this operation as a weight-preserving fixed-point operator and prove that any pre-versus-post gap it induces is provably attributable to BN running statistics rather than to any modification the unlearning method made to the weights. This attribution claim cleanly separates measurement failure (BN artifact) from encoder failure (residual weight-encoded information, recently documented in concurrent work), and the same operator framework yields a unique decomposition of linear-probe elevation into BN-measurement-bias and encoder-geometry components. Empirically, the artifact reverses headline forget accuracy by up to 78 pp across nine evaluated methods on standard benchmarks; an attacker with as few as 10 unlabeled images recovers most of the masked accuracy; and a strict GroupNorm control reduces the artifact to zero across all methods. The tested membership-inference attacks change little under recalibration, locating the observed evaluation failure in forget accuracy and linear probing.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.08901v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01357v1" target="_blank" rel="noopener noreferrer">
-      PopPert: Population-level Joint-Distribution Modeling for Single-Cell Perturbation Prediction
+    <a href="https://arxiv.org/pdf/2609.08873v1" target="_blank" rel="noopener noreferrer">
+      High-Magnetization Sampling at Low Temperatures: Ising Models and Bayesian Sparse Linear Regression
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Handong Wang, Jiaxin Qi, Haochen Feng, Baisheng Lai</span>
+    <span class="paper-authors">Syamantak Kumar, Purnamrita Sarkar, Kevin Tian, Yusong Zhu</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">Predicting transcriptional responses to specific perturbations is critical for understanding cellular regulatory mechanisms and accelerating drug discovery. Single-cell RNA sequencing destroys each measured cell, yielding only unpaired populations of control and perturbed cells. However, existing methods typically model perturbation prediction at the single-cell level and assume cell-to-cell correspondence, which conflicts with the unpaired nature of the observed data. To address this challenge, we propose PopPert, a framework that explicitly parameterizes population-level joint gene expression distributions for collective transcriptional state modeling. Given a control population distribution and a perturbation condition, PopPert predicts perturbation-induced changes in distribution parameters, eliminating the need for cell-level correspondence and reducing sensitivity to single-cell noise. To effectively capture gene co-expression patterns, PopPert leverages a low-rank Gaussian Copula to model cross-gene statistical dependencies and construct the joint gene expression distribution, additionally allowing sampling of synthetic perturbed single-cell profiles. Across multiple single-cell benchmarks spanning both genetic and chemical perturbations, PopPert achieves superior overall performance in differential expression recovery, perturbation effect estimation, and population-level distribution matching. These results establish population-level joint distribution learning as an effective paradigm for predicting transcriptional responses from unpaired single-cell populations. Code for PopPert is publicly available at https://github.com/whd1125/PopPert.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01357v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Sparsity is a powerful structural resource in optimization and statistics. We develop frameworks for leveraging sparsity in sampling problems over the Hamming slice $\mathcal{X}_k^d:=\{\mathbf{x}\in\{\pm 1\}^d:|\{i:\mathbf{x}_i=1\}|=k\}$, in high-dimensional regimes where $k\ll d$ (i.e., where $\mathcal{X}_k^d$ is \emph{highly magnetized}). We use our frameworks to design improved samplers for canonical problems in the study of \emph{Ising models} and \emph{Bayesian sparse linear regression}. Our first main result considers the \emph{Sherrington--Kirkpatrick} (SK) model restricted to fixed-magnetization slices $\mathcal{X}_k^d$. We give a polynomial-time sampler for fixed-magnetization SK models at any inverse temperature $β&gt;0$, under arbitrary external fields, provided that $k\le c_βd$ for an appropriate constant $c_β$. By combining this result with an annealing strategy for estimating normalizing constants, we obtain polynomial-time samplers for the SK model at arbitrarily low temperatures under a sufficiently strong external field of strength $h$. In the large-$β$ limit, our framework permits sampling at field strengths within constant factors of the \emph{Almeida--Thouless line} delineating the replica-symmetric and replica-symmetry-breaking regions ([dAT78]), improving polynomially over the field strength $h(β)$ required by the recent work of [BAR26]. Our second main result concerns the measurement complexity of polynomial-time Bayesian sparse linear regression. Recent work by [KSTZ25] shows how to sample from the canonical \emph{Gaussian spike-and-slab posterior} with expected sparsity $k$, at any signal-to-noise ratio, given $n\gtrsim k^3\log^3 d$ Gaussian measurements. We improve this requirement to $n\gtrsim k^{3/2}\log^2 d+k\log^3 d$, using a common sparsity-aware framework underlying both our results.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.08873v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.01355v1" target="_blank" rel="noopener noreferrer">
-      Exact Risk-Complexity Laws for Projective Boundaries in Scenario Optimization and Distribution-Free Certification
+    <a href="https://arxiv.org/pdf/2609.08871v1" target="_blank" rel="noopener noreferrer">
+      Towards Standardized Evaluation of GPU Memory Safety with GMSBench
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Giuseppe C. Calafiore</span>
+    <span class="paper-authors">Saurabh Singh, Jaewon Lee, Seonjin Na, Hyesoon Kim</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-01</span>
+    <span class="paper-date">2026-09-08</span>
   </p>
-  <p class="paper-abstract">Scenario optimization, conformal prediction, and related distribution-free certification methods use finite samples to construct decisions or prediction sets with violation-risk guarantees for fresh observations. In several classical settings, the conditional violation risk follows an exact beta law, whose tail has a beta-binomial representation and whose parameter is a support, calibration, or compression dimension. This paper identifies the deterministic boundary mechanism behind these formulas and derives the corresponding law when the observed boundary size is random. A decision rule is represented by an acceptance set for future observations, together with a boundary map selecting the sample points responsible for that set. The resulting pair is called a {\em proper projective boundary scheme} when held-out samples are accepted precisely if the full-sample boundary is retained, and accepted non-boundary samples can be deleted without changing that boundary. For every such scheme, the conditional law of the violation risk given the observed boundary size is determined by the boundary&#x27;s cross-sample complexity profile. A stable profile yields the usual beta law, whereas a varying profile produces an exact profile correction. The framework covers scalar order-statistic calibration, support-reconstructive scenario programs, cascaded support-removal certificates, coordinatewise envelopes, and Pareto-frontier calibration with vector scores. It also yields conditional probabilistic certificates and a no-go result explaining why observed complexity alone is insufficient.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.01355v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">As GPUs become increasingly integral to high-performance computing and machine learning, ensuring memory safety in GPU programs has become crucial for reliable and secure execution. However, evaluating GPU memory safety techniques remains challenging due to the lack of comprehensive and standardized benchmarks. In this paper, we present GMSBench, a GPU memory safety benchmark designed to evaluate a broad range of memory safety violations across different GPU memory spaces and execution scenarios. GMSBench comprises 149 self-contained CUDA tests spanning spatial, temporal, and concurrency errors. The suite provides a standardized foundation for the evaluation and comparative analysis of GPU memory safety mechanisms and helps expose gaps in their detection coverage. We demonstrate the utility of GMSBench by evaluating Compute Sanitizer, a widely used GPU memory error detection tool across multiple GPU architectures.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.08871v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
