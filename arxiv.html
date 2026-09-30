@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-09-11 03:13 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-09-30 04:11 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11918v1" target="_blank" rel="noopener noreferrer">
-      General Quantification of Covariate and Concept Shifts
+    <a href="https://arxiv.org/pdf/2609.38175v1" target="_blank" rel="noopener noreferrer">
+      Proximal causal inference through cross-proxy balancing
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Hongbo Chen, Li Charlie Xia</span>
+    <span class="paper-authors">Grace V. Ringlein, Trang Q. Nguyen, Elizabeth A. Stuart, Harsh Parikh</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">Generalization under distribution shift remains a core challenge in modern machine learning, yet existing learning bound theory is limited to narrow, idealized settings and is non-estimable from samples. In this paper, we bridge the gap between theory and practical applications. We first show that existing definition of concept shift breaks when the source and target supports mismatch. Leveraging entropic optimal transport, we propose a key notion: $γ^{*}\!$-concept shifts, and derive a general error bound unifying covariate and $γ^{*}\!$-concept shifts, which applies to broad loss functions, label spaces, and stochastic labeling. We further develop estimators for these shifts with concentration guarantees, and the DataShifts algorithm, which can quantify distribution shifts and estimate the error bound in most applications - a rigorous and general tool for analyzing learning error under distribution shift.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11918v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Proximal causal inference identifies causal effects in the presence of unmeasured confounding by drawing on two sets of proxy variables. Identification typically utilizes bridge functions, defined as solutions to integral equations. However, the mechanism by which fitted bridge functions correct for confounding bias remains opaque, offering little to interpret, inspect or stress-test. We show that the defining equation of a treatment bridge function is already a balance condition, with a cross-proxy form: the weights are functions of the treatment confounding proxies and covariates, and they balance the outcome confounding proxies and covariates (i.e., reweighting the distribution in a particular treatment arm to match the distribution across treatment arms). Several existing identification paths via a treatment bridge function can then be interpreted as providing conditions under which balance on the outcome proxies implies balance on the unobserved confounders, which we call balance propagation. Leveraging this framing, we show that estimation of the treatment bridge function is a type of balancing weight estimation. Finally, we show that an outcome-weighted estimator form can also be obtained for a large class of proximal estimators, including those that utilize an outcome bridge function. Using this framing, we provide conditions under which common estimators are numerically equivalent.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.38175v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11916v1" target="_blank" rel="noopener noreferrer">
-      Can Edge-Deployable Vision-Language Models Identify Species?
+    <a href="https://arxiv.org/pdf/2609.38170v1" target="_blank" rel="noopener noreferrer">
+      Adversarial Training for Pixel Diffusion
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">William Zhou, Mayukha Siripuram, Xiao Yan, Ziqi Liu, Yi Ding</span>
+    <span class="paper-authors">Xin Lin, Zhifei Zhang, Yuqian Zhou, Haitian Zheng, Zhe Lin, Ming-Hsuan Yang, Truong Nguyen</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">Camera traps often run in the field on edge hardware with limited or no connectivity, making small, locally-deployable vision-language models (VLMs) -- not frontier-scale ones -- the practically relevant class to evaluate for species identification. We test whether models in this deployment-relevant 2--8B range carry genuine taxonomic knowledge, evaluating four such VLMs (Qwen3-VL 2B/4B/8B, Gemma3 4B) against the domain-specific specialist BioCLIP (300M parameters) on a 96-species task, comparing clean iNaturalist photographs against camera-trap imagery from 6 LILA.science collections, on two independently-sampled evaluation sets. All models identify species far above chance, but every model -- general-purpose or specialist -- degrades sharply on field imagery (domain gaps of 9.6--26.6 percentage points, consistent across taxonomic levels and both evaluation sets), indicating the degradation reflects general image legibility rather than fine-grained discrimination failure. BioCLIP substantially outperforms every VLM tested (by 33.2--59.2 percentage points across an expanded 200-image sample for every model) despite its far smaller size, suggesting the gap reflects specialized training data rather than model scale; yet BioCLIP&#x27;s own domain gap (18.0 points) is statistically indistinguishable from the best VLM&#x27;s (22.3 points), suggesting the clean-to-field degradation itself is a property of the image-quality shift rather than a general-purpose-model weakness. Under open-set prompting, 5.9--9.6% of responses are syntactically valid but taxonomically nonexistent species names; the relative fabrication-rate ranking across models replicates exactly across both evaluation sets, a more robust finding than any single point estimate.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11916v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Pixel diffusion models generate RGB images directly, avoiding the bottleneck of an autoencoder, yet their outputs still systematically underrepresent fine-scale natural-image statistics. We show that adversarial learning provides an effective post-training correction for this deficiency. Starting from a pretrained model, we retain its original diffusion or flow-matching objective and add an adversarial loss to the predicted output at non-high-noise timesteps, leaving the model architecture and sampling procedure unchanged. To our knowledge, this is the first systematic study of adversarial post-training for pixel diffusion. Across two pixel backbones, the method jointly improves distribution fidelity, coverage, prompt alignment, and perceptual quality. We further investigate why it works. Frequency-band and power-law analyses show that the original models systematically underproduce natural-image high-frequency content, while adversarial post-training restores this missing spectral power. In contrast, perceptual loss also increases high-frequency content but sacrifices distribution fidelity and prompt alignment. Nearest-neighbor, recall, and matched no-GAN SFT controls further rule out memorization, mode dropping, and additional optimization as simple explanations. Finally, we examine the boundary of this effect. Under the tested latent diffusion configurations, the same procedure does not produce comparable joint gains and adds almost no decoded high-frequency power. These results identify direct output access to the image statistics being corrected as a key factor governing when adversarial post-training succeeds.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.38170v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11915v1" target="_blank" rel="noopener noreferrer">
-      Generative Marketing Mix Modeling: A Causal Inference Framework Linking GEO and GEM to Business Impact
+    <a href="https://arxiv.org/pdf/2609.38158v1" target="_blank" rel="noopener noreferrer">
+      Goodness-of-fit for distributions on metric spaces
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Masahiro Kato, Daiki Honma, Taka Kato</span>
+    <span class="paper-authors">Diego Serrano, Eduardo García-Portugués, Ingrid Van Keilegom</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">Generative artificial intelligence changes how firms reach customers, but standard marketing data do not record how often users see and notice a firm&#x27;s name in generated answers. We develop Generative Marketing Mix Modeling (GMMM) to estimate the causal effects of Generative Engine Optimization (GEO) and Generative Engine Marketing (GEM). For GEO, GMMM combines repeated generated answers with question counts, shares of use across generative systems, and notice probabilities. For GEM, it combines records of sponsored placements with notice probabilities. GMMM compares expected business responses under alternative treatment sequences and establishes sufficient conditions for identifying the resulting effects. We investigate the empirical performance of the proposed method using simulated answers to product recommendation in English and Japanese.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11915v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We propose a general goodness-of-fit framework for distributions on separable metric spaces. Under suitable identifiability conditions, probability distributions are characterized by distance profiles, which motivates their use in goodness-of-fit testing, for simple and composite null hypotheses. For composite null hypotheses, parameter estimation is incorporated via a Bahadur-type expansion, and the asymptotic distribution of the empirical process for distance profiles is obtained under the null. We define test statistics based on this empirical process and derive their asymptotic null distributions. We further study the behavior of the proposed tests under fixed and local alternatives, establishing consistency results. Multiplier bootstrap procedures are developed, and their conditional asymptotic validity is established under both simple and composite null hypotheses. The methodology is illustrated with simulation studies and real-data applications for data on the sphere, hyperboloid, and simplex.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.38158v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11901v1" target="_blank" rel="noopener noreferrer">
-      EFI Pairs Without One-Way Puzzles: Oracle Separations from Communication Complexity
+    <a href="https://arxiv.org/pdf/2609.38121v1" target="_blank" rel="noopener noreferrer">
+      WUSH-KV: KV Cache Quantization with Data-Adaptive Transforms
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Atul Mantri</span>
+    <span class="paper-authors">Jiale Chen, Vage Egiazarian, Eldar Kurtić, Torsten Hoefler, Dan Alistarh</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">EFI pairs (Brakerski, Canetti, and Qian, ITCS 2023) and one-way puzzles (Khurana and Tomer, STOC 2024) are the leading candidates for the minimal assumption of quantum cryptography. The first are efficiently preparable quantum states, statistically far yet computationally indistinguishable; the second are classical puzzles, easy to sample and hard to solve. One-way puzzles imply EFI pairs, and whether the converse holds is open. We construct a single classical oracle relative to which one-way puzzles do not exist, even with an unbounded verifier, while an EFI pair survives every distinguisher that queries the oracle classically throughout and holds advice about it, making its one superposition query at the end. The oracle answers every question about the output probabilities of quantum samplers, which removes the puzzles, and hides a Haar-random half-dimensional subspace. To prove security we reduce it to communication complexity. An adversary whose knowledge of the subspace arrives as classical query answers can be simulated inside a two-party protocol against the party holding it, so it does no better than the best classical protocol for Vector-in-Subspace (Klartag and Regev, STOC 2011), whatever the oracle computes. That argument does not cover the superposition query, which we bound instead using tools from random matrix theory. The same attack gives a classical simulation of any quantum party in a classical-message protocol with no entanglement shared in advance, so relative to the oracle there is no proof of quantumness either. Quantum polynomial time therefore offers no advantage on any task with classical inputs and outputs, while the two quantum states stay indistinguishable. We state conjectures on removing the restriction on superposition queries.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11901v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">KV cache memory and bandwidth costs grow with context length and batch size, which limits efficient long-context inference. To address this bottleneck, we introduce WUSH-KV for low-bit KV-cache quantization. It adapts WUSH, which constructs a data-aware transform from the second-order statistics of both factors in a matrix product to reduce quantization error. WUSH-KV uses calibration data to construct separate key and value transforms, with the value transform folded into the model weights and the key transform applied after RoPE. The transforms can be paired with clipped quantizers. For one such quantizer, QuEST INT, we show that, under mild assumptions, the WUSH transform is near-optimal. With this quantizer, WUSH-KV reduces layerwise reconstruction error and achieves the lowest end-to-end perplexity among other tested transforms. For end-to-end evaluation, we integrate WUSH-KV into SGLang using OSCAR-style percentile-clipped affine quantization. At 2-bit, WUSH-KV performs comparably to or outperforms the OSCAR transform across all evaluated models and downstream tasks.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.38121v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11869v1" target="_blank" rel="noopener noreferrer">
-      Sparse data limit what a mechanistic corrosion model can predict
+    <a href="https://arxiv.org/pdf/2609.38114v1" target="_blank" rel="noopener noreferrer">
+      Self-Aligned Forcing: Streaming Video Diffusion with Differentiable Noisy History
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Conrard Giresse Tetsassi Feugmo</span>
+    <span class="paper-authors">Weiqiang Wang, Zhuokun Chen, Yusheng Dai, Boying Li, Yi Zhang, Hossein Rahmani, Qiuhong Ke, Jianfei Cai</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">Mechanistic corrosion models are routinely fitted with four to six parameters to a few measurements and extrapolated across service lifetimes, yet whether the data determine them is rarely tested. We identify a reduced point defect model for the duplex oxide on Nb-stabilized AISI 347 in simulated boiling-water-reactor water from published depth profiles at three exposure times, by differentiable inversion graded against a closed-form reference. Profile likelihood, a 1000-member bootstrap and a prior-relaxation test agree that one of the five parameters is undetermined and a second only weakly so, and that 95% of the fit statistic rests on three chromium points. The kinetics track an empirical power law over the calibration window but diverge from it by a factor of 3.5 to 6.3 at ten years, outside the propagated uncertainty band. That separation, not the thickness it brackets, is what these data determine; an exposure near 3000 hours would resolve it.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11869v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Autoregressive video diffusion enables interactive streaming generation, but suffers from error accumulation over long rollouts. Self-rollout training reduces exposure bias, yet finite rollouts leave long-range drift unresolved. We observe that the noise level of the history key-value (K/V) representations trades visual quality against motion, and that restoring gradients through the history aligns causal training far more closely with bidirectional training. Motivated by these observations, we introduce Self-Aligned Forcing (SAF), a training scheme that aligns the history of each block with the noise level of the block being denoised. Specifically, the history is the K/V produced by preceding blocks at the same denoising stage, so all blocks at a stage can be denoised in a single forward pass under a causal mask. This keeps the noisy history differentiable, allowing future losses to optimize how it is encoded. SAF therefore avoids a separate no-gradient rollout and per-block timestep-zero recaching, training up to 1.8x faster than prior methods with lower memory. At inference, SAF achieves the highest single-GPU throughput among existing methods and keeps one history bank per stage for a multi-GPU pipeline, reaching 49.1 FPS on 4 GPUs. Experiments show superior long-horizon generation with a better balance between visual quality and motion. Project page: https://anonymous.4open.science/w/self-aligned-forcing/.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.38114v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11860v1" target="_blank" rel="noopener noreferrer">
-      Explainability Assistant: A Conversational XAI Interface for Interpreting Energy Consumption Models
+    <a href="https://arxiv.org/pdf/2609.38110v1" target="_blank" rel="noopener noreferrer">
+      Gravitational-wave dark sirens as astrophysical probes: inferring galaxy-merger relations and identifying individual hosts
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Rodion Krjutškov, Eduard Barbu, Nikos Sakkas, Sofia Yfanti</span>
+    <span class="paper-authors">Alessandro Agapito, Michele Mancarella</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">Energy consumption forecasting relies on increasingly complex machine learning (ML) models, such as Genetic Programming-based symbolic regressors, whose predictions can be difficult for facility managers and building operators to interpret. Explainable Artificial Intelligence (XAI) techniques address this opacity, but traditional XAI dashboards require substantial technical expertise and provide limited flexibility for dynamic, context-aware inquiry. Conversational XAI systems offer a promising alternative; however, previous approaches, such as TalkToModel, were constrained by rigid custom grammars and achieved only 76.8% intent-parsing accuracy. This paper introduces the Explainability Assistant, an open-source conversational XAI system that leverages the function-calling capabilities of modern Large Language Models (LLMs) to overcome these limitations. The system achieves 94% intent-parsing accuracy, supports flexible natural language interaction, and adapts to different ML problem types without task-specific fine-tuning. We present the system&#x27;s architecture and report results from a comparative evaluation conducted with energy domain specialists, contrasting the Explainability Assistant with a traditional XAI dashboard. The evaluation suggests improved usability and consistent task accuracy, with all experts unanimously preferring the conversational interface for practical use.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11860v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Gravitational-wave (GW) ``dark siren&#x27;&#x27; techniques, namely the statistical association of GW events with a galaxy catalog, have so far been used as a cosmological tool. Yet this association carries distinctive astrophysical information that remains unused---specifically, how compact binaries populate galaxies and the identities of individual hosts. In this work, we turn the dark-siren program into an astrophysical probe by inferring both simultaneously within a single hierarchical framework. The method reduces the many potential hosts to a compact, probabilistically ranked target list, providing a direct follow-up decision tool. Applied blindly to GW170817, it recovers NGC~4993 as the highest-ranked host and constrains the galaxy luminosity weighting, mildly favoring non-uniform host weights. Fixing the galaxy weighting can instead degrade host identification and even favor the wrong host. This framework recasts dark sirens as a potentially unique probe of the astrophysics of electromagnetically dark compact-binary mergers.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.38110v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11838v1" target="_blank" rel="noopener noreferrer">
-      Target leakage, not model class, explains reported accuracy in survey-based cardiovascular screening: a leakage-tiered audit of glass-box and tabular foundation models
+    <a href="https://arxiv.org/pdf/2609.38084v1" target="_blank" rel="noopener noreferrer">
+      Peaks and peak-nestings on unit interval graphs
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Raad Bin Tareaf, Murad Al-Rajab, Samia Loucif, Samer Ellaham, Cedric Schmitz</span>
+    <span class="paper-authors">Per Alexandersson, Leonardo Saud Maia Leite</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">Cardiovascular screening models trained on national health surveys routinely report areas under the receiver operating characteristic curve (AUROC) near 0.89. We asked whether that accuracy reflects learning or target leakage, whether tabular foundation models change the answer, and whether the properties deployment requires survive joint examination. We benchmarked ten classifiers spanning linear, tree-ensemble, neural, glass-box, and tabular foundation classes for prevalent myocardial infarction in 442,067 respondents of the 2022 Behavioral Risk Factor Surveillance System across five feature tiers of decreasing leakage risk. Each was audited for discrimination, calibration, fairness at an explicit screening threshold, conformal coverage, explanation faithfulness, and inference cost, then applied -- models and thresholds frozen -- to 430,755 respondents of 2023. Removing two post-diagnostic features cost every model 0.049-0.051 AUROC, collapsing the field into a 0.0045-wide band. The glass-box explainable boosting machine was non-inferior to every alternative within a pre-specified 0.005 margin while scoring the cohort roughly 104 times faster than the strongest foundation model. One threshold detected 75.4% of women&#x27;s infarctions against 89.0% of men&#x27;s; editing the model&#x27;s shape functions reduced the gap to 0.010. Marginal conformal prediction gave 0.86 coverage to men and 0.82 to adults over 60; Mondrian calibration repaired every stratum. Frozen models transported within 0.002 AUROC. Reported headroom in this literature is a property of the feature set, not the learner. Transparency cost nothing measurable and made fairness repair and uncertainty conditioning directly auditable. Evaluation practice, not model capacity, is the binding constraint.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11838v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Unit interval graphs admit a classical Catalan encoding by area sequences, or equivalently by Dyck paths. We introduce a new statistic on these graphs, called peak-nesting, defined as the largest number of peak-cliques containing a common vertex. Through the correspondence with area sequences, peak-nesting also defines a new statistic on Dyck paths. We construct a bijection between Dyck paths and bicolored Motzkin paths which simultaneously records peak-nesting and the number of peaks. This yields a refinement of Touchard&#x27;s identity, coefficient formulas involving Dyck paths of given height, and new combinatorial interpretations for several sequences recorded in the OEIS. We study the peak and peak-nesting polynomials over all unit interval graphs and over the subclasses of connected, Abelian, $2$-nested, and reduced unit interval graphs. For these families we obtain closed formulas, recurrences, and, for the symmetric cases, nonnegative expansions in the gamma-basis with explicit combinatorial interpretations. We also investigate questions regarding the location of zeros and the log-concavity of the corresponding coefficient sequences: some of the polynomial families form generalized Sturm sequences, whereas others fail to be real-rooted but appear nevertheless to have log-concave coefficients. Finally, we relate the peak-clique presentation of a unit interval graph to lattice path matroids.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.38084v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11829v1" target="_blank" rel="noopener noreferrer">
-      WFDroneBench: A Benchmark for Sensor Placement and Drone Routing for Wildfire Detection
+    <a href="https://arxiv.org/pdf/2609.38065v1" target="_blank" rel="noopener noreferrer">
+      Jaxolotl: A Unified High-Performance Benchmark Suite for LTL-Based Multi-Task RL
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Romain Puech, Danique de Moor, Ana Trisovic, Dimitris Bertsimas</span>
+    <span class="paper-authors">Mathias Jackermeier, Jacques Cloete, Alessandro Abate</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">Increasingly frequent and severe wildfires threaten ecosystems, public health, and infrastructure. Early detection is vital but limited by existing monitoring systems. Drones offer mobile, real-time coverage, but optimizing sensor placement and drone routing in dynamic fire zones remains challenging. To address this, we introduce WFDroneBench, an open-source Python benchmarking library for early wildfire detection that integrates machine-learned risk maps with optimization-based deployment strategies for sensors, charging stations, and drones. It evaluates risk maps, optimization strategies, and monitoring equipment using standardized metrics and realistic wildfire simulations. The framework supports benchmarking across predictive and decision-making components: machine learning researchers can assess risk models and compare routing strategies. WFDroneBench includes 7746 scenarios across 49 locations, built from historical ignitions, real-world wildfire risk maps, and simulated fire spread, along with two ground detector and three drone routing strategies. Our experiments show that the risk-aware strategy Max-Coverage significantly outperforms other baselines when risk maps are sufficiently accurate, achieving the fastest detection on the most difficult fires. We further find that risk-aware static infrastructure helps even under an imperfect risk map and drone-based detection outperforms ground sensors. Finally, our results reveal two key open challenges: (i) detecting small fires rapidly and reliably, and (ii) improving risk-map prediction, where the gap between ground-truth ignition patterns and available risk maps highlights a significant opportunity for ML innovation. We openly release all code, data, and documentation.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11829v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Training agents to follow arbitrary instructions is an important goal of multi-task reinforcement learning (RL). Linear temporal logic (LTL) provides a precise and structured formalism for specifying instructions to agents, and has been successfully adopted for training generalist multi-task policies. However, differences in implementations, task distributions, and evaluation protocols make existing methods difficult to compare, while high computational costs limit the scale and statistical reliability of experiments. We introduce Jaxolotl, a unified high-performance benchmark suite for multi-task LTL-RL to address these concerns. Jaxolotl provides a modular, end-to-end JAX implementation of six representative algorithms and four environments, together with newly curated task suites and a standardised, statistically robust evaluation protocol. By precompiling symbolic task representations into static arrays, Jaxolotl enables fully JIT-compiled training and evaluation, achieving end-to-end speedups of up to $220\times$ and supporting controlled comparisons at substantially greater experimental scale. We use this framework to systematically evaluate existing approaches, revealing complementary strengths and limitations: general methods capable of non-myopic reasoning struggle as the number of propositions grows, while methods with stronger scaling rely on environment-specific assumptions and suffer from myopia.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.38065v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11801v1" target="_blank" rel="noopener noreferrer">
-      Thinking with Looped Flows
+    <a href="https://arxiv.org/pdf/2609.38029v1" target="_blank" rel="noopener noreferrer">
+      Critical Thinking with Generative AI: A Constraint-First Design Pilot of a Thinking-Partner Intervention
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ayhan Suleymanzade, Chanhyuk Lee, Floor Eijkelboom, Nicholas M. Boffi, İsmail İlkan Ceylan, Jinwoo Kim</span>
+    <span class="paper-authors">Fatima Tuz Zahra, Jiangen He, David M. Bowers, Wei Wang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">Humans and machines often solve harder problems by spending more time on computation. In deep learning, looped models implement this idea during inference by recurrently updating a hidden state. In practice, however, their training backpropagates through only one or a few updates, making it hard to train early updates to support future ones. We propose looped flows, an approach that sidesteps this issue by training the recurrence with local denoising objectives. By imposing temporal association across denoising objectives through progressively decreasing noise levels and shared noise, the model is incentivized to learn recurrent states that transfer useful computation over time, even when gradients cover only a few updates. We then formulate inference as integrating the velocity of a probability flow parameterized by the learned denoiser, coupled with recurrent states. This allows solving harder problems by spending more computation through a finer temporal grid and enables multiple valid predictions from different initial noise samples. Across six reasoning benchmarks including two multi-solution benchmarks, looped flows outperform prior state-of-the-art looped models overall, achieving 58.8% test accuracy on ARC-AGI-1 and 12.2% on ARC-AGI-2.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11801v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Generative AI (GenAI) tools entered higher education classrooms faster than the field was able to study their effects on learning. One concern is that GenAI may displace the critical thinking and AI literacy that students will need after graduation. This paper reports a Design-Based Research pilot of a GenAI-assisted critical thinking framework, in which ChatGPT was used as a thinking partner in an undergraduate research methods and statistics course during Spring 2025 (N = 14). The mixed-methods design combined pre- and post-intervention measures of statistical learning (AASCDM), AI literacy (MAILS), and critical thinking (WGCTA) with instructor field notes, student artifacts, and student-AI interaction logs. Pre-post tests showed gains on every AASCDM dimension and on eight of nine MAILS dimensions, while WGCTA percentiles did not change. Qualitative analysis identified four themes: the ways students positioned the LLM (as answer generator, validator, or co-thinker); the depth of student engagement (procedural vs. conceptual); occasional humanizing of the tool; and the role of curriculum design in shaping each of the prior three. Read together, the findings indicate that one semester of GenAI-assisted instruction can move domain learning and self-reported AI literacy but does not move standardized critical thinking, and that the modal student-LLM relationship is one of validation instead of dialogue. We end with design principles for the next iteration of the framework and implications for research on adaptive and personalized learning.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.38029v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11786v1" target="_blank" rel="noopener noreferrer">
-      Beyond Word Error Rate: A Switch Aware Evaluation of ASR and Audio Language Models on English Yoruba Code-Switched Speech
+    <a href="https://arxiv.org/pdf/2609.38011v1" target="_blank" rel="noopener noreferrer">
+      When do data mixtures improve scaling laws? Insights from high-dimensional regression
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Chibuzor Okocha, Christan Earl Grant</span>
+    <span class="paper-authors">Diyuan Wu, Lehan Chen, Theodor Misiakiewicz, Marco Mondelli</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">Automatic speech recognition (ASR) systems and audio language models (audio LMs) now report low error rates on monolingual benchmarks, but their behavior on code switched speech in low resource, diacritic rich languages remains poorly characterized. We present a switch aware evaluation of eleven modern systems (six ASR models and five audio LMs) on English Yoruba code-switched speech, using a deterministic 2000 utterance evaluation set and a shared scoring pipeline. Beyond word error rate (WER), we report switch localized diagnostics: a switch entry token error rate (SETER), windowed switch point error rates, language specific error rates, and a diacritic insensitive WER. Our central finding is that aggregate WER hides code switching behavior. The best system by WER (an ASR model) is statistically indistinguishable from a leading audio LM on WER, yet the audio LM is significantly better on every switch localized metric. Across faithful systems, Yoruba token recognition collapses (error 0.97 for almost all systems) while English tokens are recognized far better, and errors concentrate sharply at switches into Yoruba. Several generative audio LMs fail as exact transcribers, producing translation, verbosity, and prompt leakage that are strongly prompt dependent. We release manifests, metric implementations, and evaluation scripts to support reproducible, switch aware benchmarking for African code switched speech.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11786v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Modern machine learning systems are trained on mixtures of data from different domains, and choosing the right mixture can substantially improve downstream performance. Despite an extensive literature on data mixing and reweighting, existing work is largely empirical and it remains unclear when auxiliary data genuinely improves scaling laws rather than merely providing more samples. To gain insight into this question, we study a high-dimensional mixed-data regression model with a shared regression function, heterogeneous covariances and noise levels, and dataset sizes that may grow at different rates. We establish the minimax risk under an ellipsoidal parameter constraint for the general covariance structure and derive deterministic equivalents for the test error of ridge regression under commutative covariances. We then specialize to a target domain and an auxiliary domain with aligned power-law covariance spectra, where the theory yields explicit scaling laws in terms of spectral decay, target regularity, and the relative growth of the two datasets. These laws identify regimes in which combining data mixtures provably yields a faster scaling rate than using either dataset alone. In particular, improving the scaling law requires a specific interplay between spectra and relative sample sizes of the domains. Our numerical experiments on language models exhibit the same qualitative phenomenon: appropriate data mixtures yield a faster decrease in target-domain test loss than training on either domain alone.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.38011v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11780v1" target="_blank" rel="noopener noreferrer">
-      Predicting Privacy Leakage from Weight Spectral Density
+    <a href="https://arxiv.org/pdf/2609.38009v1" target="_blank" rel="noopener noreferrer">
+      Density Matrices of Pulsed Quantum Light
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Richard J. Preen, Jim Smith</span>
+    <span class="paper-authors">Joscelyn van der Veen, Daniel F. V. James</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">Membership inference attacks (MIAs) are widely used to audit the privacy disclosure risk of machine learning models, however current state-of-the-art attacks require training computationally expensive shadow models, making large-scale privacy evaluation impractical. In this work, we investigate whether inexpensive spectral metrics derived from the heavy-tailed self-regularisation framework can serve as proxies for MIA vulnerability. We evaluate several WeightWatcher spectral metrics on image and tabular classification tasks and compare their relationship with MIA privacy leakage against conventional measures of generalisation. Across datasets, stable rank exhibits a strong positive correlation with overall MIA success, while Log alpha-Norm shows a consistent negative correlation with MIA vulnerability at the low false-positive regime. These associations are observed to be stronger than those obtained using the generalisation gap. The results indicate that neural network spectra may contain information about privacy leakage that is not fully captured by conventional measures of overfitting, motivating spectral analysis as a promising direction for scalable privacy auditing.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11780v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Pulsed light is represented by density matrices whose correlation functions have different properties of stationarity and coherence. We show that these density matrices yield equivalent measurement results after accounting for finite detection times. This in turn reveals a physical meaning to the length of a quantization cavity and explains the origin of the physical spectrum for pulsed light. By generalizing the density matrices for pulsed Gaussian states of light, we can describe pulsed light of varying statistics in the same basis and relate the photocount rate to the pulse spectrum.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.38009v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11777v1" target="_blank" rel="noopener noreferrer">
-      Differentially Private EEG Feature Anonymization: A Privacy-Utility Case Study in Clinical Neurophysiology
+    <a href="https://arxiv.org/pdf/2609.37989v1" target="_blank" rel="noopener noreferrer">
+      TabFM-Auto: Self-Evolving Pipelines for Tabular Foundation Models
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Noman Sadiq, Mohsen Toorani</span>
+    <span class="paper-authors">Deqing Fu, Huangyuan Su, Rajat Sen, Taman Narayan, Sujay Sanghavi, Abhimanyu Das, Weihao Kong</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">Clinical electroencephalography (EEG) data are valuable for healthcare research and for developing artificial intelligence (AI)-based clinical decision-support systems, but EEG recordings and derived features may contain sensitive patient-specific information. This creates privacy risks when data are reused, analyzed, or shared across clinical and research environments. Conventional anonymization methods are often insufficient for high-dimensional biomedical signals, since removing direct identifiers does not necessarily prevent re-identification, linkage, or inference risks. At the same time, strong privacy protection may distort clinically relevant signal characteristics and reduce data utility. This paper studies subject-level differential privacy for protecting clinical EEG-derived feature representations using Gaussian and Laplace perturbations. The proposed framework considers three deployment scenarios: client-side anonymization, centralized server-side anonymization, and decentralized local training. Following EEG preprocessing and feature extraction, Gaussian and Laplace perturbations are applied to the resulting patient-level EEG feature representations. The Laplace experiments evaluate the implemented noise scales, while the scales required for formal full-vector calibration are derived separately. The effects of both perturbations are assessed using statistical utility measures and a downstream machine-learning-based utility check. The results show that differentially private perturbation can be integrated into EEG processing workflows, but the selected mechanism, privacy parameters, and sensitivity calibration strongly influence data utility. The study highlights the practical privacy-utility trade-off in DP-based EEG feature anonymization and the challenges of preserving downstream utility in small and imbalanced clinical EEG datasets.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11777v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Tabular foundation models achieve strong zero-shot accuracy on structured data by pretraining on synthetic tables, but they ignore the column names, task descriptions, and auxiliary files that carry dataset semantics. Meanwhile, self-evolving machine learning engineering (MLE) agents train models from scratch on each dataset, yet jointly searching over features, architectures, and hyperparameters is noisy and prone to overfitting. We introduce TabFM-Auto, which pairs a tabular foundation model, TabFM, with a language model agent that evolves the data pipeline around it. Guided by dataset metadata and validation feedback, TabFM-Auto iteratively refines data cleaning, feature engineering, context selection, and post-processing to reduce TabFM&#x27;s error. Across all 51 datasets of the TabArena benchmark, five TabFM-Auto configurations with different agents and language models take the top five overall positions, and the best raises TabFM from 1785 to 2013 Elo. The discovered pipelines also transfer to other frozen tabular foundation models (+69 to +143 Elo) with no further search. On the 8 tabular competitions of MLE-Bench, TabFM-Auto ranks first overall among MLE agents.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.37989v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11751v1" target="_blank" rel="noopener noreferrer">
-      Stochastic Gradient Methods with Online Scaling
+    <a href="https://arxiv.org/pdf/2609.37983v1" target="_blank" rel="noopener noreferrer">
+      Toward Principled Generative Data Assimilation of Turbulent Flows from Sparse Observations
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Wanyu Zhang, Wenzhi Gao, Madeleine Udell</span>
+    <span class="paper-authors">Baris Turan, Zhuoran Liu, Heng Xiao</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">This paper introduces Stochastic Online Scaled Gradient Methods (SOSGM), a generalization of the recently developed adaptive preconditioning framework in arXiv:2505.23081 and arXiv:2509.11007 to stochastic optimization. Under standard assumptions, we establish convergence guarantees for SOSGM using large batchsize or variance reduction. SOSGM is compatible with popular diagonal and/or low-rank preconditioners as well as heavy-ball momentum, while maintaining memory and computation cost comparable to Adam. Extensive numerical experiments demonstrate the strong empirical performance of SOSGM. Using a diagonal preconditioner, SOSGM and its variants substantially outperform existing adaptive first-order methods across a range of statistical learning tasks.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11751v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Turbulent flows are highly chaotic, which makes their instantaneous states difficult to predict. Data assimilation aims to reduce this predictive uncertainty by synthesizing the predictions of a physical solver with partial observations of the system. Traditional data assimilation methods such as ensemble and variational approaches can incur substantial computational cost through evaluations of high-fidelity solvers and, for variational methods, adjoint calculations. Recently, generative diffusion models have been explored in the solution of inverse problems in fluid mechanics, demonstrating their potential for data assimilation. However, existing diffusion-based methods often use free parameters instead of the prescribed observation-error covariance to control the balance between the prior and likelihood, departing from the Bayesian formulation of data assimilation. We propose a framework for principled generative data assimilation in which observations are assimilated in the clean-state space and the prescribed observation-error covariance enters explicitly through an ensemble Kalman update. In the Lorenz-63 system, the proposed method yields a lower trajectory error and equation residual than the other diffusion-based posterior sampling methods considered, although its ensemble underestimates the posterior uncertainty. In two-dimensional Rayleigh-Bénard convection, the generated fields recover the statistics of the direct numerical simulation reference at large scales, with deviations confined to the smaller scales. These results suggest that the framework can produce physically plausible turbulent flow fields, indicating its potential for more challenging turbulent flow applications.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.37983v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11740v1" target="_blank" rel="noopener noreferrer">
-      From Good Starts to Optimal Inference: Generalized Latent Factor Models with Missingness and Implicit Regularization
+    <a href="https://arxiv.org/pdf/2609.37972v1" target="_blank" rel="noopener noreferrer">
+      Dagger: Decoupling-based Model Stealing Attack against Graph Neural Networks
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Chengzhu Huang, Yuqi Gu</span>
+    <span class="paper-authors">Ying Song, Xiaowei Jia, Balaji Palanisamy</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">Generalized latent factor models provide a flexible framework for analyzing high-dimensional non-Gaussian data, but principled estimation and uncertainty quantification under missingness remain substantially less developed. We develop a theory that connects a computationally tractable nonconvex procedure directly to statistical inference for nonlinear latent factor models with exponential-family links and partially observed entries. Our procedure combines a link-aware double-SVD initialization, a unilateral refinement that achieves rowwise consistency, and vanilla gradient descent. We show that the refined initializer enters a region of incoherence and contraction and that gradient descent remains in this region through implicit regularization, contracting rapidly down to the statistical estimation error without explicit incoherence or balancing regularization. Our central result is a uniform rowwise linear approximation for the actual output of gradient descent that isolates the leading score fluctuations from higher-order estimation and optimization errors. These expansions yield asymptotically valid individual and Gaussian multiplier-bootstrap simultaneous inference for latent factors, together with simultaneous confidence bands for missing-entry means, without requiring an additional debiasing step. The resulting estimation rate matches a restricted-class minimax lower bound up to logarithmic factors, while the theory accommodates severe missingness, weak low-rank signals, and diminishing local curvature. Simulations support the theoretical findings, and an application to large language model evaluation illustrates uncertainty-aware estimation and ranking of latent model capabilities.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11740v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">As Graph Neural Networks (GNNs) are widely deployed as Machine Learning-as-a-Service (MLaaS) APIs, model stealing attacks have emerged as a critical security threat. By querying a victim model&#x27;s black-box API, an adversary can construct a functionally equivalent surrogate model, compromising proprietary intellectual property and downstream security. Existing GNN stealing attacks, however, rely on overly permissive assumptions, such as soft-label outputs, large query budgets, full-graph query access, and prior knowledge of victim backbones that rarely hold in real-world deployments. In this work, we formalize a strictly constrained black-box, hard-label and backbone-agnostic threat model for GNN stealing attacks under a tight query budget. Given these realistic restrictions, we identify four fundamental challenges: sparse local structures and isolated nodes that degrade victim label quality, insufficient supervision signals, systematic imbalance with incomplete class coverage, and backbone mismatch. To address these interlocking barriers, we propose Dagger, a novel two-phase decoupling-based attack framework. Specifically, in Phase 1, Dagger pre-trains a surrogate using decoupled information propagation to preserve structural context over sparse local subgraphs while handling isolated nodes, combined with manifold-level node mixup to synthesize continuous supervision signals and smooth decision boundaries. In Phase 2, Dagger freezes the encoder and fine-tunes the classifier head via class-balanced sampling paired with logit adjustment to rectify severe query imbalance without requiring extra victim queries. Extensive experiments across four benchmark graphs and four GNN backbones demonstrate that Dagger consistently outperforms state-of-the-art GNN stealing attacks, achieving up to 18.16\% higher fidelity while only utilizing 12.23$\times$ fewer queries than the strongest baseline.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.37972v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11736v1" target="_blank" rel="noopener noreferrer">
-      Learning structural balance of graphs from quantum spectral features
+    <a href="https://arxiv.org/pdf/2609.37965v1" target="_blank" rel="noopener noreferrer">
+      Strong-to-Weak Spontaneous Symmetry Breaking of Dephased Fermions
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Stefano Scali, Oleksandr Kyriienko</span>
+    <span class="paper-authors">Abhijat Sarma</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">We develop a quantum approach to spectral feature extraction from the density of states (DOS) of a problem-dependent Hamiltonian, and apply it to machine learning on signed graphs. We propose to embed a signed graph as an Ising model instance with positive and negative interactions, and use the standardized moments of the Ising DOS as features for learning. We show that these moments count signed closed walks, are switching-invariant, and are size-free by construction. As a benchmark, we target learning the frustration index, an NP-hard measure of structural balance that can be labeled exactly at moderate size. At zero field, the models can be sampled classically, allowing the quantum extraction procedure to be certified against exact ground truth. We propose DOS-QPE, a phase estimation on a purified maximally mixed probe, which samples the spectral density with orders of magnitude fewer shots than Hadamard test-based trace sampling and feeds the resulting features directly into classically trained models. On $1.4\times10^5$ labeled graphs the exact DOS determines the frustration index, and five moments recover it with a mean error of 0.4, well below one sign flip. Beyond zero field, the underlying trace-estimation problem is DQC1-complete, providing access to spectral features for which no efficient classical sampling method is known. Our work opens routes towards quantum applications in social network balance analysis, spin-glass studies, correlation clustering, and protein-interaction networks.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11736v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Strong-to-weak spontaneous symmetry breaking (SWSSB) is a novel phase transition in mixed states associated with the loss of global charge information. In this work we study fermions with $U(1)$ symmetry under infinite density dephasing and derive the SWSSB properties of the resulting mixed states. Our central observation is that at infinite dephasing every Renyi correlator is exactly the spin-spin correlator of a compact XY model, whose Boltzmann weight is the squared full-counting-statistics generating function of a classical ensemble built from the parent state. For the Renyi-2 correlator it is the full counting statistics of the parent state itself. We complement the infinite dephasing mapping with a novel diagrammatic expansion for the Renyi-1 correlator, applicable to any diagonal mixed state, which computes the couplings of the Renyi-1 XY model. We also study a replica field theory for even Renyi index quantities, applicable at finite dephasing. Our analysis indicates that fully dephased metals display long-range SWSSB in $d\geq 2$, as confirmed numerically and experimentally in $d=2$, and quasi-long-range SWSSB in $d=1$. For insulating parent states both an SWSSB and a trivial phase are possible at infinite dephasing depending on UV details. Long-range SWSSB in $d\geq 3$, or quasi-long-range SWSSB in $d=2$, survives above a nonuniversal, Renyi-index-dependent threshold and is lost when the parent state is deep in the insulating phase, with the exception of quantum Hall insulators which generically have quasi-long-range SWSSB. For even Renyi indices we also determine the stability of the SWSSB phase away from infinite dephasing and derive the universality class of the SWSSB transition.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.37965v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11712v1" target="_blank" rel="noopener noreferrer">
-      Generalization Analysis of Distributed Kernel-based Robust Gradient Descent Algorithms
+    <a href="https://arxiv.org/pdf/2609.37960v1" target="_blank" rel="noopener noreferrer">
+      Constraining exoplanet population parameters with Kepler and simulation-based inference
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jun-Yi Meng, Zheng-Chu Guo, Yuan Mao</span>
+    <span class="paper-authors">Chloé Padois, Friedrich Anders, Daniel del Ser</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">In this paper, we investigate the generalization performance of distributed gradient descent algorithms in a reproducing kernel Hilbert space under a robust loss function $l_σ$. By exploiting the spectral characterization of gradient descent together with the intrinsic properties of robust loss functions, we establish optimal learning rates for the distributed kernel-based robust gradient descent (DKRGD) algorithm with an appropriately chosen scale parameter $σ$. The proposed parameter choice of $σ$ simultaneously alleviates the saturation phenomenon and guarantees statistical robustness. A key technical contribution is a novel error analysis that provides substantially sharper bounds for products of operators, thereby significantly relaxing existing restrictions on the maximum number of local machines while retaining optimal learning rates. Finally, we develop a communication-efficient strategy that further improves the convergence performance of DKRGD.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11712v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">In the context of the rapidly growing field of galactic exoplanet population studies, we present an exoplanet simulator capable of generating synthetic populations for millions of stars in a few seconds (Padois et al., 2025). Our framework combines observed exoplanet detections with the latest planetary formation models, incorporating dependencies between host star properties and planet occurrence rates, orbital period distributions, and other key demographic features. However, many model parameters remain uncertain and model-dependent. To constrain some of the most critical ones, we couple our simulator with simulation-based inference (SBI): we define a set of 44 free parameters describing the population of different planet types (occurrence rates, mass-period distribution, mass-radius relation, etc.), run millions of simulations sampling from broad prior distributions, simulate their detectability by Kepler, and train a machine-learning algorithm to learn the relationships between input parameters and the resulting &quot;observed&quot; synthetic populations. The best-fit parameters are then inferred by comparing model outputs to real observations, for which we adopt the Kepler confirmed planet catalogue as our reference dataset, since it provides the largest homogeneous sample from a single facility. We present preliminary results for the planet occurrence rate as a function of stellar mass and metallicity, across different planet types, along with constraints on several key simulation parameters such as the orbital period distribution and the inclination dispersion within planetary systems. These refined parameters enable us to refine our yield predictions for upcoming exoplanet detection missions, including PLATO, Roman, and HAYDN.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.37960v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11710v1" target="_blank" rel="noopener noreferrer">
-      Mixed-integer optimization for multi-year military aircraft fleet management
+    <a href="https://arxiv.org/pdf/2609.37959v1" target="_blank" rel="noopener noreferrer">
+      TabFM: A Zero-Shot Foundation Model for Tabular Data
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Matteo Vescovi, Raffaele Giuseppe Cestari, Roberto Valdambrini, Andrea Mercurio, Valentina Breschi, Mara Tanelli</span>
+    <span class="paper-authors">Weihao Kong, Erez Louidor Ilan, Shuxin Nie, Taman Narayan, Rajat Sen, Yichen Zhou, Deqing Fu, Samet Oymak, Abhimanyu Das</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">While existing strategies for Flight and Maintenance Planning for the defense sector generally address idealized conditions, real-world planning often involve non-nominal initial fleet states and complex inspection schemes. To address these challenges, we propose a multi-year planning strategy that maximizes long-term fleet availability. The formulation incorporates multiple competing objectives capturing the tight coupling between aircraft usage and maintenance, while enforcing cyclic inspection requirements and limited maintenance-dock capacity. To enhance practical applicability, we introduce three complementary strategies: a receding-horizon approach to reduce computational burden, a Bayesian Optimization routine to automatically tune cost-function coefficients, and an aircraft-specific weighting scheme that adapts model priorities based on fleet-condition statistics. Results on three realistic benchmark scenarios demonstrate the effectiveness of the approach.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11710v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Tabular machine learning typically relies on per-dataset workflows, fitting tree ensembles or running AutoML searches from scratch for every task. We present TabFM, a 400M-parameter tabular foundation model that formulates supervised tabular prediction as in-context learning. TabFM produces calibrated zero-shot predictions in a single forward pass without task-specific tuning. Trained entirely on synthetic tables generated from structural causal models, TabFM learns general tabular representations that transfer zero-shot to real-world tasks. Across all 51 benchmark datasets in TabArena (38 classification and 13 regression), zero-shot TabFM ranks first among default tabular foundation models and outperforms tuned AutoML pipelines. Two extensions over the same frozen weights improve performance further on both tracks: multi-view feature expansion with ensembling and post-hoc calibration (TabFM+), and LLM-guided, dataset-specific data processing and feature engineering (TabFM-Auto).</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.37959v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11708v1" target="_blank" rel="noopener noreferrer">
-      Language-Augmented Semantic Priors for B-Spline Surface Fitting
+    <a href="https://arxiv.org/pdf/2609.37958v1" target="_blank" rel="noopener noreferrer">
+      Kolmogorov-Arnold Classifier Systems as Universal Approximators
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yunzhong Lou, Yusheng Luo, Jiahao Li, Yu Song, Xiangdong Zhou</span>
+    <span class="paper-authors">Hiroki Shiraishi, Hisao Ishibuchi, Masaya Nakata</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">The use of B-splines and Non-Uniform Rational B-Splines surfaces constitutes the mathematical foundation of contemporary computer-aided design (CAD) systems. Despite long-term progress, geometric kernels in traditional CAD still rely heavily on predetermined heuristic initialization for surface fitting and parameterization. Meanwhile, the procedural semantics and design intent encoded in modeling histories are largely ignored during geometry generation. This disconnect creates a gap between high-level design intent and solver-executable geometric configuration, often leading to suboptimal and semantically inconsistent fitting results. To bridge this gap, we introduce LASP, a Language-Augmented Semantic Priors framework that leverages large language models (LLMs) to infer structured, solver-usable B-spline priors from procedural modeling histories. Rather than modifying the geometric kernel itself, LASP operates as a semantic reasoning layer above existing solvers. It first translates modeling histories into rich textual descriptions that capture design intent, geometric context, and functional relationships, and then uses a fine-tuned LLM to predict structured B-spline prior parameters. LASP is trained through a two-stage scheme that combines local geometric regularities with long-range contextual dependencies, producing priors that are both interpretable and semantically coherent. This approach furnishes inductive signals that direct the conventional B-spline fitting process toward solutions that more accurately encapsulate the intended design objectives and demonstrate heightened semantic coherence. Compared to traditional machine learning schemes, the experiments demonstrate that language-driven reasoning can serve as a powerful inductive bias for geometric solving, establishing a new paradigm of language-guided geometric optimization in modern CAD systems.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11708v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">As the input dimension $n$ grows, rule-based machine learning, such as Learning Classifier Systems (LCSs), faces a fundamental scalability bottleneck for function approximation: both rule count and parameter count grow exponentially with $n$. Traditional LCSs partition the $n$-dimensional input space directly, requiring $\mathcal{O}(m^n)$ rules for adequate coverage, where $m$ is the per-variable resolution. This article breaks from this paradigm by reorganizing rules dimension-wise, guided by the Kolmogorov-Arnold representation theorem: any continuous $n$-dimensional function can be expressed as a finite superposition of one-dimensional functions. The proposed Kolmogorov-Arnold Classifier System (KACS) decomposes the target function into one-dimensional subproblems and assigns a dedicated ruleset to each, reducing the worst-case rule count from $\mathcal{O}(m^n)$ to $\mathcal{O}(mn^2)$ and replacing $n$-dimensional local models with one-dimensional models requiring only two parameters per rule, independent of $n$. We also provide the first constructive proof that an LCS, namely KACS, is a universal approximator for continuous functions on compact domains. Evaluated against a direct $n$-dimensional input space partitioning approach under otherwise identical conditions, KACS achieves competitive accuracy in many settings while using only 2\% to 40\% of the parameters. Our implementation is available at https://github.com/YNU-NakataLab/KACS.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.37958v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11697v1" target="_blank" rel="noopener noreferrer">
-      ActSafeGuard: Differentiable and Training-Aligned Constraint Enforcement for Flow-Matching Policies
+    <a href="https://arxiv.org/pdf/2609.37955v1" target="_blank" rel="noopener noreferrer">
+      Torsionally excited methanol in massive young stellar objects: The role of the mid-IR radiation field
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jianming Ma, Rongjun Jin, Xiaxi Si, Yang Zhang, Yiheng Li, Yue Gao</span>
+    <span class="paper-authors">C. Sanna, S. Leurini, A. Giannetti, E. Schisano, L. Testi, S. Molinari, J. S. Urquhart, T. Pillai, F. Massi, K. Immer, E. Molinari, S. Casu</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">Vision-Language-Action (VLA) and World-Action Models (WAMs) have demonstrated strong capabilities in general-purpose robotic manipulation, yet their generated actions may violate hard physical constraints and therefore be unsafe or infeasible for deployment. Existing safety approaches either optimize statistical safety objectives without deterministic per-step guarantees or correct unsafe actions only during inference, creating a mismatch between policy training and execution. We introduce ActSafeGuard, a differentiable and training-aligned safeguard layer for flow-matching based policies. ActSafeGuard integrates hard action feasibility into policy learning, not merely treating safety as an inference-time external component. Through an analytical ray-scaling operator design, ActSafeGuard enables boundary-aware gradients to guide the model to naturally learn constrained manifolds. Extensive experiments on multiple standard foundation backbones ($π_{0.5}$ and Fast-WAM) across various tasks demonstrate that ActSafeGuard consistently achieves a $100\%$ step safety rate while fully preserving or even boosting task success rates, providing a scalable and minimally invasive solution for safe embodied AI deployment.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11697v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Observing the earliest stages of high-mass star formation in the mid-infrared (mid-IR) is challenging because the extinction is high and the resolution limited. Millimeter vibrationally and torsionally excited transitions of several molecules have been proposed as indirect probes of local mid-IR radiation fields around young stellar objects (YSOs). We investigate the excitation and spatial distribution of torsionally excited methanol ($\mathrm{CH_3OH}$) in 12 high-mass star-forming clumps in different evolutionary stages, assessing their potential as tracers of the mid-IR luminosity of embedded protostars. We analyzed rotational transitions of methanol within the same torsionally excited states $v_\mathrm{t}$$\geq$1 in the Atacama Large Millimeter/submillimeter Array (ALMA) 890 $\mathrm{μm}$ observations and compared them with Spitzer 24 $\mathrm{μm}$ data by plotting line luminosities normalized by methanol abundance against mid-IR luminosities. The torsionally excited methanol emission is generally compact and systematically coincident with ALMA dust continuum peaks and 24 $\mathrm{μm}$ emission, even in faint sources. The only clump without an IR counterpart also shows no $v_\mathrm{t}$$\geq$1 emission, supporting radiative pumping as the dominant excitation mechanism. We found a promising power-law trend between $v_\mathrm{t}$$\geq$1 methanol lines and 24 $\mathrm{μm}$ luminosities, largely independent of the methanol abundance. $\mathrm{CH_3OH}$ $v_\mathrm{t}$$\geq$1 transitions appear to be promising tracers of local mid-IR radiation fields of embedded protostars, providing core-scale information even in highly extincted regions. As a pilot study, our results suggest that extending our study to a larger statistical sample is crucial for testing and improving this method.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.37955v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.11695v1" target="_blank" rel="noopener noreferrer">
-      Electroencephalography Signal Analysis for Human Activities Classification: A Solution Based on Machine Learning and Motor Imagery
+    <a href="https://arxiv.org/pdf/2609.37941v1" target="_blank" rel="noopener noreferrer">
+      An Efficient Machine Learning Approach for Degradation Forecasting in AEM Water Electrolysis
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Tarciana C de Brito Guerra, Taline Nóbrega, Edgard Morya, Allan de M. Martins, Vicente A de Sousa</span>
+    <span class="paper-authors">Marco Veneriano, Ani Gjergji, Sebastiano Bellani, Andrea Riva, Vito Paolo Pastore, Matteo Santacesaria</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-10</span>
+    <span class="paper-date">2026-09-29</span>
   </p>
-  <p class="paper-abstract">Electroencephalography (EEG) is a fundamental tool for understanding the brain&#x27;s electrical activity related to human motor activities. Brain-Computer Interface (BCI) uses such electrical activity to develop assistive technologies, especially those directed at people with physical disabilities. However, extracting signal features and patterns is still complex, sometimes delegated to machine learning (ML) algorithms. Therefore, this work aims to develop a ML based on the Random Forest algorithm to classify EEG signals from subjects performing real and imagery motor activities. The interpretation and correct classification of EEG signals allow the development of tools controlled by cognitive processes. We evaluated our ML Random Forest algorithm using a consumer and a research-grade EEG system. Random Forest efficiently distinguishes imagery and real activities and defines the related body part, even with consumer-grade EEG. However, interpersonal variability of the EEG signals negatively affects the classification process.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.11695v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">This study provides a data-driven analysis of a novel dataset of single-cell Anion Exchange Membrane water electrolyzers (AEMWE), operated under constant current load across multiple heterogeneous experimental campaigns. We train and evaluate a range of machine learning models with different complexity, including linear baselines, LSTMs and CNNs, to perform medium-term forecasting of the cell voltage degradation curve. The models are assessed within a rigorous training and evaluation framework specifically designed for heterogeneous industrial data.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2609.37941v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
