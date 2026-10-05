@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-10-01 04:23 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-10-05 04:17 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40362v1" target="_blank" rel="noopener noreferrer">
-      Multimodal Flow: Unified Flow Modeling of Language and Vision in Embedding Spaces
+    <a href="https://arxiv.org/pdf/2610.03685v1" target="_blank" rel="noopener noreferrer">
+      Does a mortality schedule need a Makeham term? Calibrating the likelihood-ratio test
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Hongyuan Tao, Xinggang Wang, Lianghui Zhu, Yongkang Li, Yunchao Wei, Bin Feng, Shaoyu Chen, Qian Zhang, Chang Huang, Kai Yu</span>
+    <span class="paper-authors">Silvio C. Patricio</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">We present Multimodal Flow, a fully continuous generative model of language and vision. Most unified multimodal models either model both language and quantized images as discrete tokens or combine discrete language prediction with continuous image generation. The former introduces a visual quantization bottleneck. The latter requires modality-dependent objectives and sampling procedures. Fully continuous modeling avoids these trade-offs and enables a shared generative process, but remains underexplored for multimodal pretraining. Multimodal Flow introduces a unified continuous architecture that integrates multimodal continuous representations with a shared chunk-causal flow backbone. It organizes text blocks and images as ordered continuous hyperchunks, preserving textual token order and visual spatial structure. The backbone learns a single vector field over these hyperchunks through Flow Matching. Joint attention enables cross-modal interaction, while modality-specific feed-forward networks process each modality. The model predicts multiple target chunks in parallel during training and generates hyperchunks sequentially at inference. We instantiate MF-1 and pretrain it on multimodal data. Across 0.6B, 1.2B, and 1.6B scales, continued pretraining consistently improves multimodal modeling. With only 150B pretraining tokens, MF-1 achieves an average score of 82.8 across GenEval and DPG-Bench and 75.3 across VQAv2, MMBench, and POPE, remaining competitive with unified models trained on substantially more data. Under matched data, optimization, and parameter budgets, Multimodal Flow further outperforms representative hybrid and discrete models. These results establish continuous chunk-based embedding flow modeling as a new fully continuous paradigm for unified multimodal modeling. The related code and model are publicly released at https://github.com/hustvl/Multimodal-Flow.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40362v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Whether a fitted mortality model needs a Makeham term, the non-negative constant representing background mortality, is commonly decided with a likelihood-ratio test. Because the constant cannot be negative, testing its absence places the parameter on the boundary of its range, and the usual chi-squared calibration does not apply. Assuming independent Poisson death counts and standard regularity conditions, we show that when the constant is the only parameter on a boundary the statistic converges to an equal mixture of a point mass at zero and a chi-squared distribution with one degree of freedom, so that at the 5% level the critical value is 2.71 rather than 3.84. We give conditions under which the correction holds for Makeham models, verify them for Gompertz-Makeham and gamma-Gompertz-Makeham, and quantify the information the data carry about the constant, which fixes the local power of the test, the smallest term it can detect, and how fast detectability falls as the age window narrows. When a gamma-frailty variance is estimated and its true value is also zero, the limit is no longer a chi-squared mixture and the usual correction rejects too often. Monte Carlo experiments show that the conventional cutoff rejects at half the nominal level, that a correctly calibrated test can still miss a term at its own detection threshold in most samples, and that excess rejections under an estimated zero frailty variance persist as exposure grows.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03685v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40339v1" target="_blank" rel="noopener noreferrer">
-      The Single-Copy Quantum Bandit Is Classical: An Exact Spectral Collapse
+    <a href="https://arxiv.org/pdf/2610.03649v1" target="_blank" rel="noopener noreferrer">
+      On-Board Anomaly Detection for Efficient Marine Environmental Monitoring
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Siu Hin Ng</span>
+    <span class="paper-authors">Thomas Goudemant, Clotilde Szywala, Benjamin Francesconi, Michelle Aubrun, Yves Bobichon, Marjorie Bellizzi, Adrien Girard</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">We study multi-armed bandits whose arms supply unknown quantum states and whose mean rewards are defined by a known effect $F$. Each fresh copy may be measured by an arbitrary, adaptively chosen POVM. We prove an exact collapse: the measured relative entropy from an arm state to its confusing reward half-space equals the classical Burnetas-Katehakis functional of $F$&#x27;s spectral statistics, and the spectral measurement of $F$ together with an explicit least-favorable state, built from the derivative of the matrix logarithm, forms a saddle point of the underlying measurement game. Consequently, spectral measurement followed by classical KL-UCB is asymptotically instance-optimal among all consistent single-copy policies, in every finite dimension and for every reward effect under the stated nondegeneracy assumptions: adaptive and randomized measurement design cannot improve the leading logarithmic regret coefficient, and neither can storing copies for later single-copy measurement. A self-contained finite-time bound covers general effects and boundary distributions. Any further improvement must come from measurements outside the single-copy class. For consistent policies with arbitrary quantum memory, an amortized relative-entropy argument gives a converse with the Umegaki half-space divergence, and the two per-arm regret floors, $1/K_{\mathrm{inf}}$ and $1/D_{\mathrm{inf}}$, coincide if and only if the arm commutes with $F$. Whether the Umegaki floor is attainable involves a composite quantum Stein problem and a separate reduction to adaptive regret; we pose it as an open problem, with two-copy numerical evidence.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40339v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Marine ecosystems are impacted by various threats such as oil spills, algal blooms, and sediment floods, which disrupt habitats, wildlife, and human activities. Advances in satellite imagery and Artificial Intelligence (AI) have enhanced our capabilities for early detection and mitigation of such hazards. In this paper, we propose a marine event detection pipeline for Earth observation satellites equipped with multi- or hyperspectral sensors. Our approach includes a self-supervised neural network encoder that compresses satellite images into a reduced latent space, enabling efficient onboard processing. A machine learning anomaly detection model identifies deviations from normal sea patterns to detect environmental anomalies. We compare its performance against traditional algorithms such as Isolation Forest, One-Class Support Vector Machine and Local Outlier Factors. Our lightweight, resource-efficient pipeline is optimized for deployment on satellites with limited computational resources, ranging from embedded CPUs to AI hardware accelerators. By prioritizing the transmission of critical information, our solution enhances system responsiveness and optimizes satellite communication bandwidth. Demonstrated through current integration across multiple missions, including European Space Agency&#x27;s (ESA) Phisat-2 mission and Microsoft/Thales Alenia Space IMAGIN-e mission, our pipeline aims to improve marine environmental monitoring by providing timely alerts and efficient data reduction.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03649v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40338v1" target="_blank" rel="noopener noreferrer">
-      Weak Convergence Rates for Partial-Sum Processes of Nonlinear Stochastic Approximation
+    <a href="https://arxiv.org/pdf/2610.03647v1" target="_blank" rel="noopener noreferrer">
+      Amortized Structured Stochastic Variational Inference for Gaussian Process Latent Variable Models
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Xiang Li, Jiadong Liang, Zhihua Zhang</span>
+    <span class="paper-authors">Maksym Tretiakov, Sarah Lucie Filipp, Vincent Fortuin, Ruth Misener, Ruby Sedgwick, James Odgers</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">Stochastic approximation provides a general framework for online estimation and optimization. Statistical inference based on the resulting estimates requires understanding their fluctuations around the target. For Polyak--Ruppert averaging, functional central limit theorems describe the normalized cumulative estimation errors through a Brownian limit. However, weak convergence alone does not determine how quickly the distribution of this process approaches that limit. We establish a quantitative functional central limit theorem for nonlinear stochastic approximation with polynomially decreasing step sizes and martingale-difference noise. Under suitable regularity and moment conditions, we derive an explicit finite-sample bound on the Prokhorov distance between each fixed scalar projection of the normalized partial-sum process and its Brownian limit. The bound reveals a step-size tradeoff: faster step-size decay reduces the contribution of the nonlinear remainder but increases that of the smoothing induced by the recursion. To assess the sharpness of the upper bound, we develop four lower-bound constructions, each designed to isolate one source of error. They show that covariance stabilization, finite-moment noise, algorithmic smoothing, and nonlinearity can each separately limit the Brownian approximation rate of the SA path.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40338v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Many machine learning methods aim to approximate the lower-dimensional manifold on which the data lives. A desirable feature of such methods is that they should capture the epistemic uncertainty of this learned manifold. One model that achieves this is the Gaussian Process Latent Variable Model, in which a Gaussian Process (GP) mapping from the latent space provides an estimate of the uncertainty of the manifold. However, the effectiveness of this uncertainty estimation is limited by the mean-field variational approximation between the GP inducing points and the latent variables. In this work, we apply Amortized Structured Stochastic Variational Inference to allow the variational posterior for the latent space to be conditionally dependent on the value of the inducing points. We demonstrate that this more flexible variational posterior improves several metrics relating to the reconstruction of points on the data manifold.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03647v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40331v1" target="_blank" rel="noopener noreferrer">
-      Fast Quantum Algorithms for Learning Linear Threshold Functions
+    <a href="https://arxiv.org/pdf/2610.03605v1" target="_blank" rel="noopener noreferrer">
+      Efficient fidelity simulation of high-rate magic distillation circuits
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Aleksandrs Krivcenko, Tuyen Nguyen, Ronald de Wolf</span>
+    <span class="paper-authors">Xiao Xiao, Dominik Hangleiter, J. Pablo Bonilla Ataides, Rohan Mehta, Varun Menon, Mikhail D. Lukin, Michael J. Gullans</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">Linear threshold functions are $f_{w,θ}(x)=\text{sign}(\langle x,w \rangle -θ)$, where the weight vector $w\in\mathbb{R}^n$ is a unit vector, $θ\in\mathbb R$ is a threshold, and typically $x\in\mathbb{R}^n$ or $x\in\{-1,1\}^n$. When $θ=0$, the LTF is called homogeneous, and we write $f_w:=f_{w,0}$. Such functions are among the most important objects in machine learning, since they serve to linearly discriminate positive and negative examples. We give three positive results about learning LTFs: 1. Suppose we can make real-domain queries, meaning we can compute $f_{w,θ}(x)$ at any $x\in\mathbb{R}^n$ of our choice. We give a quantum algorithm that learns $f_{w,θ}$ up to Euclidean error~$ε$ using $O(\log(n/ε))$ membership queries and $\widetilde{O}(n)$ other gates. Then we have also learned $f_{w,θ}$ up to error $O(ε)$ when $x$ is Gaussian. Classical algorithms need $Ω(n\log(1/ε))$ queries. 2. A homogeneous LTF $f_w$ on domain $\{-1,1\}^n$ where $w$ has only $k$ nonzero entries of the same value, is the Majority function on the support of $w$. Belovs gave a bounded-error quantum algorithm that identifies the hidden support exactly (and hence learns $f_w$) using $O(k^{1/4})$ queries. We give an exponential improvement, using $O(\log k)$ queries. 3. Suppose we have a unitary $U$ that can produce (discretized) \emph{quantum examples} under Gaussian measure, corresponding to $\int_x \sqrt{γ_n(x)}|x\rangle |f_w(x)\rangle dx$. This is a weaker access model than membership queries. We give a quantum algorithm based on the efficient \emph{Hermite transform} of Jain et al.\ to learn homogeneous LTFs~$f_w$ with error~$ε$ under the Gaussian distribution, using $O(n^{1/4}/\sqrtε)$ applications of $U$ and $U^\dagger$ and $\widetilde{O}(n^2/ε^4)$ other gates.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40331v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Non-Clifford gates are essential for avoiding classical simulability under the Gottesman-Knill theorem. An error-corrected circuit with non-Clifford gates will therefore be an important element for realizing useful fault-tolerant quantum algorithms. However, accurately understanding the fault-tolerant performance of such circuits faces challenges due to the classical hardness of simulating these circuits. We avoid simulating logical measurements and develop exact and efficient classical methods for benchmarking circuits composed of X, CNOT, and diagonal gates in the Clifford hierarchy, including state and gate teleportation gadgets with feedforward. For circuits with third-level diagonal gates, our benchmarking algorithm efficiently samples syndrome statistics and estimates the output logical fidelity and expectation values of certain Clifford observables, including all Pauli observables. The evaluation of syndrome expectation values also extends to circuits with fourth-level diagonal gates. Our algorithm scales polynomially in the number of physical qubits n and circuit depth T, independent of the number of logical qubits. The benchmarking applications include IQP sampling and magic state preparation/cultivation. We demonstrate the practical utility of our simulation algorithms by using them to optimize high-rate magic state distillation factories based on three copies of a [[27,3,3]] tricycle code.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03605v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40329v1" target="_blank" rel="noopener noreferrer">
-      Spectral theory for dynamical large deviations in non-Markov self-interacting processes
+    <a href="https://arxiv.org/pdf/2610.03545v1" target="_blank" rel="noopener noreferrer">
+      What Must a Quantum-Memory Decoder Know About Temporally Correlated Noise?
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Francesco Coghi, Juan P. Garrahan</span>
+    <span class="paper-authors">Danesh Morales-Hashemi, Graeme Smith, Ningping Cao</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">We develop a spectral theory for dynamical large deviations in non-Markov jump processes and non-Markov chains, whose dynamics depends on the past through state- and jump-dependent empirical observables. We demonstrate that a multiscale Wentzel-Kramers-Brillouin-Jeffreys (WKBJ) Ansatz separates fast configurational relaxation from slow memory evolution, reducing the Feynman--Kac equation for occupation and flux statistics to an eigenvalue problem for a new tilted operator coupled to Hamilton--Jacobi characteristics. This provides a computationally efficient framework for quantifying fluctuations in a broad class of non-Markovian systems. We illustrate our general results with a bistable self-induced East model.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40329v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">What must a quantum error-correction decoder know about temporally correlated noise, and what does it cost to learn? We study this question for fixed stabilizer memory experiments with known system-environment interactions. We formulate calibration in terms of the fidelity differences that select a Pauli recovery and relate missing information to the resulting fidelity loss. Our main example uses weak coherent $X$ rotations in a class of CSS codes including Shor, Steane, and odd-distance rotated surface codes. All physical qubits share a sign either fixed throughout a run or independently redrawn each interval. The two models have identical syndrome statistics and the same spatiotemporal Pauli process (SPP), obtained by Pauli-twirling every noise interval. Yet at suitable storage times, they require different logical corrections. In the weak-noise limit, each model is almost perfectly correctable when known. Without model information, even the best final recovery has a worst-case fidelity loss approaching $1/2$ relative to the noise-aware optimum, despite access to the full syndrome record. For this pair of models, at fixed code and fixed positive target loss below $1/2$, we prove matching calibration bounds. With logical preparation and final readout, complete QEC cycles require a number of noise intervals scaling as the inverse rotation angle raised to the code&#x27;s $X$ distance. Allowing two uninterrupted intervals before one extraction reduces the optimal cost to inverse-square scaling. Physical Pauli twirling of every noise interval changes both recovery performance and its information requirements. Discarding the record of applied random Pauli operations makes the SPP sufficient for optimal recovery. Keeping this record can improve the attainable fidelity, but reaching that optimum may require additional noise information.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03545v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40312v1" target="_blank" rel="noopener noreferrer">
-      Compression Footprints as Security Signals for Model-Poisoning Defense in Federated Learning
+    <a href="https://arxiv.org/pdf/2610.03527v1" target="_blank" rel="noopener noreferrer">
+      Probing Early Phases of the Epoch of Reionization with the $\mathrm{kSZ}^{2}\times21\,\mathrm{cm}^{2}$ Cross-Correlation
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Sachi Shome, William Eiers</span>
+    <span class="paper-authors">Wen-Qing Guo, Yin-Zhe Ma, Adam Lidz, Steven Murray, Hemanth Potluri</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">Lossy compression is widely used in Federated Learning (FL) but is generally treated as an error source, while conventional poisoning defenses inspect update geometry. In this work, we instead treat the compressor&#x27;s response as a security signal: the input-dependent distortion and payload behavior induced by lossy compression can expose differences between honest and attack-generated updates. We introduce the concept of a \emph{compression footprint}: the low-dimensional collection of reconstruction, directional, sparsity, and payload statistics induced by a lossy compressor. We characterize sufficient conditions under which compression footprints separate honest and malicious updates, and operationalize our findings in the CRAFT (\emph{Compression-guided Robust Aggregation via Footprint Trust}) server-side robust aggregation method. Crucially, under a strict honest-majority assumption, CRAFT uses server-verifiable footprints, requires no client-side metadata nor knowledge of the number of malicious clients, and adds no communication beyond the compressed FL pipeline. Moreover, while CRAFT assumes a strict honest majority, it does not require the number of malicious clients to be known in advance. We observe that error-bounded lossy compressor (EBLC) footprints provide stronger separation than Top-K footprints and that footprint trust suppresses malicious influence. We evaluate CRAFT under IID client data with 36\% malicious participation across six standard model-poisoning attacks, three datasets, and six robust aggregation baselines, finding that CRAFT consistently achieves the best accuracy in 7 out of 18 settings and within 1.7 percentage points of the best in the others. Our results show that lossy compression can serve as both a communication mechanism and a security signal for robust aggregation in FL.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40312v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Observations of the Epoch of Reionization (EoR) provide key insights into the nature of the first luminous sources and the thermal state of the intergalactic medium (IGM). Cross-correlations between the kinetic Sunyaev--Zel&#x27;dovich (kSZ) effect and neutral hydrogen (HI) 21-cm emission offer a promising probe of this era, sensitive to both the ionization and thermal histories of the early Universe. We investigate the cross-correlation of the squared kSZ field with the squared 21-cm intensity-mapping field ($\mathrm{kSZ}^{2}\times21\mathrm{cm}^{2}$) over $z\simeq9$--$16$, focusing on the impact of spatial fluctuations in the HI spin temperature. This higher-order statistic avoids line-of-sight cancellations in the kSZ signal, while squaring the 21-cm field enables non-vanishing correlations with pairs of equal and opposite high-$k_\parallel$ modes accessible outside the foreground wedge. We forecast the cumulative signal-to-noise ratio ($\mathrm{S/N}$) for several combinations of 21-cm and CMB experiments, including realistic instrumental noise. For a fiducial heating history and an optimistic foreground-avoidance scenario ($k_\parallel\leq0.1\,h\,\mathrm{Mpc}^{-1}$), we find $\mathrm{S/N}\simeq5.89$ for SKA-Low AA$^\ast\times$CMB-HD and $\simeq3.62$ for HERA$\times$CMB-HD. If the foreground wedge extends to the horizon, these decrease to $2.94$ and $2.85$, respectively. Our results demonstrate that $\mathrm{kSZ}^{2}\times21\mathrm{cm}^{2}$ is sensitive to the thermal evolution of the IGM as well as its ionization structure, providing complementary constraints on the high-redshift thermal and reionization histories.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03527v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40310v1" target="_blank" rel="noopener noreferrer">
-      Planted Cliques and Quantum Symmetry-Adapted Measurements
+    <a href="https://arxiv.org/pdf/2610.03526v1" target="_blank" rel="noopener noreferrer">
+      Beyond Trained Models: Compiling GNNs for a Sound Explainer Benchmark
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Vojtech Havlicek, Jordan Docter, Subhash Khot</span>
+    <span class="paper-authors">Steve Azzolin, Francesco Paolo Nerini, Stefano Teso, Francesco Bonchi, Bruno Lepri, André Panisson, Andrea Passerini</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">The planted clique problem is a promising candidate for quantum advantage with a wide computational-statistical gap and substantial evidence for classical hardness. We study two quantum encodings of classical samples, a natural binary phase state encoding and symmetry-adapted measurements, and determine if they preserve enough information for planted-clique detection, as well as discuss their potential towards algorithmic efficiency. For the binary phase state encoding, we show that constant-advantage detection requires $Ω(n^{1+2\varepsilon}\ln^2 n)$ copies, even under arbitrary joint measurements. Measurements on $\tilde{O}(n^2)$ copies suffice statistically above the logarithmic clique threshold. The symmetry-adapted measurements on the full graph register arise naturally from the Schur transform. We show that the outcome distribution of weak Schur sampling depends on the sampled graph only through its edge count and fails to distinguish the distributions; whereas retaining the representation label and Specht register after discarding multiplicity preserves distance $1-o(1)$. Near-perfect distinguishability survives even if the label is also discarded. We calculate the retained states, providing concrete targets for efficient measurement. Finally, we show that one supplied coherent quantum sample enables an efficient quantum distinguisher, which yields a conditional computational separation from one classical sample under quantum planted-clique hardness. Our results are structural and information-theoretic; efficient detection from one classical graph in the conjectured hard regime remains open.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40310v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Explainers for Graph Neural Networks (GNNs) are commonly evaluated by their plausibility, i.e., how well their explanations recover a predefined ground truth, such as a motif planted in the data. This protocol implicitly assumes that a GNN trained on such data relies on the intended motif. Although prior work has questioned this assumption, plausibility remains widespread. First, we show that the assumption is violated on several widely used benchmarks, where, e.g., degree statistics alone suffice to solve the task. Then, we remove this confounder by replacing training with compilation. We achieve this by introducing $\mathsf{Gracr}$, the first compiler translating graded modal logic formulas into GNN weights, yielding models that replicate the behaviour of the corresponding formulas. Since the behaviour of the model is now known by construction, we can define its ground truth explanation formally and compute it exactly. Building on this, we introduce $\mathsf{Gracr}\mathsf{Bench}$, a benchmark of compiled GNNs for the evaluation of explainers against this exact ground truth. Experiments on eleven explainers across six tasks show its effectiveness for fine-grained diagnostic evaluation: notably, we discover that most explainers are not robust to indirect influences or alternative implementations of the same formula. These results position $\mathsf{Gracr}\mathsf{Bench}$ as a novel, rigorous evaluation setting for graph post-hoc explainability.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03526v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40303v1" target="_blank" rel="noopener noreferrer">
-      How Much of a Harness Does a Strong Agent Need for Autonomous ML Engineering?
+    <a href="https://arxiv.org/pdf/2610.03523v1" target="_blank" rel="noopener noreferrer">
+      FedSwitch: Federated Region Classification From Wireless Channel Measurements
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Kirill Brilliantov, Alejandro Hernández-Cano, Emmanuel Abbé</span>
+    <span class="paper-authors">Mattia Piana, Stefano Rini, Stefano Tomasin</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">Recent autonomous machine learning engineering (MLE) agents have made significant progress on public leaderboards. Often motivated by progress stagnation over long-horizon cycles and limited Large Language Model (LLM) primitives, modern MLE agents are deployed on top of increasingly elaborate machinery: multi-agent orchestrators, dedicated retrieval subagents, and more. While such harnesses expand, the use of more primitive but improved coding agents - where LLMs have direct access to the execution environment through read, write, and bash primitives - has received little attention in the field. In this paper we find that, under an equal time budget and the same frontier LLM backbone, open-source state-of-the-art harnesses provide no advantages over a single session of a minimal-harness coding agent baseline, pointing to the backbone as the primary driver for performance. Via a series of large-scale systematic ablation studies, we argue that the machinery layers become redundant in the coding agent setting. We conclude that the effort spent elaborating hand-crafted harnesses around strong models yields poor returns for current MLE benchmarks.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40303v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Wireless Internet-of-Things (IoT) networks can leverage locally observed channel state information (CSI) at base-stations (BSs) to perform region classification, i.e., infer the region of origin of a transmitter (TX), thereby enabling channel-based authentication. However, centralizing these measurements incurs substantial communication overhead and requires sharing location-dependent radio fingerprints. To address these difficulties, we propose an edge-native federated learning (FL) framework where BSs collaboratively train a shared classifier via a parameter server (PS) without exposing raw data, thereby supporting physical-layer security tasks like spoofing detection. To overcome the statistical heterogeneity arising from diverse BS locations and propagation conditions, we introduce FedSwitch, a personalized FL algorithm that automatically transitions edge nodes from collaborative training to local fine-tuning upon loss stagnation. We provide theoretical convergence guarantees for the proposed collaborative training phase and derive analytical bounds linking classification errors to statistical discrepancies. Extensive evaluations on synthetic channel measurements demonstrate that FedSwitch significantly improves region-classification accuracy over standard FL baselines.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03523v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40290v1" target="_blank" rel="noopener noreferrer">
-      CAS II: Symmetric Partitions as Kolmogorov Models
+    <a href="https://arxiv.org/pdf/2610.03511v1" target="_blank" rel="noopener noreferrer">
+      Interactive Machine Learning Interfaces for Disease Risk Prediction: Effects on Risk Perception and Behaviour
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Romie Banerjee</span>
+    <span class="paper-authors">Tiffany Ngai, Max Homm, Matthew Bradbury, Anamaria Crisan</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">In algorithmic statistics a string x is explained by a finite set containing it, and Kolmogorov&#x27;s structure function records the smallest such model at each level of complexity. Vereshchagin&#x27;s strong models, those computable from the data by a total algorithm, are essentially the cells of simple partitions. We read a partition of binary strings as a hypothesis, with the cell containing x as its model, and develop algorithmic statistics over symmetric partitions: the orbit partitions of groups acting on strings. The Galois connection between subgroups and partitions gives each ambient group a lattice of symmetric partitions, with canonical certificates, canonical costs, and an algebra of hypotheses. The resulting structure function and symmetric sophistication measure which part of the regularity of x is symmetric. For the full symmetric group every partition is symmetric: cells recover all Kolmogorov models, cells of cheap partitions recover exactly the strong models, and normal and strange strings are characterized by symmetry. For GL(n,2) the cells are exactly the linearly homogeneous sets, so linear symmetry is a restricted model class. For nonzero x, the linear-symmetry structure function lies in a band between the sufficiency line and the trivial bound, and both edges are attained: there are stochastic normal strings whose simple structure is invisible to linear symmetry. We also give coordinates on the space of permutation groups: each group is an element of a Burnside ring (its type) together with a permutation (its placement), and restriction moves refine partitions via the Mackey formula. In these coordinates the collapse for the symmetric group is a statement about placement, a linear hypothesis is determined by its type up to n^2 bits, and the maximal gap theorem shows that any space of symmetry hypotheses small enough to search is small enough to miss simple structure.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40290v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Machine learning risk models are increasingly being used in patient-facing health tools, but it remains unclear how well users understand the information these systems present. In this work, we study how people interpret an interactive Type 2 Diabetes (T2D) risk interface and whether interacting with it influences their attitudes toward behavioural change. Through an exploratory mixed-methods study with 15 participants, we compare participants&#x27; perceived understanding with their actual understanding and identify key themes from qualitative interviews. We find that participants often understood the interface better than they initially believed, but still faced important barriers related to unclear terminology, ambiguous risk framing, and limited explanations of model inputs. Finally, we propose relevant design guidelines and discuss broader issues surrounding trust and fairness. Our findings highlight the importance of intuitive visual design, familiar presentation, and clear explanations in patient-facing ML interfaces.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03511v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40284v1" target="_blank" rel="noopener noreferrer">
-      cua-speedrun: Standardized Benchmarking of the Speed of Computer-Use Agents
+    <a href="https://arxiv.org/pdf/2610.03505v1" target="_blank" rel="noopener noreferrer">
+      An Automated and Reproducible Workflow for Crack Identification and Damage Assessment of Fusion Materials
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Pranjal Aggarwal, Lawrence Keunho Jang, Sean Welleck, Daniel Fried, Ruslan Salakhutdinov, Jing Yu Koh</span>
+    <span class="paper-authors">Rinkle Juneja, Viktor Reshniak, Richard K. Archibald, John W. Duggan, Gregory R. Watson, Cory D. Hauck, Gary M. Staebler</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">Computer use agents (CUAs), which use graphical user interfaces (GUIs) to complete tasks on a computer, have recently surpassed human performance on many standard benchmarks, including difficult long-horizon tasks. Their capabilities are undoubtedly impressive, however, a key barrier to the widespread adoption and deployment of CUAs remains their speed and cost. Progress towards faster yet capable CUAs requires reliable evaluation of their speed, but many CUA benchmarks currently face a reproducibility crisis. Benchmarks are based on complex infrastructure with varying machine and container configurations that confound the evaluation of the execution speed of CUAs. Towards addressing this gap, we propose cua-speedrun, which introduces standardized infrastructure and task sets, with a focus on evaluating the speed and efficiency of CUAs. cua-speedrun uses a uniform virtual machine setup and execution pipeline, along with a common agent interface that enables single-agent implementations to operate seamlessly across different benchmarks. Across four different CUA benchmarks, we evaluate how reasoning effort, agent harnesses, and environment latency affect performance, speed, and cost. We find no single model family is optimal for all three; none of the open-weight models are on the frontier, and also, unintuitively, for some models increasing the reasoning effort can speed up task completion, while faster environment input-output can slow down overall task completion time. We also demonstrate that we can effectively reduce the evaluation task set of most CUA benchmarks without degrading overall statistical power, allowing for more efficient benchmarking and comparison. We believe cua-speedrun will enable structured progress towards fast, efficient CUAs, unlocking new real-world use cases and applications. All code, infrastructure, and analysis are available at https://cuaspeedrun.com.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40284v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Post-exposure microscopy is central to qualification of fusion materials. However, manual analysis does not scale to the volume, heterogeneity, and multiresolution character of modern fusion-materials campaigns. To address this challenge, we present a reproducible workflow, implemented in the Galaxy scientific workflow environment, for automated crack identification and quantitative damage assessment from scanning electron microscopy images. The workflow processes SEM images and experimental metadata to identify cracks, quantify damage, and retain the intermediate products and processing history needed for reproducibility. Outputs include crack masks, skeletonized crack networks, quality-control visualizations, and scalar damage descriptors. The method is designed to operate without image-specific parameter tuning across tungsten grades, microstructures, magnifications, and damage states. We demonstrate the workflow on a sparse electron-beam thermal-shock dataset containing 418 images from 114 experiments spanning five tungsten grades and three microstructural states. We define a crack-density descriptor, which provides standardized inputs for downstream machine-learning prediction and physics-based crack simulation. These predictive components are exposed in the same Galaxy environment and are intentionally treated here as extensible workflow modules. The principal contribution is therefore an end-to-end, shareable, and computationally portable workflow that links experimental characterization, automated image analysis, preliminary damage prediction, and simulation-guided data acquisition for fusion-materials research.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03505v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40278v1" target="_blank" rel="noopener noreferrer">
-      Computational Bounds for $f$-Routing
+    <a href="https://arxiv.org/pdf/2610.03470v1" target="_blank" rel="noopener noreferrer">
+      CorrectGuard: Eyes-Off Correctness Estimation for Black-Box Security Guardrails
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Oren Renard, Nicholas Spooner</span>
+    <span class="paper-authors">Adam Faulkner, Nil-Jana Akpinar, Matthew Dressman</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">The $f$-routing protocol is a leading candidate for quantum position verification (Kent, Munro, and Spiller, 2011), but security guarantees for explicit functions remain limited. We prove unconditional resource lower bounds for uniform attackers; our new techniques bypass communication-complexity bounds central to previous works, which are inherently at most linear in the input length. We show that, for input length $n$ and sufficiently small constant $ε&gt;0$, a uniformly generated strategy using $q$ qubits and having description length $\mathrm{poly}(q)$, with success probability at least $1-ε$ on every input, implies the following computational bounds on $f$: 1. If the strategies are arbitrary quantum channels, then $f\in\mathrm{QSZK}(\mathrm{poly}(nq))$, where $\mathrm{QSZK}(T)$ is the class of languages having quantum statistical zero knowledge proofs in which the verifier runs in time $T$ (and the simulator in time $\mathrm{poly}(T)$). 2. If the strategies are explicit Pauli-sparse unitaries on $q$ qubits that have at most $s$ nonzero Pauli coefficients, then $f\in\mathrm{DTIME}(\mathrm{poly}(nqs))$. 3. If the strategies are Clifford+T circuits using at most $t$ magic gates, then $f\in\mathrm{DTIME}(\mathrm{poly}(nq2^t))$. Time and space hierarchies then yield explicit functions secure against polynomial and even quasipolynomial qubits $q$ under our computational restrictions. These bounds exceed the $q\le\log n$ bound of Bluhm, Christandl, and Speelman (2022) for inner product function $f=\mathrm{IP}$, at the cost of restricting adversarial computation and increasing honest evaluation complexity.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40278v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">AI services increasingly rely on black-box security guardrails, yet privacy-preserving model auditing regimes often cannot measure how well these systems perform in both a human eyes-off production setting, which disallows human inspection of user input, and a machine eyes-off setting, which disallows model inspection of such input. We introduce CorrectGuard, an eyes-off correctness estimation framework for both settings, which involves an independent model-based evaluator predicting whether guardrail decisions on human- and machine-inaccessible inputs are correct using only labeled eyes-on data and without access to the guardrail&#x27;s internals. We evaluate in-context learning, embedding, and finetuning-based correctness models under leave-one-dataset-out evaluation across 13 safety and security datasets spanning harmful content, jailbreaks, prompt injection, and extraction, and across open-weight guardrails treated uniformly as black boxes. Across both human and machine eyes-off settings (the latter implemented using privacy-preserving fingerprinting of inputs), in-context-learning-based correctness classifiers substantially improve error identification across guardrails, achieving up to a 25 percentage-point increase in macro accuracy, as do finetuning-based approaches which provide a nearly 15-point boost, although performance varies sharply across guardrails and held-out datasets. Correctness scores also support guardrail decision ranking and abstention: across 3 guardrails, the best correctness rankings reduce AURC from unranked baselines of 0.33-0.44 to 0.17-0.22, while the best operating points retain 37.5-52.0% of guardrail decisions at 15% observed risk. These results show that external correctness models can expose systematic failures and support guardrail decision abstention without privileged access to the guardrail.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03470v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40250v1" target="_blank" rel="noopener noreferrer">
-      An (almost) efficient classical algorithm for sampling from typical Gibbs states
+    <a href="https://arxiv.org/pdf/2610.03465v1" target="_blank" rel="noopener noreferrer">
+      When Is Accuracy Evidence? A Unified Theory of Generalisation, Validation, and Information Fusion
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Saleh Naghdi, Eric R. Anschuetz</span>
+    <span class="paper-authors">JM Gorriz</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">Gibbs state preparation has emerged as a potential avenue for quantum advantage in the study of physical systems. Although there is known advantage for computing local properties of worst-case Gibbs states, recent results suggest a different picture for average-case local systems: at temperatures where their Gibbs states can be efficiently prepared quantumly, quasi-polynomial time classical algorithms can also compute local expectation values. Yet this leaves open the possibility of an advantage under a stronger notion of simulation: sampling. Gibbs sampling underlies Boltzmann machine-based quantum learning algorithms and quantum supremacy proposals, but its classical average-case complexity for physically relevant models remains unresolved. Here, we give strong evidence against an exponential quantum advantage in Gibbs sampling for an ensemble of local systems known as the quantum $p$-spin model. We describe a classical algorithm for sampling from the Gibbs state to any polynomially small error in total variation distance. Our algorithm is based on a meta-algorithm known as algorithmic stochastic localization (ASL). Our main technical result is a generalized convergence theorem for ASL which reduces approximate sampling from any distribution on the hypercube to estimating the mean of a related &quot;tilted distribution&quot; to sufficiently low additive error. We then extend known quasi-polynomial time algorithms for computing local expectation values of a related disordered model to compute these &quot;tilted means&quot; for the quantum $p$-spin model. Finally, we give a non-rigorous physics argument that this mean-estimation algorithm works down to the spin glass transition temperature. As efficient quantum algorithms also fail at this transition, this suggests they cannot Gibbs sample the quantum $p$-spin model at temperatures below that for which classical algorithms are also (almost) efficient.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40250v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">K-fold cross-validation (CV) is widely used as evidence of out-of-sample performance, although folds are neither independent experiments nor equally informative under heterogeneous data. Cross Upper-Bound Validation (CUBV) replaces point-wise CV accuracy by conservative upper bounds on true risk. Here we generalise CUBV through a single exponential framework in which the moment-generating function of the generalisation gap is controlled by a cumulant envelope gamma(lambda). This yields a family of risk bounds covering Hoeffding-, Bernstein-, dependency-aware, PAC-Bayesian, and heterogeneous source-fusion settings. For K-fold CV, dependence between fold-wise gaps is modelled through a joint sub-Gaussian proxy matrix. Under equicorrelation, this gives an effective number of folds, Keff = K/[1+(K-1)rho], showing that increasing K does not necessarily increase statistical evidence when folds are strongly dependent. The framework is also extended to posterior distributions over predictors and weighted multi-source fusion, where weights are selected by minimising an upper bound on future risk rather than empirical error alone. Experiments with trained linear classifiers on heterogeneous multimodal Gaussian mixtures compare K-fold CV with full-sample resubstitution plus risk correction. Bounds are evaluated by coverage and tightness. In low-dimensional small-sample settings, K-fold partitioning can increase uncertainty because individual folds under-represent minority modes, while corrected resubstitution can remain valid and tighter; this effect disappears as sample size increases. Overall, gamma-CUBV separates observed performance, uncertainty, dependence, model complexity, and confidence into explicit terms, providing a unified route from CV scores to risk statements and a principled validation criterion for heterogeneous small-sample applications such as neuroimaging.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03465v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40244v1" target="_blank" rel="noopener noreferrer">
-      StreamRig: Exploiting Intra-Rig Geometry for Streaming Multi-Camera Odometry
+    <a href="https://arxiv.org/pdf/2610.03459v1" target="_blank" rel="noopener noreferrer">
+      Forward Bayesian Inference for the Binary Black Hole Populations
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yufei Wei, Shuhao Ye, Qi Wang, Xin Zheng, Qing Huang, Rong Xiong, Yue Wang</span>
+    <span class="paper-authors">Poulami Dutta Roy, Tanmaya Mishra, Achal Kumar, Sergey Klimenko</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">Mobile robots and vehicles carry synchronized multi-camera rigs, yet many streaming 3D foundation models are designed for monocular input, leaving efficient use of rig geometry a challenge. We present StreamRig, a freeze-and-stream framework that builds causal streaming odometry for calibrated rigs on a frozen multi-view 3D foundation model. The frozen front-end jointly perceives the synchronized views using rig calibration. A Rig-Resampler compresses their features, a CausalBridge applies causal attention with a key-value cache, and a lightweight head regresses rig poses. A periodic re-anchoring protocol supports stable pose estimation over long sequences. Only these modules are trained, 74.6M parameters in total, with relative poses as the sole supervision. Our two-stage training strategy combines group relocalization pretraining with causal rig training to transfer the geometric priors of the frozen front-end and the alignment ability of the pretrained modules to streaming odometry. We evaluate on NCLT, TartanGround, KITTI-360, and our self-collected humanoid-robot dataset ZJH, where training uses only simulation and real-world evaluation is zero-shot. Across all four datasets, StreamRig achieves lower translation and rotation drift than the evaluated non-oracle monocular streaming and rig-aware offline models, while maintaining low inference cost. Ablations and controlled camera-count experiments identify the sources of these gains. We further examine how longer training windows affect inference over longer horizons. Code has been released at https://github.com/WeiYuFei0217/StreamRig.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40244v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We present PopCWB, a Bayesian framework for the inference of the binary black hole (BBH) population based on the unmodeled search pipeline coherent WaveBurst (cWB). The standard population analysis takes an inverse approach by inferring the underlying population model parameters for a given set of detected events using the individual posterior samples. In PopCWB, we take a forward approach to population inference by varying population models to identify the most optimal one which describes the observed events. Rather than using event-level posterior samples, PopCWB uses a large set of simulated events reconstructed by cWB and their total mass, estimated with a machine-learning regression, to construct marginal probability distributions. These marginal probabilities are then used in the construction of the likelihood. We apply PopCWB to BBH events detected by cWB during the third observing run (O3) of the LIGO--Virgo--KAGRA detectors. We constrain an astrophysically motivated BBH population model that incorporates the effects of pulsational pair-instability supernovae and dynamical mergers. The analysis predicts a maximum black hole mass of $\mathbf{45.5^{+5.3}_{-6.5} M_{\odot}}$ from stellar evolution and an inferred local BBH merger rate of $\mathbf{23.1^{+11.3}_{-8.4} \, Gpc^{-3} yr^{-1}}$. We compare these results with the existing population models from the literature.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03459v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40237v1" target="_blank" rel="noopener noreferrer">
-      First double-differential cross-section measurements in proton multiplicity and kinematics for mesonless $ν_μ$ charged-current interactions on argon using the MicroBooNE detector
+    <a href="https://arxiv.org/pdf/2610.03445v1" target="_blank" rel="noopener noreferrer">
+      Corrupted but Correct: Why Vision-Language Models Lie to Themselves Internally
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">MicroBooNE collaboration, P. Abratenko, D. Andrade Aldana, J. Asaadi, A. Ashkenazi, S. Balasubramanian, B. Baller, A. Barnard, G. Barr, D. Barrow, J. Barrow, V. Basque, J. Bateman, B. Behera, O. Benevides Rodrigues, S. Berkman, A. Bhat, M. Bhattacharya, V. Bhelande, A. Binau, M. Bishai, A. Blake, B. Bogart, T. Bolton, M. B. Brunetti, L. Camilleri, D. Caratelli, F. Cavanna, G. Cerati, A. Chappell, Y. Chen, J. M. Conrad, M. Convery, L. Cooper-Troendle, J. I. Crespo-Anadon, R. Cross, M. Del Tutto, S. R. Dennis, P. Detje, R. Diurba, Z. Djurcic, K. Duffy, S. Dytman, B. Eberly, P. Englezos, A. Ereditato, J. J. Evans, C. Fang, B. T. Fleming, W. Foreman, D. Franco, A. P. Furmanski, F. Gao, D. Garcia-Gamez, S. Gardiner, G. Ge, S. Gollapinni, E. Gramellini, P. Green, H. Greenlee, L. Gu, W. Gu, R. Guenette, L. Hagaman, M. D. Handley, O. Hen, A. Hergenhan, M. Harrison, S. Hawkins, C. Hilgenberg, G. A. Horton-Smith, A. Hussain, B. Irwin, M. S. Ismail, C. James, X. Ji, J. H. Jo, A. Johnson, R. A. Johnson, D. Kalra, G. Karagiorgi, W. Ketchum, A. Kelly, M. Kirby, T. Kobilarcik, K. Kumar, N. Lane, J. -Y. Li, Y. Li, K. Lin, B. R. Littlejohn, L. Liu, S. Liu, W. C. Louis, X. Luo, T. Mahmud, N. Majeed, C. Mariani, J. Marshall, D. A. Martinez Caicedo, F. Martinez Lopez, M. G. Manuel Alves, S. Martynenko, A. Mastbaum, I. Mawby, N. McConkey, B. McConnell, L. Mellet, J. Mendez, J. Micallef, T. Mohayai, A. Mogan, M. Mooney, A. F. Moor, C. D. Moore, L. Mora Lepin, M. A. Hernandez Morquecho, M. M. Moudgalya, S. Mulleria Babu, D. Naples, A. Navrer-Agasson, D. Nawarathne, N. Nayak, M. Nebot-Guinot, C. Nguyen, L. Nguyen, J. Nowak, N. Oza, O. Palamara, N. Pallat, V. Paolone, A. Papadopoulou, V. Papavassiliou, H. Parkinson, S. F. Pate, N. Patel, Z. Pavlovic, E. Piasetzky, K. Pletcher, I. Pophale, X. Qian, J. L. Raaf, V. Radeka, A. Rafique, M. Reggiani-Guzzo, J. Rodriguez Rondon, M. Ross-Lonergan, I. Safa, C. Sauer, D. W. Schmitz, A. Schukraft, W. Seligman, M. H. Shaevitz, R. Sharankova, L. Silva, E. L. Snider, S. Soldner-Rembold, J. Spitz, M. Stancari, J. St. John, T. Strauss, A. M. Szelc, K. Terao, C. Thorpe, D. Torbunov, D. Totani, M. Toups, A. Trettin, Y. -T. Tsai, J. Tyler, M. A. Uchida, T. Usher, B. Viren, M. L. Velazquez Fernandez, L. Wang, M. Weber, H. Wei, A. J. White, S. Wolbers, T. Wongjirad, K. Wresilo, W. Wu, E. Yandel, T. Yang, L. E. Yates, H. W. Yu, G. P. Zeller, J. Zennamo, C. Zhang, Y. Zhang</span>
+    <span class="paper-authors">Arun Josephraj Arokiaraj, Zekun Wu, Adriano Koshiyama</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">We present the first double-differential cross-section measurements of muon neutrino charged-current interactions on argon with no mesons and one or more protons ($N_{p} \geq 1$) in the final state as a function of proton multiplicity and kinematics. The analysis uses the full Booster Neutrino Beam dataset collected by the MicroBooNE detector at Fermi National Accelerator Laboratory, corresponding to a total of $1.30 \times 10^{21}$ protons on target. We measure cross sections as a function of the proton multiplicity, the momenta and muon-proton opening angles of the leading and subleading protons up to and including the fourth-leading proton, as well as the total available kinetic energy of the hadronic system. The treatment of the statistical and systematic uncertainties includes correlations between the different extracted distributions. The measured cross sections are compared to predictions from several event generators using different primary and final-state interaction models. The results reveal strong sensitivity to the modeling of final-state interactions, and none of the generators tested provides a fully adequate description of the data. Significant disagreement between data and predictions is observed in the proton multiplicity distributions, particularly at backward opening angles and for subleading proton kinematics.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40237v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">A targeted adversarial perturbation can drive a vision-language model&#x27;s (VLM&#x27;s) teacher-forced training loss for a fixed target caption to near zero, yet the same model, allowed to generate freely, produces the original, correct description with no trace of the target. We call this dissociation the train/inference gap, and give it a precise mechanistic account on Qwen2.5-VL-7B-Instruct using a controlled two-stage PGD attack on 200 held-out COCO images. First, we show that image-level pixel statistics, including a correctly re-implemented, texture-based attackability measure from the CNN robustness literature, have essentially no predictive power over which images are corrupted (best predictor r=-0.050, p=0.484; ridge regression R^2=0.069). Second, using the logit lens, we localise the gap to a single autoregressive step: the rank of the target token, conditioned on the correct first token already being generated, is fixed at exactly 3,488 out of 152,064 vocabulary entries for every image and every condition, with zero variance. Third, tracking target-token rank across all 28 LLM decoder layers reveals that the visual encoder corrupts every image&#x27;s representation by a comparable margin regardless of eventual outcome, but the language model decoder then differentially arbitrates: amplifying the corrupted signal for susceptible images and actively suppressing it, past its clean-image baseline, for resistant ones (p&lt;0.001, rank-biserial r=0.579). A linear probe on the merger hidden state separates these two outcomes with AUC=0.858, though we flag a circularity concern in this estimate. Together these results argue that adversarial robustness in autoregressive VLMs is substantially a property of the language decoder&#x27;s prior, not the visual encoder, with direct implications for where faithfulness evaluations and defenses for deployed VLM systems should be targeted.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03445v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40239v1" target="_blank" rel="noopener noreferrer">
-      Two bits about lossy compression: On the limits of compression in cosmology
+    <a href="https://arxiv.org/pdf/2610.03444v1" target="_blank" rel="noopener noreferrer">
+      Electronic Density versus Geometry for Machine-Learned Molecular Absorption Spectra
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Hurum Maksora Tohfa, Matthew McQuinn</span>
+    <span class="paper-authors">Siddharth Dhanpal, Peter Elliott, Paolo Emilio Trevisanutto, Alin M. Elena, Gilberto Teobaldi</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">Astronomy is in an era of enormous sky surveys and of the large simulation suites needed to interpret them, both costly to store and slow to share. Simulation outputs are stored as 32-bit floats, yet numerical noise and astrophysical uncertainties make better than percent-level pixel accuracy unnecessary. Because cosmological fields are statistically homogeneous with nearly Gaussian mode amplitudes, classic rate-distortion results apply directly, and non-Gaussian structure permits further compression. We use the scientific compression package SZ3, and a neural compressor that fixes the quantization and learns the probability of each quantization bin with an autoregressive transformer. SZ3 beats the Gaussian approach only where the field is smooth on the pixel scale or its values pile up at a single point, while the neural approach matches or beats SZ3 on every field we consider and is 9 to 27\% below the Gaussian-optimal coder at fixed distortion, with the largest margin where the field is most non-Gaussian. Because the quantizer, not the network, sets the error, a poorly trained model can waste bits but never cost accuracy. A model trained only on weak lensing convergence maps transfers to $N$-body density fields without retraining, suggesting it has learned generic properties of cosmological structure rather than features of one dataset. Eulerian grids need only 1-4 bits per pixel (bpp) at percent-level accuracy, and particle displacements and velocities 5-6 at the precisions they require. The approach carries over to observational data: on Rubin Observatory Data Preview 1 coadds, with the quantization step set to a quarter of the background noise, the fine-tuned transformer needs 4.0 bpp, 27\% fewer than the Gaussian coder.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40239v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Molecular optical absorption spectroscopy provides a direct probe of electronic structure and is widely used for molecular identification, interpretation of photophysical behaviour, and planning of spectroscopy experiments. Calculating the absorption spectra using first-principle excited-state methods, however, is computationally demanding, at least compared to ground-state calculations, which limits their routine application across large molecular sets. Machine-learning (ML) surrogates can reduce this cost and allow rapid spectral prediction. However, their performance depends strongly on how molecular information is represented. Here, we compare using the ground-state electron density versus the molecular geometry as inputs to a ML model for predicting absorption spectra, for a training set of 6874 molecules selected from the QM7 dataset. For each of these molecules, the density was calculated using density functional theory (DFT) and the absorption spectrum was calculated using linear-response (LR) time-dependent DFT (TDDFT). Utilizing the ground-state density as the input to the ML model is motivated by the Hohenberg-Kohn and Runge-Gross theorems, and the fact that the ground-state density encodes information about bonding, charge localisation, and electronic delocalisation. Hence, it may be a more judicious starting point for the ML model compared to the geometry, as it effectively decouples the chemistry of the ground-state. The question we test is whether the benefits of using the density outweigh the (notprohibitive) penalty of requiring an additional single-point DFT calculation for the density. We find that the density-based convolutional neural network achieves a validation correlation of 0.9926, compared with 0.9795 for the best geometry-based graph model, reducing the residual decorrelation, by approximately 64%.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03444v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40227v1" target="_blank" rel="noopener noreferrer">
-      Randomness of exact unitary designs under symmetry
+    <a href="https://arxiv.org/pdf/2610.03437v1" target="_blank" rel="noopener noreferrer">
+      $k$-Pairing: A Generalization of the Partition Pairing Theorems
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Christopher Vairogs, Felix Leditzky</span>
+    <span class="paper-authors">Xiaorui Niu, Diane Y. H. Shi</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">We define the unitary design strength of a finite unitary ensemble to be the maximal integer $t$ for which its $t$-th statistical moment is identical to that of the unitary group. In the presence of physical symmetry, not all operators of an ensemble are symmetry-compatible. This motivates us to define the symmetric design strength of a finite unitary ensemble to be the maximal integer $t$ for which the $t$-th moments of its symmetry-compatible sub-ensemble match those of the group of symmetry-compatible unitaries. We show that in sufficiently high dimension and for a broad family of symmetries, which includes the global on-site $\mathrm{U}(1)$ and $\mathrm{SU}(d)$ symmetries, there exist finite unitary ensembles of arbitrarily high design strength whose symmetric design strength is strictly higher. Ensembles with this property may be more versatile under symmetry constraints for protocols that rely on unitary randomization than they are without symmetry. Our results extend the previous work [Mitsuhashi and Yoshioka, PRX Quantum 4.4 (Nov. 2023)] showing that the symmetric design strength of the Clifford group is strictly upper bounded by its unitary design strength for symmetries that do not trivialize the symmetry-compatible unitaries. Due to the special significance of unitary designs with a group structure, we also derive a variety of bounds on the unitary and symmetric design strengths of finite unitary ensembles whose operators form a group. In particular, we provide a simple proof that an arbitrary ensemble of operators forming a finite group must have a symmetric design strength of at most two under the global on-site $\mathrm{U}(1)$ and $\mathrm{SU}(d)$ symmetries. Along the way, we show that there exist uniformly weighted groups of arbitrarily high symmetric design strength in arbitrary dimension and analyze their structure.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40227v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We extend the partition pairing theory of Andrews and Dastidar by replacing pairs with groups of $k$ equal parts. Two weight-preserving bijections give combinatorial interpretations of the joint pairing index--width distribution and the negative-rank enumerations. The first combines conjugation with the Stockhofe--Keith correspondence and sends the $k$-pairing index and width to the number of parts and the largest part, respectively. Consequently, their joint distribution is independent of $k$ and is given by a Gaussian polynomial. We also obtain finite refinements that record the residual statistics. The second bijection sends simply $k$-paired partitions of negative $k$-pairing rank to $k$-regular partitions with marked internal gaps. In a fixed nonzero residue class, sign cancellation leaves rectangular partitions, while gap markings correspond to overlining choices with the smallest part not overlined. This gives direct combinatorial explanations of the divisor counts and the factor $1/2$ in the overpartition enumeration, extending the odd-divisor and odd-overpartition results of Andrews and Dastidar. Finally, motivated by the diagonal pairing of Andrews and Dastidar, we extend the construction to ordered tuples of $k$ Young diagrams. Applying the two-wing transfer operation to pairs of component diagrams defines an equivalence relation on these tuples. We show that two tuples are equivalent if and only if they have the same cell-multiplicity function, and that every equivalence class contains a unique representative whose component diagrams are nested. We also determine the cardinalities of the equivalence classes and identify the nested representatives with plane partitions of rectangular shape.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03437v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40216v1" target="_blank" rel="noopener noreferrer">
-      Quantum Log-Determinant Methods for Torsion-Sensitive Topological Data Analysis
+    <a href="https://arxiv.org/pdf/2610.03418v1" target="_blank" rel="noopener noreferrer">
+      Rethinking Epistemic Uncertainty in Node Classification through Information Growth
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Dimitrios Thanos, Caesnan Leditto, Adam Wesolowski, Andreea-Iulia Lefterovici, Mahtab Yaghubi Rad</span>
+    <span class="paper-authors">Emma Meneghini, Francesco Ferrini, Bruno Lepri, Andrea Passerini, Veronica Lachi</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">Betti numbers are central to topological data analysis but fail to capture torsion in integral homology. Torsion can distinguish topological structures with identical Betti numbers, and examples from classical topological data analysis show that it can affect the topology inferred from data. Related torsion-sensitive quantities are also known to have practical applications in graph-based machine learning, including biomedical applications. We investigate how quantum spectral methods can access this additional information. Log pseudodeterminants, obtained by summing the logarithms of the nonzero boundary-Laplacian eigenvalues, summarize spectral information about a simplicial complex. Under explicit topological assumptions, an alternating combination of these quantities gives the size of a higher critical group, the higher-dimensional analogue of a graph sandpile group. With stronger certification, a related construction recovers the size of the torsion subgroup in homology itself. This is, to our knowledge, the first provably correct quantum estimator of integral-homology torsion order. We give a new quantum algorithm for estimating these quantities, with explicit dependence on how the input is queried, the required accuracy, and the spectral gaps. Exact spectra for balanced multipartite clique complexes provide favorable gaps, and a related construction gives an explicit torsion-bearing benchmark. With compact query access, the algorithm need not construct the exponentially large boundary matrices explicitly. For a restricted torsion-bearing family, a tailored amplitude-estimation routine uses quadratically fewer queries than any randomized classical algorithm given comparable access when estimating the log pseudodeterminant. Estimating the full, unnormalized quantity to fixed additive error still costs in proportion to the candidate-space dimension $D$.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40216v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Epistemic uncertainty should decrease as additional information about the data-generating process (DGP) becomes available to the predictor. Yet, existing graph evidential deep learning (EDL) methods for node classification typically construct epistemic uncertainty from graph-specific properties and evaluate it on downstream tasks such as out-of-distribution detection, which do not test its reducibility as information about the DGP increases. To make reducibility directly testable, we introduce a statistical framework for studying epistemic uncertainty under information growth. Our framework specifies an information-growth experimental protocol and a consistency criterion for epistemic predictors, while using projective graph DGPs to ensure that growing graphs, which in general need not provide increasing information about the same DGP, constitute coherent observations of the same underlying process. We show that EDL methods do not explicitly estimate data uncertainty arising from a single finite graph observation and instead regulate epistemic uncertainty through model hyperparameters, precluding consistency, as corroborated by controlled information-growth experiments. As an alternative, we propose graph bootstrap ensembles, capturing both data and procedural uncertainty through graph resampling and randomized training. Under the same experimental protocol, these ensembles exhibit epistemic uncertainty reduction beyond standard deep ensembles. These findings support bootstrap ensembles as candidate consistent epistemic predictors under information growth.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03418v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40212v1" target="_blank" rel="noopener noreferrer">
-      Recognition of Urbanized Areas in UAV-Derived Very-High-Resolution Visible-Light Imagery
+    <a href="https://arxiv.org/pdf/2610.03413v1" target="_blank" rel="noopener noreferrer">
+      AIBL: Augmented Instance-Based Learning with Structured Memory and Neural Embeddings
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Edyta Puniach, Wojciech Gruszczyński, Paweł Ćwiąkała, Katarzyna Strząbała, Elżbieta Pastucha</span>
+    <span class="paper-authors">Radha Poovendran, Andrea Stocco, Linda Bushnell</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">This study compared classifiers that differentiate between urbanized and non-urbanized areas based on unmanned aerial vehicle (UAV)-acquired RGB imagery. The tested solutions in-cluded numerous vegetation indices (VIs) thresholding and neural networks (NNs). The analysis was conducted for two study areas for which surveys were carried out using different UAVs and cameras. The ground sampling distances for the study areas were 10 mm and 15 mm, respectively. Reference classification was performed manually, obtaining approximately 24 million classified pix-els for the first area and approximately 3.8 million for the second. This research study included an analysis of the impact of the season on the threshold values for the tested VIs and the impact of image patch size provided as inputs for the NNs on classification accuracy. The results of the con-ducted research study indicate a higher classification accuracy using NNs (about 96%) compared with the best of the tested VIs, i.e., Excess Blue (about 87%). Due to the highly imbalanced nature of the used datasets (non-urbanized areas constitute approximately 87% of the total datasets), the Mat-thews correlation coefficient was also used to assess the correctness of the classification. The analysis based on statistical measures was supplemented with a qualitative assessment of the classification results, which allowed the identification of the most important sources of differences in classification between VIs thresholding and NNs.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40212v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Sequential learning systems often make decisions from accumulated experience while receiving high-dimensional inputs whose distribution may change over time. Instance-Based Learning Theory (IBLT) provides a principled case-based framework for such settings through stored situation-decision-utility instances, partial matching, activation, and blending. IBLT relies on symbolic knowledge representation in dictionary-like formats, but text, images, transaction vectors, and user-item histories often require learned similarity rather than hand-specified matching rules. In this paper, we introduce AIBL (Augmented Instance-Based Learning), an instance-learning model formulated in a learned vector space for high- dimensional sequential data. AIBL generalizes symbolic situation matching to neural embedding similarity while retaining instance storage, activation- weighted retrieval, and utility blending. The AIBL model organizes memory into active, forgotten, and surprise stores. Surprise memory separates weakly matched, possible out-of-distribution, or corner-case observations from active memory, reducing forced fitting to the nearest available cases. An observation-driven graduation algorithm promotes recurring surprise instances to active memory, allowing the memory to incorporate repeated novel patterns that may arise under concept drift. We evaluate the same implementation on five machine learning tasks and three controlled simulation tasks, comparing AIBL with classical IBLT variants and task-specific baselines where appropriate. AIBL improves accuracy by 6 to 17 percentage points. The results show where vector-space retrieval improves over symbolic matching and how the added memory mechanisms govern novelty detection, cold-start handling, drift adaptation, and reward learning under the tested protocols.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03413v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40202v1" target="_blank" rel="noopener noreferrer">
-      Covariance Eigenspace Provides Latent Attribution of Longitudinal Effects in Brain Age Gap
+    <a href="https://arxiv.org/pdf/2610.03389v1" target="_blank" rel="noopener noreferrer">
+      From Patching to Pruning Visual Computation in Vision Language Models
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Jason Scheffel, Saurabh Sihag</span>
+    <span class="paper-authors">Rahul Chowdhury, Timothy A Rupprecht, Xuan Shen, Shaoyi Huang, Pu Zhao, Yanzhi Wang</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">Brain age gap is a promising machine learning (ML)-driven bio\-marker of accelerated biological aging and is derived from neuroimaging data. Recent works on coVariance neural networks (VNN) for brain age gap prediction have provided an explainable and anatomically verifiable framework for brain age gap prediction. Notably, VNN outcomes are derived by filtering inputs along covariance eigenvectors, providing a mechanism for explaining their decisions in terms of latent (orthogonal) vectors. In this paper, we investigate the longitudinal brain age gap effects in a Mild Cognitive Impairment (MCI) cohort using a VNN-driven brain age gap prediction framework. Specifically, using Integrated Gradients (IG) as the attribution mechanism, our results demonstrate that the eigenspectrum of the anatomical covariance matrix explains the different longitudinal effects observed in brain age gap in amyloid positive vs amyloid negative subcohorts more prominently than individual brain regions ($83.2\%$ with the leading eigenvector versus a maximal value of $7.7\%$ for any brain region). Therefore, the covariance-based latent explanation identifies a key coordinated input pattern that carries most of the observed longitudinal effect in brain age gap.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40202v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Vision language models (VLMs) incur substantial inference cost because every visual token is processed by the attention and MLP projections of every decoder layer, even when token-specific visual computation is unnecessary at many depths. We introduce Patch-to-Prune (P2P), inspired by Mechanistic Interpretability, a training-free framework that converts activation patching from a diagnostic tool into an inference-time computation bypass. P2P performs validation-guided forward and backward layer sweeps to identify decoder regions whose visual-token projection outputs can be replaced by fixed neutral proxy activation vectors within a user-specified accuracy tolerance. Unlike conventional token-pruning methods, P2P preserves the sequence length, token order, positional information, attention mask, and residual pathways, thereby pruning computation without removing tokens or modifying the pretrained model weights. We evaluate P2P on four VLMs from the Qwen2.5-VL and LLaVA families across seven multi-modal benchmarks using mutually disjoint calibration, validation, and test partitions. P2P at a 3% tolerance retains around 94% of dense accuracy while reducing FLOPs by 55%. Beyond these efficiency gains, our layer-wise analysis suggests that visual processing in VLMs is non-uniformly distributed across decoder depth: early and late layers often require little token-specific visual computation, whereas intermediate layers appear to perform most task-relevant visual integration, enabling later reasoning to rely largely on visual information already embedded in shared residual and textual representations. This makes P2P both an efficient inference framework and a causal lens into visual information processing in VLMs.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03389v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2609.40188v1" target="_blank" rel="noopener noreferrer">
-      Estimating High-Energy Neutrino Effective Areas from Muon Propagation
+    <a href="https://arxiv.org/pdf/2610.03382v1" target="_blank" rel="noopener noreferrer">
+      Quantum utility routing in continuous-variable QKD networks with trusted and untrusted relays
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Stephan A. Meighen-Berger</span>
+    <span class="paper-authors">Farsad Ahmad, Aeysha Khalique</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-09-30</span>
+    <span class="paper-date">2026-10-02</span>
   </p>
-  <p class="paper-abstract">Neutrino telescopes observe neutrinos through the muons produced by charged-current interactions. Most of those muons are born kilometers outside the detector, and how much energy they lose on the way is stochastic. We show that we can compute analytically the distance a muon travels before it falls below the detection threshold, while describing the statistical properties of its losses. Our result reproduces Monte Carlo propagation to within $3\%$, and with two parameters per detector it matches the effective areas published by IceCube, KM3NeT/ARCA, and P-ONE to about $1\%$. We then show how this model can be used in point-source sensitivities, energy reconstruction, and consistency checks between detectors. The calculation disentangles muon-transport physics from a detector&#x27;s response, so a new detector or loss model can be quickly benchmarked.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2609.40188v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Continuous-variable quantum key distribution (CV-QKD) networks require routing strategies that account simultaneously for secret key generation, relay trust and finite network resources. We introduce Quantum Utility Routing (QUR), a weighted routing framework for networks combining trusted point-to-point links with untrusted CV Bell measurement relays. Transition level composable finite size secret key rates (SKRs) are incorporated directly into the route search, allowing QUR to balance bottleneck SKR against route geometry and resource use. We consider graph optimized QUR (QUR$_{\mathrm{go}}$) and a fixed weight implementation (QUR$_{\mathrm{fw}}$) that uses machine learning to avoid repeated graph specific weight optimization, and benchmark both against A* and Max--Min routing. At the default network configuration, QUR$_{\mathrm{go}}$ and QUR$_{\mathrm{fw}}$ improve the mean path SKR relative to A* while requiring substantially fewer network resources than Max--Min. The framework also maintains secure connectivity over a broad range of trusted node availability by exploiting untrusted infrastructure as measurement relays. These results demonstrate that routing in CV-QKD networks can be treated as a configurable trade off between cryptographic performance and network resource consumption.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.03382v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
