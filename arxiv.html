@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-10-18 03:13 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-10-23 03:33 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.22344v1" target="_blank" rel="noopener noreferrer">
-      MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering
+    <a href="https://arxiv.org/pdf/2610.31670v1" target="_blank" rel="noopener noreferrer">
+      Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Shangheng Du, Jinxin Shi, Shuaiyu Zhang, Yiming Wu, Junpeng Zhao, Shiyang Feng, Xin Li, Liang He, Xiangchao Yan, Bo Zhang</span>
+    <span class="paper-authors">Yunfei Xie, Howard H. Qian, Shiyi Lan, Kaiyu Hang, Chen Wei</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">Large language models (LLMs) are expanding from assisting scientific research and engineering to autonomously developing and improving AI systems, advancing AI for AI (AI4AI) as a pathway toward recursive self-improvement (RSI). Workflow-driven machine learning engineering (MLE) systems provide a practical path toward this pursuit through complex orchestration that manages long-horizon experimentation, while recent MLE systems adopt model-directed interaction, allowing models to autonomously organize experiments and adapt optimization strategies based on execution feedback. However, feedback from each experiment reflects several preceding decisions, and a long MLE run contains many such costly experiments. Training must therefore select useful supervision from long interaction trajectories and learn from intermediate outcomes. We propose a post-training method for autonomous long-horizon MLE optimization and apply it to train MLExpert, a 35B Mixture-of-Experts agentic model. We design the Kaggle-MLE Factory to construct executable tasks and an interaction harness for model-directed experimentation. Hierarchical agentic SFT transfers general tool-use and coding capabilities to MLE through outcome-guided supervision. Windowed Interaction RL (WIRL) treats the multi-turn decisions between successive experiment results as an execution window and assigns it a shared outcome-based reward. Asynchronous collection and policy correction support policy updates before the trajectory ends. On MLE-Bench Lite, MLExpert improves the average medal rate of the base model from 37.9% to 72.7%, achieving performance comparable to larger frontier models such as Kimi-K3 and GLM-5.3. Further experiments show that MLExpert improves performance on NatureBench Lite, agent scaffold optimization, and algorithm optimization, suggesting that the learned optimization capability generalizes to other tasks.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.22344v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Robotic foundation models are typically evaluated through costly closed-loop rollouts, which motivates cheap offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests that as representations improve, different modalities such as vision and language converge toward a shared statistical model of reality. We ask whether motion trajectories form another such modality: as embodied models become more capable, should their sensory representations converge toward the structure of physical motion? To examine this, we propose Sensorimotor Alignment ($S^2$), a training-free offline metric that measures how well a model&#x27;s sensory representation aligns with the geometry of physical motion. We find that $S^2$ correlates positively with downstream robot task success across embodied model families, making it a low-cost offline proxy for prioritizing models before closed-loop evaluation. $S^2$ can also identify promising vision-language model (VLM) backbones even before costly fine-tuning into vision-language-action models (VLAs). Beyond this correlation, $S^2$ offers representation-level explanations for phenomena observed in VLAs and world action models (WAMs). With $S^2$, we extend PRH to embodied models and make sensorimotor alignment empirically measurable, offering insight into why an embodied model succeeds beyond its closed-loop success rate.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31670v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.22330v1" target="_blank" rel="noopener noreferrer">
-      Designing Transformers for Continuous Diffusion Language Models
+    <a href="https://arxiv.org/pdf/2610.31668v1" target="_blank" rel="noopener noreferrer">
+      Reading, Writing, Sharing, and Interacting with the World through Video
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Weijian Luo, Yujian Chen, Hao Jiang, Guang Cheng, Tianyang Hu</span>
+    <span class="paper-authors">Shengqiong Wu, Meng Luo, Bobo Li, Ziwei Liu, Shuicheng Yan, Ming-Hsuan Yang, Philip Torr, Hao Fei</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">Continuous diffusion language models (CDLMs) offer an alternative approach to parallel language generation; however, most existing studies directly use transformer architectures from either causal large language models (LLMs) or Diffusion Transformers (DiTs) for image generation, which were not optimized for CDLMs. In this paper, we conduct a systematic study on Transformer architectures for CDLMs and introduce Language Diffusion Transformer (LangDiT), combining feature and query-key normalization, wider noise conditioning, likelihood-shortcut gradient routing and calibration, and confidence-gated training self-conditioning. LangDiT significantly reduces generation perplexity in matched LangFlow comparisons, establishing a new state of the art in continuous language generation across different model formulations. Using LangFlow as a representative CDLM, LangDiT as a plug-and-play backbone leads to a new state-of-the-art model with a generation perplexity (GenPPL) of 21.72 using 1024 NFEs and 44.72 GenPPL using 128 NFEs on the unconditional generation of 1024-token sequences on the OpenWebText dataset. When adapted to Plaid-style CDLM formulations, LangDiT results in a new leading GenPPL of 11.33 using 1024 denoising NFEs, and 27.51 GenPPL using 128 denoising NFEs. These gains are achieved while retaining each model&#x27;s underlying representation, training objective, and inference sampler, isolating transformer architecture as a fundamental source of improvement. Our study identifies architectural design as an important source of improvement in continuous diffusion language models.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.22330v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Video foundation models have advanced rapidly in understanding and generating visual sequences, while video world models seek to capture the underlying dynamics of the world they depict. Despite their different objectives, both concern the relationship between video observations and an evolving world. This survey adopts world modeling as a unifying lens for examining these developments. Viewing an observed video as a partial, lossy, and temporally ordered projection of a latent temporal world, we organize the literature around four complementary operations: reading infers world properties from observed video; writing synthesizes video from specified or learned world conditions; sharing integrates understanding and generation through common modeling mechanisms; and interacting predicts and updates world states under actions and evolving observations. This perspective distinguishes temporal coherence in observed or generated sequences from consistency in the underlying world state. Across tasks, representations, models, datasets, and benchmarks, we trace a shift in emphasis from clip-level recognition and perceptual fidelity toward persistent state, controllable evolution, physical and causal validity, and evaluation grounded in interaction and downstream decisions, and we distill the open challenges that follow.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31668v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.22303v1" target="_blank" rel="noopener noreferrer">
-      Chemical Demographics of Star-forming Regions
+    <a href="https://arxiv.org/pdf/2610.31656v1" target="_blank" rel="noopener noreferrer">
+      METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Maria N. Drozdovskaya, Timea Csengeri, Maria Teresa Beltrán, Jes Jørgensen, Alain Baudry, Henrik Beuther, Laure Bouscasse, Laura Colzi, Audrey Coutens, Marta De Simone, Pamela Klaassen, Maryvonne Gerin, Adam Ginsburg, Daniel Harsono, Katharine Johnston, Xing Lu, Sébastien Maret, Sergio Martín, Aina Palau, Giovanni Sabatini, Miguel Sanz-Novo, Maxime Tanious, Claudia Toci, Yao-Lun Yang, Shaoshan Zeng, Korash Assani, Aurore Bacmann, Eleonora Bianchi, Gary Fuller, Izaskun Jiménez-Serra, Ágnes Kóspál, Michael Küffmeier, Álvaro Sánchez-Monge, Frédérique Motte, Mamta Pandey-Pommier, Dries Van De Putte, Víctor Rivilla, Łukasz Tychoniec</span>
+    <span class="paper-authors">Ali Najar, Hosein Hasani, Amir Kooshan Fattah, Yasamin Rajabi, Mahdieh Soleymani Baghshah</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">Our understanding of complex organic chemistry during the formation of stars and planets is shaped by a handful of cherry-picked sources with bright molecular emission lines. This observational bias impedes our assessment of how universal chemical complexity is during star formation. The lack of systematic wideband spectral surveys for statistically significant samples of protostars and cores is a major roadblock to properly probing how COM inventories and abundances depend on the vast range of physical conditions, local cloud and global galactic environments, and evolutionary timescales of low- and high-mass star formation. In turn, this limits our ability to constrain and test physicochemical models, which depend critically on these parameters. The next-generation ALMA2040, with a 10x improvement in line sensitivity, is required to observe COMs, that we perceive as common today, in a fraction of the observing time that is needed today with ALMA. Such capabilities will propel us into the era of chemical demographics, whereby wideband (&gt;100 GHz) spectral surveys at high sensitivity (routinely probing COM abundances down to 0.01% relative to CH3OH) will be executed towards &gt;1000-10000 prestellar and protostellar sources. With robust chemical inventories towards large source sample sizes, we will be able to probe for dependencies of chemical complexity on mass regime, feedback processes in a cluster, Galactic position, metallicity, and time-variable accretion. Only with statistically significant samples at high sensitivity will we be able to assess the ubiquity and homogeneity of COM chemistry across the protostellar mass spectrum and natal cores. Constraining the diversity and availability of such species is critical for our understanding of the chemical reservoir available for planet formation, which eventually shapes (exo)planetary atmosphere compositions.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.22303v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Meta-reinforcement learning aims to train agents that adapt quickly to unseen tasks from limited interaction, but this requires representing task evidence over long interaction histories. Classical recurrent agents compress experience into hidden states, while transformer-based agents retrieve from past trajectories at quadratic memory and computation cost. In this work, we propose Memory-Enhanced Test-Time Adaptation (METTA) for meta-reinforcement learning. It decomposes the fast adaptation phase into two temporal scales: a causal neural memory performs fine-grained within-episode adaptation with linear sequence complexity, while compact episode-level summaries support long-range cross-episode task inference without attending over the full interaction history. Moreover, equipping agents with neural memory provides sufficient expressive capacity and test-time training capability, enabling effective adaptation to unseen held-out tasks and task families at meta-test time. On unseen held-out Meta-World ML10/45 test environments, METTA achieves a success rate over $50\%$ while maintaining a low training budget and short wall-clock time. On long-context sparse-reward PointMaze tasks, it outperforms transformer-based baselines by exhibiting more structured exploration behavior. These results show that METTA provides an efficient path toward more adaptive and scalable long-context meta-RL.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31656v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.22286v1" target="_blank" rel="noopener noreferrer">
-      Causal Fingerprints Reveal Hidden Mechanisms in Partially-Observed Dynamical Systems
+    <a href="https://arxiv.org/pdf/2610.31648v1" target="_blank" rel="noopener noreferrer">
+      On the direct SLE-martingale approach to the integrability of Conformal Loop Ensembles
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Zhang Jiang, Marios Andreou, Nan Chen</span>
+    <span class="paper-authors">Jason Miller, Wendelin Werner</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">In partially-observed dynamical systems, distinct hidden mechanisms can produce similar observable summary statistics while explaining individual events differently. We introduce causal fingerprints: realization-dependent patterns that track how information about a hidden state is revealed through subsequent evolution. Within a prescribed dynamical model, we compare the filtering posterior, based on observations up to a given time, with the smoothing posterior, obtained after adding an expanding window of future observations. We quantify this retrospective information gain using Kullback-Leibler divergence and track its evolution as the future window of observational data expands. The fingerprint reveals both the strength and temporal reach of hidden influence, which can vary across events and their stages. Because the observed trajectory is held fixed while hidden-state inference depends on the candidate model, fingerprints reveal how competing dynamical mechanisms explain the same observations even when selected statistics agree. In linear Gaussian systems, we derive a characteristic fingerprint timescale for the temporal reach of hidden influence. Calibrated surrogates matching the observable mean, variance, and decorrelation time can still produce distinct fingerprints when feedback memory, hidden-noise memory, or hidden forcing timescales are misrepresented. Nonlinear examples reveal mechanism-dependent signatures for extreme bursts, oscillatory variability, and regime switching, including multiplicative instability versus additive forcing, deterministic nonlinear feedback versus state-dependent multiplicative noise, and intrinsic bistability versus hidden double-well forcing. Causal fingerprints therefore provide a time- and event-resolved diagnostic for asking not only whether a model reproduces observed statistics, but how its hidden dynamics explain individual events.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.22286v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">This paper is about the derivation of &quot;integrability results&quot; (i.e., for example, explicit formulas for the probability of events involving a few marked points) for Conformal Loop Ensembles, that are the (conjectured) scaling limits of discrete crititical planar lattice models from Statistical Physics. We discuss the explicit solutions to the PDEs provided by the original SLE/CLE martingale approach that AI now makes it possible to uncover. This provides short and direct new proofs of a number of formulas that have recently been derived based on Liouville quantum gravity, conformal field theory or Coulomb gas methods, and also makes it possible to derive some new ones. We briefly illustrate this with the examples of the backbone exponent and annulus crossing probabilities for critical percolation, but this direct approach seems to apply to a wide class of observables of two-dimensional systems related to conformal field theories.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31648v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.22278v1" target="_blank" rel="noopener noreferrer">
-      Subgraph Counting with Local Node Differential Privacy
+    <a href="https://arxiv.org/pdf/2610.31647v1" target="_blank" rel="noopener noreferrer">
+      Magnetic Activity as a Driver of Low-gravity-like Spectral Morphology in Late-M Dwarfs
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Sofya Raskhodnikova, Adam Smith, Connor Wagaman, Anatoly Zavyalov</span>
+    <span class="paper-authors">Chia-Lung Lin, Daniel Apai, Benjamin V. Rackham, Prajwal Niraula, Mark S. Giampapa, Ana Glidden, Julien de Wit, Valeriy Vasilyev, Nadiia Kostogryz, Alexander Shapiro</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">We study the problem of approximately counting subgraphs under local node differential privacy (LNDP), a recently introduced model that enforces strong privacy guarantees in analyses of distributed social networks. We design a noninteractive $(\varepsilon,0)$-LNDP algorithm that, given any public $k$-node template graph $H$, counts occurrences of $H$ in a sensitive undirected $n$-node graph with additive error $O(n^{k-\frac{1}{2}}/\varepsilon^{k-1})$, for any constant $k$. We complement this algorithm with a lower bound showing that every noninteractive $(\varepsilon,δ)$-LNDP algorithm for counting copies of any $k$-node template graph with maximum degree greater than $1$ must have error $Ω(n^{k - \frac{1}{2}})$. Thus, our algorithm achieves optimal error for counting constant-size subgraphs, up to $\mathrm{poly}(1/\varepsilon)$ factors. Our results substantially expand the types of network statistics known to be approximable under LNDP: prior work considered only functions of the degree distribution. In addition, our lower bound yields the first known $\mathrm{poly}(n)$ gap between central and local node differential privacy when accuracy is required for all input graphs. Previous separations either only involved $\mathrm{poly}(1/\varepsilon)$ factors or only applied to promise problems.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.22278v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We present a systematic investigation of the connection between magnetic activity and the low-surface-gravity-like near-infrared spectral morphology of late-M dwarfs. Our sample includes TRAPPIST-1 observed with JWST NIRISS/SOSS and 22 late-M dwarfs observed with IRTF/SpeX, together with flare observations from K2, TESS, JWST NIRISS/SOSS, and literature-reported X-ray luminosities. Using one-component PHOENIX/NewEra spectral modeling, we find that all targets are better reproduced by lower-surface-gravity model spectra than by models with the expected high gravities of field late-M dwarfs. The retrieved surface gravities moderately correlate with independently measured gravity-sensitive spectral indices, with the strongest trends seen for FeH$_z$ at 0.998~$μ$m and FeH$_J$ at 1.2~$μ$m, both showing statistically significant Pearson and Spearman correlations with $p&lt;0.005$. They also show strong anti-correlations with flare luminosity and X-ray luminosity: for both relations, Pearson and Spearman coefficients are $&lt;-0.9$, with $p \leq 1.0\times10^{-4}$, indicating that more active stars tend to have spectra favoring lower-gravity morphologies. Time-series spectra of TRAPPIST-1 during two large flares show no clear short-timescale variations in selected photospheric indices, suggesting that persistent small-scale magnetic activity may play a more important role than large flares in modifying the photospheric temperature--pressure structure. A simplified radiative-transfer experiment further shows that activity-associated heating can produce lower-gravity-like spectral features even when the input surface gravity is fixed. Our results suggest that underestimated surface gravities in late-M dwarfs may reflect atmospheres modified by frequent, small-scale magnetic activity, such as microflares, producing emergent spectra that mimic lower-gravity morphology.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31647v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.22267v1" target="_blank" rel="noopener noreferrer">
-      Beyond Pairwise Repulsion: Collective Diversity via Determinant Maximization in Diffusion Sampling
+    <a href="https://arxiv.org/pdf/2610.31639v1" target="_blank" rel="noopener noreferrer">
+      Causal Chain of Thought: Mitigating Attention Leakage via Context Isolation
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Kwanyoung Lee, SeungJu Cha, Yebin Ahn, Sungho Koh, Dong-Jin Kim</span>
+    <span class="paper-authors">Gabriele Dominici, Teague McMillan, Fazl Barez, Marc Langheinrich, Martin Gjoreski</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">Strong guidance in text-to-image (T2I) diffusion models concentrates sampling toward high-density modes of the conditional distribution, collapsing independently sampled noise vectors onto nearly identical visual prototypes. This limits utility for tasks that demand distributional breadth, most critically synthetic data augmentation. Diversity, however, is a collective property of the whole batch: a set can preserve every pairwise distance yet still collapse onto a low-dimensional subspace. Existing sum-of-pairwise noise-optimization and repulsion objectives respond only weakly to this higher-order failure. We propose DetNO (Determinant Noise Optimization), which formulates diverse generation as RKHS volume maximization on the initial noise, maximizing the log-determinant of an RBF Gram matrix over one-step Tweedie predictions. This set-level functional equals the squared batch volume; its repulsion is strongest when the batch is most collapsed and self-attenuates as diversity is achieved. An anchor-based fidelity term keeps the optimized noises near plausible regions, and Lagrangian relaxation gives a two-term objective with a single hyperparameter $λ$ governing the diversity-quality trade-off, without training or sampler modification. Across three backbones (SD1.5, SDXL, SD3), DetNO achieves leading intra-batch diversity in VendiScore and Mean Self-Similarity, and a downstream few-shot classification experiment confirms that broader mode coverage brings statistically significant accuracy gains for synthetic data augmentation in the low-shot regime. Fixing the pipeline and varying only the batch objective, both RBF-based aggregators outperform InfoNCE, and the log-determinant attains the best downstream accuracy on both benchmarks. Its diversity advantage over InfoNCE widens as the batch grows. Code is available at https://github.com/mobled37/DetNO.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.22267v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Chain-of-thought (CoT) prompting elicits step-by-step rationales that appear to explain model predictions, but there is no guarantee these steps causally drive the final answer. In standard autoregressive generation, dense attention allows each reasoning step to attend to the full context, enabling the model to derive answers through direct lookup while generating plausible-sounding but post-hoc justifications. We introduce CausalCoT, an inference framework that enforces causal transparency by decomposing problems into a directed acyclic graph of atomic sub-questions, evaluating each node in an isolated context containing only its direct causal parents. This Markovian structure removes attention pathways to non-parent content, making downstream predictions sensitive to local reasoning rather than global context leakage. Across a diverse suite of reasoning benchmarks, CausalCoT preserves competitive predictive performance while improving explanation faithfulness, increasing causal sensitivity of intermediate reasoning steps by an average of 12 and up to 21 percentage points over the strongest baseline. The structured dependency graph additionally enables test-time interventions in which local corrections propagate predictably through downstream reasoning.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31639v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.22232v1" target="_blank" rel="noopener noreferrer">
-      WaveLLM: Wavelet-Domain LLM Entropy Modeling for Lossless Image Compression
+    <a href="https://arxiv.org/pdf/2610.31612v1" target="_blank" rel="noopener noreferrer">
+      Efficient and Optimal Learning of Discrete Distributions with Person-Level Privacy
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yue Yu, Bowei Kang, Changsheng Gao, Dong Liu, Xiaoyan Sun</span>
+    <span class="paper-authors">Gautam Kamath, Mahbod Majid, Ankur Moitra, Argyris Mouzakis, Jonathan Ullman</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">Lossless image compression fundamentally relies on accurate entropy modeling, driving a recent shift toward large language model (LLM)-based methods. However, existing approaches mainly emphasize the modeling capacity of LLMs while directly serializing images into pixel or residual sequences, leaving heterogeneous signal patterns entangled within a single prediction stream. In this paper, we argue that effective entropy modeling depends not only on model capacity, but also on the predictability of the input representation. Motivated by this insight, we propose WaveLLM, a wavelet-domain LLM-based entropy model for lossless image compression. By decomposing an image into multi-level wavelet subbands, WaveLLM converts a heterogeneous prediction problem into a set of more structured and statistically homogeneous subproblems that are more amenable to autoregressive probability estimation. To bridge numerical coding symbols with the LLM&#x27;s native text token space, we introduce a dedicated numerical interface featuring value embeddings and a coefficient prediction head. Furthermore, a task-adaptive prompting strategy is designed to enable a single shared model to adapt to diverse subbands within a unified framework. Built on Llama-3.2-3B with LoRA adaptation, WaveLLM achieves 2.51, 2.24, and 2.27 bpsp on Kodak, CLIC.pro, and DIV2K, respectively, outperforming the PixelCNN-based codec using the same wavelet transform by 0.43, 0.36, and 0.46 bpsp, and surpassing recent LLM-based lossless compressors on all three benchmarks.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.22232v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We study learning a discrete distribution under person-level differential privacy in the batched setting. Given $n$ users, each contributing $m$ i.i.d. samples from an unknown distribution $μ$ over $[k]$, we seek an estimate of $μ$ with total-variation error $α$. We give polynomial-time algorithms under both pure and approximate differential privacy. Under pure $(\varepsilon,0)$-DP, we achieve $n = \widetilde O(k/(α^2 m)+k/(α\sqrt{m}\varepsilon)+k/\varepsilon)$, the first polynomial-time pure-DP guarantee matching the information-theoretic optimum up to logarithmic factors. Under approximate $(\varepsilon,δ)$-DP, we achieve $n = \widetilde O(k/(α^2 m)+k/(α\sqrt{m}\varepsilon)+k+\log(1/δ)/\varepsilon)$. At $δ=2^{-Θ(k)}$, this is $\widetilde O(k)$ for fixed $α,\varepsilon,m$ and failure probability. Our algorithms use a new degree-6 sum-of-squares estimator for learning from untrusted batches. Its key ingredient is a trace-bounded diagonal majorizer for the difference between the empirical covariance of the repaired batch averages and the multinomial covariance predicted by their mean. We prove that clean data admit this certificate through semidefinite-programming duality and a new application of the stronger symmetric form of Grothendieck&#x27;s inequality due to Friedland and Lim. The certificate preserves the mean-dependent variance of multinomial batch averages, yielding the near-optimal robust rate $O(η\sqrt{\log(1/η)/m})$ and providing the score required by the privacy reduction. We also prove a statistical query lower bound ruling out a uniformly smaller order of error under fixed polynomial SQ resource bounds.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31612v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.22228v1" target="_blank" rel="noopener noreferrer">
-      ALMA2040: Mapping the Spatially Resolved Dust and Star Formation Physics Driving High-z Galaxy Assembly
+    <a href="https://arxiv.org/pdf/2610.31607v1" target="_blank" rel="noopener noreferrer">
+      Quantum K-structure constants and cylindric Grothendieck polynomials for Grassmannians
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Daizhong Liu, Gergö Popping, Pierre Cox, Andreas Faisst, Mamta Pandey-Pommier, Dieu Nguyen, Román Fernandez Aranda, Elisabete da Cunha, Andrea Lapi, Tanio Díaz Santos, Ryota Ikeda, Jacqueline Hodge, Isabella Lamperti, Manuel Aravena, Irene Shivaei, Adarsh Kumar, Roberto Decarli, Mahmoud Hamed, Umberto Maio, Gareth Jones, Jianhang Chen, Sylvia Adscheid</span>
+    <span class="paper-authors">Vassily Gorbounov, Christian Korff, Leonardo C. Mihalcea</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">Interstellar dust reprocesses approximately half of the starlight emitted across cosmic history. However, dust temperature, which is essential to convert continuum flux into dust mass, molecular gas mass, and obscured star-formation rates, remains largely unconstrained on sub-galactic scales at high redshift. While single-band ALMA imaging has characterized continuum sizes for hundreds of z&gt;1 galaxies, single-frequency measurements cannot separate the dust mass column from the local dust heating. To date, spatially resolved (&lt;0.5-arcsec) multi-band dust temperatures exist in the literature for only ~10 extreme systems (quasars, hyperluminous starbursts, or strongly lensed galaxies) at z&gt;1, with ongoing programs within a few years adding at most a few dozen submillimeter or UV-bright galaxies. This still leaves typical main-sequence disks largely unexplored across cosmic history. With an anticipated ~30 times improvement in continuum sensitivity (compared to the current ALMA), simultaneous multi-band receivers, and (sub-)kpc angular resolution, ALMA2040 will transform resolved dust thermometry into a systematic survey science. Here, we present the scientific rationale and technical requirements, highlighting a future statistically meaningful survey with &gt; 100 representative main-sequence galaxies across cosmic epochs. Realistic visibility simulations demonstrate that ALMA2040 measures radial temperature gradients with ~0.5-4 K precision (L_IR~10^{12} L_sun in 2 h on-source at z~2). These measurements will break the degeneracy between intrinsic compactness and temperature gradients, deliver the first extinction-free, temperature-calibrated resolved star-formation relations, and uniquely trace radiative feedback and disk maturation from cosmic noon to cosmic dawn.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.22228v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We use the partition functions of a five-vertex exactly solvable lattice model from statistical mechanics to give new combinatorial formulae for the Schubert structure constants of torus-equivariant quantum K-theory rings of Grassmannians. The proofs build on our earlier results where we identified the transfer matrices of these lattice models geometrically as multiplications by the Hirzebruch $λ_y$ classes of the tautological subbundle and the (dual) quotient bundle. The structure constants are solutions of a system of linear equations with coefficients given by the partition function. This system may be solved explicitly by specializing the Hirzebruch parameter $y$ to an equivariant parameter, leading to explicit formulae using Cramer&#x27;s rule. Furthermore, we give an alternative combinatorial construction of the partition functions in terms of sums over cylindric set-valued tableaux, which we call cylindric Grothendieck polynomials. The latter generalise McNamara&#x27;s factorial skew Grothendieck and Yeliussizov&#x27;s modified Grothendieck polynomials and can be thought of as an equivariant K-theoretic version of Postnikov&#x27;s toric Schur function. We also provide new polynomial representatives for equivariant K-theory classes of Richardson varieties and their variants.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31607v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.22213v1" target="_blank" rel="noopener noreferrer">
-      Generalization Guarantees of Randomized Block Coordinate Descent for Nonconvex Learning
+    <a href="https://arxiv.org/pdf/2610.31603v1" target="_blank" rel="noopener noreferrer">
+      Is Spectral Self-Supervised Learning a Minimax Optimal Method of Density Ratio Estimation?
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ruixi Hu, Liang Wu</span>
+    <span class="paper-authors">Hiroki Waida, Takafumi Kanamori</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">Randomized block coordinate descent (RBCD) is a popular optimization algorithm for many large-scale machine learning problems. The existing theoretical analysis of RBCD mainly focuses on its convergence behavior from an optimization perspective, while its generalization behavior remains less understood for nonconvex problems. In this paper, we establish high-probability generalization guarantees for RBCD with nonconvex objectives. In the general nonconvex setting, we derive bounds on the gradients of both empirical and population risks, requiring only standard smoothness assumptions. With polynomially decaying step sizes, we tune the iteration number to balance optimization and generalization, thereby quantifying how early stopping leads to the optimal convergence rate for the population gradients. In the gradient-dominated setting, we provide bounds in terms of functional suboptimality, which nearly match the optimistic rates in convex and low-noise settings. Finally, we develop dimension-independent bounds for loss functions of a specific structure, making the generalization guarantees applicable to high-dimensional problems.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.22213v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Spectral self-supervised learning is a method of density ratio estimation for the setting in which only samples drawn from the joint density of the numerator are available. The method has extensively been studied in terms of the computational properties, such as optimal solutions and connections to representation learning. However, theoretical understanding of its statistical property is still insufficient. In this work, we study three questions, namely, the minimax optimality, the applicability of the theory to regularized algorithms, and the statistical merits of density ratio estimation with data augmentation mechanisms that have recently been considered in the context of self-supervised representation learning. We first show that for general classes of Hölder continuous density ratios, there are regularized spectral self-supervised learning algorithms that yield estimators attaining the minimax optimality, up to logarithmic factors. We then prove that for subclasses endowed with a data augmentation mechanism, we obtain faster convergence rates that are also minimax optimal (up to logarithmic factors) in a weaker sense. We also present the key proof ideas tailored for self-supervised density ratio estimation.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31603v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.22211v1" target="_blank" rel="noopener noreferrer">
-      A restart rule for genetic algorithms based on Schnabel census
+    <a href="https://arxiv.org/pdf/2610.31597v1" target="_blank" rel="noopener noreferrer">
+      Towards Systematic Control of the Nucleon Gluon PDF with the Pseudo-PDF Method
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Anton Eremeev, Yulia Zakharova</span>
+    <span class="paper-authors">Alex NieMiera, Kai Ebira, William Good, Huey-Wen Lin</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">A new adaptive restart rule for Genetic Algorithms (GAs) is considered. The rule is based on the Schnabel Census method, originally developed for statistical estimation of a size of animal population. In this paper, the Schnabel Census method is applied as a heuristic to estimate the number of different solutions that may be visited with positive probability, given the current distribution of offspring. The rule consists in restarting a GA as soon as the maximum likelihood estimate reaches the number of different solutions observed at the recent iterations. We demonstrate how the new restart rule can be applied in a GA with steady-state replacement scheme, using three different combinatorial optimization problems as examples. Computational experiments on well-known benchmarks show a statistically significant advantage of the GAs with the new restarting rule over the original versions of GAs. The new restart rule also tends to be superior to the well-known rule, which restarts an algorithm when the current iteration number is twice the number of iterations till the current best incumbent was found.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.22211v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We present updated lattice quantum chromodynamics (QCD) results for the unpolarized nucleon gluon parton distribution function (PDF) using the pseudo-PDF methodology. The calculation is performed at valence pion masses $M_π\approx 310$ and $690$ MeV on an $a \approx 0.06$ fm ensemble with $2+1+1$ flavors of highly improved staggered quarks (HISQ) generated by the MILC Collaboration. This lattice spacing is finer than those used in previous gluon pseudo-PDF studies, providing access to multiple short-distance separations and nucleon boost momenta as high as $4.4$ GeV. To control excited-state contamination and reduce model dependence, we employ the recently developed Lanczos method, finding good agreement with our previous two-state fit approach. Higher-twist contributions and discretization effects are accounted for through explicit parameterizations in fits to the renormalized short-distance matrix elements. Together, these advances represent important steps toward systematically controlled, high-precision extractions of the gluon PDF. The resulting PDFs exhibit no statistically significant dependence on the valence pion mass and indicate a strongly suppressed gluon distribution at large $x$, consistent with a subset of phenomenological PDF extractions. These results demonstrate progress toward providing systematically controlled lattice-QCD constraints for future global PDF analyses.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31597v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.22202v1" target="_blank" rel="noopener noreferrer">
-      Dark Matter in the Galaxy: Insights from the Dynamics of Stellar Streams
+    <a href="https://arxiv.org/pdf/2610.31568v1" target="_blank" rel="noopener noreferrer">
+      More efficient transportation of causal effects using mediators
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Mohammad Ayaz, Priya Hasan</span>
+    <span class="paper-authors">Xinyi Zhang, Kara E. Rudolph, James Russell Pike, Richard Liu, Michele Santacatterina, Iván Díaz</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">Dark matter constitutes most of the matter in the Universe, yet its fundamental nature and distribution remain poorly understood. Stellar streams, formed through the tidal disruption of globular clusters and dwarf galaxies, provide powerful tracers of the Milky Way&#x27;s gravitational potential and dark matter halo. In this review, we examine how stellar stream morphology and kinematics can constrain the halo&#x27;s structure, shape, and substructure. We discuss key observational signatures, including stream gaps, spurs, and perturbations, and investigate five prominent streams: Sagittarius, GD-1, Palomar 5, Orphan-Chenab, and Cetus Polar. We summarize analytical, statistical, and Bayesian methods used to model stellar streams and infer dark matter properties, highlighting challenges arising from parameter degeneracies, incomplete observations, progenitor uncertainties, and time-dependent perturbations, particularly those associated with the Large Magellanic Cloud. Finally, we discuss how upcoming astrometric and photometric surveys, together with improved dynamical modelling, may strengthen constraints on the Milky Way&#x27;s dark matter distribution and help distinguish between cold, warm, and self-interacting dark matter scenarios.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.22202v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We develop flexible semiparametric estimators of the average treatment effect transported to a target population that leverage mediators to achieve identification, and prior knowledge of population heterogeneity or summary-level statistics to achieve improved efficiency. We first propose a one-step semiparametric estimator that assumes knowledge of the baseline covariates driving the heterogeneity across populations. This approach improves efficiency by transporting only through these covariates, rather than through the full covariate set. We then introduce a collaborative one-step semiparametric estimator that also improves efficiency without requiring knowledge of which covariates drive study heterogeneity. Collectively, these estimators advance our ability to transport causal effects by improving efficiency in the presence of mediation and intermediate confounding through targeted dimension reduction strategies. We use simulation to examine finite-sample performance and apply our estimators to a large-scale housing mobility trial (MTO) and a hearing intervention trial (ACHIEVE).</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31568v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.22116v1" target="_blank" rel="noopener noreferrer">
-      Statistical Laws of Human Mobility under Large-Scale Behavioural Shock
+    <a href="https://arxiv.org/pdf/2610.31559v1" target="_blank" rel="noopener noreferrer">
+      A Generalized Framework for Rapid Polarization Response Generation in Wide Field-of-View Compton Polarimeters
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Alberto Amaduzzi, Lucila G. Alvarez-Zuzek, Valeria d&#x27;Andrea, Simone Centellegher, Lorenzo Lucchini, Brennan Lake, Manlio De Domenico, Bruno Lepri, Marta C. Gonzalez, Armando Bazzani, Riccardo Gallotti</span>
+    <span class="paper-authors">Mohamed Gamal Zaid, Merlin Kole, Mark McConnell, Fabio Muleri, Hancheng Li</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">Human mobility follows robust statistical laws, but whether these laws persist under large, sudden behavioural shocks remains unclear. Here we analyse privacy-enhanced GPS trajectories of over one million users in California and 180,000 in Massachusetts from January to September 2020, spanning the onset and easing of COVID-19 restrictions. During restrictions, individual ranges contracted below a characteristic scale of about 5 km, while short- and medium-range trip lengths and rare long-distance trips persisted. Exploration slowed from super-diffusive to near-diffusive, and visits concentrated on a few habitual locations. Trajectory shape, once rescaled, was preserved, and the entropy reduction is largely explained by fewer visited locations rather than more regular routines. Recovery after reopening was heterogeneous rather than a uniform return to baseline, and the decline began before mandatory orders. These results suggest that restrictions reorganised, rather than simply rescaled, individual mobility, with implications for mobility-based epidemic models.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.22116v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Polarimetry is the most direct probe of the unsettled radiation mechanism and magnetic field structure of gamma-ray burst (GRB) prompt emission at the energies where it peaks, tens of keV to about 1 MeV. Compton polarimeters use the azimuthal scattering angle distribution (ASAD), a 180 degree modulation on axis. GRB measurements have largely relied on the on-axis modulation factor $μ_{100}$. For a wide field-of-view planar polarimeter, GRBs arrive off axis, where the Klein-Nishina projection adds harmonics to the ASAD. Muleri (2014) described this projection and evaluated it in a low-energy expansion for X-rays. We evaluate it numerically without approximation over the whole prompt-emission energy band for any incidence and polarization angles, quantify the off-axis harmonics a single modulation factor cannot capture, and verify the model against GEANT4 simulations of an ideal polarimeter. We also include the effect of the detection threshold on the ASAD. With POLAR as the case study, we present two modes that build the full polarization response with at least 95 percent fewer Monte Carlo simulations. Mode 1 takes only the unpolarized simulation per energy and recovers the polarization measured with POLAR&#x27;s full GEANT4 responses for all but the brightest GRBs, where it underestimates the polarization degree. Mode 2 adds two polarized simulations per energy at distinct angles and reproduces the simulated ASADs to their statistical noise and the polarization of every GRB tested. Both modes are released as open-source software for any planar Compton polarimeter.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31559v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.22102v1" target="_blank" rel="noopener noreferrer">
-      Spurious Singularities in Dipole Subtraction Cross Sections and their Damping with Convergence Factors
+    <a href="https://arxiv.org/pdf/2610.31547v1" target="_blank" rel="noopener noreferrer">
+      A novel machine learning framework based on proper orthogonal decomposition for turbine wake flow predictions in natural waterways
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Michael H. Seymour, Andrzej Siódmok, James Whitehead</span>
+    <span class="paper-authors">Mustafa Meriç Aksen, Hossein Seyedzadeh, Mehrshad Gholami Anjiraki, Ali Khosronejad</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">In the dipole subtraction algorithm, the real-virtual cancellation in NLO calculations of arbitrary observables is implemented by defining a subtraction cross section that matches all of the singularities of the real emission cross section. The converse, however, is not true: the subtraction cross section contains additional singularities, coming from the underlying Born matrix element, that the real cross section does not. We call these spurious singularities. If used as originally proposed, this is not a problem, because the value of the observable damps these singularities, but in applications such as dipole showers and matching algorithms, it can lead to poor statistical convergence, or dependence on unphysical regulators such as technical or generation cuts. In this paper, we show that additional factors, which we call convergence factors, can be applied to the subtraction cross section to damp these spurious singularities and improve the convergence. We perform the required phase-space integrals to yield modified dipole insertion operators, and verify numerically that they indeed remove the logarithmic dependence on generation cuts that arises in their absence. This paper is dedicated to the memory of Stefano Catani, with whom the work was originally started.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.22102v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We developed a machine learning (ML) surrogate trained on instantaneous large eddy simulation (LES) data filtered using proper orthogonal decomposition (POD) to predict mean flow fields in natural rivers with complex geometries. The surrogate enables efficient prediction of mean flow fields downstream of marine hydrokinetic (MHK) turbine arrays at a fraction of the computational cost of high fidelity simulations, facilitating turbine layout optimization in natural waterways where bathymetry, turbulence, and turbine interactions influence the available energy resource. We demonstrate the capabilities of the model at a real world tidal river site under ebb tide conditions. Complex bed bathymetry and planform geometry generate substantial background turbulence that can obscure turbine wake signatures. POD is employed to extract relevant flow structures, improving the ability of the ML model to learn wake dynamics. First, LES is performed at the tidal site to generate training data. POD is then applied to decompose the instantaneous LES fields into spatial modes. Selected modes are used to train a three dimensional convolutional encoder decoder network to predict time averaged velocity fields. This selective filtering reduces the influence of dominant background fluctuations while preserving information relevant to turbine wakes. At equivalent network size and training cost, the POD filtered surrogate reduces the mean squared error by three orders of magnitude compared with the same network trained on unfiltered LES data.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31547v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.22096v1" target="_blank" rel="noopener noreferrer">
-      The Radius-Luminosity Relationship for Active Galactic Nuclei with Hierarchical Bayesian Reverberation Mapping
+    <a href="https://arxiv.org/pdf/2610.31545v1" target="_blank" rel="noopener noreferrer">
+      SpecLess: A Multi Survey Python Package for Machine Learning Classification of Galaxy Morphology and Activity from Photometry
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Hugh McDougall, Tamara M. Davis, Benjamin J. S. Pope, Paul Martini, Zhefu Yu, Chris Lidman, Geraint F. Lewis, Christian Adamcewicz, Rahma Alfarsy</span>
+    <span class="paper-authors">Uzay Aydin, Mehmet Tanriver</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">Reverberation mapping of active galactic nuclei uses the time taken for variability to travel through the system as a measure of system size, with this size being used to inform estimates of the mass of the central black hole, a technique that has graduated to an industrial-scale effort in recent decades. Such large target-count, multi-year surveys have been consistently undercut by poor light curve quality and the aliasing problems of seasonal observations. These impacts compound with statistical approaches that are not consistent between works and sometimes combine inconsistent statistical frameworks. Here, we present a new end-to-end Bayesian framework for fitting lags at scale in large surveys, simultaneous with the fitting of population models such as the radius-luminosity relation, and formulated in a numerically tractable way. This procedure is a statistically and numerically robust generalisation of the stacking and quality cut procedures of past works, fully marginalising over data uncertainty and data quality. Our approach remains numerically stable when scaling to larger surveys, and can act as a basis for any Bayesian population modelling of large sets of AGN time series observations. Applied to the OzDES sample, we demonstrate that this new approach yields more than double the constraining power on population-level properties like the R-L relationship, and an order-of-magnitude increase in the number of recovered lags and masses. With this method, we go from 24 high quality lag recoveries with traditional methods to a new effective sample size of ~297, all while being robust against random chance false positive measurements.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.22096v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Broad band photometry enables scalable galaxy classification without spectroscopy at inference time, yet strong within survey performance may not transfer when the same galaxies are measured by another survey. We present SpecLess, an open source Python package implementing two photometric classification tasks: high confidence Galaxy Zoo 1 elliptical and spiral morphologies, and four SDSS spectroscopic activity reference classes (starforming, starburst, Seyfert, and LINER). Using SDSS+AllWISE, KiDS+VIKING, and DESI Legacy Imaging Surveys photometry, survey specific XGBoost classifiers achieve held out macro F1 scores of 0.9332 (SDSS; 35,554 galaxies) and 0.9237 (KiDS; 3,269) for morphology, and 0.7637 (SDSS; 16,931) and 0.7398 (DESI; 11,975) for activity. Starforming and starburst references are recovered more effectively than Seyfert and LINER, while feature ablations reveal complementary contributions from optical and mid infrared photometry. We quantify catalogue dependence using separately trained common feature models evaluated on matched galaxies with identical labels and data partitions. Relative to target trained models, macro F1 deficits are 0.0153 (SDSS to KiDS) and 0.0354 (KiDS to SDSS) for morphology (12,301 galaxies; 20 splits), and 0.0660 (SDSS to DESI) and 0.0406 (DESI to SDSS) for activity (11,975 test galaxies). Colour only refits, additive corrections, and optical infrared substitutions reveal direction dependent sensitivity without consistently recovering target trained performance. SpecLess v0.3.0 distributes four pretrained, survey specific classifiers through a unified Python interface. The package provides a reproducible baseline for photometric galaxy classification across multiple surveys while establishing an extensible, open source foundation for future developments in classification methods and photometric catalogue support.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31545v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.22094v1" target="_blank" rel="noopener noreferrer">
-      SCCL-DT: Semantic-Conflict-Aware Contrastive Learning with Dual-Rule Teacher Distillation for Zero-Shot Chest X-Ray Diagnosis
+    <a href="https://arxiv.org/pdf/2610.31539v1" target="_blank" rel="noopener noreferrer">
+      PYTHIA, a transferable machine learning framework for simultaneous defect and adsorption site optimization
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ting Liu, Haoran Lai, HaobinChen, Ming Liu, S Kevin Zhou</span>
+    <span class="paper-authors">Ioannis Kouroudis, Zhaosu Gu, Poonam, Leon Muller, Alessio Gagliardi</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">Contrastive vision-language pre-training supports zero-shot chest X-ray diagnosis, but standard objectives treat every off-diagonal image-report pair in a batch as a negative. In radiology, recurring findings across patients mean that instance mismatch need not imply semantic incompatibility, creating false-negative supervision that we term a semantic conflict. A training-trace audit shows that pair-observations selected by the online mask used during training are enriched for report-derived finding agreement, although this proxy analysis does not establish clinical equivalence. Fixed thresholds can become miscalibrated as similarity distributions evolve, while soft reweighting leaves residual repulsive gradients. We therefore propose Semantic-Conflict-Aware Contrastive Learning (SCCL), which tracks modality-specific similarity distributions with exponential-moving-average (EMA) statistics, derives adaptive thresholds, and hard-masks flagged candidates before softmax normalization. Inclusive (OR) and consensus (AND) rules define two SCCL teachers, whose bidirectional cross-modal rankings are consolidated through standard distillation into a single deployable student, SCCL-DT. Across five public chest X-ray benchmarks, SCCL-DT achieves a mean zero-shot AUC of $0.850$, compared with $0.837$ for the strongest evaluated baseline in our comparison. Code will be made publicly available soon.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.22094v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Machine learning has permeated material optimization, providing high value. Nevertheless, its re- liance on a high number of samples limits its applicability to relatively explored material families. In this paper we extend the applicability of machine learning to novel and understudied materials through the PYTHIA (Probabilistic Yet Transferable Hierarchical Interaction Architecture) framework. Pythia utilizes two of the most powerful machine learning concepts, foundational models and transfer learning. We employ a complex foundational model trained on a large dataset of chemically similar molecules, on a target that is physically close to our prediction target. Then, we freeze the weights and perform subspace alignment with the use of a transformer layer and add uncertainty quantification with gaussian processes. These two layers can be trained on a limited dataset yet allow us to leverage the gained knowl- edge and the studied materials and complex architectures. The resulting model is used as a surrogate for a Bayesian Optimization scheme. To showcase the robustness of the framework, we applied it to the investigation of adsorption and defect optimization of two distinct systems. Not only were we able to correctly and efficiently identify the optimal adsorption sites of even complex a</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31539v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.22084v1" target="_blank" rel="noopener noreferrer">
-      Learning Changes the World and Then What Was Learned has Changed: Training and Deploying Neural Networks in the Control Loop
+    <a href="https://arxiv.org/pdf/2610.31538v1" target="_blank" rel="noopener noreferrer">
+      LACToS: Local Anomaly Detection via Conditional Typicality of Superpixels
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Vittorio Lippi</span>
+    <span class="paper-authors">Jihoon Hong, Alireza Kheirandish, Rohan Sanda, Sara Fridovich-Keil</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">Neural networks offer critical adaptability for controlling complex systems where nominal modeling proves intractable. However, when offline-trained neural networks are deployed within closed-loop control systems, their actions fundamentally alter the state distribution upon which they were trained. This paper introduces a unified taxonomy to categorize these sequential failure modes: the initial Closed-Loop Identification Error, the deployment-induced Action Error, and the continuous Tracking Error. Through discrete-time sensitivity analysis, this work formalizes how offline-learned parameters locally guarantee a trajectory divergence upon deployment, degrading performance due to local loss geometry. To mitigate this distribution shift, we propose actionable design policies centered on time-scale separated online adaptation. These mechanisms are validated through ablation studies on a nonlinear Duffing oscillator, demonstrating that bounded continuous learning successfully mitigates trajectory divergence whereas static deployments fail, offering concrete guidelines for practitioners deploying machine learning components in safety-critical feedback systems.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.22084v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Local anomaly detection is the task of identifying spatially confined anomalous or out-of-distribution (OOD) regions within an otherwise in-distribution (ID) image. Most existing methods are designed for a specific context, with a strong focus on industrial defect detection, where they achieve excellent performance on well-established benchmarks. However, we observe that these methods can exhibit significant performance drops in other contexts, especially when the inlier distribution is multimodal. To account for this inlier complexity, we propose LACToS, a principled local OOD detection method based on statistical typicality and made tractable through two innovations: (i) grouping pixels into superpixels and (ii) using a computationally efficient proxy to estimate typicality. We evaluate LACToS across three diverse applications spanning medical imaging, human faces, and X-ray security screening. LACToS performs more robustly than prior methods across these benchmarks. The code is released here: https://github.com/voilalab/LACToS.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31538v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.22050v1" target="_blank" rel="noopener noreferrer">
-      Missed Detections and False Alarms in a CNN Technosignature Detector on Breakthrough Listen Data
+    <a href="https://arxiv.org/pdf/2610.31537v1" target="_blank" rel="noopener noreferrer">
+      Causal inference in staggered adoption panels: The correct comparison set depends on your intervention
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Omer Imran</span>
+    <span class="paper-authors">Ian Lundberg, Yaling Xu</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">Radio technosignature searches rely on machine learning detectors to shrink the candidate pool before a human looks at it. They are validated on held-out data from the training distribution, which excludes the cases where they are most likely to fail: a technosignature has unknown morphology, and terrestrial interference is unbounded in variety. I trained a standard competition detector once, froze it, and probed it with 15,000 injections across ten morphologies and five amplitudes, placed into real Green Bank backgrounds. Two directions were tested: genuine signals with morphologies other than a straight narrowband line, and interference resembling the training data. Recall did not follow the predicted ordering, and it fell as signals brightened, even for a needle of the kind the detector was trained on (from 0.590 to 0.090). One interference morphology reached a false positive rate of 0.627, comparable to the detector&#x27;s own baseline recall of 0.5525 on genuine signals. Gradient-weighted Class Activation Mapping (Grad-CAM) showed attention along the injected path in one missed family by a pre-specified test, and visually in a second. A pre-specified, time-averaged ON-OFF filter removed false alarms and genuine detections at the same rate. The detector reads only the ON panels. Since the only evidence distinguishing a genuine candidate from terrestrial interference lies in the discarded OFF panels, it cannot tell if a signal originates from the target star; it can only tell if it resembles the training data. This explains the false alarm directly; the missed signals reflect what the detector learned to recognise, which reading the OFF panels would not by itself change.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.22050v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">A powerful data structure for causal inference is staggered adoption: many units are observed over many time periods, during which some units adopt an irreversible treatment at various time points while others remain untreated. Popular methods that apply in this setting include difference in difference, fixed effects, matching, and synthetic control. All of these methods compare the future outcomes of treatment adopters and non-adopters to answer the question: for units who adopt treatment, what outcomes would have been realized if they had remained untreated? We show that this question actually hides two very different causal questions of interest. The first is what would have happened under a momentary intervention to prevent treatment at its factual adoption time. The second is what would have happened to a treated unit under a longitudinal ban preventing treatment at all periods until outcome measurement. We show how to answer each question under conditionally ignorable treatment adoption or under parallel trends. We highlight that common methods cannot answer the second question because this question requires a time-varying comparison set with time-varying weights.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31537v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.21980v1" target="_blank" rel="noopener noreferrer">
-      A Bayesian Spatially Varying Coefficient Model for Surface Urban Heat Island Estimation
+    <a href="https://arxiv.org/pdf/2610.31524v1" target="_blank" rel="noopener noreferrer">
+      Nonparametric autoregressive estimation of probability distributions with parallel gradient boosting
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Marika D&#x27;Agostini, Massimo Ventrucci, Francesca K. de&#x27;Donato, Andrea Ranzi</span>
+    <span class="paper-authors">Rémy Chapelle</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">Surface urban heat islands (SUHIs) are commonly studied using satellite-derived land surface temperature (LST), but many analyses rely on static summaries or pointwise urban-rural contrasts, providing limited inference on temporal change, spatial dependence, and uncertainty. This study models LST as a stochastic spatio-temporal process using a spatially varying coefficient formulation that decomposes LST into a baseline spatial field and a location-specific temporal trend. This structure allows persistent thermal differences and local warming rates to be estimated within a unified probabilistic framework. SUHI is derived from the posterior distribution of the baseline spatial field by contrasting the estimated LST at a given pixel with the minimum estimated LST among non-urban pixels. Posterior excursion probabilities are used to identify areas where temporal changes are supported under simultaneous probability control. The framework is applied to summer Landsat 8 LST observations for Bologna, Italy, from 2013 to 2025. Results show strong spatial heterogeneity in SUHI, with higher values over impervious surfaces and lower values over forests and water bodies. Summer LST increased overall, but local trends varied markedly across the municipality. Joint excursion sets identify areas with warming greater than the domain-wide average and smaller clusters with statistically supported cooling. These results reveal changing thermal patterns across Bologna and help distinguish areas experiencing increasing surface heat from locations where thermal conditions have improved over time. The framework therefore provides an uncertainty-aware basis for monitoring urban thermal change.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.21980v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Nonparametric estimation of joint probability distributions is a core problem in statistics, which is notoriously challenging with high-dimensional data. Such challenges also arise with conditional distribution estimation and have led to flexible algorithms that aim to tackle the &#x27;&#x27;curse of dimensionality&#x27;&#x27; by exploiting predictive structures of lower dimension than the ambient space. In this paper, we study the use of such conditional distribution estimators to estimate joint distributions by factorizing the latter in an &#x27;&#x27;autoregressive&#x27;&#x27; way. We show that for loss functions satisfying a subadditivity property, bounds on the convergence rate of an autoregressive estimator can be derived from bounds on the convergence rate of the conditional distribution estimators. These bounds relate the difficulty of estimating the joint distribution to that of estimating the most challenging factor in the autoregressive factorization. When the conditional estimators adapt to sparsity in their conditioning sets, we characterize this difficulty through variable elimination in an undirected dependence graph. This allows bounding the rates of convergence by quantities related to the sparsity of the graph, and provides an additional motivation for the autoregressive approach. We then evaluate the practical performance of an autoregressive estimator based on parallel gradient boosting, a flexible nonparametric method for estimating conditional distributions. The estimator demonstrates competitive estimation performance on various simulated and real datasets, even without optimizing the factorization order. Together, these results support nonparametric autoregressive estimation as a practical approach to flexible joint distribution estimation.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31524v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.21974v1" target="_blank" rel="noopener noreferrer">
-      Time to Fake It: Continual Machine Learning Intensifies Unfairness in Deepfake Detection
+    <a href="https://arxiv.org/pdf/2610.31503v1" target="_blank" rel="noopener noreferrer">
+      Maximum Likelihood Estimation and Likelihood Ratio Tests for the Power Spherical Distribution
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Kajaree Das, Oliver Böse, Subarnaduti Paul, Gabriel Storch, Martin Mundt</span>
+    <span class="paper-authors">Sharindi Amasha Samaraweera, Leif Ellingson</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">Deepfake detectors safeguard against misinformation, rendering their failures as much a societal as a technical concern. As generators constantly evolve, detectors trained on static datasets miss newly arising threats, while progressive training interferes catastrophically. Yet, mitigating forgetfulness in terms of accuracy, the prevalent focus of continual learning (CL), is insufficient to reflect real-world impact. We therefore scrutinize the effects of CL methods with respect to evolving fairness. To this end, we analyze four dimensions of fairness across diverse demographics for detectors trained progressively on a chronological sequence of 11 real-world deepfake generation methods. Tracking fairness metrics over time, we expose non-trivial interplays between performance and fairness that depend on both the choice of CL algorithm and demographic intersections. We find accuracy degradation to typically exacerbate unfairness and, conversely, fairness improvements to remain scarce over time. Dissecting the CL method families (rehearsal, prompts, regularization), we observe that inequitable forgetting is not explained by underrepresentation alone, but likely entangled with representation learning. We thus issue a call to action for CL methods to take social outcomes into account when balancing the stability-plasticity tradeoff.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.21974v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The Power Spherical distribution has been proposed as a computationally efficient alternative to the von Mises-Fisher distribution for data on the unit sphere, with reduced computational cost for simulation and a simpler normalizing constant. Despite these advantages, its statistical inference properties remain underdeveloped. In this paper, we develop a likelihood-based framework for estimation and inference for the Power Spherical distribution. Within this framework, we develop maximum likelihood estimation procedures for both the central direction and concentration parameter. Building on these estimators, we formulate likelihood ratio tests for hypotheses involving known and unknown parameters, study their asymptotic behavior, and evaluate finite-sample performance through simulation studies. The results demonstrate accurate Type I error control and good power when the asymptotic chi-square approximation is appropriate, while the parametric bootstrap provides reliable inference in small-sample settings or those where the dimension is large relative to the sample size. The findings also highlight nontrivial dependence of the power of tests for the central direction on the concentration parameter.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31503v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2610.21962v1" target="_blank" rel="noopener noreferrer">
-      Sluggish random walks with resetting: nonequilibrium aspects
+    <a href="https://arxiv.org/pdf/2610.31454v1" target="_blank" rel="noopener noreferrer">
+      Benchmarking Recent Single-Cell Synthetic Data Generation Methods on the OneK1K Dataset
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Theophilus Dwamena Frimpong, Léa Bresque, Edgar Roldán</span>
+    <span class="paper-authors">Buse Giledereli, Basar Temiz, Amirreza Sattarzadeh Khanehbargh</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-10-15</span>
+    <span class="paper-date">2026-10-22</span>
   </p>
-  <p class="paper-abstract">We derive exact analytical expressions for the fixed-time probability distribution and the Laplace transform of the distribution of the first-passage time to reach a target for a sluggish random walk in one dimension subject to two different types of stochastic resetting: stochastic resetting at random Poisson-distributed times, and resetting implemented whenever a position threshold is reached. The optimal resetting rate that minimises the mean first-passage time is obtained as a function of the sluggishness parameter, while under threshold resetting the mean first-passage time to the origin is found to increase monotonically with the threshold. We also characterise the occupation-time statistics, retrieving a Lamperti-type distribution under free dynamics and under Poissonian resetting at rate for short observation times, a Gaussian distribution centred at half for long observation times, and a distinct deterministic limit under threshold resetting. To further characterise nonequilibrium aspects of resetting, we evaluate the distribution and mean of the cost incurred per reset under Poissonian resetting, and the cost rate under threshold resetting, for different (linear, power-law, exponential) cost functions, and find the same critical behaviour of the cost rate in the limits of a vanishing resetting rate and an infinite threshold, respectively. Numerical simulations validate with excellent accuracy our analytical formulae.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2610.21962v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Synthetic single-cell RNA-seq data generation offers a promising route for privacy-aware biomedical data sharing, but donor-linked datasets require careful balancing of biological utility and privacy risk. In this work, we benchmark synthetic generation methods for the CAMDA 2026 ELSA Health Privacy Challenge using the donor-split OneK1K dataset, comparing scGFT, scLDM, and Cell2Sentence across statistical fidelity, downstream biological preservation, and membership inference vulnerability. Because full-transcriptome generation is computationally demanding, we focus generative modeling on highly variable genes and evaluate alternative strategies for reconstructing non-HVG expression. Our results show that non-HVG handling is a central determinant of privacy: directly copying non-HVG values leads to severe leakage, whereas Poisson-based reconstruction substantially reduces membership inference risk. We further find that scGFT and scLDM better preserve biological structure than an independent Poisson baseline, while maintaining near-random privacy profiles under appropriate configurations. These findings highlight the importance of evaluating synthetic single-cell data beyond marginal similarity alone, emphasizing robustness, interpretability, and privacy-conscious design choices throughout preprocessing, generation, and post-processing.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2610.31454v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
