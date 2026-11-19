@@ -50,7 +50,7 @@
               line-height: 1.5;
             "
           >
-            <div>Last updated: <span id="last-updated">2026-11-08 04:40 UTC</span></div>
+            <div>Last updated: <span id="last-updated">2026-11-19 06:05 UTC</span></div>
             <div>Query: <span>statistics, causal+inference, machine+learning</span></div>
           </div>
         </div>
@@ -101,340 +101,340 @@
           <div class="paper-list">
             <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08472v1" target="_blank" rel="noopener noreferrer">
-      XStack: A Benchmark for ML Repo Migration
+    <a href="https://arxiv.org/pdf/2611.24915v1" target="_blank" rel="noopener noreferrer">
+      PrismRestore: A Compact Restoration Toolbox for Agentic Image Restoration
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Linrong Cai, Taiming Lu, Haozhe Chen, Zhuang Liu</span>
+    <span class="paper-authors">Zhaocheng Yu, Kui Jiang, Jing Cao, Yiang Chen, Xiaocheng Feng, Junjun Jiang, Xianming Liu</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">ML code should run where researchers choose, not where it was first written. Today, machine learning code mainly lives in two ecosystems, PyTorch on NVIDIA GPUs and JAX on Google TPUs. Migrating repositories between them means building and testing across frameworks and hardware. This migration is (1) a practical need, since it unlocks different hardware for researchers, and (2) a natural benchmark: it involves different frameworks and hardware, covers whole repositories, and is long-horizon and challenging. We introduce XStack, a benchmark that evaluates agents on migrating ML repositories between these two ecosystems. Each agent receives a PyTorch repository and a clean TPU machine and must deliver a JAX repository. Its output passes if it meets our grading criteria, based on the source repository&#x27;s published result, authenticated and calibrated by us. Migration by agents remains unreliable: Claude Opus 5 passes 75%, GPT-5.6-sol 45%, and every other agent at most 40%. XStack is a step toward freeing ML code from its ecosystem. We release XStack to make progress toward reliable migration across frameworks and hardware measurable.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08472v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Agentic image restoration composes operations to handle mixed degradations, yet its toolbox often requires storing multiple restoration networks. We propose PrismRestore, which constructs a compact bank of callable restoration actions from a single frozen all-in-one model. Our approach builds on task-dependent yet overlapping channel responses in the shared model. An offline task-prior search uses activation and gradient statistics to group channels with similar response profiles, then searches task-specific modulation coefficients over non-representative channels while leaving representative channels unmodulated. The resulting prior bank enables explicit action selection and composition without additional restoration backbones or task-specific adapter modules. A state-conditioned policy learns to compose these actions using Group Relative Policy Optimization. Its objective separately normalizes fidelity and perceptual feedback within groups of trajectories sampled for the same input, and combines terminal evaluation with return-to-go derived from stepwise quality changes. Experiments on synthetic composite-degradation and real-world multi-task benchmarks show improvements over the evaluated all-in-one baselines and restoration quality competitive with multi-model agents. PrismRestore achieves these results with a single restoration backbone and faster inference than the evaluated agentic baselines.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24915v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08461v1" target="_blank" rel="noopener noreferrer">
-      Quantum Knowledge Distillation: State-of-the-art, Applications and Open Problems
+    <a href="https://arxiv.org/pdf/2611.24900v1" target="_blank" rel="noopener noreferrer">
+      New Observational Insights into Generalised Axion-Like Dark Energy
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Aldana Al-Sulaiti, Kuan-Cheng Chen, Muhammad Bilal Akram Dastagir, Ahmed Farouk, Saif Al-Kuwari</span>
+    <span class="paper-authors">Mariam Bouhmadi-López, Hsu-Wen Chiang, Carlos G. Boiza, Thomas J. Broadhust</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">Knowledge distillation transfers predictions, representations, or other supervisory information between learning models and is increasingly investigated in quantum machine learning. Its applications extend beyond compression to cross-architecture transfer, circuit approximation, distributed learning, and classical deployment of models trained using quantum-derived supervision. This survey reviews these approaches using two complementary classification axes: teacher-student configuration and the role of quantum resources in the distillation process. Quantum-inspired methods are discussed separately from methods that simulate quantum computations classically or execute them on quantum hardware. We explain how measurement probabilities, expectation values, classical readouts, state overlaps, and circuit-level objectives support different transfer mechanisms. We then critically assess the presented results against baseline design, execution conditions, uncertainty, and resource costs. The evidence shows that distillation can improve selected quantum students, but benefits are task- and architecture-dependent, and several studies find negligible gains or even performance degradation. Evaluations on physical quantum hardware remain limited, with some testing individual quantum components rather than complete learning pipelines. Heterogeneous protocols and incomplete resource reporting prevent general conclusions about practical quantum advantage. We identify priorities for controlled benchmarking, noise-aware learning, reproducible evaluation, and efficient transfer between quantum and classical models.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08461v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">We consider a quintessence model based on a generalised axion-like scalar field potential, originally introduced as a phenomenological framework to describe the late-time accelerated expansion of the Universe. The model exhibits a tracking regime that alleviates the coincidence problem and naturally leads to a phase of late-time acceleration driven by an effective cosmological constant, without requiring fine-tuning of the scalar field initial conditions. In this work, we confront the background cosmological evolution of this model with current observations by performing a parameter inference analysis using cosmic microwave background distance priors, baryon acoustic oscillation measurements, Type Ia supernovae, the SH0ES distance ladder, cosmic chronometers, and gamma-ray bursts. This analysis allows us to assess the observational viability of the model, its ability to reconcile different cosmological datasets, and its statistical performance relative to $Λ$CDM.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24900v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08452v1" target="_blank" rel="noopener noreferrer">
-      ReproBridge: Building Reproducibility into ML Research Artifacts
+    <a href="https://arxiv.org/pdf/2611.24898v1" target="_blank" rel="noopener noreferrer">
+      When Time-Reversible Sensor Records Require Hidden Dissipation
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yubo Wang, Rui Meng, Jaehyun Nam, Tomas Pfister, Jinsung Yoon</span>
+    <span class="paper-authors">Andrey V. Dobrynin, Anastasia Stroujkova</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and supporting artifacts. For coding agents, reproduction success can therefore depend on their ability to fill in missing details, rather than on the released artifacts alone. We ask whether preserving recovered procedures and decisions improves subsequent independent reproduction. We define a standardized artifact design comprising a refined codebase, environment setup, experiment launchers, and a reproduction guide, and introduce ReproBridge, an agent workflow for constructing these refined reproducible artifacts. ReproBridge-Bench provides 1,029 tasks from 387 experiments across 36 papers, anchored by five human-verified reference scores per task. Agents attempt tasks in fresh sessions with raw code or refined artifacts; a separate Auditor checks execution evidence. Across four evaluated models, refined artifacts raise mean reproduction success from 76.4% to 92.6% and reduce downstream API spending by 19.7% on average. The cross-model success-rate spread narrows from 21.6 to 3.9 percentage points, with all four models achieving mean success rates above 90%. Removing any component reduces success in the ablation study, with the largest losses from code and environment removal. These results suggest that preserving execution knowledge helps even models with lower raw-code success reproduce experiments more reliably and at lower API cost.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08452v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">A binary sensor record can be time reversible yet require dissipation in every compatible finite-state Markov model. For a four-state sensor with correlated dwell times, two observed switching statistics give an exact equilibrium criterion and, when equilibrium is excluded, a positive lower bound on entropy production independent of hidden-state number. An explicit four-state construction provides an upper bound on the minimum dissipation. For a noisy Poisson sensor, the bounds differ by less than a factor of two and vanish at a kinetic matching point while the sensor remains dissipative.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24898v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08441v1" target="_blank" rel="noopener noreferrer">
-      Edge-Assisted Crowdsensing for Explainable Cyclist Safety Perception
+    <a href="https://arxiv.org/pdf/2611.24895v1" target="_blank" rel="noopener noreferrer">
+      Efficient search for microlensed gravitational-wave signals with matched filtering and a two-image statistic
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Hongsen Cao, Chia-Yen Chiang, Mona Jaber, Meihui Wang, Yasmin Fathy</span>
+    <span class="paper-authors">Soumen Roy, Justin Janquart</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">Cyclist fatality rates remain high despite policy support for active travel, and autonomous vehicles add complexity to mixed traffic. Neither crash statistics nor multi-model detection pipelines scale to continuous monitoring of perceived safety along a route. We present an edge-assisted crowdsensing system: handlebar cameras supply street-level frames, a vision-language model (VLM) turns each frame into structured traffic attributes through a single prompt, and an explainable boosting machine (EBM) combines them with OpenStreetMap road infrastructure and on-bike kinematics to predict a crowdsourced 1-9 safety score. Extraction belongs at the network edge: the fastest self-hosted model needs 2.49 s per frame and scoring takes 0.4 ms on a CPU. On 1,362 annotated frames from two London routes, the EBM regressor reaches 72.2 percent binary accuracy and a mean absolute error of 1.011 under five-fold cross-validation. It is within one accuracy point of black-box ensembles. Its per-feature shape functions give exact attribution: physical lane separation is worth +0.97 rating points, a painted lane +0.70 and a construction site -0.65. Planners can therefore price an infrastructure change in rating points, and the results enter cost-benefit analysis directly. We also report inter-annotator agreement (alpha = 0.4695), an attribute audit, and a sensitivity analysis linking attribute error to accuracy. With re-encoding, a 20 s sampling interval serves 1,000 riders at 54 Mbit/s at a cost of 1.4 accuracy points, making continuous monitoring practical.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08441v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Gravitational waves from compact binary coalescences can be microlensed by compact objects along the line of sight, producing frequency-dependent waveform distortions. As standard matched-filter searches rely on unlensed templates without accounting for lensing effects, microlensed signals can lose signal-to-noise ratio (SNR) through template mismatch and suffer further losses from signal-consistency tests. We quantify both effects for the $\texttt{PyCBC}$ search using microlensed injections in simulated data. The two losses occupy different regions of lens parameter space in the geometric optics representation: template mismatch is governed by the relative magnification of the two images, while the consistency-test penalty is governed by their time delay. We show that a microlensed signal lies in the two-dimensional subspace spanned by a template and its time-shifted copy, allowing the relative magnification and Morse phase to be maximized over analytically, leaving only the time delay to search. The resulting statistic requires no extension of the template bank and reduces the median loss in re-weighted SNR from $10\%$ to $1.6\%$, and the $90^\mathrm{th}$ percentile from $41\%$ to $9\%$. At a false-alarm rate of one per day, the relative detection volume improves by about $6\%$ across all injections, and by a factor of $1.9$ for the $10\%$ of injections most affected by lensing. In addition to increased detection capacities, we also show how the detection statistic can be used to establish the lensed nature of the trigger. Therefore, the work proposed here lays the foundation for an effective search and identification of microlensed signals in gravitational-wave data.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24895v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08437v1" target="_blank" rel="noopener noreferrer">
-      Deep-learning surrogate model for rapid quantum-noise computation in dual-pump fiber-optic phase-sensitive amplifiers
+    <a href="https://arxiv.org/pdf/2611.24850v1" target="_blank" rel="noopener noreferrer">
+      Statistical methods for extrapolation from one population to another: a review
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Yousra Bouasria, Debanuj Chatterjee, Abdessamad Belfakir, Debabrota Basu</span>
+    <span class="paper-authors">Lingjiao Wang, Francois Mercier, Astrid Jullion, Xuan Zhu, Christian Rover, Marc Vandemeulebroecke, Martin Posch, Sarah Zohar, Nigel Stallard</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">Fiber-optic parametric amplifiers in a phase-sensitive amplifier (PSA) configuration are well known for their low noise properties. Quantum mechanics dictates that these amplifiers can have a 0 dB noise figure (NF) (ratio of signal-to-noise ratio at the input and output of the amplifier) under certain conditions. However, for a dual-pump configuration, when the system is highly nonlinear, fully quantum calculations of NF become non-trivial. In such cases, semi-quantum models of NF evaluation exists, however, they are often complicated and resource intensive. To simplify that, in this work, first we use a semi-quantum NF calculation framework for the generation of numerically simulated input-output dataset of NF over a large parameter spaces. Then we use the data to train an optimized deep neural network (DNN) for rapid NF prediction. Utilizing the DNN, we demonstrate about 400 times reduction in the computation time compared to the standard semi-quantum NF evaluation approach with a mean absolute error (MAE) of 0.0015 dB. Using clustering we demonstrate a rapid exploration of the parameter space with respect to high gain (20 dB) and low NF (0.3 dB) targets and retrieve associated design parameters. These results illustrate the efficacy of machine learning-based approaches for rapid search of high-dimensional parameter spaces especially in compute intensive photonic systems.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08437v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Background: Extrapolation refers to statistical approaches that support inference on treatment effects in a target population using data from completed clinical trials conducted in a source population. This is particularly important when only limited data are available in the target population. Extrapolation may be based on multiple sources of information, including pharmacokinetic, pharmacodynamic, mechanistic, or clinical outcome data. This review focuses on methods that enable borrowing of information from one population to support inference in another. Methods: We conducted a review of statistical methodologies for extrapolation, focusing on approaches that incorporate outcome data from source populations to support inference in target populations. Methods were identified across a range of settings, including extrapolation across age groups and across different clinical indications. Literature searches were conducted using the Science Citation Index Expanded database within Web of Science and included all English-language records available up to 30 June 2025. Results: The review identified 218 extrapolation approaches from 159 papers, which can be broadly classified into three main categories: Bayesian, frequentist, and causal inference methods. These methods vary in their assumptions, implementation, and applicability across different extrapolation settings. Conclusions: This review provides a comprehensive and up-to-date overview of statistical methods for extrapolation, offering a foundation for further methodological development and applied research. It also discusses key considerations for method selection and current limitations, and highlights priorities for future research, including the development of new extrapolation methods and clinical trial designs that facilitate extrapolation.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24850v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08421v1" target="_blank" rel="noopener noreferrer">
-      Data-driven discovery of intrinsic Lie point symmetries of differential equation systems
+    <a href="https://arxiv.org/pdf/2611.24849v1" target="_blank" rel="noopener noreferrer">
+      Can Programs Replace LLM Judges? Executable Program Judges for Scalable and Efficient Relevance Labeling
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ilker Gurcan, Kadir Ustun, Ramazan Gokberk Cinbis</span>
+    <span class="paper-authors">Eugene Agichtein, Charles L. A. Clarke, Kaustubh Dhole, William Stern</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">Discovering continuous symmetries directly from differential-equation data can reveal geometric structure for model reduction and scientific machine learning without symbolic determining equations or a closed-form representation of the governing system. We formulate intrinsic Lie point-symmetry discovery as an operator-theoretic problem on sampled jet-space data. Admissible generators are identified from a sampled determining operator and separated from redundant, solution-dependent, and geometrically trivial directions. The framework combines prolongation, sequential subspace restrictions, and a fixed nonlinear dictionary linear in trainable coefficients. A rank-stabilization preflight test diagnoses systems whose represented intrinsic symmetry algebra does not stabilize under dictionary refinement. On a controlled differential-equation benchmark with an analytically known 11-dimensional represented intrinsic symmetry algebra, the method recovers the complete represented generator set, reproduces its Lie-bracket structure to numerical precision, and approximates a known generator beyond the training domain. Here we show that explicit intrinsic continuous-symmetry generators can be recovered from data obtained from exact or approximate differential systems.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08421v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Large language model (LLM) judges have become a common way to create large-scale relevance judgments for retrieval evaluation. However, each judgment requires a potentially expensive call to a frontier model, and the judgments are hard to interpret and may not be reproducible. In this paper, we ask whether an LLM can write a readable program for each topic that replaces its per-document judgments. To address these issues, we propose ExecJudges, a method for generating fast, inspectable and scalable judges for automatic relevance labeling. Specifically, ExecJudges uses a frontier LLM to turn assessment guidelines into executable programs, which rely only on lexical matching, standard NLP libraries like parsers, and pool statistics. An ExecJudges-L variant also uses examples of human labels if available. We evaluate ExecJudges on seven TREC collections by comparing the produced labels with trained NIST assessors, frontier LLM judges, and recently proposed per-topic classifiers. Our results show that ExecJudges agrees with NIST assessors at the level of the Claude Sonnet 5.5 LLM judges on TREC DL 2019-2021. With a small number of human labels per topic, the ExecJudges-L variant agrees with NIST more than per-topic classifiers with the same labels on all seven collections, and either exceeds the agreement of LLM judges provided the same labels or is within about 0.05 of it in Krippendorff&#x27;s alpha. The labels rank the official TREC DL runs with Kendall&#x27;s tau of 0.87 to 0.94, and writing the programs incurs a one-time cost of $0.17 to $0.49 per topic, with no additional costs for grading. Our results suggest that ExecJudges offers a reproducible, inspectable, efficient and cost-effective alternative to LLM judges for labeling deep result pools for system evaluation or ranking improvements.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24849v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08420v1" target="_blank" rel="noopener noreferrer">
-      On the limitations of molecular representations
+    <a href="https://arxiv.org/pdf/2611.24834v1" target="_blank" rel="noopener noreferrer">
+      Shedding Light on Quantum Non-Classicality: Witnessing Wigner Negativity with Free Electrons
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Acer Blake, Fergus Imrie, Charlotte M. Deane</span>
+    <span class="paper-authors">Sunjun Hwang, Leong Chuan Kwek</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">Molecular representations such as fingerprints and learned embeddings play a central role in cheminformatics and small-molecule machine learning. They serve as the primary input for a diverse array of tasks, including clustering, dataset splitting, and virtual screening, yet their evaluation is often limited to downstream model performance on narrow benchmark tasks. We carried out a systematic investigation of the quality of molecular representations, finding that none of the state-of-the-art molecular embedding models capture graph structure, 3D shape, or ADMET endpoint similarity better than fingerprints or physicochemical descriptors. However, classical fingerprints also revealed their own material limitations. For example, we show that depending on the representation, between 225M and $\sim$4B molecules have non-unique representations in the 10.8B Enamine REAL database, with implications for virtual screening. Our findings provide an insight into the current limitations of molecular representations, outlining future research directions for the development of more robust encodings of small molecules.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08420v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Certifying quantum non-classicality like Wigner negativity typically demands full optical state tomography. This work introduces a noise-resilient framework for witnessing optical Wigner negativity using phase-resolved quantum photon-induced near-field electron microscopy (QPINEM). By mapping electron coherences directly to symmetrically ordered optical characteristic functions within a coupling-limited phase-space region, the protocol bypasses full optical reconstruction. A post-measurement witness matrix is constructed via Bochner&#x27;s theorem from recorded electron spectra, where negative eigenvalues certify non-classicality. To ensure reliability under realistic experimental conditions, a noise-aware selection procedure decouples discovery from statistical validation. Benchmarked across various optical preparations-including vacuum-Fock superpositions, odd cat states, and GKP states-the protocol provides a statistically bounded pathway for probing quantum features with free electrons.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24834v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08409v1" target="_blank" rel="noopener noreferrer">
-      Conformal Prediction for Time-Dependent PDEs
+    <a href="https://arxiv.org/pdf/2611.24831v1" target="_blank" rel="noopener noreferrer">
+      Overlooked and Underutilized: Prototypes are the Missing Piece in Tabular XAI
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Joshua Stiller, Annika Schneider, Eyke Hüllermeier</span>
+    <span class="paper-authors">Jacek Karolczak, Jerzy Stefanowski</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">Uncertainty quantification is crucial in scientific machine learning, where models inform safety-critical tasks such as flood forecasting, financial risk management, and thermal control in machines. Conformal prediction provides distribution-free coverage guarantees, but in time-dependent settings common to physics and engineering, these guarantees can break down, leading to systematic undercoverage. We study this problem in the context of surrogate models for time-dependent physical systems described by partial differential equations. We prove that in a function space setting, distributions at arbitrarily close times can be mutually singular, making exact coverage guarantees impossible. We further show that in discretized settings, the total variation distance between distributions often saturates exponentially fast with the grid resolution, mandating restrictions on the spatial discretization to ensure coverage. Finally, for certain settings, we show how to use principled weighted conformal prediction to obtain finite-sample coverage guarantees over growing time horizons.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08409v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Explainable AI (XAI) is frequently applied to high-stakes tabular data, yet the field relies heavily on feature attribution methods. While these approaches offer technical transparency, evaluating dozens of isolated features demands excessive cognitive effort from non-expert users. In this paper, we argue that prototypes remain overlooked and underutilized, and should be integrated as a complementary, intuitive gateway to auditing complex machine learning models. Although entire exemplars function as an intuitive baseline for prototype-based explanations, we highlight prototypical parts as particularly valuable for tabular data. By grouping related features into bounded subspaces, prototypical parts technically embody human-understandable concepts, replacing isolated features with cohesive semantic units. We support this integration through two primary lenses. Cognitively, these parts align with Rosch&#x27;s categorization theory and Kahneman&#x27;s System 1 thinking to naturally reduce cognitive load for humans. Then, we introduce a Geometric Validity Triad to conceptualize why prototypes validate the data manifold - a critical dimension often neglected by existing methods. We contend that making tabular XAI genuinely comprehensible requires shifting toward composite explanation pipelines that pair intuitive similarity-based reasoning with rigorous feature-level auditing. The paper concludes by outlining open challenges of prototype-based methods and discussing potential solutions to guide future research.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24831v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08386v1" target="_blank" rel="noopener noreferrer">
-      Hybrid Machine Learning for Imbalanced Landing-Phase Safety Event Prediction from Flight Data
+    <a href="https://arxiv.org/pdf/2611.24830v1" target="_blank" rel="noopener noreferrer">
+      A Foundation Model to Measure and Predict Human Behaviour
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Taha Asghar, Bilal Mufti, Syed Qasim Zaheer, Luqman Ahmed</span>
+    <span class="paper-authors">Haoran Ye, Tianrui Huo, Hangzhen Li, Xin Zhang, Guojie Song</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">Landing-phase safety-event prediction requires the detection of rare abnormal approaches within strongly imbalanced multivariate flight data. Capturing coupled temporal behavior while distinguishing event-specific signatures across airport operating contexts remains a central modeling challenge. This study proposes an interpretable hybrid feature-fusion framework for multiclass landing-phase safety-event prediction. A long short-term memory (LSTM) autoencoder trained on nominal flight windows characterizes deviations from routine approach behavior. Its continuous reconstruction-error descriptor is fused with parameter-specific statistical flight-history features and supplied to a class-weighted XGBoost classifier to distinguish Normal, Speed High, Path High, and Flaps Late windows. The framework is evaluated using 53,750 NASA DASHlink approach windows from three arrival airports. Pooled and airport-specific learning strategies are compared alongside component-level benchmarks, repeated pipeline retraining, and feature-attribution analysis. The results demonstrate strong class-balanced detection, with mean macro recall above 0.90 across all airports under repeated partitioning and retraining. Component comparisons establish the importance of class weighting and show that continuous feature fusion outperforms reconstruction-error-only and hard-gate alternatives. Airport-level comparisons reveal benefits from local specialization at the two airports with larger datasets and from pooled training at the airport with the smallest dataset. Feature attributions associate predictions with operationally relevant vertical-path, configuration, speed, and approach-context variables. The framework provides an interpretable approach to rare-event detection and practical guidance for adapting flight-data monitoring models to airport-level data availability.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08386v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Large language models (LLMs) are increasingly used to infer psychological attributes, predict individual behaviour, and simulate human populations. However, despite generating plausible responses, they often misrepresent individuals and distort population statistics. Here we introduce Chiron, a foundation model to measure and predict human behaviour. We jointly fine-tune an LLM to represent psychological constructs, predict individual behaviour, and align population response distributions with human statistics. The training and evaluation data span 36 behavioural domains and 78 social science experiments, comprising 288,307 person records, 1,411,750 atomic behavioural decisions, and 99,953 psychometric assessments over 109 psychological constructs. In our evaluations, Chiron&#x27;s psychological measurements agree more closely with human self-reports and exhibit fewer biases that undermine psychometric validity. It predicts individual behaviour more accurately than frontier LLMs (up to 28.4% relative improvement). In simulations of social science experiments, it more accurately captures the direction and magnitude of human experimental effects (82.2--94.3% lower effect-size estimation error). Together, these results establish Chiron as a unified computational instrument for measuring and predicting human behaviour.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24830v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08346v1" target="_blank" rel="noopener noreferrer">
-      The cold substellar frontier in JWST Extragalactic surveys: a robust parallax measurement yields the most distant known ultra-cold Y dwarf
+    <a href="https://arxiv.org/pdf/2611.24821v1" target="_blank" rel="noopener noreferrer">
+      On the Validity of Fisher Randomization Tests under the Weak Null
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Feng-Yuan Frey Liu, Derek J. McLeod, Xueqing Chen, Ben J. Sutlieff, Ho-Hin Leung, Clémence Fontanive, James S. Dunlop, Ross J. McLure, Trent J. Dupuy, Adam C. Carnall, Thomas M. Stanton, Beth A. Biller, Isaac J. B. Holst, Callum T. Donnan, Ryan Begley</span>
+    <span class="paper-authors">Timothy Sudijono, Edgar Dobriban, Eric Tchetgen Tchetgen</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">We present an analysis of JADES-GS-BD-5, an extremely cold Y dwarf identified in the JADES/GOODS-South field. Using multi-epoch JWST/NIRCam imaging spanning a $\simeq2$-yr baseline, we calibrate the JWST astrometry and obtain the first robust parallax measurement for a brown dwarf discovered in a JWST extragalactic deep field. We measure a proper motion of $μ_{\rm tot}=49.8^{+0.3}_{-0.3}$ mas yr$^{-1}$ and a parallax of $\varpi=15.7^{+1.4}_{-1.3}$ mas, corresponding to a geometric distance of $d=64^{+6}_{-5}$ pc, $\sim3\times$ further than that of the previously known most distant Y dwarfs with parallax-measured distances. We hence determine a tangential velocity of $v_{\rm tan}=15.0^{+1.4}_{-1.3}$ km s$^{-1}$, consistent with a Galactic thin-disk object. We find no evidence for binary acceleration, significant photometric variability, or a plausible host. The $J$-band spectral morphology of JADES-GS-BD-5 is consistent with existing Y-dwarf templates, while its extremely faint luminosity and overall near-infrared spectral profile confirm that it is one of the coldest dwarfs discovered to date. We therefore adopt a classification of $&gt;$Y1, consistent with a NIRCam colour-based proxy of cY1.5. The robust parallax-determined distance allows us to determine its bolometric luminosity, $\log(L_{\rm bol}/L_{\odot})=-7.08^{+0.09}_{-0.09}$. Evolutionary modelling places JADES-GS-BD-5 in the planetary-mass regime and makes it a rare benchmark for the study of cold giant-planet atmospheres. Current atmospheric models fail to reproduce its SED in detail, pointing to the importance of disequilibrium chemistry and vertical mixing. Finally, we also report additional proper motion measurements for eight of the other nine known JADES Y-dwarf candidates, highlighting JWST extragalactic surveys as a powerful route to building a statistically useful, parallax-calibrated sample of Y dwarfs.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08346v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Consider the problem of testing the Neyman weak null of no sample average treatment effect $H_{0N}:τ= 0$ in randomized experiments with binary outcomes. Although the Fisher Randomization Test (FRT) is typically justified under Fisher&#x27;s sharp null of no individual treatment effect, we show that it is finite-sample-valid for the weak null $H_{0N}$ in three common combinations of study design and test statistic: 1) balanced completely randomized experiments with the difference-in-means test statistic, 2) matched pairs experiments with the same test statistic, and 3) balanced Bernoulli randomized experiments with the centered Horvitz-Thompson test statistic. As an immediate corollary, Fisher&#x27;s exact test in a balanced completely randomized experiment is valid under the weak null, and so is McNemar&#x27;s test in a matched pairs experiment. Similar results hold for the one-sided null $H_0:τ\leq 0$. Beyond balanced designs, we show that twice the one-sided FRT $p$-value with the same test statistics is valid under $H_{0N}$. In simulation experiments, the FRTs compare favorably to other exact procedures.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24821v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08308v1" target="_blank" rel="noopener noreferrer">
-      RM-VLM: From Natural-Language Task Descriptions to Vision-Grounded Reward Machines
+    <a href="https://arxiv.org/pdf/2611.24812v1" target="_blank" rel="noopener noreferrer">
+      A Homogeneous Benchmark of Exoplanet Mass-Radius Relations
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Roko Parac, Christos Ziakas, Leo Ardon, Alessandra Russo</span>
+    <span class="paper-authors">Ailar Alizadehsabegh, Soroush Sarabi, Atila Poro</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">Reward machines (RMs) have been proposed as a reward formulation in reinforcement learning (RL) to capture non-Markovian tasks where credit assignment depends on history. By representing reward functions as automata, RMs expose the task&#x27;s temporal structure and allow such rewards to be handled within a Markovian framework. However, they assume a labelling function, a proposition-grounding oracle for observations, which must be manually engineered for each environment, limiting their wider applicability. In this work, we address this limitation by proposing RM-VLM, a novel approach in which a large language model (LLM) generates an RM from a natural-language task description, and a vision-language model (VLM) acts as the labelling function, grounding the RM&#x27;s propositions over image-based observations during RM-guided policy learning. A VLM-based value function estimator is used to assess the agent&#x27;s progress towards each RM transition and derive a dense reward signal. We evaluate RM-VLM on three domains covering non-Markovian grid-world navigation, robotic manipulation, and 3D object collection. Our experimental results show that RM-VLM consistently achieves higher task success rates than existing VLM-based reward methods across all tested domains.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08308v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The mass-radius ($M$-$R$) relation is fundamental to inferring the bulk composition and internal structure of exoplanets. However, published relations remain difficult to compare directly because studies adopt different planetary samples, fitting procedures, and evaluation metrics. We construct a homogeneous, quality-controlled benchmark of 963 exoplanets with dynamically measured masses and transit radii from the NASA Exoplanet Archive. We compare empirical power laws, probabilistic models, and machine-learning (ML) regressors using point accuracy, interval coverage, and probabilistic calibration. On the full test set, a multi-feature random forest has the lowest root-mean-square error, 0.329~dex in $\log_{10} M$ versus 0.368~dex for a fitted two-parameter power law ($p = 0.007$ unadjusted; $p = 0.059$ after Holm correction across 13 comparisons). Radius-only ML models perform comparably to the single power law. In three ranges of the measured radius, several methods improve on the power law below 1.6 $R_\oplus$, but none does between 1.6 and 4 $R_\oplus$. Including stellar and orbital covariates significantly improves predictions only for low-mass planets ($M &lt; 4.4\,M_\oplus$), although this result is sensitive to missing covariate data and weakens when the training and test sets are separated by host star. Within their calibrated radius domains, the published empirical and probabilistic relations remain highly competitive. Finally, a first-order variance decomposition shows that formal measurement uncertainties account for only $\sim$3\% of the residual variance (0.067 of 0.401~dex), and the remaining $\sim$0.396~dex arises from compositional diversity, selection effects, and model approximation error.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24812v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08301v1" target="_blank" rel="noopener noreferrer">
-      REACT: Towards Real-Time Completion of Skeletal Motion Signals
+    <a href="https://arxiv.org/pdf/2611.24804v1" target="_blank" rel="noopener noreferrer">
+      MLIR-MRacle: Memory-Model-Aware Metamorphic Fuzzing of Concurrent MLIR
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">P. de Clermont Gallerande, Q. Avril, P. Gosselin, F. Argelaguet, L. Hoyet</span>
+    <span class="paper-authors">Aaron Gabayoyo, Aidan Dakhama, Ajitha Rajan</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">Tracking user motion in interactive and immersive applications is increasingly common (e.g., video games, XR systems, smartphones). Yet, processing and transmitting human motion data remain critical challenges, as current approaches strongly rely on the quality of the tracked motion signals. In general, affordable motion-capture systems may produce unnatural animations in the presence of calibration errors, occlusions, sensor drift, high-frequency noise, or other artifacts. More specifically, we simulate occlusions and high-frequency noise and propose to mitigate their effects with REACT, an interactive online motion-completion framework operating causally, frame by frame, without look-ahead. REACT is an S4-based autoregressive model that coordinates complementary motion estimates under specific reliability-dependent constraints and exposes several interpretable internal signals. We present a system-level contribution consisting of a structured formulation of interactive motion completion together with a coherent instantiation of this formulation. We evaluate REACT against several causal baselines and architectural variants under varying levels of occlusion severity, and report their respective inference latencies. Our results show that REACT achieves a relevant compromise between reconstruction accuracy, update smoothness, and interactive inference. Finally, we characterize how its fusion behaviour changes under missing input observations.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08301v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Multi-level compilers built on MLIR lower concurrent programs through many stages towards targets with potentially drastically different memory models, where an optimisation which appears reasonable, can silently change program behaviour. Testing these lowerings is hard: a concurrent program often has no single expected outcome, and existing MLIR fuzzers often assume determinism. We present MLIR-MRacle, a memory-model-aware metamorphic fuzzer for concurrent MLIR programs. MLIR-MRacle applies metamorphic relations gated by the target memory model, so that both the original and transformed programs remain well defined - executing both repeatedly, and comparing their outcome sets or distributions withone of two statistical oracles. A coverage guided campaign driver built on libafl is used to perform continuous fuzzing. MRs, memory models, oracles, and execution backends all provide extension points for future researchers and compiler engineers to build off this package. In a case study on Armv8 hardware, MLIR-MRacle ran over 145k trials across four configurations, reaching up to 93.6k compiler coverage edges, and found a bug in the OpenMP dialect verifier that has since been fixed upstream. Video: https://youtu.be/lKtGk0H97Ts?si=dWLUHl2CJ24ep6JY</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24804v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08287v1" target="_blank" rel="noopener noreferrer">
-      Machine learning classification of dynamical phases in a driven nonlinear Su-Schrieffer-Heeger lattice
+    <a href="https://arxiv.org/pdf/2611.24803v1" target="_blank" rel="noopener noreferrer">
+      Cross-Dataset Inference of Central-Satellite Classification and Host Halo Masses from Galaxy neighbours with Machine Learning
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Chukwunaedum Patrick Izediuno, Ghada H. Alharbi, Stephan Wong, Zeeshan Ahmad, Sunae So, Minkyung Kim, Sang Soon Oh</span>
+    <span class="paper-authors">Alice Chen, Camille Avestruz, Niayesh Afshordi, Yen-Ting Lin</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">Driven nonlinear photonic lattices can settle into steady, symmetry-broken, periodic, or chaotic states, and mapping where each occurs in parameter space is key to device design. Brute-force mapping is slow and relies on hand-built criteria, while machine-learning classifiers are usually tested on different systems, so it is unclear which suits a new lattice. We therefore apply four classifiers to the same coherently driven Su-Schrieffer-Heeger (SSH) chain of Kerr resonators: a hand-built heuristic classifier based on Lyapunov exponents and spectral diagnostics, a supervised convolutional neural network (CNN) trained on the heuristic labels, an unsupervised library-building scheme based on augmented dynamic mode decomposition (aDMD), and an unsupervised Gaussian mixture model (GMM) on four dynamical invariants that include an aDMD reconstruction error. Using a converged heuristic diagram as the reference, the CNN reaches 98.0% held-out accuracy, while the two label-free methods reach adjusted Rand indices (ARIs) of 0.916 and 0.947, respectively, without seeing any labels. We show that the aDMD library cleanly resolves the stable and bistable phases and separates symmetric from symmetry-broken periodic oscillations, which the heuristic misses, though it cannot distinguish periodic from chaotic switching. We also find that a poorly converged reference understates the label-free methods&#x27; accuracy.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08287v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">The classification of galaxies as centrals or satellites gives insight into the galaxy-halo connection. This, together with halo mass estimates, can be used to connect observed galaxy populations to underlying dark matter structure. To (1) classify galaxies as centrals or satellites and (2) estimate the host halo mass for centrals, we train XGBoost models on IllustrisTNG (TNG100) galaxies, using the distances (3D or projected (2+1)D redshift space) and $M_*$ of their ten nearest neighbours. We then test the model on EAGLE to measure its robustness after applying a simple domain-alignment step that corrects for a relative shift in the $M_*$ distribution between TNG100 and EAGLE. We further augment the training data by combining feature sets from neighbour samples with varying lower $M_*$ thresholds. On the TNG100 test set, the central/satellite classifier reaches purity and completeness $=0.97$ (0.95) in 3D (projected redshift) space at the threshold where purity=completeness, and the halo-mass regressor achieves $r^2$=0.98 (0.93) when evaluated on true centrals and $r^2=0.93$ (0.93) when evaluated on inferred centrals. Applied to EAGLE after alignment, the classifier achieves purity/completeness $=0.95$ (0.95), while halo-mass inference yields $r^2=0.91$ ($0.87$) for true centrals and $r^2=0.83$ (0.77) for inferred centrals; training-data augmentation most improves the halo-mass estimation task. Satellites misclassified as centrals underpredict the true masses of host halos, especially if they are closer to a lower mass halo&#x27;s central than its own host&#x27;s central and/or has a significantly lower $M_*$ than its own central. These results show that survey-accessible information such as projected separations and stellar masses - combined with simulation-trained models and domain alignment - can enable reliable central identification and host halo mass estimation to an $r^2\geq 0.85$.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24803v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08285v1" target="_blank" rel="noopener noreferrer">
-      Hard Issue, Weak Model, or Bad Run? Rethinking Failure Prediction for Coding Agents
+    <a href="https://arxiv.org/pdf/2611.24798v1" target="_blank" rel="noopener noreferrer">
+      Soft Mixture of Quantum Experts for Hybrid Quantum-Classical Learning
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Xingyue Shi, Wesley K. G. Assunção</span>
+    <span class="paper-authors">Valeria Repetto, Romina D&#x27;Aurizio, Piero Farinelli</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">Trajectory-based failure predictors for software engineering (SE) agents read the partial trajectory of a run to flag whether it is going right or wrong. If it is going wrong, the run can be stopped, retried, or switched to another model. We ask whether these predictors learn anything about the run itself. On public SWE-bench Verified trajectories, where each model attempts each issue once, two run-independent factors dominate predictor performance. The first is issue difficulty: a reference score that never looks at the run, only at how hard the issue is for other models, reaches 0.92 AUROC, whereas trajectory predictors reach about 0.62. The second is model ability: within an issue, knowing which model ran predicts failure better than our predictors do, and the predictors largely reproduce the overall ability ranking of the models. Beyond difficulty and ability, what predictors gain from the trajectory is statistically equivalent to zero. This confusion carries over to the actions taken after a prediction. Model switching is often motivated by the gap between the best single model&#x27;s resolution rate and an any-model oracle. This gap is no larger than random variation alone produces. Per-issue switching gains nothing on held-out runs. In a repeated-run pilot, the same model often solves an issue in some runs and fails it in others. Retrying thus has real room to repair failures, but it rescues only failures caused by a bad run, not those on an issue beyond the model&#x27;s ability. Current predictors cannot tell the causes apart, as they mostly predict the issue and the model, not the run. We call for failure prediction that explains why a run fails, evaluated on repeated-run benchmarks and in closed-loop, equal-budget settings.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08285v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Quantum Machine Learning (QML) has attracted increasing interest as a possible route to construct feature representations that are difficult to reproduce with classical models. However, near-term QML architectures based on trainable parametrized quantum circuits remain affected by limited hardware resources, noise, and severe optimization difficulties such as barren plateaus. In this work we propose Soft-MoQE, a Soft Mixture of Quantum Experts architecture that replaces variational quantum training with the input-dependent selection and combination of fixed quantum feature maps. The model is composed of a heterogeneous pool of non-trainable quantum circuits, each defining a distinct embedding, and a classical gating network that learns how to weight these embeddings for each data point. We benchmark Soft-MoQE on three PCA-reduced tasks: MNIST parity, MNIST 10-class, and FashionMNIST. Soft-MoQE outperforms the single best expert, the uniform average of all experts and a linear baseline, achieving task-dependent performance comparable to that of a trainable quantum neural network, without optimizing any quantum parameter and with a quantum training cost that is lower by orders of magnitude. The analysis of the class- conditioned expert usage shows that the learned routing combines a few experts for each input, with a selection that depends on the class. These results support the learned routing among fixed quantum circuits as a trainability-aware design principle for hybrid QML.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24798v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08282v1" target="_blank" rel="noopener noreferrer">
-      Mitigating scanning-induced systematics in Hipparcos and implications for Gaia astrometry
+    <a href="https://arxiv.org/pdf/2611.24794v1" target="_blank" rel="noopener noreferrer">
+      Exploring Speaker-Aware Engagement Modeling for Children with Autism Spectrum Disorder
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Avraham Binnenfeld, Sahar Shahaf, Richard I. Anderson, Hans-Walter Rix, Shay Zucker</span>
+    <span class="paper-authors">Kaleen Shrestha, Austin Joel Dympep, Young Suh Hong, Maja Matarić</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">Space-based astrometric missions such as Hipparcos and Gaia rely on one-dimensional scanning strategies that couple the measured signals with both observation times and scanning geometry. This coupling can introduce spurious periodicities and complicate their interpretation. We present a non-parametric extension of the phase-distance correlation (PDC) periodogram that quantifies and reduces dependence on scan geometry at the period-search stage. Using Hipparcos data, we identified recurrent periodicities associated with characteristic scanning-law timescales and showed that they are strongly suppressed by the scan-angle-controlled statistic. We then applied the method to Gaia Data Release 4 (DR4) prerelease epoch astrometry, where a recurrent ~54-day feature is suppressed across multiple sources while independently known orbital signals remain detectable. The method provides a diagnostic of scan-angle dependence and a way to mitigate its impact on period searches. These results are particularly relevant for Gaia DR4, where public epoch astrometry will enable large-scale searches for companions ranging from exoplanets to dormant black holes.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08282v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Prior work on engagement modeling in children with autism spectrum disorder (ASD) has demonstrated substantial individual variability in behavioral features, particularly in visual modalities. In this work, we extend the literature to acoustic features in naturalistic interactions, where multiple speakers and atypical interaction patterns complicate speaker-specific analysis. We investigated whether speaker diarization improved acoustic engagement modeling during month-long, in-home socially assistive robot (SAR) interventions with seven children with ASD. We trained classical machine learning models using acoustic features extracted from diarized child and parent/caregiver audio and compared their performance with models trained on undiarized audio. Diarized audio consistently yielded higher area under the receiver operating characteristic curve (AUROC) values, although these differences were not statistically significant. More importantly, the relative contributions of child and caregiver acoustic features varied across participants, indicating that the acoustic information associated with engagement was not consistent across children. These findings extend evidence of participant-level variability in ASD engagement modeling to the acoustic domain and demonstrate the feasibility of isolating speaker-specific vocalizations for studying engagement in complex, naturalistic interactions.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24794v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08267v1" target="_blank" rel="noopener noreferrer">
-      The slower rotation of planet-hosting stars revisited
+    <a href="https://arxiv.org/pdf/2611.24792v1" target="_blank" rel="noopener noreferrer">
+      Training-free motion statistics match self-supervised behavior encoders
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Avraham Binnenfeld, Amitay Sussholz, Simchon Faigler, Tsevi Mazeh</span>
+    <span class="paper-authors">Ziwen Chen</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">Previous studies combined rotation periods derived from Kepler photometry, stellar parameters from previous Gaia Data Releases, and planet hosts from the NASA Exoplanet Archive to conclude that statistically planet-hosting stars rotate slower than stars without detected planets. Here, we revisit these studies by using similar Kepler rotational period sample, but with an updated Gaia DR3-based stellar parameter catalogue and an updated exoplanet catalogue. We apply minimal sample cuts in evolutionary state, metallicity, and distance, and then model the stellar rotation period as a function of effective temperature alone. For each star, we derive the ratio of its observed period to the temperature-expected period, and compare the ratio distributions for the planet-host and non-host stars. For periods shorter than 20 d, the planet-host distribution of this ratio is shifted towards longer periods; the period-ratio median is ~15% larger for hosts than for non-hosts (p_KS = 2.4 x 10^-4). We also examine the recently published TESS All-Sky Rotation Survey (TARS) and find a similar trend. However, the strongly structured period distribution precludes a robust comparison between the host and the non-host stars. Therefore, the updated analysis, using more robust stellar and planetary parameters, recovers the previously reported association, strengthening the case for a genuine connection between stellar rotation and planet occurrence.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08267v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Self-supervised encoders for animal behavior are often trained on, or fed, hand-built movement features. We ask whether they beat those ingredients when compared fairly. A training-free representation, made of generic per-frame measurements summarized over fixed time windows and reduced with PCA, is compared with retrained and released encoders (BAMS, hBehaveMAE) under a preregistered protocol: frozen representations of equal size and one shared classifier. On CalMS21 it reaches 85.8 macro F1 against 82.4 for the best encoder, ties with four labelled videos, and leads when the annotator changes or new behaviors must be learned from a few videos; the reading holds for encoders retrained with three seeds. On the MABe22 mouse triplets it scores 83.7 against 80.3 for the released hBehaveMAE (gap +3.4, 95% interval +2.1 to +4.7). On a second species, the MABe22 fly groups, the same recipe scores 51.6 mean F1 over 50 tasks against 48.2 for BAMS, the best published method. On Shot7M2, the synthetic basketball benchmark built by hBehaveMAE&#x27;s authors, it scores 68.8 against 64.7 for hBehaveMAE, the best method in that paper, though hBehaveMAE remains better on the shortest movements. Short time windows carry most of the result. Raw keypoints in each body&#x27;s own frame, summarized over the same windows, already match or beat the encoders on both mouse datasets and on Shot7M2; on the fly groups they fall short, and the measurements add 5.3 points. On these benchmarks, current behavior encoders have yet to beat the hand-built features they learn from, and such baselines should be reported alongside them.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24792v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08264v1" target="_blank" rel="noopener noreferrer">
-      SplatAnything: Gaussian Spacing Normalization for Feed-forward 3DGS across Arbitrary Scenes
+    <a href="https://arxiv.org/pdf/2611.24767v1" target="_blank" rel="noopener noreferrer">
+      Inferring Neural Activity Changes under Recording Uncertainty with Transformers and Variational Inference
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Hao Yu, Zhenwei Wang, Yongzhen Hu, Yuning Gong, Junta Wu, Xiaowei Zhou, Hujun Bao, Tengfei Wang, Chunchao Guo, Sida Peng</span>
+    <span class="paper-authors">Nilson Chapagain, Pooja Chapagain</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">We identify a key limitation of existing feed-forward 3DGS methods: Gaussian attributes are typically predicted in a radial-distance-normalized space that canonicalizes a global radial statistic of the reconstructed geometry, while the spacing between neighboring Gaussian centers can still vary substantially across scene scales and camera configurations. This mismatch induces systematic shifts in Gaussian-scale targets, leading to ambiguous supervision. To address this, we propose SplatAnything with Gaussian Spacing Normalization (GSNorm), which canonicalizes a robust scene-level statistic of Gaussian spacing to provide a more consistent spatial reference for Gaussian prediction. To rigorously assess our method, we further establish a systematic benchmark spanning diverse datasets, input sparsity levels, and challenging extrapolated viewpoints. Extensive experiments demonstrate that SplatAnything achieves state-of-the-art performance, with particularly strong gains under substantial variations in scene scale and viewpoint.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08264v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">A difference in recorded firing rate across days may reflect a change in neuronal activity, missed spikes or recording a different neuron. We present a statistical approach that combines neuron tracking with Bayesian estimates of stationary mean recorded firing rates. Bounds under assumed differences in spike detection connect recorded rates to biological rate changes. We assess recording loss and uncertainty in rate changes in simulations, and count-model fit in recordings. We also compare two transformer estimators with Gaussian and flow variational inference under a shared temporal negative-binomial model. Flow variational inference agrees most closely with reference posteriors, while predictive performance varies across mice. Rate-change intervals contain true simulated changes less often than intended. In UnitMatch recordings from five mice, some inferred changes remain supported when spike detection is allowed to differ between days; others depend on equal detection. These interpretations require a correct neuron match. The approach identifies which inferred rate changes remain supported under specified recording assumptions and where uncertainty limits interpretation.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24767v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08245v1" target="_blank" rel="noopener noreferrer">
-      Value-oriented policy distillation for interpretable wind farm power control
+    <a href="https://arxiv.org/pdf/2611.24759v1" target="_blank" rel="noopener noreferrer">
+      Characterizing adsorption thermodynamics in carbon capture materials: an efficient first-principles approach
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Max Bruninx, Timothy Verstraeten, Jan Decuyper, Ann Nowé, Jan Helsen</span>
+    <span class="paper-authors">Anna T. Bui, Grant M. Rotskoff, Thomas E. Markland</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">Wind farm power control can help the system maintain balance and avoid blackouts. In Europe, this can be achieved through implicit balancing, where a wind farm adjusts its power setpoint in anticipation of the imbalance price using information published by the Transmission System Operator. Thereby, the wind farm helps restore system balance while also reducing its own imbalance costs resulting from forecast errors. However, implicit balancing is a challenging problem since the settlement price is unknown in advance and can be impacted by the pursued control strategy. Reinforcement learning methods could help to solve this problem, but lack the interpretability needed to be deployed on real wind farms. Therefore, we propose a policy distillation framework using explainable boosting machines (EBMs), a variant of generalized additive models, to obtain a transparent control policy. To increase the value captured by the EBM model, we introduce a value-oriented perspective to policy distillation inspired by research in the field of energy forecasting. Furthermore, we suggest to include expert knowledge during model design, such that the control strategy is also justifiable to stakeholders. Using real data of the Belgian grid and an offshore wind farm, we find that our value-oriented and expert-based controller can reduce imbalance costs by 82%, while outperforming a price threshold controller as well as a policy distillation baseline using decision trees.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08245v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Porous materials offer a vast design space for CO$_2$ capture, whose exploration hinges on efficient and accurate first-principles predictions of the thermodynamics governing adsorption. However, simulating isotherms and heats of adsorption using grand canonical molecular simulations is extremely computationally expensive when combined with accurate ab initio treatments of the molecular interactions, limiting screening to low-pressure uptake encoded in the Henry constant. Identifying and designing the best CO$_2$ capture materials requires a strategy that can efficiently calculate their adsorption properties using ab initio potential energy surfaces such as those now available from foundational machine-learned interatomic potentials (MLIPs). Here we develop a neural classical density functional (cDFT) framework for carbon capture processes that allows direct calculation of adsorption isotherms from low to high loading limits of metal-organic frameworks (MOFs) without grand canonical simulations. We demonstrate the success of our approach by calculating the ab initio adsorption isotherms for over 5,000 experimentally reported MOFs. From our screening, we show how these materials can be characterized using four isotherm shapes, arising from their pore size and binding sites, which the Henry constant cannot distinguish. We show that these shapes, rather than the binding strength alone, decide which MOFs suit which process: small pores with strong binding sites for vacuum and temperature swings at low pressure, large pores with weakly binding walls for pressure swings. Finally, we identify the most promising candidates by weighing their working capacity against the energy needed for regeneration.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24759v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08242v1" target="_blank" rel="noopener noreferrer">
-      Finite-Time Thermodynamic Routing in an Anharmonic Collective Quantum Otto Engine
+    <a href="https://arxiv.org/pdf/2611.24757v1" target="_blank" rel="noopener noreferrer">
+      Variance-Optimal Counterfactual Policy Design for Sample-Efficient Online A/B Testing
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Gabriella G. Damas, G. D. de Moraes Neto</span>
+    <span class="paper-authors">Shashank Gupta, Subhadeep Maji</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">The Gibbs state determined by a thermal reservoir does not determine how a working medium approaches it or how fluctuations accumulate over repeated cycles. We exploit this kinetic freedom in an anharmonic collective quantum Otto engine. A longitudinal interaction separates neighboring Dicke transition frequencies without changing their collective matrix elements, allowing passive spectral shaping to route finite-time transport among edges with different heat costs while preserving the contact Gibbs states. Exact edge-current identities and repeated-cycle counting statistics link this routing to mean work, hot heat, and intercycle work correlations. At fixed thermal-contact exposure, structured reservoirs can increase both mean work and long-time squared precision; equal-work controls distinguish these gains from uniform relaxation-rate changes. The useful regime is mesoscopic, bounded by spectral resolution and physical contact time. An equal-cooling example and a full-spin local-noise study test the mechanism beyond ideal engine operation, the latter retaining a one-cycle precision gain despite spin-sector mixing. In a six-transmon dressed-spectrum model, passive microwave filters at fixed integrated coupling achieve equal mean work with shorter thermal contacts, corresponding to higher contact-time-normalized output, and with long-time squared precision comparable to that of the fastest sampled flat reference. The transition pathways selected by a passive reservoir thus provide a control variable for finite-time performance and accumulated work fluctuations that is independent of thermal equilibrium.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08242v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Online A/B testing is the standard approach for evaluating changes to user-facing systems, such as a new recommendation or ranking policy, before deployment. While the difference-in-means estimator of a standard A/B test is unbiased, it often suffers from high variance. When the treatment and production policies choose the same actions with similar probabilities, the resulting observations can add noise while providing little information about the difference between the policies. Consequently, A/B tests can require large amounts of traffic and long durations to detect small treatment effects. Existing variance-reduction methods mainly improve the estimator after the data-collection scheme has been fixed, and recent overlap-aware designs only optimize a single traffic split between the two policies; thereby, they cannot direct traffic to the actions on which the policies disagree. In this paper, we jointly optimize how actions are sampled and how the resulting observations are used to estimate the treatment effect. Our contributions are two-fold. First, building on pairwise off-policy evaluation, we derive the variance-optimal action-level logging policy for estimating the average treatment effect between two policies, which has a closed-form solution for any fixed control variate. Second, we use historical logs to jointly optimize the logging policy and a control variate to further reduce variance. Our experimental results in simulated policy A/B tests show that our designs estimate the average treatment effect more accurately than existing variance reduction methods on every evaluated setting, while generally improving statistical power and reducing how often the worse policy is selected. As a result, our designs enable practitioners to reach reliable deployment decisions with considerably less online traffic.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24757v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
 
 <article class="paper-card">
   <h3 class="paper-title">
-    <a href="https://arxiv.org/pdf/2611.08232v1" target="_blank" rel="noopener noreferrer">
-      Signals, Evidence, and Context: User Scrutiny in Real-World LLM Conversations
+    <a href="https://arxiv.org/pdf/2611.24741v1" target="_blank" rel="noopener noreferrer">
+      Sex Differences in the Detection of Parkinson&#x27;s Disease from Speech
     </a>
   </h3>
   <p class="paper-meta">
-    <span class="paper-authors">Ahana Biswas, Yu-Ru Lin</span>
+    <span class="paper-authors">Hiba Akhaddar, Peter Plantinga, Mirco Ravanelli, Tristan Glatard</span>
     <span class="paper-dot">•</span>
-    <span class="paper-date">2026-11-05</span>
+    <span class="paper-date">2026-11-18</span>
   </p>
-  <p class="paper-abstract">Large language models (LLMs) often present synthesized answers without making their supporting evidence easy to inspect. We study how features of these answers relate to users&#x27; subsequent accepting, checking, and challenging in 489,283 assistant-user response pairs from ShareChat and WildChat. Broad attribution language appears in 31.9% of qualifying responses, compared with explicit URLs in 1.33%, revealing a gap between claims of grounding and preserved inspectable support. Attribution, uncertainty, and other response cues generally accompany both checking and challenging; only uncertainty shows a small statistically distinguishable pooled association favoring checking. Within Technical Help, uncertainty favors checking relative to challenging; refusals and reasoning traces favor challenging in Seeking Information. Scrutiny is concentrated in some conversations, while its apparent turn-to-turn persistence becomes much smaller when conversation-level differences and response ordering are examined separately. These results suggest that supporting verification requires attention to what evidence can be inspected, which question a user is trying to resolve, and the history of the interaction.</p>
-  <a class="paper-link" href="https://arxiv.org/pdf/2611.08232v1" target="_blank" rel="noopener noreferrer">
+  <p class="paper-abstract">Parkinson&#x27;s disease (PD) is the second most common neurodegenerative disease in the world, and 70\% to 75\% of PD patients suffer from speech disorders at some stage. Since PD affects men more frequently than women, previous publications tend to rely on unbalanced datasets that potentially introduce sex biases into trained models. This study investigates sex differences in PD detection from speech using deep learning and traditional machine learning approaches. We evaluated speech-based PD detection using embeddings from three pre-trained speech models, combined with handcrafted acoustic features and different classifiers. Sex-specific experiments were conducted on balanced subsets of four sustained phonation datasets, controlling for sex, disease status, and, where possible, age. All recordings were obtained during a sustained phonation task. Results show that female speakers were more accurately classified than male speakers in the larger dataset. Sex-specific results show that when the models are trained on one sex, they fail to generalize to the other one. Our results highlight the importance of including sex as a variable in the development of PD detection systems.</p>
+  <a class="paper-link" href="https://arxiv.org/pdf/2611.24741v1" target="_blank" rel="noopener noreferrer">
     View PDF →
   </a>
 </article>
